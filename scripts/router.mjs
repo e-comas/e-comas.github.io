@@ -23,7 +23,7 @@ export default async function router(req, res) {
     req.url === "/"
       ? "./index.html"
       : new URL(req.url, "root://").toString().replace("root://", "."),
-    OUTPUT_DIR
+    req.url.startsWith("/images/") ? INPUT_DIR : OUTPUT_DIR
   );
 
   if (/^\/\S+\.css/.test(req.url)) {
