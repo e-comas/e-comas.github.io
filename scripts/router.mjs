@@ -4,8 +4,7 @@ import { AUTO_REFRESH_MODULE, INPUT_DIR, OUTPUT_DIR } from "./dev-config.mjs";
 import sass from "./sass.mjs";
 
 export default async function router(req, res) {
-  if (req.url === "/") req.url = "/home/index.html";
-  else if (req.url === `/${AUTO_REFRESH_MODULE}`) {
+  if (req.url === `/${AUTO_REFRESH_MODULE}`) {
     res.setHeader("Content-Type", "application/javascript");
     const stream = createReadStream(
       new URL(AUTO_REFRESH_MODULE, import.meta.url),
@@ -22,7 +21,7 @@ export default async function router(req, res) {
 
   const url = new URL(
     req.url === "/"
-      ? "./index.html"
+      ? "./home/index.html"
       : new URL(req.url, "root://").toString().replace("root://", "."),
     req.url.startsWith("/images/") ? INPUT_DIR : OUTPUT_DIR
   );
