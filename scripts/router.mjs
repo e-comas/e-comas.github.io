@@ -8,7 +8,8 @@ export default async function router(req, res) {
   else if (req.url === `/${AUTO_REFRESH_MODULE}`) {
     res.setHeader("Content-Type", "application/javascript");
     const stream = createReadStream(
-      new URL(AUTO_REFRESH_MODULE, import.meta.url)
+      new URL(AUTO_REFRESH_MODULE, import.meta.url),
+      { emitClose: false }
     );
     stream.on("error", (e) => {
       console.error(e);
@@ -49,7 +50,7 @@ export default async function router(req, res) {
 
   try {
     try {
-      const stream = createReadStream(url);
+      const stream = createReadStream(url, { emitClose: false });
       await new Promise((resolve, reject) => {
         stream.on("error", reject);
         stream.on("close", resolve);
@@ -58,7 +59,9 @@ export default async function router(req, res) {
     } catch (err) {
       if (err?.code === "EISDIR") {
         if (req.url.endsWith("/") || /^[^?]+\/\?/.test(req.url)) {
-          const stream = createReadStream(new URL("./index.html", url));
+          const stream = createReadStream(new URL("./index.html", url), {
+            emitClose: false,
+          });
           await new Promise((resolve, reject) => {
             stream.on("error", reject);
             stream.on("close", resolve);
