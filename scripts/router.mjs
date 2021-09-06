@@ -27,6 +27,19 @@ export default async function router(req, res) {
     req.url.startsWith("/images/") ? INPUT_DIR : OUTPUT_DIR
   );
 
+  const mime = {
+    __proto__: null,
+    ".html": "text/html",
+    ".css": "text/css",
+    ".svg": "image/svg+xml",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".png": "image/png",
+  };
+  const ext = url.pathname.slice(url.pathname.lastIndexOf("."));
+  if (ext in mime) res.setHeader("Content-Type", mime[ext]);
+  else console.warn("Unknown extension", ext);
+
   if (/^\/\S+\.css/.test(req.url)) {
     try {
       const css = await sass(
@@ -38,7 +51,6 @@ export default async function router(req, res) {
           INPUT_DIR
         )
       );
-      res.setHeader("Content-Type", "text/css");
       res.end(css);
     } catch (err) {
       console.error(err);
