@@ -1,7 +1,7 @@
 import { createReadStream } from "node:fs";
 
 import { AUTO_REFRESH_MODULE, INPUT_DIR, OUTPUT_DIR } from "./dev-config.mjs";
-import sass from "./sass.mjs";
+import sass2css from "./sass.mjs";
 
 export default async function router(req, res) {
   if (req.url === `/${AUTO_REFRESH_MODULE}`) {
@@ -39,9 +39,9 @@ export default async function router(req, res) {
   if (ext in mime) res.setHeader("Content-Type", mime[ext]);
   else console.warn("Unknown extension", ext);
 
-  if (/^\/\S+\.css/.test(req.url)) {
+  if (ext === ".css") {
     try {
-      const css = await sass(
+      const css = await sass2css(
         new URL(
           url
             .toString()

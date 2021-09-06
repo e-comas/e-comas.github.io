@@ -1,10 +1,10 @@
 import { fileURLToPath } from "node:url";
-import _sass from "sass";
+import sass from "sass";
 
-export default function sass(url) {
+export default function sass2css(url) {
   const file = fileURLToPath(url);
   return new Promise((resolve, reject) =>
-    _sass.render(
+    sass.render(
       {
         file,
         sourceMap: "true",
