@@ -1,0 +1,73 @@
+$border-radius: 6px;
+$blue: #0c195a;
+$green: #64d7be;
+$white: #fff;
+
+$Gilroy: Gilroy, sans-serif;
+
+%button {
+  color: $blue;
+  background-color: $green;
+  border-radius: $border-radius;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 125%;
+  font-family: $Gilroy;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr minmax(600px, auto);
+  grid-template-rows: auto 1fr;
+  padding: 2rem 170px;
+  //   background-color: $blue;
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-position: 0 25%;
+
+  min-height: 50vh;
+
+  .logo {
+    max-width: 200px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &.active {
+        color: $green;
+      }
+
+      &:last-child {
+        @extend %button;
+      }
+    }
+  }
+
+  h1 {
+    grid-column: span 2;
+    color: $white;
+    font-size: 2.5rem;
+    letter-spacing: 0.02em;
+    line-height: 2.55rem;
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+}
