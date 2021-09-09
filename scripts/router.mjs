@@ -23,7 +23,9 @@ export default async function router(req, res) {
     req.url === "/"
       ? "./home/index.html"
       : new URL(req.url, "root://").toString().replace("root://", "."),
-    req.url.startsWith("/images/") ? INPUT_DIR : OUTPUT_DIR
+    req.url.startsWith("/images/") || req.url.startsWith("/fonts/")
+      ? INPUT_DIR
+      : OUTPUT_DIR
   );
 
   const mime = {
@@ -34,6 +36,7 @@ export default async function router(req, res) {
     ".jpg": "image/jpeg",
     ".jpeg": "image/jpeg",
     ".png": "image/png",
+    ".woff2": "font/woff2",
   };
   const ext = url.pathname.slice(url.pathname.lastIndexOf("."));
   if (ext in mime) res.setHeader("Content-Type", mime[ext]);
