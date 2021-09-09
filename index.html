@@ -4,388 +4,407 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-    @charset "UTF-8";
-@font-face {
-  font-family: "Gilroy";
-  src: url("fonts/Gilroy-Light.woff2") format("woff2"), url("fonts/Gilroy-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("fonts/Gilroy-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("fonts/Gilroy-Regular.woff2") format("woff2"), url("fonts/Gilroy-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("fonts/Gilroy-Medium.woff2") format("woff2"), url("fonts/Gilroy-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-header nav a, header nav a:last-child, .cta {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.55rem;
-  letter-spacing: 0.175em;
-}
+      @charset "UTF-8";
+      @font-face {
+        font-family: "Gilroy";
+        src: url("fonts/Gilroy-Light.woff2") format("woff2"),
+          url("fonts/Gilroy-Light.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Gilroy";
+        src: url("fonts/Gilroy-ExtraBold.woff2") format("woff2"),
+          url("fonts/Gilroy-ExtraBold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Gilroy";
+        src: url("fonts/Gilroy-Regular.woff2") format("woff2"),
+          url("fonts/Gilroy-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Gilroy";
+        src: url("fonts/Gilroy-Medium.woff2") format("woff2"),
+          url("fonts/Gilroy-Medium.woff") format("woff");
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Lato";
+        src: url("fonts/Lato-Bold.woff2") format("woff2"),
+          url("fonts/Lato-Bold.woff") format("woff"),
+          url("fonts/Lato-Bold.ttf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+      header nav a,
+      header nav a:last-child,
+      .cta {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.55rem;
+        letter-spacing: 0.175em;
+      }
 
-header nav a:last-child, .cta {
-  display: block;
-  color: #0c195a;
-  background-color: #64d7be;
-  border-radius: 6px;
-  padding: 0.75rem 1rem;
-  margin: 0;
-  text-decoration: none;
-  width: -moz-fit-content;
-  width: fit-content;
-}
+      header nav a:last-child,
+      .cta {
+        display: block;
+        color: #0c195a;
+        background-color: #64d7be;
+        border-radius: 6px;
+        padding: 0.75rem 1rem;
+        margin: 0;
+        text-decoration: none;
+        width: -moz-fit-content;
+        width: fit-content;
+      }
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
 
-:root {
-  font-size: 125%;
-  font-family: Gilroy, sans-serif;
-  color: #0c195a;
-}
+      :root {
+        font-size: 125%;
+        font-family: Gilroy, sans-serif;
+        color: #0c195a;
+      }
 
-body {
-  margin: 0;
-  padding: 0;
-}
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-.inverted, section.news article {
-  background-color: #0c195a;
-  color: #fff;
-}
+      .inverted,
+      section.news article {
+        background-color: #0c195a;
+        color: #fff;
+      }
 
-.cta.inverted, section.news article.cta {
-  background-color: #0c195a;
-  color: #64d7be;
-}
+      .cta.inverted,
+      section.news article.cta {
+        background-color: #0c195a;
+        color: #64d7be;
+      }
 
-.background, .background * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-.background::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000;
-  opacity: 0.45;
-}
+      .background,
+      .background * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      .background::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: 0.45;
+      }
 
-header {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr minmax(600px, auto);
-  grid-template-rows: auto 1fr;
-  padding: 2rem 170px;
-  min-height: 50vh;
-}
-header .background,
-header .background * {
-  object-position: 0 25%;
-}
-header .logo {
-  max-width: 200px;
-}
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav a {
-  color: #fff;
-  text-decoration: none;
-}
-header nav a.active {
-  color: #64d7be;
-}
-header h1 {
-  grid-column: span 2;
-  color: #fff;
-  max-width: 800px;
-  align-self: center;
-}
+      header {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr minmax(600px, auto);
+        grid-template-rows: auto 1fr;
+        padding: 2rem 170px;
+        min-height: 50vh;
+      }
+      header .background,
+      header .background * {
+        object-position: 0 25%;
+      }
+      header .logo {
+        max-width: 200px;
+      }
+      header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+      }
+      header nav a.active {
+        color: #64d7be;
+      }
+      header h1 {
+        grid-column: span 2;
+        color: #fff;
+        max-width: 800px;
+        align-self: center;
+      }
 
-footer {
-  display: grid;
-  grid-template-columns: 3fr 2fr 3fr 4fr;
-  gap: 5rem 1.2rem;
-  justify-content: space-evenly;
-  font-size: 0.8rem;
-  line-height: 1.1rem;
-  color: #fff;
-  background-color: #0c195a;
-  padding: 2.5rem;
-  padding-bottom: 0.5rem;
-}
-footer .logo {
-  max-width: 200px;
-}
-footer ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  font-size: inherit;
-}
-footer li {
-  display: block;
-}
-footer a {
-  color: inherit;
-  text-decoration: inherit;
-}
-footer address {
-  font-style: normal;
-}
-footer .copyright-notice {
-  grid-column: span 4;
-  text-align: center;
-}
+      footer {
+        display: grid;
+        grid-template-columns: 3fr 2fr 3fr 4fr;
+        gap: 5rem 1.2rem;
+        justify-content: space-evenly;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        color: #fff;
+        background-color: #0c195a;
+        padding: 2.5rem;
+        padding-bottom: 0.5rem;
+      }
+      footer .logo {
+        max-width: 200px;
+      }
+      footer ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        font-size: inherit;
+      }
+      footer li {
+        display: block;
+      }
+      footer a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      footer address {
+        font-style: normal;
+      }
+      footer .copyright-notice {
+        grid-column: span 4;
+        text-align: center;
+      }
 
-h5, h3,
-h4, h2, h1 {
-  margin: 0;
-  padding: 0;
-  font-family: Gilroy, sans-serif;
-}
+      h5,
+      h3,
+      h4,
+      h2,
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-family: Gilroy, sans-serif;
+      }
 
-h1 {
-  font-size: 2.5rem;
-  letter-spacing: 0.02em;
-  line-height: 2.75rem;
-}
+      h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.02em;
+        line-height: 2.75rem;
+      }
 
-h2 {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  letter-spacing: 0.02em;
-}
+      h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: 0.02em;
+      }
 
-h3,
-h4 {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-}
+      h3,
+      h4 {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+      }
 
-h5 {
-  font-size: 1rem;
-  line-height: 2rem;
-  letter-spacing: 0.02em;
-}
+      h5 {
+        font-size: 1rem;
+        line-height: 2rem;
+        letter-spacing: 0.02em;
+      }
 
-p,
-ul {
-  font-size: 0.85rem;
-  line-height: 1.1rem;
-  font-family: Lato, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+      p,
+      ul {
+        font-size: 0.85rem;
+        line-height: 1.1rem;
+        font-family: Lato, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
-section {
-  min-height: 50vh;
-  display: flex;
-}
-section img,
-section picture {
-  width: 100%;
-}
-section figure {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0;
-  align-items: center;
-  width: 100%;
-}
-section figure figcaption {
-  padding: 0 170px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+      section {
+        min-height: 50vh;
+        display: flex;
+      }
+      section img,
+      section picture {
+        width: 100%;
+      }
+      section figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        align-items: center;
+        width: 100%;
+      }
+      section figure figcaption {
+        padding: 0 170px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
 
-section.four-step {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
-  padding: 170px;
-}
-section.four-step::before {
-  content: "";
-  grid-column: 2;
-  grid-row: 1;
-}
-section.four-step > div {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  padding: 2.5rem;
-}
-section.four-step > div img {
-  max-width: 2.5rem;
-}
-section.four-step > div:nth-child(even) {
-  transform: translateY(3.3rem);
-}
-section.four-step > div:not(.inverted) {
-  background-color: #0c195a05;
-}
+      section.four-step {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+        padding: 170px;
+      }
+      section.four-step::before {
+        content: "";
+        grid-column: 2;
+        grid-row: 1;
+      }
+      section.four-step > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 2.5rem;
+      }
+      section.four-step > div img {
+        max-width: 2.5rem;
+      }
+      section.four-step > div:nth-child(even) {
+        transform: translateY(3.3rem);
+      }
+      section.four-step > div:not(.inverted) {
+        background-color: #0c195a05;
+      }
 
-.cover, section.threeQuarter picture, section.twoThird picture,
-section.threeQuarter img,
-section.twoThird img {
-  height: 100%;
-  object-fit: cover;
-}
+      .cover,
+      section.threeQuarter picture,
+      section.twoThird picture,
+      section.threeQuarter img,
+      section.twoThird img {
+        height: 100%;
+        object-fit: cover;
+      }
 
-section.threeQuarter, section.twoThird {
-  display: grid;
-  gap: 1.2rem;
-}
-section.twoThird {
-  grid-template-columns: 2fr 1fr;
-}
+      section.threeQuarter,
+      section.twoThird {
+        display: grid;
+        gap: 1.2rem;
+      }
+      section.twoThird {
+        grid-template-columns: 2fr 1fr;
+      }
 
-section.threeQuarter {
-  grid-template-columns: 3fr 1fr;
-}
+      section.threeQuarter {
+        grid-template-columns: 3fr 1fr;
+      }
 
-.testimonies {
-  display: flex;
-  gap: 2.5rem;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #0c195a05;
-  padding: 170px;
-}
-.testimonies figure {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.testimonies figure figcaption {
-  display: contents;
-}
-.testimonies figure figcaption time {
-  font-size: 0.75rem;
-  letter-spacing: 0.175em;
-}
-.testimonies figure figcaption strong {
-  font-variant: small-caps;
-}
-.testimonies figure blockquote {
-  margin: 0;
-  margin-top: 1rem;
-  padding: 0;
-}
-.testimonies figure blockquote::before {
-  content: "«";
-}
-.testimonies figure blockquote::after {
-  content: "»";
-}
+      .testimonies {
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #0c195a05;
+        padding: 170px;
+      }
+      .testimonies figure {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .testimonies figure figcaption {
+        display: contents;
+      }
+      .testimonies figure figcaption time {
+        font-size: 0.75rem;
+        letter-spacing: 0.175em;
+      }
+      .testimonies figure figcaption strong {
+        font-variant: small-caps;
+      }
+      .testimonies figure blockquote {
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0;
+      }
+      .testimonies figure blockquote::before {
+        content: "«";
+      }
+      .testimonies figure blockquote::after {
+        content: "»";
+      }
 
-section.news {
-  display: grid;
-  gap: 1.2rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  min-height: auto;
-  padding: 170px;
-}
-section.news h3 {
-  grid-column: span 3;
-}
-section.news article {
-  border-radius: 6px;
-  padding: 50px;
-}
-section.news article time {
-  font-family: Gilroy, sans-serif;
-  font-style: 0.75rem;
-  letter-spacing: 0.175em;
-}
-section.news article p {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-section.news .cta {
-  grid-column: 2;
-  justify-self: center;
-}
+      section.news {
+        display: grid;
+        gap: 1.2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        min-height: auto;
+        padding: 170px;
+      }
+      section.news h3 {
+        grid-column: span 3;
+      }
+      section.news article {
+        border-radius: 6px;
+        padding: 50px;
+      }
+      section.news article time {
+        font-family: Gilroy, sans-serif;
+        font-style: 0.75rem;
+        letter-spacing: 0.175em;
+      }
+      section.news article p {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+      section.news .cta {
+        grid-column: 2;
+        justify-self: center;
+      }
 
-section.key-figures {
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  min-height: 325px;
-}
-section.key-figures p {
-  font-family: Gilroy, sans-serif;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  font-size: 1rem;
-  line-height: 1rem;
-  text-transform: uppercase;
-  max-width: 30ch;
-}
-section.key-figures strong {
-  display: block;
-  font-size: 2.5rem;
-  letter-spacing: 0.02em;
-  line-height: 1.5rem;
-}
+      section.key-figures {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-height: 325px;
+      }
+      section.key-figures p {
+        font-family: Gilroy, sans-serif;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1rem;
+        text-transform: uppercase;
+        max-width: 30ch;
+      }
+      section.key-figures strong {
+        display: block;
+        font-size: 2.5rem;
+        letter-spacing: 0.02em;
+        line-height: 1.5rem;
+      }
 
-section.partners {
-  padding: 5rem;
-  gap: 3rem;
-  min-height: auto;
-  flex-direction: column;
-  align-items: center;
-}
-section.partners > div {
-  display: grid;
-  justify-content: center;
-  gap: 3.75rem;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, 9rem);
-}</style>
+      section.partners {
+        padding: 5rem;
+        gap: 3rem;
+        min-height: auto;
+        flex-direction: column;
+        align-items: center;
+      }
+      section.partners > div {
+        display: grid;
+        justify-content: center;
+        gap: 3.75rem;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, 9rem);
+      }
+    </style>
     <title>Homepage</title>
   </head>
   <body>
@@ -414,172 +433,202 @@ section.partners > div {
 
     <nav><!-- breadcrumb --></nav>
 
-    
-<main>
-  <section>
-    <figure>
-      <picture>
-        <img src="/images/expertise_area.png" alt="" />
-      </picture>
-      <figcaption style="padding-left:0">
-        <h3>Our area of expertise</h3>
+    <main>
+      <section>
+        <figure>
+          <picture>
+            <img src="/images/expertise_area.png" alt="" />
+          </picture>
+          <figcaption style="padding-left: 0">
+            <h3>Our area of expertise</h3>
+            <p>
+              Our team has over 30 years of experience working with Amazon and
+              the brands on it. We can help you save time and grow faster on
+              Amazon's various marketplaces.
+            </p>
+            <a href="/team/" class="cta inverted">Read more</a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="inverted">
+        <figure>
+          <figcaption>
+            <h3>e-Comas in video</h3>
+            <ul>
+              <li>Ate maximus, sum quaspiendam fuga.</li>
+              <li>Lenia plaboriberum is et dersperspide.</li>
+              <li>Ate maximus, sum quaspiendam fuga.</li>
+              <li>Lenia plaboriberum is et dersperspide.</li>
+            </ul>
+            <a href="/team/" class="cta">Read more</a>
+          </figcaption>
+          <picture class="cover">
+            <img
+              src="/images/video_preview.jpg"
+              alt="eComas video"
+              class="cover"
+            />
+          </picture>
+        </figure>
+      </section>
+
+      <section class="four-step">
+        <h2>Our 4-step approach</h2>
+
+        <div class="inverted">
+          <img src="/images/chess.svg" alt="Chess knight" />
+          <h3>Stategy</h3>
+          <ul>
+            <li>Consumer Prices volatility.</li>
+            <li>
+              Lost Buy Box rates (prices lower from other selling parties).
+            </li>
+            <li>
+              Insights and sentiments analysis on customer reviews and
+              questions.
+            </li>
+          </ul>
+          <p>
+            –&gt; To check how your distribution is working and how the customer
+            perceive your brand and products.
+          </p>
+          <a href="/" class="cta">Read more</a>
+        </div>
+        <div>
+          <img src="/images/euro-cog.svg" alt="Cog" />
+          <h3>Operation</h3>
+          <ul>
+            <li>Out Of Stock occurrences.</li>
+            <li>Logistics Performance (chargebacks, customer satisfaction).</li>
+            <li>Customer support performance and answer to questions.</li>
+          </ul>
+          <p>
+            –&gt; To check if your operations performance is able to support
+            your growth.
+          </p>
+          <a href="/" class="cta">Read more</a>
+        </div>
+        <div>
+          <img src="/images/directions.svg" alt="Directions" />
+          <h3>Conversion</h3>
+          <ul>
+            <li>IDQ (Intelligent Data Quality) Review.</li>
+            <li>Study of conversion rates of your products on Amazon.</li>
+            <li>Benchmark to conversion rates from category.</li>
+          </ul>
+          <p>
+            –&gt; To check if the content on your product pages is cinvincing to
+            your target audience.
+          </p>
+          <a href="/" class="cta">Read more</a>
+        </div>
+        <div>
+          <img src="/images/search.svg" alt="SEO" />
+          <h3>Traffic</h3>
+          <ul>
+            <li>Review of your advertising campaigns.</li>
+            <li>Audit of the keywords, of the aCoS and TaCoS.</li>
+            <li>Other promotion activities review.</li>
+          </ul>
+          <p>
+            –&gt; To check if you are spending your advertisng budget wisely and
+            in the most efficient way.
+          </p>
+          <a href="/" class="cta">Read more</a>
+        </div>
+      </section>
+
+      <section class="twoThird">
+        <picture
+          ><img src="/images/DSC_0041.jpg" alt="" loading="lazy"
+        /></picture>
+        <picture
+          ><img src="/images/DSC_0086.jpg" alt="" loading="lazy"
+        /></picture>
+      </section>
+
+      <section class="threeQuarter">
+        <div class="testimonies">
+          <h2>They did it</h2>
+          <figure>
+            <figcaption>
+              <time datetime="1970-01-01">01.01.1970</time>
+              <strong>Name of the TRUSTOR</strong>
+            </figcaption>
+            <blockquote>
+              Volesenda pa venim rest facil eaquid ut expliquis doluptas et
+              fugiame verum alis exceris eum estrum et lautasi molupta sequia
+              eicipsam, apientotae est, ipsae perspis pe et, nulparu ptassuscit.
+            </blockquote>
+          </figure>
+          <a href="/" class="cta">The testimonies</a>
+        </div>
+        <picture
+          ><img src="/images/IMG_5893.jpg" alt="illustration" loading="lazy"
+        /></picture>
+      </section>
+
+      <section class="news">
+        <h3>Our latest news</h3>
+
+        <article>
+          <time datetime="2021-04-07T14:32:09Z">07.04.2021</time>
+          <h4>News headline title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
+            quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat
+            eum hic ex non. Maiores delectus nemo magni sunt quod et?
+          </p>
+          <a class="cta" href="">Read more</a>
+        </article>
+        <article>
+          <time datetime="2021-04-07T14:32:09Z">07.04.2021</time>
+          <h4>News headline title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
+            quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat
+            eum hic ex non. Maiores delectus nemo magni sunt quod et?
+          </p>
+          <a class="cta" href="">Read more</a>
+        </article>
+        <article>
+          <time datetime="2021-04-07T14:32:09Z">07.04.2021</time>
+          <h4>News headline title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
+            quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat
+            eum hic ex non. Maiores delectus nemo magni sunt quod et?
+          </p>
+          <a class="cta" href="">Read more</a>
+        </article>
+
+        <a href="/blog/" class="cta">The news</a>
+      </section>
+
+      <section class="key-figures">
+        <picture class="background" aria-hidden="false">
+          <img src="/images/key-figures-illustration.jpg" alt="background" />
+        </picture>
+        <p><strong>+25&nbsp;000</strong> listing managed</p>
+        <p><strong>+100</strong> vendor &amp; seller accounts opened/managed</p>
         <p>
-          Our team has over 30 years of experience working with Amazon and the
-          brands on it. We can help you save time and grow faster on Amazon's
-          various marketplaces.
+          <strong>+100&nbsp;000&nbsp;€</strong> advertising campaigns handled
         </p>
-        <a href="/team/" class="cta inverted">Read more</a>
-      </figcaption>
-    </figure>
-  </section>
+      </section>
 
-  <section class="inverted">
-    <figure>
-      <figcaption>
-        <h3>e-Comas in video</h3>
-        <ul>
-          <li>Ate maximus, sum quaspiendam fuga.</li>
-          <li>Lenia plaboriberum is et dersperspide.</li>
-          <li>Ate maximus, sum quaspiendam fuga.</li>
-          <li>Lenia plaboriberum is et dersperspide.</li>
-        </ul>
-        <a href="/team/" class="cta">Read more</a>
-      </figcaption>
-      <picture class="cover">
-        <img src="/images/video_preview.jpg" alt="eComas video" class="cover"/>
-      </picture>
-    </figure>
-  </section>
-
-  <section class="four-step">
-    <h2>Our 4-step approach</h2>
-
-    <div class="inverted">
-      <img src="/images/chess.svg" alt="Chess knight"/>
-      <h3>Stategy</h3>
-      <ul>
-        <li>Consumer Prices volatility.</li>
-        <li>Lost Buy Box rates (prices lower from other selling parties).</li>
-        <li>Insights and sentiments analysis on customer reviews and questions.</li>
-      </ul>
-      <p>–&gt; To check how your distribution is working and how the customer perceive your brand and products.</p>
-      <a href="/" class="cta">Read more</a>
-    </div>
-    <div>
-      <img src="/images/euro-cog.svg" alt="Cog"/>
-      <h3>Operation</h3>
-      <ul>
-        <li>Out Of Stock occurrences.</li>
-        <li>Logistics Performance (chargebacks, customer satisfaction).</li>
-        <li>Customer support performance and answer to questions.</li>
-      </ul>
-      <p>–&gt; To check if your operations performance is able to support your growth.</p>
-      <a href="/" class="cta">Read more</a>
-    </div>
-    <div>
-      <img src="/images/directions.svg" alt="Directions"/>
-      <h3>Conversion</h3>
-      <ul>
-        <li>IDQ (Intelligent Data Quality) Review.</li>
-        <li>Study of conversion rates of your products on Amazon.</li>
-        <li>Benchmark to conversion rates from category.</li>
-      </ul>
-      <p>–&gt; To check if the content on your product pages is cinvincing to your target audience.</p>
-      <a href="/" class="cta">Read more</a>
-    </div>
-    <div>
-      <img src="/images/search.svg" alt="SEO"/>
-      <h3>Traffic</h3>
-      <ul>
-        <li>Review of your advertising campaigns.</li>
-        <li>Audit of the keywords, of the aCoS and TaCoS.</li>
-        <li>Other promotion activities review.</li>
-      </ul>
-      <p>–&gt; To check if you are spending your advertisng  budget wisely and in the most efficient way.</p>
-      <a href="/" class="cta">Read more</a>
-    </div>
-  </section>
-
-  <section class="twoThird">
-    <picture><img src="/images/DSC_0041.jpg" alt="" loading="lazy" /></picture>
-    <picture><img src="/images/DSC_0086.jpg" alt="" loading="lazy" /></picture>
-  </section>
-
-  <section class="threeQuarter">
-    <div class="testimonies">
-      <h2>They did it</h2>
-      <figure>
-        <figcaption>
-          <time datetime="1970-01-01">01.01.1970</time>
-          <strong>Name of the TRUSTOR</strong>
-        </figcaption>
-        <blockquote>Volesenda pa venim rest facil eaquid ut expliquis doluptas et fugiame verum alis exceris eum estrum et lautasi molupta sequia eicipsam, apientotae est, ipsae perspis pe et, nulparu ptassuscit.</blockquote>
-      </figure>
-      <a href="/" class="cta">The testimonies</a>
-    </div>
-    <picture><img src="/images/IMG_5893.jpg" alt="illustration" loading="lazy" /></picture>
-  </section>
-
-  <section class="news">
-    <h3>Our latest news</h3>
-
-    <article>
-      <time datetime="2021-04-07T14:32:09Z">07.04.2021</time>
-      <h4>News headline title</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-        quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat eum
-        hic ex non. Maiores delectus nemo magni sunt quod et?
-      </p>
-      <a class="cta" href="">Read more</a>
-    </article>
-    <article>
-      <time datetime="2021-04-07T14:32:09Z">07.04.2021</time>
-      <h4>News headline title</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-        quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat eum
-        hic ex non. Maiores delectus nemo magni sunt quod et?
-      </p>
-      <a class="cta" href="">Read more</a>
-    </article>
-    <article>
-      <time datetime="2021-04-07T14:32:09Z">07.04.2021</time>
-      <h4>News headline title</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-        quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat eum
-        hic ex non. Maiores delectus nemo magni sunt quod et?
-      </p>
-      <a class="cta" href="">Read more</a>
-    </article>
-
-    <a href="/blog/" class="cta">The news</a>
-  </section>
-
-  <section class="key-figures">
-    <picture class="background" aria-hidden="false">
-      <img src="/images/key-figures-illustration.jpeg" alt="background"/>
-    </picture>
-    <p><strong>+25&nbsp;000</strong> listing managed</p>
-    <p><strong>+100</strong> vendor &amp; seller accounts opened/managed</p>
-    <p><strong>+100&nbsp;000&nbsp;€</strong> advertising campaigns handled</p>
-  </section>
-
-  <section class="partners">
-    <h2>Partners we trust</h2>
-    <div>
-      <img alt="partner"/>
-      <img alt="partner"/>
-      <img alt="partner"/>
-      <img alt="partner"/>
-      <img alt="partner"/>
-      <img alt="partner"/>
-    </div>
-  </section>
-</main>
-
-
+      <section class="partners">
+        <h2>Partners we trust</h2>
+        <div>
+          <img alt="partner" />
+          <img alt="partner" />
+          <img alt="partner" />
+          <img alt="partner" />
+          <img alt="partner" />
+          <img alt="partner" />
+        </div>
+      </section>
+    </main>
 
     <footer>
       <img
