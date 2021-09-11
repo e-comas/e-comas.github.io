@@ -8,7 +8,10 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@squoosh/lib": "^0.4.0",
+    "puppeteer": "^10.2.0",
     "sass": "^1.39.0",
+    "svgo": "^2.5.0",
     "ws": "^8.2.1"
   },
   "scripts": {
