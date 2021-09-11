@@ -18,18 +18,22 @@ export const startServer = () =>
           console.log(`Server started on http://localhost:${PORT_NUMBER}`);
         }
       );
+      const wsServer = new WebSocketServer({ server });
 
       server.on("connection", registerConnection);
-      new WebSocketServer({ server }).on("connection", registerConnection);
+      wsServer.on("connection", registerConnection);
 
       return () =>
-        new Promise((done) => {
-          for (const connection of connections) {
-            connection.terminate?.();
-            connection.destroy?.();
-          }
-          server.unref().close(done);
-        });
+        Promise.all([
+          new Promise((done) => {
+            for (const connection of connections) {
+              connection.terminate?.();
+              connection.destroy?.();
+            }
+            server.unref().close(done);
+          }),
+          new Promise((done) => wsServer.close(done)),
+        ]);
     }
   );
 
