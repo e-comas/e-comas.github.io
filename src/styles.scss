@@ -42,7 +42,7 @@ $lato: Lato, sans-serif;
 }
 body {
   margin: 0;
-  padding: 0;
+  padding: 1.5rem;
 }
 
 .inverted {
@@ -213,6 +213,12 @@ h5 {
   letter-spacing: 0.02em;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 p,
 ul {
   font-size: 0.85rem;
@@ -264,6 +270,7 @@ section.four-step {
     flex-direction: column;
     gap: 1.2rem;
     padding: 2.5rem;
+    border-radius: $border-radius;
 
     img {
       max-width: 2.5rem;
@@ -395,7 +402,7 @@ section.key-figures {
     display: block;
     font-size: 2.5rem;
     letter-spacing: 0.02em;
-    line-height: 1.5rem;
+    line-height: 3rem;
   }
 }
 
