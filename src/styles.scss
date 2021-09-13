@@ -58,7 +58,6 @@ body {
 }
 
 .background {
-  &,
   & * {
     position: absolute;
     top: 0;
@@ -92,7 +91,6 @@ header {
   // background-size: cover;
   // background-position: 0 25%;
 
-  .background,
   .background * {
     object-position: 0 25%;
   }

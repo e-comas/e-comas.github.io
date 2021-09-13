@@ -32,10 +32,12 @@ export default async function router(req, res) {
     __proto__: null,
     ".html": "text/html",
     ".css": "text/css",
+    ".avif": "image/avif",
     ".svg": "image/svg+xml",
     ".jpg": "image/jpeg",
     ".jpeg": "image/jpeg",
     ".png": "image/png",
+    ".webp": "image/webp",
     ".woff2": "font/woff2",
   };
   const ext = url.pathname.slice(url.pathname.lastIndexOf("."));
