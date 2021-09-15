@@ -5,6 +5,7 @@ import { svgo } from "./optimize-svg.mjs";
 
 import { INPUT_DIR, OUTPUT_DIR } from "./prod-config.mjs";
 import createHash from "./prod-hash.mjs";
+import CacheMap from "./prod-image-cache.mjs";
 
 export async function optimizeVector(url) {
   console.log("vector", url);
@@ -48,6 +49,7 @@ const getImagePool = (async function* generateImagePool() {
   } while (1);
 })();
 
+let imageCache;
 export async function optimizeMatrix(src, sizes) {
   console.log("matrix", src, sizes);
   const {
@@ -55,16 +57,16 @@ export async function optimizeMatrix(src, sizes) {
   } = await getImagePool.next();
   const url = new URL(src, INPUT_DIR);
   const ext = path.extname(url.pathname).toLowerCase();
-  let encodeOpts, originalExt;
+  let encodeOpts, originalCodec;
   switch (ext) {
     case ".jpg":
     case ".jpeg":
       encodeOpts = { ...encodeOptions, mozjpeg: {} };
-      originalExt = "jpg";
+      originalCodec = "mozjpeg";
       break;
     case ".png":
       encodeOpts = { ...encodeOptions, oxipng: { level: 3 } };
-      originalExt = "png";
+      originalCodec = "oxipng";
       break;
     default:
       throw new Error(
@@ -73,14 +75,37 @@ export async function optimizeMatrix(src, sizes) {
   }
 
   const fileContent = await fs.readFile(url);
+  const fileHash = createHash(fileContent);
   const image = imagePool.ingestImage(fileContent);
 
   const {
     bitmap: { width, height },
   } = await image.decoded;
 
+  imageCache ??= new CacheMap(new URL("./cache.csv", OUTPUT_DIR));
   const sources = [];
   for (const width of sizes) {
+    const cacheEntries = await imageCache.get(fileHash, width);
+    try {
+      await Promise.all(
+        Object.keys(encodeOpts).map((codec) =>
+          fs.access(new URL(cacheEntries[codec], OUTPUT_DIR))
+        )
+      );
+      console.log("using cache", src, width);
+      sources.push(
+        ...Object.keys(encodeOpts).map((codec) => ({
+          src,
+          codec,
+          fileName: cacheEntries[codec],
+          width,
+        }))
+      );
+      continue;
+    } catch (err) {
+      console.log(err);
+    }
+
     await image.preprocess({
       resize: {
         enabled: true,
@@ -90,46 +115,47 @@ export async function optimizeMatrix(src, sizes) {
 
     await image.encode(encodeOpts);
 
-    for (const encodedImage of Object.values(image.encodedWith)) {
+    for (const [codec, encodedImage] of Object.entries(image.encodedWith)) {
       const { binary, extension } = await encodedImage;
       const hash = createHash(binary);
       const fileName = `${hash}.${extension}`;
       await fs.writeFile(new URL(fileName, OUTPUT_DIR), binary);
 
-      console.log("converted", src, extension, width);
+      console.log("converted", src, codec, width);
 
-      sources.push({ src, extension, fileName, width });
+      sources.push({ src, codec, fileName, width });
+      imageCache.set(fileHash, width, codec, fileName).catch(console.error);
     }
   }
 
   closeImagePool();
 
-  return { sources, originalExt, width, height };
+  return { sources, originalCodec, width, height };
 }
 
-const toSrcset = (data, extension) =>
+const toSrcset = (data, codec) =>
   data
-    .filter((job) => job.extension === extension)
+    .filter((job) => job.codec === codec)
     .map((job) => `${job.fileName} ${job.width}w`)
     .join(",");
 
-const toSrc = (data, extension) => {
-  const extData = data.filter((job) => job.extension === extension);
+const toSrc = (data, codec) => {
+  const extData = data.filter((job) => job.codec === codec);
   return extData.find(
     (job) => job.width === Math.max(...extData.map((job) => job.width))
   ).fileName;
 };
 
 export async function generatePictureInnerHTML(src, alt, aboveTheFold, jobs) {
-  const { sources, originalExt, width, height } = await jobs[src];
+  const { sources, originalCodec, width, height } = await jobs[src];
 
   return (
     `<source type="image/avif" srcset="${toSrcset(sources, "avif")}"/>` +
     `<source type="image/webp" srcset="${toSrcset(sources, "webp")}"/>` +
     `<img alt=${JSON.stringify(alt)} srcset="${toSrcset(
       sources,
-      originalExt
-    )}" src="${toSrc(sources, originalExt)}" loading="${
+      originalCodec
+    )}" src="${toSrc(sources, originalCodec)}" loading="${
       aboveTheFold ? "eager" : "lazy"
     }" width="${width}" height="${height}"/>`
   );
