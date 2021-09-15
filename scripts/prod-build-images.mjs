@@ -3,8 +3,6 @@ import path from "node:path";
 
 import { svgo } from "./optimize-svg.mjs";
 
-import { ImagePool } from "@squoosh/lib";
-
 import { INPUT_DIR, OUTPUT_DIR } from "./prod-config.mjs";
 import createHash from "./prod-hash.mjs";
 
@@ -33,13 +31,16 @@ const encodeOptions = {
 
 const getImagePool = (async function* generateImagePool() {
   let imagePool, closeImagePool;
+  // Lazy-load libSquoosh as it registers globals clashing with other packages.
+  // @see https://github.com/GoogleChromeLabs/squoosh/issues/1152
+  const squoosh = await import("@squoosh/lib");
   do {
     const imagePoolClosing = new Promise((resolve) => {
       closeImagePool = resolve;
     }).then(() => imagePool?.close());
     yield {
       get imagePool() {
-        return (imagePool = new ImagePool());
+        return (imagePool = new squoosh.ImagePool());
       },
       closeImagePool,
     };
