@@ -79,11 +79,11 @@ export async function optimizeMatrix(src, sizes) {
   switch (ext) {
     case ".jpg":
     case ".jpeg":
-      encodeOpts = encodeOptionsJPEG;
+      encodeOpts = { ...encodeOptionsJPEG };
       originalCodec = "mozjpeg";
       break;
     case ".png":
-      encodeOpts = encodeOptionsPNG;
+      encodeOpts = { ...encodeOptionsPNG };
       originalCodec = "oxipng";
       break;
     default:
