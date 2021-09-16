@@ -25,9 +25,27 @@ export async function optimizeVector(url) {
   }
 }
 
-const encodeOptions = {
-  webp: {},
+const encodeOptionsJPEG = {
   avif: {},
+  mozjpeg: {
+    quality: 95,
+  },
+  webp: {},
+};
+const encodeOptionsPNG = {
+  avif: { quality: 50 },
+  oxipng: { level: 3 },
+  webp: { lossless: 1, nearLossless: 75 },
+};
+
+const codecOptionsHashesCache = new WeakMap();
+const getCodecOptionHash = (codec, options) => {
+  const cachedValue = codecOptionsHashesCache.get(options);
+  if (cachedValue != null) return cachedValue;
+
+  const valueToCache = createHash(JSON.stringify({ [codec]: options }));
+  codecOptionsHashesCache.set(options, valueToCache);
+  return valueToCache;
 };
 
 const getImagePool = (async function* generateImagePool() {
@@ -61,11 +79,11 @@ export async function optimizeMatrix(src, sizes) {
   switch (ext) {
     case ".jpg":
     case ".jpeg":
-      encodeOpts = { ...encodeOptions, mozjpeg: {} };
+      encodeOpts = encodeOptionsJPEG;
       originalCodec = "mozjpeg";
       break;
     case ".png":
-      encodeOpts = { ...encodeOptions, oxipng: { level: 3 } };
+      encodeOpts = encodeOptionsPNG;
       originalCodec = "oxipng";
       break;
     default:
@@ -86,24 +104,31 @@ export async function optimizeMatrix(src, sizes) {
   const sources = [];
   for (const width of sizes) {
     const cacheEntries = await imageCache.get(fileHash, width);
-    try {
-      await Promise.all(
-        Object.keys(encodeOpts).map((codec) =>
-          fs.access(new URL(cacheEntries[codec], OUTPUT_DIR))
-        )
-      );
-      console.log("using cache", src, width);
-      sources.push(
-        ...Object.keys(encodeOpts).map((codec) => ({
-          src,
-          codec,
-          fileName: cacheEntries[codec],
-          width,
-        }))
-      );
-      continue;
-    } catch (err) {
-      console.log(err);
+    if (cacheEntries != null) {
+      try {
+        await Promise.all(
+          Object.entries(encodeOpts).map(([codec, options]) =>
+            fs.access(
+              new URL(
+                cacheEntries[getCodecOptionHash(codec, options)],
+                OUTPUT_DIR
+              )
+            )
+          )
+        );
+        console.log("using cache", src, width);
+        sources.push(
+          ...Object.entries(encodeOpts).map(([codec, options]) => ({
+            src,
+            codec,
+            fileName: cacheEntries[getCodecOptionHash(codec, options)],
+            width,
+          }))
+        );
+        continue;
+      } catch (err) {
+        console.log(err);
+      }
     }
 
     await image.preprocess({
@@ -124,7 +149,14 @@ export async function optimizeMatrix(src, sizes) {
       console.log("converted", src, codec, width);
 
       sources.push({ src, codec, fileName, width });
-      imageCache.set(fileHash, width, codec, fileName).catch(console.error);
+      imageCache
+        .set(
+          fileHash,
+          width,
+          getCodecOptionHash(codec, encodeOpts[codec]),
+          fileName
+        )
+        .catch(console.error);
     }
   }
 
