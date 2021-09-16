@@ -101,6 +101,11 @@ const viewportsToTest = [
     height: 1080,
     deviceScaleFactor: 2,
   },
+  {
+    width: 3840,
+    height: 2160,
+    deviceScaleFactor: 1,
+  },
 ];
 
 const imgData = new Map();
