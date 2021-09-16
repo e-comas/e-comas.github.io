@@ -282,6 +282,11 @@ section.four-step {
     gap: 1.2rem;
     padding: 2.5rem;
     border-radius: $border-radius;
+    background-color: $greyLike;
+
+    &:hover {
+      @extend .inverted;
+    }
 
     img {
       max-width: 2.5rem;
@@ -289,9 +294,6 @@ section.four-step {
 
     &:nth-child(even) {
       transform: translateY(3.3rem);
-    }
-    &:not(.inverted) {
-      background-color: $greyLike;
     }
   }
 }
