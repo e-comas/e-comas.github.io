@@ -108,23 +108,25 @@ export async function optimizeMatrix(src, sizes) {
       try {
         await Promise.all(
           Object.entries(encodeOpts).map(([codec, options]) =>
-            fs.access(
-              new URL(
-                cacheEntries[getCodecOptionHash(codec, options)],
-                OUTPUT_DIR
+            fs
+              .access(
+                new URL(
+                  cacheEntries[getCodecOptionHash(codec, options)],
+                  OUTPUT_DIR
+                )
               )
-            )
+              .then(() => {
+                delete encodeOpts[codec];
+                sources.push({
+                  src,
+                  codec,
+                  fileName: cacheEntries[getCodecOptionHash(codec, options)],
+                  width,
+                });
+              })
           )
         );
         console.log("using cache", src, width);
-        sources.push(
-          ...Object.entries(encodeOpts).map(([codec, options]) => ({
-            src,
-            codec,
-            fileName: cacheEntries[getCodecOptionHash(codec, options)],
-            width,
-          }))
-        );
         continue;
       } catch (err) {
         console.log(err);
