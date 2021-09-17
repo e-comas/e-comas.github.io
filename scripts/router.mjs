@@ -1,7 +1,24 @@
 import { createReadStream } from "node:fs";
 
-import { AUTO_REFRESH_MODULE, INPUT_DIR, OUTPUT_DIR } from "./dev-config.mjs";
-import sass2css from "./sass.mjs";
+import { AUTO_REFRESH_MODULE, INPUT_DIR } from "./dev-config.mjs";
+import getRenderedHTML from "./dev-build-html.mjs";
+import buildJS from "./dev-build-js-from-worker.mjs";
+
+const showErrorOnBrowser = function (errorMessage) {
+  const d = document.createElement("dialog");
+  const h = document.createElement("h2");
+  h.append("TypeScript error");
+  const p = document.createElement("code");
+  p.style.whiteSpace = "pre-wrap";
+  p.style.border = "1px solid";
+  p.style.display = "block";
+  p.style.padding = ".5em";
+  p.style.backgroundColor = "lightgray";
+  p.append(errorMessage);
+  d.append(h, p, "See console for more details.");
+  document.body.append(d);
+  d.showModal();
+};
 
 export default async function router(req, res) {
   if (req.url === `/${AUTO_REFRESH_MODULE}`) {
@@ -20,12 +37,10 @@ export default async function router(req, res) {
   }
 
   const url = new URL(
-    req.url === "/"
-      ? "./home/index.html"
+    req.url === "/" || req.url.startsWith("/?")
+      ? "./index.html"
       : new URL(req.url, "root://").toString().replace("root://", "."),
-    req.url.startsWith("/images/") || req.url.startsWith("/fonts/")
-      ? INPUT_DIR
-      : OUTPUT_DIR
+    INPUT_DIR
   );
 
   const mime = {
@@ -37,6 +52,7 @@ export default async function router(req, res) {
     ".jpg": "image/jpeg",
     ".jpeg": "image/jpeg",
     ".png": "image/png",
+    ".tsx": "application/javascript",
     ".webp": "image/webp",
     ".woff2": "font/woff2",
   };
@@ -44,23 +60,41 @@ export default async function router(req, res) {
   if (ext in mime) res.setHeader("Content-Type", mime[ext]);
   else console.warn("Unknown extension", ext);
 
-  if (ext === ".css") {
-    try {
-      const css = await sass2css(
-        new URL(
-          url
-            .toString()
-            .replace(OUTPUT_DIR.toString(), "./")
-            .replace(".css", ".scss"),
-          INPUT_DIR
-        )
-      );
-      res.end(css);
-    } catch (err) {
-      console.error(err);
-      res.statusCode = 500;
-      res.end("Internal Error");
-    }
+  if (ext === ".html") {
+    const url =
+      req.url === "/" || req.url.startsWith("/?")
+        ? "./index.tsx"
+        : new URL(req.url, "root://").pathname.replace(/\.html$/, ".tsx");
+    getRenderedHTML(url)
+      .then((html) => res.end(html))
+      .catch((e) => {
+        console.error(e);
+        res.statusCode = 500;
+        res.end(
+          "<script type=module src='" +
+            AUTO_REFRESH_MODULE +
+            "'></script><p>Rendering failed</p>"
+        );
+      });
+    return;
+  } else if (ext === ".tsx") {
+    buildJS(url)
+      .then(({ output }) => {
+        const [{ code, map }] = output;
+        res.write(code);
+
+        // Appends Source map to help debugging
+        delete map.sourcesContent;
+        res.write("\n//# sourceMappingURL=data:application/json,");
+        res.end(encodeURI(JSON.stringify(map)));
+      })
+      .catch((e) => {
+        console.error(e);
+        res.statusCode = 206;
+        res.end(
+          `(${showErrorOnBrowser.toString()})(${JSON.stringify(e.message)})`
+        );
+      });
     return;
   }
 

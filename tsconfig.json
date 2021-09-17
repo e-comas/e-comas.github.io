@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "es2015",
+    "lib": ["dom", "esnext", "dom.iterable"],
+    "jsx": "react",
+    "jsxFactory": "h",
+    "sourceMap": true,
+    "rootDir": "./src",
+    "removeComments": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  }
+}

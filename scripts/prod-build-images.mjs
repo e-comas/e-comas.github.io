@@ -138,7 +138,7 @@ export async function optimizeMatrix(src, sizes) {
     await image.preprocess({
       resize: {
         enabled: true,
-        width,
+        width: 1,
       },
     });
 

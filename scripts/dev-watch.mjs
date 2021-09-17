@@ -1,7 +1,7 @@
 import { watch, promises as fs } from "fs";
 
 import { INPUT_DIR } from "./dev-config.mjs";
-import { sendRebuildSignal } from "./dev-build.mjs";
+import { sendRebuildSignal } from "./dev-build-js-from-worker.mjs";
 import { refreshBrowser } from "./dev-server.mjs";
 import { startServer } from "./dev-server.mjs";
 

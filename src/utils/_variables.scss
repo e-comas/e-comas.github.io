@@ -1,0 +1,30 @@
+$border-radius: 6px;
+$blue: #0c195a;
+$green: #64d7be;
+$greyLike: #{$blue}05;
+$white: #fff;
+
+@use "../fonts/Gilroy";
+$Gilroy: Gilroy, sans-serif;
+@use "../fonts/Lato";
+$lato: Lato, sans-serif;
+
+%uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.55rem;
+  letter-spacing: 0.175em;
+}
+%button {
+  @extend %uppercase;
+
+  display: block;
+  color: $blue;
+  background-color: $green;
+  border-radius: $border-radius;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}

@@ -1,0 +1,256 @@
+import { h, Fragment } from "@aduh95/async-jsx";
+
+import Header from "./views/header.js";
+import Footer from "./views/footer.js";
+
+import "./index.scss";
+
+const Body = Fragment as any;
+
+export default (
+  <Body>
+    <Header />
+    <main>
+      <section>
+        <figure>
+          <picture>
+            <img src="/images/expertise_area.png" alt="" />
+          </picture>
+          <figcaption style={{ paddingLeft: 0 }}>
+            <h3>Our area of expertise</h3>
+            <p>
+              Our team has over 30 years of experience working with Amazon and
+              the brands on it. We can help you save time and grow faster on
+              Amazon's various marketplaces.
+            </p>
+            <a href="/our-team.html" class="cta inverted">
+              Read more
+            </a>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="inverted">
+        <figure>
+          <figcaption>
+            <h3>e-Comas in video</h3>
+            <ul>
+              <li>Ate maximus, sum quaspiendam fuga.</li>
+              <li>Lenia plaboriberum is et dersperspide.</li>
+              <li>Ate maximus, sum quaspiendam fuga.</li>
+              <li>Lenia plaboriberum is et dersperspide.</li>
+            </ul>
+            <a href="/our-team.html" class="cta">
+              Read more
+            </a>
+          </figcaption>
+          <picture class="cover">
+            <img
+              src="/images/video_preview.jpg"
+              alt="eComas video"
+              class="cover"
+            />
+          </picture>
+        </figure>
+      </section>
+
+      <section class="four-step">
+        <h2>Our 4-step approach</h2>
+
+        <div>
+          <img src="/images/chess.svg" alt="Chess knight" />
+          <h3>Stategy</h3>
+          <ul>
+            <li>Consumer Prices volatility.</li>
+            <li>
+              Lost Buy Box rates (prices lower from other selling parties).
+            </li>
+            <li>
+              Insights and sentiments analysis on customer reviews and
+              questions.
+            </li>
+          </ul>
+          <p>
+            –&gt; To check how your distribution is working and how the customer
+            perceive your brand and products.
+          </p>
+          <a href="/" class="cta">
+            Read more
+          </a>
+        </div>
+        <div>
+          <img src="/images/euro-cog.svg" alt="Cog" />
+          <h3>Operation</h3>
+          <ul>
+            <li>Out Of Stock occurrences.</li>
+            <li>Logistics Performance (chargebacks, customer satisfaction).</li>
+            <li>Customer support performance and answer to questions.</li>
+          </ul>
+          <p>
+            –&gt; To check if your operations performance is able to support
+            your growth.
+          </p>
+          <a href="/" class="cta">
+            Read more
+          </a>
+        </div>
+        <div>
+          <img src="/images/directions.svg" alt="Directions" />
+          <h3>Conversion</h3>
+          <ul>
+            <li>IDQ (Intelligent Data Quality) Review.</li>
+            <li>Study of conversion rates of your products on Amazon.</li>
+            <li>Benchmark to conversion rates from category.</li>
+          </ul>
+          <p>
+            –&gt; To check if the content on your product pages is cinvincing to
+            your target audience.
+          </p>
+          <a href="/" class="cta">
+            Read more
+          </a>
+        </div>
+        <div>
+          <img src="/images/search.svg" alt="SEO" />
+          <h3>Traffic</h3>
+          <ul>
+            <li>Review of your advertising campaigns.</li>
+            <li>Audit of the keywords, of the aCoS and TaCoS.</li>
+            <li>Other promotion activities review.</li>
+          </ul>
+          <p>
+            –&gt; To check if you are spending your advertisng budget wisely and
+            in the most efficient way.
+          </p>
+          <a href="/" class="cta">
+            Read more
+          </a>
+        </div>
+      </section>
+
+      <section class="twoThird">
+        <picture>
+          <img src="/images/DSC_0041.jpg" alt="" loading="lazy" />
+        </picture>
+        <picture>
+          <img src="/images/DSC_0086.jpg" alt="" loading="lazy" />
+        </picture>
+      </section>
+
+      <section class="threeQuarter">
+        <div class="testimonies">
+          <h2>They did it</h2>
+          <img aria-hidden="true" src="/images/quotes.svg" />
+          <figure>
+            <figcaption>
+              <picture>
+                <img
+                  src="/images/why-are-we-here.jpeg"
+                  alt="Name of the TRUSTOR"
+                />
+              </picture>
+              <time dateTime="1970-01-01">01.01.1970</time>
+              <strong>Name of the TRUSTOR</strong>
+            </figcaption>
+            <blockquote>
+              Volesenda pa venim rest facil eaquid ut expliquis doluptas et
+              fugiame verum alis exceris eum estrum et lautasi molupta sequia
+              eicipsam, apientotae est, ipsae perspis pe et, nulparu ptassuscit.
+            </blockquote>
+          </figure>
+          <a href="/testimonials.html" class="cta">
+            The testimonies
+          </a>
+        </div>
+        <picture>
+          <img src="/images/IMG_5893.jpg" alt="illustration" loading="lazy" />
+        </picture>
+      </section>
+
+      <section class="news">
+        <h3>Our latest news</h3>
+
+        <article>
+          <time dateTime="2021-04-07T14:32:09Z">07.04.2021</time>
+          <h4>News headline title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
+            quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat
+            eum hic ex non. Maiores delectus nemo magni sunt quod et?
+          </p>
+          <a class="cta" href="">
+            Read more
+          </a>
+        </article>
+        <article>
+          <time dateTime="2021-04-07T14:32:09Z">07.04.2021</time>
+          <h4>News headline title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
+            quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat
+            eum hic ex non. Maiores delectus nemo magni sunt quod et?
+          </p>
+          <a class="cta" href="">
+            Read more
+          </a>
+        </article>
+        <article>
+          <time dateTime="2021-04-07T14:32:09Z">07.04.2021</time>
+          <h4>News headline title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
+            quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat
+            eum hic ex non. Maiores delectus nemo magni sunt quod et?
+          </p>
+          <a class="cta" href="">
+            Read more
+          </a>
+        </article>
+
+        <a href="/news.html" class="cta inverted">
+          The news
+        </a>
+      </section>
+
+      <section class="key-figures">
+        <picture class="background" aria-hidden="false">
+          <img src="/images/key-figures-illustration.jpeg" alt="background" />
+        </picture>
+        <p>
+          <strong>+25&nbsp;000</strong> listing managed
+        </p>
+        <p>
+          <strong>+100</strong> vendor &amp; seller accounts opened/managed
+        </p>
+        <p>
+          <strong>+100&nbsp;000&nbsp;€</strong> advertising campaigns handled
+        </p>
+      </section>
+
+      <section class="partners">
+        <h2>Partners we trust</h2>
+        <div>
+          <img alt="partner" />
+          <img alt="partner" />
+          <img alt="partner" />
+          <img alt="partner" />
+          <img alt="partner" />
+          <img alt="partner" />
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </Body>
+).then((e) => document.body.append(e));
+
+declare global {
+  namespace JSX {
+    interface Element
+      extends Promise<DocumentFragment | HTMLElement | SVGElement> {}
+  }
+}
+declare module "react" {
+  interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+    class?: string;
+  }
+}
