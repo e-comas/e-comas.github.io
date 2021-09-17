@@ -1,26 +1,8 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import Eleventy from "@11ty/eleventy";
-import { INPUT_DIR, OUTPUT_DIR } from "./prod-config.mjs";
-
 import {
   generatePictureInnerHTML,
   optimizeMatrix,
   optimizeVector,
 } from "./prod-build-images.mjs";
-
-export async function buildHTML() {
-  // Eleventy doesn't deal with file URLs nor absolute paths
-  const inputDirRelativePath = path.relative(
-    process.cwd(),
-    fileURLToPath(INPUT_DIR)
-  );
-
-  const e11y = new Eleventy(inputDirRelativePath, fileURLToPath(OUTPUT_DIR));
-  e11y.setConfigPathOverride(path.join(inputDirRelativePath, ".eleventy.js"));
-  await e11y.init();
-  await e11y.write();
-}
 
 const viewportsToTest = [
   {

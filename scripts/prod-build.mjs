@@ -5,18 +5,17 @@ import { startServer } from "./dev-server.mjs";
 import { OUTPUT_DIR } from "./prod-config.mjs";
 
 import findPages from "./generate-web-tree.mjs";
-import { buildHTML, crawlPages } from "./prod-build-html.mjs";
+import { crawlPages } from "./prod-build-html.mjs";
 
 process.env.NODE_ENV = "production";
 
 const closeServer = await startServer();
 
-await buildHTML();
-
 let browser;
 try {
-  browser = await puppeteer.launch();
+  browser = await puppeteer.launch(process.env.DEBUG && { devtools: true });
   const pages = await crawlPages(findPages(browser));
+  if (process.env.DEBUG) await new Promise(Function.prototype);
   for (const page of pages) {
     const url = new URL(page.url());
     await writeFile(

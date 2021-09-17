@@ -1,9 +1,13 @@
 import { readFile } from "node:fs/promises";
-import { AUTO_REFRESH_MODULE, INPUT_DIR } from "./dev-config.mjs";
+import {
+  AUTO_REFRESH_MODULE,
+  HTML_TEMPLATE_FILE_NAME,
+  INPUT_DIR,
+} from "./dev-config.mjs";
 // import getRuntimeModules from "./runtime-modules.mjs";
 
 const HTML_TEMPLATE_FILE = readFile(
-  new URL("./template.html", INPUT_DIR),
+  new URL(HTML_TEMPLATE_FILE_NAME, INPUT_DIR),
   "utf-8"
 );
 

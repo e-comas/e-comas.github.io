@@ -1,24 +1,31 @@
-import { PORT_NUMBER } from "./prod-config.mjs";
+import { HTML_TEMPLATE_FILE_NAME, PORT_NUMBER } from "./prod-config.mjs";
 const origin = `http://localhost:${PORT_NUMBER}`;
+
+function loadContentFromTSXModule(tsxUrl) {
+  console.log("trying to import", tsxUrl);
+  return import(tsxUrl)
+    .then((module) => module.default)
+    .then(console.log);
+}
 
 const pageURLs = new Set();
 export default async function* findPages(browser, originRelativeUrl = "/") {
   const url = new URL(originRelativeUrl, origin);
+  if (url.pathname === "/") url.pathname = "/index.html";
   if (url.origin !== origin || pageURLs.has(url.pathname)) return;
 
   const page = await browser.newPage();
   pageURLs.add(url.pathname);
-  url.hash = "";
 
-  const response = await page.goto(url.toString());
-  if (!response.ok()) {
-    console.warn(
-      new Error(
-        `Failed to load ${JSON.stringify(
-          url
-        )}: ${response.status()} ${response.statusText()}`
-      )
+  await page.goto(url.toString());
+  await page.evaluate((env) => (window.process = { env }), process.env);
+  try {
+    await page.evaluate(
+      loadContentFromTSXModule,
+      url.pathname.replace(/\.html$/, ".tsx")
     );
+  } catch (err) {
+    console.warn(originRelativeUrl, "404?", err);
     return;
   }
 

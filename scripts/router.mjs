@@ -3,6 +3,7 @@ import { createReadStream } from "node:fs";
 import { AUTO_REFRESH_MODULE, INPUT_DIR } from "./dev-config.mjs";
 import getRenderedHTML from "./dev-build-html.mjs";
 import buildJS from "./dev-build-js-from-worker.mjs";
+import { HTML_TEMPLATE_FILE_NAME } from "./dev-config.mjs";
 
 const showErrorOnBrowser = function (errorMessage) {
   const d = document.createElement("dialog");
@@ -61,6 +62,17 @@ export default async function router(req, res) {
   else console.warn("Unknown extension", ext);
 
   if (ext === ".html") {
+    if (process.env.NODE_ENV === "production") {
+      const stream = createReadStream(
+        new URL(HTML_TEMPLATE_FILE_NAME, INPUT_DIR)
+      );
+      await new Promise((resolve) => {
+        stream.on("error", console.error);
+        stream.on("close", resolve);
+        stream.pipe(res);
+      });
+      return;
+    }
     const url =
       req.url === "/" || req.url.startsWith("/?")
         ? "./index.tsx"
