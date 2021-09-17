@@ -329,12 +329,29 @@ section.threeQuarter {
   background-color: $greyLike;
   padding: 170px;
 
+  > img {
+    position: absolute;
+    max-height: 4.5rem;
+    max-width: 6.5rem;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-33.3%);
+  }
+
   figure {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 4rem 1fr;
+    gap: 0 1rem;
     figcaption {
       display: contents;
 
+      picture {
+        grid-row: span 3;
+      }
+      img {
+        border-radius: 50%;
+        aspect-ratio: 1;
+        height: auto;
+      }
       time {
         font-size: 0.75rem;
         letter-spacing: 0.175em;
