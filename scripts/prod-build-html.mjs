@@ -121,13 +121,16 @@ async function crawlPage(page, signalIn, signalOut) {
         picture.lastElementChild.src.replace(location.origin, ".")
       );
       if (src) {
-        const width = await elem.evaluate(
-          (img) =>
-            img.naturalWidth /
-            Math.min(
-              img.naturalWidth / img.width,
-              img.naturalHeight / img.height
-            )
+        const width = await elem.evaluate(({ lastElementChild: img }) =>
+          img.width === 0 || img.height === 0
+            ? 0
+            : Math.ceil(
+                img.naturalWidth /
+                  Math.min(
+                    img.naturalWidth / img.width,
+                    img.naturalHeight / img.height
+                  )
+              )
         );
         if (await elem.isIntersectingViewport()) aboveTheFold.add(elem);
         srcMap.set(elem, src);
