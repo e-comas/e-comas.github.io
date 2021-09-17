@@ -1,11 +1,10 @@
-import { h, Fragment } from "@aduh95/async-jsx";
+import { h } from "@aduh95/async-jsx";
 
-import Header from "./views/header.js";
-import Footer from "./views/footer.js";
+import Body from "./views/Body.js";
+import Header from "./views/Header.js";
+import Footer from "./views/Footer.js";
 
 import "./index.scss";
-
-const Body = Fragment as any;
 
 export default (
   <Body>
@@ -242,15 +241,3 @@ export default (
     <Footer />
   </Body>
 ).then((e) => document.body.append(e));
-
-declare global {
-  namespace JSX {
-    interface Element
-      extends Promise<DocumentFragment | HTMLElement | SVGElement> {}
-  }
-}
-declare module "react" {
-  interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-    class?: string;
-  }
-}

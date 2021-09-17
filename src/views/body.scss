@@ -1,4 +1,7 @@
-@use "./variables" as *;
+@use "../utils/variables" as *;
+
+@use "../fonts/Gilroy";
+@use "../fonts/Lato";
 
 *,
 *::after,
@@ -17,8 +20,7 @@ body {
 }
 
 .inverted {
-  background-color: $blue;
-  color: $white;
+  @extend %inverted;
 }
 .cta {
   @extend %button;

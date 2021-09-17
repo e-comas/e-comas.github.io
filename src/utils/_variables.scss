@@ -4,9 +4,7 @@ $green: #64d7be;
 $greyLike: #{$blue}05;
 $white: #fff;
 
-@use "../fonts/Gilroy";
 $Gilroy: Gilroy, sans-serif;
-@use "../fonts/Lato";
 $lato: Lato, sans-serif;
 
 %uppercase {
@@ -27,4 +25,9 @@ $lato: Lato, sans-serif;
   text-decoration: none;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+%inverted {
+  background-color: $blue;
+  color: $white;
 }
