@@ -3,6 +3,7 @@ import { h } from "@aduh95/async-jsx";
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Footer from "./views/Footer.js";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 
 import "./index.scss";
 
@@ -211,10 +212,7 @@ export default (
         </a>
       </section>
 
-      <section class="key-figures">
-        <picture class="background" aria-hidden="false">
-          <img src="/images/key-figures-illustration.jpeg" alt="background" />
-        </picture>
+      <ElementWithBackgroundImage tagName="section" src="/images/key-figures-illustration.jpeg" class="key-figures">
         <p>
           <strong>+25&nbsp;000</strong> listing managed
         </p>
@@ -224,7 +222,7 @@ export default (
         <p>
           <strong>+100&nbsp;000&nbsp;€</strong> advertising campaigns handled
         </p>
-      </section>
+      </ElementWithBackgroundImage>
 
       <section class="partners">
         <h2>Partners we trust</h2>

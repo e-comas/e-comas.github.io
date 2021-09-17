@@ -1,7 +1,6 @@
 @use "../utils/variables" as *;
 
 header {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr minmax(600px, auto);
   grid-template-rows: auto 1fr;
