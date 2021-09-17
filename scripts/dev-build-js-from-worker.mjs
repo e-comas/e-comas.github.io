@@ -1,5 +1,6 @@
 import { fileURLToPath } from "url";
 import { Worker, isMainThread, parentPort } from "worker_threads";
+import { resetTsPlugin } from "./dev-build-js.mjs";
 
 let jobs = [];
 let idCounter = 0;
@@ -57,6 +58,9 @@ if (isMainThread) {
     // } else {
     //   buildCache.then((cache) => parentPort.postMessage({ id, ...cache }));
     // }
+    if (rebuild?.endsWith?.(".tsx")) {
+      resetTsPlugin();
+    }
     if (urlOrPath != null)
       import("./dev-build-js.mjs")
         .then((module) => module.default(urlOrPath))

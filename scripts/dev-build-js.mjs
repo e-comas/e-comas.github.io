@@ -19,6 +19,10 @@ async function buildWithCache(input) {
   return bundle;
 }
 
+export function resetTsPlugin() {
+  plugins[0] = typescript();
+}
+
 export default (urlOrPath) =>
   buildWithCache(urlOrPath).then((bundle) =>
     bundle.generate({ sourcemap: "hidden", format: "esm" })
