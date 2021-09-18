@@ -17,7 +17,7 @@ export default () => (
         <a href="/services.html">Services</a>
         <ul>
           <li>
-            <a>Strategy</a>
+            <a href="/strategy.html">Strategy</a>
           </li>
           <li>
             <a>Operation</a>
