@@ -20,13 +20,13 @@ export default () => (
             <a href="/strategy.html">Strategy</a>
           </li>
           <li>
-            <a>Operation</a>
+            <a href="/operation.html">Operation</a>
           </li>
           <li>
-            <a>Conversion</a>
+            <a href="/conversion.html">Conversion</a>
           </li>
           <li>
-            <a>Traffic</a>
+            <a href="/traffic.html">Traffic</a>
           </li>
         </ul>
       </div>
