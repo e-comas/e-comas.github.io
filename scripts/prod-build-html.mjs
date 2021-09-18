@@ -3,6 +3,7 @@ import {
   optimizeMatrix,
   optimizeVector,
 } from "./prod-build-images.mjs";
+import sass2css from "./prod-build-css.mjs";
 
 const viewportsToTest = [
   {
@@ -91,6 +92,7 @@ const viewportsToTest = [
 ];
 
 const imgData = new Map();
+const sassMappings = new Map();
 
 async function crawlPage(page, signalIn, signalOut) {
   const srcMap = new WeakMap();
@@ -123,6 +125,13 @@ async function crawlPage(page, signalIn, signalOut) {
     }
   }
 
+  const styleNodes = await page.$$("style[data-file]");
+  for (const elem of styleNodes) {
+    const file = await elem.evaluate((elem) => elem.dataset.file);
+    sassMappings.get(file)?.add(page.url()) ??
+      sassMappings.set(file, new Set().add(page.url()));
+  }
+
   signalOut();
 
   const vectorImages = await page.$$("img:not(picture>img)");
@@ -140,7 +149,7 @@ async function crawlPage(page, signalIn, signalOut) {
     await elem.dispose();
   }
 
-  const jobs = await signalIn;
+  const { sassBundling, jobs } = await signalIn;
 
   for (const elem of matrixImages) {
     const src = srcMap.get(elem);
@@ -150,6 +159,39 @@ async function crawlPage(page, signalIn, signalOut) {
     }, await generatePictureInnerHTML(src, alt, aboveTheFold.has(elem), jobs));
     await elem.dispose();
   }
+
+  for (const elem of styleNodes) {
+    await elem.evaluate((elem) => elem.remove());
+    await elem.dispose();
+  }
+  await page.evaluate(
+    (urls) => {
+      document.head.append(
+        ...urls.map((url) => {
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = url;
+          return link;
+        })
+      );
+    },
+    await Promise.all(
+      Array.from(sassBundling.entries(), ([pages, sassFiles]) => {
+        if (pages.has(page.url())) {
+          return sass2css(sassFiles);
+        }
+      }).filter(Boolean)
+    )
+  );
+}
+
+function isSuperset(set, subset) {
+  for (let elem of subset) {
+    if (!set.has(elem)) {
+      return false;
+    }
+  }
+  return true;
 }
 
 export async function crawlPages(pages) {
@@ -178,12 +220,24 @@ export async function crawlPages(pages) {
 
   await Promise.all(waitForSignal);
 
+  const sassBundling = new Map();
+  sassMappingsLoop: for (const [sassFile, pages] of sassMappings) {
+    for (const [_pages, sassBundle] of sassBundling) {
+      if (isSuperset(pages, _pages) && isSuperset(_pages, pages)) {
+        sassBundle.push(sassFile);
+        continue sassMappingsLoop;
+      }
+    }
+    sassBundling.set(pages, [sassFile]);
+  }
+  console.log(sassMappings, sassBundling);
+
   const jobs = Object.create(null);
   for (const [src, widths] of imgData) {
     jobs[src] = optimizeMatrix(src, widths);
     jobs[src].catch(console.warn);
   }
-  setAllPagesAsReady(jobs);
+  setAllPagesAsReady({ jobs, sassBundling });
 
   await allTransformationsAreDone;
   console.log("All image transformations are done");
