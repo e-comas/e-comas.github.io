@@ -22,6 +22,7 @@ export default async function sass2css(sassFiles) {
     cssnano({ preset: ["advanced"] }),
     copyAssets({
       base: INPUT_DIR,
+      distBase: OUTPUT_DIR,
       urlTransform(url, contents) {
         const lastDotIndex = url.pathname.lastIndexOf(".");
         const ext = lastDotIndex === -1 ? "" : url.pathname.slice(lastDotIndex);

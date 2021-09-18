@@ -3,7 +3,7 @@
 import fs from "node:fs";
 
 const cache = new WeakSet();
-export default function copyAssets({ base, urlTransform }) {
+export default function copyAssets({ base, distBase, urlTransform }) {
   return {
     postcssPlugin: "postcss-copy-assets",
     Declaration(decl) {
@@ -38,7 +38,7 @@ export default function copyAssets({ base, urlTransform }) {
           const newAssetFileURL = urlTransform(url, contents);
 
           const newUrlString = `url(${JSON.stringify(
-            newAssetFileURL.pathname.slice(base.pathname.length + 1) +
+            newAssetFileURL.pathname.slice(distBase.pathname.length) +
               url.search +
               url.hash
           )})`;
