@@ -5,11 +5,13 @@ import Header from "./views/Header.js";
 import Footer from "./views/Footer.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 
+import "./services.scss";
+
 export default (
   <Body>
     <Header />
     <main>
-      <section>
+      <section class="twoThird">
         <figure>
           <figcaption style={{ paddingLeft: 0 }}>
             <h3>Our audit tool: Compas</h3>

@@ -74,6 +74,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 p,
@@ -83,4 +84,31 @@ ul {
   font-family: $lato;
   margin: 0;
   padding: 0;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+%containsCoverPicture {
+  display: grid;
+  gap: 1.2rem;
+  figure {
+    display: contents;
+  }
+  picture,
+  img {
+    @extend .cover;
+  }
+}
+
+section.twoThird {
+  @extend %containsCoverPicture;
+  grid-template-columns: 2fr 1fr;
+}
+section.threeQuarter {
+  @extend %containsCoverPicture;
+  grid-template-columns: 3fr 1fr;
 }

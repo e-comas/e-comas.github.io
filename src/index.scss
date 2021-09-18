@@ -25,28 +25,6 @@ section {
   }
 }
 
-.cover {
-  height: 100%;
-  object-fit: cover;
-}
-
-%containsCoverPicture {
-  display: grid;
-  gap: 1.2rem;
-  picture,
-  img {
-    @extend .cover;
-  }
-}
-section.twoThird {
-  @extend %containsCoverPicture;
-  grid-template-columns: 2fr 1fr;
-}
-section.threeQuarter {
-  @extend %containsCoverPicture;
-  grid-template-columns: 3fr 1fr;
-}
-
 .testimonies {
   display: flex;
   gap: 2.5rem;

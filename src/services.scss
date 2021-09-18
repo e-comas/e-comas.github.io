@@ -1,0 +1,6 @@
+@use "./utils/variables" as *;
+
+section figcaption {
+  background-color: $greyLike;
+  padding: 170px;
+}
