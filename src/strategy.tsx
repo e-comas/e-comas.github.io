@@ -2,17 +2,21 @@ import { h } from "@aduh95/async-jsx";
 
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
+import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import Picture from "./utils/Picture.js";
 
 import "./strategy.scss";
 
+const pageTitle = "Strategy";
+
 export default (
   <Body>
     <Header />
+    <Breadcrumbs pageTitle={pageTitle} />
     <main>
       <section>
-        <h1>Strategy</h1>
+        <h1>{pageTitle}</h1>
         <img aria-hidden="true" alt="" src="/images/chess.svg" />
         <ul>
           <li>Consumer Prices volatility</li>
