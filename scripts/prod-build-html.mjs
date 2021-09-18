@@ -230,7 +230,6 @@ export async function crawlPages(pages) {
     }
     sassBundling.set(pages, [sassFile]);
   }
-  console.log(sassMappings, sassBundling);
 
   const jobs = Object.create(null);
   for (const [src, widths] of imgData) {
