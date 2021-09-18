@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Footer from "./views/Footer.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 import FourStepApproach from "./views/FourStepApproach.js";
+import Picture from "./utils/Picture.js";
 
 import "./index.scss";
 
@@ -14,9 +15,7 @@ export default (
     <main>
       <section>
         <figure>
-          <picture>
-            <img src="/images/expertise_area.png" alt="" />
-          </picture>
+          <Picture src="/images/expertise_area.png" alt="" />
           <figcaption style={{ paddingLeft: 0 }}>
             <h3>Our area of expertise</h3>
             <p>
@@ -45,25 +44,19 @@ export default (
               Read more
             </a>
           </figcaption>
-          <picture class="cover">
-            <img
-              src="/images/video_preview.jpg"
-              alt="eComas video"
-              class="cover"
-            />
-          </picture>
+          <Picture
+            class="cover"
+            src="/images/video_preview.jpg"
+            alt="eComas video"
+          />
         </figure>
       </section>
 
       <FourStepApproach />
 
       <section class="twoThird">
-        <picture>
-          <img src="/images/DSC_0041.jpg" alt="" loading="lazy" />
-        </picture>
-        <picture>
-          <img src="/images/DSC_0086.jpg" alt="" loading="lazy" />
-        </picture>
+        <Picture src="/images/DSC_0041.jpg" alt="" />
+        <Picture src="/images/DSC_0086.jpg" alt="" />
       </section>
 
       <section class="threeQuarter">
@@ -72,12 +65,10 @@ export default (
           <img aria-hidden="true" src="/images/quotes.svg" />
           <figure>
             <figcaption>
-              <picture>
-                <img
-                  src="/images/why-are-we-here.jpeg"
-                  alt="Name of the TRUSTOR"
-                />
-              </picture>
+              <Picture
+                src="/images/why-are-we-here.jpeg"
+                alt="Name of the TRUSTOR"
+              />
               <time dateTime="1970-01-01">01.01.1970</time>
               <strong>Name of the TRUSTOR</strong>
             </figcaption>
@@ -91,9 +82,7 @@ export default (
             The testimonies
           </a>
         </div>
-        <picture>
-          <img src="/images/IMG_5893.jpg" alt="illustration" loading="lazy" />
-        </picture>
+        <Picture src="/images/IMG_5893.jpg" alt="illustration" />
       </section>
 
       <section class="news">
