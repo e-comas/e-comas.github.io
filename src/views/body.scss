@@ -13,10 +13,19 @@
   font-size: 125%;
   font-family: $Gilroy;
   color: $blue;
+  width: 100%;
+  min-height: 100%;
 }
 body {
   margin: 0;
   padding: 1.5rem;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .inverted {
@@ -71,10 +80,7 @@ h5 {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 1.5rem 0;
+  display: contents;
 }
 
 p,
