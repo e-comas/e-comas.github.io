@@ -98,7 +98,7 @@ const viewportsToTest = [
     height: 2160,
     deviceScaleFactor: 1,
   },
-];
+].sort((a, b) => b.width * b.deviceScaleFactor - a.width * a.deviceScaleFactor);
 
 const imgData = new Map();
 const sassMappings = new Map();
@@ -177,7 +177,7 @@ async function crawlPage(page, signalIn, signalOut) {
 
   for (const elem of matrixImages) {
     const src = srcMap.get(elem);
-    const alt = await elem.evaluate((image) => image.alt);
+    const alt = await elem.evaluate(({ lastElementChild: image }) => image.alt);
     await elem.evaluate((node, src) => {
       node.innerHTML = src;
     }, await generatePictureInnerHTML(src, alt, aboveTheFold.has(elem), jobs));
