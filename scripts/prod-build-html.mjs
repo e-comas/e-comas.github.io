@@ -98,7 +98,7 @@ const viewportsToTest = [
     height: 2160,
     deviceScaleFactor: 1,
   },
-].sort((a, b) => b.width * b.deviceScaleFactor - a.width * a.deviceScaleFactor);
+];
 
 const imgData = new Map();
 const sassMappings = new Map();

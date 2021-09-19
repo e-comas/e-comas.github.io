@@ -110,7 +110,7 @@ export async function optimizeMatrix(src, sizes) {
 
   imageCache ??= new CacheMap(new URL("./cache.csv", OUTPUT_DIR));
   const sources = [];
-  for (const width of sizes) {
+  for (const width of Array.from(sizes).sort((a, b) => b - a)) {
     if (width == 0 || Number.isNaN(width)) continue;
 
     const cacheWidth = Math.min(originalWidth, width);
