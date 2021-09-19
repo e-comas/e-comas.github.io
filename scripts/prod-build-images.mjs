@@ -43,7 +43,7 @@ const encodeOptionsPNG = {
   webp: { lossless: 1, nearLossless: 75 },
 };
 
-const codecOptionsHashesCache = new WeakMap();
+const codecOptionsHashesCache = new Map();
 const getCodecOptionHash = (codec, options) => {
   const cachedValue = codecOptionsHashesCache.get(options);
   if (cachedValue != null) return cachedValue;
