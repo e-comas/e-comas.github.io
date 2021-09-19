@@ -25,6 +25,23 @@ section {
   }
 }
 
+.area-of-expertise {
+  img {
+    object-fit: contain;
+    height: 100%;
+  }
+  figcaption {
+    padding-left: 0;
+  }
+}
+
+.cover {
+  &,
+  & img {
+    @extend %cover;
+  }
+}
+
 .testimonies {
   display: flex;
   gap: 2.5rem;

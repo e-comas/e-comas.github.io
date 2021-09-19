@@ -10,10 +10,6 @@ interface PictureProps {
 
 export default (props: PictureProps) => (
   <picture class={props.class || props.className}>
-    <img
-      src={props.src}
-      alt={props.alt}
-      class={props.class || props.className}
-    />
+    <img src={props.src} alt={props.alt} />
   </picture>
 );

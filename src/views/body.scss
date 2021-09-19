@@ -97,24 +97,6 @@ ul {
   padding: 0;
 }
 
-.cover {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-%containsCoverPicture {
-  display: grid;
-  gap: 1.2rem;
-  figure {
-    display: contents;
-  }
-  picture,
-  img {
-    @extend .cover;
-  }
-}
-
 section.twoThird {
   @extend %containsCoverPicture;
   grid-template-columns: 2fr 1fr;

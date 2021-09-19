@@ -13,10 +13,10 @@ export default (
   <Body>
     <Header />
     <main>
-      <section>
+      <section class="area-of-expertise">
         <figure>
           <Picture src="/images/expertise_area.png" alt="" />
-          <figcaption style={{ paddingLeft: 0 }}>
+          <figcaption>
             <h3>Our area of expertise</h3>
             <p>
               Our team has over 30 years of experience working with Amazon and
