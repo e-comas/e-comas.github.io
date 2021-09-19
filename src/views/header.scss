@@ -4,7 +4,7 @@ header {
   display: grid;
   grid-template-columns: 1fr minmax(600px, auto);
   grid-template-rows: auto 1fr;
-  padding: 2rem 170px;
+  padding: 2rem;
   gap: 1rem;
 
   height: 50vh;
@@ -55,5 +55,15 @@ header {
     color: $white;
     max-width: 800px;
     align-self: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: auto minmax(auto, 600px) 600px auto;
+    & > a {
+      grid-column: 2;
+    }
+    h1 {
+      grid-column: 2 / 4;
+    }
   }
 }
