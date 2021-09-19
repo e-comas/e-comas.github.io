@@ -75,16 +75,25 @@ const viewportsToTest = [
     deviceScaleFactor: 1,
   },
   {
+    // Full HD
     width: 1920,
     height: 1080,
     deviceScaleFactor: 1,
   },
   {
+    // Retina Full HD
     width: 1920,
     height: 1080,
     deviceScaleFactor: 2,
   },
   {
+    // QHD
+    width: 2880,
+    height: 1440,
+    deviceScaleFactor: 1,
+  },
+  {
+    // 4K
     width: 3840,
     height: 2160,
     deviceScaleFactor: 1,
@@ -108,6 +117,8 @@ async function crawlPage(page, signalIn, signalOut) {
         const width = await elem.evaluate(({ lastElementChild: img }) =>
           img.width === 0 || img.height === 0
             ? 0
+            : img.width >= img.naturalWidth
+            ? img.naturalWidth
             : Math.ceil(
                 img.naturalWidth /
                   Math.min(
