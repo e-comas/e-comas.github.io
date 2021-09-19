@@ -5,8 +5,9 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import Picture from "./utils/Picture.js";
+import ElementWithIcon from "./utils/ElementWithIcon.js";
 
-// import "./strategy.scss";
+import "./strategy.scss";
 
 const pageTitle = "Operation";
 
@@ -15,18 +16,18 @@ export default (
     <Header />
     <Breadcrumbs pageTitle={pageTitle} />
     <main>
-      <section>
+      <ElementWithIcon tagName="section" src="/images/euro-cog.svg">
         <h1>{pageTitle}</h1>
-        <img aria-hidden="true" alt="" src="/images/euro-cog.svg" />
         <ul>
           <li>Out Of Stock occurrences</li>
           <li>Logistics Performance (chargebacks, customer satisfaction)</li>
           <li>Customer support performance and answer to questions</li>
         </ul>
         <p>
-          To check if your operations performance is able to support your growth
+          → To check if your operations performance is able to support your
+          growth
         </p>
-      </section>
+      </ElementWithIcon>
 
       <section class="twoThird">
         <Picture src="/images/IMG_5892.jpg" alt="team picture" />

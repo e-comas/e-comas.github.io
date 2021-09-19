@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import Picture from "./utils/Picture.js";
+import ElementWithIcon from "./utils/ElementWithIcon.js";
 
 import "./strategy.scss";
 
@@ -15,9 +16,8 @@ export default (
     <Header />
     <Breadcrumbs pageTitle={pageTitle} />
     <main>
-      <section>
+      <ElementWithIcon tagName="section" src="/images/chess.svg">
         <h1>{pageTitle}</h1>
-        <img aria-hidden="true" alt="" src="/images/chess.svg" />
         <ul>
           <li>Consumer Prices volatility</li>
           <li>Lost Buy Box rates (prices lower from other selling parties) </li>
@@ -25,12 +25,12 @@ export default (
             Insights and sentiments analysis on customer reviews and questions.
           </li>
         </ul>
-        
+
         <p>
-          To check how your distribution is working and how the customer
+          → To check how your distribution is working and how the customer
           perceive your brand and products.
         </p>
-      </section>
+      </ElementWithIcon>
 
       <section class="twoThird">
         <Picture src="/images/image00002.jpeg" alt="team picture" />

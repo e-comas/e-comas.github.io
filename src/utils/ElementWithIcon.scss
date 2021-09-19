@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+.element-with-icon {
+  position: relative;
+  margin: auto;
+  & > img:first-of-type {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    transform: translateX(-100%) translateX(-1.2rem);
+  }
+}
