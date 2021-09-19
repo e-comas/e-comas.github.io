@@ -7,9 +7,13 @@ import { INPUT_DIR, OUTPUT_DIR } from "./prod-config.mjs";
 import createHash from "./prod-hash.mjs";
 import CacheMap from "./prod-image-cache.mjs";
 
+const vectorCache = Object.create(null);
 export async function optimizeVector(url) {
   console.log("vector", url);
   url = new URL(url, INPUT_DIR);
+
+  if (url.pathname in vectorCache) return vectorCache[url.pathname];
+
   const ext = path.extname(url.pathname);
 
   switch (ext) {
@@ -18,6 +22,7 @@ export async function optimizeVector(url) {
       const hash = createHash(fileContent);
       const fileName = `${hash}.svg`;
       await fs.writeFile(new URL(fileName, OUTPUT_DIR), fileContent);
+      vectorCache[url.pathname] = fileName;
       return fileName;
 
     default:
