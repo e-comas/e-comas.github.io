@@ -149,6 +149,21 @@ async function crawlPage(page, signalIn, signalOut) {
     await elem.dispose();
   }
 
+  const vectorFavicon = await page.$("link[rel='icon'][type='image/svg+xml']");
+  if (vectorFavicon) {
+    const src = await vectorFavicon.evaluate((image) =>
+      image.href.replace(location.origin, ".")
+    );
+    if (src) {
+      await vectorFavicon.evaluate((node, src) => {
+        node.href = src;
+      }, await optimizeVector(src));
+    } else {
+      console.warn(new Error("Favicon without href attribute"));
+    }
+    await vectorFavicon.dispose();
+  }
+
   const { sassBundling, jobs } = await signalIn;
 
   for (const elem of matrixImages) {
