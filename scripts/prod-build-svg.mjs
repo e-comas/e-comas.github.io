@@ -3,14 +3,9 @@ const config = {
     {
       name: "preset-default",
       params: {
-        overrides: {
-          removeHiddenElems: false,
-          removeUselessDefs: false,
-          cleanupIDs: false,
-        },
+        overrides: {},
       },
     },
-    { name: "convertStyleToAttrs", active: false },
   ],
 };
 

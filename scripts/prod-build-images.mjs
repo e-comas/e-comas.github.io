@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-import { svgo } from "./optimize-svg.mjs";
+import { svgo } from "./prod-build-svg.mjs";
 
 import { INPUT_DIR, OUTPUT_DIR } from "./prod-config.mjs";
 import createHash from "./prod-hash.mjs";
