@@ -27,7 +27,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Environment Information
         run: npx envinfo
-      - run: corepack enable
+      - run: corepack prepare
       - name: Install dependencies
         run: yarn --immutable
       - name: Build website
