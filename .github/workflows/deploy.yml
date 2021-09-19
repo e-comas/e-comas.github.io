@@ -1,0 +1,42 @@
+name: Deploy website
+
+on:
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: v16.x
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: docs
+      - name: Cache npm dependencies
+        id: cache-npm-libraries
+        uses: actions/cache@v2
+        with:
+          path: .yarn/cache/*
+          key: ${{ runner.os }}
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Environment Information
+        run: npx envinfo
+      - run: corepack enable
+      - name: Install dependencies
+        run: yarn --immutable
+      - name: Build website
+        run: yarn build
+      - name: Deploy
+        run: |
+          cd docs
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
