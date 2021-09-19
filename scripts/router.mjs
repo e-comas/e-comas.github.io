@@ -57,7 +57,9 @@ export default async function router(req, res) {
     ".webp": "image/webp",
     ".woff2": "font/woff2",
   };
-  const ext = url.pathname.slice(url.pathname.lastIndexOf("."));
+  const ext = url.pathname
+    .slice(url.pathname.lastIndexOf("."))
+    .toLocaleLowerCase();
   if (ext in mime) res.setHeader("Content-Type", mime[ext]);
   else console.warn("Unknown extension", ext);
 
