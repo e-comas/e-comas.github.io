@@ -26,6 +26,7 @@
   },
   "scripts": {
     "start": "node --experimental-json-modules scripts/dev-watch.mjs",
-    "build": "NODE_ENV=production node --experimental-json-modules scripts/prod-build.mjs"
+    "build": "NODE_ENV=production node --experimental-json-modules scripts/prod-build.mjs",
+    "deploy": "git push && gh workflow run deploy.yml --ref main"
   }
 }
