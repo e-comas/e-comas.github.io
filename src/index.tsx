@@ -55,8 +55,8 @@ export default (
       <FourStepApproach />
 
       <section class="twoThird">
-        <Picture src="/images/DSC_0041.jpg" alt="" />
-        <Picture src="/images/DSC_0086.jpg" alt="" />
+        <Picture src="/images/DSC_0041.JPG" alt="" />
+        <Picture src="/images/DSC_0086.JPG" alt="" />
       </section>
 
       <section class="threeQuarter">

@@ -37,7 +37,7 @@ export default (
             </ul>
           </figcaption>
           <picture>
-            <img src="./images/DSC_0041.jpg" alt="" />
+            <img src="./images/DSC_0041.JPG" alt="" />
           </picture>
         </figure>
       </section>
