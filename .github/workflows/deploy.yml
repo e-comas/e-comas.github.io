@@ -27,11 +27,10 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Environment Information
         run: npx envinfo
-      - run: corepack prepare
       - name: Install dependencies
-        run: yarn --immutable
+        run: corepack yarn install --immutable
       - name: Build website
-        run: yarn build
+        run: corepack yarn build
       - name: Deploy
         run: |
           cd docs
