@@ -151,6 +151,8 @@ async function crawlPage(page, signalIn, signalOut) {
     if (src) {
       await elem.evaluate((node, src) => {
         node.src = src;
+        node.setAttribute("width", node.width);
+        node.setAttribute("height", node.height);
       }, await optimizeVector(src));
     } else {
       console.warn(new Error("Vector image without src attribute"));
