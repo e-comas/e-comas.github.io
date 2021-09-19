@@ -48,7 +48,10 @@ const getCodecOptionHash = (codec, options) => {
   const cachedValue = codecOptionsHashesCache.get(options);
   if (cachedValue != null) return cachedValue;
 
-  const valueToCache = createHash(JSON.stringify({ [codec]: options }));
+  const valueToCache = createHash(
+    JSON.stringify({ [codec]: options }),
+    "base64"
+  );
   codecOptionsHashesCache.set(options, valueToCache);
   return valueToCache;
 };
@@ -98,7 +101,7 @@ export async function optimizeMatrix(src, sizes) {
   }
 
   const fileContent = await fs.readFile(url);
-  const fileHash = createHash(fileContent);
+  const fileHash = createHash(fileContent, "base64");
   const image = imagePool.ingestImage(fileContent);
 
   const {
