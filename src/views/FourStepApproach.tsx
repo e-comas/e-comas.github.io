@@ -20,7 +20,7 @@ export default () => (
         –&gt; To check how your distribution is working and how the customer
         perceive your brand and products.
       </p>
-      <a href="/" class="cta">
+      <a href="/strategy.html" class="cta">
         Read more
       </a>
     </div>
@@ -36,7 +36,7 @@ export default () => (
         –&gt; To check if your operations performance is able to support your
         growth.
       </p>
-      <a href="/" class="cta">
+      <a href="/operation.html" class="cta">
         Read more
       </a>
     </div>
@@ -52,7 +52,7 @@ export default () => (
         –&gt; To check if the content on your product pages is cinvincing to
         your target audience.
       </p>
-      <a href="/" class="cta">
+      <a href="/conversion.html" class="cta">
         Read more
       </a>
     </div>
@@ -68,7 +68,7 @@ export default () => (
         –&gt; To check if you are spending your advertisng budget wisely and in
         the most efficient way.
       </p>
-      <a href="/" class="cta">
+      <a href="/traffic.html" class="cta">
         Read more
       </a>
     </div>

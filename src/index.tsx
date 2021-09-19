@@ -23,7 +23,7 @@ export default (
               the brands on it. We can help you save time and grow faster on
               Amazon's various marketplaces.
             </p>
-            <a href="/our-team.html" class="cta inverted">
+            <a href="/experience.html" class="cta inverted">
               Read more
             </a>
           </figcaption>
