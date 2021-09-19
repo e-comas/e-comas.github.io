@@ -1,10 +1,14 @@
 @use "../utils/variables" as *;
 
+$gap: 1.2rem;
+
 section.four-step {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
-  padding: 170px;
+  gap: $gap;
+  padding: 5rem $gap;
+  max-width: $max-width;
+  margin: 0 auto;
 
   &::before {
     content: "";
@@ -15,7 +19,7 @@ section.four-step {
   & > div {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: $gap;
     padding: 2.5rem;
     border-radius: $border-radius;
     background-color: $greyLike;
