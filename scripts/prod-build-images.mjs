@@ -105,7 +105,7 @@ export async function optimizeMatrix(src, sizes) {
   const image = imagePool.ingestImage(fileContent);
 
   const {
-    bitmap: { width, height },
+    bitmap: { width: originalWidth, height },
   } = await image.decoded;
 
   imageCache ??= new CacheMap(new URL("./cache.csv", OUTPUT_DIR));
@@ -113,7 +113,8 @@ export async function optimizeMatrix(src, sizes) {
   for (const width of sizes) {
     if (width == 0 || Number.isNaN(width)) continue;
 
-    const cacheEntries = await imageCache.get(fileHash, width);
+    const cacheWidth = Math.min(originalWidth, width);
+    const cacheEntries = await imageCache.get(fileHash, cacheWidth);
     if (cacheEntries != null) {
       try {
         await Promise.all(
@@ -145,7 +146,7 @@ export async function optimizeMatrix(src, sizes) {
 
     await image.preprocess({
       resize: {
-        enabled: true,
+        enabled: width < originalWidth,
         width,
       },
     });
@@ -164,7 +165,7 @@ export async function optimizeMatrix(src, sizes) {
       imageCache
         .set(
           fileHash,
-          width,
+          cacheWidth,
           getCodecOptionHash(codec, encodeOpts[codec]),
           fileName
         )
@@ -174,7 +175,7 @@ export async function optimizeMatrix(src, sizes) {
 
   closeImagePool();
 
-  return { sources, originalCodec, width, height };
+  return { sources, originalCodec, width: originalWidth, height };
 }
 
 const toSrcset = (data, codec) =>

@@ -117,8 +117,6 @@ async function crawlPage(page, signalIn, signalOut) {
         const width = await elem.evaluate(({ lastElementChild: img }) =>
           img.width === 0 || img.height === 0
             ? 0
-            : img.width >= img.naturalWidth
-            ? img.naturalWidth
             : Math.ceil(
                 img.naturalWidth /
                   Math.min(
