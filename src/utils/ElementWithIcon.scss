@@ -3,7 +3,7 @@
 .element-with-icon {
   position: relative;
   margin: auto;
-  & > img:first-of-type {
+  & > div > img:first-of-type {
     position: absolute;
     width: 2.5rem;
     height: 2.5rem;

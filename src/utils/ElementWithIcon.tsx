@@ -14,8 +14,6 @@ interface ElementWithIcon
 export default (props: ElementWithIcon, children: any[]) => {
   const className =
     (props.class || props.className || "") + " element-with-icon";
-  console.log(children);
-  children[0].then(console.log);
   return h(
     props.tagName,
     {
@@ -25,6 +23,11 @@ export default (props: ElementWithIcon, children: any[]) => {
       tagName: undefined,
       src: undefined,
     } as any,
-    [<img src={props.src} alt="illustration" aria-hidden="true" />, ...children]
+    [
+      h("div", {} as any, [
+        <img src={props.src} alt="illustration" aria-hidden="true" />,
+        ...children,
+      ]),
+    ]
   ) as JSX.Element;
 };
