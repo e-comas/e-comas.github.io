@@ -12,6 +12,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aduh95/toml@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "@aduh95/toml@npm:0.4.2"
+  checksum: 9f3ba256af9754e5f33c1afb870981f27740cb17718bdc75de7454499840fa78c22f5f1545c3c84a8b103b183be03885d8febec2ef9cc780f915237c8872f1f8
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
@@ -879,6 +886,7 @@ __metadata:
   resolution: "e-comas.com@workspace:."
   dependencies:
     "@aduh95/async-jsx": ^0.2.0
+    "@aduh95/toml": ^0.4.2
     "@rollup/plugin-node-resolve": ^13.0.4
     "@rollup/plugin-typescript": ^8.2.5
     "@squoosh/lib": ^0.4.0

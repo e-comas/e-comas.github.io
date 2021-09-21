@@ -60,6 +60,10 @@ if (isMainThread) {
     // }
     if (rebuild?.endsWith?.(".tsx")) {
       resetTsPlugin();
+    } else if (rebuild?.endsWith?.(".toml")) {
+      import("./dev-generate-toml-interop-files.mjs")
+        .then((module) => module.createInteropFilesFromTOMLFile(rebuild))
+        .then(console.log);
     }
     if (urlOrPath != null)
       import("./dev-build-js.mjs")

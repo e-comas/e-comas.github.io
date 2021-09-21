@@ -1,4 +1,4 @@
-/*import TOML from "@aduh95/toml";
+import TOML from "@aduh95/toml";
 import { updateTSInteropFiles } from "./dev-build-toml-d-ts.mjs";
 
 const reservedNames = [
@@ -83,7 +83,6 @@ export function getTOMLKeys(toml) {
   return { data, exportableKeys, nonExportableKeys, imports };
 }
 
-  */
 export default function plugin() {
   return {
     name: "toml",
@@ -96,7 +95,6 @@ export default function plugin() {
       if (!id.endsWith(".toml")) {
         return null;
       }
-      /*
       const {
         data,
         exportableKeys,
@@ -133,7 +131,6 @@ export default function plugin() {
       }).catch(console.error);
 
       return { code, map: { mappings: "" } };
-      */
     },
   };
 }

@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@aduh95/async-jsx": "^0.2.0",
+    "@aduh95/toml": "^0.4.2",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-typescript": "^8.2.5",
     "@squoosh/lib": "^0.4.0",
@@ -27,6 +28,7 @@
   "scripts": {
     "start": "node --experimental-json-modules scripts/dev-watch.mjs",
     "build": "NODE_ENV=production node --experimental-json-modules scripts/prod-build.mjs",
-    "deploy": "git push && gh workflow run deploy.yml --ref main"
+    "deploy": "git push && gh workflow run deploy.yml --ref main",
+    "postinstall": "node scripts/dev-generate-toml-interop-files.mjs"
   }
 }
