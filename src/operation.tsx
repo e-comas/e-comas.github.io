@@ -14,7 +14,7 @@ const pageTitle = "Operation";
 export default (
   <Body title="Operation">
     <Header />
-    <Breadcrumbs pageTitle={pageTitle} />
+    <Breadcrumbs />
     <main>
       <ElementWithIcon tagName="section" src="/images/euro-cog.svg">
         <h1>{pageTitle}</h1>

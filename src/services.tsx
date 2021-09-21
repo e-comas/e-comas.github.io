@@ -2,6 +2,7 @@ import { h } from "@aduh95/async-jsx";
 
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
+import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 
@@ -10,6 +11,7 @@ import "./services.scss";
 export default (
   <Body title="Strategy">
     <Header />
+    <Breadcrumbs />
     <main>
       <section class="twoThird">
         <figure>

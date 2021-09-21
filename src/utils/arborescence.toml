@@ -1,0 +1,35 @@
+[root]
+url = "/"
+name = "Home"
+
+[[root.children]]
+name = "Services"
+url = "/services.html"
+
+[[root.children.children]]
+name = "Strategy"
+url = "/strategy.html"
+
+[[root.children.children]]
+name = "Operation"
+url = "/operation.html"
+
+[[root.children.children]]
+name = "Conversion"
+url = "/conversion.html"
+
+[[root.children.children]]
+name = "Traffic"
+url = "/traffic.html"
+
+[[root.children]]
+name = "Experience"
+url = "/experience.html"
+
+[[root.children]]
+name = "Team"
+url = "/our-team.html"
+
+[[root.children]]
+name = "Blog"
+url = "/news.html"
