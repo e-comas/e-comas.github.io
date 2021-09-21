@@ -1,6 +1,24 @@
 @use "./utils/variables" as *;
 
 section figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: $greyLike;
-  padding: 170px;
+  padding: 2.5rem;
+  gap: 1rem;
+  min-height: calc(50vh - 7rem);
+
+  @media screen and (min-width: $max-width) {
+    display: grid;
+    grid-template-columns: auto 630px auto;
+
+    & > * {
+      grid-column: 2;
+    }
+
+    & > :first-child {
+      align-self: end;
+    }
+  }
 }
