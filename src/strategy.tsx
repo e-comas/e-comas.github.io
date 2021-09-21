@@ -40,34 +40,36 @@ export default (
       <section class="howCanWeHelp">
         <h2>How can we help?</h2>
         <a class="cta">More about us</a>
-        <details>
-          <summary>Group coaching</summary>
-          <p>
-            With the Amazon Launch Accelerator program you will have access to,
-            and benefit from:
-          </p>
-          <ul>
-            <li>Strategic group calls;</li>
-            <li>A group page to answer any questions you may have;</li>
-            <li>
-              8 hours of video training which includes homework and tools;
-            </li>
-            <li>Discounts on tools and software from our partners;</li>
-          </ul>
-          <p>
-            The ONLY prerequisite is that you need to have an Amazon Account,
-            and the time to implement what we teach you.
-          </p>
-        </details>
-        <details>
-          <summary>Coaching</summary>
-        </details>
-        <details>
-          <summary>Aim of the workshop</summary>
-        </details>
-        <details>
-          <summary>Topics</summary>
-        </details>
+        <div>
+          <details>
+            <summary>Group coaching</summary>
+            <p>
+              With the Amazon Launch Accelerator program you will have access
+              to, and benefit from:
+            </p>
+            <ul>
+              <li>Strategic group calls;</li>
+              <li>A group page to answer any questions you may have;</li>
+              <li>
+                8 hours of video training which includes homework and tools;
+              </li>
+              <li>Discounts on tools and software from our partners;</li>
+            </ul>
+            <p>
+              The ONLY prerequisite is that you need to have an Amazon Account,
+              and the time to implement what we teach you.
+            </p>
+          </details>
+          <details>
+            <summary>Coaching</summary>
+          </details>
+          <details>
+            <summary>Aim of the workshop</summary>
+          </details>
+          <details>
+            <summary>Topics</summary>
+          </details>
+        </div>
       </section>
     </main>
     <Footer />
