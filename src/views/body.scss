@@ -34,8 +34,7 @@ body {
 .cta {
   @extend %button;
   &.inverted {
-    background-color: $blue;
-    color: $green;
+    @extend %invertedCta;
   }
 }
 

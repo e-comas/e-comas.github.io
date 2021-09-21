@@ -13,24 +13,7 @@ export default (
   <Body>
     <Header />
     <main>
-      <section class="area-of-expertise">
-        <figure>
-          <Picture src="/images/expertise_area.png" alt="" />
-          <figcaption>
-            <h3>Our area of expertise</h3>
-            <p>
-              Our team has over 30 years of experience working with Amazon and
-              the brands on it. We can help you save time and grow faster on
-              Amazon's various marketplaces.
-            </p>
-            <a href="/experience.html" class="cta inverted">
-              Read more
-            </a>
-          </figcaption>
-        </figure>
-      </section>
-
-      <section class="inverted">
+      <section>
         <figure>
           <figcaption>
             <h3>e-Comas in video</h3>
@@ -49,6 +32,23 @@ export default (
             src="/images/video_preview.jpg"
             alt="eComas video"
           />
+        </figure>
+      </section>
+
+      <section class="area-of-expertise">
+        <figure>
+          <Picture src="/images/expertise_area.png" alt="" />
+          <figcaption>
+            <h3>Our area of expertise</h3>
+            <p>
+              Our team has over 30 years of experience working with Amazon and
+              the brands on it. We can help you save time and grow faster on
+              Amazon's various marketplaces.
+            </p>
+            <a href="/experience.html" class="cta inverted">
+              Read more
+            </a>
+          </figcaption>
         </figure>
       </section>
 

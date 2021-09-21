@@ -29,10 +29,20 @@ $max-width: 1200px;
   width: fit-content;
 }
 
-%inverted {
+%invertedCta {
   background-color: $blue;
-  color: $white;
+  color: $green;
 }
+
+%inverted {
+  background-color: $green;
+  color: $blue;
+
+  .cta {
+    @extend %invertedCta;
+  }
+}
+
 
 %cover {
   width: 100%;

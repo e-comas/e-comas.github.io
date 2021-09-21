@@ -26,6 +26,11 @@ section.four-step {
 
     &:hover {
       @extend %inverted;
+      img {
+        // Computed by https://codepen.io/sosuke/pen/Pjoqqp
+        filter: brightness(0) invert(11%) sepia(21%) saturate(6521%)
+          hue-rotate(218deg) brightness(98%) contrast(108%);
+      }
     }
 
     img {
