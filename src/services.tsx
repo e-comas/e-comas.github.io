@@ -8,7 +8,7 @@ import FourStepApproach from "./views/FourStepApproach.js";
 import "./services.scss";
 
 export default (
-  <Body>
+  <Body title="Strategy">
     <Header />
     <main>
       <section class="twoThird">

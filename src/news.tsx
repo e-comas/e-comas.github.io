@@ -7,7 +7,7 @@ import Footer from "./views/Footer.js";
 import "./contact.scss";
 
 export default (
-  <Body>
+  <Body title="Blog">
     <Header />
     <main>
       <p>TODO</p>

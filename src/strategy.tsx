@@ -12,7 +12,7 @@ import "./strategy.scss";
 const pageTitle = "Strategy";
 
 export default (
-  <Body>
+  <Body title="Strategy">
     <Header />
     <Breadcrumbs pageTitle={pageTitle} />
     <main>

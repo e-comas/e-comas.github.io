@@ -7,7 +7,7 @@ import Footer from "./views/Footer.js";
 import "./our-team.scss";
 
 export default (
-  <Body>
+  <Body title="The Team">
     <Header />
     <main>
       <p>TODO</p>

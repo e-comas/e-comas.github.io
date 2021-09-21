@@ -7,7 +7,7 @@ import Footer from "./views/Footer.js";
 import "./experience.scss";
 
 export default (
-  <Body>
+  <Body title="Experience">
     <Header />
     <main>
       <p>TODO</p>

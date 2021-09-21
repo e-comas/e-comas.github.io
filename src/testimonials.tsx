@@ -7,7 +7,7 @@ import Footer from "./views/Footer.js";
 import "./testimonials.scss";
 
 export default (
-  <Body>
+  <Body title="The Testimonies">
     <Header />
     <main>
       <p>TODO</p>
