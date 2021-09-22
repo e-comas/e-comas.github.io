@@ -1,6 +1,6 @@
 import { createReadStream } from "node:fs";
 
-import { AUTO_REFRESH_MODULE, INPUT_DIR } from "./dev-config.mjs";
+import { AUTO_REFRESH_MODULE, INPUT_DIR, PROJECT_DIR } from "./dev-config.mjs";
 import getRenderedHTML from "./dev-build-html.mjs";
 import buildJS from "./dev-build-js-from-worker.mjs";
 import { HTML_TEMPLATE_FILE_NAME } from "./dev-config.mjs";
@@ -34,6 +34,25 @@ export default async function router(req, res) {
       res.end();
     });
     stream.pipe(res);
+    return;
+  }
+
+  if (req.url.startsWith("/src/") || req.url.startsWith("/node_modules/")) {
+    if (req.url.includes("/../")) {
+      console.error(
+        `Aborting ${req.url}: it doesn't look like it's a genuine source-map URL`
+      );
+      res.statusCode = 500;
+      res.end("Internal Error");
+      return;
+    }
+    // URL likely from a source-map
+    const stream = createReadStream(new URL("." + req.url, PROJECT_DIR));
+    await new Promise((resolve) => {
+      stream.on("error", console.error);
+      stream.on("close", resolve);
+      stream.pipe(res);
+    });
     return;
   }
 
