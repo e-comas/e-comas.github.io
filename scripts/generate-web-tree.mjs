@@ -1,4 +1,4 @@
-import { HTML_TEMPLATE_FILE_NAME, PORT_NUMBER } from "./prod-config.mjs";
+import { PORT_NUMBER } from "./prod-config.mjs";
 const origin = `http://localhost:${PORT_NUMBER}`;
 
 function loadContentFromTSXModule(tsxUrl) {
