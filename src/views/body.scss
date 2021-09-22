@@ -18,7 +18,10 @@
 }
 body {
   margin: 0;
-  padding: 1.5rem;
+  padding: 0;
+  @media screen and (min-width: $max-width) {
+    padding: 1.5rem;
+  }
   width: 100%;
   min-height: 100vh;
 
