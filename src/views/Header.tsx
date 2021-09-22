@@ -1,18 +1,8 @@
 import { h } from "@aduh95/async-jsx";
 import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.jsx";
+import NavLink from "../utils/NavLink.js";
 
 import "./header.scss";
-
-interface HeaderLinkProps {
-  href: string;
-  children?: any;
-}
-function HeaderLink({ href }: HeaderLinkProps) {
-  const url = new URL(href, location.origin);
-  const isCurrentPage =
-    location.origin === url.origin && location.pathname === url.pathname;
-  return isCurrentPage ? <a class="active" /> : <a href={href} />;
-}
 
 export default () => (
   <ElementWithBackgroundImage tagName="header" src="/images/hero.jpg">
@@ -25,26 +15,26 @@ export default () => (
     </a>
     <nav>
       <div>
-        <HeaderLink href="/services.html">Services</HeaderLink>
+        <NavLink href="/services.html">Services</NavLink>
         <ul>
           <li>
-            <HeaderLink href="/strategy.html">Strategy</HeaderLink>
+            <NavLink href="/strategy.html">Strategy</NavLink>
           </li>
           <li>
-            <HeaderLink href="/operation.html">Operation</HeaderLink>
+            <NavLink href="/operation.html">Operation</NavLink>
           </li>
           <li>
-            <HeaderLink href="/conversion.html">Conversion</HeaderLink>
+            <NavLink href="/conversion.html">Conversion</NavLink>
           </li>
           <li>
-            <HeaderLink href="/traffic.html">Traffic</HeaderLink>
+            <NavLink href="/traffic.html">Traffic</NavLink>
           </li>
         </ul>
       </div>
-      <HeaderLink href="/experience.html">Experience</HeaderLink>
-      <HeaderLink href="/our-team.html">Team</HeaderLink>
-      <HeaderLink href="/news.html">Blog</HeaderLink>
-      <HeaderLink href="/contact.html">Contact us</HeaderLink>
+      <NavLink href="/experience.html">Experience</NavLink>
+      <NavLink href="/our-team.html">Team</NavLink>
+      <NavLink href="/news.html">Blog</NavLink>
+      <NavLink href="/contact.html">Contact us</NavLink>
     </nav>
     <h1>
       Be visible and sell easily and quickly on Amazon and on the biggest

@@ -1,5 +1,7 @@
 import { h } from "@aduh95/async-jsx";
 
+import NavLink from "../utils/NavLink.js";
+
 import "./footer.scss";
 
 export default () => (
@@ -11,19 +13,35 @@ export default () => (
     />
     <nav>
       <ul>
-        <li>Service</li>
-        <li>Experience</li>
-        <li>Team</li>
-        <li>Blog</li>
+        <li>
+          <NavLink href="/services.html">Service</NavLink>
+        </li>
+        <li>
+          <NavLink href="/experience.html">Experience</NavLink>
+        </li>
+        <li>
+          <NavLink href="/our-team.html">Team</NavLink>
+        </li>
+        <li>
+          <NavLink href="/news.html">Blog</NavLink>
+        </li>
       </ul>
     </nav>
     <nav>
       <h5>Our approach</h5>
       <ul>
-        <li>Strategy</li>
-        <li>Conversion</li>
-        <li>Operation</li>
-        <li>Traffic</li>
+        <li>
+          <NavLink href="/strategy.html">Strategy</NavLink>
+        </li>
+        <li>
+          <NavLink href="/conversion.html">Conversion</NavLink>
+        </li>
+        <li>
+          <NavLink href="/operation.html">Operation</NavLink>
+        </li>
+        <li>
+          <NavLink href="/traffic.html">Traffic</NavLink>
+        </li>
       </ul>
     </nav>
     <div>
