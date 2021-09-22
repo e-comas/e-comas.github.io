@@ -27,11 +27,21 @@ export default (
               Read more
             </a>
           </figcaption>
-          <Picture
-            class="cover"
-            src="/images/video_preview.jpg"
-            alt="eComas video"
-          />
+          <ElementWithBackgroundImage
+            tagName="div"
+            src="images/video_preview.jpg"
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/vjGxQNji05U"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            />
+          </ElementWithBackgroundImage>
         </figure>
       </section>
 
