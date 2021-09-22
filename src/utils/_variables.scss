@@ -29,9 +29,12 @@ $max-width: 1200px;
   width: fit-content;
 }
 
-%invertedCta {
+@mixin invertedCta {
   background-color: $blue;
   color: $green;
+}
+%invertedCta {
+  @include invertedCta();
 }
 
 %inverted {

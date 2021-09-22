@@ -5,15 +5,11 @@ $logo-width: 200px;
 $breakpoint: $nav-width + $logo-width + 20px;
 
 $hamburgerThickness: 2px;
-%hamburger {
-  transition: transform 300ms;
-  transform-origin: right;
-}
 
 header {
   display: grid;
   @media screen and (min-width: $breakpoint) {
-    grid-template-columns: 1fr minmax($nav-width, auto);
+    grid-template-columns: 1fr minmax(auto, $nav-width);
   }
   grid-template-rows: auto 1fr;
   padding: 2rem;
@@ -27,16 +23,17 @@ header {
   }
 
   .logo {
+    position: relative;
+    z-index: 1;
     width: $logo-width;
     filter: brightness(0) invert(1);
   }
 
   nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 1rem;
     align-items: center;
-    position: relative;
 
     @media screen and (min-width: $breakpoint) {
       justify-content: space-between;
@@ -76,43 +73,52 @@ header {
   }
 
   details {
-    summary {
-      list-style: none;
-      &::-webkit-details-marker {
-        display: none;
-      }
+    display: none;
 
-      @extend %hamburger;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 1rem;
-      width: 1rem;
-      margin-left: auto;
-
-      cursor: pointer;
-
-      border-top: $hamburgerThickness solid $white;
-      transition: transform 300ms;
-
-      &::before,
-      &::after {
-        @extend %hamburger;
-        content: "";
-        border-bottom: $hamburgerThickness solid $white;
-        width: 100%;
-        height: $hamburgerThickness;
-      }
-      &::before {
-        transform: translateY(-0.5px);
-        transition-property: opacity, transform;
-      }
-    }
-
-    &[open] {
+    @media screen and (max-width: $breakpoint) {
+      display: unset;
       z-index: 1;
-      > summary {
+
+      & + nav,
+      %hamburger {
+        transition: transform 300ms;
+        transform-origin: right;
+      }
+
+      summary {
+        list-style: none;
+        &::-webkit-details-marker {
+          display: none;
+        }
+
+        @extend %hamburger;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1rem;
+        width: 1rem;
+        margin-left: auto;
+
+        cursor: pointer;
+
+        border-top: $hamburgerThickness solid $white;
+
+        &::before,
+        &::after {
+          @extend %hamburger;
+          content: "";
+          border-bottom: $hamburgerThickness solid $white;
+          width: 100%;
+          height: $hamburgerThickness;
+        }
+        &::before {
+          transform: translateY(-0.5px);
+          transition-property: opacity, transform;
+        }
+      }
+
+      &[open] > summary {
         transform: rotate(-45deg);
         transform-origin: right;
         &::before {
@@ -125,14 +131,7 @@ header {
           transform-origin: right;
         }
       }
-    }
 
-    display: none;
-    @media screen and (max-width: $breakpoint) {
-      display: unset;
-      &:not([open]) + nav {
-        display: none;
-      }
       & + nav {
         position: fixed;
         flex-direction: column;
@@ -142,6 +141,23 @@ header {
         left: 0;
         right: 0;
         background-color: $green;
+        transform: translateX(100%);
+        text-align: center;
+
+        a,
+        a.active {
+          color: $blue;
+        }
+        ul {
+          display: flex;
+          position: relative;
+        }
+        & > :last-child {
+          @include invertedCta();
+        }
+      }
+      &[open] + nav {
+        transform: none;
       }
     }
   }
