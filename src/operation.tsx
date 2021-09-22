@@ -7,7 +7,7 @@ import Footer from "./views/Footer.js";
 import Picture from "./utils/Picture.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
 
-import "./strategy.scss";
+import "./operation.scss";
 
 const pageTitle = "Operation";
 
@@ -34,7 +34,7 @@ export default (
         <Picture src="/images/cool_picture-3.jpeg" alt="team picture" />
       </section>
 
-      <section>
+      <section class="accountManagement">
         <h2>Account management</h2>
         <ul>
           <li>
@@ -49,16 +49,18 @@ export default (
           let you focus
           <li>on your work</li>
         </ul>
-        <h3>Services</h3>
-        <ul>
-          <li>Follow up of the catalogue content</li>
-          <li>Management of the advertising campaigns (option)</li>
-          <li>Reporting (weekly) with strategic monthly reporting</li>
-          <li>Trouble shooting of all issues arising on the account</li>
-        </ul>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li>Follow up of the catalogue content</li>
+            <li>Management of the advertising campaigns (option)</li>
+            <li>Reporting (weekly) with strategic monthly reporting</li>
+            <li>Trouble shooting of all issues arising on the account</li>
+          </ul>
+        </div>
       </section>
 
-      <section class="inverted">
+      <section class="retail">
         <h2>Retail</h2>
         <h3>Expand in all Europe / USA</h3>
         <ul>

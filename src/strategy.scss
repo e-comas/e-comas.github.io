@@ -1,10 +1,7 @@
 @use './utils/variables' as *;
 
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: calc(50vh - 7rem);
+  @extend %sectionAboveTheFold;
 }
 
 .howCanWeHelp {
