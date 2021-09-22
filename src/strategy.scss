@@ -35,6 +35,23 @@ section {
     p {
       margin-top: 1.2rem;
     }
+
+    & > summary {
+      font-family: $Gilroy;
+      font-size: 1.25rem;
+      line-height: 1em;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      &::after {
+        content: "+";
+        color: $green;
+        font-weight: normal;
+        float: right;
+      }
+    }
+    &[open] > summary::after {
+      content: "-";
+    }
   }
   @media screen and (min-width: $max-width) {
     grid-template-columns: auto 400px 800px auto;
@@ -52,23 +69,7 @@ summary {
   list-style: none;
   cursor: pointer;
 
-  font-family: $Gilroy;
-  font-size: 1.25rem;
-  line-height: 1em;
-  font-weight: bold;
-  letter-spacing: 0.02em;
   &::-webkit-details-marker {
     display: none;
-  }
-
-  &::after {
-    content: "+";
-    color: $green;
-    font-weight: normal;
-    float: right;
-
-    details[open] > & {
-      content: "-";
-    }
   }
 }
