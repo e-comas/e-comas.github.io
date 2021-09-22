@@ -13,6 +13,9 @@ export default () => (
         class="logo"
       />
     </a>
+    <details>
+      <summary aria-label="Open navigation menu" />
+    </details>
     <nav>
       <div>
         <NavLink href="/services.html">Services</NavLink>

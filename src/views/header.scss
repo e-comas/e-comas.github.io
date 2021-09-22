@@ -6,10 +6,8 @@ $breakpoint: $nav-width + $logo-width + 20px;
 
 $hamburgerThickness: 2px;
 %hamburger {
-  content: "";
-  border-top: $hamburgerThickness solid $white;
-  width: 1rem;
-  height: 1rem;
+  transition: transform 300ms;
+  transform-origin: right;
 }
 
 header {
@@ -40,31 +38,9 @@ header {
     align-items: center;
     position: relative;
 
-    & > *:not(:last-child) {
-      display: none;
-    }
-
-    &::before {
-      @extend %hamburger;
-      position: absolute;
-      right: 0;
-      height: $hamburgerThickness;
-    }
-    &::after {
-      @extend %hamburger;
-      border-bottom: $hamburgerThickness solid $white;
-    }
-
     @media screen and (min-width: $breakpoint) {
       justify-content: space-between;
       gap: unset;
-      &::before,
-      &::after {
-        content: unset;
-      }
-      & > *:not(:last-child) {
-        display: unset;
-      }
     }
 
     a {
@@ -95,6 +71,77 @@ header {
       &:hover,
       &.active {
         @extend %invertedCta;
+      }
+    }
+  }
+
+  details {
+    summary {
+      list-style: none;
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      @extend %hamburger;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 1rem;
+      width: 1rem;
+      margin-left: auto;
+
+      cursor: pointer;
+
+      border-top: $hamburgerThickness solid $white;
+      transition: transform 300ms;
+
+      &::before,
+      &::after {
+        @extend %hamburger;
+        content: "";
+        border-bottom: $hamburgerThickness solid $white;
+        width: 100%;
+        height: $hamburgerThickness;
+      }
+      &::before {
+        transform: translateY(-0.5px);
+        transition-property: opacity, transform;
+      }
+    }
+
+    &[open] {
+      z-index: 1;
+      > summary {
+        transform: rotate(-45deg);
+        transform-origin: right;
+        &::before {
+          opacity: 0;
+          transform: rotate(45deg)
+            translate(-#{$hamburgerThickness}, #{$hamburgerThickness});
+        }
+        &::after {
+          transform: translateX(-50%) translateY(-3px) rotate(90deg);
+          transform-origin: right;
+        }
+      }
+    }
+
+    display: none;
+    @media screen and (max-width: $breakpoint) {
+      display: unset;
+      &:not([open]) + nav {
+        display: none;
+      }
+      & + nav {
+        position: fixed;
+        flex-direction: column;
+        padding: 2rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $green;
       }
     }
   }
