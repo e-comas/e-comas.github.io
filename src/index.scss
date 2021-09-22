@@ -35,8 +35,10 @@ section {
     object-fit: contain;
     height: 100%;
   }
-  figcaption {
-    padding-left: 0;
+  @media screen and (min-width: 850px) {
+    figcaption {
+      padding-left: 0;
+    }
   }
 }
 
@@ -54,8 +56,11 @@ div.testimonies {
   justify-content: space-between;
 
   background-color: $greyLike;
-  padding: 3rem 5rem;
+  padding: 2rem;
 
+  @media screen and (min-width: 410px) {
+    padding: 3rem 5rem;
+  }
   @media screen and (min-width: $max-width) {
     display: grid;
     grid-template-columns: auto 800px auto;

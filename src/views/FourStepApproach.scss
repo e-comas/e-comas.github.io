@@ -10,25 +10,11 @@ section.four-step {
   max-width: $max-width;
   margin: 0 auto;
 
-  @media screen and (min-width: 600px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    &::before {
-      content: "";
-      grid-column: 2;
-      grid-row: 1;
-    }
-
-    & > div:nth-child(even) {
-      transform: translateY(3.3rem);
-    }
-  }
-
   & > div {
     display: flex;
     flex-direction: column;
     gap: $gap;
-    padding: 2.5rem;
+    padding: 1rem;
     border-radius: $border-radius;
     background-color: $greyLike;
 
@@ -43,6 +29,23 @@ section.four-step {
 
     img {
       max-width: 2.5rem;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &::before {
+      content: "";
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    & > div {
+      padding: 2.5rem;
+      &:nth-child(even) {
+        transform: translateY(3.3rem);
+      }
     }
   }
 }

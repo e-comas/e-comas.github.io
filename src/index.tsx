@@ -32,7 +32,7 @@ export default (
             src="images/video_preview.jpg"
           >
             <iframe
-              width="375"
+              width="320"
               height="315"
               src="https://www.youtube-nocookie.com/embed/vjGxQNji05U"
               title="YouTube video player"
