@@ -45,7 +45,9 @@ export default () => (
       </ul>
     </nav>
     <div class="contact-us">
-      <h5>Contact us</h5>
+      <h5>
+        <NavLink href="/contact.html">Contact us</NavLink>
+      </h5>
       <address>68 Avenue de la Liberté - L-1930 Luxembourg</address>
       Tel.: <a href="tel:&plus;352621830003">+352 621 830 003</a> - M.:
       ecomassimple@e-comas.com
