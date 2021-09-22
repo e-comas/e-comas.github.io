@@ -3,6 +3,17 @@ import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.jsx"
 
 import "./header.scss";
 
+interface HeaderLinkProps {
+  href: string;
+  children?: any;
+}
+function HeaderLink({ href }: HeaderLinkProps) {
+  const url = new URL(href, location.origin);
+  const isCurrentPage =
+    location.origin === url.origin && location.pathname === url.pathname;
+  return isCurrentPage ? <a class="active" /> : <a href={href} />;
+}
+
 export default () => (
   <ElementWithBackgroundImage tagName="header" src="/images/hero.jpg">
     <a href="/">
@@ -14,26 +25,26 @@ export default () => (
     </a>
     <nav>
       <div>
-        <a href="/services.html">Services</a>
+        <HeaderLink href="/services.html">Services</HeaderLink>
         <ul>
           <li>
-            <a href="/strategy.html">Strategy</a>
+            <HeaderLink href="/strategy.html">Strategy</HeaderLink>
           </li>
           <li>
-            <a href="/operation.html">Operation</a>
+            <HeaderLink href="/operation.html">Operation</HeaderLink>
           </li>
           <li>
-            <a href="/conversion.html">Conversion</a>
+            <HeaderLink href="/conversion.html">Conversion</HeaderLink>
           </li>
           <li>
-            <a href="/traffic.html">Traffic</a>
+            <HeaderLink href="/traffic.html">Traffic</HeaderLink>
           </li>
         </ul>
       </div>
-      <a href="/experience.html">Experience</a>
-      <a href="/our-team.html">Team</a>
-      <a href="/news.html">Blog</a>
-      <a href="/contact.html">Contact us</a>
+      <HeaderLink href="/experience.html">Experience</HeaderLink>
+      <HeaderLink href="/our-team.html">Team</HeaderLink>
+      <HeaderLink href="/news.html">Blog</HeaderLink>
+      <HeaderLink href="/contact.html">Contact us</HeaderLink>
     </nav>
     <h1>
       Be visible and sell easily and quickly on Amazon and on the biggest
