@@ -169,8 +169,9 @@ header {
     align-self: center;
   }
 
-  @media screen and (min-width: $max-width) {
+  @media screen and (min-width: #{$max-width + 100px}) {
     grid-template-columns: auto minmax(auto, #{$max-width - $nav-width}) $nav-width auto;
+    column-gap: 0;
     & > a {
       grid-column: 2;
     }
