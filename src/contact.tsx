@@ -2,6 +2,7 @@ import { h } from "@aduh95/async-jsx";
 
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
+import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
 import "./contact.scss";
@@ -9,6 +10,7 @@ import "./contact.scss";
 export default (
   <Body title="Contact us">
     <Header />
+    <Breadcrumbs />
     <main>
       <iframe
         title="Contact us form"

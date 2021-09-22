@@ -33,3 +33,7 @@ url = "/our-team.html"
 [[root.children]]
 name = "Blog"
 url = "/news.html"
+
+[[root.children]]
+name = "Contact us"
+url = "/contact.html"
