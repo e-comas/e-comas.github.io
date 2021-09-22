@@ -3,17 +3,25 @@
 $gap: 1.2rem;
 
 section.four-step {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: $gap;
   padding: 5rem $gap;
   max-width: $max-width;
   margin: 0 auto;
 
-  &::before {
-    content: "";
-    grid-column: 2;
-    grid-row: 1;
+  @media screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &::before {
+      content: "";
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    & > div:nth-child(even) {
+      transform: translateY(3.3rem);
+    }
   }
 
   & > div {
@@ -35,10 +43,6 @@ section.four-step {
 
     img {
       max-width: 2.5rem;
-    }
-
-    &:nth-child(even) {
-      transform: translateY(3.3rem);
     }
   }
 }
