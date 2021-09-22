@@ -7,7 +7,7 @@ interface BodyProps {
 }
 
 export default (props: BodyProps, children: any[]) => {
-  if (Object.hasOwn(props, "title")) {
+  if (props != null && Object.hasOwn(props, "title")) {
     document.title += " – " + props.title;
   }
   return h(Fragment, {} as any, children) as any as JSX.Element;
