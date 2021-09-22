@@ -2,3 +2,5 @@
 node_modules/
 _site/
 docs/
+*.toml.d.ts
+*.toml.js
