@@ -104,9 +104,13 @@ ul {
 
 section.twoThird {
   @extend %containsCoverPicture;
-  grid-template-columns: 2fr 1fr;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 section.threeQuarter {
   @extend %containsCoverPicture;
-  grid-template-columns: 3fr 1fr;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 3fr 1fr;
+  }
 }
