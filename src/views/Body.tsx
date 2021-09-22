@@ -3,7 +3,7 @@ import "./body.scss";
 
 interface BodyProps {
   title?: string;
-  children: JSX.Element[];
+  children?: any[];
 }
 
 export default (props: BodyProps, children: any[]) => {
