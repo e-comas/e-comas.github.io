@@ -17,7 +17,7 @@ export default () => (
         </li>
       </ul>
       <p>
-        –&gt; To check how your distribution is working and how the customer
+        → To check how your distribution is working and how the customer
         perceive your brand and products.
       </p>
       <a href="/strategy.html" class="cta">
@@ -33,7 +33,7 @@ export default () => (
         <li>Customer support performance and answer to questions.</li>
       </ul>
       <p>
-        –&gt; To check if your operations performance is able to support your
+        → To check if your operations performance is able to support your
         growth.
       </p>
       <a href="/operation.html" class="cta">
@@ -49,8 +49,8 @@ export default () => (
         <li>Benchmark to conversion rates from category.</li>
       </ul>
       <p>
-        –&gt; To check if the content on your product pages is cinvincing to
-        your target audience.
+        → To check if the content on your product pages is cinvincing to your
+        target audience.
       </p>
       <a href="/conversion.html" class="cta">
         Read more
@@ -65,8 +65,8 @@ export default () => (
         <li>Other promotion activities review.</li>
       </ul>
       <p>
-        –&gt; To check if you are spending your advertisng budget wisely and in
-        the most efficient way.
+        → To check if you are spending your advertisng budget wisely and in the
+        most efficient way.
       </p>
       <a href="/traffic.html" class="cta">
         Read more
