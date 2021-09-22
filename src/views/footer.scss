@@ -59,6 +59,22 @@ footer {
       align-self: center;
     }
   }
+  @media screen and (min-width: 570px) {
+    display: grid;
+    grid-template-columns: auto 200px 200px auto;
+    .logo,
+    .contact-us,
+    .copyright-notice {
+      grid-column: 2 / 4;
+    }
+
+    nav {
+      grid-column: 2;
+      & + nav {
+        grid-column: 3;
+      }
+    }
+  }
   @media screen and (min-width: 750px) {
     grid-template-columns: 3fr 2fr 3fr 4fr;
     row-gap: 5rem;
