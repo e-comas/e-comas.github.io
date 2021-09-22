@@ -1,10 +1,9 @@
 @use "../utils/variables" as *;
 
 footer {
-  display: grid;
-  grid-template-columns: 3fr 2fr 3fr 4fr;
-  gap: 5rem 1.2rem;
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 
   font-size: 0.8rem;
   line-height: 1.1rem;
@@ -16,6 +15,7 @@ footer {
 
   .logo {
     max-width: 200px;
+    align-self: center;
   }
 
   ul {
@@ -23,6 +23,7 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: inherit;
+    margin: 0;
   }
 
   li {
@@ -39,7 +40,36 @@ footer {
   }
 
   .copyright-notice {
-    grid-column: span 4;
     text-align: center;
+  }
+
+  @media screen and (min-width: 410px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .logo,
+    .contact-us,
+    .copyright-notice {
+      grid-column: span 2;
+    }
+
+    .logo {
+      justify-self: center;
+    }
+    nav {
+      align-self: center;
+    }
+  }
+  @media screen and (min-width: 750px) {
+    grid-template-columns: 3fr 2fr 3fr 4fr;
+    row-gap: 5rem;
+    .logo,
+    nav,
+    .contact-us {
+      grid-column: unset;
+      align-self: unset;
+    }
+    .copyright-notice {
+      grid-column: span 4;
+    }
   }
 }
