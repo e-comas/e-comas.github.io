@@ -24,7 +24,7 @@ header {
 
   .logo {
     position: relative;
-    z-index: 1;
+    z-index: 20;
     width: $logo-width;
     min-width: $logo-width / 2;
     max-width: 50vw;
@@ -79,7 +79,7 @@ header {
 
     @media screen and (max-width: $breakpoint) {
       display: unset;
-      z-index: 1;
+      z-index: 20;
 
       & + nav,
       %hamburger {
@@ -145,6 +145,8 @@ header {
         background-color: $green;
         transform: translateX(100%);
         text-align: center;
+        z-index: 10;
+        transition-property: background-color, transform;
 
         a,
         a.active {
