@@ -57,6 +57,9 @@ footer {
     }
     nav {
       align-self: center;
+      & + nav {
+        margin-left: auto;
+      }
     }
   }
   @media screen and (min-width: 570px) {
@@ -83,6 +86,9 @@ footer {
     .contact-us {
       grid-column: unset;
       align-self: unset;
+    }
+    nav + nav {
+      margin-left: unset;
     }
     .copyright-notice {
       grid-column: span 4;
