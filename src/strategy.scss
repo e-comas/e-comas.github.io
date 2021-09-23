@@ -5,15 +5,16 @@ section {
 }
 
 .howCanWeHelp {
-  display: grid;
+  display: flex;
   padding: 120px 1.5rem;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr 2fr;
   gap: 2.5rem;
   background-color: $greyLike;
 
+  h2 {
+    text-align: center;
+  }
   .cta {
-    align-self: start;
+    align-self: center;
   }
 
   div {
@@ -23,7 +24,7 @@ section {
 
   details {
     border-bottom: 1px solid #ddd;
-    padding: 1.2rem;
+    padding: 1.2rem 0;
 
     &:first-child {
       padding-top: 0;
@@ -42,15 +43,32 @@ section {
       line-height: 1em;
       font-weight: bold;
       letter-spacing: 0.02em;
+      margin-right: 1rem;
       &::after {
         content: "+";
         color: $green;
         font-weight: normal;
         float: right;
+        transform: translateX(1rem);
       }
     }
     &[open] > summary::after {
       content: "-";
+    }
+  }
+  @media screen and (min-width: 650px) {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 2fr;
+    h2 {
+      text-align: unset;
+    }
+    .cta {
+      align-self: start;
+    }
+    details {
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
     }
   }
   @media screen and (min-width: $max-width) {
