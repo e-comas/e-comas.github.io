@@ -53,10 +53,14 @@ body {
 h1 {
   @extend %title;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.02em;
-  line-height: 2.75rem;
+  line-height: 2rem;
 
+  @media screen and (min-width: 360px) {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
   @media screen and (min-width: 450px) {
     font-size: 2.5rem;
   }
