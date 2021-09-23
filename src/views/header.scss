@@ -60,11 +60,24 @@ header {
       list-style: none;
       flex-direction: column;
       gap: 1em;
-      padding-top: 1em;
+      padding: 1em 0;
       margin: 0;
     }
-    & > div:hover > ul {
-      display: flex;
+    & > div:hover {
+      z-index: 1;
+      & + ::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #000000d9;
+      }
+      > ul {
+        display: flex;
+      }
     }
     & > :last-child {
       @extend %button;
