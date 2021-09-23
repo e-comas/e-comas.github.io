@@ -146,7 +146,9 @@ header {
         transform: translateX(100%);
         text-align: center;
         z-index: 10;
-        transition-property: background-color, transform;
+
+        // To avoid a green flash when resizing the window
+        animation: delayAppearance 400ms;
 
         a,
         a.active {
@@ -182,5 +184,14 @@ header {
     h1 {
       grid-column: 2 / 4;
     }
+  }
+}
+
+@keyframes delayAppearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
