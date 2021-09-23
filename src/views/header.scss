@@ -44,6 +44,7 @@ header {
 
     a {
       @extend %uppercase;
+      display: block;
       color: $white;
       text-decoration: none;
 
