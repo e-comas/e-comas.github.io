@@ -29,7 +29,8 @@ declare module "react" {
   }
 
   interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
-    allowfullscreen: boolean;
-    frameborder: string;
+    allowfullscreen?: boolean;
+    allowtransparency?: boolean;
+    frameborder?: string;
   }
 }
