@@ -1,9 +1,11 @@
-@use 'sass:math';
+@use "sass:math";
 @use "../utils/variables" as *;
 
 $nav-width: 600px;
 $logo-width: 200px;
 $breakpoint: $nav-width + $logo-width + 20px;
+
+$animationDuration: 300ms;
 
 $hamburgerThickness: 2px;
 
@@ -36,11 +38,11 @@ header {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    align-items: center;
 
     @media screen and (min-width: $breakpoint) {
       justify-content: space-between;
       gap: unset;
+      align-items: center;
     }
 
     a {
@@ -74,7 +76,8 @@ header {
         bottom: 0;
         right: 0;
         left: 0;
-        background: #000000d9;
+        background-color: #000000d9;
+        animation: fadeIn $animationDuration;
       }
       > ul {
         display: flex;
@@ -95,32 +98,36 @@ header {
     @media screen and (max-width: $breakpoint) {
       display: unset;
       z-index: 20;
+      position: relative;
 
       & + nav,
       %hamburger {
-        transition: transform 300ms;
+        transition: transform $animationDuration;
         transform-origin: right;
       }
 
       summary {
-        list-style: none;
-        &::-webkit-details-marker {
-          display: none;
-        }
-
         @extend %hamburger;
+
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
 
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         height: 1rem;
         width: 1rem;
-        margin-left: auto;
 
         cursor: pointer;
 
         border-top: $hamburgerThickness solid $white;
 
+        list-style: none;
+        &::-webkit-details-marker {
+          display: none;
+        }
         &::before,
         &::after {
           @extend %hamburger;
@@ -136,7 +143,7 @@ header {
       }
 
       &[open] > summary {
-        transform: rotate(-45deg);
+        transform: translateY(-50%) rotate(-45deg);
         transform-origin: right;
         &::before {
           opacity: 0;
@@ -153,17 +160,18 @@ header {
         position: fixed;
         flex-direction: column;
         padding: 2rem;
+        // header padding + logo height + 1rem gap
+        padding-top: calc(2rem + 50px + 1rem);
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         background-color: $green;
         transform: translateX(100%);
-        text-align: center;
         z-index: 10;
 
         // To avoid a green flash when resizing the window
-        animation: delayAppearance 400ms;
+        animation: delayAppearance $animationDuration;
 
         a,
         a.active {
@@ -203,10 +211,19 @@ header {
 }
 
 @keyframes delayAppearance {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

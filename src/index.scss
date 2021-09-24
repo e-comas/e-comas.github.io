@@ -78,9 +78,9 @@ div.testimonies {
   }
 
   figure {
-    display: grid;
-    grid-template-columns: 4rem 1fr;
-    gap: 0 1rem;
+    display: flex;
+    flex-direction: column;
+
     figcaption {
       display: contents;
 
@@ -108,9 +108,24 @@ div.testimonies {
       margin: 0;
       margin-top: 1rem;
       padding: 0;
+      text-align: center;
       &::after {
         content: "»";
       }
+    }
+    @media screen and (min-width: 500px) {
+      display: grid;
+      grid-template-columns: 4rem 1fr;
+      gap: 0 1rem;
+
+      blockquote {
+        text-align: unset;
+      }
+    }
+  }
+  @media screen and (max-width: 499px) {
+    .cta {
+      margin: 0 auto;
     }
   }
 }
@@ -121,18 +136,22 @@ section.news {
   gap: 1.2rem;
   min-height: auto;
 
-  padding: 2rem;
   max-width: $max-width;
   margin: 0 auto;
 
+  h3 {
+    text-align: center;
+    grid-column: span 3;
+  }
   @media screen and (min-width: 850px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    h3 {
+      text-align: unset;
+    }
   }
 
-  h3 {
-    grid-column: span 3;
-  }
   article {
     @extend %inverted;
 
