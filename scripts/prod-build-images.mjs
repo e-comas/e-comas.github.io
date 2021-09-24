@@ -113,12 +113,14 @@ export async function optimizeMatrix(src, sizes) {
   for (const width of Array.from(sizes).sort((a, b) => b - a)) {
     if (width == 0 || Number.isNaN(width)) continue;
 
+    let encodeOptions;
     const cacheWidth = Math.min(originalWidth, width);
     const cacheEntries = await imageCache.get(fileHash, cacheWidth);
     if (cacheEntries != null) {
+      encodeOptions = { ...encodeOpts };
       try {
         await Promise.all(
-          Object.entries(encodeOpts).map(([codec, options]) =>
+          Object.entries(encodeOptions).map(([codec, options]) =>
             fs
               .access(
                 new URL(
@@ -127,7 +129,7 @@ export async function optimizeMatrix(src, sizes) {
                 )
               )
               .then(() => {
-                delete encodeOpts[codec];
+                delete encodeOptions[codec];
                 sources.push({
                   src,
                   codec,
@@ -142,6 +144,8 @@ export async function optimizeMatrix(src, sizes) {
       } catch (err) {
         console.log(err);
       }
+    } else {
+      encodeOptions = encodeOpts;
     }
 
     await image.preprocess({
@@ -151,7 +155,7 @@ export async function optimizeMatrix(src, sizes) {
       },
     });
 
-    await image.encode(encodeOpts);
+    await image.encode(encodeOptions);
 
     for (const [codec, encodedImage] of Object.entries(image.encodedWith)) {
       const { binary, extension } = await encodedImage;
@@ -166,7 +170,7 @@ export async function optimizeMatrix(src, sizes) {
         .set(
           fileHash,
           cacheWidth,
-          getCodecOptionHash(codec, encodeOpts[codec]),
+          getCodecOptionHash(codec, encodeOptions[codec]),
           fileName
         )
         .catch(console.error);
