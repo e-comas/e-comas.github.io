@@ -17,7 +17,7 @@ export default (
         width="100%"
         height="1305"
         frameborder="0"
-        allowtransparency="true"
+        allowtransparency
         data-src="//go.pardot.com/l/885733/2020-09-10/25cw"
         src="//go.pardot.com/l/885733/2020-09-10/25cw"
       />
