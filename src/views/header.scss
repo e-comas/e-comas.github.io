@@ -39,20 +39,20 @@ header {
     justify-content: center;
     gap: 1rem;
 
-    @media screen and (min-width: $breakpoint) {
-      justify-content: space-between;
-      gap: unset;
-      align-items: center;
-    }
-
     a {
       @extend %uppercase;
       display: block;
       color: $white;
       text-decoration: none;
+    }
 
-      &:hover,
-      &.active {
+    @media screen and (min-width: $breakpoint) {
+      justify-content: space-between;
+      gap: unset;
+      align-items: center;
+
+      a:hover,
+      a.active {
         color: $green;
       }
     }
@@ -67,17 +67,19 @@ header {
       margin: 0;
     }
     & > div:hover {
-      z-index: 1;
-      & + ::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: #000000d9;
-        animation: fadeIn $animationDuration;
+      @media screen and (min-width: $breakpoint) {
+        z-index: 1;
+        & + ::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background-color: #000000d9;
+          animation: fadeIn $animationDuration;
+        }
       }
       > ul {
         display: flex;
@@ -95,7 +97,7 @@ header {
   details {
     display: none;
 
-    @media screen and (max-width: $breakpoint) {
+    @media screen and (max-width: $breakpoint - 1px) {
       display: unset;
       z-index: 20;
       position: relative;
@@ -174,6 +176,7 @@ header {
         animation: delayAppearance $animationDuration;
 
         a,
+        a:hover,
         a.active {
           color: $blue;
         }
