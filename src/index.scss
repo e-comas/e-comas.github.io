@@ -150,12 +150,14 @@ section.news {
     h3 {
       text-align: unset;
     }
+    article {
+      border-radius: $border-radius;
+    }
   }
 
   article {
     @extend %inverted;
 
-    border-radius: $border-radius;
     padding: 50px;
 
     time {
