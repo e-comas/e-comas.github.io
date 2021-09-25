@@ -13,6 +13,8 @@ export default (props: BodyProps, children: any[]) => {
   return h(Fragment, {} as any, children) as any as JSX.Element;
 };
 
+Object.hasOwn ??= Function.prototype.call.bind(Object.prototype.hasOwnProperty);
+
 declare global {
   namespace JSX {
     interface Element
