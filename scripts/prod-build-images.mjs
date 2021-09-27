@@ -82,22 +82,16 @@ export async function optimizeMatrix(src, sizes) {
     value: { imagePool, closeImagePool },
   } = await getImagePool.next();
   const url = new URL(src, INPUT_DIR);
-  const ext = path.extname(url.pathname).toLowerCase();
   let encodeOpts, originalCodec;
-  switch (ext) {
-    case ".jpg":
-    case ".jpeg":
-      encodeOpts = { ...encodeOptionsJPEG };
-      originalCodec = "mozjpeg";
-      break;
-    case ".png":
+  switch (url.hash) {
+    case "#lossless":
       encodeOpts = { ...encodeOptionsPNG };
       originalCodec = "oxipng";
       break;
     default:
-      throw new Error(
-        "unsupported matrix image extension: " + JSON.stringify(ext)
-      );
+      encodeOpts = { ...encodeOptionsJPEG };
+      originalCodec = "mozjpeg";
+      break;
   }
 
   const fileContent = await fs.readFile(url);

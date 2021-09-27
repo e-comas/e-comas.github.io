@@ -15,7 +15,10 @@ export default (props: PictureProps) => (
   // https://stackoverflow.com/questions/44770074/css-grid-row-height-safari-bug
   <div>
     <picture class={props.class || props.className}>
-      <img src={props.src} alt={props.alt} data-lossless={props.lossless} />
+      <img
+        src={`${props.src}${props.lossless ? "#lossless" : ""}`}
+        alt={props.alt}
+      />
     </picture>
   </div>
 );
