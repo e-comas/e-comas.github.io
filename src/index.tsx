@@ -29,7 +29,7 @@ export default (
           </figcaption>
           <ElementWithBackgroundImage
             tagName="div"
-            src="images/video_preview.jpg"
+            src="/images/Banner2 Video 3x .png"
           >
             <iframe
               width="320"
@@ -47,7 +47,7 @@ export default (
 
       <section class="area-of-expertise">
         <figure>
-          <Picture src="/images/expertise_area.png" alt="" />
+          <Picture src="/images/expertise_area.png" alt="" lossless />
           <figcaption>
             <h3>Our area of expertise</h3>
             <p>
@@ -65,8 +65,8 @@ export default (
       <FourStepApproach />
 
       <section class="twoThird">
-        <Picture src="/images/DSC_0041.JPG" alt="" />
-        <Picture src="/images/DSC_0086.JPG" alt="" />
+        <Picture src="/images/Banner3.1 Testimonials 3x .png" alt="" />
+        <Picture src="/images/Banner3.2 Testimonials 3x .png" alt="" />
       </section>
 
       <section class="threeQuarter">
@@ -92,7 +92,10 @@ export default (
             The testimonies
           </a>
         </div>
-        <Picture src="/images/IMG_5893.jpg" alt="illustration" />
+        <Picture
+          src="/images/Banner3.3 Testimonials 3x .png"
+          alt="illustration"
+        />
       </section>
 
       <section class="news">
@@ -142,7 +145,7 @@ export default (
 
       <ElementWithBackgroundImage
         tagName="section"
-        src="/images/key-figures-illustration.jpeg"
+        src="/images/Banner6 3x .png"
         class="key-figures"
       >
         <p>

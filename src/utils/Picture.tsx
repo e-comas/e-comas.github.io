@@ -6,6 +6,8 @@ interface PictureProps {
   className?: string;
   src: string;
   alt: string;
+  lossless?: boolean;
+  children?: any[];
 }
 
 export default (props: PictureProps) => (
@@ -13,7 +15,7 @@ export default (props: PictureProps) => (
   // https://stackoverflow.com/questions/44770074/css-grid-row-height-safari-bug
   <div>
     <picture class={props.class || props.className}>
-      <img src={props.src} alt={props.alt} />
+      <img src={props.src} alt={props.alt} data-lossless={props.lossless} />
     </picture>
   </div>
 );

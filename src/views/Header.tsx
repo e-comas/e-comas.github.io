@@ -5,7 +5,7 @@ import NavLink from "../utils/NavLink.js";
 import "./header.scss";
 
 export default () => (
-  <ElementWithBackgroundImage tagName="header" src="/images/hero.jpg">
+  <ElementWithBackgroundImage tagName="header" src="/images/Banner1 Hero 3x .png">
     <a href="/">
       <img
         src="/images/logo.svg"
