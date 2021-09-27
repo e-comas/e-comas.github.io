@@ -21,6 +21,13 @@ header {
   height: 50vh;
   min-height: 500px;
 
+  @media screen and (max-height: 1000px) and (max-aspect-ratio: 85/100),
+    screen and (max-aspect-ratio: 175/200) {
+    .background * {
+      object-position: left;
+    }
+  }
+
   .logo {
     position: relative;
     z-index: 20;
