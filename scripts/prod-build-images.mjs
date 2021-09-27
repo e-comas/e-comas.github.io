@@ -112,31 +112,28 @@ export async function optimizeMatrix(src, sizes) {
     const cacheEntries = await imageCache.get(fileHash, cacheWidth);
     if (cacheEntries != null) {
       encodeOptions = { ...encodeOpts };
-      try {
-        await Promise.all(
-          Object.entries(encodeOptions).map(([codec, options]) =>
-            fs
-              .access(
-                new URL(
-                  cacheEntries[getCodecOptionHash(codec, options)],
-                  OUTPUT_DIR
-                )
-              )
-              .then(() => {
-                delete encodeOptions[codec];
-                sources.push({
-                  src,
-                  codec,
-                  fileName: cacheEntries[getCodecOptionHash(codec, options)],
-                  width,
-                });
-              })
-          )
+      const cacheCheck = await Promise.allSettled(
+        Object.entries(encodeOptions).map(async ([codec, options]) => {
+          const hash = getCodecOptionHash(codec, options);
+          if (!Object.hasOwn(cacheEntries, hash)) {
+            throw "no cache entry for " + hash;
+          }
+          const fileName = cacheEntries[hash];
+          await fs.access(new URL(fileName, OUTPUT_DIR));
+          delete encodeOptions[codec];
+          sources.push({ src, codec, fileName, width });
+        })
+      );
+      if (cacheCheck.some((p) => p.status === "rejected")) {
+        console.log(
+          "missing at least one cache entry",
+          src,
+          width,
+          Object.keys(encodeOptions)
         );
-        console.log("using cache", src, width);
+      } else {
+        console.log("found in cache, skipping", src, width);
         continue;
-      } catch (err) {
-        console.log(err);
       }
     } else {
       encodeOptions = encodeOpts;
