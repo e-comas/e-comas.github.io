@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import FourStepApproach from "./views/FourStepApproach.js";
+import Picture from "./utils/Picture.js";
 
 import "./services.scss";
 
@@ -38,9 +39,7 @@ export default (
               </li>
             </ul>
           </figcaption>
-          <picture>
-            <img src="./images/DSC_0041.JPG" alt="" />
-          </picture>
+          <Picture src="./images/Banner3.1 Testimonials 3x .png" alt="" />
         </figure>
       </section>
 
