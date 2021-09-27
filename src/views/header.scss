@@ -19,11 +19,14 @@ header {
   gap: 1rem;
 
   height: 50vh;
-  min-height: 500px;
+  $min-height: 500px;
+  min-height: $min-height;
+  $max-height: 720px;
+  max-height: $max-height;
 
-  @media screen and (max-height: 1000px) and (max-aspect-ratio: 85/100),
-    screen and (max-aspect-ratio: 175/200),
-    screen and (min-width: 2160px) and (min-height: 2460px) {
+  @media screen and (max-height: 2*$min-height) and (max-aspect-ratio: 85/100),
+    screen and (min-height: 2*$max-height) and (max-width: 1290px),
+    screen and (min-height: 2*$min-height + 1) and (max-height: 2*$max-height - 1) and (max-aspect-ratio: 297/324) {
     .background * {
       object-position: left;
     }
