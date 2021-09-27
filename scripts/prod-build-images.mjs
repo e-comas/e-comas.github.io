@@ -31,14 +31,14 @@ export async function optimizeVector(url) {
 }
 
 const encodeOptionsJPEG = {
-  avif: {},
+  avif: { cqLevel: 63 - 45, speed: 10 - 7, sharpness: 7 },
   mozjpeg: {
     quality: 95,
   },
-  webp: {},
+  webp: { quality: 90, method: 6 },
 };
 const encodeOptionsPNG = {
-  avif: { quality: 50 },
+  avif: { cqLevel: 63 - 60, subsample: 3, cqAlphaLevel: -1 },
   oxipng: { level: 3 },
   webp: { lossless: 1, nearLossless: 75 },
 };
