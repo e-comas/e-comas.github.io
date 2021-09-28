@@ -187,6 +187,10 @@ section.key-figures {
   min-height: 325px;
   padding: 2rem;
 
+  .background img {
+    object-position: 66% 50%;
+  }
+
   p {
     font-family: $Gilroy;
     font-weight: bold;
