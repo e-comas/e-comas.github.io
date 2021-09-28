@@ -32,7 +32,7 @@ url = "/profitero.html"
 
 [[root.children]]
 name = "Salsify"
-url = "/salsify.html"
+url = "/syndication.html#salsify"
 
 [[root.children]]
 name = "Shopify"
