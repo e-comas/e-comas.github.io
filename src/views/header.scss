@@ -87,9 +87,9 @@ header {
           background-color: #000000d9;
           animation: fadeIn $animationDuration;
         }
-      }
-      > ul {
-        display: flex;
+        > ul {
+          display: flex;
+        }
       }
     }
     & > :last-child {
@@ -186,10 +186,6 @@ header {
         a:hover,
         a.active {
           color: $blue;
-        }
-        ul {
-          display: flex;
-          position: relative;
         }
         & > :last-child {
           @include invertedCta();
