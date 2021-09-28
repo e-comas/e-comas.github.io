@@ -7,32 +7,72 @@ name = "Services"
 url = "/services.html"
 
 [[root.children.children]]
-name = "Strategy"
-url = "/strategy.html"
+name = "Consulting"
+url = "/consulting.html"
 
 [[root.children.children]]
-name = "Operation"
-url = "/operation.html"
+name = "Account management"
+url = "/account-management.html"
 
 [[root.children.children]]
-name = "Conversion"
-url = "/conversion.html"
+name = "Advertising"
+url = "/advertising.html"
 
 [[root.children.children]]
-name = "Traffic"
-url = "/traffic.html"
+name = "Syndication"
+url = "/syndication.html"
+
+[[root.children.children]]
+name = "Shopify"
+url = "/shopify.html"
+
+[[root.children.children]]
+name = "Profitero"
+url = "/profitero.html"
 
 [[root.children]]
-name = "Experience"
-url = "/experience.html"
+name = "Salsify"
+url = "/salsify.html"
 
 [[root.children]]
+name = "Shopify"
+url = "/shopify.html"
+
+[[root.children]]
+name = "About us"
+url = "/about-us.html"
+
+[[root.children.children]]
 name = "Team"
 url = "/our-team.html"
 
-[[root.children]]
+[[root.children.children]]
+name = "Testimonials"
+url = "/testimonials.html"
+
+[[root.children.children]]
 name = "Blog"
 url = "/news.html"
+
+[[root.children]]
+name = "Ressources"
+url = "/ressources.html"
+
+[[root.children.children]]
+name = "Webinar"
+url = "/webinar.html"
+
+[[root.children.children]]
+name = "Podcast"
+url = "/podcast.html"
+
+[[root.children.children]]
+name = "White paper"
+url = "/white-paper-form.html"
+
+[[root.children.children]]
+name = "Partners"
+url = "/partners.html"
 
 [[root.children]]
 name = "Contact us"

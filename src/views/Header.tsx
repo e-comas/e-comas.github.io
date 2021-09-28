@@ -1,11 +1,34 @@
 import { h } from "@aduh95/async-jsx";
 import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.jsx";
 import NavLink from "../utils/NavLink.js";
+import arborescence from "../utils/arborescence.toml";
 
 import "./header.scss";
 
+interface ArborescenceNode {
+  name: string;
+  url: string;
+  children?: ArborescenceNode[];
+}
+function createNavLink(node: ArborescenceNode) {
+  return <NavLink href={node.url}>{node.name}</NavLink>;
+}
+function layoutArborescence(node: ArborescenceNode) {
+  return node.children?.length ? (
+    <div>
+      {createNavLink(node)}
+      <ul>{node.children.map(createNavLink)}</ul>
+    </div>
+  ) : (
+    createNavLink(node)
+  );
+}
+
 export default () => (
-  <ElementWithBackgroundImage tagName="header" src="/images/Banner1 Hero 3x .png">
+  <ElementWithBackgroundImage
+    tagName="header"
+    src="/images/Banner1 Hero 3x .png"
+  >
     <a href="/">
       <img
         src="/images/logo.svg"
@@ -16,29 +39,7 @@ export default () => (
     <details>
       <summary aria-label="Open navigation menu" />
     </details>
-    <nav>
-      <div>
-        <NavLink href="/services.html">Services</NavLink>
-        <ul>
-          <li>
-            <NavLink href="/strategy.html">Strategy</NavLink>
-          </li>
-          <li>
-            <NavLink href="/operation.html">Operation</NavLink>
-          </li>
-          <li>
-            <NavLink href="/conversion.html">Conversion</NavLink>
-          </li>
-          <li>
-            <NavLink href="/traffic.html">Traffic</NavLink>
-          </li>
-        </ul>
-      </div>
-      <NavLink href="/experience.html">Experience</NavLink>
-      <NavLink href="/our-team.html">Team</NavLink>
-      <NavLink href="/news.html">Blog</NavLink>
-      <NavLink href="/contact.html">Contact us</NavLink>
-    </nav>
+    <nav>{arborescence.root.children.map(layoutArborescence)}</nav>
     <h1>
       Be visible and sell easily and quickly on Amazon and on the biggest
       marketplaces!
