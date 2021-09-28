@@ -58,23 +58,26 @@ div.testimonies {
   background-color: $greyLike;
   padding: 2rem;
 
-  @media screen and (min-width: 410px) {
-    padding: 3rem 5rem;
-  }
-  @media screen and (min-width: $max-width) {
-    display: grid;
-    grid-template-columns: auto 800px auto;
-    & > * {
-      grid-column: 2;
-    }
-  }
-
   > img {
     position: absolute;
     max-height: 4.5rem;
     max-width: 6.5rem;
     z-index: -1;
     transform: translateX(-50%) translateY(-33.3%);
+  }
+  @media screen and (min-width: 410px) {
+    padding: 3rem 5rem;
+  }
+  @media screen and (min-width: $max-width) {
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    position: relative;
+    & > * {
+      grid-column: 2;
+    }
+    & > img {
+      transform: translateX(-50%) translateY(33.3%);
+    }
   }
 
   figure {
