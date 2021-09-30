@@ -1,0 +1,73 @@
+figure.testimonial {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+
+  figcaption {
+    display: contents;
+
+    & > :first-child {
+      // image
+      grid-row: span 3;
+      img {
+        border-radius: 50%;
+        aspect-ratio: 1;
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .logo {
+      position: absolute;
+      width: 50vw;
+      transform: translateY(100vw) translateY(-4rem) translateY(-100%)
+        translateX(100vw) translateX(-2rem) translateX(-125%);
+      height: 2rem;
+      max-width: 4rem;
+    }
+    .picture-wrapper > .logo {
+      transform: translateX(100vw) translateX(-2rem) translateX(-125%)
+        translateY(-150%);
+      overflow: hidden;
+      img {
+        object-fit: contain;
+        height: inherit;
+        max-width: inherit;
+      }
+    }
+
+    time {
+      font-size: 0.75rem;
+      letter-spacing: 0.175em;
+    }
+
+    strong {
+      font-variant: small-caps;
+    }
+  }
+  blockquote {
+    &::before {
+      content: "«";
+    }
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+    text-align: center;
+    &::after {
+      content: "»";
+    }
+  }
+  @media screen and (min-width: 500px) {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 0 1rem;
+
+    .logo {
+      display: none;
+    }
+
+    blockquote {
+      text-align: unset;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import { h } from "@aduh95/async-jsx";
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Footer from "./views/Footer.js";
+import Testimonies from "./views/Testimonies.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 import Picture from "./utils/Picture.js";
@@ -73,21 +74,9 @@ export default (
         <div class="testimonies">
           <h2>They did it</h2>
           <img aria-hidden="true" src="/images/quotes.svg" />
-          <figure>
-            <figcaption>
-              <Picture
-                src="/images/why-are-we-here.jpeg"
-                alt="Name of the TRUSTOR"
-              />
-              <time dateTime="1970-01-01">01.01.1970</time>
-              <strong>Name of the TRUSTOR</strong>
-            </figcaption>
-            <blockquote>
-              Volesenda pa venim rest facil eaquid ut expliquis doluptas et
-              fugiame verum alis exceris eum estrum et lautasi molupta sequia
-              eicipsam, apientotae est, ipsae perspis pe et, nulparu ptassuscit.
-            </blockquote>
-          </figure>
+          <div class="slider">
+            <Testimonies />
+          </div>
           <a href="/testimonials.html" class="cta">
             The testimonies
           </a>

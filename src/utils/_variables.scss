@@ -57,7 +57,7 @@ $body-padding: 30px;
 %containsCoverPicture {
   display: grid;
   gap: 1.2rem;
-  figure {
+  & > figure {
     display: contents;
   }
   picture,
