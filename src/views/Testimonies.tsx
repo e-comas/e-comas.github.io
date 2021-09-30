@@ -6,7 +6,7 @@ import Picture from "../utils/Picture.js";
 
 import "./Testimonies.scss";
 
-export default (
+export default () => (
   <>
     {testimonies.map((testimony) => (
       <figure class="testimonial">
@@ -15,11 +15,14 @@ export default (
             src={testimony.image || testimony.logo}
             alt="Name of the TRUSTOR"
           />
-          {h(testimony.logo?.endsWith(".svg") ? "img" : Picture, {
-            src: testimony.logo,
-            alt: testimony.company,
-	    class: 'logo'
-          })}
+          {h(
+            (testimony.logo?.endsWith(".svg") ? "img" : Picture) as any,
+            {
+              src: testimony.logo,
+              alt: testimony.company,
+              class: "logo",
+            } as any
+          )}
           {/* <time dateTime="1970-01-01">01.01.1970</time> */}
           <strong>{testimony.name}</strong>
           <em>{testimony.title}</em>
