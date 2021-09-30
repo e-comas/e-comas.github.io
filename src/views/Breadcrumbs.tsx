@@ -20,6 +20,7 @@ const flatten = (
 };
 const unflatten = (url: string) => {
   let page = pages.get(url);
+  if (page == null) return "Page is not in the arborescence";
   const returnVal = [<li>{page.name}</li>];
   while (page.parent != null) {
     returnVal.unshift(
