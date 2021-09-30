@@ -4,110 +4,122 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
-import Picture from "./utils/Picture.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
-
-import "./operation.scss";
-
-const pageTitle = "Operation";
 
 export default (
-  <Body title="Operation">
+  <Body title="OPERATIONS > ">
     <Header />
     <Breadcrumbs />
     <main>
-      <ElementWithIcon tagName="section" src="/images/euro-cog.svg">
-        <h1>{pageTitle}</h1>
-        <ul>
-          <li>Out Of Stock occurrences</li>
-          <li>Logistics Performance (chargebacks, customer satisfaction)</li>
-          <li>Customer support performance and answer to questions</li>
-        </ul>
-        <p>
-          → To check if your operations performance is able to support your
-          growth
-        </p>
-      </ElementWithIcon>
-
-      <section class="twoThird">
-        <Picture src="/images/IMG_5892.jpg" alt="team picture" />
-        <Picture src="/images/cool_picture-3.jpeg" alt="team picture" />
-      </section>
-
-      <section class="accountManagement">
-        <h2>Account management</h2>
-        <ul>
-          <li>
-            Outsource the management of your e-Commerce Account to an
-            experienced team
-          </li>
-          <li>Benefit from the experience of a seasoned team</li>
-          <li>
-            Grow faster and expand internationally with a multi-lingual team
-          </li>
-          We will take over all day to day management aspects of your account to
-          let you focus
-          <li>on your work</li>
-        </ul>
-        <div>
-          <h3>Services</h3>
-          <ul>
-            <li>Follow up of the catalogue content</li>
-            <li>Management of the advertising campaigns (option)</li>
-            <li>Reporting (weekly) with strategic monthly reporting</li>
-            <li>Trouble shooting of all issues arising on the account</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="retail">
-        <h2>Retail</h2>
-        <h3>Expand in all Europe / USA</h3>
-        <ul>
-          <li>
-            Our account is active in all European and North American countries
-          </li>
-          <li>
-            We have VAT accounts in all EU countries and will take care of all
-            fiscal declarations for you
-          </li>
-          <li>
-            Save up to 2 FTE handling all the legal aspects of your Amazon
-            approach
-          </li>
-          <li>
-            Secure your business with a proven account, with no risk of getting
-            your brand Suspended
-          </li>
-        </ul>
-        <h3>Simple logistics</h3>
-        <ul>
-          <li>
-            We will take care of preparing the orders and following Out Of Stock
-            issues
-          </li>
-          <li>
-            Ship the quantity we have provided and we’ll take care of the rest
-          </li>
-        </ul>
-      </section>
-
-      <section class="supplyChain">
-        <h2>The supply chain</h2>
-        <ol>
-          <li>e-Comas sends an order to brand.</li>
-          <li>Brand delivers FBA order to Amazon (D Day) in Germany.</li>
-          <li>
-            Amazon dispatches stock in the different Amazon warehouses (D+5
-            days).
-          </li>
-          <li>End customer buys on amazon (D+ 10 days).</li>
-          <li>Amazon sends order to warehouse (D+10 days).</li>
-          <li>Delivery to end consumer (D+11 days).</li>
-          <li>Amazon pays e-Comas(D+26 days).</li>
-          <li>e-Comas pays to Sunstar (D+30 days).</li>
-        </ol>
-      </section>
+      <h3 id="operations">OPERATIONS</h3>
+      <p>
+        We can help you with the <strong>operations</strong> of your ecommerce
+        business, on Amazon, Shopify, CDiscount, Veepee, Bol, Walmart, and more.
+      </p>
+      <p>
+        Whether you want to <strong>outsource</strong> the entire operation to
+        us or simply need us to help <strong>manage</strong> your Amazon
+        catalogue, we can provide exactly what you need to run your online sales
+        smoothly.
+      </p>
+      <p>We can MANAGE YOUR ACCOUNT</p>
+      <p>We can help you with LOGISTICS and VAT</p>
+      <p>We cover ALL major ecommerce platforms, globally</p>
+      <h3 id="account-management">ACCOUNT MANAGEMENT</h3>
+      <p>
+        You can outsource the management of your ecommerce account to our
+        seasoned team.
+      </p>
+      <p>
+        We will take over all day-to-day management aspects of your account to
+        let you focus on your business.
+      </p>
+      <ul>
+        <li>Benefit from our expert knowledge and long experience</li>
+        <li>
+          Grow faster and more confidently on multiple ecommerce platforms:
+          Amazon, Shopify, CDiscount, Veepee, Bol, Walmart, and more
+        </li>
+        <li>
+          Expand internationally with our multilingual team: in Europe, in the
+          Americas, and in Asia
+        </li>
+      </ul>
+      <h4 id="services">SERVICES</h4>
+      <p>
+        We also offer a full range of services to help you with any area of your
+        operations that need extra support - including:
+      </p>
+      <ul>
+        <li>Follow-up of catalogue content</li>
+        <li>Management of advertising campaigns</li>
+        <li>Weekly reporting, with strategic monthly reporting</li>
+        <li>Troubleshooting on all issues arising on the account.</li>
+      </ul>
+      <h3 id="retail">RETAIL</h3>
+      <p>
+        We can take care of your Amazon business with our e-Comas Seller
+        Account, saving you up to 2 FTE.{" "}
+      </p>
+      <p>We&#39;ll help you expand your sales globally!</p>
+      <ul>
+        <li>
+          Our account is active in all European, North American countries and in
+          India
+        </li>
+        <li>
+          We have VAT accounts in all EU countries and will take care of all
+          fiscal declarations for you
+        </li>
+        <li>
+          We can support you for all the legal aspects of your Amazon approach
+        </li>
+        <li>
+          Secure your business with a proven account, with no risk of getting
+          your brand suspended.
+        </li>
+      </ul>
+      <h4 id="logistics">LOGISTICS</h4>
+      <p>
+        We can also simplify your logistics. Send us the quantity we require and
+        we can handle everything, including:
+      </p>
+      <ul>
+        <li>Importing your goods</li>
+        <li>Warehousing your goods</li>
+        <li>Re-working your products packaging (labelling, bundling,...)</li>
+        <li>Preparing your orders</li>
+        <li>Handling Out Of Stock issues.</li>
+      </ul>
+      <h4 id="vat">VAT</h4>
+      <p>
+        If you’re selling in the EU, it’s now mandatory to register to pay VAT
+        (value added tax). We can help you design your European strategy and set
+        up your account, including:
+      </p>
+      <ul>
+        <li>VAT number</li>
+        <li>EORI number</li>
+        <li>One Stop Shop (OSS) requirements.</li>
+      </ul>
+      <h3 id="reporting--dashboarding">REPORTING / DASHBOARDING</h3>
+      <p>
+        We have built our own dashboards to follow your sales. We can also help
+        you create the relevant dashboard for your own business, or leverage the
+        leading reporting solution from Profitero [link to Profitero page].
+      </p>
+      <p>
+        Our dashboards are a blend of our expertise on ecommerce and our
+        knowledge of the different ecommerce systems (Vendor or Seller). We
+        focus on:
+      </p>
+      <ul>
+        <li>Defining the right KPIs</li>
+        <li>
+          Integrating multi-country sales and advertising on one dashboard
+        </li>
+        <li>Leveraging market data information, with market share</li>
+        <li>Leveraging data on BSRs and keyword ranking.</li>
+      </ul>
     </main>
     <Footer />
   </Body>
