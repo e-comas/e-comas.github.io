@@ -6,7 +6,7 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
 export default (
-  <Body title="OPERATIONS > ">
+  <Body title="Operations">
     <Header />
     <Breadcrumbs />
     <main>
@@ -83,7 +83,7 @@ export default (
           Account, saving you up to 2 FTE.{" "}
         </p>
 
-        <p>We&#39;ll help you expand your sales globally!</p>
+        <p>We'll help you expand your sales globally!</p>
 
         <ul>
           <li>
@@ -95,7 +95,8 @@ export default (
             fiscal declarations for you.
           </li>
           <li>
-            We can support you for all the legal aspects of your Amazon approach.
+            We can support you for all the legal aspects of your Amazon
+            approach.
           </li>
           <li>
             Secure your business with a proven account, with no risk of getting
@@ -143,7 +144,8 @@ export default (
         <p>
           We have built our own dashboards to follow your sales. We can also
           help you create the relevant dashboard for your own business, or
-          leverage the leading reporting solution from <a href="/website-creation.html">Profitero</a>.
+          leverage the leading reporting solution from{" "}
+          <a href="/website-creation.html">Profitero</a>.
         </p>
 
         <p>
@@ -154,7 +156,9 @@ export default (
 
         <ul>
           <li>Defining the right KPIs.</li>
-          <li>Integrating multi-country sales and advertising on one dashboard.</li>
+          <li>
+            Integrating multi-country sales and advertising on one dashboard.
+          </li>
           <li>Leveraging market data information, with market share.</li>
           <li>Leveraging data on BSRs and keyword ranking.</li>
         </ul>
