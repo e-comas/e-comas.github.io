@@ -1,1 +1,5 @@
-@use './utils/variables' as *;
+@use "./utils/variables" as *;
+
+h2 {
+  margin: 0 1.5rem;
+}

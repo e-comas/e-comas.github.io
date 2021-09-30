@@ -19,16 +19,18 @@ figure.testimonial {
 
     .logo {
       position: absolute;
-      width: 50vw;
       transform: translateY(100vw) translateY(-4rem) translateY(-100%)
         translateX(100vw) translateX(-2rem) translateX(-125%);
       height: 2rem;
+      width: 50vw;
       max-width: 4rem;
     }
-    .picture-wrapper > .logo {
-      transform: translateX(100vw) translateX(-2rem) translateX(-125%)
-        translateY(-150%);
+    .picture-wrapper.logo {
       overflow: hidden;
+      & > .logo {
+        position: unset;
+        transform: none;
+      }
       img {
         object-fit: contain;
         height: inherit;

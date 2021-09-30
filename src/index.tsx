@@ -77,7 +77,7 @@ export default (
           <div class="slider">
             <Testimonies />
           </div>
-          <a href="/testimonials.html" class="cta">
+          <a href="/testimonials.html#testimonials" class="cta">
             The testimonies
           </a>
         </div>

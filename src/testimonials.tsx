@@ -4,13 +4,19 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Footer from "./views/Footer.js";
 import Testimonies from "./views/Testimonies.js";
+import Breadcrumbs from "./views/Breadcrumbs.js";
 
 import "./testimonials.scss";
 
 export default (
   <Body title="The Testimonies">
+    <Header />
+    <Breadcrumbs />
     <main>
-      <Testimonies />
+      <section id="testimonials">
+        <h2>They trusted us</h2>
+        <Testimonies />
+      </section>
     </main>
     <Footer />
   </Body>
