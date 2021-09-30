@@ -36,21 +36,12 @@ export default (
         <ul>
           <li>
             We can increase sales by <strong>5 times</strong> within 2 years …
-            Sometimes up to <strong>10 times</strong> in 2 years
+            Sometimes up to <strong>10 times</strong> in 2 years.
           </li>
-          <li>
-            We can reduce operational costs by <strong>50%</strong>
-          </li>
-          <li>
-            We&#39;ve managed <strong>+100,000</strong> listings
-          </li>
-          <li>
-            We&#39;ve opened <strong>+500</strong> Vendor/Seller accounts
-          </li>
-          <li>
-            We&#39;ve handled <strong>+€1,000,000</strong> in advertising
-            campaigns
-          </li>
+          <li>We can reduce operational costs by <strong>50%</strong>.</li>
+          <li>We&#39;ve managed <strong>+100,000</strong> listings.</li>
+          <li>We&#39;ve opened <strong>+500</strong> Vendor/Seller accounts.</li>
+          <li>We&#39;ve handled <strong>+€1,000,000</strong> in advertising campaigns.</li>
         </ul>
 
         <br />
@@ -60,23 +51,23 @@ export default (
         <ul>
           <li>
             eCommerce retail sales are forecast to grow to{" "}
-            <strong>$3.4 trillion</strong> by 2025 (Forbes)
+            <strong>$3.4 trillion</strong> by 2025 (Forbes).
           </li>
           <li>
             US retail m-commerce sales grew <strong>41.4%</strong> in 2020 and
             will grow another <strong>15.2%</strong> in 2021, to reach{" "}
             <strong>$359.32 billion</strong>. Annual sales should nearly{" "}
             <strong>double</strong> between now and 2025 (
-            <a href="http://www.emarketer.com">www.emarketer.com</a>)
+            <a href="http://www.emarketer.com">www.emarketer.com</a>).
           </li>
           <li>
             By 2023, there will be <strong>5.3 billion</strong> total internet
             users - <strong>66%</strong> of the global population (
-            <a href="http://www.cisco.com">www.cisco.com</a>)
+            <a href="http://www.cisco.com">www.cisco.com</a>).
           </li>
           <li>
             Consumer attention span is a maximum of <strong>8 seconds!</strong>{" "}
-            (ebusinessinstitute.com)
+            (<a href="https://ebusinessinstitute.com/">www.ebusinessinstitute.com</a>).
           </li>
         </ul>
       </section>
@@ -86,12 +77,9 @@ export default (
 
         <p>Here&#39;s what our customers say about us:</p>
 
-        <p>
-          [use [
-          <a href="https://docs.google.com/document/d/1L_arP-U9Dl0QuaF2U_OB5Zt_ibcQfPuLXYk0KCAkqoM/edit?usp=sharing%5Dhttps://docs.google.com/document/d/1L_arP-U9Dl0QuaF2U_OB5Zt_ibcQfPuLXYk0KCAkqoM/edit?usp=sharing%5D">
-            https://docs.google.com/document/d/1L_arP-U9Dl0QuaF2U_OB5Zt_ibcQfPuLXYk0KCAkqoM/edit?usp=sharing]https://docs.google.com/document/d/1L_arP-U9Dl0QuaF2U_OB5Zt_ibcQfPuLXYk0KCAkqoM/edit?usp=sharing]
-          </a>
-        </p>
+        <a href="/testimonials.html" class="cta">
+            The testimonies
+        </a>
       </section>
 
       <section>
@@ -107,7 +95,9 @@ export default (
           something new today!
         </p>
 
-        <p>[latest blogs]</p>
+        <a href="/news.html" class="cta">
+          Latest blogs
+        </a>
       </section>
     </main>
     <Footer />

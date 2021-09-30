@@ -27,9 +27,9 @@ export default (
         </p>
 
         <ul>
-          <li>We can manage your account</li>
-          <li>We can help you with logistics and VAT</li>
-          <li>We cover all major ecommerce platforms, globally</li>
+          <li>We can manage your account.</li>
+          <li>We can help you with logistics and VAT.</li>
+          <li>We cover all major ecommerce platforms, globally.</li>
         </ul>
       </section>
 
@@ -47,14 +47,14 @@ export default (
         </p>
 
         <ul>
-          <li>Benefit from our expert knowledge and long experience</li>
+          <li>Benefit from our expert knowledge and long experience.</li>
           <li>
             Grow faster and more confidently on multiple ecommerce platforms:
-            Amazon, Shopify, CDiscount, Veepee, Bol, Walmart, and more
+            Amazon, Shopify, CDiscount, Veepee, Bol, Walmart, and more.
           </li>
           <li>
             Expand internationally with our multilingual team: in Europe, in
-            theAmericas, and in Asia
+            theAmericas, and in Asia.
           </li>
         </ul>
       </section>
@@ -68,9 +68,9 @@ export default (
         </p>
 
         <ul>
-          <li>Follow-up of catalogue content</li>
-          <li>Management of advertising campaigns</li>
-          <li>Weekly reporting, with strategic monthly reporting</li>
+          <li>Follow-up of catalogue content;</li>
+          <li>Management of advertising campaigns;</li>
+          <li>Weekly reporting, with strategic monthly reporting;</li>
           <li>Troubleshooting on all issues arising on the account.</li>
         </ul>
       </section>
@@ -88,14 +88,14 @@ export default (
         <ul>
           <li>
             Our account is active in all European, North American countries and
-            in India
+            in India.
           </li>
           <li>
             We have VAT accounts in all EU countries and will take care of all
-            fiscal declarations for you
+            fiscal declarations for you.
           </li>
           <li>
-            We can support you for all the legal aspects of your Amazon approach
+            We can support you for all the legal aspects of your Amazon approach.
           </li>
           <li>
             Secure your business with a proven account, with no risk of getting
@@ -113,10 +113,10 @@ export default (
         </p>
 
         <ul>
-          <li>Importing your goods</li>
-          <li>Warehousing your goods</li>
-          <li>Re-working your products packaging (labelling, bundling,...)</li>
-          <li>Preparing your orders</li>
+          <li>Importing your goods;</li>
+          <li>Warehousing your goods;</li>
+          <li>Re-working your products packaging (labelling, bundling,...);</li>
+          <li>Preparing your orders;</li>
           <li>Handling out of stock issues.</li>
         </ul>
       </section>
@@ -131,8 +131,8 @@ export default (
         </p>
 
         <ul>
-          <li>VAT number</li>
-          <li>EORI number</li>
+          <li>VAT number;</li>
+          <li>EORI number;</li>
           <li>One Stop Shop (OSS) requirements.</li>
         </ul>
       </section>
@@ -143,8 +143,7 @@ export default (
         <p>
           We have built our own dashboards to follow your sales. We can also
           help you create the relevant dashboard for your own business, or
-          leverage the leading reporting solution from Profitero [link to
-          Profitero page].
+          leverage the leading reporting solution from <a href="/website-creation.html">Profitero</a>.
         </p>
 
         <p>
@@ -154,11 +153,9 @@ export default (
         </p>
 
         <ul>
-          <li>Defining the right KPIs</li>
-          <li>
-            Integrating multi-country sales and advertising on one dashboard
-          </li>
-          <li>Leveraging market data information, with market share</li>
+          <li>Defining the right KPIs.</li>
+          <li>Integrating multi-country sales and advertising on one dashboard.</li>
+          <li>Leveraging market data information, with market share.</li>
           <li>Leveraging data on BSRs and keyword ranking.</li>
         </ul>
       </section>

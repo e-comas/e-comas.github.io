@@ -25,16 +25,9 @@ export default (
         </p>
 
         <ul>
-          <li>
-            We can provide <strong>training</strong> to you and your team
-          </li>
-          <li>
-            We can <strong>research</strong> your market and competitors
-          </li>
-          <li>
-            We can <strong>audit</strong> your business's current success on
-            Amazon
-          </li>
+          <li>We can provide <strong>training</strong> to you and your team.</li>
+          <li>We can <strong>research</strong> your market and competitors.</li>
+          <li>We can <strong>audit</strong> your business's current success on Amazon.</li>
         </ul>
 
         <p>
@@ -54,12 +47,10 @@ export default (
         </p>
 
         <ul>
-          <li>Design your strategy.</li>
-          <li>Define your operational gaps and needs.</li>
-          <li>Understand how to create the best content.</li>
-          <li>
-            Learn the most efficient and up-to-date ways of driving traffic.
-          </li>
+          <li>Design your strategy;</li>
+          <li>Define your operational gaps and needs;</li>
+          <li>Understand how to create the best content;</li>
+          <li>Learn the most efficient and up-to-date ways of driving traffic.</li>
         </ul>
 
         <p>
