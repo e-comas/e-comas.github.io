@@ -17,10 +17,6 @@ url = "/operation.html"
 documentId = "1tzO_LgHnKjwEeFphTXCpJtHHjR16P_t4xX3AHO9yLz0"
 
 [[root.children.children]]
-name = "Account management"
-url = "/account-management.html"
-
-[[root.children.children]]
 name = "Advertising"
 url = "/advertising.html"
 documentId = "1EKmhVIEPG3_q5jQe07-SXjRv-4sasIuz1GFBLQXzkaQ"
@@ -30,12 +26,14 @@ name = "Syndication"
 url = "/syndication.html"
 
 [[root.children.children]]
-name = "Shopify"
-url = "/shopify.html"
+name = "Website Creation"
+url = "/website-creation.html"
+documentId = "1xK8C26VriFVWI6qTmQ5y4P0RUMBvRA7Y3Ii7vJkDvUI"
 
 [[root.children.children]]
-name = "Profitero"
-url = "/profitero.html"
+name = "analytics"
+url = "/analytics.html"
+documentId = "1XB3ohTRBlwPyGu_o3UGN7e-83HUqP8IEtnN_3u_twP0"
 
 [[root.children]]
 name = "Salsify"
@@ -43,7 +41,7 @@ url = "/syndication.html#salsify"
 
 [[root.children]]
 name = "Shopify"
-url = "/shopify.html"
+url = "/website-creation.html#shopify"
 
 [[root.children]]
 name = "About us"
@@ -57,6 +55,7 @@ url = "/our-team.html"
 [[root.children.children]]
 name = "Testimonials"
 url = "/testimonials.html"
+documentId = "1L_arP-U9Dl0QuaF2U_OB5Zt_ibcQfPuLXYk0KCAkqoM"
 
 [[root.children.children]]
 name = "Blog"
