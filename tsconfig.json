@@ -5,6 +5,7 @@
     "lib": ["dom", "esnext", "dom.iterable"],
     "jsx": "react",
     "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
     "sourceMap": true,
     "rootDir": "./src",
     "removeComments": true,
