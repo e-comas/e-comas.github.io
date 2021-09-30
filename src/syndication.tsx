@@ -13,7 +13,6 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-
       <section>
         <h2>Consulting / Coaching</h2>
 
@@ -26,9 +25,16 @@ export default (
         </p>
 
         <ul>
-          <li>We can provide <strong>training</strong> to you and your team</li>
-          <li>We can <strong>research</strong> your market and competitors</li>
-          <li>We can <strong>audit</strong> your business's current success on Amazon</li>
+          <li>
+            We can provide <strong>training</strong> to you and your team
+          </li>
+          <li>
+            We can <strong>research</strong> your market and competitors
+          </li>
+          <li>
+            We can <strong>audit</strong> your business's current success on
+            Amazon
+          </li>
         </ul>
 
         <p>
@@ -37,13 +43,13 @@ export default (
         </p>
       </section>
 
-
       <section>
         <h2>Workshops &amp; training</h2>
 
         <p>
           Are you struggling to determine your ecommerce strategy? <br />
-          Or do you think you don't have the right level of ecommerce knowledge within your organisation ? <br />
+          Or do you think you don't have the right level of ecommerce knowledge
+          within your organisation ? <br />
           We can help you:
         </p>
 
@@ -51,14 +57,15 @@ export default (
           <li>Design your strategy.</li>
           <li>Define your operational gaps and needs.</li>
           <li>Understand how to create the best content.</li>
-          <li>Learn the most efficient and up-to-date ways of driving traffic.</li>
+          <li>
+            Learn the most efficient and up-to-date ways of driving traffic.
+          </li>
         </ul>
 
         <p>
           All by using our proven <strong>eCommerce growth model</strong>!
         </p>
       </section>
-
 
       <section>
         <h2>Research</h2>
@@ -81,7 +88,6 @@ export default (
         </p>
       </section>
 
-
       <section>
         <h2>Compas / Audit</h2>
 
@@ -91,9 +97,10 @@ export default (
         </p>
 
         <p>
-          Your Compas report reveals what your company is doing well and where you
-          are lagging behind, acting like a compass in helping you follow future
-          directions, based on the four pillars of our eCommerce Growth Model:
+          Your Compas report reveals what your company is doing well and where
+          you are lagging behind, acting like a compass in helping you follow
+          future directions, based on the four pillars of our eCommerce Growth
+          Model:
         </p>
 
         <ul>

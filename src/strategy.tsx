@@ -14,7 +14,7 @@ const pageTitle = "Strategy";
 export default (
   <Body title="Strategy">
     <Header />
-    {/* <Breadcrumbs /> */}
+    <Breadcrumbs />
     <main>
       <ElementWithIcon tagName="section" src="/images/chess.svg">
         <h1>{pageTitle}</h1>
