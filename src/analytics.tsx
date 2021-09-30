@@ -6,54 +6,75 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
 export default (
-  <Body title="SHOPIFY PARTNER">
+  <Body title="Analytics">
     <Header />
     <Breadcrumbs />
     <main>
       <section>
-        <h2>Our partner: Shopify</h2>
+        <h2>Our partner : Profitero</h2>
 
         <p>
-          We proudly partner with Shopify, the leading ecommerce platform allowing
-          brands to build and manage their own standalone online retail stores.{" "}
+          We proudly partner with Profitero, the actionable ecommerce insights
+          platform, to help our customers harness the vast amount of data
+          available to them on Amazon, Shopify and other marketplaces.
         </p>
 
         <p>
-          Shopify is the third largest online retailer behind Amazon and eBay in
-          the US, with 20% market share.
+          Profitero’s insights combined with e-Comas’s expertise in advertising,
+          content and supply chain optimisation give you huge opportunities for
+          growth. You can stretch your limited team resources and achieve fast
+          ROI.
         </p>
 
-        <p>
-          We believe Shopify is one of the keys to a successful omni-channel
-          online retail strategy.
-        </p>
-
-        <p>
-          Running a Shopify store alongside your Amazon and other ecommerce
-          accounts can boost your sales and amplify your brand.
-        </p>
-
-        <h5>Some facts about Shopify: </h5>
+        <h3>Here’s an example of what they do: </h3>
 
         <ul>
-          <li>Shopify is the fastest growing online store builder in the world.</li>
-          <li>Shopify is the most searched ecommerce solution.</li>
-          <li>In 2019, 62 million buyers worldwide made repeat purchases on Shopify stores.</li>
-          <li>From 2019 to 2020, Shopify stores saw an increase of 40% in customers.</li>
-          <li>Shopify buyers purchased 3.8 times on average from the same store.</li>
+          <li>
+            Profitero’s client makes a product that competes with a famous
+            brand.
+          </li>
+          <li>The famous brand’s product is always #1 on Amazon.</li>
+          <li>
+            The client uses Profitero’s assortment and availability module,
+            setting up alerts to monitor each time the famous brand’s product
+            goes out of stock.
+          </li>
+          <li>
+            When that happens, they sponsor all branded keywords around the
+            famous product.
+          </li>
+          <li>They increase their sales by 7%!</li>
+          <li>
+            The client switches off the ad spend as soon as the famous brand’s
+            product is back in stock.
+          </li>
         </ul>
 
+        <p>That’s just one example!</p>
+
         <p>
-          At e-Comas, we can build you a strategy based on a Shopify store coupled
-          with Amazon and other ecommerce platforms.{" "}
+          Profitero customers typically experience 70% ecommerce sales
+          acceleration over competitors.
         </p>
+
+        <h3>Profitero offers: </h3>
+        <ul>
+          <li>Powerful, yet affordable insights;</li>
+          <li>
+            Automation of research that normally takes a lot of your team’s
+            time;
+          </li>
+          <li>
+            Guidance, in partnership with e-Comas, to ensure the data is used.
+          </li>
+        </ul>
 
         <p>
           <strong>
             <em>
-              We can help you create and manage your Shopify store, drive growth
-              to it, boost your sales and grow your brand quickly, efficiently and
-              globally.
+              We can help you action the valuable data you get from Profitero to
+              optimise your content, improve your conversion rates, save you
+              time, and improve the ROI on your ad spend.
             </em>
           </strong>
         </p>
