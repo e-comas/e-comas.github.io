@@ -71,7 +71,7 @@ url = "/webinar.html"
 
 [[root.children.children]]
 name = "Podcast"
-url = "/podcast.html"
+url = "/webinar.html#podcast"
 
 [[root.children.children]]
 name = "White paper"

@@ -4,6 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Footer from "./views/Footer.js";
 import Testimonies from "./views/Testimonies.js";
+import Partners from "./views/Partners.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 import Picture from "./utils/Picture.js";
@@ -148,17 +149,7 @@ export default (
         </p>
       </ElementWithBackgroundImage>
 
-      <section class="partners">
-        <h2>Partners we trust</h2>
-        <div>
-          <img alt="partner" />
-          <img alt="partner" />
-          <img alt="partner" />
-          <img alt="partner" />
-          <img alt="partner" />
-          <img alt="partner" />
-        </div>
-      </section>
+      <Partners />
     </main>
     <Footer />
   </Body>
