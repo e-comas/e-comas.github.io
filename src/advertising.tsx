@@ -5,7 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
-// import "./consulting.scss";
+import "./page-rules.scss";
 
 export default (
   <Body title="Advertising">
@@ -56,8 +56,8 @@ export default (
         </p>
       </section>
 
-      <section>
-        <h2>Advertising management</h2>
+      <section class="inverted">
+        <h3>Advertising management</h3>
         <p>
           Accelerate your ecommerce growth with us!
           <br />
@@ -77,7 +77,7 @@ export default (
       </section>
 
       <section>
-        <h2>Retail media</h2>
+        <h3>Retail media</h3>
         <p>
           Advertising directly on Amazon and other ecommerce platforms can have
           great results in getting more people to see your products, building
@@ -97,8 +97,8 @@ export default (
         </p>
       </section>
 
-      <section>
-        <h2>Digital advertising</h2>
+      <section class="section--grey">
+        <h3>Digital advertising</h3>
         <p>
           Advertising <strong>off</strong> Amazon to drive external traffic from
           platforms such as Facebook, Google, Instagram, Tik Tok opens another

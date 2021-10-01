@@ -6,7 +6,7 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 import Footer from "./views/Footer.js";
 
-// import "./consulting.scss";
+import './page-rules.scss'
 
 export default (
   <Body title="Content / Syndication">
@@ -43,7 +43,7 @@ export default (
         </p>
       </section>
 
-      <section>
+      <section class="section--grey">
         <h2>Workshops &amp; training</h2>
 
         <p>
@@ -88,7 +88,7 @@ export default (
         </p>
       </section>
 
-      <section>
+      <section class="inverted">
         <h2>Compas / Audit</h2>
 
         <p>

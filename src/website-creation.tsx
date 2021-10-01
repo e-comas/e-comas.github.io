@@ -5,6 +5,8 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
+import './page-rules.scss'
+
 export default (
   <Body title="Website creation">
     <Header />
@@ -34,7 +36,7 @@ export default (
           accounts can boost your sales and amplify your brand.
         </p>
 
-        <h5>Some facts about Shopify: </h5>
+        <h5>Some facts about Shopify:</h5>
 
         <ul>
           <li>

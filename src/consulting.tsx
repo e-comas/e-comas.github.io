@@ -5,7 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
-// import "./consulting.scss";
+import "./page-rules.scss";
 
 export default (
   <Body title="Syndication with Salsify">
@@ -28,7 +28,7 @@ export default (
         </p>
       </section>
 
-      <section>
+      <section class="inverted">
         <h3>3 principles for winning on the digital shelf</h3>
         <p>
           Just like traditional retail, the digital shelf requires extreme focus
@@ -37,17 +37,17 @@ export default (
         </p>
         <ol>
           <li>
-            <strong>Engage shoppers everywhere</strong>
+            <strong>Engage shoppers everywhere : </strong>
             Content has become your brand’s packaging on the digital shelf.
           </li>
           <li>
-            <strong>Execute commerce strategies fast</strong>
+            <strong>Execute commerce strategies fast : </strong>
             New channels represent opportunities that may or may not work for
             your business. You must learn fast, scale what works, and stop what
             doesn’t.
           </li>
           <li>
-            <strong>Be your customers' best partner</strong>
+            <strong>Be your customers' best partner : </strong>
             Delivering the content your retailers and distributors need makes
             you a partner they will prioritise, driving even more growth for
             your business.

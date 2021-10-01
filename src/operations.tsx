@@ -5,6 +5,8 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
+import './page-rules.scss'
+
 export default (
   <Body title="Operations">
     <Header />
@@ -33,8 +35,8 @@ export default (
         </ul>
       </section>
 
-      <section>
-        <h2>Account management</h2>
+      <section class="inverted">
+        <h3>Account management</h3>
 
         <p>
           You can outsource the management of your ecommerce account to our
@@ -60,7 +62,7 @@ export default (
       </section>
 
       <section>
-        <h2>Services</h2>
+        <h3>Services</h3>
 
         <p>
           We also offer a full range of services to help you with any area of
@@ -75,8 +77,8 @@ export default (
         </ul>
       </section>
 
-      <section>
-        <h2>Retail</h2>
+      <section class="section--grey">
+        <h3>Retail</h3>
 
         <p>
           We can take care of your Amazon business with our e-Comas Seller
@@ -106,7 +108,7 @@ export default (
       </section>
 
       <section>
-        <h2>Logistics</h2>
+        <h3>Logistics</h3>
 
         <p>
           We can also simplify your logistics. Send us the quantity we require
@@ -122,8 +124,8 @@ export default (
         </ul>
       </section>
 
-      <section>
-        <h2>VAT</h2>
+      <section class="inverted">
+        <h3>VAT</h3>
 
         <p>
           If you’re selling in the EU, it’s now mandatory to register to pay VAT
@@ -139,7 +141,7 @@ export default (
       </section>
 
       <section>
-        <h2>Reporting / Dashboarding</h2>
+        <h3>Reporting / Dashboarding</h3>
 
         <p>
           We have built our own dashboards to follow your sales. We can also

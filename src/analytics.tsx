@@ -5,6 +5,8 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
+import "./page-rules.scss";
+
 export default (
   <Body title="Analytics">
     <Header />
@@ -25,9 +27,10 @@ export default (
           growth. You can stretch your limited team resources and achieve fast
           ROI.
         </p>
+      </section>
 
+      <section class="section--grey">
         <h3>Here’s an example of what they do: </h3>
-
         <ul>
           <li>
             Profitero’s client makes a product that competes with a famous
@@ -56,7 +59,9 @@ export default (
           Profitero customers typically experience 70% ecommerce sales
           acceleration over competitors.
         </p>
+      </section>
 
+      <section>
         <h3>Profitero offers: </h3>
         <ul>
           <li>Powerful, yet affordable insights;</li>
@@ -79,6 +84,8 @@ export default (
           </strong>
         </p>
       </section>
+        
+
     </main>
     <Footer />
   </Body>

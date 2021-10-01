@@ -3,7 +3,10 @@ import { h } from "@aduh95/async-jsx";
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 import Footer from "./views/Footer.js";
+
+import "./page-rules.scss";
 
 export default (
   <Body title="About eComas">
@@ -29,9 +32,9 @@ export default (
         </p>
       </section>
 
-      <section>
-        <h2>Figures</h2>
-        <h3>The numbers speak for themselves...</h3>
+      <section class="inverted">
+        <h3>Figures</h3>
+        <h5>The numbers speak for themselves...</h5>
 
         <ul>
           <li>
@@ -54,7 +57,7 @@ export default (
 
         <br />
 
-        <h3>Some more stats</h3>
+        <h5>Some more stats</h5>
 
         <ul>
           <li>
@@ -91,17 +94,17 @@ export default (
       </section>
 
       <section>
-        <h2>Testimonials</h2>
+        <h3>Testimonials</h3>
 
         <p>Here's what our customers say about us:</p>
 
-        <a href="/testimonials.html" class="cta">
+        <a href="/testimonials.html" class="section__btn cta">
           The testimonies
         </a>
       </section>
 
-      <section>
-        <h2>Blog</h2>
+      <section class="section--grey">
+        <h3>Blog</h3>
 
         <p>
           You can learn from our expertise for free! We do webinars, podcasts,
@@ -113,7 +116,7 @@ export default (
           something new today!
         </p>
 
-        <a href="/news.html" class="cta">
+        <a href="/news.html" class="section__btn cta">
           Latest blogs
         </a>
       </section>
