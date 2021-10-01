@@ -28,4 +28,51 @@ section {
       margin: 0 auto;
     }
   }
+
+  &:nth-of-type(2n + 2) {
+    @extend %inverted;
+  }
+  &:nth-of-type(2n + 3) {
+    background-color: $greyLike;
+  }
+}
+
+.retail {
+  display: grid;
+  gap: 0.5rem 2rem;
+
+  h2 {
+    grid-column: span 2;
+  }
+  h2,
+  h3 {
+    align-self: end;
+  }
+
+  h3:first-of-type + ul {
+    grid-column: 1;
+  }
+  h3:last-of-type {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  @media screen and (min-width: $max-width) {
+    grid-template-columns: auto 600px 600px auto;
+    h2 {
+      grid-column: 2 / 4;
+    }
+    h3:first-of-type {
+      &,
+      & + ul {
+        grid-column: 2;
+      }
+    }
+    h3:last-of-type {
+      &,
+      & + ul {
+        grid-column: 3;
+      }
+    }
+  }
 }
