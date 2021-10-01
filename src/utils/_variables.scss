@@ -3,6 +3,7 @@ $blue: #0c195a;
 $green: #64d7be;
 $greyLike: #{$blue}05;
 $white: #fff;
+$semiTransparentBlack: #000000d9;
 
 $Gilroy: Gilroy, sans-serif;
 $lato: Lato, sans-serif;
@@ -10,6 +11,8 @@ $lato: Lato, sans-serif;
 $max-width: 1200px;
 $body-max-width: 2560px; // 1440p
 $body-padding: 30px;
+
+$animationDuration: 300ms;
 
 %uppercase {
   text-transform: uppercase;

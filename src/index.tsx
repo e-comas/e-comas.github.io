@@ -32,8 +32,17 @@ export default (
           <ElementWithBackgroundImage
             tagName="div"
             src="/images/Banner2 Video 3x .png"
+            class="video-link"
           >
-            <iframe
+            <a
+              href="https://www.youtube.com/watch?v=vjGxQNji05U"
+              data-embed="https://www.youtube-nocookie.com/embed/vjGxQNji05U"
+              target="_blank"
+              title="Watch on YouTube"
+            >
+              Play video on YouTube
+            </a>
+            {/* <iframe
               width="320"
               height="315"
               src="https://www.youtube-nocookie.com/embed/vjGxQNji05U"
@@ -42,7 +51,7 @@ export default (
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
               loading="lazy"
-            />
+            /> */}
           </ElementWithBackgroundImage>
         </figure>
       </section>
