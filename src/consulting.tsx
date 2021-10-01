@@ -4,32 +4,42 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
+import FourStepApproach from "./views/FourStepApproach.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
 
 export default (
-  <Body title="Syndication with Salsify">
+  <Body title="Content / Syndication">
     <Header />
     <Breadcrumbs />
     <main>
       <section>
         <figure>
           <figcaption>
-            <h2>Syndication / Salsify</h2>
+            <h2>Consulting / Coaching</h2>
             <p>
-              We work with our friends at{" "}
-              <a href="https://www.salsify.com/">Salsify</a> to meet all your
-              Product Information Management (PIM) needs and help you{" "}
-              <strong>win on the digital shelf</strong>. The digital shelf is
-              the collection of diverse and rapidly evolving digital touchpoints
-              used by shoppers to engage with brands. No matter where they buy -
-              in a retail store, from a social influence post, or on an
-              ecommerce site - a shopper creates their own personalised,
-              digitally-influenced journey.
-              <br />
-              To win in this new world, you must take control of your digital
-              shelf.
+              Your journey with us starts here! We can <strong>audit</strong>{" "}
+              your e-commerce account, help you <strong>define</strong> a
+              strategy for Amazon including <strong>where</strong> to play and{" "}
+              <strong>how</strong> to win, and <strong>consult</strong> with you
+              and <strong>coach</strong> your team.
+            </p>
+            <ul>
+              <li>
+                We can provide <strong>training</strong> to you and your team.
+              </li>
+              <li>
+                We can <strong>research</strong> your market and competitors.
+              </li>
+              <li>
+                We can <strong>audit</strong> your business's current success on
+                Amazon.
+              </li>
+            </ul>
+            <p>
+              We offer several options to help you and your team work out your
+              ecommerce strategy and move it forward.
             </p>
           </figcaption>
           <Picture src="/images/IMG_5892.jpg" alt="" />
@@ -40,54 +50,101 @@ export default (
         <figure>
           <Picture src="/images/IMG_5892.jpg" alt="" />
           <figcaption>
-            <h3>3 principles for winning on the digital shelf</h3>
+            <h2>Workshops &amp; training</h2>
+
             <p>
-              Just like traditional retail, the digital shelf requires extreme
-              focus and discipline to drive maximum growth and beat your
-              competition. But the guiding principles to achieve that growth are
-              different.
+              Are you struggling to determine your ecommerce strategy?
+              <br />
+              Or do you think you don't have the right level of ecommerce
+              knowledge within your organisation?
+              <br />
+              We can help you:
             </p>
-            <ol>
+
+            <ul>
+              <li>Design your strategy;</li>
+              <li>Define your operational gaps and needs;</li>
+              <li>Understand how to create the best content;</li>
               <li>
-                <strong>Engage shoppers everywhere : </strong>
-                Content has become your brand’s packaging on the digital shelf.
+                Learn the most efficient and up-to-date ways of driving traffic.
               </li>
-              <li>
-                <strong>Execute commerce strategies fast : </strong>
-                New channels represent opportunities that may or may not work
-                for your business. You must learn fast, scale what works, and
-                stop what doesn’t.
-              </li>
-              <li>
-                <strong>Be your customers' best partner : </strong>
-                Delivering the content your retailers and distributors need
-                makes you a partner they will prioritise, driving even more
-                growth for your business.
-              </li>
-            </ol>
+            </ul>
+
+            <p>
+              All by using our proven <strong>eCommerce growth model</strong>!
+            </p>
           </figcaption>
         </figure>
       </section>
 
-      <section id="salsify">
+      <section>
         <figure>
           <figcaption>
-            <h3>Our partnership with Salsify</h3>
+            <h2>Research</h2>
+
             <p>
-              Salsify can optimise your PIM, fully operationalising your product
-              content so that you can act quickly on data-driven insights,
-              evolving your business and engaging your customers.
+              We can help you understand how to win on the digital shelf, by
+              researching:
             </p>
-            {/* Insert graphic here */}
+
+            <ul>
+              <li>The market you’re in;</li>
+              <li>The products you’re selling;</li>
+              <li>Your competition;</li>
+              <li>How customers perceive your brand and products.</li>
+            </ul>
+
             <p>
-              We can implement Salsify on your behalf to organise your content
-              and upload it to all marketplaces. Our team of experts can also
-              help you manage your day-to-day business activities on Salsify.
+              To help you understand your potential and prepare your best
+              ecommerce strategy, including which platforms to launch on, and
+              where.
             </p>
           </figcaption>
           <Picture src="/images/IMG_5892.jpg" alt="" />
         </figure>
       </section>
+
+      <section>
+        <figure>
+          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <figcaption>
+            <h2>Compas / Audit</h2>
+
+            <p>
+              Compas is our in-house auditing tool for your ecommerce business.
+              It uses machine learning and data analytics to:
+            </p>
+
+            <p>
+              Your Compas report reveals what your company is doing well and
+              where you are lagging behind, acting like a compass in helping you
+              follow future directions, based on the four pillars of our
+              eCommerce Growth Model:
+            </p>
+
+            <ul>
+              <li>
+                Capture customers' expectations, preferences, experiences and
+                feedback about your products.
+              </li>
+              <li>Present high level trends in review scores.</li>
+              <li>
+                Extract customers’ sentiment about specific products/categories
+                (positive/neutral/negative).
+              </li>
+            </ul>
+
+            <p>
+              Your Compas report reveals what your company is doing well and
+              where you are lagging behind, acting like a compass in helping you
+              follow future directions, based on the four pillars of our
+              eCommerce Growth Model:
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <FourStepApproach />
     </main>
     <Footer />
   </Body>

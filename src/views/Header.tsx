@@ -40,9 +40,6 @@ export default () => (
       <summary aria-label="Open navigation menu" />
     </details>
     <nav>{arborescence.root.children.map(layoutArborescence)}</nav>
-    <h1>
-      Be visible and sell easily and quickly on Amazon and on the biggest
-      marketplaces!
-    </h1>
+    <h1>eCommerce made simple.</h1>
   </ElementWithBackgroundImage>
 );
