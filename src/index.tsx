@@ -72,16 +72,7 @@ export default (
       </section>
 
       <section class="threeQuarter">
-        <div class="testimonies">
-          <h2>They did it</h2>
-          <img aria-hidden="true" src="/images/quotes.svg" />
-          <div class="slider">
-            <Testimonies />
-          </div>
-          <a href="/testimonials.html#testimonials" class="cta">
-            The testimonies
-          </a>
-        </div>
+        <Testimonies withBlock />
         <Picture
           src="/images/Banner3.3 Testimonials 3x .png"
           alt="illustration"

@@ -20,57 +20,6 @@
   }
 }
 
-div.testimonies {
-  display: flex;
-  gap: 2.5rem;
-  flex-direction: column;
-  justify-content: space-between;
-
-  background-color: $greyLike;
-  padding: 2rem;
-
-  > img {
-    position: absolute;
-    max-height: 4.5rem;
-    max-width: 6.5rem;
-    z-index: -1;
-    transform: translateX(-50%) translateY(-33.3%);
-  }
-
-  .slider {
-    display: flex;
-    width: 100%;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-
-    figure {
-      width: 100%;
-      flex-shrink: 0;
-      scroll-snap-align: center;
-    }
-  }
-  @media screen and (min-width: 410px) {
-    padding: 3rem 5rem;
-  }
-  @media screen and (min-width: $max-width) {
-    display: grid;
-    grid-template-columns: auto 800px auto;
-    position: relative;
-    & > * {
-      grid-column: 2;
-    }
-    & > img {
-      transform: translateX(-50%) translateY(33.3%);
-    }
-  }
-
-  @media screen and (max-width: 499px) {
-    .cta {
-      margin: 0 auto;
-    }
-  }
-}
-
 section.news {
   display: flex;
   flex-direction: column;

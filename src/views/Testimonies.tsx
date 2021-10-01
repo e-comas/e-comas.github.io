@@ -6,7 +6,13 @@ import Picture from "../utils/Picture.js";
 
 import "./Testimonies.scss";
 
-export default () => (
+interface TestimoniesProps {
+  withBlock?: boolean;
+  ref?: any;
+  children?: any[];
+}
+
+const Testimonies = () => (
   <>
     {testimonies.map((testimony) => (
       <figure class="testimonial">
@@ -32,3 +38,19 @@ export default () => (
     ))}
   </>
 );
+
+export default (props: TestimoniesProps) =>
+  props.withBlock ? (
+    <div class="testimonies">
+      <h2>They did it</h2>
+      <img aria-hidden="true" src="/images/quotes.svg" />
+      <div class="slider">
+        <Testimonies />
+      </div>
+      <a href="/testimonials.html#testimonials" class="cta">
+        The testimonies
+      </a>
+    </div>
+  ) : (
+    <Testimonies />
+  );

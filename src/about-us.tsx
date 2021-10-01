@@ -3,6 +3,7 @@ import { h } from "@aduh95/async-jsx";
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
+import Testimonies from "./views/Testimonies.js";
 import Picture from "./utils/Picture.js";
 import Footer from "./views/Footer.js";
 
@@ -105,13 +106,7 @@ export default (
       </section>
 
       <section>
-        <h3>Testimonials</h3>
-
-        <p>Here's what our customers say about us:</p>
-
-        <a href="/testimonials.html" class="section__btn cta">
-          The testimonies
-        </a>
+        <Testimonies withBlock />
       </section>
 
       <section class="section--grey">
