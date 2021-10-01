@@ -29,43 +29,43 @@ image = "/images/Amanda Jenner.jpg"
 logo = "/images/my-carry-potty.png"
 
 
-[[item]]
-text = """\
-    Jérôme and e-Comas are brilliant door openers, they know everybody in \
-    Amazon. They are very concentrated on growth strategies and delivering on \
-    targets. Jerôme is a very good salesperson and a brilliant speaker, \
-    supported by a hard-working team.\
-  """
-name = "Markus Anacker"
-title = "Executive Vice President at Eschenbach"
-company = "Eschenbach"
-# image = "https://media.licdn.com/dms/image/C4D03AQGtvsYJlg9DRg/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=YDDpHQ9muS-Dq1IN9u2JOMVw7vc2LsiYkTX_ZcdLDLM"
-# logo = "/images/eschenbach.gif"
-logo = "/images/my-carry-potty.png"
+# [[item]]
+# text = """\
+#     Jérôme and e-Comas are brilliant door openers, they know everybody in \
+#     Amazon. They are very concentrated on growth strategies and delivering on \
+#     targets. Jerôme is a very good salesperson and a brilliant speaker, \
+#     supported by a hard-working team.\
+#   """
+# name = "Markus Anacker"
+# title = "Executive Vice President at Eschenbach"
+# company = "Eschenbach"
+# # image = "https://media.licdn.com/dms/image/C4D03AQGtvsYJlg9DRg/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=YDDpHQ9muS-Dq1IN9u2JOMVw7vc2LsiYkTX_ZcdLDLM"
+# # logo = "/images/eschenbach.gif"
+# logo = "/images/my-carry-potty.png"
 
 
-[[item]]
-text = """\
-    We more than doubled our sales, which was a better turn rate than the \
-    other channels at the time. We had better control of our listings and an \
-    overall better brand presence. A good clean-up project that helped scale \
-    up our company.\
-  """
-name = "Oliver Amdrup"
-title = "Founder of Puori"
-company = "Puori"
-# image = "https://media.licdn.com/dms/image/C5603AQE6J6dw_sjfJw/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=U-4sl7JEmwaVlP3ti4SBrO2GIWIZs3MatnIsykm3rR8 "
-logo = "/images/puori.svg"
+# [[item]]
+# text = """\
+#     We more than doubled our sales, which was a better turn rate than the \
+#     other channels at the time. We had better control of our listings and an \
+#     overall better brand presence. A good clean-up project that helped scale \
+#     up our company.\
+#   """
+# name = "Oliver Amdrup"
+# title = "Founder of Puori"
+# company = "Puori"
+# # image = "https://media.licdn.com/dms/image/C5603AQE6J6dw_sjfJw/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=U-4sl7JEmwaVlP3ti4SBrO2GIWIZs3MatnIsykm3rR8 "
+# logo = "/images/puori.svg"
 
 
-[[item]]
-text = """\
-    Working with my e-Comas team, especially Seval and Claire, has been easy \
-    and effortless. Through their efforts on our Vendor Account, we've seen \
-    the best Amazon performance across our European sales channels. We look \
-    forward to expanding our collaboration!\
-  """
-name = "Frits Kuper"
-title = "Director of International Sales at Superfeet"
-company = "Superfeet"
-logo = "/images/superfeet.png"
+# [[item]]
+# text = """\
+#     Working with my e-Comas team, especially Seval and Claire, has been easy \
+#     and effortless. Through their efforts on our Vendor Account, we've seen \
+#     the best Amazon performance across our European sales channels. We look \
+#     forward to expanding our collaboration!\
+#   """
+# name = "Frits Kuper"
+# title = "Director of International Sales at Superfeet"
+# company = "Superfeet"
+# logo = "/images/superfeet.png"
