@@ -109,22 +109,24 @@ export default (
         <Testimonies withBlock />
       </section>
 
-      <section class="section--grey">
-        <h3>Blog</h3>
+      <section>
+        <div style={"margin:auto" as any}>
+          <h3>Blog</h3>
 
-        <p>
-          You can learn from our expertise for free! We do webinars, podcasts,
-          articles and useful little videos on social media.{" "}
-        </p>
+          <p>
+            You can learn from our expertise for free! We do webinars, podcasts,
+            articles and useful little videos on social media.{" "}
+          </p>
 
-        <p>
-          Our blogs are full of our ecommerce wisdom and tips – find out
-          something new today!
-        </p>
+          <p>
+            Our blogs are full of our ecommerce wisdom and tips – find out
+            something new today!
+          </p>
 
-        <a href="/news.html" class="section__btn cta">
-          Latest blogs
-        </a>
+          <a href="/news.html" class="section__btn cta">
+            Latest blogs
+          </a>
+        </div>
       </section>
     </main>
     <Footer />
