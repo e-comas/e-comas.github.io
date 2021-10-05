@@ -17,6 +17,9 @@ div.testimonies {
     z-index: -1;
     transform: translateX(-50%) translateY(-33.3%);
   }
+  .logo {
+    display: none;
+  }
 
   .slider {
     display: flex;
@@ -54,7 +57,6 @@ div.testimonies {
 figure.testimonial {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
 
   figcaption {
     display: contents;
@@ -116,6 +118,7 @@ figure.testimonial {
     display: grid;
     grid-template-columns: 4rem 1fr;
     gap: 0 1rem;
+    margin: 2rem;
 
     .logo {
       display: none;
