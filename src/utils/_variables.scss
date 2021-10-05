@@ -1,6 +1,7 @@
 $border-radius: 6px;
 $blue: #0c195a;
 $green: #64d7be;
+$grey: #282828;
 $greyLike: #{$blue}05;
 $white: #fff;
 $semiTransparentBlack: #000000d9;
@@ -24,7 +25,7 @@ $animationDuration: 300ms;
   @extend %uppercase;
 
   display: block;
-  color: $blue;
+  color: $grey;
   background-color: $green;
   border-radius: $border-radius;
   padding: 0.75rem 1rem;
@@ -35,7 +36,7 @@ $animationDuration: 300ms;
 }
 
 @mixin invertedCta {
-  background-color: $blue;
+  background-color: $grey;
   color: $green;
 }
 %invertedCta {
@@ -44,7 +45,7 @@ $animationDuration: 300ms;
 
 %inverted {
   background-color: $green;
-  color: $blue;
+  color: $grey;
 
   .cta {
     @extend %invertedCta;

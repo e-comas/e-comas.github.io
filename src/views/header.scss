@@ -183,7 +183,7 @@ header {
         a,
         a:hover,
         a.active {
-          color: $blue;
+          color: $grey;
         }
         & > :last-child {
           @include invertedCta();

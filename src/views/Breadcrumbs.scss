@@ -1,4 +1,4 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
 
 .breadcrumbs {
   list-style: none;
@@ -17,6 +17,6 @@
 
   a {
     text-decoration: none;
-    color: $blue;
+    color: inherit;
   }
 }

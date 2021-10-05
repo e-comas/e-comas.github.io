@@ -1,6 +1,13 @@
 @use "./utils/variables" as *;
 @use "./classic-page.scss";
 
+section {
+  &:nth-child(2n + 2),
+  &:nth-child(2n + 3) {
+    // background-color: unset;
+  }
+}
+
 .area-of-expertise {
   img {
     object-fit: contain;

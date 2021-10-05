@@ -31,12 +31,12 @@ section {
     }
   }
 
-  &:nth-of-type(2n + 2) {
-    @extend %inverted;
-  }
-  &:nth-of-type(2n + 3) {
-    background-color: $greyLike;
-  }
+//   &:nth-of-type(2n + 2) {
+//     @extend %inverted;
+//   }
+//   &:nth-of-type(2n + 3) {
+//     background-color: $greyLike;
+//   }
 }
 
 .retail {
