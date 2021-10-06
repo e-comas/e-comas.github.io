@@ -97,9 +97,10 @@ export default function plugin() {
       }
       const { data, exportableKeys, nonExportableKeys, isArray, imports } =
         getTOMLKeys(code);
-      const nonExportableObjectContent = nonExportableKeys
-        .map((key) => `${JSON.stringify(key)}:${JSON.stringify(data[key])}`)
-        .join(",");
+      const nonExportableObjectContent =
+        nonExportableKeys
+          ?.map((key) => `${JSON.stringify(key)}:${JSON.stringify(data[key])}`)
+          .join(",") ?? "";
       code = isArray
         ? `export default ${JSON.stringify(isArray)}`
         : exportableKeys?.length
