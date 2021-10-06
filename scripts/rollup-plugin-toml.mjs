@@ -95,21 +95,21 @@ export default function plugin() {
       if (!id.endsWith(".toml")) {
         return null;
       }
-      const {
-        data,
-        exportableKeys,
-        nonExportableKeys,
-        isArray,
-        imports,
-      } = getTOMLKeys(code);
+      const { data, exportableKeys, nonExportableKeys, isArray, imports } =
+        getTOMLKeys(code);
+      const nonExportableObjectContent = nonExportableKeys
+        .map((key) => `${JSON.stringify(key)}:${JSON.stringify(data[key])}`)
+        .join(",");
       code = isArray
         ? `export default ${JSON.stringify(isArray)}`
-        : exportableKeys
+        : exportableKeys?.length
+        ? exportableKeys
             .map((key) => `export const ${key} = ${JSON.stringify(data[key])}`)
             .join(";") +
-          `;export default{${exportableKeys.join(",")}, ${nonExportableKeys
-            .map((key) => `${JSON.stringify(key)}:${JSON.stringify(data[key])}`)
-            .join(",")}}`;
+          `;export default{${exportableKeys.join(
+            ","
+          )}, ${nonExportableObjectContent}}`
+        : `export default{${nonExportableObjectContent}}`;
 
       if (imports.length) {
         code =
