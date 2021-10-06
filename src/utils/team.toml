@@ -1,0 +1,223 @@
+__use_generic_keys_for_current_scope__ = "email"
+__use_generic_keys__ = { url = "socialNetwork" }
+
+["angelica.lopez@e-comas.com"]
+Name = "Angelica Lopez"
+Title = ""
+pictureUrl = "/images/team/angelica.lopez.jpg"
+
+["r.bell@e-comas.com"]
+Name = "Riley Bell"
+Title = ""
+pictureUrl = "/images/team/r.bell.jpg"
+
+["c.guilleautot@e-comas.com"]
+Name = "Claire Gilleautot"
+Title = ""
+pictureUrl = "/images/team/c.guilleautot.jpg"
+
+["k.mbesso@e-comas.com"]
+Name = "Karolina M'Besso"
+Title = ""
+pictureUrl = "/images/team/k.mbesso.jpg"
+
+["b.senese@e-comas.com"]
+Name = "Beatrice Senese"
+Title = ""
+pictureUrl = "/images/team/b.senese.jpg"
+
+["s.jacobsen@e-comas.com"]
+Name = "Sven Jacobsen Diaz"
+Title = ""
+pictureUrl = "/images/team/s.jacobsen.jpg"
+
+["h.andria@e-comas.com"]
+Name = "Henintsoa Andriatianarivo"
+Title = ""
+pictureUrl = "/images/team/h.andria.jpg"
+
+# ["a.upadhya@e-comas.com"]
+# Name = "Asha Upadhya"
+# Title = "Support Account Manager"
+# pictureUrl = "https://e-comas.com/docs/signatures/ressources/Ashasecond.jpg"
+# url.LinkedIn = "https://www.linkedin.com/in/asha-upadhya-6781a6108/"
+
+["a.vicedo@e-comas.com"]
+Name = "Antonio Vicedo Martínez"
+Phone = "+352621828828"
+Title = "Senior Account Manager"
+pictureUrl = "/images/team/antonio-vicedo.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/antoniovicedo/"
+
+["a.sebakunzi@e-comas.com"]
+Name = "Amalia Sebakunzi"
+Phone = "+41788031869"
+Title = "Chief Operating Officer, e-Comas"
+pictureUrl = "/images/team/amalia.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/amaliawidder/"
+
+["c.bordoni@e-comas.com"]
+Name = "Christel Bordoni"
+Phone = "+352621624950"
+Title = "Business Development Executive"
+pictureUrl = "/images/team/christel-bordoni.jpg"
+
+["c.clement@e-comas.com"]
+Name = "Claudiu Clement"
+Title = "eCommerce Consultant"
+pictureUrl = "/images/team/claudiu-clement-2.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/claudiu-clement-5a450791/"
+url.Medium = "https://medium.com/@claudiuclement"
+Phone = "+40747485486"
+
+["c.dealmeida@e-comas.com"]
+Name = "Carlos De Almeida"
+Phone = "+352621657265"
+Title = "Senior Account Manager"
+pictureUrl = "/images/team/carlos-de-almeida.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida/"
+
+["c.gregoire@e-comas.com"]
+Name = "Charlène Grégoire"
+Phone = "+352621575553"
+Title = "Junior Account Manager"
+pictureUrl = "/images/team/c.gregoire.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/charlene-gregoire/"
+
+["j.barton@e-comas.com"]
+Name = "Jessica Barton"
+Title = "Press Manager"
+pictureUrl = "/images/team/jessice-barton.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/jessica-barton-a3200b84/"
+
+["j.chapman@e-comas.com"]
+Name = "Jessamy Chapman"
+Title = "Press Manager"
+pictureUrl = "/images/team/jessamy-chapman.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/jessamychapman/"
+
+["j.deguigne@e-comas.com"]
+Name = "Jérôme de Guigné"
+Title = "Founder of e-Comas"
+pictureUrl = "/images/team/jerome-de-guigne.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
+url.Medium = "https://medium.com/@Amazon_expert"
+url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
+
+["j.weber@e-comas.com"]
+Name = "Jana Weber"
+Phone = "+352621572678"
+Title = "Account Manager"
+pictureUrl = "/images/team/jana-weber.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/jana-weber"
+
+["m.manasse@e-comas.com"]
+Name = "Misa Manassé"
+Phone = "+261348571532"
+Title = "Office manager"
+pictureUrl = "/images/team/misa-manasse.jpg"
+
+# ["m.mathew@e-comas.com"]
+# Name = "Manu Joy Mathew"
+# Phone = "+917034647720"
+# Title = "Account Support"
+# url.LinkedIn = "https://www.linkedin.com/in/manujoymathew/"
+
+["m.palagiri@e-comas.com"]
+Name = "Monika Palagiri"
+Phone = "+918056201327"
+Title = "Account Support Manager"
+pictureUrl = "/images/team/monika.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/monika-palagiri-67711bb2"
+
+["m.rasoa@e-comas.com"]
+Name = "Mireille Rasoa"
+Phone = "+261348581796"
+Title = "Support account manager"
+pictureUrl = "/images/team/m.rasoa.jpg"
+url.LinkedIn = "www.linkedin.com/in/mireillerasoa-amazonexpert"
+
+# ["n.arvind@e-comas.com"]
+# Name = "Navya Aravindakshan"
+# Phone = "+918792129542"
+# Title = "Account Support Manager"
+# url.LinkedIn = "https://www.linkedin.com/in/navya-aravindakshan"
+
+["n.kayikci@e-comas.com"]
+Name = "Nazlı Kayıkçı"
+Phone = "+352691190555"
+Title = "Head of Consultanting"
+pictureUrl = "/images/team/nazli.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/nazlı-ipek-kayıkçı-86644a23"
+
+["o.samson@e-comas.com"]
+Name = "Oscar James Samson"
+Phone = "+919611128423"
+Title = "Team Account Lead"
+pictureUrl = "/images/team/o.samson.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/oscar-samson/"
+
+# ["r.rajan@e-comas.com"]
+# Name = "Raichel Rajan"
+# Phone = "+919742997360"
+# Title = "Support Account Manager"
+# url.LinkedIn = "https://www.linkedin.com/in/raichel-rajan-34a894b9/"
+
+["r.ravichandar@e-comas.com"]
+Name = "Richard Ravichandar"
+Phone = "+919632081278"
+Title = "Senior Account Manager"
+pictureUrl = "/images/team/richard-ravichandar.jpg"
+url.Facebook = "https://www.facebook.com/richard.ravichandar"
+url.LinkedIn = "https://www.linkedin.com/in/richard-ravichandar-a1929a50/"
+url.Twitter = "https://twitter.com/RRichard_Ravi"
+
+["s.andic@e-comas.com"]
+Name = "Seval Andıç"
+Phone = "+352621827375"
+Title = "Senior Account Manager"
+pictureUrl = "/images/team/seval-andic.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/sevalsolmaz/"
+
+["s.maatallah@e-comas.com"]
+Name = "Sarra Maatallah"
+Phone = "+352621590007"
+Title = "Senior Amazon Account Manager"
+pictureUrl = "/images/team/s.maatallah.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
+
+["t.nehera@e-comas.com"]
+Name = "Tomas Nehera"
+Phone = "+352621832283"
+Title = "Head of Account Management"
+pictureUrl = "/images/team/t.nehera.jpg"
+url.LinkedIn = "www.linkedin.com/in/tomasnehera-amazonexpert"
+
+["w.lupter@e-comas.com"]
+Name = "Whitney Lupter"
+Phone = "+352621631333"
+Title = "Senior Account Manager"
+pictureUrl = "/images/team/Whitney-Lupter.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/lupterwithney"
+
+["y.randrianasolo@e-comas.com"]
+Name = "Randrianasolo Yann"
+Phone = "+261327733397"
+Title = "Account manager"
+pictureUrl = "/images/team/y.randrianasolo.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/yann-randrianasolo-aa3090198/"
+
+
+["a.zambeaux@e-comas.com"]
+Name = "Alexandre Zambeaux"
+Title = "Business Development Director"
+pictureUrl = "/images/team/a.zambeaux.jpg"
+Phone = "+352621518174"
+url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux"
+
+
+["a.sambou@e-comas.com"]
+Name = "Aguène Sambou"
+Title = "Salsify Project Manager"
+pictureUrl = "/images/team/a.sambou.jpg"
+url.LinkedIn = "http://www.linkedin.com/in/aguène-sambou"

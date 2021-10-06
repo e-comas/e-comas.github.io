@@ -1,1 +1,49 @@
-@use './utils/variables' as *;
+@use "./utils/variables" as *;
+
+h2 {
+  text-align: center;
+
+  @media screen and (min-width: $max-width) {
+    text-align: unset;
+  }
+}
+
+.face-book {
+  display: grid;
+  margin: 3rem 0 6rem;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+
+  list-style: none;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  figcaption > * {
+    display: block;
+    margin: 0 1rem;
+    text-align: center;
+    font-family: $Gilroy;
+  }
+
+  strong {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+  }
+
+  em {
+    font-size: 0.75rem;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.175em;
+  }
+}
