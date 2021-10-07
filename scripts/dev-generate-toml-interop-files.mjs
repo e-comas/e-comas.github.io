@@ -9,7 +9,7 @@ const getTOMLKeysFromFileDescriptor = (fd) =>
   fd.readFile("utf8").then(getTOMLKeys);
 
 export async function createInteropFilesFromTOMLFile(tomlFile) {
-  if (!tomlFile.pathname.endsWith(".toml")) {
+  if (!(tomlFile.pathname || tomlFile).endsWith(".toml")) {
     return;
   }
   try {
