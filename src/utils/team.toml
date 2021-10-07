@@ -1,169 +1,274 @@
-__use_generic_keys_for_current_scope__ = "email"
 __use_generic_keys__ = { url = "socialNetwork" }
 
-["angelica.lopez@e-comas.com"]
-Name = "Angelica Lopez"
-Title = ""
-pictureUrl = "/images/team/angelica.lopez.jpg"
+[[item]]
+email = "j.deguigne@e-comas.com"
+Name = "Jérôme de Guigné"
+Title = "Founder & Managing Director"
+bio = """\
+    Jérôme specialises in helping global brands grow their distribution on \
+    and through Amazon. His wealth of ecommerce expertise comes from 20 years \
+    of sales and international distribution experience in Europe, Asia and \
+    North America. Jérôme focuses on real-world proven solutions, with \
+    results as great as multiplying revenue by five times or more within two \
+    years.\
+  """
+pictureUrl = "/images/team/jerome-de-guigne.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
+url.Medium = "https://medium.com/@Amazon_expert"
+url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
 
-["r.bell@e-comas.com"]
-Name = "Riley Bell"
-Title = ""
-pictureUrl = "/images/team/r.bell.jpg"
+[[item]]
+email = "a.sebakunzi@e-comas.com"
+Name = "Amalia Sebakunzi"
+Phone = "+41788031869"
+Title = "Chief Operating Officer"
+bio = """\
+    Amalia is a business leader with over 14 years of international experience \
+    spanning a broad range of industries, including FMCG, Food, Beauty, \
+    Luxury, Ecommerce and Digital Health. Amalia joined e-Comas as Chief \
+    Operating Officer in 2021, having worked in Nigeria for three years \
+    heading up strategic marketing activities for one of the world’s leading \
+    food brands. With over a decade of sales and marketing expertise, Amalia \
+    has a wealth of knowledge to help brands succeed on all online \
+    marketplaces.\n\
+  """
+pictureUrl = "/images/team/amalia.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/amaliawidder/"
 
-["c.guilleautot@e-comas.com"]
-Name = "Claire Gilleautot"
-Title = ""
-pictureUrl = "/images/team/c.guilleautot.jpg"
+[[item]]
+email = "s.maatallah@e-comas.com"
+Name = "Sarra Maatallah"
+Phone = "+352621590007"
+Title = "Team Director, Account Management"
+bio = """\
+    Sarra is an ecommerce expert and consultant with a business management \
+    background. Calm and organised, she helps her clients build a solid \
+    strategy to grow their brands and lift up sales by covering all imaginable \
+    aspects of their accounts, from creating and optimising advertising \
+    campaigns and promotions, to fixing catalogues and listings, and even \
+    building a customised brand store that reflects the brand and its values \
+    and increases brand awareness.\n\
+  """
+pictureUrl = "/images/team/s.maatallah.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
 
-["k.mbesso@e-comas.com"]
-Name = "Karolina M'Besso"
-Title = ""
-pictureUrl = "/images/team/k.mbesso.jpg"
+[[item]]
+email = "c.dealmeida@e-comas.com"
+Name = "Carlos De Almeida"
+Phone = "+352621657265"
+Title = "Team Director, Account Management"
+bio = """\
+    Carlos is an economist who spent the first four years of his career in \
+    trade marketing, category management and brand management positions in the \
+    FMCG sector.\n\
+    In the last few years he has been fully dedicated to helping companies win \
+    on ecommerce by planning and managing their catalogues, promotions and \
+    advertising activities.\n\
+  """
+pictureUrl = "/images/team/carlos-de-almeida.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida/"
 
-["b.senese@e-comas.com"]
-Name = "Beatrice Senese"
-Title = ""
-pictureUrl = "/images/team/b.senese.jpg"
+[[item]]
+email = "s.andic@e-comas.com"
+Name = "Seval Andıç"
+Phone = "+352621827375"
+Title = "Team Director, Account Management "
+bio = """\
+    Seval is an ex-Amazonian project manager who combines localisation, \
+    content marketing and e-commerce management in her background.\n\
+    As a proud former member of the Amazon EU expansion team that successfully \
+    launched a new marketplace in 2018, she has built her career on her \
+    passion to treat every day like 'Day One', and keep growing along with her \
+    clients.\n\
+  """
+pictureUrl = "/images/team/seval-andic.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/sevalsolmaz/"
 
-["s.jacobsen@e-comas.com"]
-Name = "Sven Jacobsen Diaz"
-Title = ""
-pictureUrl = "/images/team/s.jacobsen.jpg"
+[[item]]
+email = "t.nehera@e-comas.com"
+Name = "Tomas Nehera"
+Phone = "+352621832283"
+Title = "Team Director, Account Management "
+bio = """\
+    As a former Amazon FBA team leader, Tomas is passionate about process \
+    improvements and getting work done. His 10+ years of experience include \
+    managing global operations within corporate environments, cutting off \
+    waste using the Lean Six Sigma approach, and launching new teams across \
+    sites. His role at e-Comas includes applying some of the tweaks he learned \
+    in his previous role at TiVo Corp.\n\
+  """
+pictureUrl = "/images/team/t.nehera.jpg"
+url.LinkedIn = "www.linkedin.com/in/tomasnehera-amazonexpert"
 
-["h.andria@e-comas.com"]
-Name = "Henintsoa Andriatianarivo"
-Title = ""
-pictureUrl = "/images/team/h.andria.jpg"
+[[item]]
+email = "n.kayikci@e-comas.com"
+Name = "Nazlı Kayıkçı"
+Phone = "+352691190555"
+Title = "Head of Consultanting"
+bio = """\
+    Nazli is a business consultant with wide experience of marketing, \
+    ecommerce and international expansion. She helps brands to define their \
+    business strategies and grow their brands on online markets. As an \
+    ex-Amazonian, she launched different Amazon marketplaces and led the \
+    Turkey market launch in 2019. She has also led different product launches \
+    in FMCG, and built her own business on the Amazon Seller model.\n\
+  """
+pictureUrl = "/images/team/nazli.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/nazlı-ipek-kayıkçı-86644a23"
 
-# ["a.upadhya@e-comas.com"]
-# Name = "Asha Upadhya"
-# Title = "Support Account Manager"
-# pictureUrl = "https://e-comas.com/docs/signatures/ressources/Ashasecond.jpg"
-# url.LinkedIn = "https://www.linkedin.com/in/asha-upadhya-6781a6108/"
+[[item]]
+email = "a.zambeaux@e-comas.com"
+Name = "Alexandre Zambeaux"
+Phone = "+352621518174"
+Title = "Business Development Director"
+bio = """\
+    Alexandre is an ex-Amazon Senior Vendor Manager with 17+ years of \
+    experience in ecommerce, marketing and business development. He has worked \
+    in the video gaming and online payments industries, and has helped brands \
+    including Melitta, Sony and Microsoft to push their online sales through \
+    Amazon, Shopify and other marketplaces. Alexandre is passionate about \
+    delivering solid strategies and operational solutions to the brands that \
+    he works with.\n\
+  """
+pictureUrl = "/images/team/a.zambeaux.jpg"
+url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux"
 
-["a.vicedo@e-comas.com"]
+[[item]]
+email = "a.sambou@e-comas.com"
+Name = "Aguène Sambou"
+Title = "Salsify Project Manager"
+pictureUrl = "/images/team/a.sambou.jpg"
+url.LinkedIn = "http://www.linkedin.com/in/aguène-sambou"
+
+[[item]]
+email = "a.vicedo@e-comas.com"
 Name = "Antonio Vicedo Martínez"
 Phone = "+352621828828"
 Title = "Senior Account Manager"
 pictureUrl = "/images/team/antonio-vicedo.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/antoniovicedo/"
 
-["a.sebakunzi@e-comas.com"]
-Name = "Amalia Sebakunzi"
-Phone = "+41788031869"
-Title = "Chief Operating Officer, e-Comas"
-pictureUrl = "/images/team/amalia.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/amaliawidder/"
+[[item]]
+email = "angelica.lopez@e-comas.com"
+Name = "Angelica Lopez"
+Title = ""
+pictureUrl = "/images/team/angelica.lopez.jpg"
 
-["c.bordoni@e-comas.com"]
+[[item]]
+email = "a.duhamel@e-comas.com"
+Name = "Antoine du Hamel"
+Title = "Webmaster"
+pictureUrl = "/images/team/a.duhamel.jpg"
+
+[[item]]
+email = "b.senese@e-comas.com"
+Name = "Beatrice Senese"
+Title = ""
+pictureUrl = "/images/team/b.senese.jpg"
+
+[[item]]
+email = "c.bordoni@e-comas.com"
 Name = "Christel Bordoni"
 Phone = "+352621624950"
 Title = "Business Development Executive"
 pictureUrl = "/images/team/christel-bordoni.jpg"
 
-["c.clement@e-comas.com"]
+[[item]]
+email = "c.clement@e-comas.com"
 Name = "Claudiu Clement"
+Phone = "+40747485486"
 Title = "eCommerce Consultant"
 pictureUrl = "/images/team/claudiu-clement-2.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/claudiu-clement-5a450791/"
 url.Medium = "https://medium.com/@claudiuclement"
-Phone = "+40747485486"
 
-["c.dealmeida@e-comas.com"]
-Name = "Carlos De Almeida"
-Phone = "+352621657265"
-Title = "Senior Account Manager"
-pictureUrl = "/images/team/carlos-de-almeida.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida/"
-
-["c.gregoire@e-comas.com"]
+[[item]]
+email = "c.gregoire@e-comas.com"
 Name = "Charlène Grégoire"
 Phone = "+352621575553"
 Title = "Junior Account Manager"
 pictureUrl = "/images/team/c.gregoire.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/charlene-gregoire/"
 
-["j.barton@e-comas.com"]
+[[item]]
+email = "c.guilleautot@e-comas.com"
+Name = "Claire Guilleautot"
+Title = ""
+pictureUrl = "/images/team/c.guilleautot.jpg"
+
+[[item]]
+email = "h.andria@e-comas.com"
+Name = "Henintsoa Andriatianarivo"
+Title = ""
+pictureUrl = "/images/team/h.andria.jpg"
+
+[[item]]
+email = "j.barton@e-comas.com"
 Name = "Jessica Barton"
 Title = "Press Manager"
 pictureUrl = "/images/team/jessice-barton.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/jessica-barton-a3200b84/"
 
-["j.chapman@e-comas.com"]
+[[item]]
+email = "j.chapman@e-comas.com"
 Name = "Jessamy Chapman"
 Title = "Press Manager"
 pictureUrl = "/images/team/jessamy-chapman.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/jessamychapman/"
 
-["j.deguigne@e-comas.com"]
-Name = "Jérôme de Guigné"
-Title = "Founder of e-Comas"
-pictureUrl = "/images/team/jerome-de-guigne.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
-url.Medium = "https://medium.com/@Amazon_expert"
-url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
-
-["j.weber@e-comas.com"]
+[[item]]
+email = "j.weber@e-comas.com"
 Name = "Jana Weber"
 Phone = "+352621572678"
 Title = "Account Manager"
 pictureUrl = "/images/team/jana-weber.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/jana-weber"
 
-["m.manasse@e-comas.com"]
+[[item]]
+email = "k.mbesso@e-comas.com"
+Name = "Karolina M'Besso"
+Title = ""
+pictureUrl = "/images/team/k.mbesso.jpg"
+
+[[item]]
+email = "m.manasse@e-comas.com"
 Name = "Misa Manassé"
 Phone = "+261348571532"
 Title = "Office manager"
 pictureUrl = "/images/team/misa-manasse.jpg"
 
-# ["m.mathew@e-comas.com"]
-# Name = "Manu Joy Mathew"
-# Phone = "+917034647720"
-# Title = "Account Support"
-# url.LinkedIn = "https://www.linkedin.com/in/manujoymathew/"
-
-["m.palagiri@e-comas.com"]
+[[item]]
+email = "m.palagiri@e-comas.com"
 Name = "Monika Palagiri"
 Phone = "+918056201327"
 Title = "Account Support Manager"
 pictureUrl = "/images/team/monika.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/monika-palagiri-67711bb2"
 
-["m.rasoa@e-comas.com"]
+[[item]]
+email = "m.rasoa@e-comas.com"
 Name = "Mireille Rasoa"
 Phone = "+261348581796"
 Title = "Support account manager"
 pictureUrl = "/images/team/m.rasoa.jpg"
 url.LinkedIn = "www.linkedin.com/in/mireillerasoa-amazonexpert"
 
-# ["n.arvind@e-comas.com"]
-# Name = "Navya Aravindakshan"
-# Phone = "+918792129542"
-# Title = "Account Support Manager"
-# url.LinkedIn = "https://www.linkedin.com/in/navya-aravindakshan"
-
-["n.kayikci@e-comas.com"]
-Name = "Nazlı Kayıkçı"
-Phone = "+352691190555"
-Title = "Head of Consultanting"
-pictureUrl = "/images/team/nazli.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/nazlı-ipek-kayıkçı-86644a23"
-
-["o.samson@e-comas.com"]
+[[item]]
+email = "o.samson@e-comas.com"
 Name = "Oscar James Samson"
 Phone = "+919611128423"
 Title = "Team Account Lead"
 pictureUrl = "/images/team/o.samson.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/oscar-samson/"
 
-# ["r.rajan@e-comas.com"]
-# Name = "Raichel Rajan"
-# Phone = "+919742997360"
-# Title = "Support Account Manager"
-# url.LinkedIn = "https://www.linkedin.com/in/raichel-rajan-34a894b9/"
+[[item]]
+email = "r.bell@e-comas.com"
+Name = "Riley Bell"
+Title = ""
+pictureUrl = "/images/team/r.bell.jpg"
 
-["r.ravichandar@e-comas.com"]
+[[item]]
+email = "r.ravichandar@e-comas.com"
 Name = "Richard Ravichandar"
 Phone = "+919632081278"
 Title = "Senior Account Manager"
@@ -172,52 +277,24 @@ url.Facebook = "https://www.facebook.com/richard.ravichandar"
 url.LinkedIn = "https://www.linkedin.com/in/richard-ravichandar-a1929a50/"
 url.Twitter = "https://twitter.com/RRichard_Ravi"
 
-["s.andic@e-comas.com"]
-Name = "Seval Andıç"
-Phone = "+352621827375"
-Title = "Senior Account Manager"
-pictureUrl = "/images/team/seval-andic.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/sevalsolmaz/"
+[[item]]
+email = "s.jacobsen@e-comas.com"
+Name = "Sven Jacobsen Diaz"
+Title = ""
+pictureUrl = "/images/team/s.jacobsen.jpg"
 
-["s.maatallah@e-comas.com"]
-Name = "Sarra Maatallah"
-Phone = "+352621590007"
-Title = "Senior Amazon Account Manager"
-pictureUrl = "/images/team/s.maatallah.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
-
-["t.nehera@e-comas.com"]
-Name = "Tomas Nehera"
-Phone = "+352621832283"
-Title = "Head of Account Management"
-pictureUrl = "/images/team/t.nehera.jpg"
-url.LinkedIn = "www.linkedin.com/in/tomasnehera-amazonexpert"
-
-["w.lupter@e-comas.com"]
+[[item]]
+email = "w.lupter@e-comas.com"
 Name = "Whitney Lupter"
 Phone = "+352621631333"
 Title = "Senior Account Manager"
 pictureUrl = "/images/team/Whitney-Lupter.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/lupterwithney"
 
-["y.randrianasolo@e-comas.com"]
+[[item]]
+email = "y.randrianasolo@e-comas.com"
 Name = "Randrianasolo Yann"
 Phone = "+261327733397"
 Title = "Account manager"
 pictureUrl = "/images/team/y.randrianasolo.jpg"
 url.LinkedIn = "https://www.linkedin.com/in/yann-randrianasolo-aa3090198/"
-
-
-["a.zambeaux@e-comas.com"]
-Name = "Alexandre Zambeaux"
-Title = "Business Development Director"
-pictureUrl = "/images/team/a.zambeaux.jpg"
-Phone = "+352621518174"
-url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux"
-
-
-["a.sambou@e-comas.com"]
-Name = "Aguène Sambou"
-Title = "Salsify Project Manager"
-pictureUrl = "/images/team/a.sambou.jpg"
-url.LinkedIn = "http://www.linkedin.com/in/aguène-sambou"

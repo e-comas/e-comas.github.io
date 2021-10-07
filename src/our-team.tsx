@@ -18,7 +18,7 @@ export default (
       <section>
         <h2>Our team</h2>
         <ul class="face-book">
-          {Object.values(team).map(({ Name, Title, pictureUrl }) => (
+          {team.map(({ Name, Title, pictureUrl }) => (
             <li>
               <figure>
                 <Picture src={pictureUrl} alt={"Picture of " + Name} />
