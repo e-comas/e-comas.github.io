@@ -54,4 +54,17 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 0.175em;
   }
+
+  details {
+    display: contents;
+  }
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
 }
