@@ -18,15 +18,14 @@ export default (
       <section>
         <figure>
           <figcaption>
-            <h3>e-Comas in video</h3>
-            <ul>
-              <li>Ate maximus, sum quaspiendam fuga.</li>
-              <li>Lenia plaboriberum is et dersperspide.</li>
-              <li>Ate maximus, sum quaspiendam fuga.</li>
-              <li>Lenia plaboriberum is et dersperspide.</li>
-            </ul>
+            <h3>Discover e-Comas in video</h3>
+            <p>
+              Find out what we’re all about!
+              <br />
+              Wondering what to expect when you work with e-Comas?
+            </p>
             <a href="/our-team.html" class="cta">
-              Read more
+              Let us tell you more
             </a>
           </figcaption>
           <ElementWithBackgroundImage
@@ -60,14 +59,18 @@ export default (
         <figure>
           <Picture src="/images/expertise_area.png" alt="" lossless />
           <figcaption>
-            <h3>Our area of expertise</h3>
+            <h3>Trust our amazing team</h3>
             <p>
-              Our team has over 30 years of experience working with Amazon and
-              the brands on it. We can help you save time and grow faster on
-              Amazon's various marketplaces.
+              We have an incredible team of ecommerce experts with specialist
+              knowledge to help you expand your business across Amazon and other
+              platforms... and across the globe!
+              <br />
+              If you're looking to OPEN an Amazon account, GROW your existing
+              ecommerce sales or SCALE your business globally – or all three –
+              we know exactly how to help you.
             </p>
-            <a href="/experience.html" class="cta inverted">
-              Read more
+            <a href="/experience.html" class="cta">
+              Meet with us
             </a>
           </figcaption>
         </figure>
@@ -88,7 +91,7 @@ export default (
         />
       </section>
 
-      <section class="news">
+      {/* <section class="news">
         <h3>Our latest news</h3>
 
         <article>
@@ -131,7 +134,7 @@ export default (
         <a href="/news.html" class="cta inverted">
           The news
         </a>
-      </section>
+      </section> */}
 
       <ElementWithBackgroundImage
         tagName="section"
