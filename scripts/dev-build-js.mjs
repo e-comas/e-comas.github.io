@@ -1,10 +1,21 @@
 import resolve from "@rollup/plugin-node-resolve";
-import typescript from "@rollup/plugin-typescript";
+import typescript from "@rollup/plugin-sucrase";
 import { rollup } from "rollup";
 import sass from "./rollup-plugin-sass.mjs";
 import toml from "./rollup-plugin-toml.mjs";
 
-const plugins = [typescript(), resolve(), sass(), toml()];
+const plugins = [
+  typescript({
+    jsxFragmentPragma: "Fragment",
+    jsxPragma: "h",
+    transforms: ["jsx", "typescript"],
+    disableESTransforms: true,
+    exclude: ["**.toml"],
+  }),
+  resolve(),
+  toml(),
+  sass(),
+];
 
 let cache;
 
@@ -20,7 +31,8 @@ async function buildWithCache(input) {
 }
 
 export function resetTsPlugin() {
-  plugins[0] = typescript();
+  // No longer needed with Surcase
+  // plugins[0] = typescript();
 }
 
 export default (urlOrPath) =>

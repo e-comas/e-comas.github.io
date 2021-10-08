@@ -10,6 +10,7 @@
     "@aduh95/async-jsx": "^0.2.0",
     "@aduh95/toml": "^0.4.2",
     "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-sucrase": "4.0.1",
     "@rollup/plugin-typescript": "^8.2.5",
     "@squoosh/lib": "^0.4.0",
     "@types/react": "^17.0.21",
@@ -30,5 +31,8 @@
     "build": "NODE_ENV=production node --experimental-json-modules scripts/prod-build.mjs",
     "deploy": "git push && gh workflow run deploy.yml --ref main",
     "postinstall": "node scripts/dev-generate-toml-interop-files.mjs"
+  },
+  "resolutions": {
+    "@rollup/plugin-sucrase@4.0.1": "patch:@rollup/plugin-sucrase@npm:4.0.1#.yarn/patches/@rollup-plugin-sucrase-npm-4.0.1-4a1e7679d7"
   }
 }

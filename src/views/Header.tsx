@@ -1,5 +1,5 @@
 import { h } from "@aduh95/async-jsx";
-import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.jsx";
+import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.js";
 import NavLink from "../utils/NavLink.js";
 import arborescence from "../utils/arborescence.toml";
 

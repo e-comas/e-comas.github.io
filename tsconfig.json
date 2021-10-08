@@ -9,6 +9,7 @@
     "sourceMap": true,
     "rootDir": "./src",
     "removeComments": true,
+    "isolatedModules": true,
 
     "strict": true,
     "noImplicitAny": true,
