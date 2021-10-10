@@ -1,5 +1,4 @@
 import TOML from "@aduh95/toml";
-import { updateTSInteropFiles } from "./dev-build-toml-d-ts.mjs";
 
 const reservedNames = [
   "instanceof",
@@ -121,15 +120,6 @@ export default function plugin() {
             (_, identifier) => identifier
           );
       }
-
-      // This should come last because it mutates the data object.
-      updateTSInteropFiles(id, {
-        data,
-        exportableKeys,
-        nonExportableKeys,
-        isArray,
-        imports,
-      }).catch(console.error);
 
       return { code, map: { mappings: "" } };
     },

@@ -1,6 +1,7 @@
 import { fileURLToPath } from "url";
 import { Worker, isMainThread, parentPort } from "worker_threads";
 import { resetTsPlugin } from "./dev-build-js.mjs";
+import { INPUT_DIR } from "./dev-config.mjs";
 
 let jobs = [];
 let idCounter = 0;
@@ -62,8 +63,10 @@ if (isMainThread) {
       resetTsPlugin();
     } else if (rebuild?.endsWith?.(".toml")) {
       import("./dev-generate-toml-interop-files.mjs")
-        .then((module) => module.createInteropFilesFromTOMLFile(rebuild))
-        .then(console.log);
+        .then((module) =>
+          module.createInteropFilesFromTOMLFile(new URL(rebuild, INPUT_DIR))
+        )
+        .catch(console.error);
     }
     if (urlOrPath != null)
       import("./dev-build-js.mjs")

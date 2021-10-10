@@ -108,9 +108,7 @@ export function generateDTs({ data, exportableKeys, isArray, imports }) {
       getJSONType(data) +
       ";\nexport default exports;\n";
   const importStatements = imports.length
-    ? `${imports.join(
-        ";\n"
-      )};\n\ntype AutoImport = \n\t| ${imports
+    ? `${imports.join(";\n")};\n\ntype AutoImport = \n\t| ${imports
         .map((importStatement) =>
           importStatement.replace(
             importStatementStrictRegEx,
@@ -124,12 +122,14 @@ export function generateDTs({ data, exportableKeys, isArray, imports }) {
 
 const dTsCache = new Map();
 export async function updateTSInteropFiles(path, tomlKeys) {
+  const promises = [];
   if (!existsSync(path + ".js")) {
-    await createDummyJSFile(path);
+    promises.push(createDummyJSFile(path));
   }
   const dTs = generateDTs(tomlKeys);
   if (dTsCache.get(path) !== dTs) {
-    await fs.writeFile(path + ".d.ts", getPrologComment(path) + dTs);
+    promises.push(fs.writeFile(path + ".d.ts", getPrologComment(path) + dTs));
     dTsCache.set(path, dTs);
   }
+  return Promise.all(promises);
 }

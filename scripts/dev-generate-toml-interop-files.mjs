@@ -41,4 +41,4 @@ export const createAllTOMLInteropFiles = async (dir = INPUT_DIR) => {
   return Promise.all(promises);
 };
 
-createAllTOMLInteropFiles();
+await createAllTOMLInteropFiles();
