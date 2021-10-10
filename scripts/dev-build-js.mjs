@@ -1,16 +1,19 @@
 import resolve from "@rollup/plugin-node-resolve";
-import typescript from "@rollup/plugin-sucrase";
+import surcase from "@rollup/plugin-sucrase";
 import { rollup } from "rollup";
 import sass from "./rollup-plugin-sass.mjs";
 import toml from "./rollup-plugin-toml.mjs";
 
+import tsConfig from "../tsconfig.json" assert { type: "json" };
+
 const plugins = [
-  typescript({
-    jsxFragmentPragma: "Fragment",
-    jsxPragma: "h",
+  surcase({
+    jsxFragmentPragma: tsConfig.compilerOptions.jsxFragmentFactory,
+    jsxPragma: tsConfig.compilerOptions.jsxFactory,
     transforms: ["jsx", "typescript"],
     disableESTransforms: true,
-    exclude: ["**.toml"],
+    include: ["**.tsx", "**.ts"],
+    production: true,
   }),
   resolve(),
   toml(),

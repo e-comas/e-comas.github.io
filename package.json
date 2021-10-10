@@ -27,8 +27,8 @@
     "ws": "^8.2.1"
   },
   "scripts": {
-    "start": "node --experimental-json-modules scripts/dev-watch.mjs",
-    "build": "NODE_ENV=production node --experimental-json-modules scripts/prod-build.mjs",
+    "start": "node --experimental-json-modules --harmony-import-assertions scripts/dev-watch.mjs",
+    "build": "NODE_ENV=production node --experimental-json-modules --harmony-import-assertions scripts/prod-build.mjs",
     "deploy": "git push && gh workflow run deploy.yml --ref main",
     "postinstall": "node scripts/dev-generate-toml-interop-files.mjs"
   },
