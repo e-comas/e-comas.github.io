@@ -10,7 +10,16 @@ export default (
   <Body title="Blog">
     <Header />
     <main>
-      <p>TODO</p>
+      <h2>Sign-up for news</h2>
+      <iframe
+        title="Sign-up for news form"
+        loading="lazy"
+        width="100%"
+        height="619"
+        frameborder="0"
+        allowtransparency
+        src="//go.pardot.com/l/885733/2020-09-25/2wsd"
+      />
     </main>
     <Footer />
   </Body>
