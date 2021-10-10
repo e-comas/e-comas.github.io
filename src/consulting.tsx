@@ -105,43 +105,40 @@ export default (
       </section>
 
       <section>
-        <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
-          <figcaption>
-            <h2>Compas / Audit</h2>
+        <div>
+          <h2>Compas / Audit</h2>
 
-            <p>
-              Compas is our in-house auditing tool for your ecommerce business.
-              It uses machine learning and data analytics to:
-            </p>
+          <p>
+            Compas is our in-house auditing tool for your ecommerce business. It
+            uses machine learning and data analytics to:
+          </p>
 
-            <p>
-              Your Compas report reveals what your company is doing well and
-              where you are lagging behind, acting like a compass in helping you
-              follow future directions, based on the four pillars of our
-              eCommerce Growth Model:
-            </p>
+          <p>
+            Your Compas report reveals what your company is doing well and where
+            you are lagging behind, acting like a compass in helping you follow
+            future directions, based on the four pillars of our eCommerce Growth
+            Model:
+          </p>
 
-            <ul>
-              <li>
-                Capture customers' expectations, preferences, experiences and
-                feedback about your products.
-              </li>
-              <li>Present high level trends in review scores.</li>
-              <li>
-                Extract customers’ sentiment about specific products/categories
-                (positive/neutral/negative).
-              </li>
-            </ul>
+          <ul>
+            <li>
+              Capture customers' expectations, preferences, experiences and
+              feedback about your products.
+            </li>
+            <li>Present high level trends in review scores.</li>
+            <li>
+              Extract customers’ sentiment about specific products/categories
+              (positive/neutral/negative).
+            </li>
+          </ul>
 
-            <p>
-              Your Compas report reveals what your company is doing well and
-              where you are lagging behind, acting like a compass in helping you
-              follow future directions, based on the four pillars of our
-              eCommerce Growth Model:
-            </p>
-          </figcaption>
-        </figure>
+          <p>
+            Your Compas report reveals what your company is doing well and where
+            you are lagging behind, acting like a compass in helping you follow
+            future directions, based on the four pillars of our eCommerce Growth
+            Model:
+          </p>
+        </div>
       </section>
 
       <FourStepApproach />
