@@ -7,15 +7,19 @@ import { refreshBrowser, startServer } from "./dev-server.mjs";
 startServer();
 
 const watcher = watch(INPUT_DIR, { recursive: true });
-let antiRebound;
+let antiReboundForSameFile, antiReboundForAnyFile;
 for await (const { eventType, filename } of watcher) {
   console.log(eventType, filename);
-  if (antiRebound !== filename) {
+  if (antiReboundForSameFile !== filename) {
+    if (antiReboundForAnyFile != null) clearTimeout(antiReboundForAnyFile);
     sendRebuildSignal(filename);
-    antiRebound = filename;
+    antiReboundForSameFile = filename;
     setTimeout(() => {
-      if (antiRebound === filename) antiRebound = null;
-    }, 5000);
-    refreshBrowser();
+      if (antiReboundForSameFile === filename) antiReboundForSameFile = null;
+    }, 3000);
+    antiReboundForAnyFile = setTimeout(() => {
+      refreshBrowser();
+      antiReboundForAnyFile = null;
+    }, 90);
   }
 }
