@@ -1,6 +1,5 @@
 import { fileURLToPath } from "url";
 import { Worker, isMainThread, parentPort } from "worker_threads";
-import { resetTsPlugin } from "./dev-build-js.mjs";
 import { INPUT_DIR } from "./dev-config.mjs";
 
 let jobs = [];
@@ -40,28 +39,8 @@ const getWorker = (keepAlive = false) => {
 if (isMainThread) {
   startWorker();
 } else {
-  // let buildCache;
-  // const build = () =>
-  //   (buildCache = import("./dev-build-js.mjs")
-  //     .then((m) => m.default())
-  //     .then((result) => ({ result }))
-  //     .catch((error) => ({ error })));
-  // buildCache = import("./dev-generate-toml-interop-files.mjs").then(build);
   parentPort.on("message", ({ id, rebuild, urlOrPath }) => {
-    // if ("string" === typeof rebuild && rebuild.endsWith(".toml")) {
-    //   buildCache = Promise.allSettled([
-    //     import("./dev-generate-toml-interop-files.mjs").then((module) =>
-    //       module.createInteropFilesFromTOMLFile(rebuild)
-    //     ),
-    //   ]).then(build);
-    // } else if (rebuild) {
-    //   build();
-    // } else {
-    //   buildCache.then((cache) => parentPort.postMessage({ id, ...cache }));
-    // }
-    if (rebuild?.endsWith?.(".tsx")) {
-      resetTsPlugin();
-    } else if (rebuild?.endsWith?.(".toml")) {
+    if (rebuild?.endsWith?.(".toml")) {
       import("./dev-generate-toml-interop-files.mjs")
         .then((module) =>
           module.createInteropFilesFromTOMLFile(new URL(rebuild, INPUT_DIR))
