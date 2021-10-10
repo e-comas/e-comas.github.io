@@ -10,6 +10,15 @@ section.four-step {
   max-width: $max-width;
   margin: 0 auto;
 
+  h3 {
+    text-transform: lowercase;
+    font-variant: small-caps;
+  }
+
+  strong {
+    text-transform: uppercase;
+  }
+
   & > div {
     display: flex;
     flex-direction: column;

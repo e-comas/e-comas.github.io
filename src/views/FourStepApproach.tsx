@@ -8,66 +8,84 @@ export default () => (
 
     <div>
       <img src="/images/chess.svg" alt="Chess knight" />
-      <h3>Stategy</h3>
+      <h3>
+        Define <strong>strategy</strong>
+      </h3>
       <ul>
-        <li>Consumer Prices volatility.</li>
-        <li>Lost Buy Box rates (prices lower from other selling parties).</li>
         <li>
-          Insights and sentiments analysis on customer reviews and questions.
+          We can <strong>audit</strong> your business's current success on
+          Amazon.
+        </li>
+        <li>
+          We can provide <strong>training</strong> to you and your team.
+        </li>
+        <li>
+          We can <strong>research</strong> your market and competitors.
         </li>
       </ul>
-      <p>
-        → To check how your distribution is working and how the customer
-        perceive your brand and products.
-      </p>
       <a href="/strategy.html" class="cta">
         Read more
       </a>
     </div>
     <div>
       <img src="/images/euro-cog.svg" alt="Cog" />
-      <h3>Operation</h3>
+      <h3>
+        Manage <strong>operations</strong>
+      </h3>
       <ul>
-        <li>Out Of Stock occurrences.</li>
-        <li>Logistics Performance (chargebacks, customer satisfaction).</li>
-        <li>Customer support performance and answer to questions.</li>
+        <li>
+          We can <strong>manage your account</strong> on multiple ecommerce
+          platforms.
+        </li>
+        <li>
+          We cover Amazon in the Americas, Europe and Asia, Shopify, CDiscount,
+          Veepee, Bol, Walmart, and more.
+        </li>
+        <li>
+          We can help you with <strong>logistics</strong> and VAT.
+        </li>
       </ul>
-      <p>
-        → To check if your operations performance is able to support your
-        growth.
-      </p>
-      <a href="/operation.html" class="cta">
+      <a href="/operations.html" class="cta">
         Read more
       </a>
     </div>
     <div>
       <img src="/images/directions.svg" alt="Directions" />
-      <h3>Conversion</h3>
+      <h3>
+        Drive <strong>conversion</strong>
+      </h3>
       <ul>
-        <li>IDQ (Intelligent Data Quality) Review.</li>
-        <li>Study of conversion rates of your products on Amazon.</li>
-        <li>Benchmark to conversion rates from category.</li>
+        <li>
+          We can help you <strong>create</strong> outstanding listings.
+        </li>
+        <li>
+          We can <strong>manage</strong> your product information.
+        </li>
+        <li>
+          We can <strong>globalise</strong> your listings content.
+        </li>
       </ul>
-      <p>
-        → To check if the content on your product pages is cinvincing to your
-        target audience.
-      </p>
       <a href="/conversion.html" class="cta">
         Read more
       </a>
     </div>
     <div>
       <img src="/images/search.svg" alt="SEO" />
-      <h3>Traffic</h3>
+      <h3>
+        Grow <strong>traffic</strong>
+      </h3>
       <ul>
-        <li>Review of your advertising campaigns.</li>
-        <li>Audit of the keywords, of the aCoS and TaCoS.</li>
-        <li>Other promotion activities review.</li>
+        <li>
+          We can manage your <strong>advertising</strong>.
+        </li>
+        <li>
+          Whether it’s using PPC / Search, Amazon DSP / Programmatic, Google
+          Search or Facebook and Instagram.
+        </li>
+        <li>
+          We can help with <strong>social media</strong> campaigns.
+        </li>
       </ul>
-      <p>
-        → To check if you are spending your advertisng budget wisely and in the
-        most efficient way.
-      </p>
       <a href="/traffic.html" class="cta">
         Read more
       </a>
