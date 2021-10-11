@@ -4,6 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
+import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -13,28 +14,21 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-      <section>
-        <figure>
-          <figcaption>
-            <h2>Syndication / Salsify</h2>
-            <p>
-              We work with our friends at{" "}
-              <a href="https://www.salsify.com/">Salsify</a> to meet all your
-              Product Information Management (PIM) needs and help you{" "}
-              <strong>win on the digital shelf</strong>. The digital shelf is
-              the collection of diverse and rapidly evolving digital touchpoints
-              used by shoppers to engage with brands. No matter where they buy -
-              in a retail store, from a social influence post, or on an
-              ecommerce site - a shopper creates their own personalised,
-              digitally-influenced journey.
-              <br />
-              To win in this new world, you must take control of your digital
-              shelf.
-            </p>
-          </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
-        </figure>
-      </section>
+      <ElementWithIcon tagName="section" src="/images/search.svg">
+        <h2>Syndication / Salsify</h2>
+        <p>
+          We work with our friends at{" "}
+          <a href="https://www.salsify.com/">Salsify</a> to meet all your
+          Product Information Management (PIM) needs and help you{" "}
+          <strong>win on the digital shelf</strong>. The digital shelf is the
+          collection of diverse and rapidly evolving digital touchpoints used by
+          shoppers to engage with brands. No matter where they buy - in a retail
+          store, from a social influence post, or on an ecommerce site - a
+          shopper creates their own personalised, digitally-influenced journey.
+          <br />
+          To win in this new world, you must take control of your digital shelf.
+        </p>
+      </ElementWithIcon>
 
       <section>
         <figure>

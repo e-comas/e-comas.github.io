@@ -4,6 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
+import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -13,56 +14,49 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-      <section>
-        <figure>
-          <figcaption>
-            <h2>Advertising / Traffic</h2>
-            <p>
-              Once you've defined your <strong>strategy</strong>, streamlined
-              your <strong>operations</strong> and created{" "}
-              <strong>conversion</strong>
-              -driving content, it's time for the fourth pillar of our eCommerce
-              Growth Model: <strong>Traffic</strong>.<br />
-              Publishing a listing on the marketplace is not a guarantee that
-              consumers will see it. A great way to get the ball rolling is to
-              advertise your listings and your brand - and our amazing team can
-              help you find the easiest and most cost-effective ways of doing
-              so.
-              <br />
-              We can build your advertising directly on the Amazon platform with
-              Sponsored Ads (often called PPC, ‘pay per click’), the economic
-              model for this type of advertising.
-              <br />
-              We can also push further with Amazon DSP - ‘Demand Side Platform’
-              - which plugs into Amazon’s massive data in order to reach your
-              target audiences wherever they are, inside and outside of the
-              marketplace. <br />
-              Our advertising team is also able to create and manage campaigns
-              on other platforms such as Google and Facebook, to put your
-              products in front of your audience and drive conversions either on
-              Amazon or in your webshop, depending on your strategy and on the
-              highest revenue potential. <br />
-              e-Comas is an official Amazon Advertising partner and our team is
-              composed of seasoned digital marketers with many years of
-              experience and certifications to testify to their excellence:
-            </p>
-            <ul>
-              <li>Amazon Sponsored Ads certifications;</li>
-              <li>Amazon DSP certifications;</li>
-              <li>Google Ads certifications;</li>
-              <li>Facebook Blueprint certifications.</li>
-            </ul>
+      <ElementWithIcon tagName="section" src="/images/search.svg">
+        <h2>Advertising / Traffic</h2>
+        <p>
+          Once you've defined your <strong>strategy</strong>, streamlined your{" "}
+          <strong>operations</strong> and created <strong>conversion</strong>
+          -driving content, it's time for the fourth pillar of our eCommerce
+          Growth Model: <strong>Traffic</strong>.<br />
+          Publishing a listing on the marketplace is not a guarantee that
+          consumers will see it. A great way to get the ball rolling is to
+          advertise your listings and your brand - and our amazing team can help
+          you find the easiest and most cost-effective ways of doing so.
+          <br />
+          We can build your advertising directly on the Amazon platform with
+          Sponsored Ads (often called PPC, ‘pay per click’), the economic model
+          for this type of advertising.
+          <br />
+          We can also push further with Amazon DSP - ‘Demand Side Platform’ -
+          which plugs into Amazon’s massive data in order to reach your target
+          audiences wherever they are, inside and outside of the marketplace.{" "}
+          <br />
+          Our advertising team is also able to create and manage campaigns on
+          other platforms such as Google and Facebook, to put your products in
+          front of your audience and drive conversions either on Amazon or in
+          your webshop, depending on your strategy and on the highest revenue
+          potential. <br />
+          e-Comas is an official Amazon Advertising partner and our team is
+          composed of seasoned digital marketers with many years of experience
+          and certifications to testify to their excellence:
+        </p>
+        <ul>
+          <li>Amazon Sponsored Ads certifications;</li>
+          <li>Amazon DSP certifications;</li>
+          <li>Google Ads certifications;</li>
+          <li>Facebook Blueprint certifications.</li>
+        </ul>
 
-            <p>
-              We can help you establish an efficient advertising strategy on
-              Amazon and holistically, and we can manage your campaigns via
-              Amazon’s advertising offerings as well as Google Search, Facebook
-              Ads, Instagram, Twitter, LinkedIn and more.
-            </p>
-          </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
-        </figure>
-      </section>
+        <p>
+          We can help you establish an efficient advertising strategy on Amazon
+          and holistically, and we can manage your campaigns via Amazon’s
+          advertising offerings as well as Google Search, Facebook Ads,
+          Instagram, Twitter, LinkedIn and more.
+        </p>
+      </ElementWithIcon>
 
       <section>
         <figure>

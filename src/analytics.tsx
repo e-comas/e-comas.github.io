@@ -4,6 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
+import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -13,6 +14,10 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
+      <ElementWithIcon tagName="section" src="/images/search.svg">
+        <h2>Analytics</h2>
+        <p>Lorem ipsum</p>
+      </ElementWithIcon>
       <section>
         <figure>
           <figcaption>

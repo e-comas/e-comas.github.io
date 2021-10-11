@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
 import FourStepApproach from "./views/FourStepApproach.js";
+import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -14,37 +15,32 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-      <section>
-        <figure>
-          <figcaption>
-            <h2>Consulting / Coaching</h2>
-            <p>
-              Your journey with us starts here! We can <strong>audit</strong>{" "}
-              your e-commerce account, help you <strong>define</strong> a
-              strategy for Amazon including <strong>where</strong> to play and{" "}
-              <strong>how</strong> to win, and <strong>consult</strong> with you
-              and <strong>coach</strong> your team.
-            </p>
-            <ul>
-              <li>
-                We can provide <strong>training</strong> to you and your team.
-              </li>
-              <li>
-                We can <strong>research</strong> your market and competitors.
-              </li>
-              <li>
-                We can <strong>audit</strong> your business's current success on
-                Amazon.
-              </li>
-            </ul>
-            <p>
-              We offer several options to help you and your team work out your
-              ecommerce strategy and move it forward.
-            </p>
-          </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
-        </figure>
-      </section>
+      <ElementWithIcon tagName="section" src="/images/chess.svg">
+        <h2>Consulting / Coaching</h2>
+        <p>
+          Your journey with us starts here! We can <strong>audit</strong> your
+          e-commerce account, help you <strong>define</strong> a strategy for
+          Amazon including <strong>where</strong> to play and{" "}
+          <strong>how</strong> to win, and <strong>consult</strong> with you and{" "}
+          <strong>coach</strong> your team.
+        </p>
+        <ul>
+          <li>
+            We can provide <strong>training</strong> to you and your team.
+          </li>
+          <li>
+            We can <strong>research</strong> your market and competitors.
+          </li>
+          <li>
+            We can <strong>audit</strong> your business's current success on
+            Amazon.
+          </li>
+        </ul>
+        <p>
+          We offer several options to help you and your team work out your
+          ecommerce strategy and move it forward.
+        </p>
+      </ElementWithIcon>
 
       <section>
         <figure>

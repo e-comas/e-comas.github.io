@@ -86,7 +86,7 @@ export default () => (
           We can help with <strong>social media</strong> campaigns.
         </li>
       </ul>
-      <a href="/traffic.html" class="cta">
+      <a href="/advertising.html" class="cta">
         Read more
       </a>
     </div>

@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
 import Footer from "./views/Footer.js";
+import ElementWithIcon from "./utils/ElementWithIcon.js";
 
 import "./classic-page.scss";
 
@@ -13,33 +14,28 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-      <section>
-        <figure>
-          <figcaption>
-            <h2>Operations</h2>
+      <ElementWithIcon tagName="section" src="/images/euro-cog.svg">
+        <h2>Operations</h2>
 
-            <p>
-              We can help you with the <strong>operations</strong> of your
-              ecommerce business, on Amazon, Shopify, CDiscount, Veepee, Bol,
-              Walmart, and more.
-            </p>
+        <p>
+          We can help you with the <strong>operations</strong> of your ecommerce
+          business, on Amazon, Shopify, CDiscount, Veepee, Bol, Walmart, and
+          more.
+        </p>
 
-            <p>
-              Whether you want to <strong>outsource</strong> the entire
-              operation to us or simply need us to help <strong>manage</strong>{" "}
-              your Amazon catalogue, we can provide exactly what you need to run
-              your online sales smoothly.
-            </p>
+        <p>
+          Whether you want to <strong>outsource</strong> the entire operation to
+          us or simply need us to help <strong>manage</strong> your Amazon
+          catalogue, we can provide exactly what you need to run your online
+          sales smoothly.
+        </p>
 
-            <ul>
-              <li>We can manage your account.</li>
-              <li>We can help you with logistics and VAT.</li>
-              <li>We cover all major ecommerce platforms, globally.</li>
-            </ul>
-          </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
-        </figure>
-      </section>
+        <ul>
+          <li>We can manage your account.</li>
+          <li>We can help you with logistics and VAT.</li>
+          <li>We cover all major ecommerce platforms, globally.</li>
+        </ul>
+      </ElementWithIcon>
 
       <section>
         <figure>

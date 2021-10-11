@@ -3,6 +3,7 @@ import { h } from "@aduh95/async-jsx";
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
+import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -12,7 +13,7 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-      <section class="retail">
+      <ElementWithIcon tagName="section" src="/images/search.svg">
         <h2>Our partner: Shopify</h2>
 
         <div>
@@ -73,7 +74,7 @@ export default (
             </strong>
           </p>
         </div>
-      </section>
+      </ElementWithIcon>
     </main>
     <Footer />
   </Body>
