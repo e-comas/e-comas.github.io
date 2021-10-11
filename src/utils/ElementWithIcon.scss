@@ -1,13 +1,33 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 .element-with-icon {
-  position: relative;
-  margin: auto;
-  & > div > img:first-of-type {
-    position: absolute;
-    width: 2.5rem;
-    height: 2.5rem;
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0 1.2rem;
+  padding: 0 1.2rem;
+  & > * {
+    grid-column: 2;
+  }
+  & > div:first-child {
+    grid-column: 1;
+    & > img:first-of-type {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
 
-    transform: translateX(-100%) translateX(-1.2rem);
+  @media screen and (min-width: 500px) {
+    position: relative;
+    margin: auto;
+    display: unset;
+    width: fit-content;
+    max-width: calc(100vw - 12rem);
+    min-height: unset;
+    padding: unset;
+    transform: translateX(#{(2.5+1.2) * 0.5}rem);
+    & > div:first-child > img {
+      position: absolute;
+      transform: translateX(-100%) translateX(-1.2rem);
+    }
   }
 }
