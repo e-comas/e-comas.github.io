@@ -37,10 +37,10 @@ export default () => (
           <NavLink href="/conversion.html">Conversion</NavLink>
         </li>
         <li>
-          <NavLink href="/operation.html">Operation</NavLink>
+          <NavLink href="/operations.html">Operation</NavLink>
         </li>
         <li>
-          <NavLink href="/traffic.html">Traffic</NavLink>
+          <NavLink href="/advertising.html">Advertising</NavLink>
         </li>
       </ul>
     </nav>
