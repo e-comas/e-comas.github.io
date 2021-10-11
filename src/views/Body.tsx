@@ -6,7 +6,7 @@ interface BodyProps {
   children?: any[];
 }
 
-export default (props: BodyProps, children: any[]) => {
+export default (props: BodyProps | null, children: any[]) => {
   if (props != null && Object.hasOwn(props, "title")) {
     document.title += " – " + props.title;
   }

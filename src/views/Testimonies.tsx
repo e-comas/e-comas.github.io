@@ -39,8 +39,8 @@ const Testimonies = () => (
   </>
 );
 
-export default (props: TestimoniesProps) =>
-  props.withBlock ? (
+export default (props?: TestimoniesProps) =>
+  props?.withBlock ? (
     <div class="testimonies">
       <h2>They did it</h2>
       <img aria-hidden="true" src="/images/quotes.svg" />
