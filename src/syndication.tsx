@@ -79,7 +79,8 @@ export default (
               help you manage your day-to-day business activities on Salsify.
             </p>
           </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <img src="/images/ECOM_SCHEMA_3.svg" alt="Grow in retail" />
+          <img src="/images/ECOM_SCHEMA_4.svg" alt="Grow in retail" />
         </figure>
       </section>
     </main>
