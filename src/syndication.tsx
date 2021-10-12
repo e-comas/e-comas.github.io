@@ -14,7 +14,7 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-      <ElementWithIcon tagName="section" src="/images/search.svg">
+      <ElementWithIcon tagName="section" src="/images/directions.svg">
         <h2>Syndication / Salsify</h2>
         <p>
           We work with our friends at{" "}
