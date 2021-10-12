@@ -92,7 +92,7 @@ export default (
 
       <section>
         <figure>
-          <img src="/images/ECOM_SCHEMA_2.svg" alt="Grow in retail" />
+          <img src="/images/ECOM_SCHEMA_4.svg" alt="Grow in retail" />
           <figcaption>
             <h3>Retail</h3>
 
@@ -145,7 +145,7 @@ export default (
               <li>Handling out of stock issues.</li>
             </ul>
           </figcaption>
-          <img src="/images/ECOM_SCHEMA_1.svg" alt="Salsify PXM" />
+          <img src="/images/ECOM_SCHEMA_3.svg" alt="Salsify PXM" />
         </figure>
       </section>
 
