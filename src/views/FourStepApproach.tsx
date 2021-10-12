@@ -23,7 +23,7 @@ export default () => (
           We can <strong>research</strong> your market and competitors.
         </li>
       </ul>
-      <a href="/strategy.html" class="cta">
+      <a href="/consulting.html" class="cta">
         Read more
       </a>
     </div>
@@ -65,7 +65,7 @@ export default () => (
           We can <strong>globalise</strong> your listings content.
         </li>
       </ul>
-      <a href="/conversion.html" class="cta">
+      <a href="/syndication.html" class="cta">
         Read more
       </a>
     </div>

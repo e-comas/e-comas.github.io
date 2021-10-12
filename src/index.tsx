@@ -18,14 +18,19 @@ export default (
       <section>
         <figure>
           <figcaption>
-            <h3>Discover e-Comas in video</h3>
+            <h3>Trust our amazing team</h3>
             <p>
-              Find out what we’re all about!
+              If you're looking to <strong>open</strong> an Amazon account,{" "}
+              <strong>grow</strong> your existing ecommerce sales or{" "}
+              <strong>scale</strong> your business globally – or all three – we
+              know exactly how to help you.
               <br />
-              Wondering what to expect when you work with e-Comas?
+              We have an incredible team of ecommerce experts with specialist
+              knowledge to help you expand your business across Amazon and other
+              platforms... and across the globe!
             </p>
-            <a href="/our-team.html" class="cta">
-              Let us tell you more
+            <a href="/contact.html" class="cta">
+              Meet with us
             </a>
           </figcaption>
           <ElementWithBackgroundImage
@@ -55,26 +60,18 @@ export default (
         </figure>
       </section>
 
-      <section class="area-of-expertise">
+      {/* <section class="area-of-expertise">
         <figure>
           <Picture src="/images/expertise_area.png" alt="" lossless />
           <figcaption>
             <h3>Trust our amazing team</h3>
-            <p>
-              We have an incredible team of ecommerce experts with specialist
-              knowledge to help you expand your business across Amazon and other
-              platforms... and across the globe!
-              <br />
-              If you're looking to OPEN an Amazon account, GROW your existing
-              ecommerce sales or SCALE your business globally – or all three –
-              we know exactly how to help you.
-            </p>
+            <p></p>
             <a href="/experience.html" class="cta">
               Meet with us
             </a>
           </figcaption>
         </figure>
-      </section>
+      </section> */}
 
       <FourStepApproach />
 
