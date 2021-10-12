@@ -39,7 +39,6 @@ export default (
 
       <section>
         <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
           <figcaption>
             <h3>Account management</h3>
 
@@ -65,13 +64,7 @@ export default (
                 theAmericas, and in Asia.
               </li>
             </ul>
-          </figcaption>
-        </figure>
-      </section>
 
-      <section>
-        <figure>
-          <figcaption>
             <h3>Services</h3>
 
             <p>
