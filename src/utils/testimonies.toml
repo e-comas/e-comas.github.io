@@ -44,28 +44,29 @@ logo = "/images/my-carry-potty.png"
 # logo = "/images/my-carry-potty.png"
 
 
-# [[item]]
-# text = """\
-#     We more than doubled our sales, which was a better turn rate than the \
-#     other channels at the time. We had better control of our listings and an \
-#     overall better brand presence. A good clean-up project that helped scale \
-#     up our company.\
-#   """
-# name = "Oliver Amdrup"
-# title = "Founder of Puori"
-# company = "Puori"
-# # image = "https://media.licdn.com/dms/image/C5603AQE6J6dw_sjfJw/profile-displayphoto-shrink_200_200/0?e=1579132800&v=beta&t=U-4sl7JEmwaVlP3ti4SBrO2GIWIZs3MatnIsykm3rR8 "
-# logo = "/images/puori.svg"
+[[item]]
+text = """\
+    We more than doubled our sales, which was a better turn rate than the \
+    other channels at the time. We had better control of our listings and an \
+    overall better brand presence. A good clean-up project that helped scale \
+    up our company.\
+  """
+name = "Oliver Amdrup"
+title = "Founder of Puori"
+company = "Puori"
+image = "/images/oliver-amdrup.jpg"
+logo = "/images/puori.svg"
 
 
-# [[item]]
-# text = """\
-#     Working with my e-Comas team, especially Seval and Claire, has been easy \
-#     and effortless. Through their efforts on our Vendor Account, we've seen \
-#     the best Amazon performance across our European sales channels. We look \
-#     forward to expanding our collaboration!\
-#   """
-# name = "Frits Kuper"
-# title = "Director of International Sales at Superfeet"
-# company = "Superfeet"
-# logo = "/images/superfeet.png"
+[[item]]
+text = """\
+    Working with my e-Comas team, especially Seval and Claire, has been easy \
+    and effortless. Through their efforts on our Vendor Account, we've seen \
+    the best Amazon performance across our European sales channels. We look \
+    forward to expanding our collaboration!\
+  """
+name = "Frits Kuper"
+title = "Director of International Sales at Superfeet"
+company = "Superfeet"
+image = "/images/frits-kuper.jpg"
+logo = "/images/superfeet.png"

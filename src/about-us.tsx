@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Testimonies from "./views/Testimonies.js";
 import Picture from "./utils/Picture.js";
+import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -14,6 +15,37 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
+      <ElementWithIcon tagName="section" src="/images/trolley.svg">
+        <h2>About e-Comas</h2>
+        <p>
+          e-Comas - eCommerce Made Simple was founded by ecommerce expert Jérôme
+          de Guigné in 2013, with the simple idea of helping brands sell
+          products online.
+        </p>
+        <p>
+          We quickly realised companies were struggling with establishing
+          profitable and sustainable ecommerce strategies. That’s when ‘Amazon
+          Made Simple’ was born, which later became ‘eCommerce Made Simple’ -
+          e-Comas.
+        </p>
+
+        <p>
+          Today we work with major multinational brands to define and design
+          strong omnichannel expansion strategies, integrating Amazon, Shopify,
+          CDiscount, Veepee, Bol, Walmart and all other major ecommerce
+          platforms.
+          <br />
+          With a hands-on approach, our experts coach brands and handle their
+          accounts to sustainably grow their business and improve their agility
+          in tackling everyday challenges with online retail. We get you set up,
+          we scale you and make the business profitable, handling your account,
+          the content and the advertising.
+        </p>
+        <p>
+          Put simply, we help brands grow faster on ecommerce - globally, fast,
+          across multiple online channels!
+        </p>
+      </ElementWithIcon>
       <section>
         <figure>
           <figcaption>
