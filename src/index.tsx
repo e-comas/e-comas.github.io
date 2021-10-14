@@ -42,6 +42,7 @@ export default (
               href="https://www.youtube.com/watch?v=vjGxQNji05U"
               data-embed="https://www.youtube-nocookie.com/embed/vjGxQNji05U"
               target="_blank"
+              rel="noopener"
               title="Watch on YouTube"
             >
               Play video on YouTube
