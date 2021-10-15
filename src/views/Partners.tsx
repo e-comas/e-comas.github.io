@@ -8,23 +8,26 @@ export default () => (
   <section class="partners">
     <h2>Partners we trust</h2>
     <div>
-      <a href="partners.html#Storfund">
-        <img alt="Storfund" src="/images/partners/storfund.svg" />
+      <a href="partners.html#Reveals">
+        <img alt="Reveals" src="" />
       </a>
-      <a href="partners.html#Profitero">
+      <a href="syndication.html#Salsify">
+        <img alt="Salsify" src="/images/partners/salsify.svg" />
+      </a>
+      <a href="website_creation.html#Shopify">
+        <img alt="Shopify" src="/images/partners/shopify.svg" />
+      </a>
+      <a href="analytics.html#Profitero">
         <img alt="Profitero" src="/images/partners/profitero.svg" />
       </a>
-      <a href="partners.html#Payoneer">
-        <Picture alt="Payoneer" src="/images/partners/payoneer.png" />
+      <a href="partners.html#Storfund">
+        <img alt="Storfund" src="/images/partners/storfund.svg" />
       </a>
       <a href="partners.html#GETIDA">
         <Picture alt="GETIDA" src="/images/partners/getida.png" />
       </a>
-      <a href="partners.html#Salsify">
-        <img alt="Salsify" src="/images/partners/salsify.svg" />
-      </a>
-      <a href="partners.html#Shopify">
-        <img alt="Shopify" src="/images/partners/shopify.svg" />
+      <a href="partners.html#Payoneer">
+        <Picture alt="Payoneer" src="/images/partners/payoneer.png" />
       </a>
     </div>
   </section>

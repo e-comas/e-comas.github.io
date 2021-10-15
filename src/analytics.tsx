@@ -18,7 +18,7 @@ export default (
         <h2>Analytics</h2>
         <p>Lorem ipsum</p>
       </ElementWithIcon>
-      <section>
+      <section id="Profitero">
         <figure>
           <figcaption>
             <h2>Our partner : Profitero</h2>
