@@ -15,7 +15,7 @@ export default (
     <Breadcrumbs />
     <main>
       <ElementWithIcon tagName="section" src="/images/directions.svg">
-        <h2>Syndication / Salsify</h2>
+        <h2>Salsify</h2>
         <p>
           We work with our friends at{" "}
           <a href="https://www.salsify.com/">Salsify</a> to meet all your
@@ -32,7 +32,6 @@ export default (
 
       <section>
         <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
           <figcaption>
             <h3>3 principles for winning on the digital shelf</h3>
             <p>
@@ -63,7 +62,7 @@ export default (
         </figure>
       </section>
 
-      <section id="salsify">
+      <section>
         <figure>
           <figcaption>
             <h3>Our partnership with Salsify</h3>

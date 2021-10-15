@@ -71,10 +71,6 @@ name = "Webinar"
 url = "/webinar.html"
 
 [[root.children.children]]
-name = "Podcast"
-url = "/webinar.html#podcast"
-
-[[root.children.children]]
 name = "White paper"
 url = "/white-paper-form.html"
 

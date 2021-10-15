@@ -15,7 +15,10 @@ export default (
     <main>
       <ElementWithIcon src="/images/chess.svg" tagName="section">
         <h2>White paper</h2>
-        <p>Lorem Ispum</p>
+        <p>
+          We research hot topics in the ecommerce industry and report our
+          findings in our in-depth white papers. Learn more from us here!
+        </p>
       </ElementWithIcon>
 
       <section>
