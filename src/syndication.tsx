@@ -70,7 +70,7 @@ export default (
                 pictures.
               </li>
             </ul>
-            <a href="white-paper.html" className="cta">
+            <a href="white-paper-form.html" className="cta">
               Download our case studies
             </a>
           </figcaption>
