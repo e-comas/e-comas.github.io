@@ -10,23 +10,21 @@ import Footer from "./views/Footer.js";
 import "./classic-page.scss";
 
 export default (
-  <Body title="Syndication with Salsify">
+  <Body title="Content and Syndication">
     <Header />
     <Breadcrumbs />
     <main>
       <ElementWithIcon tagName="section" src="/images/directions.svg">
-        <h2>Syndication / Salsify</h2>
+        <h2>Content</h2>
         <p>
-          We work with our friends at{" "}
-          <a href="https://www.salsify.com/">Salsify</a> to meet all your
-          Product Information Management (PIM) needs and help you{" "}
-          <strong>win on the digital shelf</strong>. The digital shelf is the
-          collection of diverse and rapidly evolving digital touchpoints used by
-          shoppers to engage with brands. No matter where they buy - in a retail
-          store, from a social influence post, or on an ecommerce site - a
-          shopper creates their own personalised, digitally-influenced journey.
+          Great content leads to great conversion.
           <br />
-          To win in this new world, you must take control of your digital shelf.
+          We know exactly what kind of listings content you need to persuade
+          shoppers on Amazon and other platforms to click 'buy' on your
+          products.
+          <br />
+          Our amazing team can help you create, upload and manage content that
+          shows off your products, and therefore drives up your conversion rate.
         </p>
       </ElementWithIcon>
 
@@ -34,31 +32,16 @@ export default (
         <figure>
           <Picture src="/images/IMG_5892.jpg" alt="" />
           <figcaption>
-            <h3>3 principles for winning on the digital shelf</h3>
+            <h3>PIM and Syndication</h3>
             <p>
-              Just like traditional retail, the digital shelf requires extreme
-              focus and discipline to drive maximum growth and beat your
-              competition. But the guiding principles to achieve that growth are
-              different.
+              We proudly partner with Salsify to help you with Product
+              Information Management (PIM), organising and uploading your
+              content across multiple ecommerce platforms so you can{" "}
+              <strong>win on the digital shelf.</strong>
             </p>
-            <ol>
-              <li>
-                <strong>Engage shoppers everywhere : </strong>
-                Content has become your brand’s packaging on the digital shelf.
-              </li>
-              <li>
-                <strong>Execute commerce strategies fast : </strong>
-                New channels represent opportunities that may or may not work
-                for your business. You must learn fast, scale what works, and
-                stop what doesn’t.
-              </li>
-              <li>
-                <strong>Be your customers' best partner : </strong>
-                Delivering the content your retailers and distributors need
-                makes you a partner they will prioritise, driving even more
-                growth for your business.
-              </li>
-            </ol>
+            <a class="cta" href="salsify.html">
+              More about Salsify
+            </a>
           </figcaption>
         </figure>
       </section>
@@ -66,18 +49,30 @@ export default (
       <section id="salsify">
         <figure>
           <figcaption>
-            <h3>Our partnership with Salsify</h3>
-            <p>
-              Salsify can optimise your PIM, fully operationalising your product
-              content so that you can act quickly on data-driven insights,
-              evolving your business and engaging your customers.
-            </p>
-            {/* Insert graphic here */}
-            <p>
-              We can implement Salsify on your behalf to organise your content
-              and upload it to all marketplaces. Our team of experts can also
-              help you manage your day-to-day business activities on Salsify.
-            </p>
+            <h3>Content creation</h3>
+            <p>We can help you with:</p>
+            <ul>
+              <li>
+                <strong>Copywriting</strong>: your listings' titles, bullet
+                points, long descriptions, and A+/EBC content text.
+              </li>
+              <li>
+                <strong>Keywords</strong>: the best keywords to ensure your
+                listings have great SEO (search engine optimisation).
+              </li>
+              <li>
+                <strong>Images</strong>: a good number of high quality pictures
+                of your products (with white background or in context), and
+                graphic designs.
+              </li>
+              <li>
+                <strong>Videos</strong> of your products in action and 360°
+                pictures.
+              </li>
+            </ul>
+            <a href="white-paper.html" className="cta">
+              Download our case studies
+            </a>
           </figcaption>
           <img src="/images/ECOM_SCHEMA_1.svg" alt="Grow in retail" />
           <img src="/images/ECOM_SCHEMA_2.svg" alt="Grow in retail" />
