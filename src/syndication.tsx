@@ -74,8 +74,7 @@ export default (
               Download our case studies
             </a>
           </figcaption>
-          <img src="/images/ECOM_SCHEMA_1.svg" alt="Grow in retail" />
-          <img src="/images/ECOM_SCHEMA_2.svg" alt="Grow in retail" />
+          <Picture src="/images/IMG_5892.jpg" alt="" />
         </figure>
       </section>
     </main>
