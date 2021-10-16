@@ -200,7 +200,7 @@ header {
     color: $white;
     max-width: 800px;
     align-self: center;
-    transform: translateY(100%);
+    transform: translateY(3rem);
   }
 
   @media screen and (min-width: #{$max-width + 100px}) {
