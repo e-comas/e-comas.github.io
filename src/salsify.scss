@@ -3,7 +3,7 @@
 @use "./utils/variables" as *;
 @use "./classic-page.scss" as *;
 
-$grow_power_init: -4;
+$grow_power_init: -3;
 $grow_factor: 1.3;
 $grow_factor_2560: 1.3;
 $grow_factor_1024: 1.15;
@@ -39,28 +39,34 @@ $min-width: 225px;
       display: block;
       width: 100%;
       height: 300px;
-      clip-path: path(
-        "M 0,118.42971 V 516 H 485.77216 V 0.7551752 C 183.67061,83.50015 0,118.42971 0,118.42971 Z"
-      );
       transform-origin: bottom;
     }
 
     &:nth-child(1)::before {
       background-color: aliceblue;
-      transform: scaleY(#{math.pow($grow_factor, $grow_power_init + 0)});
+      clip-path: path(
+        "M 0,118.42971 V 516 H 485.77216 V 0.7551752 C 183.67061,83.50015 0,118.42971 0,118.42971 Z"
+      );
+      transform: scaleY(#{math.pow($grow_factor, $grow_power_init + 0) / 3});
     }
     &:nth-child(2)::before {
       background-color: #b1ebdf;
       transform: scaleY(#{math.pow($grow_factor, $grow_power_init + 1)});
+      clip-path: path(
+        "M 261.11716,515.84 V 149.30017 C 164.04408,181.59493 75.988549,208.11034 0,229.45624 V 515.84 Z"
+      );
     }
     &:nth-child(3)::before {
       background-color: #64d7be;
       transform: scaleY(#{math.pow($grow_factor, $grow_power_init + 2)});
+      clip-path: path(
+        "M 230.81049,515.9 V 97.073046 A 5235.8452,5235.8452 0 0 1 0,181.48022 V 515.9 Z"
+      );
     }
     &:nth-child(4)::before {
       background-color: #939393;
       transform: scaleY(
-        #{math.pow($grow_factor, $grow_power_init + 3) * 0.923}
+        #{math.pow($grow_factor, $grow_power_init + 3) * 0.793}
       );
       clip-path: path(
         "M 223.34654,515.96 V 2.9286936 C 146.8483,38.091305 72.039258,69.987303 0,98.803008 V 515.96 Z"
@@ -68,7 +74,7 @@ $min-width: 225px;
     }
     &:nth-child(5)::before {
       background-color: #282828;
-      transform: scaleY(#{math.pow($grow_factor, $grow_power_init + 4) * 1.18});
+      transform: scaleY(#{math.pow($grow_factor, $grow_power_init + 4)});
       clip-path: path(
         "M 0,113.06242 V 643.38316 H 224.79968 V 0 C 149.10387,40.854493 73.84561,78.471123 0,113.06242 Z"
       );
