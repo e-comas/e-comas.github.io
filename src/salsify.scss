@@ -25,9 +25,8 @@ $min-width: 225px;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   margin: 0 auto;
-  padding: 0;
-  max-width: 100vw;
   padding: math.div($min-width, 2);
+  max-width: 100vw;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 
@@ -89,5 +88,10 @@ $min-width: 225px;
     //     }
     //   }
     // }
+  }
+
+  @media screen and (min-width: $max-width+$body-padding) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
