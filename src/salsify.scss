@@ -47,7 +47,9 @@ $min-width: 225px;
       clip-path: path(
         "M 0,118.42971 V 516 H 485.77216 V 0.7551752 C 183.67061,83.50015 0,118.42971 0,118.42971 Z"
       );
-      transform: scaleY(#{math.pow($grow_factor, $grow_power_init + 0) / 3});
+      transform: scaleY(
+        #{math.div(math.pow($grow_factor, $grow_power_init + 0), 3)}
+      );
     }
     &:nth-child(2)::before {
       background-color: #b1ebdf;
