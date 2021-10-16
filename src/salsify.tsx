@@ -7,7 +7,7 @@ import Picture from "./utils/Picture.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
-import "./classic-page.scss";
+import "./salsify.scss";
 
 export default (
   <Body title="Syndication with Salsify">
@@ -79,9 +79,52 @@ export default (
             </p>
           </figcaption>
           <img src="/images/ECOM_SCHEMA_1.svg" alt="Grow in retail" />
-          <img src="/images/ECOM_SCHEMA_2.svg" alt="Grow in retail" />
         </figure>
       </section>
+
+      <ol class="grow-in-retail">
+        <li>
+          <strong>Fractured</strong>
+          <p>
+            Product Content is in-house, bespoke, (xls and ERP) and has no clear
+            ownership.
+          </p>
+        </li>
+
+        <li>
+          <strong>Activated</strong>
+          <p>
+            Foundational product content is easily managed and is accurately and
+            successfully activated on the digital shelf.
+          </p>
+        </li>
+
+        <li>
+          <strong>Enhanced</strong>
+          <p>
+            Product experiences are enhanced with rich content that yield
+            improved engagement and ROI.
+          </p>
+        </li>
+
+        <li>
+          <strong>Managed</strong>
+          <p>
+            The PXM capability is fully implemented, and actively leveraged for
+            omnichannel product experiences.
+          </p>
+        </li>
+
+        <li>
+          <strong>Optimized</strong>
+          <p>
+            The PXM program is fully operationalized across business units and
+            data-driven decisions from analytics and insights are quickly acted
+            on - fostered through a business culture focused on experimentation
+            and continuous improvement.
+          </p>
+        </li>
+      </ol>
     </main>
     <Footer />
   </Body>
