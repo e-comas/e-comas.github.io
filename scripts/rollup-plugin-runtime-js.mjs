@@ -1,4 +1,6 @@
 import process from "node:process";
+import { pathToFileURL } from "node:url";
+import { PROJECT_DIR } from "./dev-config.mjs";
 
 const PLUGIN_HELPER = "runtime:createScriptElement";
 const tsRuntime = /^runtime:.+\.js$/;
@@ -35,9 +37,16 @@ export default function plugin() {
     },
     transform(code, id) {
       if (modulesToTransform.has(id)) {
+        const map = this.getCombinedSourcemap();
+        delete map.sourcesContent;
+        map.sources = map.sources.map((path) =>
+          pathToFileURL(path).toString().slice(PROJECT_DIR.toString().length)
+        );
         return {
           code: `import helper from "${PLUGIN_HELPER}";export default helper(${JSON.stringify(
-            code
+            code +
+              "\n//# sourceMappingURL=data:application/json," +
+              encodeURI(JSON.stringify(map))
           )},${JSON.stringify(id)})`,
           map: null,
         };
