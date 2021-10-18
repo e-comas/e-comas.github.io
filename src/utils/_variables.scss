@@ -1,13 +1,14 @@
 $border-radius: 6px;
 $blue: #0c195a;
 $green: #64d7be;
-$grey: #282828;
+$grey: #3e4152;
 $greyLike: #{$blue}05;
 $white: #fff;
 $semiTransparentBlack: #000000d9;
 
-$Gilroy: Gilroy, sans-serif;
-$lato: Lato, sans-serif;
+$SourceSansPro: "Source Sans Pro", sans-serif;
+$Gilroy: $SourceSansPro;
+$lato: $SourceSansPro;
 
 $max-width: 1200px;
 $body-max-width: 2560px; // 1440p
