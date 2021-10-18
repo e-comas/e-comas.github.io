@@ -1,6 +1,7 @@
 import resolve from "@rollup/plugin-node-resolve";
 import surcase from "@rollup/plugin-sucrase";
 import { rollup } from "rollup";
+import runtime from "./rollup-plugin-runtime-js.mjs";
 import sass from "./rollup-plugin-sass.mjs";
 import toml from "./rollup-plugin-toml.mjs";
 
@@ -16,6 +17,7 @@ const plugins = [
     production: true,
   }),
   resolve(),
+  runtime(),
   toml(),
   sass(),
 ];

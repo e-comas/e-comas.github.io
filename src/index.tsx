@@ -6,6 +6,7 @@ import Footer from "./views/Footer.js";
 import Testimonies from "./views/Testimonies.js";
 import Partners from "./views/Partners.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
+import VideoEmbedLink from "./views/VideoEmbedLink.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 import Picture from "./utils/Picture.js";
 
@@ -33,31 +34,11 @@ export default (
               Meet with us
             </a>
           </figcaption>
-          <ElementWithBackgroundImage
+          <VideoEmbedLink
             tagName="div"
-            src="/images/Banner2 Video 3x .png"
-            class="video-link"
-          >
-            <a
-              href="https://www.youtube.com/watch?v=vjGxQNji05U"
-              data-embed="https://www.youtube-nocookie.com/embed/vjGxQNji05U"
-              target="_blank"
-              rel="noopener"
-              title="Watch on YouTube"
-            >
-              Play video on YouTube
-            </a>
-            {/* <iframe
-              width="320"
-              height="315"
-              src="https://www.youtube-nocookie.com/embed/vjGxQNji05U"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"
-            /> */}
-          </ElementWithBackgroundImage>
+            previewImage="/images/Banner2 Video 3x .png"
+            videoId="vjGxQNji05U"
+          />
         </figure>
       </section>
 

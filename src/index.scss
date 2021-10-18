@@ -41,6 +41,13 @@ section {
     opacity: 0;
     transition: opacity $animationDuration;
   }
+  &.video-loading::before {
+    content: "Loading video…";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &.video-loading::before,
   &:hover::before {
     opacity: 1;
   }

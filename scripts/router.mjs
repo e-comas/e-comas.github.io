@@ -72,6 +72,7 @@ export default async function router(req, res) {
     ".jpg": "image/jpeg",
     ".jpeg": "image/jpeg",
     ".png": "image/png",
+    ".ts": "application/javascript",
     ".tsx": "application/javascript",
     ".webp": "image/webp",
     ".woff2": "font/woff2",
@@ -110,7 +111,7 @@ export default async function router(req, res) {
         );
       });
     return;
-  } else if (ext === ".tsx") {
+  } else if (ext === ".tsx" || ext === ".ts") {
     buildJS(url)
       .then(({ output }) => {
         const [{ code, map }] = output;
