@@ -4,6 +4,7 @@ import {
   optimizeVector,
 } from "./prod-build-images.mjs";
 import sass2css from "./prod-build-css.mjs";
+import buildRuntimeJS from "./prod-build-js.mjs";
 
 const viewportsToTest = [
   {
@@ -104,6 +105,7 @@ const imgData = new Map();
 const sassMappings = new Map();
 
 async function crawlPage(page, signalIn, signalOut) {
+  const jsRuntimeModules = [];
   const srcMap = new WeakMap();
   const aboveTheFold = new WeakSet();
   const matrixImages = await page.$$("picture");
@@ -139,6 +141,14 @@ async function crawlPage(page, signalIn, signalOut) {
     const file = await elem.evaluate((elem) => elem.dataset.file);
     sassMappings.get(file)?.add(page.url()) ??
       sassMappings.set(file, new Set().add(page.url()));
+  }
+
+  const scriptNodes = await page.$$("script[data-file]");
+  for (const elem of scriptNodes) {
+    const js = await elem.evaluate((elem) => elem.textContent);
+    jsRuntimeModules.push(js);
+    await elem.evaluate((elem) => elem.remove());
+    await elem.dispose();
   }
 
   signalOut();
@@ -209,6 +219,14 @@ async function crawlPage(page, signalIn, signalOut) {
       }).filter(Boolean)
     )
   );
+
+  await page.evaluate((js) => {
+    if (!js) return;
+    const script = document.createElement("script");
+    script.type = "module";
+    script.textContent = js;
+    document.body.append(script);
+  }, await buildRuntimeJS(jsRuntimeModules));
 }
 
 function isSuperset(set, subset) {

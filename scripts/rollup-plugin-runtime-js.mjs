@@ -1,11 +1,12 @@
-import { transform } from "sucrase";
+import process from "node:process";
 
 const PLUGIN_HELPER = "runtime:createScriptElement";
 const tsRuntime = /^runtime:.+\.js$/;
 
 function createScriptElement(js, id) {
   const script = document.createElement("script");
-  script.type = "module";
+  script.type =
+    process.env.NODE_ENV === "production" ? "future-module" : "module";
   script.textContent = js;
   document.head.append(script);
   script.dataset.file = id;
