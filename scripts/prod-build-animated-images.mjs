@@ -1,11 +1,12 @@
-import { createReadStream, createWriteStream } from "node:fs";
+import { readFile } from "node:fs/promises";
 import { rename } from "node:fs/promises";
-import { spawnFfmpegProcess as spawn } from "./dev-build-animated-images.mjs";
 
-import { streamHash } from "./prod-hash.mjs";
+import { spawnFfmpegProcess as spawn } from "./dev-build-animated-images.mjs";
+import createHash from "./prod-hash.mjs";
+import { OUTPUT_DIR } from "./dev-config.mjs";
 
 function spawnFfmpegProcess(i, size, options) {
-  return spawn({ i, ...options, s: `${size}x-1` });
+  return spawn({ i, ...options, vf: `scale=${size}:-1` });
 }
 
 export default async function buildAnimatedImage(
@@ -14,9 +15,9 @@ export default async function buildAnimatedImage(
   size,
   options
 ) {
-  const outputFile = spawnFfmpegProcess(input, size, options);
-  const hash = await streamHash(createReadStream(outputFile));
+  const outputFile = await spawnFfmpegProcess(input, size, options);
+  const hash = createHash(await readFile(outputFile));
   const fileName = `${hash}.${extension}`;
-  await rename(outputFile, fileName);
+  await rename(outputFile, new URL(fileName, OUTPUT_DIR));
   return fileName;
 }

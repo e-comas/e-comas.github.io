@@ -49,6 +49,7 @@ export default function buildAnimatedImage(i) {
   return spawnFfmpegProcess({
     i,
     loop: 0,
+    "filter:v": "fps=fps=3",
     an: undefined, // disables audio
     vsync: 0,
     f: "gif",

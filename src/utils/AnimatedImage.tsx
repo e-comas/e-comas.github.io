@@ -8,7 +8,9 @@ interface AnimatedImageProps extends PictureProps {
 }
 
 export default (props: AnimatedImageProps) =>
-  h(Picture as any, props as any).then((elem) => {
-    (elem as HTMLElement).dataset.animated = "true";
-    return elem;
-  }) as any as JSX.Element;
+  h(Picture as any, { ...props, src: props.src + "#animated" } as any).then(
+    (elem) => {
+      (elem as HTMLElement).dataset.animated = "true";
+      return elem;
+    }
+  ) as any as JSX.Element;

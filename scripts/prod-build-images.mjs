@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import buildAnimatedImage from "./prod-build-animated-images.mjs";
 
 import { svgo } from "./prod-build-svg.mjs";
 
@@ -41,6 +42,24 @@ const encodeOptionsPNG = {
   avif: { cqLevel: 63 - 60, subsample: 3, cqAlphaLevel: -1 },
   oxipng: { level: 3 },
   webp: { lossless: 1, nearLossless: 75 },
+};
+const encodeOptionsGIF = {
+  webp: {
+    vcodec: "libwebp",
+    lossless: 1,
+    "filter:v": "fps=fps=20",
+    loop: 0,
+    an: undefined, // disables audio
+    preset: "drawing",
+    vsync: 0,
+    f: "webp",
+  },
+  gif: {
+    loop: 0,
+    an: undefined, // disables audio
+    vsync: 0,
+    f: "gif",
+  },
 };
 
 const codecOptionsHashesCache = new Map();
@@ -85,23 +104,31 @@ export async function optimizeMatrix(src, sizes) {
   let encodeOpts, originalCodec;
   switch (url.hash) {
     case "#lossless":
-      encodeOpts = { ...encodeOptionsPNG };
+      encodeOpts = encodeOptionsPNG;
       originalCodec = "oxipng";
       break;
+    case "#animated":
+      encodeOpts = encodeOptionsGIF;
+      originalCodec = "gif";
+      break;
     default:
-      encodeOpts = { ...encodeOptionsJPEG };
+      encodeOpts = encodeOptionsJPEG;
       originalCodec = "mozjpeg";
       break;
   }
 
   const fileContent = await fs.readFile(url);
   const fileHash = createHash(fileContent, "base64");
-  const image = imagePool.ingestImage(fileContent);
+  const image =
+    originalCodec === "gif"
+      ? { decoded: { bitmap: { width: 1200, height: 698 } } }
+      : imagePool.ingestImage(fileContent);
 
   const {
     bitmap: { width: originalWidth, height },
   } = await image.decoded;
 
+  // TODO: rename to `_cache.csv`.
   imageCache ??= new CacheMap(new URL("./cache.csv", OUTPUT_DIR));
   const sources = [];
   for (const width of Array.from(sizes).sort((a, b) => b - a)) {
@@ -137,6 +164,26 @@ export async function optimizeMatrix(src, sizes) {
       }
     } else {
       encodeOptions = encodeOpts;
+    }
+
+    if (originalCodec === "gif") {
+      url.hash = "";
+      for (const [extension, options] of Object.entries(encodeOptions)) {
+        const fileName = await buildAnimatedImage(
+          url,
+          extension,
+          cacheWidth,
+          options
+        );
+        sources.push({ src, codec: extension, fileName, width });
+        imageCache.set(
+          fileHash,
+          cacheWidth,
+          getCodecOptionHash(extension, options),
+          fileName
+        );
+      }
+      continue;
     }
 
     await image.preprocess({
@@ -190,7 +237,9 @@ export async function generatePictureInnerHTML(src, alt, aboveTheFold, jobs) {
   const { sources, originalCodec, width, height } = await jobs[src];
 
   return (
-    `<source type="image/avif" srcset="${toSrcset(sources, "avif")}"/>` +
+    (originalCodec === "gif"
+      ? "" // FFmpeg doesn't support AVIF yet.
+      : `<source type="image/avif" srcset="${toSrcset(sources, "avif")}"/>`) +
     `<source type="image/webp" srcset="${toSrcset(sources, "webp")}"/>` +
     `<img alt=${JSON.stringify(alt)} srcset="${toSrcset(
       sources,

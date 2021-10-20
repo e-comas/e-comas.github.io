@@ -1,6 +1,6 @@
 import { h } from "@aduh95/async-jsx";
 
-interface PictureProps {
+export interface PictureProps {
   class?: string;
   /** @deprecated */
   className?: string;

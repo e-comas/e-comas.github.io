@@ -3,6 +3,7 @@ import { pipeline } from "node:stream/promises";
 
 const algorithm = "sha256";
 
+// TODO: switch default encoding to `base64url`.
 export default function createHash(str, encoding = "hex") {
   const hash = create(algorithm);
   hash.update(str);
