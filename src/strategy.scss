@@ -1,4 +1,4 @@
-@use './utils/variables' as *;
+@use "./utils/variables" as *;
 
 section {
   @extend %sectionAboveTheFold;
@@ -38,7 +38,6 @@ section {
     }
 
     & > summary {
-      font-family: $Gilroy;
       font-size: 1.25rem;
       line-height: 1em;
       font-weight: bold;

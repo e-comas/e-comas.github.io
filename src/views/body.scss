@@ -1,8 +1,8 @@
 @use "../utils/variables" as *;
 
 @use "../fonts/SourceSansPro";
-@use "../fonts/Gilroy";
-@use "../fonts/Lato";
+// @use "../fonts/Gilroy";
+// @use "../fonts/Lato";
 
 *,
 *::after,
@@ -12,7 +12,7 @@
 
 :root {
   font-size: 125%;
-  font-family: $Gilroy;
+  font-family: $SourceSansPro;
   color: $grey;
   width: 100%;
   min-height: 100%;
