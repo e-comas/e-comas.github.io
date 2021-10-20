@@ -4,6 +4,7 @@ import { AUTO_REFRESH_MODULE, INPUT_DIR, PROJECT_DIR } from "./dev-config.mjs";
 import getRenderedHTML from "./dev-build-html.mjs";
 import buildJS from "./dev-build-js-from-worker.mjs";
 import { HTML_TEMPLATE_FILE_NAME } from "./dev-config.mjs";
+import buildAnimatedImage from "./dev-build-animated-images.mjs";
 
 const showErrorOnBrowser = function (errorMessage) {
   const d = document.createElement("dialog");
@@ -75,6 +76,7 @@ export default async function router(req, res) {
     ".ts": "application/javascript",
     ".tsx": "application/javascript",
     ".webp": "image/webp",
+    ".mp4": "image/gif",
     ".woff2": "font/woff2",
   };
   const ext = url.pathname
@@ -129,6 +131,9 @@ export default async function router(req, res) {
           `(${showErrorOnBrowser.toString()})(${JSON.stringify(e.message)})`
         );
       });
+    return;
+  } else if (ext === ".mp4") {
+    buildAnimatedImage(url).then((path) => createReadStream(path).pipe(res));
     return;
   }
 
