@@ -10,9 +10,18 @@ section.four-step {
   max-width: $max-width;
   margin: 0 auto;
 
+  h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
   h3 {
-    text-transform: lowercase;
-    font-variant: small-caps;
+    &,
+    & strong {
+      text-transform: capitalize;
+      font-weight: 600;
+      // font-variant: small-caps;
+    }
   }
 
   strong {
