@@ -10,6 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt update && sudo apt install ffmpeg
       - uses: actions/checkout@v2
       - uses: actions/checkout@v2
         with:
@@ -21,7 +22,6 @@ jobs:
         with:
           path: .yarn/cache/*
           key: ${{ runner.os }}
-      - run: sudo apt install ffmpeg
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v2
         with:
