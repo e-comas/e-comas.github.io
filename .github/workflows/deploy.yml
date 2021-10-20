@@ -30,7 +30,8 @@ jobs:
       - name: Install dependencies
         run: corepack yarn install --immutable
       - name: Build website
-        run: corepack yarn build
+        # Re-try several times in case there's a crash.
+        run: corepack yarn build || corepack yarn build || corepack yarn build
       - name: Deploy
         run: |
           cd docs
