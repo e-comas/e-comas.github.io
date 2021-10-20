@@ -1,5 +1,4 @@
-import { readFile } from "node:fs/promises";
-import { rename } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 
 import { spawnFfmpegProcess as spawn } from "./dev-build-animated-images.mjs";
 import createHash from "./prod-hash.mjs";
@@ -16,8 +15,9 @@ export default async function buildAnimatedImage(
   options
 ) {
   const outputFile = await spawnFfmpegProcess(input, size, options);
-  const hash = createHash(await readFile(outputFile));
+  const fileContent = await readFile(outputFile);
+  const hash = createHash(fileContent);
   const fileName = `${hash}.${extension}`;
-  await rename(outputFile, new URL(fileName, OUTPUT_DIR));
+  await writeFile(new URL(fileName, OUTPUT_DIR), fileContent);
   return fileName;
 }
