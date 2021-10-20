@@ -6,6 +6,7 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import Picture from "./utils/Picture.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
+import AnimatedImage from "./utils/AnimatedImage.js";
 
 import "./strategy.scss";
 
@@ -33,7 +34,7 @@ export default (
       </ElementWithIcon>
 
       <section class="twoThird">
-        <Picture src="/images/image00002.jpeg" alt="team picture" />
+        <AnimatedImage src="/images/gif.mp4" alt="" />
         <Picture src="/images/IMG_5892.jpg" alt="team picture" />
       </section>
 
