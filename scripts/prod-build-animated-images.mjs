@@ -2,7 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 import { spawnFfmpegProcess as spawn } from "./dev-build-animated-images.mjs";
 import createHash from "./prod-hash.mjs";
-import { OUTPUT_DIR } from "./dev-config.mjs";
+import { OUTPUT_DIR } from "./prod-config.mjs";
 
 function spawnFfmpegProcess(i, size, options) {
   return spawn({ i, ...options, vf: `scale=${size}:-1` });
