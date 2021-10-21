@@ -5,6 +5,7 @@ import {
 } from "./prod-build-images.mjs";
 import sass2css from "./prod-build-css.mjs";
 import buildRuntimeJS from "./prod-build-js.mjs";
+import { CANONICAL_ORIGIN } from "./prod-config.mjs";
 
 const viewportsToTest = [
   {
@@ -244,6 +245,27 @@ async function crawlPage(page, signalIn, signalOut) {
         }
       }).filter(Boolean)
     )
+  );
+
+  await page.$eval(
+    'link[rel="canonical"]',
+    (elem, origin) => {
+      elem.href = new URL(
+        location.pathname + location.search + location.hash,
+        origin
+      );
+    },
+    CANONICAL_ORIGIN
+  );
+  await page.$eval(
+    'meta[property="og:url"]',
+    (elem, origin) => {
+      elem.setAttribute(
+        "content",
+        new URL(location.pathname + location.search + location.hash, origin)
+      );
+    },
+    CANONICAL_ORIGIN
   );
 
   await page.evaluate((js) => {

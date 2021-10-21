@@ -203,10 +203,8 @@ export async function optimizeMatrix(src, sizes) {
           }
         : {}
     );
-    console.log("after⁄ preprocess");
 
     await image.encode(encodeOptions);
-    console.log("after⁄ encode");
 
     for (const [codec, encodedImage] of Object.entries(image.encodedWith)) {
       const { binary, extension } = await encodedImage;
