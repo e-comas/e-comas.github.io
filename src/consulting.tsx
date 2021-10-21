@@ -6,12 +6,10 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 import SlidingText from "./views/SlidingText.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
+import HoverableMenu from "./views/HoverableMenu.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
-
-const HoverableMenu = "div";
 
 export default (
   <Body title="Content / Syndication">
