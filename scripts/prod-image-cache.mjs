@@ -88,7 +88,7 @@ if (isMainThread) {
           const [key, width, codec, fileName] = lineSplit;
           content[key] ??= {};
           content[key][width] ??= {};
-          content[key][width][codec] ??= fileName;
+          content[key][width][codec] = fileName;
         }
         return content;
       } catch (err) {
