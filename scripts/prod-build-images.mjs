@@ -43,6 +43,9 @@ const encodeOptionsPNG = {
   oxipng: { level: 3 },
   webp: { lossless: 1, nearLossless: 75 },
 };
+const encodeOptionsOpenGraph = {
+  oxipng: encodeOptionsPNG.oxipng,
+};
 const encodeOptionsGIF = {
   webp: {
     vcodec: "libwebp",
@@ -110,6 +113,10 @@ export async function optimizeMatrix(src, sizes) {
     case "#animated":
       encodeOpts = encodeOptionsGIF;
       originalCodec = "gif";
+      break;
+    case "#opengraph":
+      encodeOpts = encodeOptionsOpenGraph;
+      originalCodec = "oxipng";
       break;
     default:
       encodeOpts = encodeOptionsJPEG;
@@ -186,14 +193,20 @@ export async function optimizeMatrix(src, sizes) {
       continue;
     }
 
-    await image.preprocess({
-      resize: {
-        enabled: width < originalWidth,
-        width,
-      },
-    });
+    await image.preprocess(
+      width < originalWidth
+        ? {
+            resize: {
+              enabled: true,
+              width,
+            },
+          }
+        : {}
+    );
+    console.log("after⁄ preprocess");
 
     await image.encode(encodeOptions);
+    console.log("after⁄ encode");
 
     for (const [codec, encodedImage] of Object.entries(image.encodedWith)) {
       const { binary, extension } = await encodedImage;
@@ -248,4 +261,10 @@ export async function generatePictureInnerHTML(src, alt, aboveTheFold, jobs) {
       aboveTheFold ? "eager" : "lazy"
     }" width="${width}" height="${height}"/>`
   );
+}
+
+export async function generateOpenGraphInfo(src, alt, aboveTheFold, jobs) {
+  const { sources, originalCodec, width, height } = await jobs[src];
+
+  return sources[0];
 }

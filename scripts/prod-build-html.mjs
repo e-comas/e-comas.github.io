@@ -151,6 +151,19 @@ async function crawlPage(page, signalIn, signalOut) {
     await elem.dispose();
   }
 
+  const openGraphImages = await page.$$(
+    'meta[property="og:image"],meta[property="og:image:url"],meta[property="og:image:secure_url"]'
+  );
+  for (const elem of openGraphImages) {
+    const src = await elem.evaluate((image) => {
+      const url = new URL(image.getAttribute("content"), location.origin);
+      url.hash = "#opengraph";
+      return url.toString().replace(location.origin, ".");
+    });
+    srcMap.set(elem, src);
+    imgData.set(src, new Set().add(Infinity));
+  }
+
   signalOut();
 
   const vectorImages = await page.$$("img:not(picture>img)");
@@ -193,6 +206,19 @@ async function crawlPage(page, signalIn, signalOut) {
     await elem.evaluate((node, src) => {
       node.innerHTML = src;
     }, await generatePictureInnerHTML(src, alt, aboveTheFold.has(elem), jobs));
+    await elem.dispose();
+  }
+  for (const elem of openGraphImages) {
+    const src = srcMap.get(elem);
+    await elem.evaluate((node, { sources, width, height }) => {
+      node.setAttribute("content", sources[0].fileName);
+      node.parentNode
+        .querySelector('meta[property="og:image:width"]')
+        .setAttribute("content", width);
+      node.parentNode
+        .querySelector('meta[property="og:image:height"]')
+        .setAttribute("content", height);
+    }, await jobs[src]);
     await elem.dispose();
   }
 
