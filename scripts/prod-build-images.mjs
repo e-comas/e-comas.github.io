@@ -138,8 +138,13 @@ export async function optimizeMatrix(src, sizes) {
   // TODO: rename to `_cache.csv`.
   imageCache ??= new CacheMap(new URL("./cache.csv", OUTPUT_DIR));
   const sources = [];
+  let previousWidth;
   for (const width of Array.from(sizes).sort((a, b) => b - a)) {
     if (width == 0 || Number.isNaN(width)) continue;
+    if (previousWidth - width < 20) {
+      console.log("too close from previous size, skipping", src, width);
+    }
+    previousWidth = width;
 
     let encodeOptions;
     const cacheWidth = Math.min(originalWidth, width);
