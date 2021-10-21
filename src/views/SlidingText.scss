@@ -1,12 +1,16 @@
 @use "../utils/variables" as *;
 
 .slidable-text {
-  animation: slideIn $animationDuration;
+  animation: slideInFromLeft $animationDuration;
   font-size: 2rem;
   letter-spacing: -0.5px;
   text-align: center;
   line-height: 3.5rem;
   font-weight: 500;
+
+  &:nth-of-type(even) {
+    animation-name: slideInFromRight;
+  }
 
   strong {
     color: $green;
@@ -16,8 +20,13 @@
   }
 }
 
-@keyframes slideIn {
+@keyframes slideInFromLeft {
   from {
     transform: translateX(-150%);
+  }
+}
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(150%);
   }
 }
