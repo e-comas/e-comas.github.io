@@ -1,0 +1,23 @@
+@use "../utils/variables" as *;
+
+.slidable-text {
+  animation: slideIn $animationDuration;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+  text-align: center;
+  line-height: 3.5rem;
+  font-weight: 500;
+
+  strong {
+    color: $green;
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-150%);
+  }
+}
