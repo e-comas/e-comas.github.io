@@ -9,7 +9,7 @@ export default () => (
     <h2>Partners we trust</h2>
     <div>
       <a href="partners.html#Reveals">
-        <img alt="Reveals" />
+        <Picture alt="Reveals" src="/images/partners/reveals.png" />
       </a>
       <a href="syndication.html#Salsify">
         <img alt="Salsify" src="/images/partners/salsify.svg" />
