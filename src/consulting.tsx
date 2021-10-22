@@ -48,6 +48,9 @@ export default (
             <br />
             We can help you!
           </p>
+          <p>
+            <a href="#strategy">Discover our strategy</a>
+          </p>
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
@@ -58,6 +61,9 @@ export default (
             We help you solve pressing issues with our team of experts, who know
             how to quickly unblock, solve and find solutions.
           </p>
+          <p>
+            <a href="#consulting">Consult with our experts</a>
+          </p>
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
@@ -65,12 +71,15 @@ export default (
         >
           <h3>Account audit</h3>
           <p>Lorem Ipsum</p>
+          <p>
+            <a href="#audit">Take a closer look</a>
+          </p>
         </ElementWithBackgroundImage>
       </HoverableMenu>
 
       <FourStepApproach />
 
-      <section>
+      <section id="strategy">
         <figure>
           <Picture src="/images/consulting01.png" alt="" />
           <figcaption>
@@ -102,7 +111,7 @@ export default (
         </figure>
       </section>
 
-      <section>
+      <section id="consulting">
         <figure>
           <figcaption>
             <h2>Amazon consulting</h2>
@@ -141,7 +150,7 @@ export default (
         </figure>
       </section>
 
-      <section>
+      <section id="audit">
         <figure>
           <Picture src="/images/consulting03.png" alt="" />
           <figcaption>
