@@ -7,6 +7,7 @@ import Picture from "./utils/Picture.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 import SlidingText from "./views/SlidingText.js";
 import HoverableMenu from "./views/HoverableMenu.js";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -20,19 +21,24 @@ export default (
         World class expertise to <strong>boost</strong> your eCommerce
       </h2>
 
-      <SlidingText>
-        We define your <strong>eCommerce strategy</strong> with your team
-      </SlidingText>
-      <SlidingText>
-        We offer <strong>Amazon consulting</strong> to solve your issues
-      </SlidingText>
-      <SlidingText>
-        We can <strong>audit</strong> your eCommerce accounts with our Compas
-        tool
-      </SlidingText>
+      <section class="slidable-section">
+        <SlidingText>
+          We define your <strong>eCommerce strategy</strong> with your team
+        </SlidingText>
+        <SlidingText>
+          We offer <strong>Amazon consulting</strong> to solve your issues
+        </SlidingText>
+        <SlidingText>
+          We can <strong>audit</strong> your eCommerce accounts with our Compas
+          tool
+        </SlidingText>
+      </section>
 
       <HoverableMenu>
-        <section>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting01.png"
+        >
           <h3>eCommerce strategy</h3>
           <p>
             Are you struggling to determine your ecommerce strategy?
@@ -42,25 +48,31 @@ export default (
             <br />
             We can help you!
           </p>
-        </section>
-        <section>
+        </ElementWithBackgroundImage>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting02.png"
+        >
           <h3>Amazon consulting</h3>
           <p>
             We help you solve pressing issues with our team of experts, who know
             how to quickly unblock, solve and find solutions.
           </p>
-        </section>
-        <section>
+        </ElementWithBackgroundImage>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting03.png"
+        >
           <h3>Account audit</h3>
           <p>Lorem Ipsum</p>
-        </section>
+        </ElementWithBackgroundImage>
       </HoverableMenu>
 
       <FourStepApproach />
 
       <section>
         <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/consulting01.png" alt="" />
           <figcaption>
             <h2>eCommerce strategy</h2>
 
@@ -125,13 +137,13 @@ export default (
               Case study: Michelin
             </a>
           </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/consulting02.png" alt="" />
         </figure>
       </section>
 
       <section>
         <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/consulting03.png" alt="" />
           <figcaption>
             <h2>Account Audit</h2>
 

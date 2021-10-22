@@ -1,12 +1,18 @@
 @use "../utils/variables" as *;
 
+.slidable-section {
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  min-height: unset;
+}
 .slidable-text {
   animation: slideInFromLeft $animationDuration;
-  font-size: 2rem;
+  font-size: 1.75rem;
   letter-spacing: -0.5px;
   text-align: center;
-  line-height: 3.5rem;
-  font-weight: 500;
+  line-height: 2.5rem;
+  font-weight: 300;
 
   &:nth-of-type(even) {
     animation-name: slideInFromRight;
@@ -15,7 +21,7 @@
   strong {
     color: $green;
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
   }
 }

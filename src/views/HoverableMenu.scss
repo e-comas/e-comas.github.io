@@ -3,6 +3,7 @@
 .hoverable-menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  min-height: 650px;
 
   section {
     display: flex;
@@ -10,16 +11,36 @@
     justify-content: end;
     padding: 5rem 0;
 
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #{$green}c5;
+      text-align: center;
+      min-height: 5rem;
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      letter-spacing: 0;
+      font-weight: 600;
+    }
     &:hover {
       justify-content: center;
       background-color: #{$green}c5;
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      h3 {
+        background: none;
+        min-height: unset;
+      }
+      p {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 1.75rem;
+      }
     }
-    &:not(:hover) > * {
+    &:not(:hover) > p {
       display: none;
-    }
-    h3 {
-      display: block !important;
-      background-color: #{$green}c5;
     }
   }
 }
