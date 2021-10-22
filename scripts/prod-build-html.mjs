@@ -118,15 +118,19 @@ async function crawlPage(page, signalIn, signalOut) {
   }
   for (const elem of openGraphImages) {
     const src = srcMap.get(elem);
-    await elem.evaluate((node, { sources, width, height }) => {
-      node.setAttribute("content", sources[0].fileName);
-      node.parentNode
-        .querySelector('meta[property="og:image:width"]')
-        .setAttribute("content", width);
-      node.parentNode
-        .querySelector('meta[property="og:image:height"]')
-        .setAttribute("content", height);
-    }, await jobs[src]);
+    await elem.evaluate(
+      (node, { sources, width, height }, origin) => {
+        node.setAttribute("content", new URL(sources[0].fileName, origin));
+        node.parentNode
+          .querySelector('meta[property="og:image:width"]')
+          .setAttribute("content", width);
+        node.parentNode
+          .querySelector('meta[property="og:image:height"]')
+          .setAttribute("content", height);
+      },
+      await jobs[src],
+      CANONICAL_ORIGIN
+    );
     await elem.dispose();
   }
 
