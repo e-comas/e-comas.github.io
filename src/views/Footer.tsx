@@ -1,4 +1,12 @@
 import { h } from "@aduh95/async-jsx";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import {
+  faLinkedinIn,
+  faFacebookF,
+  faInstagram,
+  faMediumM,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 import NavLink from "../utils/NavLink.js";
 
@@ -22,26 +30,9 @@ export default () => (
         <li>
           <NavLink href="/our-team.html">Team</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink href="/news.html">Blog</NavLink>
-        </li>
-      </ul>
-    </nav>
-    <nav>
-      <h5>Our approach</h5>
-      <ul>
-        <li>
-          <NavLink href="/strategy.html">Strategy</NavLink>
-        </li>
-        <li>
-          <NavLink href="/conversion.html">Conversion</NavLink>
-        </li>
-        <li>
-          <NavLink href="/operations.html">Operation</NavLink>
-        </li>
-        <li>
-          <NavLink href="/advertising.html">Advertising</NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
     <div class="contact-us">
@@ -52,6 +43,33 @@ export default () => (
       Tel.: <a href="tel:&plus;352621830003">+352 621 830 003</a> - M.:
       ecomassimple@e-comas.com
     </div>
+    <nav class="social">
+      <li>
+        <a href="about:blank" rel="noopener" target="_blank" title="LinkedIn">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </a>
+      </li>
+      <li>
+        <a href="about:blank" rel="noopener" target="_blank" title="Facebook">
+          <FontAwesomeIcon icon={faFacebookF} />
+        </a>
+      </li>
+      <li>
+        <a href="about:blank" rel="noopener" target="_blank" title="Instagram">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+      </li>
+      <li>
+        <a href="about:blank" rel="noopener" target="_blank" title="Medium">
+          <FontAwesomeIcon icon={faMediumM} />
+        </a>
+      </li>
+      <li>
+        <a href="about:blank" rel="noopener" target="_blank" title="YouTube">
+          <FontAwesomeIcon icon={faYoutube} />
+        </a>
+      </li>
+    </nav>
     <div class="copyright-notice">© 2021 · E-comas · All Rights Reserved</div>
   </footer>
 );

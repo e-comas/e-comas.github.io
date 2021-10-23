@@ -8,7 +8,10 @@
   },
   "devDependencies": {
     "@aduh95/async-jsx": "^0.2.0",
+    "@aduh95/jsx-fontawesome": "^0.1.9",
     "@aduh95/toml": "^0.4.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-sucrase": "4.0.1",
     "@rollup/plugin-typescript": "^8.2.5",
@@ -34,6 +37,7 @@
     "postinstall": "node scripts/dev-generate-toml-interop-files.mjs"
   },
   "resolutions": {
-    "@rollup/plugin-sucrase@4.0.1": "patch:@rollup/plugin-sucrase@npm:4.0.1#.yarn/patches/@rollup-plugin-sucrase-npm-4.0.1-4a1e7679d7"
+    "@rollup/plugin-sucrase@4.0.1": "patch:@rollup/plugin-sucrase@npm:4.0.1#.yarn/patches/@rollup-plugin-sucrase-npm-4.0.1-4a1e7679d7",
+    "prop-types": "patch:prop-types@npm:15.7.2#.yarn/patches/prop-types-npm-15.7.2-d7a04f2274"
   }
 }

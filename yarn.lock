@@ -12,10 +12,47 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aduh95/jsx-fontawesome@npm:^0.1.9":
+  version: 0.1.9
+  resolution: "@aduh95/jsx-fontawesome@npm:0.1.9"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@aduh95/async-jsx": ^0.1.0 || ^0.2.0
+    "@fortawesome/fontawesome-svg-core": ^1.2.27
+  checksum: 205a3ba5e9f469c1b41694aa7ac943d1d6f54118bd7d3811e822b76e8f66f3ab9cfb5db4e77b4710a7bf32e74f77ceabf20ae251001a7cf3f741cf0447bd6783
+  languageName: node
+  linkType: hard
+
 "@aduh95/toml@npm:^0.4.2":
   version: 0.4.2
   resolution: "@aduh95/toml@npm:0.4.2"
   checksum: 9f3ba256af9754e5f33c1afb870981f27740cb17718bdc75de7454499840fa78c22f5f1545c3c84a8b103b183be03885d8febec2ef9cc780f915237c8872f1f8
+  languageName: node
+  linkType: hard
+
+"@fortawesome/fontawesome-common-types@npm:^0.2.36":
+  version: 0.2.36
+  resolution: "@fortawesome/fontawesome-common-types@npm:0.2.36"
+  checksum: d604ac51da0b1597127fde70c64157b70ead6af7f2643ab7dfca268ef99d4ed0b4cc823afba206362422a622e389828408bec573df802bf4f02b118d0fa18dc8
+  languageName: node
+  linkType: hard
+
+"@fortawesome/fontawesome-svg-core@npm:^1.2.36":
+  version: 1.2.36
+  resolution: "@fortawesome/fontawesome-svg-core@npm:1.2.36"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": ^0.2.36
+  checksum: 3011d8c1452b5df52a62eaee8b1ec925b9fdfabcc170fd6da5eaac7cfdef56258b9292ddd06c30f03a6a8ed6faa886565211f2e469fee3c9831c32f93e9383d8
+  languageName: node
+  linkType: hard
+
+"@fortawesome/free-brands-svg-icons@npm:^5.15.4":
+  version: 5.15.4
+  resolution: "@fortawesome/free-brands-svg-icons@npm:5.15.4"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": ^0.2.36
+  checksum: 06e38132fbdf04d8677cf6e47e73cd566f68256f542d68d354e26f5ca7536c714b56f5f3dc6c670065b888ee08bc913bb4f213ab08225faf955d893a6a86ed02
   languageName: node
   linkType: hard
 
@@ -948,7 +985,10 @@ __metadata:
   resolution: "e-comas.com@workspace:."
   dependencies:
     "@aduh95/async-jsx": ^0.2.0
+    "@aduh95/jsx-fontawesome": ^0.1.9
     "@aduh95/toml": ^0.4.2
+    "@fortawesome/fontawesome-svg-core": ^1.2.36
+    "@fortawesome/free-brands-svg-icons": ^5.15.4
     "@rollup/plugin-node-resolve": ^13.0.4
     "@rollup/plugin-sucrase": 4.0.1
     "@rollup/plugin-typescript": ^8.2.5
@@ -1504,6 +1544,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"js-tokens@npm:^3.0.0 || ^4.0.0":
+  version: 4.0.0
+  resolution: "js-tokens@npm:4.0.0"
+  checksum: 8a95213a5a77deb6cbe94d86340e8d9ace2b93bc367790b260101d2f36a2eaf4e4e22d9fa9cf459b38af3a32fb4190e638024cf82ec95ef708680e405ea7cc78
+  languageName: node
+  linkType: hard
+
 "jsdom@npm:^17.0.0":
   version: 17.0.0
   resolution: "jsdom@npm:17.0.0"
@@ -1588,6 +1635,17 @@ fsevents@~2.3.2:
   version: 4.5.0
   resolution: "lodash.uniq@npm:4.5.0"
   checksum: a4779b57a8d0f3c441af13d9afe7ecff22dd1b8ce1129849f71d9bbc8e8ee4e46dfb4b7c28f7ad3d67481edd6e51126e4e2a6ee276e25906d10f7140187c392d
+  languageName: node
+  linkType: hard
+
+"loose-envify@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "loose-envify@npm:1.4.0"
+  dependencies:
+    js-tokens: ^3.0.0 || ^4.0.0
+  bin:
+    loose-envify: cli.js
+  checksum: 6517e24e0cad87ec9888f500c5b5947032cdfe6ef65e1c1936a0c48a524b81e65542c9c3edc91c97d5bddc806ee2a985dbc79be89215d613b1de5db6d1cfe6f4
   languageName: node
   linkType: hard
 
@@ -1894,7 +1952,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4.0.1, object-assign@npm:^4.1.0":
+"object-assign@npm:^4.0.1, object-assign@npm:^4.1.0, object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: fcc6e4ea8c7fe48abfbb552578b1c53e0d194086e2e6bbbf59e0a536381a292f39943c6e9628af05b5528aa5e3318bb30d6b2e53cadaf5b8fe9e12c4b69af23f
@@ -2443,6 +2501,28 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"prop-types@npm:15.7.2":
+  version: 15.7.2
+  resolution: "prop-types@npm:15.7.2"
+  dependencies:
+    loose-envify: ^1.4.0
+    object-assign: ^4.1.1
+    react-is: ^16.8.1
+  checksum: 5eef82fdda64252c7e75aa5c8cc28a24bbdece0f540adb60ce67c205cf978a5bd56b83e4f269f91c6e4dcfd80b36f2a2dec24d362e278913db2086ca9c6f9430
+  languageName: node
+  linkType: hard
+
+"prop-types@patch:prop-types@npm:15.7.2#.yarn/patches/prop-types-npm-15.7.2-d7a04f2274::locator=e-comas.com%40workspace%3A.":
+  version: 15.7.2
+  resolution: "prop-types@patch:prop-types@npm%3A15.7.2#.yarn/patches/prop-types-npm-15.7.2-d7a04f2274::version=15.7.2&hash=baa7bf&locator=e-comas.com%40workspace%3A."
+  dependencies:
+    loose-envify: ^1.4.0
+    object-assign: ^4.1.1
+    react-is: ^16.8.1
+  checksum: 2f09d375c03760b6920d0aa2a40f23fea39c1c2b7e9176392bbe3af89cfe27f2ada78e84ae239e3908294e8d6c1b515e5e6a7285916c462ae1043effb0d32f39
+  languageName: node
+  linkType: hard
+
 "proxy-from-env@npm:1.1.0":
   version: 1.1.0
   resolution: "proxy-from-env@npm:1.1.0"
@@ -2491,6 +2571,13 @@ fsevents@~2.3.2:
     unbzip2-stream: 1.3.3
     ws: 7.4.6
   checksum: 2722adc087a01a3797948f9ec0bd98f4c6d5aaf8f5fed8c0407259ccfeaaa4c25c6bd27927aca3db58e6de03456f5556806a1cce322a7529a7624eafb87321ab
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^16.8.1":
+  version: 16.13.1
+  resolution: "react-is@npm:16.13.1"
+  checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
   languageName: node
   linkType: hard
 
@@ -2986,22 +3073,22 @@ fsevents@~2.3.2:
   linkType: hard
 
 typescript@^4.4.3:
-  version: 4.4.3
-  resolution: "typescript@npm:4.4.3"
+  version: 4.4.4
+  resolution: "typescript@npm:4.4.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 05823f21796d450531a7e4ab299715d38fd9ded0e4ce7400876053f4b5166ca3dde7a68cecfe72d9086039f03c0b6edba36516fb10ed83c5837d9600532ea4c2
+  checksum: 89ecb8436bb48ef5594d49289f5f89103071716b6e4844278f4fb3362856e31203e187a9c76d205c3f0b674d221a058fd28310dbcbcf5d95e9a57229bb5203f1
   languageName: node
   linkType: hard
 
 "typescript@patch:typescript@^4.4.3#~builtin<compat/typescript>":
-  version: 4.4.3
-  resolution: "typescript@patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=d8b4e7"
+  version: 4.4.4
+  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=d8b4e7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 215a59742afb7e0c3668e2c50ca19813deb24b3cc0d16ac3591990e033728050aaa99e159a72b54cb43653f16c778a5cf9dfeed1f51c3b105710ae082c064af7
+  checksum: 4a639b6886be13616582ab82abdb4ffbbf5b0458069d13c10cd5d44fc1cafa33eab005e8ac8691ad8fae249fee85844bb7d523263c4568fe9a2ca31cd3c91c3d
   languageName: node
   linkType: hard
 
