@@ -29,17 +29,25 @@ footer {
     display: block;
   }
 
+  strong {
+    display: block;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+  }
+
   a {
     color: inherit;
     text-decoration: inherit;
   }
 
   address {
+    display: inline;
     font-style: normal;
   }
 
   .social {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;

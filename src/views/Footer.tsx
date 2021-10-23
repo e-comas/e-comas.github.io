@@ -35,15 +35,20 @@ export default () => (
         </li> */}
       </ul>
     </nav>
-    <div class="contact-us">
-      <h5>
-        <NavLink href="/contact.html">Contact us</NavLink>
-      </h5>
-      <address>68 Avenue de la Liberté - L-1930 Luxembourg</address>
-      Tel.: <a href="tel:&plus;352621830003">+352 621 830 003</a> - M.:
-      ecomassimple@e-comas.com
-    </div>
-    <nav class="social">
+    <ul class="contact-us">
+      <li>
+        <strong role="heading">
+          <NavLink href="/contact.html">Contact us</NavLink>
+        </strong>
+      </li>
+      <li>
+        Phone: <a href="tel:&plus;352621830003">+352 621 830 003</a>
+      </li>
+      <li>
+        Address: <address>68 Avenue de la Liberté - L-1930 Luxembourg</address>
+      </li>
+    </ul>
+    <ul class="social">
       <li>
         <a href="about:blank" rel="noopener" target="_blank" title="LinkedIn">
           <FontAwesomeIcon icon={faLinkedinIn} />
@@ -69,7 +74,7 @@ export default () => (
           <FontAwesomeIcon icon={faYoutube} />
         </a>
       </li>
-    </nav>
+    </ul>
     <div class="copyright-notice">© 2021 · E-comas · All Rights Reserved</div>
   </footer>
 );
