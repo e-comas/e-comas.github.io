@@ -78,7 +78,7 @@ section {
     }
   }
   @media screen and (min-width: 850px) {
-    &:nth-of-type(even) figure {
+    &:nth-of-type(even) figure:not([class]) {
       grid-template-columns: 593fr 475fr;
     }
   }
