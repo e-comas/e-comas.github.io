@@ -138,14 +138,17 @@ async function crawlPage(page, signalIn, signalOut) {
     await elem.evaluate((elem) => elem.remove());
     await elem.dispose();
   }
-  const faStyles = await page.$$eval("style", (styles) => {
-    let returnVal = ";";
-    for (const elem of styles) {
-      returnVal += elem.textContent;
-      elem.remove();
+  const inlineStyles = await page.$$eval(
+    "style[data-inline-style]",
+    (styles) => {
+      const returnVal = {};
+      for (const elem of styles) {
+        returnVal[elem.dataset.inlineStyle] = elem.textContent;
+        elem.remove();
+      }
+      return returnVal;
     }
-    return returnVal;
-  });
+  );
   await page.evaluate(
     (urls) => {
       document.head.append(
@@ -160,7 +163,7 @@ async function crawlPage(page, signalIn, signalOut) {
     await Promise.all(
       Array.from(sassBundling.entries(), ([pages, sassFiles]) => {
         if (pages.has(page.url())) {
-          return sass2css(sassFiles, faStyles);
+          return sass2css(sassFiles, inlineStyles);
         }
       }).filter(Boolean)
     )

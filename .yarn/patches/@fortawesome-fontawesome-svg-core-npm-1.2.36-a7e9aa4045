@@ -1,0 +1,12 @@
+diff --git a/index.es.js b/index.es.js
+index f0cf607d3081d0613891bb8da4ca8491cc211749..2f817c06daed639b9c72c10eb95fe4cf50ac64f3 100644
+--- a/index.es.js
++++ b/index.es.js
+@@ -614,6 +614,7 @@ function insertCss(css) {
+ 
+   var style = DOCUMENT.createElement('style');
+   style.setAttribute('type', 'text/css');
++  style.dataset.inlineStyle = 'footer.scss';
+   style.innerHTML = css;
+   var headChildren = DOCUMENT.head.childNodes;
+   var beforeChild = null;

@@ -10,15 +10,19 @@ import { INPUT_DIR, OUTPUT_DIR } from "./prod-config.mjs";
 import createHash from "./prod-hash.mjs";
 
 const cache = new WeakMap();
-export default async function sass2css(sassFiles, faStyles) {
+export default async function sass2css(sassFiles, inlineStyles) {
   const cachedValue = cache.get(sassFiles);
   if (cachedValue != null) return cachedValue;
 
-  if (!sassFiles.some((f) => f.endsWith("footer.scss"))) faStyles = "";
   const sassResult = sass.renderSync({
-    data:
-      sassFiles.map((path) => `@use ${JSON.stringify(path)}`).join(";") +
-      faStyles,
+    data: sassFiles
+      .map((path) => `@use ${JSON.stringify(path)}`)
+      .concat(
+        Object.entries(inlineStyles).filter(([file]) =>
+          sassFiles.some((sassFile) => sassFile.endsWith(file))
+        )
+      )
+      .join(";"),
   });
 
   const { css } = await postcss([
