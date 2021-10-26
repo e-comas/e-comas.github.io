@@ -23,14 +23,14 @@ export default (
 
       <section class="slidable-section">
         <SlidingText>
-          We define your <strong>eCommerce strategy</strong> with your team
+          We define your <strong>eCommerce strategy</strong> with your team.
         </SlidingText>
         <SlidingText>
-          We offer <strong>Amazon consulting</strong> to solve your issues
+          We offer <strong>Amazon consulting</strong> to solve your issues.
         </SlidingText>
         <SlidingText>
           We can <strong>audit</strong> your eCommerce accounts with our Compas
-          tool
+          tool.
         </SlidingText>
       </section>
 
