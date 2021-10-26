@@ -22,7 +22,7 @@ export default () => (
     <nav>
       <ul>
         <li>
-          <NavLink href="/services.html">Service</NavLink>
+          <NavLink href="/strategy.html">Service</NavLink>
         </li>
         <li>
           <NavLink href="/experience.html">Experience</NavLink>
@@ -50,27 +50,52 @@ export default () => (
     </ul>
     <ul class="social">
       <li>
-        <a href="about:blank" rel="noopener" target="_blank" title="LinkedIn">
+        <a
+          href="https://www.linkedin.com/company/e-comas/"
+          rel="noopener"
+          target="_blank"
+          title="LinkedIn"
+        >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
       </li>
       <li>
-        <a href="about:blank" rel="noopener" target="_blank" title="Facebook">
+        <a
+          href="https://www.facebook.com/ecommerce.made.simple/"
+          rel="noopener"
+          target="_blank"
+          title="Facebook"
+        >
           <FontAwesomeIcon icon={faFacebookF} />
         </a>
       </li>
       <li>
-        <a href="about:blank" rel="noopener" target="_blank" title="Instagram">
+        <a
+          href="https://www.instagram.com/e.comas.amazon.made.simple/"
+          rel="noopener"
+          target="_blank"
+          title="Instagram"
+        >
           <FontAwesomeIcon icon={faInstagram} />
         </a>
       </li>
       <li>
-        <a href="about:blank" rel="noopener" target="_blank" title="Medium">
+        <a
+          href="https://medium.com/@Amazon_expert"
+          rel="noopener"
+          target="_blank"
+          title="Medium"
+        >
           <FontAwesomeIcon icon={faMediumM} />
         </a>
       </li>
       <li>
-        <a href="about:blank" rel="noopener" target="_blank" title="YouTube">
+        <a
+          href="https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
+          rel="noopener"
+          target="_blank"
+          title="YouTube"
+        >
           <FontAwesomeIcon icon={faYoutube} />
         </a>
       </li>
