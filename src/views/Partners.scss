@@ -8,11 +8,17 @@ section.partners {
   align-items: center;
 
   & > div {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 3.75rem;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, 9rem);
+
+    img {
+      width: 9rem;
+      max-height: 3rem;
+      object-fit: contain;
+    }
   }
 }
