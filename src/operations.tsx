@@ -5,7 +5,10 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
 import Footer from "./views/Footer.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
+import SlidingText from "./views/SlidingText.js";
+import HoverableMenu from "./views/HoverableMenu.js";
+import ECommerce from "./views/eCommerce.js";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 
 import "./classic-page.scss";
 
@@ -14,92 +17,123 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-      <ElementWithIcon tagName="section" src="/images/euro-cog.svg">
-        <h2>Operations</h2>
+      <h2>
+        World class expertise to <strong>run</strong> your <ECommerce />!
+      </h2>
 
-        <p>
-          We can help you with the <strong>operations</strong> of your ecommerce
-          business, on Amazon, Shopify, CDiscount, Veepee, Bol, Walmart, and
-          more.
-        </p>
+      <section class="slidable-section">
+        <SlidingText>
+          We handle your{" "}
+          <strong>
+            <ECommerce /> account
+          </strong>
+          .
+        </SlidingText>
+        <SlidingText>
+          We can <strong>sell</strong> your products on our seller account.
+        </SlidingText>
+        <SlidingText>
+          We can manage your <strong>logistics &amp; VAT</strong> to kickstart
+          your business.
+        </SlidingText>
+      </section>
 
-        <p>
-          Whether you want to <strong>outsource</strong> the entire operation to
-          us or simply need us to help <strong>manage</strong> your Amazon
-          catalogue, we can provide exactly what you need to run your online
-          sales smoothly.
-        </p>
+      <HoverableMenu>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting01.png"
+        >
+          <h3>Account management</h3>
+          <p>
+            Focus on your business core and outsource the complexity of running
+            your account.
+          </p>
+          <p>
+            <a href="#account_management">Discover our strategy</a>
+          </p>
+        </ElementWithBackgroundImage>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting01.png"
+        >
+          <h3>Retail</h3>
+          <p>
+            You are not able to sell your products? Let us do it on our own
+            Amazon seller account in EU, US or India.
+          </p>
+          <p>
+            <a href="#retail">Discover our strategy</a>
+          </p>
+        </ElementWithBackgroundImage>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting01.png"
+        >
+          <h3>Logistics &amp; VAT services</h3>
+          <p>
+            We have partnered with key players to provide you with the best
+            service to get started in <ECommerce />.
+          </p>
+          <p>
+            <a href="#logistics">Discover our strategy</a>
+          </p>
+        </ElementWithBackgroundImage>
+      </HoverableMenu>
 
-        <ul>
-          <li>We can manage your account.</li>
-          <li>We can help you with logistics and VAT.</li>
-          <li>We cover all major ecommerce platforms, globally.</li>
-        </ul>
-      </ElementWithIcon>
-
-      <section>
+      <section id="account_management">
         <figure>
           <figcaption>
             <h3>Account management</h3>
 
             <p>
-              You can outsource the management of your ecommerce account to our
-              seasoned team.
-            </p>
-
-            <p>
               We will take over all day-to-day management aspects of your
-              account to let you focus on your business.
+              account to let you focus on your business. Experience our
+              professional CART approach:
             </p>
 
             <ul>
-              <li>Benefit from our expert knowledge and long experience.</li>
               <li>
-                Grow faster and more confidently on multiple ecommerce
-                platforms: Amazon, Shopify, CDiscount, Veepee, Bol, Walmart, and
-                more.
+                Cataloguing: we upload your content, we make sure it appears
+                perfectly, and stays there.
               </li>
               <li>
-                Expand internationally with our multilingual team: in Europe, in
-                theAmericas, and in Asia.
+                Advertising: we handle your PPC advertising, and can also offer
+                DSP Amazon advertising or even off-Amazon advertising.
+              </li>
+              <li>
+                Reporting: we will share with you our dashboard, using our LOOTS
+                reporting tool.
+              </li>
+              <li>
+                Troubleshooting: we solve all the day-to-day issues Amazon and
+                other marketplaces put in your way and prevent you from selling.
               </li>
             </ul>
 
-            <h3>Services</h3>
-
-            <p>
-              We also offer a full range of services to help you with any area
-              of your operations that need extra support - including:
-            </p>
-
-            <ul>
-              <li>Follow-up of catalogue content;</li>
-              <li>Management of advertising campaigns;</li>
-              <li>Weekly reporting, with strategic monthly reporting;</li>
-              <li>Troubleshooting on all issues arising on the account.</li>
-            </ul>
+            <a href="#" className="cta">
+              Case study: My Carry Potty
+            </a>
           </figcaption>
           <Picture src="/images/IMG_5892.jpg" alt="" />
         </figure>
       </section>
 
-      <section>
+      <section id="retail">
         <figure>
           <img src="/images/ECOM_SCHEMA_3.svg" alt="Grow in retail" />
           <figcaption>
             <h3>Retail</h3>
 
             <p>
-              We can take care of your Amazon business with our e-Comas Seller
-              Account, saving you up to 2 FTE.{" "}
+              You cannot open a selling account, or you need a quick solution to
+              be on the market? You can use our own selling account, and benefit
+              from our retail offer.
             </p>
-
-            <p>We'll help you expand your sales globally!</p>
 
             <ul>
               <li>
-                Our account is active in all European, North American countries
-                and in India.
+                Our accounts are active in all European, North American
+                countries and in India.
               </li>
               <li>
                 We have VAT accounts in all EU countries and will take care of
@@ -118,14 +152,14 @@ export default (
         </figure>
       </section>
 
-      <section>
+      <section id="logistics">
         <figure>
           <figcaption>
-            <h3>Logistics</h3>
+            <h3>Logistics &amp; VAT services</h3>
 
             <p>
-              We can also simplify your logistics. Send us the quantity we
-              require and we can handle everything, including:
+              We simplify your logistics. Send us the quantity we require and we
+              can handle everything, including:
             </p>
 
             <ul>
@@ -137,16 +171,6 @@ export default (
               <li>Preparing your orders;</li>
               <li>Handling out of stock issues.</li>
             </ul>
-          </figcaption>
-          <img src="/images/ECOM_SCHEMA_4.svg" alt="Salsify PXM" />
-        </figure>
-      </section>
-
-      <section>
-        <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
-          <figcaption>
-            <h3>VAT</h3>
 
             <p>
               If you’re selling in the EU, it’s now mandatory to register to pay
@@ -160,38 +184,7 @@ export default (
               <li>One Stop Shop (OSS) requirements.</li>
             </ul>
           </figcaption>
-        </figure>
-      </section>
-
-      <section>
-        <figure>
-          <figcaption>
-            <h3>Reporting / Dashboarding</h3>
-
-            <p>
-              We have built our own dashboards to follow your sales. We can also
-              help you create the relevant dashboard for your own business, or
-              leverage the leading reporting solution from{" "}
-              <a href="/website-creation.html">Profitero</a>.
-            </p>
-
-            <p>
-              Our dashboards are a blend of our expertise on ecommerce and our
-              knowledge of the different ecommerce systems (Vendor or Seller).
-              We focus on:
-            </p>
-
-            <ul>
-              <li>Defining the right KPIs.</li>
-              <li>
-                Integrating multi-country sales and advertising on one
-                dashboard.
-              </li>
-              <li>Leveraging market data information, with market share.</li>
-              <li>Leveraging data on BSRs and keyword ranking.</li>
-            </ul>
-          </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <img src="/images/ECOM_SCHEMA_4.svg" alt="Salsify PXM" />
         </figure>
       </section>
     </main>

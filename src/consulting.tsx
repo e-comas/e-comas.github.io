@@ -7,6 +7,7 @@ import Picture from "./utils/Picture.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 import SlidingText from "./views/SlidingText.js";
 import HoverableMenu from "./views/HoverableMenu.js";
+import ECommerce from "./views/eCommerce.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 import Footer from "./views/Footer.js";
 
@@ -18,15 +19,14 @@ export default (
     <Breadcrumbs />
     <main>
       <h2>
-        World class expertise to <strong>boost</strong> your eCommerce
+        World class expertise to <strong>boost</strong> your <ECommerce />!
       </h2>
 
       <section class="slidable-section">
         <SlidingText>
           We define your{" "}
           <strong>
-            <span style={"text-transform:lowercase" as any}>e</span>Commerce
-            strategy
+            <ECommerce /> strategy
           </strong>{" "}
           with your team.
         </SlidingText>
@@ -47,7 +47,7 @@ export default (
           <h3>eCommerce strategy</h3>
           <p>
             We support brands to understand the key success factors, and define
-            proven strategies for their ecommerce presence.
+            proven strategies for their <ECommerce /> presence.
           </p>
           <p>
             <a href="#strategy">Discover our strategy</a>
@@ -88,9 +88,13 @@ export default (
         <figure>
           <Picture src="/images/consulting01.png" alt="" />
           <figcaption>
-            <h2>eCommerce strategy</h2>
+            <h2>
+              <ECommerce /> strategy
+            </h2>
 
-            <p>Defining an eCommerce strategy consists of different steps:</p>
+            <p>
+              Defining an <ECommerce /> strategy consists of different steps:
+            </p>
 
             <ul>
               <li>
@@ -101,7 +105,7 @@ export default (
               <li>
                 <strong>Workshop</strong>: usually for a full day where we will
                 deliver the results of our audit, a gap analysis and train you
-                on the key success factors to win in eCommerce.
+                on the key success factors to win in <ECommerce />.
               </li>
               <li>
                 <strong>Deliverable</strong>: a clear strategy on where to play,
@@ -164,8 +168,8 @@ export default (
             <h2>Account Audit</h2>
 
             <p>
-              Compas is our in-house auditing tool for your eCommerce business.
-              It uses machine learning and data analytics to:
+              Compas is our in-house auditing tool for your <ECommerce />{" "}
+              business. It uses machine learning and data analytics to:
             </p>
 
             <ul>
@@ -187,7 +191,7 @@ export default (
               where you are lagging behind, acting like a compass in helping you
               follow future directions, based on the four pillars of our{" "}
               <strong style={"text-transform:capitalize" as any}>
-                eCommerce growth model
+                <ECommerce /> growth model
               </strong>
               .
             </p>
