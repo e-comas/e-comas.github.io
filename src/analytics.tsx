@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
+import ECommerce from "./views/eCommerce.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -24,7 +25,7 @@ export default (
             <h2>Our partner : Profitero</h2>
 
             <p>
-              We proudly partner with Profitero, the actionable ecommerce
+              We proudly partner with Profitero, the actionable <ECommerce />
               insights platform, to help our customers harness the vast amount
               of data available to them on Amazon, Shopify and other
               marketplaces.
@@ -71,7 +72,7 @@ export default (
             <p>That’s just one example!</p>
 
             <p>
-              Profitero customers typically experience 70% ecommerce sales
+              Profitero customers typically experience 70% <ECommerce /> sales
               acceleration over competitors.
             </p>
           </figcaption>

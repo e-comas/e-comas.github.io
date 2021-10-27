@@ -4,6 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
+import ECommerce from "./views/eCommerce.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
@@ -23,7 +24,7 @@ export default (
           <strong>win on the digital shelf</strong>. The digital shelf is the
           collection of diverse and rapidly evolving digital touchpoints used by
           shoppers to engage with brands. No matter where they buy - in a retail
-          store, from a social influence post, or on an ecommerce site - a
+          store, from a social influence post, or on an <ECommerce /> site - a
           shopper creates their own personalised, digitally-influenced journey.
           <br />
           To win in this new world, you must take control of your digital shelf.

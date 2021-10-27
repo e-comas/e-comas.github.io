@@ -4,6 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
+import ECommerce from "./views/eCommerce.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
@@ -36,7 +37,7 @@ export default (
             <p>
               We proudly partner with Salsify to help you with Product
               Information Management (PIM), organising and uploading your
-              content across multiple ecommerce platforms so you can{" "}
+              content across multiple <ECommerce /> platforms so you can{" "}
               <strong>win on the digital shelf.</strong>
             </p>
             <a class="cta" href="salsify.html">

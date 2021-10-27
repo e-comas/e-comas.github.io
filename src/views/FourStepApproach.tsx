@@ -1,4 +1,5 @@
 import { h } from "@aduh95/async-jsx";
+import ECommerce from "./eCommerce.js";
 
 import "./FourStepApproach.scss";
 
@@ -34,7 +35,7 @@ export default () => (
       </h3>
       <ul>
         <li>
-          We can <strong>manage your account</strong> on multiple ecommerce
+          We can <strong>manage your account</strong> on multiple <ECommerce />
           platforms.
         </li>
         <li>

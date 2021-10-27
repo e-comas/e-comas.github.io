@@ -6,6 +6,7 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import Partners from "./views/Partners.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
+import ECommerce from "./views/eCommerce.js";
 import Picture from "./utils/Picture.js";
 
 import "./classic-page.scss";
@@ -18,8 +19,8 @@ export default (
       <ElementWithIcon tagName="section" src="/images/search.svg">
         <h2>Ressources</h2>
         <p>
-          We love to share our ecommerce expertise! There are many ways you can
-          learn from us.
+          We love to share our <ECommerce /> expertise! There are many ways you
+          can learn from us.
         </p>
       </ElementWithIcon>
 
@@ -29,7 +30,7 @@ export default (
             <h2>Read us</h2>
             <p>
               We love to share our online retail expertise. Find out useful
-              ecommerce tips and what's new in the Amazon world.
+              <ECommerce /> tips and what's new in the Amazon world.
             </p>
             <a href="/news.html" class="cta">
               Check out our blog
@@ -45,8 +46,8 @@ export default (
             <h2>Learn from us</h2>
             <p>
               We run our own popular webinar programme, talking to our friends
-              in the ecommerce world about how brands can improve and grow. See
-              our next events here!
+              in the <ECommerce /> world about how brands can improve and grow.
+              See our next events here!
             </p>
             <a href="/webinar.html" class="cta">
               Check out our webinars
@@ -61,7 +62,7 @@ export default (
             <p>
               Introducing the e-Comas podcast, now available on your favourite
               streaming service! Listen now to find out how to grow on Amazon
-              and other ecommerce platforms.
+              and other <ECommerce /> platforms.
             </p>
             <a href="/webinar.html#podcast" class="cta">
               Check out our podcast
@@ -76,8 +77,9 @@ export default (
           <figcaption>
             <h2>White paper</h2>
             <p>
-              We research hot topics in the ecommerce industry and report our
-              findings in our in-depth white papers. Learn more from us here!
+              We research hot topics in the <ECommerce /> industry and report
+              our findings in our in-depth white papers. Learn more from us
+              here!
             </p>
             <a href="/white-paper-form.html" class="cta">
               Check out our White Paper
@@ -92,7 +94,7 @@ export default (
             <h2>Hear more from us</h2>
             <p>
               Sign up to our newsletter and we'll send you regular updates on
-              the world of Amazon, what's new in ecommerce, our upcoming
+              the world of Amazon, what's new in <ECommerce />, our upcoming
               webinars and more!
             </p>
             <a href="/white-paper-form.html" class="cta">

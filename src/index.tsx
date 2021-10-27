@@ -6,6 +6,7 @@ import Footer from "./views/Footer.js";
 import Testimonies from "./views/Testimonies.js";
 import Partners from "./views/Partners.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
+import ECommerce from "./views/eCommerce.js";
 import VideoEmbedLink from "./views/VideoEmbedLink.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 import Picture from "./utils/Picture.js";
@@ -22,13 +23,13 @@ export default (
             <h3>Trust our amazing team</h3>
             <p>
               If you're looking to <strong>open</strong> an Amazon account,{" "}
-              <strong>grow</strong> your existing ecommerce sales or{" "}
+              <strong>grow</strong> your existing <ECommerce /> sales or{" "}
               <strong>scale</strong> your business globally – or all three – we
               know exactly how to help you.
               <br />
-              We have an incredible team of ecommerce experts with specialist
-              knowledge to help you expand your business across Amazon and other
-              platforms... and across the globe!
+              We have an incredible team of <ECommerce /> experts with
+              specialist knowledge to help you expand your business across
+              Amazon and other platforms... and across the globe!
             </p>
             <a href="/contact.html" class="cta">
               Meet with us

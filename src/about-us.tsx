@@ -18,21 +18,21 @@ export default (
       <ElementWithIcon tagName="section" src="/images/trolley.svg">
         <h2>About e-Comas</h2>
         <p>
-          e-Comas - eCommerce Made Simple was founded by ecommerce expert Jérôme
-          de Guigné in 2013, with the simple idea of helping brands sell
-          products online.
+          e-Comas - <ECommerce /> Made Simple was founded by <ECommerce />{" "}
+          expert Jérôme de Guigné in 2013, with the simple idea of helping
+          brands sell products online.
         </p>
         <p>
           We quickly realised companies were struggling with establishing
-          profitable and sustainable ecommerce strategies. That’s when ‘Amazon
-          Made Simple’ was born, which later became ‘eCommerce Made Simple’ -
-          e-Comas.
+          profitable and sustainable <ECommerce /> strategies. That’s when
+          ‘Amazon Made Simple’ was born, which later became ‘<ECommerce /> Made
+          Simple’ - e-Comas.
         </p>
 
         <p>
           Today we work with major multinational brands to define and design
           strong omnichannel expansion strategies, integrating Amazon, Shopify,
-          CDiscount, Veepee, Bol, Walmart and all other major ecommerce
+          CDiscount, Veepee, Bol, Walmart and all other major <ECommerce />
           platforms.
           <br />
           With a hands-on approach, our experts coach brands and handle their
@@ -42,8 +42,8 @@ export default (
           the content and the advertising.
         </p>
         <p>
-          Put simply, we help brands grow faster on ecommerce - globally, fast,
-          across multiple online channels!
+          Put simply, we help brands grow faster on <ECommerce /> - globally,
+          fast, across multiple online channels!
         </p>
       </ElementWithIcon>
       <section>
@@ -52,7 +52,10 @@ export default (
             <h2>Experience</h2>
 
             <p>
-              We have many years of <strong>ecommerce experience</strong>{" "}
+              We have many years of{" "}
+              <strong>
+                <ECommerce /> experience
+              </strong>{" "}
               between our amazing 45-strong team, and it comes from{" "}
               <strong>all the right places</strong> – Amazon and other
               platforms, brand owners and trade specialists.
@@ -61,8 +64,8 @@ export default (
             <p>
               We've helped many brands, big and small, grow their online
               presence and <strong>increase their sales</strong> through Amazon
-              and other ecommerce platforms. Don't just take our word for it –
-              see our <strong>stats</strong> and <strong>testimonials</strong>{" "}
+              and other <ECommerce /> platforms. Don't just take our word for it
+              – see our <strong>stats</strong> and <strong>testimonials</strong>{" "}
               from happy customers.
             </p>
           </figcaption>
@@ -103,7 +106,7 @@ export default (
 
             <ul>
               <li>
-                eCommerce retail sales are forecast to grow to{" "}
+                <ECommerce /> retail sales are forecast to grow to{" "}
                 <strong>$3.4 trillion</strong> by 2025 (Forbes).
               </li>
               <li>

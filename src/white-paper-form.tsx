@@ -4,6 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
+import ECommerce from "./views/eCommerce.js";
 import Footer from "./views/Footer.js";
 
 import "./contact.scss";
@@ -16,7 +17,7 @@ export default (
       <ElementWithIcon src="/images/chess.svg" tagName="section">
         <h2>White paper</h2>
         <p>
-          We research hot topics in the ecommerce industry and report our
+          We research hot topics in the <ECommerce /> industry and report our
           findings in our in-depth white papers. Learn more from us here!
         </p>
       </ElementWithIcon>
@@ -56,10 +57,10 @@ export default (
             <p>
               In partnership with the eBusiness Institute, we at e-Comas
               surveyed brands that sell on Amazon to find out their biggest
-              issues with using the eCommerce giant. The results of that survey
-              are in this white paper – together with our own expert advice on
-              how you can streamline your organisation and support your
-              operations team to make those issues a thing of the past.
+              issues with using the <ECommerce /> giant. The results of that
+              survey are in this white paper – together with our own expert
+              advice on how you can streamline your organisation and support
+              your operations team to make those issues a thing of the past.
             </p>
           </figcaption>
         </figure>
@@ -77,7 +78,7 @@ export default (
               truly stand-out, world-class content and design solutions on
               behalf of brands. In all, eBusiness Institute provides business
               leaders with the know-how, tools and creativity they need to
-              enable long-term eCommerce and offline sales success.
+              enable long-term <ECommerce /> and offline sales success.
             </p>
             <a href="https://utm.io/uoyr" className="cta">
               Learn more

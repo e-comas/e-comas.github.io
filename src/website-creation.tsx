@@ -4,6 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
+import ECommerce from "./views/eCommerce.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -18,7 +19,7 @@ export default (
 
         <div>
           <p>
-            We proudly partner with Shopify, the leading ecommerce platform
+            We proudly partner with Shopify, the leading <ECommerce /> platform
             allowing brands to build and manage their own standalone online
             retail stores.
           </p>
@@ -34,7 +35,8 @@ export default (
           </p>
 
           <p>
-            Running a Shopify store alongside your Amazon and other ecommerce
+            Running a Shopify store alongside your Amazon and other{" "}
+            <ECommerce />
             accounts can boost your sales and amplify your brand.
           </p>
         </div>
@@ -45,7 +47,9 @@ export default (
             <li>
               Shopify is the fastest growing online store builder in the world.
             </li>
-            <li>Shopify is the most searched ecommerce solution.</li>
+            <li>
+              Shopify is the most searched <ECommerce /> solution.
+            </li>
             <li>
               In 2019, 62 million buyers worldwide made repeat purchases on
               Shopify stores.
@@ -61,7 +65,7 @@ export default (
 
           <p>
             At e-Comas, we can build you a strategy based on a Shopify store
-            coupled with Amazon and other ecommerce platforms.{" "}
+            coupled with Amazon and other <ECommerce /> platforms.{" "}
           </p>
 
           <p>

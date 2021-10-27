@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
+import ECommerce from "./views/eCommerce.js";
 import Picture from "./utils/Picture.js";
 
 import "./classic-page.scss";
@@ -40,8 +41,8 @@ export default (
               Commuting, at the gym, in the park? Get your Amazon expertise on
               the go!
               <br />
-              Our eCommerce Made Simple podcast is available wherever you get
-              your podcasts.
+              Our <ECommerce /> Made Simple podcast is available wherever you
+              get your podcasts.
             </p>
             <a
               class="cta"

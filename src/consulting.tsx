@@ -34,8 +34,8 @@ export default (
           We offer <strong>Amazon consulting</strong> to solve your issues.
         </SlidingText>
         <SlidingText>
-          We can <strong>audit</strong> your eCommerce accounts with our COMPAS
-          tool.
+          We can <strong>audit</strong> your <ECommerce /> accounts with our
+          COMPAS tool.
         </SlidingText>
       </section>
 
@@ -44,7 +44,9 @@ export default (
           tagName="section"
           src="/images/consulting01.png"
         >
-          <h3>eCommerce strategy</h3>
+          <h3>
+            <ECommerce /> strategy
+          </h3>
           <p>
             We support brands to understand the key success factors, and define
             proven strategies for their <ECommerce /> presence.
