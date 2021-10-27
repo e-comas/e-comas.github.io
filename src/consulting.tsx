@@ -23,7 +23,12 @@ export default (
 
       <section class="slidable-section">
         <SlidingText>
-          We define your <strong>eCommerce strategy</strong> with your team.
+          We define your{" "}
+          <strong>
+            <span style={"text-transform:lowercase" as any}>e</span>Commerce
+            strategy
+          </strong>{" "}
+          with your team.
         </SlidingText>
         <SlidingText>
           We offer <strong>Amazon consulting</strong> to solve your issues.
@@ -89,18 +94,19 @@ export default (
 
             <ul>
               <li>
-                Audit: we study your presence, the health of your accounts and
-                the market dynamics, the size of your competition.
+                <strong>Audit</strong>: we study your presence, the health of
+                your accounts and the market dynamics, the size of your
+                competition.
               </li>
               <li>
-                Workshop: usually for a full day where we will deliver the
-                results of our audit, a gap analysis and train you on the key
-                success factors to win in eCommerce.
+                <strong>Workshop</strong>: usually for a full day where we will
+                deliver the results of our audit, a gap analysis and train you
+                on the key success factors to win in eCommerce.
               </li>
               <li>
-                Deliverable: a clear strategy on where to play, with which
-                account, which pricing &amp; portfolio strategy, and in which
-                timing.
+                <strong>Deliverable</strong>: a clear strategy on where to play,
+                with which account, which pricing &amp; portfolio strategy, and
+                in what timeframe.
               </li>
             </ul>
 
@@ -123,22 +129,23 @@ export default (
 
             <ul>
               <li>
-                Brand registration: to register your brand, protect it and make
-                sure you own the content online.
+                <strong>Brand registration</strong>: to register your brand,
+                protect it and make sure you own the content online.
               </li>
               <li>
-                Account reinstatement: your account is blocked? Let us look into
-                it, and bring it back to life. But careful this takes time and
-                patience.
+                <strong>Account reinstatement</strong>: your account is blocked?
+                Let us look into it, and bring it back to life. But careful this
+                takes time and patience.
               </li>
               <li>
-                Catalogue issues: your content is lost, Amazon is not
-                responding, and nothing is showing, let us look into it and get
-                it back live.
+                <strong>Catalogue issues</strong>: your content is lost, Amazon
+                is not responding, and nothing is showing, let us look into it
+                and get it back live.
               </li>
               <li>
-                Vendor negotiation: you are locked with amazon on negotiations,
-                let us support you to get the best outcome for your brand.
+                <strong>Vendor negotiation</strong>: you are locked with amazon
+                on negotiations, let us support you to get the best outcome for
+                your brand.
               </li>
             </ul>
 
@@ -163,21 +170,26 @@ export default (
 
             <ul>
               <li>
-                Capture customers' expectations, preferences, experiences and
-                feedback about your products.
+                <strong>Capture</strong> customers' expectations, preferences,
+                experiences and feedback about your products.
               </li>
-              <li>Present high level trends in review scores.</li>
               <li>
-                Extract customers’ sentiment about specific products/categories
-                (positive/neutral/negative).
+                <strong>Present</strong> high level trends in review scores.
+              </li>
+              <li>
+                <strong>Extract</strong> customers’ sentiment about specific
+                products/categories (positive/neutral/negative).
               </li>
             </ul>
 
             <p>
               Your Compas report reveals what your company is doing well and
               where you are lagging behind, acting like a compass in helping you
-              follow future directions, based on the four pillars of our
-              eCommerce Growth Model.
+              follow future directions, based on the four pillars of our{" "}
+              <strong style={"text-transform:capitalize" as any}>
+                eCommerce growth model
+              </strong>
+              .
             </p>
 
             <a href="#" className="cta">
