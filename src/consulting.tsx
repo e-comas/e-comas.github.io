@@ -29,7 +29,7 @@ export default (
           We offer <strong>Amazon consulting</strong> to solve your issues.
         </SlidingText>
         <SlidingText>
-          We can <strong>audit</strong> your eCommerce accounts with our Compas
+          We can <strong>audit</strong> your eCommerce accounts with our COMPAS
           tool.
         </SlidingText>
       </section>
@@ -41,12 +41,8 @@ export default (
         >
           <h3>eCommerce strategy</h3>
           <p>
-            Are you struggling to determine your ecommerce strategy?
-            <br />
-            Or do you think you don't have the right level of ecommerce
-            knowledge within your organisation?
-            <br />
-            We can help you!
+            We support brands to understand the key success factors, and define
+            proven strategies for their ecommerce presence.
           </p>
           <p>
             <a href="#strategy">Discover our strategy</a>
@@ -70,7 +66,11 @@ export default (
           src="/images/consulting03.png"
         >
           <h3>Account audit</h3>
-          <p>Lorem Ipsum</p>
+          <p>
+            COMPAS by e-Comas provides you insights on how you are doing on
+            Amazon, but also on the market &amp; the competition, guiding you to
+            better sales and profits.
+          </p>
           <p>
             <a href="#audit">Take a closer look</a>
           </p>
