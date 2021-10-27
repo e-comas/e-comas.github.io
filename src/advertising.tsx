@@ -7,7 +7,6 @@ import Picture from "./utils/Picture.js";
 import SlidingText from "./views/SlidingText.js";
 import HoverableMenu from "./views/HoverableMenu.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
 import ECommerce from "./views/eCommerce.js";
 import Footer from "./views/Footer.js";
 
