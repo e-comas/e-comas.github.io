@@ -36,7 +36,7 @@ export default (
       <HoverableMenu>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting01.png"
+          src="/images/Retail Media Advertising.png"
         >
           <h3>Retail media advertising</h3>
           <p>Boost your sales and control ROI with PPC and DSP campaigns.</p>
@@ -46,7 +46,7 @@ export default (
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting01.png"
+          src="/images/Social Media Advertising.png"
         >
           <h3>Social media advertising</h3>
           <p>
@@ -59,7 +59,7 @@ export default (
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting01.png"
+          src="/images/Community Management.png"
         >
           <h3>Community management</h3>
           <p>
@@ -74,7 +74,7 @@ export default (
 
       <section id="retail_media">
         <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Retail Media Advertising.png" alt="" />
           <figcaption>
             <h3>Retail media advertising</h3>
             <p>
@@ -141,13 +141,13 @@ export default (
               Case study: MIAMILY
             </a>
           </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Social Media Advertising.png" alt="" />
         </figure>
       </section>
 
       <section id="community_management">
         <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Community Management.png" alt="" />
           <figcaption>
             <h3>Digital advertising</h3>
             <p>
