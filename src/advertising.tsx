@@ -72,6 +72,13 @@ export default (
         </ElementWithBackgroundImage>
       </HoverableMenu>
 
+      <section>
+        <h3>
+          Our <strong>marketing</strong> funnel
+        </h3>
+        <p>(Work in progress)</p>
+      </section>
+
       <section id="retail_media">
         <figure>
           <Picture src="/images/Retail Media Advertising.png" alt="" />
@@ -92,7 +99,7 @@ export default (
               </li>
               <li>
                 Create and manage campaigns on <strong>Google</strong>,{" "}
-                <strong>Facebook</strong> and <strong>more</strong> to drive
+                <strong>Facebook</strong>, and <strong>more</strong> to drive
                 conversions on Amazon and in your webshop.
               </li>
             </ul>
@@ -100,6 +107,9 @@ export default (
               e-Comas is an official Amazon Advertising partner and our team is
               composed of seasoned digital marketers with many years of
               experience.
+              <br />
+              <strong>We have certifications in</strong>: Amazon Sponsored Ads,
+              Amazon DSP, Google Ads, Facebook Blueprint.
             </p>
 
             <a href="#" className="cta">
@@ -112,7 +122,7 @@ export default (
       <section id="social_media">
         <figure>
           <figcaption>
-            <h3>Retail media advertising</h3>
+            <h3>Social media advertising</h3>
             <p>
               Advertising off Amazon to drive external traffic from platforms
               such as Facebook, Google, Instagram, Tik Tok opens another world
@@ -125,17 +135,9 @@ export default (
               likely to buy them, as well as building click-through traffic to
               boost your rankings.
               <br />
-              They include:
+              They include: Google, Facebook, Instagram, Twitter, LinkedIn, Bing
+              and more!
             </p>
-            <ul>
-              <li>Google,</li>
-              <li>Facebook,</li>
-              <li>Instagram,</li>
-              <li>Twitter,</li>
-              <li>LinkedIn,</li>
-              <li>Bing,</li>
-              <li>and more!</li>
-            </ul>
 
             <a href="#" className="cta">
               Case study: MIAMILY
@@ -151,11 +153,10 @@ export default (
           <figcaption>
             <h3>Digital advertising</h3>
             <p>
-              sBrand building and high funnel approaches use community
-              management to target customers at the very early stages of
-              engagement, to get traction, and brand awareness which will be
-              crucial for the lower parts of the funnel, as time goes on. The
-              service focuses on:
+              Brand building and high funnel approaches use community management
+              to target customers at the very early stages of engagement, to get
+              traction, and brand awareness which will be crucial for the lower
+              parts of the funnel, as time goes on. The service focuses on:
             </p>
             <ul>
               <li>
