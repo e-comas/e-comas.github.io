@@ -41,7 +41,7 @@ export default (
       <HoverableMenu>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting01.png"
+          src="/images/Account Management.png"
         >
           <h3>Account management</h3>
           <p>
@@ -52,10 +52,7 @@ export default (
             <a href="#account_management">Discover our strategy</a>
           </p>
         </ElementWithBackgroundImage>
-        <ElementWithBackgroundImage
-          tagName="section"
-          src="/images/consulting01.png"
-        >
+        <ElementWithBackgroundImage tagName="section" src="/images/Retail.png">
           <h3>Retail</h3>
           <p>
             You are not able to sell your products? Let us do it on our own
@@ -67,7 +64,7 @@ export default (
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting01.png"
+          src="/images/Logistics &amp; VAT services.png"
         >
           <h3>Logistics &amp; VAT services</h3>
           <p>
@@ -114,13 +111,13 @@ export default (
               Case study: My Carry Potty
             </a>
           </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Account Management.png" alt="" />
         </figure>
       </section>
 
       <section id="retail">
         <figure>
-          <img src="/images/ECOM_SCHEMA_3.svg" alt="Grow in retail" />
+          <img src="/images/Retail.png" alt="Grow in retail" />
           <figcaption>
             <h3>Retail</h3>
 
@@ -184,7 +181,10 @@ export default (
               <li>One Stop Shop (OSS) requirements.</li>
             </ul>
           </figcaption>
-          <img src="/images/ECOM_SCHEMA_4.svg" alt="Salsify PXM" />
+          <img
+            src="/images/Logistics &amp; VAT services.png"
+            alt="Salsify PXM"
+          />
         </figure>
       </section>
     </main>
