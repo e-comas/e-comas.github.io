@@ -1,0 +1,132 @@
+@use "sass:math";
+@use "../utils/variables" as *;
+
+$offset-angle: math.div(7, 12);
+
+%block {
+  display: block;
+}
+
+#marketing_funnel {
+  flex-direction: column;
+  background-color: #7adcc733;
+  padding: 3.5rem 0;
+
+  h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.01em;
+    font-weight: normal;
+  }
+
+  figure {
+    display: flex;
+    box-shadow: none;
+    border: none;
+
+    &::before {
+      display: none;
+    }
+  }
+  table {
+    img {
+      display: inline;
+      height: 1em;
+      width: auto;
+      border-radius: 0;
+      vertical-align: bottom;
+      transform: translateY(0.15em);
+    }
+    strong {
+      @extend %block;
+    }
+  }
+  ol {
+    list-style: none;
+    counter-reset: ads-on-Amazon;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      height: 7rem;
+      width: 7rem;
+    }
+    strong {
+      @extend %block;
+      text-transform: capitalize;
+      &::before {
+        counter-increment: ads-on-Amazon;
+        content: counter(ads-on-Amazon) ". ";
+      }
+    }
+
+    @media screen and (min-width: $max-width) {
+      padding: 8.5rem 23.25rem;
+      margin: 0 auto;
+      position: relative;
+      width: $max-width;
+      height: 33.5rem;
+
+      &::before {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        height: calc(100% + 2rem);
+        aspect-ratio: 1 / 1;
+        border: 1rem solid $white;
+        transform: translate(-2rem, -1rem);
+
+        box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.06);
+      }
+      li {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        img {
+          position: absolute;
+          top: calc(50% - 3.5rem);
+          right: 18rem;
+        }
+        & > div {
+          position: absolute;
+          width: 17rem;
+          height: 7rem;
+          top: calc(50% - 3.5rem);
+          right: 1rem;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          transform-origin: left;
+        }
+      }
+      @for $i from 0 to 5 {
+        $angle: (math.div($i, 5) + $offset-angle) % 1;
+        li:nth-child(#{$i + 1}) {
+          transform: rotate(#{$angle}turn);
+          & > * {
+            --translate-x: 0;
+            transform: rotate(-#{$angle}turn) translateX(var(--translate-x));
+          }
+          & > div {
+            @if $angle > 0.25 and $angle < 0.75 {
+              --translate-x: -100%;
+            } @else if $angle < 0.15 or $angle > 0.85 {
+              //     --translate-x: 0;
+            } @else if $angle < 0.35 or $angle > 0.65 {
+              --translate-x: 2rem;
+            } @else {
+              --translate-x: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
