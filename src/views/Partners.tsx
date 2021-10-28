@@ -11,7 +11,7 @@ export default () => (
       <a href="partners.html#Reveals">
         <Picture alt="Reveals" src="/images/partners/reveals.png" />
       </a>
-      <a href="syndication.html#Salsify">
+      <a href="salsify.html">
         <img alt="Salsify" src="/images/partners/salsify.svg" />
       </a>
       <a href="website-creation.html#Shopify">

@@ -5,7 +5,9 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
 import ECommerce from "./views/eCommerce.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
+import SlidingText from "./views/SlidingText.js";
+import HoverableMenu from "./views/HoverableMenu.js";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -15,67 +17,164 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-      <ElementWithIcon tagName="section" src="/images/directions.svg">
-        <h2>Content</h2>
-        <p>
-          Great content leads to great conversion.
-          <br />
-          We know exactly what kind of listings content you need to persuade
-          shoppers on Amazon and other platforms to click 'buy' on your
-          products.
-          <br />
-          Our amazing team can help you create, upload and manage content that
-          shows off your products, and therefore drives up your conversion rate.
-        </p>
-      </ElementWithIcon>
+      <h2>
+        World class expertise to <strong>maximise</strong> your content!
+      </h2>
 
-      <section>
+      <section class="slidable-section">
+        <SlidingText>
+          We <strong>create</strong> outstanding content.
+        </SlidingText>
+        <SlidingText>
+          We help you <strong>organise &amp; manage</strong> your content.
+        </SlidingText>
+        <SlidingText>
+          We can <strong>globalise</strong> your listings.
+        </SlidingText>
+      </section>
+
+      <HoverableMenu>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting01.png"
+        >
+          <h3>Content creation</h3>
+          <p>Great content leads to great conversion, therefore great sales.</p>
+          <p>
+            <a href="#content_creation">Read further</a>
+          </p>
+        </ElementWithBackgroundImage>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting01.png"
+        >
+          <h3>Content management</h3>
+          <p>
+            We take care of the complex process of content organisation and
+            syndication.
+          </p>
+          <p>
+            <a href="#content_management">Read further</a>
+          </p>
+        </ElementWithBackgroundImage>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting01.png"
+        >
+          <h3>Content localisation</h3>
+          <p>We help you to scale and expand your business internationally.</p>
+          <p>
+            <a href="#content_localisation">Read further</a>
+          </p>
+        </ElementWithBackgroundImage>
+      </HoverableMenu>
+
+      <section id="content_creation">
         <figure>
           <Picture src="/images/IMG_5892.jpg" alt="" />
           <figcaption>
-            <h3>PIM and Syndication</h3>
+            <h3>Content creation</h3>
             <p>
-              We proudly partner with Salsify to help you with Product
-              Information Management (PIM), organising and uploading your
-              content across multiple <ECommerce /> platforms so you can{" "}
-              <strong>win on the digital shelf.</strong>
+              Our team of content experts can help you define your needs and
+              ensure you send customers to pages which really convert - with
+              compelling content, relevant to your audience, that will turn into
+              sales. We can support on:
             </p>
-            <a class="cta" href="salsify.html">
-              More about Salsify
+            <ul>
+              <li>
+                <strong>Copy</strong>: titles, bullet points, descriptions,
+                below the fold content;
+              </li>
+              <li>
+                <strong>Pictures</strong>: product simple pictures, in
+                situation, in use, with graphic designs;
+              </li>
+              <li>
+                <strong>Videos</strong>: user friendly videos displaying ranges
+                or product benefits;
+              </li>
+              <li>
+                <strong>A+ / below the fold</strong>: design and execution;
+              </li>
+              <li>
+                <strong>Brand Stores</strong>: design, structure, content.
+              </li>
+            </ul>
+            <a href="#" className="cta">
+              Case study: Qhali Kay
             </a>
           </figcaption>
         </figure>
       </section>
 
-      <section id="salsify">
+      <section id="content_management">
         <figure>
           <figcaption>
-            <h3>Content creation</h3>
-            <p>We can help you with:</p>
+            <h3>Content management</h3>
+            <p>
+              We proudly partner with Salsify to help you with Product
+              Information Management (PIM) &amp; Syndication, organising and
+              uploading your content across multiple ecommerce platforms so you
+              can <strong>win on the digital shelf</strong>.
+            </p>
+            <a class="cta" href="salsify.html">
+              More about Salsify
+            </a>
+            <p>
+              A PIM and syndication tool will solve the following challenges:
+            </p>
             <ul>
               <li>
-                <strong>Copywriting</strong>: your listings' titles, bullet
-                points, long descriptions, and A+/EBC content text.
+                <strong>One source of truth</strong>: have all your content in
+                one place.
               </li>
               <li>
-                <strong>Keywords</strong>: the best keywords to ensure your
-                listings have great SEO (search engine optimisation).
+                <strong>Ensure scalability</strong> with one system handling all
+                your copies in all languages.
               </li>
               <li>
-                <strong>Images</strong>: a good number of high quality pictures
-                of your products (with white background or in context), and
-                graphic designs.
-              </li>
-              <li>
-                <strong>Videos</strong> of your products in action and 360°
-                pictures.
+                <strong>Save up to 50%</strong> on content upload with an
+                automated system linked to all the major marketplaces in the
+                world.
               </li>
             </ul>
-            <a href="white-paper-form.html" className="cta">
-              Download our case studies
+            <a href="#" className="cta">
+              Case study: Michelin
             </a>
           </figcaption>
           <Picture src="/images/IMG_5892.jpg" alt="" />
+        </figure>
+      </section>
+
+      <section id="content_localisation">
+        <figure>
+          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <figcaption>
+            <h3>Content localisation</h3>
+            <p>
+              <ECommerce /> makes it easy to expand in the different countries
+              in the world. However, customers of each country in the world
+              still want to be addressed in their own language, with the local
+              specificities. We therefore can help you with:
+            </p>
+            <ul>
+              <li>
+                <strong>Content translation</strong> by native speakers.
+              </li>
+              <li>
+                <strong>SEO optimisation</strong> done locally - not translating
+                keywords but researching the proper keywords.
+              </li>
+              <li>
+                <strong>Support to upload</strong> to all the different
+                platforms localised content in the world thanks to the use of
+                Salsify.
+              </li>
+            </ul>
+            <a href="#" className="cta">
+              Case study: My Carry Potty
+            </a>
+          </figcaption>
         </figure>
       </section>
     </main>
