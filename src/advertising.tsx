@@ -18,8 +18,7 @@ export default (
     <Breadcrumbs />
     <main>
       <h2>
-        World class expertise to <strong>boost</strong> your <ECommerce /> with
-        advertising!
+        World class expertise to <strong>boost</strong> your advertising!
       </h2>
 
       <section class="slidable-section">
