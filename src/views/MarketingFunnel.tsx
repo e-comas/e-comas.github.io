@@ -1,5 +1,7 @@
 import { h } from "@aduh95/async-jsx";
 
+import MarketingFunnelIllustration from "./MarketingFunnelIllustration.js";
+
 import "./MarketingFunnel.scss";
 
 const Amazon = () => <img src="/images/partners/amazon.svg" alt="Amazon" />;
@@ -10,6 +12,7 @@ export default () => (
       Our <strong>marketing</strong> funnel
     </h3>
     <figure>
+      <MarketingFunnelIllustration />
       <figcaption>
         <table>
           <thead>
