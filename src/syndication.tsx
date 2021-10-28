@@ -36,7 +36,7 @@ export default (
       <HoverableMenu>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting01.png"
+          src="/images/Content Creation.png"
         >
           <h3>Content creation</h3>
           <p>Great content leads to great conversion, therefore great sales.</p>
@@ -46,7 +46,7 @@ export default (
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting01.png"
+          src="/images/Content Management.png"
         >
           <h3>Content management</h3>
           <p>
@@ -59,7 +59,7 @@ export default (
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting01.png"
+          src="/images/Content Localisation.png"
         >
           <h3>Content localisation</h3>
           <p>We help you to scale and expand your business internationally.</p>
@@ -71,7 +71,7 @@ export default (
 
       <section id="content_creation">
         <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Content Creation.png" alt="" />
           <figcaption>
             <h3>Content creation</h3>
             <p>
@@ -142,13 +142,13 @@ export default (
               Case study: Michelin
             </a>
           </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Content Management.png" alt="" />
         </figure>
       </section>
 
       <section id="content_localisation">
         <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Content Localisation.png" alt="" />
           <figcaption>
             <h3>Content localisation</h3>
             <p>
