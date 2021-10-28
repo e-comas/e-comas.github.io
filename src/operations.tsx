@@ -124,7 +124,7 @@ export default (
 
       <section id="retail">
         <figure>
-          <img src="/images/Retail.png" alt="Grow in retail" />
+          <Picture src="/images/Retail.png" alt="Grow in retail" />
           <figcaption>
             <h3>Retail</h3>
 
@@ -188,7 +188,7 @@ export default (
               <li>One Stop Shop (OSS) requirements.</li>
             </ul>
           </figcaption>
-          <img
+          <Picture
             src="/images/Logistics &amp; VAT services.png"
             alt="Salsify PXM"
           />
