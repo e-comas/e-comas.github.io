@@ -77,6 +77,11 @@ export default (
         </ElementWithBackgroundImage>
       </HoverableMenu>
 
+      <section>
+        <h3>Our process</h3>
+        <p>(Work in progress)</p>
+      </section>
+
       <section id="account_management">
         <figure>
           <figcaption>
@@ -90,20 +95,22 @@ export default (
 
             <ul>
               <li>
-                Cataloguing: we upload your content, we make sure it appears
-                perfectly, and stays there.
+                <strong>Cataloguing</strong>: we upload your content, we make
+                sure it appears perfectly, and stays there.
               </li>
               <li>
-                Advertising: we handle your PPC advertising, and can also offer
-                DSP Amazon advertising or even off-Amazon advertising.
+                <strong>Advertising</strong>: we handle your PPC advertising,
+                and can also offer DSP Amazon advertising or even off-Amazon
+                advertising.
               </li>
               <li>
-                Reporting: we will share with you our dashboard, using our LOOTS
-                reporting tool.
+                <strong>Reporting</strong>: we will share with you our
+                dashboard, using our LOOTS reporting tool.
               </li>
               <li>
-                Troubleshooting: we solve all the day-to-day issues Amazon and
-                other marketplaces put in your way and prevent you from selling.
+                <strong>Troubleshooting</strong>: we solve all the day-to-day
+                issues Amazon and other marketplaces put in your way and prevent
+                you from selling.
               </li>
             </ul>
 
