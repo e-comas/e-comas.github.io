@@ -4,7 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
-import ECommerce from "./views/eCommerce.js";
+import { ECommerce, EStore } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
@@ -14,6 +14,16 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
+      <h2>
+        World class expertise to <strong>create</strong> your Shopify <EStore />
+        !
+      </h2>
+
+      <p>
+        The Context of <ECommerce /> is evolving, with the importance of native
+        commerce, the need for a selling branded website is critical for brands.
+      </p>
+
       <ElementWithIcon tagName="section" src="/images/search.svg">
         <h2>Our partner: Shopify</h2>
 
