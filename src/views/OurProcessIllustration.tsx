@@ -3,8 +3,7 @@ import { createSVGElement as h } from "@aduh95/async-jsx";
 import "./OurProcessIllustration.scss";
 
 export default () => (
-  <svg id="OurProcessIllustration" viewBox="0 0 1600 2000">
-    <path fill="#fff" d="M.1 0h1600v2000H.1z" />
+  <svg id="OurProcessIllustration" viewBox="0 0 1500 2000">
     <path class="st1" d="m363 845.3 239.4 194.1" />
     <path
       class="st2"
