@@ -26,7 +26,14 @@ export default async function sass2css(sassFiles, inlineStyles) {
   });
 
   const { css } = await postcss([
-    cssnano({ preset: ["advanced"] }),
+    cssnano({
+      preset: [
+        "advanced",
+        {
+          reduceIdents: false,
+        },
+      ],
+    }),
     copyAssets({
       base: INPUT_DIR,
       distBase: OUTPUT_DIR,
