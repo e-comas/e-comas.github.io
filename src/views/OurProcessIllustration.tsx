@@ -24,14 +24,14 @@ export default () => (
       d="M892.4 1145.1h-280c-5.5 0-10-4.5-10-10v-130c0-5.5 4.5-10 10-10h280c5.5 0 10 4.5 10 10v130c0 5.5-4.5 10-10 10z"
     />
     <text transform="translate(636.67 1046.697)">
-      <tspan x="0" y="0" class="st7 st8 st9">
-        THIRD PARTNER
+      <tspan x="0" y="0" class="st7 st8 st9 st17">
+        Third Partner
       </tspan>
-      <tspan x="-1.5" y="30" class="st7 st8 st9">
-        LOGISTICS (3PL)
+      <tspan x="-1.5" y="30" class="st7 st8 st9 st17">
+        Logistics (3PL)
       </tspan>
-      <tspan x="42.4" y="60" class="st7 st8 st9">
-        PROVIDER
+      <tspan x="42.4" y="60" class="st7 st8 st9 st17">
+        provider
       </tspan>
     </text>
     <path
@@ -95,11 +95,11 @@ export default () => (
       d="M988.5 704.3h-210c-5.5 0-10-4.5-10-10v-60c0-5.5 4.5-10 10-10h210c5.5 0 10 4.5 10 10v60c0 5.6-4.4 10-10 10z"
     />
     <text transform="translate(833.712 659.728)">
-      <tspan x="0" y="0" class="st7 st10 st11">
-        FULLFILLED
+      <tspan x="0" y="0" class="st7 st10 st11 st17">
+        Fullfilled
       </tspan>
-      <tspan x="-23.8" y="20" class="st7 st10 st11">
-        BY AMAZON (FBA)
+      <tspan x="-23.8" y="20" class="st7 st10 st11 st17">
+        by Amazon (FBA)
       </tspan>
     </text>
     <path
@@ -107,11 +107,11 @@ export default () => (
       d="M1239.5 704.3h-210c-5.5 0-10-4.5-10-10v-60c0-5.5 4.5-10 10-10h210c5.5 0 10 4.5 10 10v60c0 5.6-4.5 10-10 10z"
     />
     <text transform="translate(1051.385 659.728)">
-      <tspan x="0" y="0" class="st7 st10 st11">
-        SELLER FULLFILLED
+      <tspan x="0" y="0" class="st7 st10 st11 st17">
+        Seller Fullfilled
       </tspan>
-      <tspan x="32.6" y="20" class="st7 st10 st11">
-        PRIME (SFP)
+      <tspan x="32.6" y="20" class="st7 st10 st11 st17">
+        Prime (SFP)
       </tspan>
     </text>
     <path
@@ -119,62 +119,62 @@ export default () => (
       d="M1488.8 704.3h-210c-5.5 0-10-4.5-10-10v-60c0-5.5 4.5-10 10-10h210c5.5 0 10 4.5 10 10v60c0 5.6-4.5 10-10 10z"
     />
     <text transform="translate(1284.273 659.728)">
-      <tspan x="0" y="0" class="st7 st10 st11">
-        MERCHANT FULLFILLED
+      <tspan x="0" y="0" class="st7 st10 st11 st17">
+        Merchant Fullfilled
       </tspan>
-      <tspan x="29.7" y="20" class="st7 st10 st11">
-        NETWORK (MFN)
+      <tspan x="29.7" y="20" class="st7 st10 st11 st17">
+        Network (MFN)
       </tspan>
     </text>
     <text transform="translate(1212.57 1558.821)">
-      <tspan x="0" y="0" class="st7 st10 st11">
-        SHIPS TO
+      <tspan x="0" y="0" class="st7 st10 st11 st17">
+        Ships to
       </tspan>
-      <tspan x="-8.2" y="20" class="st7 st10 st11">
-        CUSTOMER
+      <tspan x="-8.2" y="20" class="st7 st10 st11 st17">
+        customer
       </tspan>
     </text>
     <text transform="translate(296.092 1673.153)">
-      <tspan x="0" y="0" class="st7 st10 st11">
-        SHIPS TO
+      <tspan x="0" y="0" class="st7 st10 st11 st17">
+        Ships to
       </tspan>
-      <tspan x="-8.2" y="20" class="st7 st10 st11">
-        CUSTOMER
+      <tspan x="-8.2" y="20" class="st7 st10 st11 st17">
+        customer
       </tspan>
     </text>
     <text transform="translate(226.492 1444.493)">
-      <tspan x="0" y="0" class="st7 st10 st11">
-        BULK
+      <tspan x="0" y="0" class="st7 st10 st11 st17">
+        Bulk
       </tspan>
-      <tspan x="-21.5" y="20" class="st7 st10 st11">
-        SHIPMENT
+      <tspan x="-21.5" y="20" class="st7 st10 st11 st17">
+        shipment
       </tspan>
     </text>
     <text transform="translate(344.332 840.669)">
-      <tspan x="0" y="0" class="st7 st10 st11">
-        PRIME
+      <tspan x="0" y="0" class="st7 st10 st11 st17">
+        Prime
       </tspan>
-      <tspan x="-2.4" y="20" class="st7 st10 st11">
-        BADGE
+      <tspan x="-2.4" y="20" class="st7 st10 st11 st17">
+        badge
       </tspan>
     </text>
     <path
       d="M892.4 1946.9h-280c-5.5 0-10-4.5-10-10v-130c0-5.5 4.5-10 10-10h280c5.5 0 10 4.5 10 10v130c0 5.5-4.5 10-10 10z"
       fill="#69d6be"
     />
-    <text transform="translate(662.845 1880.512)" class="st7 st8 st9">
-      CUSTOMERS
+    <text transform="translate(662.845 1880.512)" class="st7 st8 st9 st17">
+      Customers
     </text>
     <path
       d="M892.4 201h-280c-5.5 0-10-4.5-10-10V61c0-5.5 4.5-10 10-10h280c5.5 0 10 4.5 10 10v130c0 5.5-4.5 10-10 10z"
       fill="#fed13f"
     />
     <text transform="translate(666.572 119.18)">
-      <tspan x="0" y="0" class="st7 st8 st9">
-        SELLING ON
+      <tspan x="0" y="0" class="st7 st8 st9 st17">
+        Selling on
       </tspan>
-      <tspan x="24.5" y="30" class="st7 st8 st9">
-        AMAZON
+      <tspan x="24.5" y="30" class="st7 st8 st9 st17">
+        Amazon
       </tspan>
     </text>
     <path
@@ -182,11 +182,11 @@ export default () => (
       d="M391.8 433.8h-280c-5.5 0-10-4.5-10-10v-130c0-5.5 4.5-10 10-10h280c5.5 0 10 4.5 10 10v130c0 5.5-4.5 10-10 10z"
     />
     <text transform="translate(191.937 351.412)">
-      <tspan x="0" y="0" class="st7 st8 st9">
-        VENDOR
+      <tspan x="0" y="0" class="st7 st8 st9 st17">
+        Vendor
       </tspan>
-      <tspan x="-5.9" y="30" class="st7 st8 st9">
-        CENTRAL
+      <tspan x="-5.9" y="30" class="st7 st8 st9 st17">
+        Central
       </tspan>
     </text>
     <path
@@ -194,11 +194,11 @@ export default () => (
       d="M1392.4 433.8h-280c-5.5 0-10-4.5-10-10v-130c0-5.5 4.5-10 10-10h280c5.5 0 10 4.5 10 10v130c0 5.5-4.5 10-10 10z"
     />
     <text transform="translate(1198.988 351.412)">
-      <tspan x="0" y="0" class="st7 st8 st9">
-        SELLER
+      <tspan x="0" y="0" class="st7 st8 st9 st17">
+        Seller
       </tspan>
-      <tspan x="-12.3" y="30" class="st7 st8 st9">
-        CENTRAL
+      <tspan x="-12.3" y="30" class="st7 st8 st9 st17">
+        Central
       </tspan>
     </text>
     <path
@@ -206,11 +206,11 @@ export default () => (
       d="m951.4 852.4-60.8 60.8c-3.9 3.9-10.2 3.9-14.1 0l-60.8-60.8c-3.9-3.9-3.9-10.2 0-14.1l60.8-60.8c3.9-3.9 10.2-3.9 14.1 0l60.8 60.8c3.9 3.8 3.9 10.2 0 14.1z"
     />
     <text transform="translate(857.011 840.669)">
-      <tspan x="0" y="0" class="st7 st10 st11">
-        PRIME
+      <tspan x="0" y="0" class="st7 st10 st11 st17">
+        Prime
       </tspan>
-      <tspan x="-2.4" y="20" class="st7 st10 st11">
-        BADGE
+      <tspan x="-2.4" y="20" class="st7 st10 st11 st17">
+        badge
       </tspan>
     </text>
     <path
@@ -218,11 +218,11 @@ export default () => (
       d="m1202.4 852.4-60.8 60.8c-3.9 3.9-10.2 3.9-14.1 0l-60.8-60.8c-3.9-3.9-3.9-10.2 0-14.1l60.8-60.8c3.9-3.9 10.2-3.9 14.1 0l60.8 60.8c3.9 3.8 3.9 10.2 0 14.1z"
     />
     <text transform="translate(1107.973 840.669)">
-      <tspan x="0" y="0" class="st7 st10 st11">
-        PRIME
+      <tspan x="0" y="0" class="st7 st10 st11 st17">
+        Prime
       </tspan>
-      <tspan x="-2.4" y="20" class="st7 st10 st11">
-        BADGE
+      <tspan x="-2.4" y="20" class="st7 st10 st11 st17">
+        badge
       </tspan>
     </text>
     <path
@@ -231,11 +231,11 @@ export default () => (
     />
     <g>
       <text transform="translate(238.632 1558.821)">
-        <tspan x="0" y="0" class="st7 st10 st11">
-          AMAZON FULLFILLMENT
+        <tspan x="0" y="0" class="st7 st10 st11 st17">
+          Amazon Fullfillment
         </tspan>
-        <tspan x="67.6" y="20" class="st7 st10 st11">
-          CENTER
+        <tspan x="67.6" y="20" class="st7 st10 st11 st17">
+          Center
         </tspan>
       </text>
     </g>
