@@ -4,7 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
-import ECommerce from "./views/eCommerce.js";
+import { ECommerce } from "./views/eWords.js";
 import SlidingText from "./views/SlidingText.js";
 import HoverableMenu from "./views/HoverableMenu.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";

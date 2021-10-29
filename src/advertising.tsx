@@ -8,7 +8,7 @@ import MarketingFunnel from "./views/MarketingFunnel.js";
 import SlidingText from "./views/SlidingText.js";
 import HoverableMenu from "./views/HoverableMenu.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
-import ECommerce from "./views/eCommerce.js";
+import { ECommerce } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";

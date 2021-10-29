@@ -1,5 +1,5 @@
 import { h } from "@aduh95/async-jsx";
-import ECommerce from "./eCommerce.js";
+import { ECommerce } from "./eWords.js";
 
 import "./FourStepApproach.scss";
 

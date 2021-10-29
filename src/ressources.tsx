@@ -6,7 +6,7 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import Partners from "./views/Partners.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
-import ECommerce from "./views/eCommerce.js";
+import { ECommerce } from "./views/eWords.js";
 import Picture from "./utils/Picture.js";
 
 import "./classic-page.scss";

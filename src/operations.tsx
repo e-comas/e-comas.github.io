@@ -8,7 +8,7 @@ import Footer from "./views/Footer.js";
 import OurProcess from "./views/OurProcess.js";
 import SlidingText from "./views/SlidingText.js";
 import HoverableMenu from "./views/HoverableMenu.js";
-import ECommerce from "./views/eCommerce.js";
+import { ECommerce } from "./views/eWords.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 
 import "./classic-page.scss";

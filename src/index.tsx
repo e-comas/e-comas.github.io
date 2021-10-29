@@ -6,7 +6,7 @@ import Footer from "./views/Footer.js";
 import Testimonies from "./views/Testimonies.js";
 import Partners from "./views/Partners.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
-import ECommerce from "./views/eCommerce.js";
+import { ECommerce } from "./views/eWords.js";
 import VideoEmbedLink from "./views/VideoEmbedLink.js";
 import FourStepApproach from "./views/FourStepApproach.js";
 import Picture from "./utils/Picture.js";

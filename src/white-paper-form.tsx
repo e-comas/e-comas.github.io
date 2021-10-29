@@ -4,7 +4,7 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
-import ECommerce from "./views/eCommerce.js";
+import { ECommerce } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
 
 import "./contact.scss";
