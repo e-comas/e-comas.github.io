@@ -4,7 +4,9 @@ import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
+import SlidingText from "./views/SlidingText.js";
+import HoverableMenu from "./views/HoverableMenu.js";
 import { ECommerce } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
 
@@ -15,95 +17,165 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
-      <ElementWithIcon tagName="section" src="/images/search.svg">
-        <h2>Analytics</h2>
-        <p>Lorem ipsum</p>
-      </ElementWithIcon>
-      <section id="Profitero">
+      <h2>
+        World class expertise <strong>analytics</strong> to{" "}
+        <strong>drive</strong> your <ECommerce />!
+      </h2>
+
+      <section class="slidable-section">
+        <SlidingText>
+          We help you define the right <strong>KPIs</strong> for your business.
+        </SlidingText>
+        <SlidingText>
+          We <strong>automate</strong> your reporting processes.
+        </SlidingText>
+        <SlidingText>
+          We provide <strong>market insights</strong> to take the right business
+          decisions.
+        </SlidingText>
+      </section>
+
+      <HoverableMenu>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting01.png"
+        >
+          <h3>Relevant KPIs</h3>
+          <p>
+            We have designed our own internal LOOTS reporting framework to
+            simplify decision making.
+          </p>
+          <p>
+            <a href="#relavant_KPIs">Read further</a>
+          </p>
+        </ElementWithBackgroundImage>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting02.png"
+        >
+          <h3>Reporting automation</h3>
+          <p>We can automate your reporting and create bespoke dashboards.</p>
+          <p>
+            <a href="#reporting_automation">Read further</a>
+          </p>
+        </ElementWithBackgroundImage>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/consulting02.png"
+        >
+          <h3>Market insights</h3>
+          <p>We can automate your reporting and create bespoke dashboards.</p>
+          <p>
+            <a href="#market_insights">Read further</a>
+          </p>
+        </ElementWithBackgroundImage>
+      </HoverableMenu>
+
+      <section id="relavant_KPIs">
         <figure>
           <figcaption>
-            <h2>Our partner : Profitero</h2>
+            <h3>Relevant KPIs</h3>
 
             <p>
-              We proudly partner with Profitero, the actionable <ECommerce />
-              insights platform, to help our customers harness the vast amount
-              of data available to them on Amazon, Shopify and other
-              marketplaces.
+              <ECommerce /> provides a wealth of data and insights on the
+              business. Making sense of all of that data can be time consuming.
+              We have therefore developed our own framework, to be able in a
+              one-pager to see how the business is doing, and to take the right
+              decisions:
             </p>
 
-            <p>
-              Profitero’s insights combined with e-Comas’s expertise in
-              advertising, content and supply chain optimisation give you huge
-              opportunities for growth. You can stretch your limited team
-              resources and achieve fast ROI.
-            </p>
+            <ul>
+              <li>
+                Sales KPIs: finding the right information on seller central,
+                vendor central, or your other marketplaces - watching both sell
+                in and sell out.
+              </li>
+              <li>
+                Logistics KPIs: this information is hidden in different places,
+                and requires attention to make sure you follow the right
+                numbers.
+              </li>
+              <li>
+                Advertising KPIs: advertising is obviously key to success, and a
+                global picture has to be drawn including all the actions, as
+                well as PPC and DSP, but also other advertising platforms
+                (social media for instance).
+              </li>
+              <li>
+                Key for account management: we use this tool on a weekly basis
+                for the account we manage to provide the proper insights to our
+                customers.
+              </li>
+            </ul>
+
+            <a href="#" className="cta">
+              Case study: Sunstar
+            </a>
           </figcaption>
           <Picture src="/images/IMG_5892.jpg" alt="" />
         </figure>
       </section>
 
-      <section>
+      <section id="reporting_automation">
         <figure>
           <Picture src="/images/IMG_5892.jpg" alt="" />
           <figcaption>
-            <h3>Here’s an example of what they do: </h3>
+            <h3>Reporting automation</h3>
+
+            <p>
+              With our partner Reveals, we can build your reporting
+              infrastructure through automation to give you full control on your
+              complex eCommerce data. This technological-based solution will
+              enhance your business to the next level.
+            </p>
+
             <ul>
               <li>
-                Profitero’s client makes a product that competes with a famous
-                brand.
-              </li>
-              <li>The famous brand’s product is always #1 on Amazon.</li>
-              <li>
-                The client uses Profitero’s assortment and availability module,
-                setting up alerts to monitor each time the famous brand’s
-                product goes out of stock.
+                We will automate your reporting, through API or scraping, store
+                and keep historical data.
               </li>
               <li>
-                When that happens, they sponsor all branded keywords around the
-                famous product.
+                We will set up your tailor made “e-Cockpit” with dashboards and
+                analytics: aggregating data from your different sources
+                (marketplaces, advertising, social media...).
               </li>
-              <li>They increase their sales by 7%!</li>
               <li>
-                The client switches off the ad spend as soon as the famous
-                brand’s product is back in stock.
+                Go to the next step: use machine learning to optimise your
+                marketing actions, and results prediction.
               </li>
             </ul>
 
-            <p>That’s just one example!</p>
-
-            <p>
-              Profitero customers typically experience 70% <ECommerce /> sales
-              acceleration over competitors.
-            </p>
+            <a href="partners.html#Reveals" className="cta">
+              Learn more about Reveals
+            </a>
           </figcaption>
         </figure>
       </section>
 
-      <section>
+      <section id="market_insights">
         <figure>
           <figcaption>
-            <h3>Profitero offers: </h3>
-            <ul>
-              <li>Powerful, yet affordable insights;</li>
-              <li>
-                Automation of research that normally takes a lot of your team’s
-                time;
-              </li>
-              <li>
-                Guidance, in partnership with e-Comas, to ensure the data is
-                used.
-              </li>
-            </ul>
+            <h3>Market insights</h3>
 
             <p>
-              <strong>
-                <em>
-                  We can help you action the valuable data you get from
-                  Profitero to optimise your content, improve your conversion
-                  rates, save you time, and improve the ROI on your ad spend.
-                </em>
-              </strong>
+              We have partnered with Profitero, a worldwide leader in market
+              intelligence to provide our customers with relevant insights from
+              competitors' shares, and market trends. You will specifically have
+              access to:
             </p>
+
+            <ul>
+              <li>
+                Views of your product portfolios and how they achieve compared
+                to market.
+              </li>
+              <li>Insights on market shares and market dynamics.</li>
+              <li>Specific dashboards on 1P and 3P sales data.</li>
+            </ul>
+
+            <a href="partners.html#Profitero" className="cta">
+              Learn more about Profitero
+            </a>
           </figcaption>
           <Picture src="/images/IMG_5892.jpg" alt="" />
         </figure>
