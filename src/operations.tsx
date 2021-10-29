@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
 import Footer from "./views/Footer.js";
+import OurProcess from "./views/OurProcess.js";
 import SlidingText from "./views/SlidingText.js";
 import HoverableMenu from "./views/HoverableMenu.js";
 import ECommerce from "./views/eCommerce.js";
@@ -77,10 +78,7 @@ export default (
         </ElementWithBackgroundImage>
       </HoverableMenu>
 
-      <section>
-        <h3>Our process</h3>
-        <p>(Work in progress)</p>
-      </section>
+      <OurProcess />
 
       <section id="account_management">
         <figure>
