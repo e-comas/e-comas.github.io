@@ -37,7 +37,7 @@ export default () => (
     </nav>
     <ul class="contact-us">
       <li>
-        <strong role="heading">
+        <strong>
           <NavLink href="/contact.html">Contact us</NavLink>
         </strong>
       </li>
