@@ -1,6 +1,12 @@
 #our-process {
   flex-direction: column;
-  padding: 5rem 1rem;
+  padding: 1rem;
+  gap: 1rem;
+
+  @media screen and (min-width: 650px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 
   h3 {
     font-size: 2.5rem;
