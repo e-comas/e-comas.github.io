@@ -64,7 +64,7 @@ export default (
           src="/images/consulting02.png"
         >
           <h3>Market insights</h3>
-          <p>We can automate your reporting and create bespoke dashboards.</p>
+          <p>We can provide actionable market insights to take the right decisions.</p>
           <p>
             <a href="#market_insights">Read further</a>
           </p>
