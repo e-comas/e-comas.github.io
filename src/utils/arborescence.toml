@@ -18,13 +18,13 @@ url = "/operations.html"
 documentId = "1tzO_LgHnKjwEeFphTXCpJtHHjR16P_t4xX3AHO9yLz0"
 
 [[root.children.children]]
+name = "Content / PIM / Syndication"
+url = "/syndication.html"
+
+[[root.children.children]]
 name = "Advertising"
 url = "/advertising.html"
 documentId = "1EKmhVIEPG3_q5jQe07-SXjRv-4sasIuz1GFBLQXzkaQ"
-
-[[root.children.children]]
-name = "Content / Syndication"
-url = "/syndication.html"
 
 [[root.children.children]]
 name = "Website Creation"
