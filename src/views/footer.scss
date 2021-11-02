@@ -74,6 +74,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     .logo,
     .contact-us,
+    .social,
     .copyright-notice {
       grid-column: span 2;
     }
@@ -93,6 +94,7 @@ footer {
     grid-template-columns: auto 200px 200px auto;
     .logo,
     .contact-us,
+    .social,
     .copyright-notice {
       grid-column: 2 / 4;
     }
@@ -109,7 +111,8 @@ footer {
     row-gap: 5rem;
     .logo,
     nav,
-    .contact-us {
+    .contact-us,
+    .social {
       grid-column: unset;
       align-self: unset;
     }
