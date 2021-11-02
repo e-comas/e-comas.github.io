@@ -117,7 +117,7 @@ export default (
             </ul>
 
             <a href="#" className="cta">
-              Case study: SUKY
+              Case study: Suki
             </a>
           </figcaption>
         </figure>
