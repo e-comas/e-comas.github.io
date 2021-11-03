@@ -72,6 +72,41 @@ export default (
         </article>
 
         <article>
+          <h4>What we will do</h4>
+          <p>
+            Our strength is to support brands on their e-Commerce journey, on
+            marketplaces and on their own <ECommerce /> Shopify website. Our
+            roadmap in three steps follows these steps:
+          </p>
+          <table cellPadding="0" cellSpacing="0">
+            <tr aria-hidden="true">
+              <td>
+                <img src="/images/icons/convert.svg" alt="" />
+              </td>
+              <td>
+                <img src="/images/icons/traffic.svg" alt="" />
+              </td>
+              <td>
+                <img src="/images/icons/repeat.svg" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <th>Convert</th>
+              <th>Traffic</th>
+              <th>Repeat</th>
+            </tr>
+          </table>
+          <p>Our process will start with:</p>
+          <ol>
+            <li>Au audit of your existing online presence.</li>
+            <li>Support to design your eCommerce strategy.</li>
+            <li>Briefing on your products and brand.</li>
+            <li>Development of your Shopify Site.</li>
+            <li>Daily Management of the site.</li>
+          </ol>
+        </article>
+
+        <article>
           <h4>How we will help you</h4>
           <p>We have a team of Shopify experts:</p>
           <ul>
@@ -90,23 +125,6 @@ export default (
               traffic.
             </li>
           </ul>
-        </article>
-
-        <article>
-          <h4>What we will do</h4>
-          <p>
-            Our strength is to support brands on their e-Commerce journey, on
-            marketplaces and on their own <ECommerce /> Shopify website.
-          </p>
-          <p>Our roadmap in three steps follows these steps:</p>
-          <p>Our process will start with:</p>
-          <ol>
-            <li>Au audit of your existing online presence.</li>
-            <li>Support to design your eCommerce strategy.</li>
-            <li>Briefing on your products and brand.</li>
-            <li>Development of your Shopify Site.</li>
-            <li>Daily Management of the site.</li>
-          </ol>
         </article>
       </section>
     </main>
