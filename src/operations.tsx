@@ -78,8 +78,6 @@ export default (
         </ElementWithBackgroundImage>
       </HoverableMenu>
 
-      <OurProcess />
-
       <section id="account_management">
         <figure>
           <figcaption>
