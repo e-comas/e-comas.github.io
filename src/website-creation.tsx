@@ -3,7 +3,7 @@ import { h } from "@aduh95/async-jsx";
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
+import NativeECommerce from "./views/NativeECommerce.js";
 import { ECommerce, EStore } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
 
@@ -20,13 +20,11 @@ export default (
       </h2>
 
       <p>
-        The Context of <ECommerce /> is evolving, with the importance of native
+        The context of <ECommerce /> is evolving, with the importance of native
         commerce, the need for a selling branded website is critical for brands.
       </p>
 
-      <h3>
-        Native <ECommerce />
-      </h3>
+      <NativeECommerce />
 
       <p>
         Each platform is working as a silo, keeping customers inside their
