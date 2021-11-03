@@ -51,7 +51,7 @@ export default (
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/Reporting automation.png"
+          src="/images/Reporting Automation.png"
         >
           <h3>Reporting automation</h3>
           <p>We can automate your reporting and create bespoke dashboards.</p>
@@ -61,7 +61,7 @@ export default (
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/Market insights.png"
+          src="/images/Market Insights.png"
         >
           <h3>Market insights</h3>
           <p>
@@ -121,7 +121,7 @@ export default (
 
       <section id="reporting_automation">
         <figure>
-          <Picture src="/images/Reporting automation.png" alt="" />
+          <Picture src="/images/Reporting Automation.png" alt="" />
           <figcaption>
             <h3>Reporting automation</h3>
 
@@ -180,7 +180,7 @@ export default (
               Learn more about Profitero
             </a>
           </figcaption>
-          <Picture src="/images/Market insights.png" alt="" />
+          <Picture src="/images/Market Insights.png" alt="" />
         </figure>
       </section>
     </main>
