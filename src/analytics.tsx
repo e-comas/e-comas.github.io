@@ -38,7 +38,7 @@ export default (
       <HoverableMenu>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting01.png"
+          src="/images/Relevant KPIs.png"
         >
           <h3>Relevant KPIs</h3>
           <p>
@@ -51,7 +51,7 @@ export default (
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting02.png"
+          src="/images/Reporting automation.png"
         >
           <h3>Reporting automation</h3>
           <p>We can automate your reporting and create bespoke dashboards.</p>
@@ -61,10 +61,13 @@ export default (
         </ElementWithBackgroundImage>
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/consulting02.png"
+          src="/images/Market insights.png"
         >
           <h3>Market insights</h3>
-          <p>We can provide actionable market insights to take the right decisions.</p>
+          <p>
+            We can provide actionable market insights to take the right
+            decisions.
+          </p>
           <p>
             <a href="#market_insights">Read further</a>
           </p>
@@ -112,13 +115,13 @@ export default (
               Case study: Sunstar
             </a>
           </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Relevant KPIs.png" alt="" />
         </figure>
       </section>
 
       <section id="reporting_automation">
         <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Reporting automation.png" alt="" />
           <figcaption>
             <h3>Reporting automation</h3>
 
@@ -177,7 +180,7 @@ export default (
               Learn more about Profitero
             </a>
           </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
+          <Picture src="/images/Market insights.png" alt="" />
         </figure>
       </section>
     </main>
