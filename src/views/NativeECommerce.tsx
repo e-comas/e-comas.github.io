@@ -18,7 +18,7 @@ export default () => (
         <ul>
           <li>Web shop</li>
           <li>
-            <img src="/images/brands/google.svg" alt="Google logo" />
+            <img src="/images/brands/Google.svg" alt="Google logo" />
             Google shop
           </li>
         </ul>
@@ -27,7 +27,7 @@ export default () => (
         <NativeECommerceIllustration />
         <ul>
           <li>
-            <img src="/images/brands/instagram.svg" alt="Instagram logo" />
+            <img src="/images/brands/Instagram.svg" alt="Instagram logo" />
             Instagram shop
           </li>
           <li>
