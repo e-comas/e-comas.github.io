@@ -17,9 +17,10 @@
   .illustration {
     display: none;
 
-    @media screen and (min-width: $max-width) {
+    @media screen and (min-width: #{$max-width + 65px}) {
       display: grid;
       grid-template-columns: auto repeat(3, #{math.div($max-width, 3)}) auto;
+      gap: 0;
       &::before,
       &::after {
         content: "";
