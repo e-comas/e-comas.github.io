@@ -1,24 +1,29 @@
 @use "./utils/variables" as *;
 
-section figcaption {
+.services-sub-pages {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: $greyLike;
-  padding: 2.5rem;
   gap: 1rem;
-  min-height: calc(50vh - 7rem);
+  color: $white;
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 
-  @media screen and (min-width: $max-width) {
-    display: grid;
-    grid-template-columns: auto 630px auto;
+  section {
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    max-width: $max-width * 0.5;
 
-    & > * {
-      grid-column: 2;
+    & > p {
+      max-width: 400px;
     }
-
-    & > :first-child {
-      align-self: end;
+  }
+  @media screen and(min-width: $max-width) {
+    .background img {
+      border-radius: 0.5rem;
     }
   }
 }

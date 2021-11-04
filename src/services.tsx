@@ -6,75 +6,72 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import { ECommerce } from "./views/eWords.js";
 import FourStepApproach from "./views/FourStepApproach.js";
-import Picture from "./utils/Picture.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
+import SlidingText from "./views/SlidingText.js";
 
 import "./classic-page.scss";
+import "./services.scss";
 
 export default (
   <Body title="Strategy">
     <Header />
     <Breadcrumbs />
     <main>
-      <ElementWithIcon tagName="section" src="/images/chess.svg">
-        <h2>Services</h2>
-        <h3>
-          Our secret recipe: the 4 pillars of <ECommerce />
-        </h3>
+      <h2>
+        World class expertise <strong>services</strong> to <strong>win</strong>{" "}
+        on the digital shelf!
+      </h2>
 
-        <p>
-          We base everything we do on our <ECommerce /> Growth Model, also
-          called the{" "}
-          <strong>
-            4 pillars of <ECommerce />
-          </strong>
-          : Strategy – operations – conversion – traffic.
-          <br />
-          These 4 pillars bring proven results for our customers again and
-          again.
-        </p>
-      </ElementWithIcon>
+      <section class="slidable-section">
+        <SlidingText>
+          Our <strong>mission</strong>: grow your <ECommerce /> business.
+        </SlidingText>
+        <SlidingText>
+          Our <strong>secret sauce</strong>: the 4 pillars of <ECommerce />.
+        </SlidingText>
+        <SlidingText>
+          Our <strong>target</strong>: get you e-ready in a month.
+        </SlidingText>
+      </section>
 
       <FourStepApproach />
 
-      <section>
-        <figure>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
-          <figcaption>
-            <h2>Website creation</h2>
+      <div class="services-sub-pages">
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/Content Creation.png"
+        >
+          <h2>Website creation</h2>
 
-            <p>
-              We proudly partner with Shopify, the leading <ECommerce />{" "}
-              platform allowing brands to build and manage their own standalone
-              online retail stores.
-            </p>
+          <p>
+            We proudly partner with Shopify, the leading <ECommerce /> platform
+            allowing brands to build and manage their own standalone online
+            retail stores.
+          </p>
 
-            <a href="/website-creation.html" class="cta">
-              Learn more
-            </a>
-          </figcaption>
-        </figure>
-      </section>
+          <a href="/website-creation.html" class="cta">
+            Learn more
+          </a>
+        </ElementWithBackgroundImage>
 
-      <section>
-        <figure>
-          <figcaption>
-            <h2>Analytics</h2>
+        <ElementWithBackgroundImage
+          tagName="section"
+          src="/images/Content Localisation.png"
+        >
+          <h2>Analytics</h2>
 
-            <p>
-              We proudly partner with Profitero, the actionable <ECommerce />
-              insights platform, to help our customers harness the vast amount
-              of data available to them on Amazon, Shopify and other
-              marketplaces.
-            </p>
+          <p>
+            We help our customers automate and secure their data retrieval, we
+            build relevant dashboards and e-Cockpits with our LOOTS KPI
+            framework. We also provide market insights to empower brands to win
+            on the digital shelf.
+          </p>
 
-            <a href="/analytics.html" class="cta">
-              Learn more
-            </a>
-          </figcaption>
-          <Picture src="/images/IMG_5892.jpg" alt="" />
-        </figure>
-      </section>
+          <a href="/analytics.html" class="cta">
+            Learn more
+          </a>
+        </ElementWithBackgroundImage>
+      </div>
     </main>
     <Footer />
   </Body>
