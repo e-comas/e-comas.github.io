@@ -9,6 +9,7 @@ section {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   width: 100%;
+  padding: 0 1rem;
 
   article {
     display: flex;
@@ -16,13 +17,20 @@ section {
     gap: 1rem 0;
 
     width: 70%;
+    min-width: 300px;
     flex-shrink: 0;
     scroll-snap-align: center;
     margin: 0;
 
     box-shadow: 0 0.25rem 1.75rem 0 rgba(0, 0, 0, 0.08);
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 1rem;
+    @media screen and (min-width: 500px) {
+      padding: 2rem;
+    }
+    @media screen and (min-width: 700px) {
+      padding: 3rem;
+    }
 
     * {
       font-size: 1rem;
@@ -40,7 +48,7 @@ section {
 
     table {
       width: min-content;
-      margin: auto;
+      margin: 0 auto 1rem;
       display: grid;
       gap: 0 1rem;
       grid-template-columns: repeat(3, 1fr);
