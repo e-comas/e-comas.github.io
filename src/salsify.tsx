@@ -15,8 +15,12 @@ export default (
     <Header />
     <Breadcrumbs />
     <main>
+      <h2>
+        World class expertise for <strong>PIM &amp; syndication</strong>
+      </h2>
       <ElementWithIcon tagName="section" src="/images/directions.svg">
         <h2>Salsify</h2>
+
         <p>
           We work with our friends at{" "}
           <a href="https://www.salsify.com/">Salsify</a> to meet all your
