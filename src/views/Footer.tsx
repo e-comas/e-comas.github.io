@@ -22,7 +22,7 @@ export default () => (
     <nav>
       <ul>
         <li>
-          <NavLink href="/strategy.html">Service</NavLink>
+          <NavLink href="/services.html">Services</NavLink>
         </li>
         <li>
           <NavLink href="/our-team.html">Team</NavLink>
