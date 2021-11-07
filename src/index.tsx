@@ -5,7 +5,7 @@ import Header from "./views/Header.js";
 import Footer from "./views/Footer.js";
 import Testimonies from "./views/Testimonies.js";
 import Partners from "./views/Partners.js";
-import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
+import KeyFigures from "./views/KeyFigures.js";
 import { ECommerce } from "./views/eWords.js";
 import VideoEmbedLink from "./views/VideoEmbedLink.js";
 import FourStepApproach from "./views/FourStepApproach.js";
@@ -116,21 +116,7 @@ export default (
         </a>
       </section> */}
 
-      <ElementWithBackgroundImage
-        tagName="section"
-        src="/images/Banner6 3x .png"
-        class="key-figures"
-      >
-        <p>
-          <strong>+25&nbsp;000</strong> listing managed
-        </p>
-        <p>
-          <strong>+100</strong> vendor &amp; seller accounts opened/managed
-        </p>
-        <p>
-          <strong>+100&nbsp;000&nbsp;€</strong> advertising campaigns handled
-        </p>
-      </ElementWithBackgroundImage>
+      <KeyFigures />
 
       <Partners />
     </main>
