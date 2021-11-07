@@ -4,6 +4,7 @@ import testimonies from "../utils/testimonies.toml";
 
 import Picture from "../utils/Picture.js";
 
+import "runtime:../utils/auto-scroll.js";
 import "./Testimonies.scss";
 
 interface TestimoniesProps {
@@ -44,7 +45,7 @@ export default (props?: TestimoniesProps) =>
     <div class="testimonies">
       <h2>What our clients are saying</h2>
       <img aria-hidden="true" src="/images/quotes.svg" />
-      <div class="slider">
+      <div class="slider" data-auto-slide-delay="6000">
         <Testimonies />
       </div>
       <a href="/testimonials.html#testimonials" class="cta">

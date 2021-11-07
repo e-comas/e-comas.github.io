@@ -8,6 +8,7 @@ import { ECommerce, EStore } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
 
 import "./shopify.scss";
+import "runtime:./utils/auto-scroll.js";
 
 export default (
   <Body title="Website creation">
@@ -33,7 +34,7 @@ export default (
         platforms, but also to have it’s own <ECommerce /> website.
       </p>
 
-      <section>
+      <section data-auto-slide-delay="7500">
         <article>
           <h4>Why Shopify?</h4>
 
