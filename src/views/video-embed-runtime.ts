@@ -16,6 +16,7 @@ function clickHandler(this: HTMLElement, e: Event) {
   iframe.addEventListener("load", () => {
     parentElement.classList.remove("video-link");
     parentElement.classList.remove("video-loading");
+    parentElement.classList.add("video-playing");
   });
   this.replaceWith(iframe);
 }

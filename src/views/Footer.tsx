@@ -25,10 +25,13 @@ export default () => (
           <NavLink href="/strategy.html">Service</NavLink>
         </li>
         <li>
-          <NavLink href="/experience.html">Experience</NavLink>
+          <NavLink href="/our-team.html">Team</NavLink>
         </li>
         <li>
-          <NavLink href="/our-team.html">Team</NavLink>
+          <NavLink href="/webinar.html">Webinar</NavLink>
+        </li>
+        <li>
+          <NavLink href="/white-paper-form.html">White paper</NavLink>
         </li>
         {/* <li>
           <NavLink href="/news.html">Blog</NavLink>

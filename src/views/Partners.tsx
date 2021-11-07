@@ -8,9 +8,6 @@ export default () => (
   <section class="partners">
     <h2>Partners we trust</h2>
     <div>
-      <a href="partners.html#Reveals">
-        <Picture alt="Reveals" src="/images/partners/reveals.png" />
-      </a>
       <a href="salsify.html">
         <img alt="Salsify" src="/images/partners/salsify.svg" />
       </a>
@@ -20,14 +17,8 @@ export default () => (
       <a href="analytics.html#Profitero">
         <img alt="Profitero" src="/images/partners/profitero.svg" />
       </a>
-      <a href="partners.html#Storfund">
-        <img alt="Storfund" src="/images/partners/storfund.svg" />
-      </a>
-      <a href="partners.html#GETIDA">
-        <Picture alt="GETIDA" src="/images/partners/getida.png" />
-      </a>
-      <a href="partners.html#Payoneer">
-        <Picture alt="Payoneer" src="/images/partners/payoneer.png" />
+      <a href="partners.html#Reveals">
+        <Picture alt="Reveals" src="/images/partners/reveals.png" />
       </a>
     </div>
   </section>

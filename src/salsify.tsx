@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Picture from "./utils/Picture.js";
 import { ECommerce } from "./views/eWords.js";
+import VideoEmbedLink from "./views/VideoEmbedLink.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
@@ -18,22 +19,12 @@ export default (
       <h2>
         World class expertise for <strong>PIM &amp; syndication</strong>
       </h2>
-      <ElementWithIcon tagName="section" src="/images/directions.svg">
-        <h2>Salsify</h2>
 
-        <p>
-          We work with our friends at{" "}
-          <a href="https://www.salsify.com/">Salsify</a> to meet all your
-          Product Information Management (PIM) needs and help you{" "}
-          <strong>win on the digital shelf</strong>. The digital shelf is the
-          collection of diverse and rapidly evolving digital touchpoints used by
-          shoppers to engage with brands. No matter where they buy - in a retail
-          store, from a social influence post, or on an <ECommerce /> site - a
-          shopper creates their own personalised, digitally-influenced journey.
-          <br />
-          To win in this new world, you must take control of your digital shelf.
-        </p>
-      </ElementWithIcon>
+      <VideoEmbedLink
+        tagName="div"
+        previewImage="/images/Banner2 Video 3x .png"
+        videoId="cnA-eu3aKpc"
+      />
 
       <section>
         <figure>
@@ -64,11 +55,17 @@ export default (
               </li>
             </ol>
           </figcaption>
+          <VideoEmbedLink
+            tagName="div"
+            previewImage="/images/Banner2 Video 3x .png"
+            videoId="VZ5I8A6V4mE"
+          />
         </figure>
       </section>
 
       <section>
         <figure>
+          <img src="/images/ECOM_SCHEMA_1.svg" alt="Grow in retail" />
           <figcaption>
             <h3>Our partnership with Salsify</h3>
             <p>
@@ -83,7 +80,6 @@ export default (
               help you manage your day-to-day business activities on Salsify.
             </p>
           </figcaption>
-          <img src="/images/ECOM_SCHEMA_1.svg" alt="Grow in retail" />
         </figure>
       </section>
 
