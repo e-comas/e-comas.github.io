@@ -70,3 +70,17 @@ title = "Director of International Sales at Superfeet"
 company = "Superfeet"
 image = "/images/frits-kuper.jpg"
 logo = "/images/superfeet.png"
+
+[[item]]
+text = """\
+    e-Comas has helped us define our strategy on Amazon in Europe, and our \
+    expansion plans. The team have helped us navigate the challenges of \
+    Amazon, handled our account in all Europe and bring our brand to a strong \
+    position on Amazon in terms of branding and sales, making of e-Commerce a \
+    strong growth of our business in Europe.\n\
+  """
+name = "Lidia Santos"
+title = "Senior MarCom & eCommerce Manager"
+company = "Sunstar Europe"
+image = "/images/lidia-santos.jpg"
+logo = "/images/brands/sunstar.svg"
