@@ -13,15 +13,20 @@ export default (
     <main>
       <ElementWithIcon src="/images/chess.svg" tagName="section">
         <h2>Our partners</h2>
-        <p>Lorem ipsum</p>
       </ElementWithIcon>
 
       <section id="Reveals">
         <h3>Reveals</h3>
-        <p>Lorem Ipsum dolor sit amet</p>
-        {/* <a href="reveals.html" class="cta">
+        <p>
+          With our partner Reveals, we can build your reporting infrastructure
+          through automation to give you full control on your complex eCommerce
+          data. This technological-based solution will enhance your business to
+          the next level.
+        </p>
+        {/* <a href="reveals.html" class="cta"> */}
+        <a href="https://www.reveals.lu/" class="cta">
           Read further
-        </a> */}
+        </a>
       </section>
 
       <section id="Salsify">
@@ -56,7 +61,8 @@ export default (
           Profitero provides over 4000 global brands with cutting edge
           technology designed to accelerate e-commerce sales and save time.
         </p>
-        <a href="profitero.html" class="cta">
+        {/* <a href="profitero.html" class="cta"> */}
+        <a href="https://www.profitero.com" class="cta">
           Read further
         </a>
       </section>
