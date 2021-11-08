@@ -12,12 +12,12 @@ import Picture from "./utils/Picture.js";
 import "./classic-page.scss";
 
 export default (
-  <Body title="Ressources">
+  <Body title="Resources">
     <Header />
     <Breadcrumbs />
     <main>
       <ElementWithIcon tagName="section" src="/images/search.svg">
-        <h2>Ressources</h2>
+        <h2>Resources</h2>
         <p>
           We love to share our <ECommerce /> expertise! There are many ways you
           can learn from us.
