@@ -11,7 +11,7 @@ import viewportsToTest from "./prod-viewports-to-test.mjs";
 const imgData = new Map();
 const sassMappings = new Map();
 
-async function crawlPage(page, signalIn, signalOut) {
+async function editPage(page, signalIn, signalOut) {
   const jsRuntimeModules = [];
   const srcMap = new WeakMap();
   const aboveTheFold = new WeakSet();
@@ -197,6 +197,10 @@ async function crawlPage(page, signalIn, signalOut) {
     script.textContent = js;
     document.body.append(script);
   }, await buildRuntimeJS(jsRuntimeModules));
+
+  await page.evaluate(() =>
+    Array.from(document.querySelectorAll("a.cta[href='#']"), (e) => e.remove())
+  );
 }
 
 function isSuperset(set, subset) {
@@ -225,7 +229,7 @@ export async function crawlPages(pages) {
           signalOut = resolve;
         })
       );
-      pageTransformations.push(crawlPage(page, allPagesAreReady, signalOut));
+      pageTransformations.push(editPage(page, allPagesAreReady, signalOut));
     }
   }
 

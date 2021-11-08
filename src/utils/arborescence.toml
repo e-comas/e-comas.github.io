@@ -58,9 +58,9 @@ name = "Testimonials"
 url = "/testimonials.html"
 documentId = "1L_arP-U9Dl0QuaF2U_OB5Zt_ibcQfPuLXYk0KCAkqoM"
 
-[[root.children.children]]
-name = "Blog"
-url = "/news.html"
+# [[root.children.children]]
+# name = "Blog"
+# url = "/news.html"
 
 [[root.children]]
 name = "Ressources"
