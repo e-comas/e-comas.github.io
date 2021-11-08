@@ -24,7 +24,12 @@ export default (
           the next level.
         </p>
         {/* <a href="reveals.html" class="cta"> */}
-        <a href="https://www.reveals.lu/" class="cta">
+        <a
+          href="https://www.reveals.lu/"
+          target="_blank"
+          rel="noopener"
+          class="cta"
+        >
           Read further
         </a>
       </section>
@@ -62,7 +67,12 @@ export default (
           technology designed to accelerate e-commerce sales and save time.
         </p>
         {/* <a href="profitero.html" class="cta"> */}
-        <a href="https://www.profitero.com" class="cta">
+        <a
+          href="https://www.profitero.com"
+          target="_blank"
+          rel="noopener"
+          class="cta"
+        >
           Read further
         </a>
       </section>

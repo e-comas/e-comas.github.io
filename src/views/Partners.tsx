@@ -14,10 +14,10 @@ export default () => (
       <a href="website-creation.html#Shopify">
         <img alt="Shopify" src="/images/partners/shopify.svg" />
       </a>
-      <a href="analytics.html#Profitero">
+      <a href="https://www.profitero.com" rel="noopener" target="_blank">
         <img alt="Profitero" src="/images/partners/profitero.svg" />
       </a>
-      <a href="partners.html#Reveals">
+      <a href="https://www.reveals.lu/" rel="noopener" target="_blank">
         <Picture alt="Reveals" src="/images/partners/reveals.png" />
       </a>
     </div>

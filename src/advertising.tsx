@@ -147,7 +147,7 @@ export default (
         <figure>
           <Picture src="/images/Community Management.png" alt="" />
           <figcaption>
-            <h3>Digital advertising</h3>
+            <h3>Community management</h3>
             <p>
               Brand building and high funnel approaches use community management
               to target customers at the very early stages of engagement, to get
