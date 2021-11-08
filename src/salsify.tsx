@@ -57,7 +57,7 @@ export default (
           </figcaption>
           <VideoEmbedLink
             tagName="div"
-            previewImage="/images/Banner2 Video 3x .png"
+            previewImage="/images/SalsifyVideoThumbnail.jpg"
             videoId="VZ5I8A6V4mE"
           />
         </figure>

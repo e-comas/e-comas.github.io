@@ -38,7 +38,7 @@ export default (
           </figcaption>
           <VideoEmbedLink
             tagName="div"
-            previewImage="/images/Banner2 Video 3x .png"
+            previewImage="/images/Banner2Video.jpg"
             videoId="vjGxQNji05U"
           />
         </figure>
