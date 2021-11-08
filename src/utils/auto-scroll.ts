@@ -33,7 +33,6 @@ function autoScroll(elem: Element) {
 
 for (const elem of document.querySelectorAll("[data-auto-slide-delay]")) {
   cache.set(elem, autoScroll(elem));
-  elem.addEventListener("scroll", console.log, { passive: true });
 }
 
 export {};
