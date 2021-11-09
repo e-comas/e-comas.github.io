@@ -48,7 +48,17 @@ export default () => (
         Phone: <a href="tel:&plus;352621830003">+352 621 830 003</a>
       </li>
       <li>
-        Address: <address>68 Avenue de la Liberté - L-1930 Luxembourg</address>
+        Addresses:
+        <ul>
+          <li>
+            <address>68 Avenue de la Liberté - L-1930 Luxembourg</address>
+          </li>
+          <li>
+            <address>
+              E-Faingo SARL : Lot IVG AF 97 Behoririka Antananarivo Madagascar
+            </address>
+          </li>
+        </ul>
       </li>
     </ul>
     <ul class="social">
