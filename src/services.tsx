@@ -39,7 +39,7 @@ export default (
       <div class="services-sub-pages">
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/Content Creation.png"
+          src="/images/Website Creation.png"
         >
           <h2>Website creation</h2>
 
@@ -56,7 +56,7 @@ export default (
 
         <ElementWithBackgroundImage
           tagName="section"
-          src="/images/Content Localisation.png"
+          src="/images/Analytics.png"
         >
           <h2>Analytics</h2>
 
