@@ -25,7 +25,7 @@ export default () => (
         </li>
       </ul>
       <a href="/consulting.html" class="cta">
-        Read more
+        Boost your <ECommerce />
       </a>
     </div>
     <div>
@@ -47,7 +47,7 @@ export default () => (
         </li>
       </ul>
       <a href="/operations.html" class="cta">
-        Read more
+        Run your <ECommerce />
       </a>
     </div>
     <div>
@@ -67,7 +67,7 @@ export default () => (
         </li>
       </ul>
       <a href="/syndication.html" class="cta">
-        Read more
+        Maximise your content
       </a>
     </div>
     <div>
@@ -88,7 +88,7 @@ export default () => (
         </li>
       </ul>
       <a href="/advertising.html" class="cta">
-        Read more
+        Enhance your advertising
       </a>
     </div>
   </section>
