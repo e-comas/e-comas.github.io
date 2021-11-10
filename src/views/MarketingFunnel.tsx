@@ -36,7 +36,7 @@ export default () => (
             </tr>
             <tr>
               <td>
-                <strong>DSPP Remarking</strong> converting undecided shoppers
+                <strong>DSP Remarketing</strong> converting undecided shoppers
                 who are considering your products.
               </td>
               <td>
