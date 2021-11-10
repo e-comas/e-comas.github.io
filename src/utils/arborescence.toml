@@ -74,9 +74,9 @@ url = "/webinar.html"
 name = "White paper"
 url = "/white-paper-form.html"
 
-[[root.children.children]]
-name = "Partners"
-url = "/partners.html"
+# [[root.children.children]]
+# name = "Partners"
+# url = "/partners.html"
 
 [[root.children]]
 name = "Contact us"

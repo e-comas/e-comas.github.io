@@ -8,7 +8,7 @@ text = """\
     revamp our approach.\
   """
 name = "Cédric Couture"
-title = "Global eRetail Manager Bicycle Tyres at Michelin"
+title = "Global eRetail Manager Bicycle Tyres"
 company = "Michelin"
 image = "/images/cederic-couture.jpg"
 logo = "/images/michelin.svg"
@@ -23,7 +23,7 @@ text = """\
     marketplaces.\
   """
 name = "Amanda Jenner"
-title = "Founder and Director of My Carry Potty"
+title = "Founder and Director"
 company = "My Carry Potty"
 image = "/images/Amanda Jenner.jpg"
 logo = "/images/my-carry-potty.png"
@@ -52,7 +52,7 @@ text = """\
     up our company.\
   """
 name = "Oliver Amdrup"
-title = "Founder of Puori"
+title = "Founder"
 company = "Puori"
 image = "/images/oliver-amdrup.jpg"
 logo = "/images/puori.svg"
@@ -66,7 +66,7 @@ text = """\
     forward to expanding our collaboration!\
   """
 name = "Frits Kuper"
-title = "Director of International Sales at Superfeet"
+title = "Director of International Sales"
 company = "Superfeet"
 image = "/images/frits-kuper.jpg"
 logo = "/images/superfeet.png"

@@ -32,7 +32,9 @@ const Testimonies = () => (
           )}
           {/* <time dateTime="1970-01-01">01.01.1970</time> */}
           <strong>{testimony.name}</strong>
-          <em>{testimony.title}</em>
+          <em>
+            {testimony.title} at {testimony.company}
+          </em>
         </figcaption>
         <blockquote>{testimony.text}</blockquote>
       </figure>
