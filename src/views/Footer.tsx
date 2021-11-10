@@ -51,11 +51,14 @@ export default () => (
         Addresses:
         <ul>
           <li>
-            <address>68 Avenue de la Liberté - L-1930 Luxembourg</address>
+            <address>
+              68 Avenue de la Liberté - L-1930 Luxembourg - LUXEMBOURG
+            </address>
           </li>
           <li>
             <address>
-              E-Faingo SARL : Lot IVG AF 97 Behoririka Antananarivo Madagascar
+              E-Faingo SARL : Lot IVG AF 97 Behoririka - Antananarivo -
+              Madagascar
             </address>
           </li>
         </ul>
@@ -113,6 +116,6 @@ export default () => (
         </a>
       </li>
     </ul>
-    <div class="copyright-notice">© 2021 · E-comas · All Rights Reserved</div>
+    <div class="copyright-notice">© 2021 · e-Comas · All Rights Reserved</div>
   </footer>
 );
