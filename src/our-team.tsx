@@ -78,6 +78,17 @@ export default (
           <p>{team.CEO.bio}</p>
         </figcaption>
       </figure>
+      <figure>
+        <Picture
+          src={team.COO.pictureUrl}
+          alt={team.COO.Name + ", " + team.COO.Title}
+        />
+        <figcaption>
+          <h3>{team.COO.Name}</h3>
+          <h4>{team.COO.Title}</h4>
+          <p>{team.COO.bio}</p>
+        </figcaption>
+      </figure>
       {getTeams(team.team_member).map((team) => (
         <article>
           <h3>{team.name}</h3>

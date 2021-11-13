@@ -17,10 +17,19 @@ url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
 url.Medium = "https://medium.com/@Amazon_expert"
 url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
 
-[[team_member]]
+[COO]
 Name = "Amalia Sebakunzi"
 Title = "Chief Operating Officer"
-Team = "COO"
+bio = """\
+    Amalia is a business leader with over 14 years of international experience \
+    spanning a broad range of industries, including FMCG, Food, Beauty, \
+    Luxury, Ecommerce and Digital Health. Amalia joined e-Comas as Chief \
+    Operating Officer in 2021, having worked in Nigeria for three years \
+    heading up strategic marketing activities for one of the world’s leading \
+    food brands. With over a decade of sales and marketing expertise, Amalia \
+    has a wealth of knowledge to help brands succeed on all online \
+    marketplaces.\n\
+  """
 quote = "\"Any business not investing time & ressources on e-commerce right now is missing out on the opportunity of the century\""
 pictureUrl = "/images/team/amalia.png"
 url.LinkedIn = "https://www.linkedin.com/in/amaliawidder/"
@@ -296,16 +305,16 @@ pictureUrl = "/images/team/Joel.png"
 
 
 [[team_member]]
-Name = "Jess Barton"
-Title = ""
+Name = "Jessica Barton"
+Title = "Press Manager"
 Team = "Content Team"
 quote = ""
 pictureUrl = "/images/team/<prenom>.png"
 
 
 [[team_member]]
-Name = "Jess Chapman"
-Title = ""
+Name = "Jessamy Chapman"
+Title = "Press Manager"
 Team = "Content Team"
 quote = ""
 pictureUrl = "/images/team/<prenom>.png"
