@@ -84,3 +84,17 @@ title = "Senior MarCom & eCommerce Manager"
 company = "Sunstar Europe"
 image = "/images/lidia-santos.jpg"
 logo = "/images/brands/sunstar.svg"
+
+[[item]]
+text = """\
+    This e-Commerce strategy and branding workshop was perfectly conducted.\n\
+    \n\
+    You asked the right questions and gave us the opportunity to find a \
+    setting of open and future oriented conversation paired with \
+    professionalism and wit.\
+  """
+name = "Tristan Brockelmanns"
+title = "Chief Commercial Officer"
+company = "Stebler"
+image = "/images/tristan-brockelmanns.jpg"
+logo = "/images/brands/stebler.png"
