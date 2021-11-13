@@ -1,6 +1,6 @@
 __use_generic_keys__ = { url = "socialNetwork" }
 
-[[item]]
+[CEO]
 email = "j.deguigne@e-comas.com"
 Name = "Jérôme de Guigné"
 Title = "Founder & Managing Director"
@@ -12,289 +12,398 @@ bio = """\
     results as great as multiplying revenue by five times or more within two \
     years.\
   """
-pictureUrl = "/images/team/jerome-de-guigne.jpg"
+pictureUrl = "/images/team/jerome.png"
 url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
 url.Medium = "https://medium.com/@Amazon_expert"
 url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
 
-[[item]]
-email = "a.sebakunzi@e-comas.com"
+[[team_member]]
 Name = "Amalia Sebakunzi"
-Phone = "+41788031869"
 Title = "Chief Operating Officer"
-bio = """\
-    Amalia is a business leader with over 14 years of international experience \
-    spanning a broad range of industries, including FMCG, Food, Beauty, \
-    Luxury, Ecommerce and Digital Health. Amalia joined e-Comas as Chief \
-    Operating Officer in 2021, having worked in Nigeria for three years \
-    heading up strategic marketing activities for one of the world’s leading \
-    food brands. With over a decade of sales and marketing expertise, Amalia \
-    has a wealth of knowledge to help brands succeed on all online \
-    marketplaces.\n\
-  """
-pictureUrl = "/images/team/amalia.jpg"
+Team = "COO"
+quote = "\"Any business not investing time & ressources on e-commerce right now is missing out on the opportunity of the century\""
+pictureUrl = "/images/team/amalia.png"
 url.LinkedIn = "https://www.linkedin.com/in/amaliawidder/"
+url.YouTube = "https://www.youtube.com/watch?v=0-TBc8-UC1w"
 
-[[item]]
-email = "s.maatallah@e-comas.com"
-Name = "Sarra Maatallah"
-Phone = "+352621590007"
-Title = "Team Director, Account Management"
-bio = """\
-    Sarra is an ecommerce expert and consultant with a business management \
-    background. Calm and organised, she helps her clients build a solid \
-    strategy to grow their brands and lift up sales by covering all imaginable \
-    aspects of their accounts, from creating and optimising advertising \
-    campaigns and promotions, to fixing catalogues and listings, and even \
-    building a customised brand store that reflects the brand and its values \
-    and increases brand awareness.\n\
-  """
-pictureUrl = "/images/team/s.maatallah.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
 
-[[item]]
-email = "c.dealmeida@e-comas.com"
-Name = "Carlos De Almeida"
-Phone = "+352621657265"
-Title = "Team Director, Account Management"
-bio = """\
-    Carlos is an economist who spent the first four years of his career in \
-    trade marketing, category management and brand management positions in the \
-    FMCG sector.\n\
-    In the last few years he has been fully dedicated to helping companies win \
-    on ecommerce by planning and managing their catalogues, promotions and \
-    advertising activities.\n\
-  """
-pictureUrl = "/images/team/carlos-de-almeida.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida/"
+[[team_member]]
+Name = "Nazlı Kayıkç"
+Title = "Head of Consulting"
+Team = "Consulting"
+quote = "Identifying your gaps and needs at the beginning of your ecom journey is the greatest favor that you can do for your brand'"
+pictureUrl = "/images/team/Nazli.png"
+url.LinkedIn = "https://www.linkedin.com/in/nazl%C4%B1-ipek-kay%C4%B1k%C3%A7%C4%B1-86644a23/"
+url.YouTube = "https://www.youtube.com/watch?v=nN8QWZ5S7-M"
 
-[[item]]
-email = "s.andic@e-comas.com"
-Name = "Seval Andıç"
-Phone = "+352621827375"
-Title = "Team Director, Account Management "
-bio = """\
-    Seval is an ex-Amazonian project manager who combines localisation, \
-    content marketing and e-commerce management in her background.\n\
-    As a proud former member of the Amazon EU expansion team that successfully \
-    launched a new marketplace in 2018, she has built her career on her \
-    passion to treat every day like 'Day One', and keep growing along with her \
-    clients.\n\
-  """
-pictureUrl = "/images/team/seval-andic.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/sevalsolmaz/"
 
-[[item]]
-email = "t.nehera@e-comas.com"
-Name = "Tomas Nehera"
-Phone = "+352621832283"
-Title = "Team Director, Account Management "
-bio = """\
-    As a former Amazon FBA team leader, Tomas is passionate about process \
-    improvements and getting work done. His 10+ years of experience include \
-    managing global operations within corporate environments, cutting off \
-    waste using the Lean Six Sigma approach, and launching new teams across \
-    sites. His role at e-Comas includes applying some of the tweaks he learned \
-    in his previous role at TiVo Corp.\n\
-  """
-pictureUrl = "/images/team/t.nehera.jpg"
-url.LinkedIn = "www.linkedin.com/in/tomasnehera-amazonexpert"
-
-[[item]]
-email = "n.kayikci@e-comas.com"
-Name = "Nazlı Kayıkçı"
-Phone = "+352691190555"
-Title = "Head of Consultanting"
-bio = """\
-    Nazli is a business consultant with wide experience of marketing, \
-    ecommerce and international expansion. She helps brands to define their \
-    business strategies and grow their brands on online markets. As an \
-    ex-Amazonian, she launched different Amazon marketplaces and led the \
-    Turkey market launch in 2019. She has also led different product launches \
-    in FMCG, and built her own business on the Amazon Seller model.\n\
-  """
-pictureUrl = "/images/team/nazli.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/nazlı-ipek-kayıkçı-86644a23"
-
-[[item]]
-email = "a.zambeaux@e-comas.com"
-Name = "Alexandre Zambeaux"
-Phone = "+352621518174"
-Title = "Business Development Director"
-bio = """\
-    Alexandre is an ex-Amazon Senior Vendor Manager with 17+ years of \
-    experience in ecommerce, marketing and business development. He has worked \
-    in the video gaming and online payments industries, and has helped brands \
-    including Melitta, Sony and Microsoft to push their online sales through \
-    Amazon, Shopify and other marketplaces. Alexandre is passionate about \
-    delivering solid strategies and operational solutions to the brands that \
-    he works with.\n\
-  """
-pictureUrl = "/images/team/a.zambeaux.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux"
-
-[[item]]
-email = "a.sambou@e-comas.com"
-Name = "Aguène Sambou"
+[[team_member]]
+Name = "Agu\u00e8ne Sambou"
 Title = "Salsify Project Manager"
-pictureUrl = "/images/team/a.sambou.jpg"
-url.LinkedIn = "http://www.linkedin.com/in/aguène-sambou"
+Team = "Consulting"
+quote = "\"Whithout challenge, There Isn't Change\""
+pictureUrl = "/images/team/<prenom>.png"
 
-[[item]]
-email = "a.vicedo@e-comas.com"
-Name = "Antonio Vicedo"
-Phone = "+352621828828"
-Title = "Senior Account Manager"
-pictureUrl = "/images/team/antonio-vicedo.jpg"
+
+[[team_member]]
+Name = "Claudiu Clement"
+Title = "Senior Consultant / Salsify Expert"
+Team = "Consulting"
+quote = "\"Building a great experience for the right client is the main driver of success in ecommerce.\""
+pictureUrl = "/images/team/Claudiu-Clement.png"
+url.LinkedIn = "https://www.linkedin.com/in/claudiu-clement/"
+url.YouTube = "https://www.youtube.com/watch?v=LgI0R1hmyCE&ab_channel=e-Comas"
+
+
+[[team_member]]
+Name = "Antonio Vicedo Mart\u00ednez"
+Title = "Senior Consultant / Salsify Expert"
+Team = "Consulting"
+quote = "\"In a world that moves and evolves as fast as e-commerce, make sure to save some time to reflect and plan\""
+pictureUrl = "/images/team/Antonio-VM.png"
 url.LinkedIn = "https://www.linkedin.com/in/antoniovicedo/"
 
-[[item]]
-email = "angelica.lopez@e-comas.com"
-Name = "Angelica Lopez"
-Title = ""
-pictureUrl = "/images/team/angelica.lopez.jpg"
 
-[[item]]
-email = "a.duhamel@e-comas.com"
-Name = "Antoine du Hamel"
-Title = "Webmaster"
-pictureUrl = "/images/team/a.duhamel.jpg"
+[[team_member]]
+Name = "Nagapooja Ramesh"
+Title = "Salsify Support"
+Team = "Consulting"
+quote = "\"When we really pay attention,everything is your teacher.\""
+pictureUrl = "/images/team/<prenom>.png"
+url.LinkedIn = "www.linkedin.com/in/nagapooja-ramesh-a77850136"
 
-[[item]]
-email = "b.senese@e-comas.com"
-Name = "Beatrice Senese"
-Title = ""
-pictureUrl = "/images/team/b.senese.jpg"
 
-[[item]]
-email = "c.bordoni@e-comas.com"
-Name = "Christel Bordoni"
-Phone = "+352621624950"
-Title = "Business Development Executive"
-pictureUrl = "/images/team/christel-bordoni.jpg"
+[[team_member]]
+Name = "Sarra Maatallah"
+Title = "AM Team Lead"
+Team = "Account Management"
+quote = "'I always believe that the work you deliever is an extension of yourself. Care about the way you want your work performance to be look at the same way you care about your own image. Quality, passion and care should  be what define you. This is my own recipe to success.''"
+pictureUrl = "/images/team/Sarah.png"
+url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
 
-[[item]]
-email = "c.clement@e-comas.com"
-Name = "Claudiu Clement"
-Phone = "+40747485486"
-Title = "eCommerce Consultant"
-pictureUrl = "/images/team/claudiu-clement-2.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/claudiu-clement-5a450791/"
-url.Medium = "https://medium.com/@claudiuclement"
 
-[[item]]
-email = "c.gregoire@e-comas.com"
-Name = "Charlène Grégoire"
-Phone = "+352621575553"
-Title = "Junior Account Manager"
-pictureUrl = "/images/team/c.gregoire.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/charlene-gregoire/"
-
-[[item]]
-email = "c.guilleautot@e-comas.com"
-Name = "Claire Guilleautot"
-Title = ""
-pictureUrl = "/images/team/c.guilleautot.jpg"
-
-[[item]]
-email = "h.andria@e-comas.com"
-Name = "Henintsoa Andriatianarivo"
-Title = ""
-pictureUrl = "/images/team/h.andria.jpg"
-
-[[item]]
-email = "j.barton@e-comas.com"
-Name = "Jessica Barton"
-Title = "Press Manager"
-pictureUrl = "/images/team/jessice-barton.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/jessica-barton-a3200b84/"
-
-[[item]]
-email = "j.chapman@e-comas.com"
-Name = "Jessamy Chapman"
-Title = "Press Manager"
-pictureUrl = "/images/team/jessamy-chapman.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/jessamychapman/"
-
-[[item]]
-email = "j.weber@e-comas.com"
-Name = "Jana Weber"
-Phone = "+352621572678"
-Title = "Account Manager"
-pictureUrl = "/images/team/jana-weber.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/jana-weber"
-
-[[item]]
-email = "k.mbesso@e-comas.com"
-Name = "Karolina M'Besso"
-Title = ""
-pictureUrl = "/images/team/k.mbesso.jpg"
-
-[[item]]
-email = "m.manasse@e-comas.com"
-Name = "Misa Manassé"
-Phone = "+261348571532"
-Title = "Office manager"
-pictureUrl = "/images/team/misa-manasse.jpg"
-
-[[item]]
-email = "m.palagiri@e-comas.com"
-Name = "Monika Palagiri"
-Phone = "+918056201327"
-Title = "Account Support Manager"
-pictureUrl = "/images/team/monika.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/monika-palagiri-67711bb2"
-
-[[item]]
-email = "m.rasoa@e-comas.com"
-Name = "Mireille Rasoa"
-Phone = "+261348581796"
-Title = "Support account manager"
-pictureUrl = "/images/team/m.rasoa.jpg"
-url.LinkedIn = "www.linkedin.com/in/mireillerasoa-amazonexpert"
-
-[[item]]
-email = "o.samson@e-comas.com"
-Name = "Oscar James Samson"
-Phone = "+919611128423"
-Title = "Team Account Lead"
-pictureUrl = "/images/team/o.samson.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/oscar-samson/"
-
-[[item]]
-email = "r.bell@e-comas.com"
-Name = "Riley Bell"
-Title = ""
-pictureUrl = "/images/team/r.bell.jpg"
-
-[[item]]
-email = "r.ravichandar@e-comas.com"
+[[team_member]]
 Name = "Richard Ravichandar"
-Phone = "+919632081278"
-Title = "Senior Account Manager"
-pictureUrl = "/images/team/richard-ravichandar.jpg"
-url.Facebook = "https://www.facebook.com/richard.ravichandar"
+Title = "Senior AM"
+Team = "Account Management"
+quote = "We CARE for your business like no one else did. We GROW your business like never before."
+pictureUrl = "/images/team/Richard.png"
 url.LinkedIn = "https://www.linkedin.com/in/richard-ravichandar-a1929a50/"
-url.Twitter = "https://twitter.com/RRichard_Ravi"
 
-[[item]]
-email = "s.jacobsen@e-comas.com"
-Name = "Sven Jacobsen Diaz"
-Title = ""
-pictureUrl = "/images/team/s.jacobsen.jpg"
 
-[[item]]
-email = "w.lupter@e-comas.com"
-Name = "Whitney Lupter"
-Phone = "+352621631333"
+[[team_member]]
+Name = "Riley Bell"
 Title = "Senior Account Manager"
-pictureUrl = "/images/team/Whitney-Lupter.jpg"
-url.LinkedIn = "https://www.linkedin.com/in/lupterwithney"
+Team = "Account Management"
+quote = "\"eCommerce is an ever evolving landscape with fresh challenges and new opportunities emerging each day\""
+pictureUrl = "/images/team/Riley-.png"
+url.LinkedIn = "https://www.linkedin.com/in/bellriley/"
+url.YouTube = "https://www.youtube.com/watch?v=miLaUlqNruc"
 
-[[item]]
-email = "y.randrianasolo@e-comas.com"
-Name = "Randrianasolo Yann"
-Phone = "+261327733397"
+
+[[team_member]]
+Name = "Raichel Rajan"
+Title = "Account Support"
+Team = "Account Management"
+quote = "\"Success is not a one time life achievement. Success is a habit\""
+pictureUrl = "/images/team/Raichel.png"
+url.LinkedIn = "linkedin.com/in/raichel-rajan-34a894b9"
+
+
+[[team_member]]
+Name = "Navya Aravindakshan"
+Title = "Account Support"
+Team = "Account Management"
+quote = "Discover something new. Discover something different."
+pictureUrl = "/images/team/Navya.png"
+url.LinkedIn = "https://www.linkedin.com/in/navya-aravindakshan/"
+url.YouTube = "https://www.youtube.com/watch?v=IL8xeEXZIzI"
+
+
+[[team_member]]
+Name = "Manu Mathew"
+Title = "Account Support"
+Team = "Account Management"
+quote = "Alone we can do so little, together we can do so much"
+pictureUrl = "/images/team/Manu.png"
+url.LinkedIn = "https://www.linkedin.com/in/manujoymathew"
+url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
+
+
+[[team_member]]
+Name = "Carlos De Almeida"
+Title = "Senior AM & Team lead"
+Team = "Account Management"
+quote = "\"Care is the key of any successful business partnership\""
+pictureUrl = "/images/team/Carlos.png"
+url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida-amazonexpert/"
+
+
+[[team_member]]
+Name = "Whitney LUPTER"
+Title = "Senior Account Manager"
+Team = "Account Management"
+quote = "\"If Amazon offers something for free, take advantage of it.\""
+pictureUrl = "/images/team/Whitney.png"
+url.LinkedIn = "https://www.linkedin.com/in/lupterwithney/"
+url.YouTube = "https://www.youtube.com/watch?v=IvLMNwh9z70"
+
+
+[[team_member]]
+Name = "Ang\u00e9lica L\u00f3pez"
+Title = "Account Manager"
+Team = "Account Management"
+quote = "\"Who is not able to adapt to the constant changes is out of the game\""
+pictureUrl = "/images/team/Angelica.png"
+url.LinkedIn = "https://www.linkedin.com/in/angelicalopez8661/"
+
+
+[[team_member]]
+Name = "Henintsoa Andriatianarivo"
+Title = "Account Support"
+Team = "Account Management"
+quote = "\"A smooth sea never made a skilled sailor.\""
+pictureUrl = "/images/team/Henintsoa.png"
+url.LinkedIn = "https://www.linkedin.com/in/henintsoa/"
+url.YouTube = "https://www.youtube.com/watch?v=rmB-6-x9spA"
+
+
+[[team_member]]
+Name = "Mireille Rasoa"
+Title = "Account Support"
+Team = "Account Management"
+quote = "\"You are your only limit\""
+pictureUrl = "/images/team/Mireille.png"
+url.LinkedIn = "https://www.linkedin.com/in/mireille-rasoa-605194215/"
+
+
+[[team_member]]
+Name = "Monika Palagiri"
+Title = "Support Account Manager"
+Team = "Account Management"
+quote = "\"The way to smooth,efficient & successful business is attention to little details\""
+pictureUrl = "/images/team/Monika.png"
+url.LinkedIn = "https://www.linkedin.com/in/monika-palagiri-67711bb2"
+url.YouTube = "https://www.youtube.com/watch?v=GvEk-ZTJka4"
+
+
+[[team_member]]
+Name = "Yann Randrianasolo"
 Title = "Account manager"
-pictureUrl = "/images/team/y.randrianasolo.jpg"
+Team = "Account Management"
+quote = "\"Per aspera ad astra\""
+pictureUrl = "/images/team/Yann.png"
 url.LinkedIn = "https://www.linkedin.com/in/yann-randrianasolo-aa3090198/"
+
+
+[[team_member]]
+Name = "Seval Andic"
+Title = "AM Team Lead"
+Team = "Account Management"
+quote = "The ability to adapt is the main ingredient behind succesful growth recipes."
+pictureUrl = "/images/team/sevel.png"
+url.LinkedIn = "https://www.linkedin.com/in/sevalsolmaz/"
+url.YouTube = "https://www.youtube.com/watch?v=1lhz5W6uTUs"
+
+
+[[team_member]]
+Name = "Charl\u00e8ne Gr\u00e9goire"
+Title = "Senior Account Manager"
+Team = "Account Management"
+quote = "\"Every problem is a gift - without problems we would not grow\""
+pictureUrl = "/images/team/Charlène.png"
+url.LinkedIn = "www.linkedin.com/in/charlene-gregoire"
+url.YouTube = "https://www.youtube.com/watch?v=DTdtGuAuY6E"
+
+
+[[team_member]]
+Name = "Claire Guilleautot"
+Title = "Account manager"
+Team = "Account Management"
+quote = "Details create the big picture."
+pictureUrl = "/images/team/Claire.png"
+url.LinkedIn = "https://www.linkedin.com/in/claire-guilleautot-0347b8172/"
+
+
+[[team_member]]
+Name = "Elvis Kisekka"
+Title = "Account Manager"
+Team = "Account Management"
+quote = "\"The secret to success is to do the common things uncommonly well.\""
+pictureUrl = "/images/team/Elvis.png"
+url.LinkedIn = "https://www.linkedin.com/in/elviskisekka/"
+
+
+[[team_member]]
+Name = "Asha Upadhya"
+Title = "Support Account Manager"
+Team = "Account Management"
+quote = "Do not underestimate the power of 'Word of Mouth\"Give your customers something Wonderful to talk about and they will do the rest"
+pictureUrl = "/images/team/Asha-Upadhya.png"
+url.LinkedIn = "https://www.linkedin.com/in/asha-upadhya-6781a6108/"
+url.YouTube = "https://www.youtube.com/watch?v=rHKvKtK4dsI"
+
+
+[[team_member]]
+Name = "Yohann Paul"
+Title = "Account Support"
+Team = "Account Management"
+quote = "\"There is a superhero in all of us, We just need the courage to put on the cape.\""
+pictureUrl = "/images/team/<prenom>.png"
+url.LinkedIn = "https://www.linkedin.com/in/yohannpaul/"
+
+
+[[team_member]]
+Name = "Sven Jacosben Diaz"
+Title = "Account Support"
+Team = "Account Management"
+quote = "You miss 100% of the shots you don't take"
+pictureUrl = "/images/team/Sven.png"
+url.LinkedIn = "https://www.linkedin.com/in/sven-jacobsen-diaz/"
+
+
+[[team_member]]
+Name = "Tomas Nehera"
+Title = "AM Team Lead"
+Team = "Retail"
+quote = "\"It doesnt matter who we are , what matters is our dedication and plan\""
+pictureUrl = "/images/team/Tomas.png"
+url.LinkedIn = "https://www.linkedin.com/in/tomasnehera-amazonexpert/"
+
+
+[[team_member]]
+Name = "Beatrice Senese"
+Title = "Senior Account Manager"
+Team = "Retail"
+quote = "\"The best place to hide a corpse after a passion crime? The second page of search on Amazon, of course.\""
+pictureUrl = "/images/team/<prenom>.png"
+
+
+[[team_member]]
+Name = "Arjun Narayan"
+Title = "Account Support"
+Team = "Retail"
+quote = "The key to success is to concentrate on GOALS, not OBSTACLES."
+pictureUrl = "/images/team/Arjun.png"
+
+
+[[team_member]]
+Name = "Joel Young"
+Title = "Lead Creative"
+Team = "Content Team"
+quote = "Be happy in everything you do. That's most important. And give a pet a home."
+pictureUrl = "/images/team/Joel.png"
+
+
+[[team_member]]
+Name = "Jess Barton"
+Title = ""
+Team = "Content Team"
+quote = ""
+pictureUrl = "/images/team/<prenom>.png"
+
+
+[[team_member]]
+Name = "Jess Chapman"
+Title = ""
+Team = "Content Team"
+quote = ""
+pictureUrl = "/images/team/<prenom>.png"
+
+
+[[team_member]]
+Name = "Dheeraj Chawla"
+Title = "DSP Expert"
+Team = "DSP Team"
+quote = "\u201cThe modern marketer is an experimenter, a lover of data, a content creator, a justifier of ROI\u201d"
+pictureUrl = "/images/team/<prenom>.png"
+url.LinkedIn = "https://www.linkedin.com/in/dheerajchawla1/"
+
+
+[[team_member]]
+Name = "David Recchia"
+Title = "Head of Analytics"
+Team = "Analytics Team"
+quote = "\"Working with e-Comas, we can help brands leverage the real potential of their data\""
+pictureUrl = "/images/team/<prenom>.png"
+url.LinkedIn = "https://www.linkedin.com/in/david-recchia-42744820/"
+
+
+[[team_member]]
+Name = "Julien Soyer"
+Title = "Senior Data analyst"
+Team = "Analytics Team"
+quote = "\u201cGiving up is the only sure way to fail.\u201d - Gena Showalter"
+pictureUrl = "/images/team/<prenom>.png"
+url.LinkedIn = "https://www.linkedin.com/in/julien-s-36837891/"
+
+
+[[team_member]]
+Name = "Paul Mordant"
+Title = "Data Scientist Consultant"
+Team = "Analytics Team"
+quote = "\"What gets measured, gets managed\""
+pictureUrl = "/images/team/Paul.png"
+url.LinkedIn = "https://www.linkedin.com/in/paul-mordant-a5445917a/"
+
+
+[[team_member]]
+Name = "Alexandre Zambeaux"
+Title = "Business Development Manager"
+Team = "Business Development & marketing team"
+quote = "\u201cKnow the rules well, so you can break them effectively.\u201d"
+pictureUrl = "/images/team/Alexandre-Zambeaux.png"
+url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux/"
+url.YouTube = "https://www.youtube.com/watch?v=lW1ffcwiyP8"
+
+
+[[team_member]]
+Name = "Christel Bordoni"
+Title = "Marketing and Business Development Manager"
+Team = "Business Development & marketing team"
+quote = "\" Offer an omnichannel experience to your customer is the future of e-commerce \""
+pictureUrl = "/images/team/christel.png"
+url.LinkedIn = "https://www.linkedin.com/in/c-bordoni-amazonspecialist/"
+
+
+[[team_member]]
+Name = "Sneha Shriyan"
+Title = "Business Development Manager"
+Team = "Business Development & marketing team"
+quote = "\"Pandemic or no pandemic, e-commerce will keep your business growing\""
+pictureUrl = "/images/team/<prenom>.png"
+
+
+[[team_member]]
+Name = "Karolina M'besso"
+Title = "Head of Admin"
+Team = "Administration team"
+quote = "\"It is not for us to forecast the future, but to shape it\", AS Exup\u00e9ry"
+pictureUrl = "/images/team/Karo.png"
+url.LinkedIn = "https://www.linkedin.com/in/karol%C3%ADna-m-besso-70172b35/"
+
+
+[[team_member]]
+Name = "Oscar Samson"
+Title = "India Team lead"
+Team = "Administration team"
+quote = "Success is the sum of small efforts repeated day in and day out"
+pictureUrl = "/images/team/Oscar.png"
+url.LinkedIn = "www.linkedin.com/in/oscar-samson"
+
+
+[[team_member]]
+Name = "Misa Manass\u00e9"
+Title = "Office Manager"
+Team = "Administration team"
+quote = "\"Persistence is the path to success\" C Chaplin"
+pictureUrl = "/images/team/<prenom>.png"
+
+
+[[team_member]]
+Name = "Jana Weber"
+Title = "Senior Account Manager"
+Team = "Administration team"
+quote = "\"Creativity without strategy is called art. Creativity with strategy is called advertising.\""
+pictureUrl = "/images/team/Jana-Weber.png"
+url.LinkedIn = "https://www.linkedin.com/in/jana-weber/"
