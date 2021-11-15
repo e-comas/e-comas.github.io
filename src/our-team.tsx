@@ -47,7 +47,13 @@ function getTeams(teamMembers: TeamMemberProps[]) {
       teams[teamMember.Team] = { name: teamMember.Team, members: [teamMember] };
     }
   }
-  return team.team_order.map((teamName) => teams[teamName]);
+  return team.team_order
+    .map((teamName) => {
+      const r = teams[teamName];
+      delete teams[teamName];
+      return r;
+    })
+    .concat(Object.values(teams));
 }
 
 function TeamMember({ Name, Title, pictureUrl }: TeamMemberProps) {
