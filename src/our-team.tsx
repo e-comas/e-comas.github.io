@@ -18,6 +18,7 @@ interface TeamMemberProps {
   Team?: string;
   children?: any[];
   ref?: any;
+  priority?: number;
 }
 
 interface Team {
@@ -26,6 +27,15 @@ interface Team {
 }
 
 function sortTM(a: TeamMemberProps, b: TeamMemberProps) {
+  if (a.priority != null && b.priority == null) return -1;
+  if (a.priority == null && b.priority != null) return 1;
+  if (a.priority! < b.priority!) return 1;
+  if (a.priority! > b.priority!) return -1;
+
+  const aHead = a.Title.startsWith("Head of");
+  const bHead = b.Title.startsWith("Head of");
+  if (aHead && !bHead) return -1;
+  if (!aHead && bHead) return 1;
   return a.Name.localeCompare(b.Name);
 }
 function getTeams(teamMembers: TeamMemberProps[]) {

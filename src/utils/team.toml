@@ -84,8 +84,9 @@ url.LinkedIn = "www.linkedin.com/in/nagapooja-ramesh-a77850136"
 
 [[team_member]]
 Name = "Sarra Maatallah"
-Title = "AM Team Lead"
+Title = "Senior Account Management & Team lead"
 Team = "Account Management"
+priority = 2
 quote = "'I always believe that the work you deliever is an extension of yourself. Care about the way you want your work performance to be look at the same way you care about your own image. Quality, passion and care should  be what define you. This is my own recipe to success.''"
 pictureUrl = "/images/team/Sarah.png"
 url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
@@ -93,7 +94,7 @@ url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
 
 [[team_member]]
 Name = "Richard Ravichandar"
-Title = "Senior AM"
+Title = "Senior Account Manager"
 Team = "Account Management"
 quote = "We CARE for your business like no one else did. We GROW your business like never before."
 pictureUrl = "/images/team/Richard.png"
@@ -141,8 +142,9 @@ url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
 
 [[team_member]]
 Name = "Carlos De Almeida"
-Title = "Senior AM & Team lead"
+Title = "Senior Account Management & Team lead"
 Team = "Account Management"
+priority = 1
 quote = "\"Care is the key of any successful business partnership\""
 pictureUrl = "/images/team/Carlos.png"
 url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida-amazonexpert/"
@@ -188,7 +190,7 @@ url.LinkedIn = "https://www.linkedin.com/in/mireille-rasoa-605194215/"
 
 [[team_member]]
 Name = "Monika Palagiri"
-Title = "Support Account Manager"
+Title = "Account Support"
 Team = "Account Management"
 quote = "\"The way to smooth,efficient & successful business is attention to little details\""
 pictureUrl = "/images/team/Monika.png"
@@ -198,7 +200,7 @@ url.YouTube = "https://www.youtube.com/watch?v=GvEk-ZTJka4"
 
 [[team_member]]
 Name = "Yann Randrianasolo"
-Title = "Account manager"
+Title = "Account Support"
 Team = "Account Management"
 quote = "\"Per aspera ad astra\""
 pictureUrl = "/images/team/Yann.png"
@@ -207,8 +209,9 @@ url.LinkedIn = "https://www.linkedin.com/in/yann-randrianasolo-aa3090198/"
 
 [[team_member]]
 Name = "Seval Andic"
-Title = "AM Team Lead"
+Title = "Senior Account Management & Team lead"
 Team = "Account Management"
+priority = 1
 quote = "The ability to adapt is the main ingredient behind succesful growth recipes."
 pictureUrl = "/images/team/sevel.png"
 url.LinkedIn = "https://www.linkedin.com/in/sevalsolmaz/"
@@ -273,7 +276,7 @@ url.LinkedIn = "https://www.linkedin.com/in/sven-jacobsen-diaz/"
 
 [[team_member]]
 Name = "Tomas Nehera"
-Title = "AM Team Lead"
+Title = "Head of Retail"
 Team = "Retail"
 quote = "\"It doesnt matter who we are , what matters is our dedication and plan\""
 pictureUrl = "/images/team/Tomas.png"
@@ -306,7 +309,7 @@ pictureUrl = "/images/team/Joel.png"
 
 [[team_member]]
 Name = "Jessica Barton"
-Title = "Press Manager"
+Title = "Social & Copywriting Manager"
 Team = "Content Team"
 quote = ""
 pictureUrl = "/images/team/Jessica-Barton-.png"
@@ -358,7 +361,7 @@ url.LinkedIn = "https://www.linkedin.com/in/paul-mordant-a5445917a/"
 
 [[team_member]]
 Name = "Alexandre Zambeaux"
-Title = "Business Development Manager"
+Title = "Senior Business Development Manager"
 Team = "Business Development & marketing team"
 quote = "\u201cKnow the rules well, so you can break them effectively.\u201d"
 pictureUrl = "/images/team/Alexandre-Zambeaux.png"
