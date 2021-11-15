@@ -82,6 +82,18 @@ main > figure {
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: 10% 90%;
+
+  &,
+  & img {
+    transition: filter 1s linear;
+  }
+
+  &:hover {
+    filter: hue-rotate(1turn);
+    img {
+      filter: hue-rotate(-1turn);
+    }
+  }
 }
 img {
   width: 100%;
