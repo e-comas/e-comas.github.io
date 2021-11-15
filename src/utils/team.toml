@@ -51,7 +51,7 @@ Name = "Agu\u00e8ne Sambou"
 Title = "Salsify Project Manager"
 Team = "Consulting"
 quote = "\"Whithout challenge, There Isn't Change\""
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/Aguène-Sambou.png"
 
 
 [[team_member]]
@@ -78,7 +78,7 @@ Name = "Nagapooja Ramesh"
 Title = "Salsify Support"
 Team = "Consulting"
 quote = "\"When we really pay attention,everything is your teacher.\""
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/Pooja.png"
 url.LinkedIn = "www.linkedin.com/in/nagapooja-ramesh-a77850136"
 
 
@@ -258,7 +258,7 @@ Name = "Yohann Paul"
 Title = "Account Support"
 Team = "Account Management"
 quote = "\"There is a superhero in all of us, We just need the courage to put on the cape.\""
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/Yohan.png"
 url.LinkedIn = "https://www.linkedin.com/in/yohannpaul/"
 
 
@@ -285,7 +285,7 @@ Name = "Beatrice Senese"
 Title = "Senior Account Manager"
 Team = "Retail"
 quote = "\"The best place to hide a corpse after a passion crime? The second page of search on Amazon, of course.\""
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/Beatrice-Senese.png"
 
 
 [[team_member]]
@@ -309,7 +309,7 @@ Name = "Jessica Barton"
 Title = "Press Manager"
 Team = "Content Team"
 quote = ""
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/Jessica-Barton-.png"
 
 
 [[team_member]]
@@ -317,7 +317,7 @@ Name = "Jessamy Chapman"
 Title = "Press Manager"
 Team = "Content Team"
 quote = ""
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/Jessamy-Chapman.png"
 
 
 [[team_member]]
@@ -325,7 +325,7 @@ Name = "Dheeraj Chawla"
 Title = "DSP Expert"
 Team = "DSP Team"
 quote = "\u201cThe modern marketer is an experimenter, a lover of data, a content creator, a justifier of ROI\u201d"
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/Dheeraj-Chawla.png"
 url.LinkedIn = "https://www.linkedin.com/in/dheerajchawla1/"
 
 
@@ -334,7 +334,7 @@ Name = "David Recchia"
 Title = "Head of Analytics"
 Team = "Analytics Team"
 quote = "\"Working with e-Comas, we can help brands leverage the real potential of their data\""
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/David-Recchia.png"
 url.LinkedIn = "https://www.linkedin.com/in/david-recchia-42744820/"
 
 
@@ -343,7 +343,7 @@ Name = "Julien Soyer"
 Title = "Senior Data analyst"
 Team = "Analytics Team"
 quote = "\u201cGiving up is the only sure way to fail.\u201d - Gena Showalter"
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/Julien-Soyer-.png"
 url.LinkedIn = "https://www.linkedin.com/in/julien-s-36837891/"
 
 
@@ -380,7 +380,7 @@ Name = "Sneha Shriyan"
 Title = "Business Development Manager"
 Team = "Business Development & marketing team"
 quote = "\"Pandemic or no pandemic, e-commerce will keep your business growing\""
-pictureUrl = "/images/team/<prenom>.png"
+pictureUrl = "/images/team/Sneha-Shriyan.png"
 
 
 [[team_member]]
@@ -406,13 +406,4 @@ Name = "Misa Manass\u00e9"
 Title = "Office Manager"
 Team = "Administration team"
 quote = "\"Persistence is the path to success\" C Chaplin"
-pictureUrl = "/images/team/<prenom>.png"
-
-
-[[team_member]]
-Name = "Jana Weber"
-Title = "Senior Account Manager"
-Team = "Administration team"
-quote = "\"Creativity without strategy is called art. Creativity with strategy is called advertising.\""
-pictureUrl = "/images/team/Jana-Weber.png"
-url.LinkedIn = "https://www.linkedin.com/in/jana-weber/"
+pictureUrl = "/images/team/Misa-Manassé-.png"
