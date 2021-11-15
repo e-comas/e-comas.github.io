@@ -51,14 +51,26 @@ export default () => (
         Addresses:
         <ul>
           <li>
+            EU:{" "}
             <address>
               68 Avenue de la Liberté - L-1930 Luxembourg - LUXEMBOURG
             </address>
           </li>
           <li>
+            US:{" "}
+            <address>457 Wilshire Lane - Santa Maria, CA 93455 - USA</address>
+          </li>
+          <li>
+            Madagascar:{" "}
             <address>
-              E-Faingo SARL : Lot IVG AF 97 Behoririka - Antananarivo -
-              Madagascar
+              Lot IVG AF 97 Behoririka - Antananarivo - Madagascar
+            </address>
+          </li>
+          <li>
+            India:{" "}
+            <address>
+              B106, Saroj Enclave – Ben Satya Layout, Geddalahalli – Bangalore ,
+              Karnataka – India - 560043
             </address>
           </li>
         </ul>
