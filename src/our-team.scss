@@ -20,13 +20,13 @@ main > figure {
 
   h3 {
     font-weight: normal;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   h4 {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: $green;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
   h3,
   h4 {
@@ -60,6 +60,13 @@ main > figure {
     align-items: center;
     text-align: unset;
     margin: 0 1.5rem;
+
+    &:nth-of-type(even) {
+      grid-template-columns: 8fr 5fr;
+      figcaption {
+        order: -1;
+      }
+    }
   }
   @media screen and (min-width: $max-width) {
     margin: 0 calc(1.5rem - (100vw - #{$max-width}) / 2);
@@ -103,10 +110,10 @@ article > h3 {
     padding: 0;
   }
 
-  @media screen and(min-width: 610px) {
-    grid-template-columns: repeat(auto-fill, 420px);
+  @media screen and(min-width: 750px) {
+    grid-template-columns: repeat(auto-fill, 300px);
     img {
-      height: 505px;
+      height: 340px;
       object-fit: contain;
     }
   }
@@ -124,12 +131,12 @@ article > h3 {
 
   strong {
     font-weight: normal;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
   em {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: normal;
     color: $green;
   }
