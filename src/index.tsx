@@ -64,13 +64,7 @@ export default (
         <Picture src="/images/Banner3.2 Testimonials 3x .png" alt="" />
       </section>
 
-      <section class="threeQuarter">
-        <Testimonies withBlock />
-        <Picture
-          src="/images/Banner3.3 Testimonials 3x .png"
-          alt="illustration"
-        />
-      </section>
+      <Testimonies withBlock />
 
       {/* <section class="news">
         <h3>Our latest news</h3>

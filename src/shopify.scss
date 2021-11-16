@@ -59,6 +59,47 @@ section {
   }
 }
 
+@media screen and (min-width: 800px) {
+  .slider-wrapper {
+    position: relative;
+
+    .with-js {
+      width: 75%;
+      margin: 0 auto;
+      button {
+        display: block;
+
+        position: absolute;
+        top: 50%;
+        // transform: translateX(-50px);
+        left: 10%;
+
+        -webkit-appearance: none;
+        appearance: none;
+        background: none;
+        border-radius: 0;
+        cursor: pointer;
+
+        height: 1rem;
+        width: 1rem;
+        border: 4px none $green;
+        border-top-style: solid;
+        border-left-style: solid;
+        transform: rotate(-0.125turn);
+
+        &:last-child {
+          right: 10%;
+          left: unset;
+          transform: rotate(0.375turn);
+        }
+      }
+      article {
+        width: 100%;
+      }
+    }
+  }
+}
+
 main > p {
   font-weight: 400;
   font-size: 1.8rem;

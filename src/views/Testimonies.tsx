@@ -18,18 +18,22 @@ const Testimonies = () => (
     {testimonies.map((testimony) => (
       <figure class="testimonial">
         <figcaption>
-          <Picture
-            src={testimony.image || testimony.logo}
-            alt="Name of the TRUSTOR"
-          />
-          {h(
-            (testimony.logo?.endsWith(".svg") ? "img" : Picture) as any,
-            {
-              src: testimony.logo,
-              alt: testimony.company,
-              class: "logo",
-            } as any
-          )}
+          <div>
+            <Picture
+              src={testimony.image || testimony.logo}
+              alt={testimony.name}
+              class="portrait"
+            />
+            {h(
+              (testimony.logo?.endsWith(".svg") ? "img" : Picture) as any,
+              {
+                src: testimony.logo,
+                alt: testimony.company,
+                class: "logo",
+              } as any
+            )}
+          </div>
+          <img aria-hidden="true" src="/images/quotes.svg" />
           {/* <time dateTime="1970-01-01">01.01.1970</time> */}
           <strong>{testimony.name}</strong>
           <em>
@@ -46,7 +50,6 @@ export default (props?: TestimoniesProps) =>
   props?.withBlock ? (
     <div class="testimonies">
       <h2>What our clients are saying</h2>
-      <img aria-hidden="true" src="/images/quotes.svg" />
       <div class="slider" data-auto-slide-delay="6000">
         <Testimonies />
       </div>
