@@ -32,11 +32,17 @@ function autoScroll(elem: Element) {
   function slideToPrevious() {
     currentFocused =
       currentFocused?.previousElementSibling || elem.lastElementChild;
+    if (currentFocused == previousButton || currentFocused === nextButton) {
+      currentFocused = previousButton.previousElementSibling;
+    }
     slide();
   }
   function slideToNext() {
     currentFocused =
       currentFocused?.nextElementSibling || elem.firstElementChild;
+    if (currentFocused == previousButton || currentFocused === nextButton) {
+      currentFocused = elem.firstElementChild;
+    }
     slide();
   }
   function clickOnButton() {
