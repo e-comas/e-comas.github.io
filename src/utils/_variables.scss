@@ -6,7 +6,7 @@ $greyLike: #{$blue}05;
 $white: #fff;
 $semiTransparentBlack: #000000d9;
 
-$SourceSansPro: "Source Sans Pro", sans-serif;
+$SourceSansPro: "Source Sans Pro", "Source Sans Pro-fallback", sans-serif;
 $Gilroy: $SourceSansPro;
 $lato: $SourceSansPro;
 

@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "Source Sans Pro-fallback";
+  size-adjust: 93.75%;
+  ascent-override: 110%;
+  src: local("Arial");
+}
+
+@font-face {
   font-family: "Source Sans Pro";
   src: url("/fonts/SourceSansPro-BlackItalic.woff2") format("woff2"),
     url("/fonts/SourceSansPro-BlackItalic.woff") format("woff");
