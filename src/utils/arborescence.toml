@@ -40,6 +40,10 @@ documentId = "1XB3ohTRBlwPyGu_o3UGN7e-83HUqP8IEtnN_3u_twP0"
 name = "Profitero"
 url = "/profitero.html"
 
+[[root.children.children.children]]
+name = "Reveals"
+url = "/reveals.html"
+
 [[root.children]]
 name = "Salsify"
 url = "/salsify.html"
