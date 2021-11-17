@@ -1,7 +1,7 @@
 @use "sass:math";
 @use "./utils/variables" as *;
 
-$icon-size: 3.5rem;
+$icon-size: 4.5rem;
 
 main > h2 {
   font-weight: 600;
@@ -55,8 +55,8 @@ main > ul {
       height: $icon-size;
 
       img {
-        width: 1rem;
-        height: 1rem;
+        width: math.div($icon-size, 3);
+        height: math.div($icon-size, 3);
       }
     }
     & > span {
@@ -111,7 +111,6 @@ main > ul {
 
 main > section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   max-width: $max-width;
   padding: 0 2rem;
@@ -132,5 +131,8 @@ main > section {
   p {
     font-size: 1rem;
     letter-spacing: 0;
+  }
+  @media screen and (min-width: 850px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
