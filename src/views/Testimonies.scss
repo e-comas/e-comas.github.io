@@ -45,6 +45,9 @@ div.testimonies {
       flex-shrink: 0;
       scroll-snap-align: center;
       margin: 0;
+      @media screen and (min-width: $max-width) {
+        padding: 2.5rem;
+      }
     }
 
     button {
@@ -116,8 +119,14 @@ figure.testimonial {
     height: auto;
   }
 
+  & > figcaption > div > .logo {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
   blockquote {
     margin: 0;
+    font-weight: 300;
   }
 
   strong {
@@ -131,28 +140,50 @@ figure.testimonial {
     padding-left: 1ch;
     font-weight: normal;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
     color: #99999e;
     letter-spacing: 0;
-    line-height: 1.6rem;
+    line-height: 1.1em;
   }
 
   @media screen and (min-width: 800px) {
+    display: grid;
+    gap: 0 1.5rem;
+    grid-template-columns: 175px 1fr;
+    grid-template-rows: 1fr repeat(4, auto) 1fr;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 100%;
+    }
+    &::before {
+      grid-column: span 2;
+    }
+
     & > figcaption {
       display: contents;
 
       & > div:first-child {
-        max-width: 125px;
+        width: 100%;
         height: 100%;
-        float: left;
-        margin-right: 1.5rem;
+        grid-row: span 5;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
       }
       & > img {
         display: block;
         margin-bottom: 1rem;
       }
     }
+    em {
+      padding: 0;
+    }
     blockquote {
+      padding-block-start: 0.25rem;
       padding-block-end: 2rem;
     }
   }
