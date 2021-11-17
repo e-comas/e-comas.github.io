@@ -23,13 +23,7 @@ export default (
           data. This technological-based solution will enhance your business to
           the next level.
         </p>
-        {/* <a href="reveals.html" class="cta"> */}
-        <a
-          href="https://www.reveals.lu/"
-          target="_blank"
-          rel="noopener"
-          class="cta"
-        >
+        <a href="reveals.html" class="cta">
           Read further
         </a>
       </section>

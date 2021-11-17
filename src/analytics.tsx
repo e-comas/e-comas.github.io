@@ -148,7 +148,7 @@ export default (
               </li>
             </ul>
 
-            <a href="partners.html#Reveals" className="cta">
+            <a href="reveals.html" className="cta">
               Learn more about Reveals
             </a>
           </figcaption>
