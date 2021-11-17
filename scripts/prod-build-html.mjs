@@ -5,11 +5,25 @@ import {
 } from "./prod-build-images.mjs";
 import sass2css from "./prod-build-css.mjs";
 import buildRuntimeJS from "./prod-build-js.mjs";
-import { CANONICAL_ORIGIN } from "./prod-config.mjs";
+import { CANONICAL_ORIGIN, GA_ID } from "./prod-config.mjs";
 import viewportsToTest from "./prod-viewports-to-test.mjs";
 
 const imgData = new Map();
 const sassMappings = new Map();
+
+function addGoogleAnalyticsSnippet(id) {
+  const gtm = document.createElement("script");
+  gtm.async = true;
+  gtm.src =
+    "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
+  const inline = document.createElement("script");
+  inline.textContent =
+    "window.dataLayer=window.dataLayer||[];" +
+    "function gtag(){dataLayer.push(arguments)}" +
+    'gtag("js",new Date);' +
+    `gtag("config",${JSON.stringify(id)});`;
+  document.head.append(gtm, inline);
+}
 
 async function editPage(page, signalIn, signalOut) {
   const jsRuntimeModules = [];
@@ -201,6 +215,8 @@ async function editPage(page, signalIn, signalOut) {
   await page.evaluate(() =>
     Array.from(document.querySelectorAll("a.cta[href='#']"), (e) => e.remove())
   );
+
+  if (GA_ID) await page.evaluate(addGoogleAnalyticsSnippet, GA_ID);
 }
 
 function isSuperset(set, subset) {
