@@ -66,13 +66,7 @@ export default (
           Profitero provides over 4000 global brands with cutting edge
           technology designed to accelerate e-commerce sales and save time.
         </p>
-        {/* <a href="profitero.html" class="cta"> */}
-        <a
-          href="https://www.profitero.com"
-          target="_blank"
-          rel="noopener"
-          class="cta"
-        >
+        <a href="profitero.html" class="cta">
           Read further
         </a>
       </section>

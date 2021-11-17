@@ -14,7 +14,7 @@ export default () => (
       <a href="website-creation.html#Shopify">
         <img alt="Shopify" src="/images/partners/shopify.svg" />
       </a>
-      <a href="https://www.profitero.com" rel="noopener" target="_blank">
+      <a href="profitero.html">
         <img alt="Profitero" src="/images/partners/profitero.svg" />
       </a>
       <a href="https://www.reveals.lu/" rel="noopener" target="_blank">

@@ -176,7 +176,7 @@ export default (
               <li>Specific dashboards on 1P and 3P sales data.</li>
             </ul>
 
-            <a href="partners.html#Profitero" className="cta">
+            <a href="profitero.html" className="cta">
               Learn more about Profitero
             </a>
           </figcaption>

@@ -36,6 +36,10 @@ name = "Analytics"
 url = "/analytics.html"
 documentId = "1XB3ohTRBlwPyGu_o3UGN7e-83HUqP8IEtnN_3u_twP0"
 
+[[root.children.children.children]]
+name = "Profitero"
+url = "/profitero.html"
+
 [[root.children]]
 name = "Salsify"
 url = "/salsify.html"
