@@ -48,6 +48,7 @@ main > ul {
       align-items: center;
 
       background-color: currentColor;
+      box-shadow: 0 0.25rem 1.25rem 0 currentColor;
       border-radius: 50%;
       grid-area: icon;
       width: $icon-size;
