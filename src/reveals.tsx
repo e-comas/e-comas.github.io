@@ -19,8 +19,8 @@ export default (
     <Breadcrumbs />
     <main>
       <h2>
-        Reveals: the next step of your <strong>analytics</strong> automation
-        &amp; <strong>insights</strong>
+        Reveals: the next step of your <strong>analytics</strong> &amp;{" "}
+        <strong>insights</strong>
       </h2>
 
       <section class="slidable-section">
