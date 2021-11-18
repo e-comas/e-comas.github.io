@@ -41,13 +41,9 @@ div.testimonies {
 
     figure {
       width: 75%;
-      padding: 1rem;
       flex-shrink: 0;
       scroll-snap-align: center;
       margin: 0;
-      @media screen and (min-width: $max-width) {
-        padding: 2.5rem;
-      }
     }
 
     button {
@@ -64,6 +60,10 @@ div.testimonies {
     .slider.with-js {
       width: 75%;
       margin: 0 auto;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       button {
         display: block;
 
@@ -105,6 +105,7 @@ figure.testimonial {
   background: $white;
   box-shadow: 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.08);
   border-radius: 0.5rem;
+  padding: 1rem;
 
   .portrait img {
     border-radius: 50%;
@@ -152,6 +153,7 @@ figure.testimonial {
     gap: 0 1.5rem;
     grid-template-columns: 175px 1fr;
     grid-template-rows: 1fr repeat(4, auto) 1fr;
+    padding: 2rem;
 
     &::before,
     &::after {
@@ -185,6 +187,15 @@ figure.testimonial {
     blockquote {
       padding-block-start: 0.25rem;
       padding-block-end: 2rem;
+    }
+  }
+}
+@media screen and (min-width: $body-max-width) {
+  #testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    h2 {
+      grid-column: span 2;
     }
   }
 }

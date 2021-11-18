@@ -14,7 +14,7 @@ export default (
     <Breadcrumbs />
     <main>
       <section id="testimonials">
-        <h2>They trusted us</h2>
+        <h2>What our clients are saying</h2>
         <Testimonies />
       </section>
     </main>

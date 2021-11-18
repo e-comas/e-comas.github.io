@@ -141,9 +141,7 @@ export default (
         </figure>
       </section>
 
-      <section>
-        <Testimonies withBlock />
-      </section>
+      <Testimonies withBlock />
     </main>
     <Footer />
   </Body>
