@@ -5,7 +5,7 @@ $icon-size: 4.5rem;
 
 main > h2 {
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: -0.5px;
   text-align: center;
   line-height: 1.05em;
@@ -25,6 +25,13 @@ main > p {
   padding: 0 1rem;
   max-width: $max-width;
   text-align: center;
+
+  &:first-of-type {
+    transform: translateY(-0.75rem);
+  }
+  &:last-of-type {
+    margin-top: 1rem;
+  }
 }
 
 main > ul {
@@ -33,6 +40,7 @@ main > ul {
   flex-direction: column;
   gap: 0.25rem 0.75rem;
   margin: 0;
+  margin-bottom: 5rem;
   padding: 0 1rem;
 
   li {
@@ -126,13 +134,18 @@ main > section {
     font-weight: 600;
     font-size: 1.8rem;
     letter-spacing: 0;
-    line-height: 1.05em;
+    line-height: 0.95em;
+    margin: 0.75rem 0;
   }
   p {
     font-size: 1rem;
     letter-spacing: 0;
+    font-weight: 300;
   }
   @media screen and (min-width: 850px) {
     grid-template-columns: repeat(3, 1fr);
+    article {
+      padding: 2rem;
+    }
   }
 }
