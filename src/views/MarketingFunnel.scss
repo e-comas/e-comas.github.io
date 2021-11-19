@@ -10,8 +10,9 @@ $offset-angle: math.div(7, 12);
 #marketing_funnel {
   flex-direction: column;
   background-color: #7adcc733;
-  padding: 1.5rem;
+  padding: 1.5rem 0.25rem;
   @media screen and (min-width: $max-width) {
+    padding: 1.5rem;
     padding-left: 0;
     padding-right: 0;
   }
@@ -30,12 +31,16 @@ $offset-angle: math.div(7, 12);
     box-shadow: none;
     border: none;
 
+    &::before {
+      display: none;
+    }
+
     @media screen and (min-width: 950px) {
       flex-direction: row;
     }
-
-    &::before {
-      display: none;
+    @media screen and (max-width: 849px) {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 
@@ -87,7 +92,8 @@ $offset-angle: math.div(7, 12);
     list-style: none;
     counter-reset: ads-on-Amazon;
     margin: 0;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
+    padding-right: 0.75rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -110,6 +116,7 @@ $offset-angle: math.div(7, 12);
     }
 
     @media screen and (min-width: $max-width) {
+      padding: 2rem 1rem;
       @supports (aspect-ratio: 1 / 1) {
         display: block;
         padding: 8.5rem 23.25rem;
