@@ -53,6 +53,7 @@ section {
       gap: 0 1rem;
       grid-template-columns: repeat(3, 1fr);
     }
+    tbody,
     tr {
       display: contents;
     }

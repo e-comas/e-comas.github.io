@@ -84,22 +84,24 @@ export default (
               roadmap in three steps follows these steps:
             </p>
             <table cellPadding="0" cellSpacing="0">
-              <tr aria-hidden="true">
-                <td>
-                  <img src="/images/icons/convert.svg" alt="" />
-                </td>
-                <td>
-                  <img src="/images/icons/traffic.svg" alt="" />
-                </td>
-                <td>
-                  <img src="/images/icons/repeat.svg" alt="" />
-                </td>
-              </tr>
-              <tr>
-                <th>Convert</th>
-                <th>Traffic</th>
-                <th>Repeat</th>
-              </tr>
+              <tbody>
+                <tr aria-hidden="true">
+                  <td>
+                    <img src="/images/icons/convert.svg" alt="" />
+                  </td>
+                  <td>
+                    <img src="/images/icons/traffic.svg" alt="" />
+                  </td>
+                  <td>
+                    <img src="/images/icons/repeat.svg" alt="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Convert</th>
+                  <th>Traffic</th>
+                  <th>Repeat</th>
+                </tr>
+              </tbody>
             </table>
             <p>Our process will start with:</p>
             <ol>
