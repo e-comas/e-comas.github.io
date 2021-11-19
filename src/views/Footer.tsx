@@ -36,6 +36,9 @@ export default () => (
         {/* <li>
           <NavLink href="/news.html">Blog</NavLink>
         </li> */}
+        <li>
+          <NavLink href="/privacy.html">Privacy policy</NavLink>
+        </li>
       </ul>
     </nav>
     <ul class="contact-us">

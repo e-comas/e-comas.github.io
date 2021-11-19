@@ -19,6 +19,7 @@ function addGoogleAnalyticsSnippet(id) {
   const inline = document.createElement("script");
   inline.textContent =
     "window.dataLayer=window.dataLayer||[];" +
+    `window["ga-disable-"+${JSON.stringify(id)}]=true;` +
     "function gtag(){dataLayer.push(arguments)}" +
     'gtag("js",new Date);' +
     `gtag("config",${JSON.stringify(id)});`;
