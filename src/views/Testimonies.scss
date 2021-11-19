@@ -19,6 +19,10 @@ div.testimonies {
     padding: 1rem;
   }
 
+  & > .cta {
+    margin: 0 auto;
+  }
+
   // > img {
   //   position: absolute;
   //   max-height: 4.5rem;
@@ -120,9 +124,26 @@ figure.testimonial {
     height: auto;
   }
 
-  & > figcaption > div > .logo {
-    max-width: 75%;
-    margin: 0 auto;
+  & > figcaption {
+    display: grid;
+    gap: 0 1ch;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "portait portait" "quote name" "quote title";
+    margin-bottom: 0.5rem;
+    & > div:first-child {
+      grid-area: portait;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      & > .logo {
+        max-width: 75%;
+      }
+    }
+    & > img {
+      grid-area: quote;
+      align-self: center;
+    }
   }
 
   blockquote {
@@ -138,7 +159,6 @@ figure.testimonial {
   }
 
   em {
-    padding-left: 1ch;
     font-weight: normal;
     font-style: normal;
     font-size: 1rem;
@@ -166,24 +186,24 @@ figure.testimonial {
 
     & > figcaption {
       display: contents;
+      margin-bottom: unset;
 
       & > div:first-child {
         width: 100%;
         height: 100%;
+        grid-area: unset;
         grid-row: span 5;
 
-        display: flex;
-        flex-direction: column;
         gap: 1rem;
+        margin-bottom: unset;
       }
       & > img {
         display: block;
         margin-bottom: 1rem;
+        grid-area: unset;
       }
     }
-    em {
-      padding: 0;
-    }
+
     blockquote {
       padding-block-start: 0.25rem;
       padding-block-end: 2rem;
