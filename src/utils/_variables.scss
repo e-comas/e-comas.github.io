@@ -25,9 +25,13 @@ $animationDuration: 300ms;
 %button {
   @extend %uppercase;
 
+  -webkit-appearance: none;
+  appearance: none;
+
   display: block;
   color: $grey;
   background-color: $green;
+  border: none;
   border-radius: $border-radius;
   padding: 0.75rem 1rem;
   margin: 0;

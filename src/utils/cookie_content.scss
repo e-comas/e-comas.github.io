@@ -1,0 +1,43 @@
+@use "./variables" as *;
+
+dialog#ask-consent {
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  h2 {
+    text-align: center;
+  }
+  form > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  input {
+    @extend %button;
+    cursor: pointer;
+  }
+
+  &.ask-consent {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border-width: initial;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    padding: 1em;
+    background-color: $white;
+    max-width: calc((100% - 6px) - 2em);
+    max-height: calc((100% - 6px) - 2em);
+    overflow: auto;
+    z-index: 99999;
+  }
+}

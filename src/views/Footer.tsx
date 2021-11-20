@@ -10,6 +10,9 @@ import {
 
 import NavLink from "../utils/NavLink.js";
 
+import "runtime:../utils/cookie_content.js";
+import "../utils/cookie_content.scss";
+
 import "./footer.scss";
 
 export default () => (

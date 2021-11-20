@@ -22,7 +22,7 @@ export default (
         of our team to call you, or by sending you emails that are relevant to
         your business.
         <br />
-        Our forms and database software are provided by ActiveCampaign.
+        Our forms and database software are provided by Pardot by Salesforce.
         <br />
         Occasionally we also collect data through LinkedIn, Facebook, Instagram
         and Twitter. For example, when we receive messages enquiring about our
@@ -31,14 +31,14 @@ export default (
         <br />
         From time to time we may send you emails and newsletters with useful
         information about eCommerce. You can opt out of these by clicking the
-        'unsubscribe' button. <br />
-        Cookies on our website also collect small amounts of data about you to
-        make the website work better, and for advertising purposes.
+        'unsubscribe' button.
       </p>
 
       <h2>Cookie policy</h2>
       <p>
-        This website doesn't use cookies by default.
+        This website uses cookies for statistic purposes, only if permission was
+        granted by the user. You can retract or give back your consent regarding
+        cookie usage at any time using the ad-hoc link in the footer.
         <br />
         When clicking on play button to play video, a YouTube page will be
         loaded and may store cookies on your computer. More info on their{" "}
