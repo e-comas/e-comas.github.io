@@ -144,6 +144,13 @@ figure.testimonial {
       grid-area: quote;
       align-self: center;
     }
+    @media screen and(max-width:369px) {
+      grid-template-columns: unset;
+      grid-template-areas: "portait" "name" "title";
+      & > img {
+        display: none;
+      }
+    }
   }
 
   blockquote {
@@ -154,7 +161,6 @@ figure.testimonial {
   strong {
     font-weight: 600;
     font-size: 1.6rem;
-    letter-spacing: 0;
     line-height: 1em;
   }
 
@@ -164,8 +170,16 @@ figure.testimonial {
     font-size: 1rem;
     font-weight: 300;
     color: #99999e;
-    letter-spacing: 0;
     line-height: 1.1em;
+  }
+
+  strong,
+  em {
+    letter-spacing: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   @media screen and (min-width: 800px) {
