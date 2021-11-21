@@ -219,7 +219,10 @@ async function editPage(page, signalIn, signalOut) {
     Array.from(document.querySelectorAll("a.cta[href='#']"), (e) => e.remove())
   );
 
-  if (GA_ID) await page.evaluate(addGoogleAnalyticsSnippet, GA_ID);
+  if (GA_ID) {
+    await page.setOfflineMode(true);
+    await page.evaluate(addGoogleAnalyticsSnippet, GA_ID);
+  }
 }
 
 function isSuperset(set, subset) {
