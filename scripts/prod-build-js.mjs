@@ -1,5 +1,10 @@
+import { writeFile } from "node:fs/promises";
+
 import { rollup } from "rollup";
 import { minify } from "terser";
+
+import { OUTPUT_DIR } from "./prod-config.mjs";
+import createHash from "./prod-hash.mjs";
 
 export default async function buildRuntimeJS(codeSnippets) {
   if (!codeSnippets?.length) return;
@@ -44,5 +49,10 @@ export default async function buildRuntimeJS(codeSnippets) {
     ecma: 2017,
     compress: { unsafe: true },
   });
-  return code;
+
+  const hash = createHash(code);
+  const fileName = `${hash}.js`;
+  await writeFile(new URL(fileName, OUTPUT_DIR), code);
+  console.log("written to disk", fileName);
+  return fileName;
 }

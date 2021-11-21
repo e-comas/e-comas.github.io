@@ -211,7 +211,7 @@ async function editPage(page, signalIn, signalOut) {
     if (!js) return;
     const script = document.createElement("script");
     script.type = "module";
-    script.textContent = js;
+    script.src = js;
     document.body.append(script);
   }, await buildRuntimeJS(jsRuntimeModules));
 

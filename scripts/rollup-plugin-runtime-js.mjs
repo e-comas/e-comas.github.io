@@ -10,9 +10,8 @@ function createScriptElement(js, id) {
   script.type =
     process.env.NODE_ENV === "production" ? "future-module" : "module";
   script.textContent = js;
-  document.head.append(script);
   script.dataset.file = id;
-  return script;
+  return document.head.appendChild(script);
 }
 
 const modulesToTransform = new Set();
