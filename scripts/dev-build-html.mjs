@@ -31,9 +31,7 @@ export default (url) =>
       const BUNDLE_NAME = url.replace(/\.html(\?.*)?$/, ".tsx");
 
       const script = document.createElement("script");
-      script.textContent = `process={env:${JSON.stringify(
-        process.env
-      )}};PRERENDERING=true`;
+      script.textContent = `process={env:${JSON.stringify(process.env)}}`;
       document.head.append(script);
 
       document.head.append(

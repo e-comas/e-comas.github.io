@@ -87,17 +87,14 @@ function showModal(e?: Event) {
   dialog.addEventListener("close", () => dialog.remove(), { once: true });
 }
 
-declare const PRERENDERING: boolean;
-if (typeof PRERENDERING === "undefined") {
-  const li = document.createElement("li");
-  const link = document.createElement("a");
-  link.addEventListener("click", showModal);
-  link.href = "#";
-  link.textContent = "Cookie policy";
-  li.append(link);
-  document.querySelector("footer ul")?.append(li);
+const li = document.createElement("li");
+const link = document.createElement("a");
+link.addEventListener("click", showModal);
+link.href = "#";
+link.textContent = "Cookie policy";
+li.append(link);
+document.querySelector("footer ul")?.append(li);
 
-  if (previousConsent == null) showModal();
-}
+if (previousConsent == null) showModal();
 
 export {};
