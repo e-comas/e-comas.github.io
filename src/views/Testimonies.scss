@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../utils/variables" as *;
 
 div.testimonies {
@@ -98,6 +99,20 @@ div.testimonies {
       figure {
         width: 100%;
       }
+    }
+  }
+  .slider.with-js {
+    @media screen and (min-width: #{math.div($max-width, 3) * 4}) {
+      --margin: calc(((75vw - #{$max-width}) / 2 - 40px));
+      & > figure:first-of-type {
+        margin-left: var(--margin);
+      }
+      & > figure:last-of-type {
+        margin-right: var(--margin);
+      }
+    }
+    @media screen and (min-width: #{$body-max-width}) {
+      --margin: #{math.div($body-max-width * 0.75 - $max-width, 2) - 80px};
     }
   }
 }
