@@ -32,9 +32,7 @@ dialog#ask-consent {
     height: fit-content;
     margin: auto;
     border-width: initial;
-    border-style: solid;
-    border-color: initial;
-    border-image: initial;
+    border: 1px solid currentColor;
     padding: 1em;
     background-color: $white;
     max-width: calc((100% - 6px) - 2em);
