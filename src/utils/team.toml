@@ -23,7 +23,7 @@ bio = """\
   """
 pictureUrl = "/images/team/jerome.png"
 url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
-url.Medium = "https://medium.com/@Amazon_expert"
+# url.Medium = "https://medium.com/@Amazon_expert"
 url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
 
 [COO]

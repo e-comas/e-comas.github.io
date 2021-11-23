@@ -1,5 +1,9 @@
 import { h } from "@aduh95/async-jsx";
 
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
+
 import team from "./utils/team.toml";
 
 import Body from "./views/Body.js";
@@ -11,13 +15,25 @@ import { EComas } from "./views/eWords.js";
 
 import "./our-team.scss";
 
-interface TeamMemberProps {
+const socialMediaIcons = {
+  LinkedIn: faLinkedinIn,
+  YouTube: faYoutube,
+} as {
+  [socialMedium: string]: IconDefinition;
+};
+
+interface SocialTeamMemberProps {
+  url?: {
+    [socialMedium: string]: string;
+  };
+  children?: any[];
+  ref?: any;
+}
+interface TeamMemberProps extends SocialTeamMemberProps {
   Name: string;
   Title: string;
   pictureUrl: string;
   Team?: string;
-  children?: any[];
-  ref?: any;
   priority?: number;
 }
 
@@ -56,13 +72,27 @@ function getTeams(teamMembers: TeamMemberProps[]) {
     .concat(Object.values(teams));
 }
 
-function TeamMember({ Name, Title, pictureUrl }: TeamMemberProps) {
+function SocialURLs({ url }: SocialTeamMemberProps) {
+  if (url == null) return null;
+  return (
+    <div class="social">
+      {Object.entries(url).map(([socialMedium, url]) => (
+        <a href={url} target="_blank" rel="noopener">
+          <FontAwesomeIcon icon={socialMediaIcons[socialMedium]} />
+        </a>
+      ))}
+    </div>
+  );
+}
+
+function TeamMember({ Name, Title, pictureUrl, url }: TeamMemberProps) {
   return (
     <figure>
       <Picture src={pictureUrl} alt={"Picture of " + Name} />
       <figcaption>
         <strong>{Name}</strong>
         <em>{Title}</em>
+        <SocialURLs url={url} />
       </figcaption>
     </figure>
   );
@@ -92,6 +122,7 @@ export default (
           <h3>{team.CEO.Name}</h3>
           <h4>{team.CEO.Title}</h4>
           <p>{team.CEO.bio}</p>
+          <SocialURLs url={team.CEO.url} />
         </figcaption>
       </figure>
       <figure>
@@ -103,6 +134,7 @@ export default (
           <h3>{team.COO.Name}</h3>
           <h4>{team.COO.Title}</h4>
           <p>{team.COO.bio}</p>
+          <SocialURLs url={team.COO.url} />
         </figcaption>
       </figure>
       {getTeams(team.team_member).map((team) => (
