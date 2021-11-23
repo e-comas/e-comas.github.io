@@ -1,11 +1,13 @@
 @use "./variables" as *;
 
 dialog#ask-consent {
+  color: inherit;
   &::backdrop {
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   h2 {
     text-align: center;
+    font-weight: 600;
   }
   form > div {
     display: flex;
