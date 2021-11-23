@@ -54,4 +54,17 @@
       z-index: 1;
     }
   }
+
+  .preview-icon {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    height: auto;
+    z-index: -1;
+  }
+}
+.video-playing .preview-icon {
+  display: none;
 }

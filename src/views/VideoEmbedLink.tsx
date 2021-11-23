@@ -7,6 +7,7 @@ import "runtime:./video-embed-runtime.js";
 interface VideoEmbedLinkProps {
   tagName?: string;
   previewImage: string;
+  previewIcon?: string;
   videoId: string;
   children?: any[];
   ref?: any;
@@ -27,5 +28,13 @@ export default (props: VideoEmbedLinkProps) => (
     >
       Play video on YouTube
     </a>
+    {props.previewIcon != null ? (
+      <img
+        src={props.previewIcon}
+        alt=""
+        aria-hidden="true"
+        class="preview-icon"
+      />
+    ) : null}
   </ElementWithBackgroundImage>
 );

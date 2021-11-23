@@ -22,7 +22,8 @@ export default (
 
       <VideoEmbedLink
         tagName="div"
-        previewImage="/images/Banner2 Video 3x .png"
+        previewImage="/images/SalsifyPresentationVideoThumbnail.png"
+        previewIcon="/images/partners/salsify.svg"
         videoId="cnA-eu3aKpc"
       />
 
