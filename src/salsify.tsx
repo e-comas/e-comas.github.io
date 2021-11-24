@@ -3,10 +3,7 @@ import { h } from "@aduh95/async-jsx";
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
-import Picture from "./utils/Picture.js";
-import { ECommerce } from "./views/eWords.js";
 import VideoEmbedLink from "./views/VideoEmbedLink.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
 import "./salsify.scss";

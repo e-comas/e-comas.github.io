@@ -19,6 +19,11 @@ $min-width: 225px;
 // $min-breakpoint: $body-padding * 2 + $min-width * 5 + $_1rem * 4;
 // $max-breakpoint: $body-padding * 2 + $max-width * 5 + $_1rem * 4;
 
+main > .video-link > .background {
+  max-width: $max-width;
+  left: 50%;
+  transform: translateX(-50%);
+}
 main > .video-link,
 main > .video-playing {
   height: 90vh;
