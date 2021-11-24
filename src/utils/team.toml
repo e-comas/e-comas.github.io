@@ -61,6 +61,7 @@ Title = "Salsify Project Manager"
 Team = "Consulting"
 quote = "\"Whithout challenge, There Isn't Change\""
 pictureUrl = "/images/team/aguene.png"
+url.LinkedIn = "https://www.linkedin.com/in/agu%C3%A8ne-sambou/"
 
 
 [[team_member]]
@@ -93,7 +94,7 @@ url.LinkedIn = "www.linkedin.com/in/nagapooja-ramesh-a77850136"
 
 [[team_member]]
 Name = "Sarra Maatallah"
-Title = "Senior Account Management & Team lead"
+Title = "Senior Account Manager & Team lead"
 Team = "Account management"
 priority = 2
 quote = "'I always believe that the work you deliever is an extension of yourself. Care about the way you want your work performance to be look at the same way you care about your own image. Quality, passion and care should  be what define you. This is my own recipe to success.''"
@@ -151,7 +152,7 @@ url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
 
 [[team_member]]
 Name = "Carlos De Almeida"
-Title = "Senior Account Management & Team lead"
+Title = "Senior Account Manager & Team lead"
 Team = "Account management"
 priority = 1
 quote = "\"Care is the key of any successful business partnership\""
@@ -218,7 +219,7 @@ url.LinkedIn = "https://www.linkedin.com/in/yann-randrianasolo-aa3090198/"
 
 [[team_member]]
 Name = "Seval Andıç"
-Title = "Senior Account Management & Team lead"
+Title = "Senior Account Manager & Team lead"
 Team = "Account management"
 priority = 1
 quote = "The ability to adapt is the main ingredient behind succesful growth recipes."
@@ -306,6 +307,7 @@ Title = "Account Support"
 Team = "Retail"
 quote = "The key to success is to concentrate on GOALS, not OBSTACLES."
 pictureUrl = "/images/team/Arjun.png"
+url.LinkedIn = "https://www.linkedin.com/in/arjun-narayan-881166196/"
 
 
 [[team_member]]
@@ -419,3 +421,4 @@ Title = "Office Manager"
 Team = "Administration team"
 quote = "\"Persistence is the path to success\" C Chaplin"
 pictureUrl = "/images/team/Misa.png"
+url.LinkedIn = "https://www.linkedin.com/in/misa-manass%C3%A9-3994a4225/"
