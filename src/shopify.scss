@@ -60,6 +60,9 @@ section {
   }
 }
 
+.slider-wrapper article {
+  margin-top: 2rem;
+}
 @media screen and (min-width: 800px) {
   .slider-wrapper {
     position: relative;
@@ -67,6 +70,10 @@ section {
     .with-js {
       width: 75%;
       margin: 0 auto;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
       button {
         display: block;
 
@@ -96,6 +103,7 @@ section {
       }
       article {
         width: 100%;
+        margin-bottom: 2rem;
       }
     }
   }

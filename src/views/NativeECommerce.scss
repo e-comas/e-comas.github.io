@@ -17,10 +17,11 @@
   .illustration {
     display: none;
 
-    @media screen and (min-width: #{$max-width + 65px}) {
+    @media screen and (min-width: 999px) {
       display: grid;
-      grid-template-columns: auto repeat(3, #{math.div($max-width, 3)}) auto;
+      grid-template-columns: auto repeat(3, 300px) auto;
       gap: 0;
+      margin-top: -100px;
       &::before,
       &::after {
         content: "";
@@ -29,6 +30,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: -75px;
+        margin-right: -75px;
 
         --primary-color: #5db59c;
         --secondary-color: #5fc4ab;
@@ -51,6 +54,9 @@
           margin: unset;
           font-size: 2rem;
           color: #1877f2;
+        }
+        .big {
+          display: none;
         }
       }
 
@@ -82,6 +88,17 @@
           margin-left: -1rem;
           background-color: $white;
         }
+      }
+    }
+    @media screen and (min-width: #{$max-width + $body-padding*2 + 40px}) {
+      grid-template-columns: auto repeat(3, 400px) auto;
+      margin-top: 0;
+      & > div {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      svg .big {
+        display: unset;
       }
     }
   }
