@@ -35,7 +35,7 @@ export default (
               return rates.
             </p>
             <a
-              href="https://e-comas.com/press-release/VOICEOFCUSTOMER_QUOTE%20(2).pdf"
+              href="https://go.pardot.com/l/885733/2020-12-18/7pxy/885733/1608299447maytBPCN/VOICEOFCUSTOMER_QUOTE__2_.pdf"
               className="cta"
             >
               Read the case study
