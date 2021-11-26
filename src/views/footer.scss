@@ -64,15 +64,6 @@ footer {
       text-align: center;
       display: block;
     }
-
-    &::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      height: -moz-available;
-      height: -webkit-fill-available;
-      height: fill-available;
-    }
   }
 
   .copyright-notice {
@@ -125,6 +116,14 @@ footer {
     .social {
       grid-column: unset;
       align-self: unset;
+    }
+    .social::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      height: -moz-available;
+      height: -webkit-fill-available;
+      height: fill-available;
     }
     nav + nav {
       margin-left: unset;
