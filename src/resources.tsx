@@ -24,7 +24,7 @@ export default (
         </p>
       </ElementWithIcon>
 
-      <section>
+      {/* <section>
         <figure>
           <figcaption>
             <h2>Read us</h2>
@@ -38,7 +38,7 @@ export default (
           </figcaption>
           <Picture src="/images/IMG_5892.jpg" alt="" />
         </figure>
-      </section>
+      </section> */}
       <section>
         <figure>
           <Picture src="/images/IMG_5892.jpg" alt="" />
