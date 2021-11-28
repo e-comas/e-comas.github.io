@@ -5,7 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import Testimonies from "./views/Testimonies.js";
 import Picture from "./utils/Picture.js";
-import { ECommerce } from "./views/eWords.js";
+import { EComas, ECommerce } from "./views/eWords.js";
 import ElementWithIcon from "./utils/ElementWithIcon.js";
 import Footer from "./views/Footer.js";
 
@@ -45,6 +45,13 @@ export default (
         <p>
           Put simply, we help brands grow faster on <ECommerce /> - globally,
           fast, across multiple online channels!
+        </p>
+        {/* <p style={"display:flex;justify-content:center" as any}> */}
+        <p>
+          <br />
+          <a href="/our-team.html" class="cta">
+            The <EComas /> team
+          </a>
         </p>
       </ElementWithIcon>
       <section>
