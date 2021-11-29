@@ -110,10 +110,5 @@ section {
 }
 
 main > p {
-  font-weight: 400;
-  font-size: 1.8rem;
-  letter-spacing: -0.45px;
-  text-align: center;
-  line-height: 2rem;
-  padding: 0 1rem;
+  @extend %p-after-title;
 }

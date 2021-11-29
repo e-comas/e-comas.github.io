@@ -3,14 +3,7 @@
 @use "./utils/title" as *;
 
 main > p {
-  font-weight: 300;
-  font-size: 1.3rem;
-  line-height: 1.5em;
-  letter-spacing: 0;
-  text-align: center;
-  padding: 0 1rem;
-  max-width: $max-width;
-  margin: 0 auto 3rem;
+  @extend %p-after-title;
 }
 
 main > figure {

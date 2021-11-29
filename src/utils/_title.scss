@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 main > h2 {
   font-size: 2rem;
   letter-spacing: -0.5px;
@@ -8,4 +10,14 @@ main > h2 {
   margin: -0.3rem auto;
   max-width: 27rem;
   padding: 0 1ch;
+}
+%p-after-title {
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 0 1rem;
+  max-width: $max-width;
+  margin: 0 auto 3rem;
 }
