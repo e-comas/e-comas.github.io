@@ -1,0 +1,35 @@
+@use "./utils/variables" as *;
+@use "./utils/title" as *;
+
+main > p {
+  @extend %p-after-title;
+}
+
+section h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  line-height: 2rem;
+}
+section p {
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: #{$max-width}) {
+  main {
+    display: grid;
+    gap: inherit;
+    grid-template-columns: 1fr 1fr 1fr;
+    & > :not(section) {
+      grid-column: span 3;
+    }
+
+    section {
+      box-shadow: 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.08);
+      border-radius: 0.5rem;
+    }
+  }
+}

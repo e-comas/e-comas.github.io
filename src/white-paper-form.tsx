@@ -3,24 +3,21 @@ import { h } from "@aduh95/async-jsx";
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
-import { ECommerce } from "./views/eWords.js";
+import { EBusiness, ECommerce } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
 
-import "./contact.scss";
+import "./white-paper-form.scss";
 
 export default (
   <Body title="White paper">
     <Header />
     <Breadcrumbs />
     <main>
-      <ElementWithIcon src="/images/chess.svg" tagName="section">
-        <h2>White paper</h2>
-        <p>
-          We research hot topics in the <ECommerce /> industry and report our
-          findings in our in-depth white papers. Learn more from us here!
-        </p>
-      </ElementWithIcon>
+      <h2>White paper</h2>
+      <p>
+        We research hot topics in the <ECommerce /> industry and report our
+        findings in our in-depth white papers. Learn more from us here!
+      </p>
 
       <section>
         <figure>
@@ -69,16 +66,18 @@ export default (
       <section>
         <figure>
           <figcaption>
-            <h3>About the eBusiness Institute</h3>
+            <h3>
+              About the <EBusiness /> Institute
+            </h3>
             <p>
-              eBusiness Institute offers outstanding digital consultancy and
+              <EBusiness /> Institute offers outstanding digital consultancy and
               creative agency services. They work with medium-to-large
               multinational organisations to drive their digital transformations
               from strategy to execution. They also specialise in delivering
               truly stand-out, world-class content and design solutions on
-              behalf of brands. In all, eBusiness Institute provides business
-              leaders with the know-how, tools and creativity they need to
-              enable long-term <ECommerce /> and offline sales success.
+              behalf of brands. In all, <EBusiness /> Institute provides
+              business leaders with the know-how, tools and creativity they need
+              to enable long-term <ECommerce /> and offline sales success.
             </p>
             <a href="https://utm.io/uoyr" className="cta">
               Learn more
