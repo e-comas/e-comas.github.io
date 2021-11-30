@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./title" as *;
 
 dialog#ask-consent {
   color: inherit;
@@ -8,6 +9,18 @@ dialog#ask-consent {
   h2 {
     text-align: center;
     font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 1ch;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 1rem;
   }
   form > div {
     display: flex;
