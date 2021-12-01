@@ -1,13 +1,4 @@
-// import createNumberFormatter from "./createNumberFormatter.js";
-// Because I can't be bothered fixing the rollup plugin, here's the inlining of the above import:
-function createNumberFormatter(number: number, currency?: string) {
-  return new Intl.NumberFormat("fr", {
-    signDisplay: "always",
-    maximumFractionDigits: 0,
-    minimumIntegerDigits: Math.floor(Math.log10(number)) + 1,
-    ...(currency ? { style: "currency", currency } : {}),
-  });
-}
+import createNumberFormatter from "./createNumberFormatter.js";
 
 const cache = new WeakMap();
 

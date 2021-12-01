@@ -70,7 +70,7 @@ async function editPage(page, signalIn, signalOut) {
 
   const scriptNodes = await page.$$("script[data-file]");
   for (const elem of scriptNodes) {
-    const js = await elem.evaluate((elem) => elem.textContent);
+    const js = await elem.evaluate((elem) => elem.dataset.file);
     jsRuntimeModules.push(js);
     await elem.evaluate((elem) => elem.remove());
     await elem.dispose();

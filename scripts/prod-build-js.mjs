@@ -24,14 +24,11 @@ export default async function buildRuntimeJS(codeSnippets) {
             return decodeURIComponent(id.slice("data:text/javascript,".length));
           }
           if (id === "runtimeModules") {
+            if (codeSnippets.length === 0) return "";
             return (
               `import` +
               codeSnippets
-                .map((code) =>
-                  JSON.stringify(
-                    "data:text/javascript," + encodeURIComponent(code)
-                  )
-                )
+                .map((jsModulePath) => JSON.stringify(encodeURI(jsModulePath)))
                 .join(";import")
             );
           }
