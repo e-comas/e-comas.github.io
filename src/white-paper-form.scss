@@ -22,7 +22,7 @@ section p {
   main {
     display: grid;
     gap: inherit;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     & > :not(section) {
       grid-column: span 3;
     }
