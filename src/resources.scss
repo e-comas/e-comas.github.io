@@ -12,11 +12,13 @@ main > p {
 main > section {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   align-items: center;
   max-width: $max-width;
   padding: 0 1rem;
   & > p {
     @extend %p-after-title;
+    margin-bottom: 0;
   }
   &.background-wrapper {
     padding: 1rem;
@@ -38,13 +40,44 @@ main > section {
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 3rem;
-  height: 20rem;
   width: 100%;
   overflow-y: hidden;
   overflow-x: scroll;
 
-  &.js-auto-slide > button {
-    display: none;
+  &.js-auto-slide {
+    width: 75%;
+    margin: 0 auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    button {
+      display: block;
+
+      position: absolute;
+      top: 50%;
+      // transform: translateX(-50px);
+      left: 12.5%;
+
+      -webkit-appearance: none;
+      appearance: none;
+      background: none;
+      border-radius: 0;
+      cursor: pointer;
+
+      height: 1rem;
+      width: 1rem;
+      border: 4px none $green;
+      border-top-style: solid;
+      border-left-style: solid;
+      transform: translateX(-100%) rotate(-0.125turn);
+
+      &:last-child {
+        right: 12.5%;
+        left: unset;
+        transform: translateX(100%) rotate(0.375turn);
+      }
+    }
   }
 
   &.loading::before {
@@ -59,16 +92,19 @@ main > section {
 
 #webinars .dynamic-list {
   @extend %dynamic-list;
+  height: 5rem;
 
   article {
     display: flex;
     aspect-ratio: 16 / 9;
     padding: 0;
+    height: 100%;
   }
 }
 
 #podcast .dynamic-list {
   @extend %dynamic-list;
+  height: 20rem;
 
   article {
     display: flex;
@@ -76,7 +112,7 @@ main > section {
     gap: 0.5rem;
     padding: 0.5rem;
     width: 20rem;
-    height: 20rem;
+    height: 100%;
     overflow: hidden;
     flex-shrink: 0;
     background-color: $green;
@@ -114,6 +150,18 @@ main > section {
     letter-spacing: 0;
     line-height: 2rem;
     flex-shrink: 0;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: 0.25em solid transparent;
+      border-left-color: currentColor;
+      margin-left: 0.5ch;
+      transform: scaleX(150%);
+      transform-origin: left;
+    }
   }
   a,
   a:hover,

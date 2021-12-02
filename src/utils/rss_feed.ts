@@ -15,9 +15,13 @@ export default function fetchRSSFeed(
   if (element == null)
     return Promise.reject(new Error("Cannot find element on the page"));
 
+  const feedContainerWrapper = document.createElement("div");
   const feedContainer = document.createElement("div");
   feedContainer.classList.add("dynamic-list", "loading");
-  element!.lastElementChild!.before(feedContainer);
+  feedContainerWrapper.style.position = "relative";
+  feedContainerWrapper.style.width = "100%";
+  feedContainerWrapper.append(feedContainer);
+  element!.lastElementChild!.before(feedContainerWrapper);
 
   return fetch(url)
     .then((response) =>
