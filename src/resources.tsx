@@ -6,6 +6,8 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import { EComas, ECommerce } from "./views/eWords.js";
 
+import "./views/VideoEmbedLink.scss";
+import "runtime:./utils/youtube_feed.js";
 import "runtime:./utils/podcast_feed.js";
 import "./resources.scss";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
@@ -84,7 +86,7 @@ export default (
         <iframe
           src="https://go.pardot.com/l/885733/2020-09-25/2wsd"
           width="100%"
-          height="100"
+          height="294"
         />
       </section>
     </main>

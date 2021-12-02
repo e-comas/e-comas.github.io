@@ -1,3 +1,5 @@
+const parser = new DOMParser();
+
 interface PodcastItem {
   title: string;
   description: string;
@@ -10,7 +12,9 @@ function createCard(item: PodcastItem) {
   title.textContent = item.title;
 
   const description = document.createElement("p");
-  description.textContent = item.description;
+  const desc = parser.parseFromString(item.description, "text/html");
+  description.textContent =
+    desc.body.firstElementChild?.nextElementSibling?.textContent ?? "";
 
   const playLink = document.createElement("a");
   playLink.href = item.link;
@@ -32,10 +36,7 @@ if (podcastWrapper != null) {
       response.ok ? response.text() : Promise.reject(response.status)
     )
     .then(async (xmlString) => {
-      const document = new DOMParser().parseFromString(
-        xmlString,
-        "application/xml"
-      );
+      const document = parser.parseFromString(xmlString, "application/xml");
       const podcastCards = document.createDocumentFragment();
       for (const item of document.querySelectorAll("channel>item")) {
         // TODO
