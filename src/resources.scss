@@ -43,6 +43,10 @@ main > section {
   overflow-y: hidden;
   overflow-x: scroll;
 
+  &.js-auto-slide > button {
+    display: none;
+  }
+
   &.loading::before {
     content: "Loading…";
   }

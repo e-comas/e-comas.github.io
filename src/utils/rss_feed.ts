@@ -12,28 +12,29 @@ export default function fetchRSSFeed(
   selector: string,
   mapFunction: MapFunction
 ) {
-  if (element != null) {
-    const podcastContainer = document.createElement("div");
-    podcastContainer.classList.add("dynamic-list", "loading");
-    element!.lastElementChild!.before(podcastContainer);
+  if (element == null)
+    return Promise.reject(new Error("Cannot find element on the page"));
 
-    fetch(url)
-      .then((response) =>
-        response.ok ? response.text() : Promise.reject(response)
-      )
-      .then(async (xmlString) => {
-        const document = parser.parseFromString(xmlString, "application/xml");
-        const fragment = document.createDocumentFragment();
-        for (const item of document.querySelectorAll(selector)) {
-          mapFunction(item, fragment, parser);
-        }
-        podcastContainer.append(fragment);
-        podcastContainer.classList.remove("loading");
-      })
-      .catch((cause) => {
-        console.warn(cause);
-        console.error(new Error("Failed to load RSS feed", { cause }));
-        podcastContainer.remove();
-      });
-  }
+  const feedContainer = document.createElement("div");
+  feedContainer.classList.add("dynamic-list", "loading");
+  element!.lastElementChild!.before(feedContainer);
+
+  return fetch(url)
+    .then((response) =>
+      response.ok ? response.text() : Promise.reject(response)
+    )
+    .then(async (xmlString) => {
+      const document = parser.parseFromString(xmlString, "application/xml");
+      const fragment = document.createDocumentFragment();
+      for (const item of document.querySelectorAll(selector)) {
+        mapFunction(item, fragment, parser);
+      }
+      feedContainer.append(fragment);
+      feedContainer.classList.remove("loading");
+      return feedContainer;
+    })
+    .catch((cause) => {
+      feedContainer.remove();
+      return Promise.reject(new Error("Failed to load RSS feed", { cause }));
+    });
 }

@@ -1,5 +1,6 @@
 import { clickHandler } from "./yt-embeder.js";
 import fetchRSSFeed from "./rss_feed.js";
+import autoScroll from "./auto-scroll.js";
 
 interface YouTubeThumbnail {
   url: string;
@@ -41,13 +42,13 @@ fetchRSSFeed(
     "https://www.youtube.com/feeds/videos.xml?playlist_id=PLIISXNQzZ8ZrvjOjGsK9iJykSn_x6xO3k"
   )}`,
   "feed>entry",
-  (item, podcastCards) => {
+  (item, parent) => {
     const thumbnail = item
       .getElementsByTagNameNS("http://search.yahoo.com/mrss/", "group")
       .item(0)!
       .getElementsByTagNameNS("http://search.yahoo.com/mrss/", "thumbnail")
       .item(0)!;
-    podcastCards.append(
+    parent.append(
       createCard({
         title: item.querySelector("title")!.textContent!,
         videoId: item
@@ -64,6 +65,6 @@ fetchRSSFeed(
       })
     );
   }
-);
+).then((webinarContainer) => autoScroll(webinarContainer, 4000), console.warn);
 
 export {};

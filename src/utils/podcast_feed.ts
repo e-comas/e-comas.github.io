@@ -1,4 +1,5 @@
 import fetchRSSFeed from "./rss_feed.js";
+import autoScroll from "./auto-scroll.js";
 
 interface PodcastItem {
   title: string;
@@ -39,6 +40,6 @@ fetchRSSFeed(
         parser
       )
     )
-);
+).then((podcastContainer) => autoScroll(podcastContainer, 4000), console.warn);
 
 export {};
