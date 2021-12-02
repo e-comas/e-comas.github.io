@@ -75,7 +75,11 @@ name = "Resources"
 url = "/resources.html"
 
 [[root.children.children]]
-name = "Webinar"
+name = "Podcast"
+url = "/podcast.html"
+
+[[root.children.children]]
+name = "Webinars"
 url = "/webinar.html"
 
 [[root.children.children]]

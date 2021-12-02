@@ -43,7 +43,6 @@ export default (
           the <ECommerce /> world about how brands can improve and grow. See our
           next events here!
         </p>
-        {/* TODO: Load videos somehow */}
         <a href="/webinars.html" className="cta">
           Check out our webinars
         </a>
@@ -56,8 +55,7 @@ export default (
           streaming service! Listen now to find out how to grow on Amazon and
           other <ECommerce /> platforms.
         </p>
-        {/* TODO: Load podcasts somehow */}
-        <a href="/podcasts.html" className="cta">
+        <a href="/podcast.html" className="cta">
           Listen to our podcast
         </a>
       </section>
