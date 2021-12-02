@@ -1,6 +1,7 @@
 import { writeFile } from "node:fs/promises";
 
 import { rollup } from "rollup";
+import surcase from "@rollup/plugin-sucrase";
 import { minify } from "terser";
 
 import { OUTPUT_DIR } from "./prod-config.mjs";
@@ -11,6 +12,12 @@ export default async function buildRuntimeJS(codeSnippets) {
   const bundle = await rollup({
     input: "runtimeModules",
     plugins: [
+      surcase({
+        transforms: ["typescript"],
+        disableESTransforms: true,
+        include: ["**.ts"],
+        production: true,
+      }),
       {
         name: "build",
         resolveId(id) {
