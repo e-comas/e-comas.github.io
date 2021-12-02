@@ -31,6 +31,7 @@ function createCard(item: YouTubeVideo) {
   thumbnail.className = "background";
   thumbnail.width = item.thumbnail.width;
   thumbnail.height = item.thumbnail.height;
+  thumbnail.setAttribute("loading", "lazy");
 
   box.append(thumbnail, playLink);
   return box;
