@@ -1,11 +1,11 @@
-const parser = new DOMParser();
+import fetchRSSFeed from "./rss_feed.js";
 
 interface PodcastItem {
   title: string;
   description: string;
   link: string;
 }
-function createCard(item: PodcastItem) {
+function createCard(item: PodcastItem, parser: DOMParser) {
   const box = document.createElement("article");
 
   const title = document.createElement("h4");
@@ -24,36 +24,21 @@ function createCard(item: PodcastItem) {
   return box;
 }
 
-const podcastWrapper = document.getElementById("podcast");
-
-if (podcastWrapper != null) {
-  const podcastContainer = document.createElement("div");
-  podcastContainer.classList.add("dynamic-list", "loading");
-  podcastWrapper!.lastElementChild!.before(podcastContainer);
-
-  fetch("https://anchor.fm/s/4ce11bac/podcast/rss")
-    .then((response) =>
-      response.ok ? response.text() : Promise.reject(response.status)
+fetchRSSFeed(
+  document.getElementById("podcast"),
+  "https://anchor.fm/s/4ce11bac/podcast/rss",
+  "channel>item",
+  (item, podcastCards, parser) =>
+    podcastCards.append(
+      createCard(
+        {
+          title: item.querySelector("title")!.textContent!,
+          description: item.querySelector("description")!.textContent!,
+          link: item.querySelector("link")!.textContent!,
+        },
+        parser
+      )
     )
-    .then(async (xmlString) => {
-      const document = parser.parseFromString(xmlString, "application/xml");
-      const podcastCards = document.createDocumentFragment();
-      for (const item of document.querySelectorAll("channel>item")) {
-        // TODO
-        podcastCards.append(
-          createCard({
-            title: item.querySelector("title")!.textContent!,
-            description: item.querySelector("description")!.textContent!,
-            link: item.querySelector("link")!.textContent!,
-          })
-        );
-      }
-      podcastContainer.append(podcastCards);
-      podcastContainer.classList.remove("loading");
-    })
-    .catch((cause) => {
-      console.log(new Error("Failed to load podcast feed", { cause }));
-    });
-}
+);
 
 export {};
