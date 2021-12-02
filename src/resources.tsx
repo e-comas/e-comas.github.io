@@ -43,7 +43,7 @@ export default (
           the <ECommerce /> world about how brands can improve and grow. See our
           next events here!
         </p>
-        <a href="/webinars.html" className="cta">
+        <a href="/webinar.html" className="cta">
           Check out our webinars
         </a>
       </section>
