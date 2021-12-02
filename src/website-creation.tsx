@@ -8,7 +8,7 @@ import { ECommerce, EStore } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
 
 import "./shopify.scss";
-import "runtime:./utils/auto-scroll.js";
+import "runtime:./utils/auto-scroll-data-delay.js";
 
 export default (
   <Body title="Website creation">

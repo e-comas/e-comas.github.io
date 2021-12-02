@@ -62,7 +62,7 @@ div.testimonies {
       padding: 0;
     }
 
-    .slider.with-js {
+    .slider.js-auto-slide {
       width: 75%;
       margin: 0 auto;
       scrollbar-width: none;
@@ -101,7 +101,7 @@ div.testimonies {
       }
     }
   }
-  .slider.with-js {
+  .slider.js-auto-slide {
     @media screen and (min-width: #{math.div($max-width, 3) * 4}) {
       --margin: calc(((75vw - #{$max-width}) / 2 - 40px));
       & > figure:first-of-type {

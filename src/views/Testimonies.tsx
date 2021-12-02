@@ -4,7 +4,7 @@ import testimonies from "../utils/testimonies.toml";
 
 import Picture from "../utils/Picture.js";
 
-import "runtime:../utils/auto-scroll.js";
+import "runtime:../utils/auto-scroll-data-delay.js";
 import "./Testimonies.scss";
 
 interface TestimoniesProps {

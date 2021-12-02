@@ -8,11 +8,10 @@ const observer = new IntersectionObserver(
   { threshold: [1] }
 );
 
-function autoScroll(elem: Element) {
-  const delay = Number((elem as HTMLElement).dataset.autoSlideDelay);
+function autoScroll(elem: Element, delay: number) {
   let currentFocused: Element | null;
 
-  elem.classList.add("with-js");
+  elem.classList.add("js-auto-slide");
   const previousButton = document.createElement("button");
   previousButton.type = "button";
   previousButton.setAttribute("aria-label", "Slide to previous item");
@@ -71,8 +70,8 @@ function autoScroll(elem: Element) {
   };
 }
 
-for (const elem of document.querySelectorAll("[data-auto-slide-delay]")) {
-  cache.set(elem, autoScroll(elem));
+export default function addAutoScroll(elem: Element, delay: number) {
+  cache.set(elem, autoScroll(elem, delay));
 }
 
 export {};
