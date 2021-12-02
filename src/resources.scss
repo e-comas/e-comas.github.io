@@ -92,13 +92,14 @@ main > section {
 
 #webinars .dynamic-list {
   @extend %dynamic-list;
-  height: 5rem;
+  height: 9rem;
 
   article {
     display: flex;
     aspect-ratio: 16 / 9;
     padding: 0;
     height: 100%;
+    min-height: 0;
   }
 }
 
