@@ -38,7 +38,7 @@ export default (
         </a>
       </section> */}
 
-      <section id="webinars">
+      <section id="webinars" class="webinars">
         <h3>Webinars</h3>
         <p>
           We run our own popular webinar programme, talking to our friends in

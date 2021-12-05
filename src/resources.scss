@@ -44,40 +44,8 @@ main > section {
   overflow-y: hidden;
   overflow-x: scroll;
 
-  &.js-auto-slide {
-    width: 75%;
-    margin: 0 auto;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    button {
-      display: block;
-
-      position: absolute;
-      top: 50%;
-      // transform: translateX(-50px);
-      left: 12.5%;
-
-      -webkit-appearance: none;
-      appearance: none;
-      background: none;
-      border-radius: 0;
-      cursor: pointer;
-
-      height: 1rem;
-      width: 1rem;
-      border: 4px none $green;
-      border-top-style: solid;
-      border-left-style: solid;
-      transform: translateX(-100%) rotate(-0.125turn);
-
-      &:last-child {
-        right: 12.5%;
-        left: unset;
-        transform: translateX(100%) rotate(0.375turn);
-      }
-    }
+  &.js-auto-slide button {
+    display: none;
   }
 
   &.loading::before {
@@ -87,12 +55,47 @@ main > section {
   @media screen and (min-width: 600px) {
     flex-direction: row;
     gap: 4rem;
+
+    &.js-auto-slide {
+      width: 75%;
+      margin: 0 auto;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      button {
+        display: block;
+
+        position: absolute;
+        top: 50%;
+        // transform: translateX(-50px);
+        left: 12.5%;
+
+        -webkit-appearance: none;
+        appearance: none;
+        background: none;
+        border-radius: 0;
+        cursor: pointer;
+
+        height: 1rem;
+        width: 1rem;
+        border: 4px none $green;
+        border-top-style: solid;
+        border-left-style: solid;
+        transform: translateX(-100%) rotate(-0.125turn);
+
+        &:last-child {
+          right: 12.5%;
+          left: unset;
+          transform: translateX(100%) rotate(0.375turn);
+        }
+      }
+    }
   }
 }
 
-#webinars .dynamic-list {
+.webinars .dynamic-list {
   @extend %dynamic-list;
-  height: 9rem;
 
   article {
     display: flex;
@@ -100,6 +103,18 @@ main > section {
     padding: 0;
     height: 100%;
     min-height: 0;
+  }
+
+  @media screen and (min-width: 600px) {
+    height: 9rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  #webinars .dynamic-list {
+    height: 9rem;
+    article {
+      flex-shrink: 0;
+    }
   }
 }
 
@@ -111,8 +126,8 @@ main > section {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 0.5rem;
-    width: 20rem;
+    padding: 1rem;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     flex-shrink: 0;
@@ -121,6 +136,7 @@ main > section {
     border-radius: 0.5rem;
     color: $white;
     @media screen and (min-width: 600px) {
+      width: 20rem;
       padding: 2.5rem;
     }
   }
@@ -130,12 +146,14 @@ main > section {
     font-size: 1.7rem;
     letter-spacing: 0;
     line-height: 2rem;
-    max-height: 10rem;
     flex-shrink: 0;
     flex-grow: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     text-transform: capitalize;
+    @media screen and(min-width: 600px) {
+      max-height: 10rem;
+    }
   }
   p {
     font-size: 1rem;
