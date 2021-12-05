@@ -1,8 +1,7 @@
 import { h } from "@aduh95/async-jsx";
 
-import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
-import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import TeamMember, { SocialURLs } from "./views/TeamMember.js";
+import type { Team, TeamMemberProps } from "./views/TeamMember.js";
 
 import team from "./utils/team.toml";
 
@@ -14,33 +13,6 @@ import Footer from "./views/Footer.js";
 import { EComas } from "./views/eWords.js";
 
 import "./our-team.scss";
-
-const socialMediaIcons = {
-  LinkedIn: faLinkedinIn,
-  YouTube: faYoutube,
-} as {
-  [socialMedium: string]: IconDefinition;
-};
-
-interface SocialTeamMemberProps {
-  url?: {
-    [socialMedium: string]: string;
-  };
-  children?: any[];
-  ref?: any;
-}
-interface TeamMemberProps extends SocialTeamMemberProps {
-  Name: string;
-  Title: string;
-  pictureUrl: string;
-  Team?: string;
-  priority?: number;
-}
-
-interface Team {
-  name: string;
-  members: TeamMemberProps[];
-}
 
 function sortTM(a: TeamMemberProps, b: TeamMemberProps) {
   if (a.priority != null && b.priority == null) return -1;
@@ -70,32 +42,6 @@ function getTeams(teamMembers: TeamMemberProps[]) {
       return r;
     })
     .concat(Object.values(teams));
-}
-
-function SocialURLs({ url }: SocialTeamMemberProps) {
-  if (url == null) return null;
-  return (
-    <div class="social">
-      {Object.entries(url).map(([socialMedium, url]) => (
-        <a href={url} target="_blank" rel="noopener">
-          <FontAwesomeIcon icon={socialMediaIcons[socialMedium]} />
-        </a>
-      ))}
-    </div>
-  );
-}
-
-function TeamMember({ Name, Title, pictureUrl, url }: TeamMemberProps) {
-  return (
-    <figure>
-      <Picture src={pictureUrl} alt={"Picture of " + Name} />
-      <figcaption>
-        <strong>{Name}</strong>
-        <em>{Title}</em>
-        <SocialURLs url={url} />
-      </figcaption>
-    </figure>
-  );
 }
 
 export default (

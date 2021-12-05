@@ -376,6 +376,7 @@ Title = "Senior Business Development Manager"
 Team = "Business Development & marketing team"
 quote = "\u201cKnow the rules well, so you can break them effectively.\u201d"
 pictureUrl = "/images/team/Alexandre-Zambeaux.png"
+contactPage = true
 url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux/"
 url.YouTube = "https://www.youtube.com/watch?v=lW1ffcwiyP8"
 
@@ -386,6 +387,7 @@ Title = "Marketing and Business Development Manager"
 Team = "Business Development & marketing team"
 quote = "\" Offer an omnichannel experience to your customer is the future of e-commerce \""
 pictureUrl = "/images/team/christel.png"
+contactPage = true
 url.LinkedIn = "https://www.linkedin.com/in/c-bordoni-amazonspecialist/"
 
 

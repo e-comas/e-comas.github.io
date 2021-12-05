@@ -1,4 +1,38 @@
-@use './utils/variables' as *;
+@use "./utils/variables" as *;
+@use "./utils/title" as *;
+@use "./views/teamMember" as *;
+
+main > p {
+  @extend %p-after-title;
+  strong {
+    display: block;
+    color: $green;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+}
+
+main > h3 {
+  text-align: center;
+  padding: 0 1ch;
+}
+
+.face-book {
+  display: grid;
+  margin: auto;
+  figure {
+    @extend %teamMember;
+    max-width: 16rem;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(2, 20rem);
+  }
+}
 
 iframe {
   border: 0;
