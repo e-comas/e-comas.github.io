@@ -25,8 +25,11 @@ function createCard(item: PodcastItem, parser: DOMParser) {
   return box;
 }
 
+const dummy = document.createElement("span");
+document.getElementById("podcast")!.lastElementChild?.before(dummy);
+
 fetchRSSFeed(
-  document.getElementById("podcast"),
+  dummy,
   "https://anchor.fm/s/4ce11bac/podcast/rss",
   "channel>item",
   (item, podcastCards, parser) =>

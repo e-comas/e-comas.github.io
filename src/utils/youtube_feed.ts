@@ -37,35 +37,44 @@ function createCard(item: YouTubeVideo) {
   return box;
 }
 
-fetchRSSFeed(
-  document.getElementById("webinars"),
-  `https://e-comas-cors.herokuapp.com/${encodeURI(
-    "https://www.youtube.com/feeds/videos.xml?playlist_id=PLIISXNQzZ8ZrvjOjGsK9iJykSn_x6xO3k"
-  )}`,
-  "feed>entry",
-  (item, parent) => {
-    const thumbnail = item
-      .getElementsByTagNameNS("http://search.yahoo.com/mrss/", "group")
-      .item(0)!
-      .getElementsByTagNameNS("http://search.yahoo.com/mrss/", "thumbnail")
-      .item(0)!;
-    parent.append(
-      createCard({
-        title: item.querySelector("title")!.textContent!,
-        videoId: item
-          .getElementsByTagNameNS(
-            "http://www.youtube.com/xml/schemas/2015",
-            "videoId"
-          )
-          .item(0)!.textContent!,
-        thumbnail: {
-          url: thumbnail.getAttribute("url")!,
-          width: thumbnail.getAttribute("width") as any as number,
-          height: thumbnail.getAttribute("height") as any as number,
-        },
-      })
-    );
-  }
-).then((webinarContainer) => autoScroll(webinarContainer, 4000), console.warn);
+for (const playlist_link of document.querySelectorAll(
+  "[data-embed-playlist]"
+)) {
+  const youtubeUrl = `https://www.youtube.com/feeds/videos.xml?playlist_id=${encodeURI(
+    (playlist_link as HTMLElement).dataset.embedPlaylist!
+  )}`;
+
+  fetchRSSFeed(
+    playlist_link as HTMLElement,
+    `https://e-comas-cors.herokuapp.com/${encodeURI(youtubeUrl)}`,
+    "feed>entry",
+    (item, parent) => {
+      const thumbnail = item
+        .getElementsByTagNameNS("http://search.yahoo.com/mrss/", "group")
+        .item(0)!
+        .getElementsByTagNameNS("http://search.yahoo.com/mrss/", "thumbnail")
+        .item(0)!;
+      parent.append(
+        createCard({
+          title: item.querySelector("title")!.textContent!,
+          videoId: item
+            .getElementsByTagNameNS(
+              "http://www.youtube.com/xml/schemas/2015",
+              "videoId"
+            )
+            .item(0)!.textContent!,
+          thumbnail: {
+            url: thumbnail.getAttribute("url")!,
+            width: thumbnail.getAttribute("width") as any as number,
+            height: thumbnail.getAttribute("height") as any as number,
+          },
+        })
+      );
+    }
+  ).then(
+    (webinarContainer) => autoScroll(webinarContainer, 4000),
+    console.warn
+  );
+}
 
 export {};

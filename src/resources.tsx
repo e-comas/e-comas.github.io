@@ -12,6 +12,8 @@ import "runtime:./utils/podcast_feed.js";
 import "./resources.scss";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 
+const playlist_id = "PLIISXNQzZ8ZrvjOjGsK9iJykSn_x6xO3k";
+
 export default (
   <Body title="Resources">
     <Header />
@@ -43,6 +45,7 @@ export default (
           the <ECommerce /> world about how brands can improve and grow. See our
           next events here!
         </p>
+        <span data-embed-playlist={playlist_id} hidden />
         <a href="/webinar.html" className="cta">
           Check out our webinars
         </a>

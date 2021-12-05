@@ -7,21 +7,18 @@ type MapFunction = (
 ) => any;
 
 export default function fetchRSSFeed(
-  element: HTMLElement | null,
+  element: HTMLElement,
   url: string,
   selector: string,
   mapFunction: MapFunction
 ) {
-  if (element == null)
-    return Promise.reject(new Error("Cannot find element on the page"));
-
   const feedContainerWrapper = document.createElement("div");
   const feedContainer = document.createElement("div");
   feedContainer.classList.add("dynamic-list", "loading");
   feedContainerWrapper.style.position = "relative";
   feedContainerWrapper.style.width = "100%";
   feedContainerWrapper.append(feedContainer);
-  element!.lastElementChild!.before(feedContainerWrapper);
+  element.replaceWith(feedContainerWrapper);
 
   return fetch(url)
     .then((response) =>
@@ -38,7 +35,7 @@ export default function fetchRSSFeed(
       return feedContainer;
     })
     .catch((cause) => {
-      feedContainer.remove();
+      feedContainerWrapper.replaceWith(element);
       return Promise.reject(new Error("Failed to load RSS feed", { cause }));
     });
 }
