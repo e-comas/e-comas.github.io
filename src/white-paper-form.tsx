@@ -7,6 +7,7 @@ import { ECommerce } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
 
 import "./white-paper-form.scss";
+import "runtime:./utils/frame-auto-height.js";
 
 export default (
   <Body title="White paper">

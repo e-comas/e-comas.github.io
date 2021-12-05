@@ -6,6 +6,7 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
 import "./contact.scss";
+import "runtime:./utils/frame-auto-height.js";
 
 export default (
   <Body title="Contact us">

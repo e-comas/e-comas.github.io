@@ -9,6 +9,8 @@ import { EComas, ECommerce } from "./views/eWords.js";
 import "./views/VideoEmbedLink.scss";
 import "runtime:./utils/youtube_feed.js";
 import "runtime:./utils/podcast_feed.js";
+import "runtime:./utils/frame-auto-height.js";
+import "./contact.scss";
 import "./resources.scss";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 
