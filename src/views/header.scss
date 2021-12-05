@@ -92,8 +92,7 @@ header {
     }
     & > :last-child {
       @extend %button;
-      &:hover,
-      &.active {
+      &:hover {
         @extend %invertedCta;
       }
     }
