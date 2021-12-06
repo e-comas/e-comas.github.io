@@ -1,6 +1,6 @@
 @use "./utils/variables" as *;
 @use "./utils/title" as *;
-@use "./views/teamMember" as *;
+@use "./views/TeamMember" as *;
 
 main > p {
   @extend %p-after-title;
