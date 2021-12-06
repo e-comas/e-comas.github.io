@@ -19,6 +19,8 @@ function createCard(item: PodcastItem, parser: DOMParser) {
 
   const playLink = document.createElement("a");
   playLink.href = item.link;
+  playLink.target = "_blank";
+  playLink.rel = "noopener";
   playLink.textContent = "Play";
 
   box.append(title, description, playLink);
