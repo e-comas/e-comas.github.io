@@ -23,21 +23,17 @@ export default (
       <section>
         <figure>
           <figcaption>
-            <h3>
-              Case Study: Voice of Customer (Voc) Research for a Manufacturer
-            </h3>
+            <h3>How to manage Amazon</h3>
             <p>
-              Read our latest success story to find out how we helped a client
-              identify and understand its customer sentiment on Amazon and
-              improve its product listings to encourage more sales and reduce
-              return rates.
+              Here’s our beginner’s guide to building a solid Amazon strategy,
+              managing your operations, creating content and growing traffic.
             </p>
-            <a
+            {/* <a
               href="https://go.pardot.com/l/885733/2020-12-18/7pxy/885733/1608299447maytBPCN/VOICEOFCUSTOMER_QUOTE__2_.pdf"
               className="cta"
             >
-              Read the case study
-            </a>
+              Read our guide
+            </a> */}
           </figcaption>
         </figure>
       </section>
@@ -45,21 +41,19 @@ export default (
       <section>
         <figure>
           <figcaption>
-            <h3>
-              How to manage Amazon: Best practice on how to organise a business
-              to manage its Amazon activity
-            </h3>
+            <h3>The voice of your customer</h3>
             <p>
-              Is lack of resource and knowledge holding back your Amazon sales?
+              Customers on Amazon think differently to customers in other retail
+              spheres. When specialty paper brand T/D3sixty felt bamboozled by
+              the feedback they were getting on Amazon, they turned to our
+              analytics tool Compas. Here’s how we helped.
             </p>
-            <p>
-              In partnership with the eBusiness Institute, we at e-Comas
-              surveyed brands that sell on Amazon to find out their biggest
-              issues with using the <ECommerce /> giant. The results of that
-              survey are in this white paper – together with our own expert
-              advice on how you can streamline your organisation and support
-              your operations team to make those issues a thing of the past.
-            </p>
+            {/* <a
+              href="https://go.pardot.com/l/885733/2020-12-18/7pxy/885733/1608299447maytBPCN/VOICEOFCUSTOMER_QUOTE__2_.pdf"
+              className="cta"
+            >
+              Download the white paper
+            </a> */}
           </figcaption>
         </figure>
       </section>
