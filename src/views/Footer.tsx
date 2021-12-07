@@ -13,6 +13,7 @@ import NavLink from "../utils/NavLink.js";
 import "runtime:../utils/cookie_content.js";
 import "../utils/cookie_content.scss";
 
+import "runtime:./footer_addresses.js";
 import "./footer.scss";
 
 export default () => (
@@ -25,55 +26,77 @@ export default () => (
     <nav>
       <ul>
         <li>
-          <NavLink href="/services.html">Services</NavLink>
+          <NavLink href="/about-us.html">About us</NavLink>
         </li>
         <li>
           <NavLink href="/our-team.html">Team</NavLink>
         </li>
         <li>
-          <NavLink href="/webinar.html">Webinar</NavLink>
+          <NavLink href="/testimonials.html">Testimonials</NavLink>
         </li>
         <li>
-          <NavLink href="/white-paper-form.html">White paper</NavLink>
+          <NavLink href="/legals.html">Legals</NavLink>
         </li>
-        {/* <li>
-          <NavLink href="/news.html">Blog</NavLink>
-        </li> */}
         <li>
           <NavLink href="/privacy.html">Privacy policy</NavLink>
         </li>
       </ul>
     </nav>
+    <strong>What we do</strong>
+    <nav>
+      <ul>
+        <li>
+          <NavLink href="/consulting.html">Consulting</NavLink>
+        </li>
+        <li>
+          <NavLink href="/operations.html">Operations</NavLink>
+        </li>
+        <li>
+          <NavLink href="/syndication.html">Content/PIM/Syndications</NavLink>
+        </li>
+        <li>
+          <NavLink href="/advertising.html">Advertising</NavLink>
+        </li>
+        <li>
+          <NavLink href="/website-creation.html">Website Creation</NavLink>
+        </li>
+        <li>
+          <NavLink href="/analytics.html">Analytics</NavLink>
+        </li>
+      </ul>
+    </nav>
+    <strong>
+      <NavLink href="/contact.html">Contact us</NavLink>
+    </strong>
     <ul class="contact-us">
-      <li>
-        <strong>
-          <NavLink href="/contact.html">Contact us</NavLink>
-        </strong>
-      </li>
       <li>
         Phone: <a href="tel:&plus;352621830003">+352 621 830 003</a>
       </li>
       <li>
+        Email:{" "}
+        <a href="mailto:ecomassimple@e-comas.com">ecomassimple@e-comas.com</a>
+      </li>
+      <li>
         Addresses:
-        <ul>
+        <ul class="addresses">
           <li>
-            EU:{" "}
+            <span>EU</span>:{" "}
             <address>
               68 Avenue de la Liberté - L-1930 Luxembourg - LUXEMBOURG
             </address>
           </li>
           <li>
-            US:{" "}
+            <span>US</span>:{" "}
             <address>457 Wilshire Lane - Santa Maria, CA 93455 - USA</address>
           </li>
           <li>
-            Madagascar:{" "}
+            <span>MG</span>:{" "}
             <address>
               Lot IVG AF 97 Behoririka - Antananarivo - Madagascar
             </address>
           </li>
           <li>
-            India:{" "}
+            <span>IN</span>:{" "}
             <address>
               B106, Saroj Enclave – Ben Satya Layout, Geddalahalli – Bangalore ,
               Karnataka – India - 560043

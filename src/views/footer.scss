@@ -4,6 +4,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  text-align: center;
 
   font-size: 0.8rem;
   line-height: 1.1rem;
@@ -11,7 +12,6 @@ footer {
 
   margin-top: 5rem;
   padding: 2.5rem;
-  padding-bottom: 0.5rem;
 
   .logo {
     max-width: 200px;
@@ -70,66 +70,19 @@ footer {
     text-align: center;
   }
 
-  @media screen and (min-width: 410px) {
+  @media screen and (min-width: 800px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    .logo,
-    .contact-us,
-    .social,
-    .copyright-notice {
-      grid-column: span 2;
-    }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-auto-flow: column;
+    text-align: unset;
 
-    .logo {
-      justify-self: center;
+    & > strong {
+      align-self: end;
     }
-    nav {
-      align-self: center;
-      & + nav {
-        margin-left: auto;
-      }
-    }
-  }
-  @media screen and (min-width: 570px) {
-    display: grid;
-    grid-template-columns: auto 200px 200px auto;
-    .logo,
-    .contact-us,
-    .social,
-    .copyright-notice {
-      grid-column: 2 / 4;
-    }
-
-    nav {
-      grid-column: 2;
-      & + nav {
-        grid-column: 3;
-      }
-    }
-  }
-  @media screen and (min-width: 770px) {
-    grid-template-columns: 3fr 2fr 3fr 4fr;
-    row-gap: 5rem;
-    .logo,
-    nav,
-    .contact-us,
-    .social {
-      grid-column: unset;
-      align-self: unset;
-    }
-    .social::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      height: -moz-available;
-      height: -webkit-fill-available;
-      height: fill-available;
-    }
-    nav + nav {
-      margin-left: unset;
-    }
-    .copyright-notice {
-      grid-column: span 4;
+    & > ul,
+    & > nav {
+      grid-row: span 2;
     }
   }
 }
