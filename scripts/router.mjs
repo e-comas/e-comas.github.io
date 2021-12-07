@@ -38,6 +38,12 @@ export default async function router(req, res) {
     return;
   }
 
+  if (req.url.startsWith("/rollup-plugin:")) {
+    res.statusCode = 404;
+    res.end("Virtual module, can't load anything");
+    return;
+  }
+
   if (req.url.startsWith("/src/") || req.url.startsWith("/node_modules/")) {
     if (req.url.includes("/../")) {
       console.error(
@@ -83,7 +89,7 @@ export default async function router(req, res) {
     .slice(url.pathname.lastIndexOf("."))
     .toLocaleLowerCase();
   if (ext in mime) res.setHeader("Content-Type", mime[ext]);
-  else console.warn("Unknown extension", ext);
+  else console.warn("Unknown extension", ext, req.url);
 
   if (ext === ".html") {
     if (process.env.NODE_ENV === "production") {

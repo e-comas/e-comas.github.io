@@ -1,6 +1,6 @@
 import sass from "sass";
 
-const PLUGIN_HELPER = "sass-plugin:createStyleElement";
+const PLUGIN_HELPER = "rollup-plugin:sass-createStyleElement";
 
 function createStyleElement(css, id) {
   const style = document.createElement("style");

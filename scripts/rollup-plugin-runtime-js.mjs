@@ -2,7 +2,7 @@ import process from "node:process";
 import { pathToFileURL } from "node:url";
 import { INPUT_DIR } from "./dev-config.mjs";
 
-const PLUGIN_HELPER = "runtime:createScriptElement";
+const PLUGIN_HELPER = "rollup-plugin:runtime-createScriptElement";
 const tsRuntime = /^runtime:.+\.js$/;
 
 async function createScriptElement(relativeUrl, id) {
