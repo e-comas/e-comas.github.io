@@ -115,7 +115,7 @@ export default () => (
       </li>
       <li>
         <a
-          href="https://medium.com/@Amazon_expert"
+          href="https://amazon-expert.medium.com/"
           rel="noopener"
           target="_blank"
           title="Medium"

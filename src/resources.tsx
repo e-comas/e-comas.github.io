@@ -28,17 +28,23 @@ export default (
         more!
       </p>
 
-      {/* <section id="blog">
+      <section id="blog">
         <h3>Blog</h3>
         <p>
           We love to share our online retail expertise. Find out useful{" "}
           <ECommerce /> tips and what's new in the Amazon world.
         </p>
-        {/* TODO: Load articles somehow *}
-        <a href="/news.html" className="cta">
+        {/* TODO: Load articles somehow */}
+        {/* <a href="/news.html" className="cta"> */}
+        <a
+          href="https://amazon-expert.medium.com/"
+          target="_blank"
+          rel="noopener"
+          class="cta"
+        >
           Read our blog
         </a>
-      </section> */}
+      </section>
 
       <section id="webinars" class="webinars">
         <h3>Webinars</h3>
