@@ -28,12 +28,9 @@ export default (
               Here’s our beginner’s guide to building a solid Amazon strategy,
               managing your operations, creating content and growing traffic.
             </p>
-            {/* <a
-              href="https://go.pardot.com/l/885733/2020-12-18/7pxy/885733/1608299447maytBPCN/VOICEOFCUSTOMER_QUOTE__2_.pdf"
-              className="cta"
-            >
+            <a href="https://bit.ly/305VmK1" className="cta">
               Read our guide
-            </a> */}
+            </a>
           </figcaption>
         </figure>
       </section>
@@ -48,12 +45,9 @@ export default (
               the feedback they were getting on Amazon, they turned to our
               analytics tool Compas. Here’s how we helped.
             </p>
-            {/* <a
-              href="https://go.pardot.com/l/885733/2020-12-18/7pxy/885733/1608299447maytBPCN/VOICEOFCUSTOMER_QUOTE__2_.pdf"
-              className="cta"
-            >
+            <a href="https://bit.ly/3dtG2Ka" className="cta">
               Download the white paper
-            </a> */}
+            </a>
           </figcaption>
         </figure>
       </section>
