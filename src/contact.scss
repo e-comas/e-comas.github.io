@@ -1,5 +1,6 @@
 @use "./utils/variables" as *;
 @use "./utils/title" as *;
+@use "./utils/iframe" as *;
 @use "./views/TeamMember" as *;
 
 main > p {
@@ -32,10 +33,4 @@ main > h3 {
   @media screen and (min-width: 800px) {
     grid-template-columns: repeat(2, 20rem);
   }
-}
-
-iframe {
-  border: 0;
-  max-width: 600px;
-  margin: auto;
 }
