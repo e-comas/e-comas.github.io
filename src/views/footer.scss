@@ -13,7 +13,7 @@ footer {
   margin-top: 5rem;
   padding: 2.5rem;
 
-  .logo {
+  img {
     max-width: 200px;
     align-self: center;
   }
@@ -33,12 +33,15 @@ footer {
   strong {
     display: block;
     text-transform: capitalize;
-    margin-bottom: 0.5rem;
+    margin-bottom: -0.5rem;
   }
 
   a {
     color: inherit;
     text-decoration: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   address {
@@ -73,16 +76,23 @@ footer {
   @media screen and (min-width: 800px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
     grid-auto-flow: column;
     text-align: unset;
 
     & > strong {
       align-self: end;
+      margin-bottom: 0;
     }
     & > ul,
     & > nav {
+      grid-row: span 3;
+    }
+    & > .social {
       grid-row: span 2;
+    }
+    .made_in_lux {
+      margin-left: auto;
     }
   }
 }

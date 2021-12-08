@@ -66,13 +66,15 @@ name = "Testimonials"
 url = "/testimonials.html"
 documentId = "1L_arP-U9Dl0QuaF2U_OB5Zt_ibcQfPuLXYk0KCAkqoM"
 
-# [[root.children.children]]
-# name = "Blog"
-# url = "/news.html"
 
 [[root.children]]
 name = "Resources"
 url = "/resources.html"
+
+[[root.children.children]]
+name = "Blog"
+url = "https://amazon-expert.medium.com/"
+# url = "/news.html"
 
 [[root.children.children]]
 name = "Podcast"

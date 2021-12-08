@@ -8,10 +8,10 @@ let currentLink: HTMLAnchorElement;
 function clickHandler(this: HTMLAnchorElement, event: Event) {
   event.preventDefault();
   if (currentLink) {
-    currentLink.style.textDecoration = "none";
+    currentLink.style.fontWeight = "normal";
     addressesCache.get(currentLink).remove();
   }
-  this.style.textDecoration = "underline";
+  this.style.fontWeight = "bold";
   currentLink = this;
   addressWrapper.append(addressesCache.get(this));
 }
@@ -22,7 +22,7 @@ addresses.replaceWith(
     link.href = "#";
     addressesCache.set(link, child.querySelector("address"));
     link.textContent = child.firstElementChild!.textContent;
-    link.style.textDecoration = "none";
+    link.style.fontWeight = "normal";
     link.addEventListener("click", clickHandler);
     return link;
   }).flatMap((link, i) => [i ? " | " : " ", link])

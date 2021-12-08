@@ -35,7 +35,8 @@ export default () => (
           <NavLink href="/testimonials.html">Testimonials</NavLink>
         </li>
         <li>
-          <NavLink href="/legals.html">Legals</NavLink>
+          <NavLink href="/webinar.html">Webinars</NavLink>
+          {/* <NavLink href="/legals.html">Legals</NavLink> */}
         </li>
         <li>
           <NavLink href="/privacy.html">Privacy policy</NavLink>
@@ -70,11 +71,7 @@ export default () => (
     </strong>
     <ul class="contact-us">
       <li>
-        Phone: <a href="tel:&plus;352621830003">+352 621 830 003</a>
-      </li>
-      <li>
-        Email:{" "}
-        <a href="mailto:ecomassimple@e-comas.com">ecomassimple@e-comas.com</a>
+        Email: <a href="mailto:sales@e-comas.com">sales@e-comas.com</a>
       </li>
       <li>
         Addresses:
@@ -157,6 +154,7 @@ export default () => (
         </a>
       </li>
     </ul>
+    <img src="/images/MadeInLux.svg" alt="Made in Luxembourg" class="made_in_lux" />
     <div class="copyright-notice">© 2021 · e-Comas · All Rights Reserved</div>
   </footer>
 );
