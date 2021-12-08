@@ -119,7 +119,7 @@ main > section {
   }
 }
 
-#podcast .dynamic-list {
+.podcast .dynamic-list {
   @extend %dynamic-list;
   height: 20rem;
 

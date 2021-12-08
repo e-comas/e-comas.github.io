@@ -1,10 +1,19 @@
 const parser = new DOMParser();
 
-type MapFunction = (
+export type MapFunction = (
   item: Element,
   fragment: DocumentFragment,
   parser: DOMParser
 ) => any;
+
+export function createDynamicList() {
+  const feedContainerWrapper = document.createElement("div");
+  const feedContainer = document.createElement("div");
+  feedContainerWrapper.style.position = "relative";
+  feedContainerWrapper.style.width = "100%";
+  feedContainerWrapper.append(feedContainer);
+  return { feedContainer, feedContainerWrapper };
+}
 
 export default function fetchRSSFeed(
   element: HTMLElement,
@@ -12,14 +21,9 @@ export default function fetchRSSFeed(
   selector: string,
   mapFunction: MapFunction
 ) {
-  const feedContainerWrapper = document.createElement("div");
-  const feedContainer = document.createElement("div");
+  const { feedContainer, feedContainerWrapper } = createDynamicList();
   feedContainer.classList.add("dynamic-list", "loading");
-  feedContainerWrapper.style.position = "relative";
-  feedContainerWrapper.style.width = "100%";
-  feedContainerWrapper.append(feedContainer);
   element.replaceWith(feedContainerWrapper);
-
   return fetch(url)
     .then((response) =>
       response.ok ? response.text() : Promise.reject(response)

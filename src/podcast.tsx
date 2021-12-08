@@ -6,7 +6,7 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 import { EComas, ECommerce } from "./views/eWords.js";
 
-import "runtime:./utils/podcast_feed.js";
+import "runtime:./utils/podcast_feeds.js";
 import "./resources.scss";
 
 export default (

@@ -58,7 +58,7 @@ export default (
         </a>
       </section>
 
-      <section id="podcast">
+      <section id="podcast" class="podcast">
         <h2>Podcast</h2>
         <p>
           Introducing the <EComas /> podcast, now available on your favourite
