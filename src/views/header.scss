@@ -184,6 +184,9 @@ header {
         a.active {
           color: $grey;
         }
+        & > :last-child {
+          @include invertedCta();
+        }
       }
       &[open] + nav {
         transform: none;
