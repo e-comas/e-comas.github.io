@@ -95,6 +95,7 @@ footer {
     }
   }
   @media screen and (min-width: 1555px) {
+    grid-template-columns: 1fr 1fr 1fr auto;
     .made_in_lux {
       margin-right: 0;
     }
