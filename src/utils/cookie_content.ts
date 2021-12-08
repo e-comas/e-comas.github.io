@@ -25,19 +25,25 @@ function createDialog() {
     const p = document.createElement("p");
     p.id = CLASS_NAME + "-description";
     dialog.setAttribute("aria-describedby", p.id);
-    let previousConsentInfo = "";
+    const strong = document.createElement("strong");
+    let previousConsentInfo: Array<string | HTMLElement> = [
+      " You have previously ",
+      strong,
+      " the use of cookies.",
+    ];
     switch (previousConsent) {
       case "":
         // Content was denied.
-        previousConsentInfo =
-          " You have previously chosen to decline the use of cookies.";
+        strong.textContent = "declined";
         break;
 
       case "yes":
-        // Content was provided.
-        previousConsentInfo =
-          " You have previously consented to the use of cookies.";
+        // Consent was provided.
+        strong.textContent = "accepted";
         break;
+
+      default:
+        previousConsentInfo = [];
     }
     const privacyLink = document.createElement("a");
     privacyLink.href = "/privacy.html";
@@ -46,7 +52,7 @@ function createDialog() {
       "This website wants to store statistics cookies on your computer. You can read more about this in our ",
       privacyLink,
       ".",
-      previousConsentInfo
+      ...previousConsentInfo
     );
     const form = document.createElement("form");
     form.method = "dialog";
@@ -91,7 +97,7 @@ const li = document.createElement("li");
 const link = document.createElement("a");
 link.addEventListener("click", showModal);
 link.href = "#";
-link.textContent = "Cookie policy";
+link.textContent = "Cookie settings";
 li.append(link);
 document.querySelector("footer ul")?.append(li);
 
