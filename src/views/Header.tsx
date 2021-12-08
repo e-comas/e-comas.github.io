@@ -11,7 +11,13 @@ interface ArborescenceNode {
   children?: ArborescenceNode[];
 }
 function createNavLink(node: ArborescenceNode) {
-  return <NavLink href={node.url}>{node.name}</NavLink>;
+  return node.url.startsWith("https://") ? (
+    <a href={node.url} target="_blank" rel="noopener">
+      {node.name}
+    </a>
+  ) : (
+    <NavLink href={node.url}>{node.name}</NavLink>
+  );
 }
 function layoutArborescence(node: ArborescenceNode) {
   return node.children?.length ? (
