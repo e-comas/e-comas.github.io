@@ -69,10 +69,6 @@ footer {
     }
   }
 
-  .copyright-notice {
-    text-align: center;
-  }
-
   @media screen and (min-width: 800px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -92,7 +88,18 @@ footer {
       grid-row: span 2;
     }
     .made_in_lux {
-      margin-left: auto;
+      margin: 0 auto;
+    }
+    .copyright-notice {
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 1555px) {
+    .made_in_lux {
+      margin-right: 0;
+    }
+    .copyright-notice {
+      text-align: right;
     }
   }
 }
