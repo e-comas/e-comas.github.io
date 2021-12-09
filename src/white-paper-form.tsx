@@ -5,6 +5,7 @@ import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
 import { ECommerce } from "./views/eWords.js";
 import Footer from "./views/Footer.js";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 
 import "./white-paper-form.scss";
 import "runtime:./utils/frame-auto-height.js";
@@ -20,37 +21,35 @@ export default (
         findings in our in-depth white papers. Learn more from us here!
       </p>
 
-      <section>
-        <figure>
-          <figcaption>
-            <h3>How to manage Amazon</h3>
-            <p>
-              Here’s our beginner’s guide to building a solid Amazon strategy,
-              managing your operations, creating content and growing traffic.
-            </p>
-            <a href="https://bit.ly/305VmK1" className="cta">
-              Read our guide
-            </a>
-          </figcaption>
-        </figure>
-      </section>
+      <ElementWithBackgroundImage
+        src="/images/white-paper-1.png"
+        tagName="section"
+      >
+        <h3>How to manage Amazon</h3>
+        <p>
+          Here’s our beginner’s guide to building a solid Amazon strategy,
+          managing your operations, creating content and growing traffic.
+        </p>
+        <a href="https://bit.ly/305VmK1" className="cta">
+          Read our guide
+        </a>
+      </ElementWithBackgroundImage>
 
-      <section>
-        <figure>
-          <figcaption>
-            <h3>The voice of your customer</h3>
-            <p>
-              Customers on Amazon think differently to customers in other retail
-              spheres. When specialty paper brand T/D3sixty felt bamboozled by
-              the feedback they were getting on Amazon, they turned to our
-              analytics tool Compas. Here’s how we helped.
-            </p>
-            <a href="https://bit.ly/3dtG2Ka" className="cta">
-              Download the white paper
-            </a>
-          </figcaption>
-        </figure>
-      </section>
+      <ElementWithBackgroundImage
+        src="/images/white-paper-2.png"
+        tagName="section"
+      >
+        <h3>The voice of your customer</h3>
+        <p>
+          Customers on Amazon think differently to customers in other retail
+          spheres. When specialty paper brand T/D3sixty felt bamboozled by the
+          feedback they were getting on Amazon, they turned to our analytics
+          tool Compas. Here’s how we helped.
+        </p>
+        <a href="https://bit.ly/3dtG2Ka" className="cta">
+          Download the white paper
+        </a>
+      </ElementWithBackgroundImage>
 
       <iframe
         title="Contact us form"
