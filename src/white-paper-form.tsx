@@ -30,7 +30,7 @@ export default (
           Here’s our beginner’s guide to building a solid Amazon strategy,
           managing your operations, creating content and growing traffic.
         </p>
-        <a href="https://bit.ly/305VmK1" className="cta">
+        <a href="https://bit.ly/3dtG2Ka" className="cta">
           Read our guide
         </a>
       </ElementWithBackgroundImage>
@@ -46,7 +46,7 @@ export default (
           feedback they were getting on Amazon, they turned to our analytics
           tool Compas. Here’s how we helped.
         </p>
-        <a href="https://bit.ly/3dtG2Ka" className="cta">
+        <a href="https://bit.ly/305VmK1" className="cta">
           Download the white paper
         </a>
       </ElementWithBackgroundImage>
