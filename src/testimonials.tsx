@@ -9,7 +9,7 @@ import Breadcrumbs from "./views/Breadcrumbs.js";
 import "./testimonials.scss";
 
 export default (
-  <Body title="The Testimonies">
+  <Body title="Testimonials">
     <Header />
     <Breadcrumbs />
     <main>

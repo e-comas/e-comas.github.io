@@ -54,7 +54,7 @@ export default (props?: TestimoniesProps) =>
         <Testimonies />
       </div>
       <a href="/testimonials.html#testimonials" class="cta">
-        The testimonies
+        Testimonials
       </a>
     </div>
   ) : (
