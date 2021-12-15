@@ -98,3 +98,15 @@ title = "Chief Commercial Officer"
 company = "Stebler"
 image = "/images/tristan-brockelmanns.jpg"
 logo = "/images/brands/stebler.png"
+
+[[item]]
+text = """\
+    A very structured workshop that covered a good background on Amazon for a \
+    range of stakeholders with different knowledge levels. It was clear, easy \
+    to follow and some good take-aways for the team.\
+  """
+name = "Gabriella Egleton"
+title = "Senior Brand Marketing Manager"
+company = "Kervan Food UK"
+image = "/images/GabriellaEgleton.png"
+logo = "/images/brands/kervan.png"
