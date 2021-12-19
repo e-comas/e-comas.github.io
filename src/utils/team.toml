@@ -335,6 +335,14 @@ pictureUrl = "/images/team/Jessamy-Chapman.png"
 
 
 [[team_member]]
+Name = "Antoine du Hamel"
+Title = "Front End and Back End Engineer"
+Team = "Content Team"
+quote = ""
+pictureUrl = "/images/team/Antoine.png"
+
+
+[[team_member]]
 Name = "Dheeraj Chawla"
 Title = "DSP Expert"
 Team = "DSP team"
