@@ -19,10 +19,21 @@ export async function optimizeVector(url) {
 
   switch (ext) {
     case ".svg":
+      let resolve;
+      vectorCache[url.pathname] = new Promise((r) => {
+        resolve = r;
+      });
       const fileContent = await svgo(await fs.readFile(url, "utf8"));
       const hash = createHash(fileContent);
       const fileName = `${hash}.svg`;
-      await fs.writeFile(new URL(fileName, OUTPUT_DIR), fileContent);
+      try {
+        await fs.writeFile(new URL(fileName, OUTPUT_DIR), fileContent);
+      } catch (err) {
+        const ret = Promise.reject(err);
+        resolve(ret);
+        return ret;
+      }
+      resolve(fileName);
       vectorCache[url.pathname] = fileName;
       return fileName;
 
