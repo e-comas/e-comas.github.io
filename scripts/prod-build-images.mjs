@@ -284,7 +284,7 @@ process.once("beforeExit", () => {
   };
   spawn(
     "/usr/bin/git",
-    ["rm", "*.avif", "*.jpeg", "*.png", "*.webp"],
+    ["rm", "*.avif", "*.jpg", "*.png", "*.webp"],
     options
   ).once("exit", (code) => {
     if (code === 0) {
