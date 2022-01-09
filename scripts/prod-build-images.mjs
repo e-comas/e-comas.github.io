@@ -1,3 +1,4 @@
+import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
 import buildAnimatedImage from "./prod-build-animated-images.mjs";
@@ -97,6 +98,7 @@ const getImagePool = (async function* generateImagePool() {
   } while (1);
 })();
 
+let imageFilesToRestore = [];
 let imageCache;
 export async function optimizeMatrix(src, sizes) {
   console.log("matrix", src, sizes);
@@ -159,6 +161,7 @@ export async function optimizeMatrix(src, sizes) {
           }
           const fileName = cacheEntries[hash];
           await fs.access(new URL(fileName, OUTPUT_DIR));
+          imageFilesToRestore.push(fileName);
           delete encodeOptions[codec];
           sources.push({ src, codec, fileName, width });
         })
@@ -271,3 +274,25 @@ export async function generateOpenGraphInfo(src, alt, aboveTheFold, jobs) {
 
   return sources[0];
 }
+
+process.once("beforeExit", () => {
+  const options = {
+    cwd: OUTPUT_DIR,
+    shell: false,
+    stdio: "inherit",
+    argv0: "git",
+  };
+  spawn(
+    "/usr/bin/git",
+    ["rm", "*.avif", "*.jpeg", "*.png", "*.webp"],
+    options
+  ).once("exit", (code) => {
+    if (code === 0) {
+      spawn(
+        "/usr/bin/git",
+        ["checkout", "HEAD", "--", ...imageFilesToRestore],
+        options
+      );
+    }
+  });
+});
