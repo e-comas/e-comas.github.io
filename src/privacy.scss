@@ -2,6 +2,6 @@
 
 @use "./utils/title" as *;
 
-main > p {
+main > p, main > ul, main > h3 {
   padding: 0 1rem;
 }

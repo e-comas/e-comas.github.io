@@ -101,6 +101,6 @@ link.textContent = "Cookie settings";
 li.append(link);
 document.querySelector("footer ul")?.append(li);
 
-if (previousConsent == null) showModal();
+if (previousConsent == null && location.pathname !== '/privacy.html') showModal();
 
 export {};
