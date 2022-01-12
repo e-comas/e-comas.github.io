@@ -145,7 +145,7 @@ export default () => (
       </li>
       <li>
         <a
-          href="https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
+          href="https://www.youtube.com/channel/UClCYdUcUs1zJk8O3a4lC9lw"
           rel="noopener"
           target="_blank"
           title="YouTube"
