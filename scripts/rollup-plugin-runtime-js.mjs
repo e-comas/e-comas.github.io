@@ -35,7 +35,9 @@ export default function plugin() {
       } else if (id.startsWith("runtime-resolved:")) {
         const path = id.slice("runtime-resolved:".length);
         return `import helper from "${PLUGIN_HELPER}";export default helper(${JSON.stringify(
-          pathToFileURL(path).toString().slice(INPUT_DIR.toString().length)
+          pathToFileURL(path)
+            .toString()
+            .slice(INPUT_DIR.toString().length - 1)
         )}, ${JSON.stringify(path)})`;
       }
     },

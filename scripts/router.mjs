@@ -23,10 +23,10 @@ const showErrorOnBrowser = function (errorMessage) {
 };
 
 export default async function router(req, res) {
-  if (req.url === `/${AUTO_REFRESH_MODULE}`) {
+  if (req.url === AUTO_REFRESH_MODULE) {
     res.setHeader("Content-Type", "application/javascript");
     const stream = createReadStream(
-      new URL(AUTO_REFRESH_MODULE, import.meta.url),
+      new URL("." + AUTO_REFRESH_MODULE, import.meta.url),
       { emitClose: false }
     );
     stream.on("error", (e) => {
