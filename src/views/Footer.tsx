@@ -155,6 +155,6 @@ export default () => (
       </li>
     </ul>
     <img src="/images/MadeInLux.svg" alt="Made in Luxembourg" class="made_in_lux" />
-    <div class="copyright-notice">© 2021 · e-Comas · All Rights Reserved</div>
+    <div class="copyright-notice">© 2022 · e-Comas · All Rights Reserved</div>
   </footer>
 );
