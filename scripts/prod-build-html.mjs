@@ -115,7 +115,8 @@ async function editPage(page, signalIn, signalOut) {
     );
     if (src) {
       await vectorFavicon.evaluate((node, src) => {
-        node.href = src;
+        node.href =
+          (node.getAttribute("href").startsWith("/") ? "/" : "") + src;
       }, await optimizeVector(src));
     } else {
       console.warn(new Error("Favicon without href attribute"));

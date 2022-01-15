@@ -16,11 +16,8 @@ function getTemplateFile(url) {
   let HTML_TEMPLATE_FILE = templateFileCache.get(templateURL.pathname);
 
   if (HTML_TEMPLATE_FILE == null) {
-    HTML_TEMPLATE_FILE = readFile(
-      new URL(HTML_TEMPLATE_FILE_NAME, INPUT_DIR),
-      "utf-8"
-    );
-    templateFileCache.set(HTML_TEMPLATE_FILE_NAME.pathname);
+    HTML_TEMPLATE_FILE = readFile(templateURL, "utf-8");
+    templateFileCache.set(templateURL.pathname, HTML_TEMPLATE_FILE);
   }
 
   return HTML_TEMPLATE_FILE;
