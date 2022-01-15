@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: gh-pages
   identity_url: https://hardcore-edison-deb86e.netlify.app/.netlify/identity
+  squash_merges: true
 
 publish_mode: editorial_workflow
 media_folder: "images/uploads"
@@ -15,7 +16,9 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author name", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+      - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
