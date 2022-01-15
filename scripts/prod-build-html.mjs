@@ -91,23 +91,6 @@ async function editPage(page, signalIn, signalOut) {
 
   signalOut();
 
-  const vectorImages = await page.$$("img:not(picture>img)");
-  for (const elem of vectorImages) {
-    const src = await elem.evaluate((image) =>
-      image.src.replace(location.origin, ".")
-    );
-    if (src) {
-      await elem.evaluate((node, src) => {
-        node.src = src;
-        node.setAttribute("width", node.width);
-        node.setAttribute("height", node.height);
-      }, await optimizeVector(src));
-    } else {
-      console.warn(new Error("Vector image without src attribute"));
-    }
-    await elem.dispose();
-  }
-
   const vectorFavicon = await page.$("link[rel='icon'][type='image/svg+xml']");
   if (vectorFavicon) {
     const src = await vectorFavicon.evaluate((image) =>
@@ -115,13 +98,32 @@ async function editPage(page, signalIn, signalOut) {
     );
     if (src) {
       await vectorFavicon.evaluate((node, src) => {
-        node.href =
-          (node.getAttribute("href").startsWith("/") ? "/" : "") + src;
+        globalThis.leadingSlash = node.getAttribute("href").startsWith("/")
+          ? "/"
+          : "";
+        node.href = leadingSlash + src;
       }, await optimizeVector(src));
     } else {
       console.warn(new Error("Favicon without href attribute"));
     }
     await vectorFavicon.dispose();
+  }
+
+  const vectorImages = await page.$$("img:not(picture>img)");
+  for (const elem of vectorImages) {
+    const src = await elem.evaluate((image) =>
+      image.src.replace(location.origin, ".")
+    );
+    if (src) {
+      await elem.evaluate((node, src) => {
+        node.src = leadingSlash + src;
+        node.setAttribute("width", node.width);
+        node.setAttribute("height", node.height);
+      }, await optimizeVector(src));
+    } else {
+      console.warn(new Error("Vector image without src attribute"));
+    }
+    await elem.dispose();
   }
 
   const { sassBundling, jobs } = await signalIn;
@@ -173,7 +175,7 @@ async function editPage(page, signalIn, signalOut) {
         ...urls.map((url) => {
           const link = document.createElement("link");
           link.rel = "stylesheet";
-          link.href = url;
+          link.href = leadingSlash + url;
           return link;
         })
       );
@@ -190,19 +192,26 @@ async function editPage(page, signalIn, signalOut) {
   await page.$eval(
     'link[rel="canonical"]',
     (elem, origin) => {
-      elem.href = new URL(
-        location.pathname + location.search + location.hash,
-        origin
-      );
+      if (elem.href === "{ origin }{ pathname }") {
+        elem.href = new URL(
+          location.pathname + location.search + location.hash,
+          origin
+        );
+      } else {
+        elem.href = elem.href.replace("{ origin }", origin);
+      }
     },
     CANONICAL_ORIGIN
   );
   await page.$eval(
     'meta[property="og:url"]',
     (elem, origin) => {
+      const href = elem.getAttribute("content");
       elem.setAttribute(
         "content",
-        new URL(location.pathname + location.search + location.hash, origin)
+        href === "{ origin }{ pathname }"
+          ? new URL(location.pathname + location.search + location.hash, origin)
+          : href.replace("{ origin }", origin)
       );
     },
     CANONICAL_ORIGIN
@@ -212,7 +221,7 @@ async function editPage(page, signalIn, signalOut) {
     if (!js) return;
     const script = document.createElement("script");
     script.type = "module";
-    script.src = js;
+    script.src = leadingSlash + js;
     document.body.append(script);
   }, await buildRuntimeJS(jsRuntimeModules));
 
