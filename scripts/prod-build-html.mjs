@@ -109,6 +109,8 @@ async function editPage(page, signalIn, signalOut) {
     await vectorFavicon.dispose();
   }
 
+  const leadingSlash = await page.evaluate(() => leadingSlash);
+
   const vectorImages = await page.$$("img:not(picture>img)");
   for (const elem of vectorImages) {
     const src = await elem.evaluate((image) =>
@@ -133,7 +135,7 @@ async function editPage(page, signalIn, signalOut) {
     const alt = await elem.evaluate(({ lastElementChild: image }) => image.alt);
     await elem.evaluate((node, src) => {
       node.innerHTML = src;
-    }, await generatePictureInnerHTML(src, alt, aboveTheFold.has(elem), jobs));
+    }, await generatePictureInnerHTML(src, alt, aboveTheFold.has(elem), jobs, leadingSlash));
     await elem.dispose();
   }
   for (const elem of openGraphImages) {
@@ -192,13 +194,14 @@ async function editPage(page, signalIn, signalOut) {
   await page.$eval(
     'link[rel="canonical"]',
     (elem, origin) => {
-      if (elem.href === "{ origin }{ pathname }") {
+      const href = elem.getAttribute("href");
+      if (href === "{ origin }{ pathname }") {
         elem.href = new URL(
           location.pathname + location.search + location.hash,
           origin
         );
       } else {
-        elem.href = elem.href.replace("{ origin }", origin);
+        elem.setAttribute("href", href.replace("{ origin }", origin));
       }
     },
     CANONICAL_ORIGIN

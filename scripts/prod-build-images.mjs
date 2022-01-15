@@ -247,31 +247,49 @@ export async function optimizeMatrix(src, sizes) {
   return { sources, originalCodec, width: originalWidth, height };
 }
 
-const toSrcset = (data, codec) =>
+const toSrcset = (data, codec, leadingSlash) =>
   data
     .filter((job) => job.codec === codec)
-    .map((job) => `${job.fileName} ${job.width}w`)
+    .map((job) => `${leadingSlash}${job.fileName} ${job.width}w`)
     .join(",");
 
-const toSrc = (data, codec) => {
+const toSrc = (data, codec, leadingSlash) => {
   const extData = data.filter((job) => job.codec === codec);
-  return extData.find(
-    (job) => job.width === Math.max(...extData.map((job) => job.width))
-  ).fileName;
+  return (
+    leadingSlash +
+    extData.find(
+      (job) => job.width === Math.max(...extData.map((job) => job.width))
+    ).fileName
+  );
 };
 
-export async function generatePictureInnerHTML(src, alt, aboveTheFold, jobs) {
+export async function generatePictureInnerHTML(
+  src,
+  alt,
+  aboveTheFold,
+  jobs,
+  leadingSlash
+) {
   const { sources, originalCodec, width, height } = await jobs[src];
 
   return (
     (originalCodec === "gif"
       ? "" // FFmpeg doesn't support AVIF yet.
-      : `<source type="image/avif" srcset="${toSrcset(sources, "avif")}"/>`) +
-    `<source type="image/webp" srcset="${toSrcset(sources, "webp")}"/>` +
+      : `<source type="image/avif" srcset="${toSrcset(
+          sources,
+          "avif",
+          leadingSlash
+        )}"/>`) +
+    `<source type="image/webp" srcset="${toSrcset(
+      sources,
+      "webp",
+      leadingSlash
+    )}"/>` +
     `<img alt=${JSON.stringify(alt)} srcset="${toSrcset(
       sources,
-      originalCodec
-    )}" src="${toSrc(sources, originalCodec)}" loading="${
+      originalCodec,
+      leadingSlash
+    )}" src="${toSrc(sources, originalCodec, leadingSlash)}" loading="${
       aboveTheFold ? "eager" : "lazy"
     }" width="${width}" height="${height}"/>`
   );
