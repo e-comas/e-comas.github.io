@@ -94,7 +94,7 @@ export default async function router(req, res) {
   if (ext === ".html") {
     if (process.env.NODE_ENV === "production") {
       const stream = createReadStream(
-        new URL(HTML_TEMPLATE_FILE_NAME, new URL("." + url, INPUT_DIR))
+        new URL(HTML_TEMPLATE_FILE_NAME, new URL("." + req.url, INPUT_DIR))
       );
       await new Promise((resolve) => {
         stream.on("error", console.error);
