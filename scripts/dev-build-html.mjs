@@ -6,15 +6,30 @@ import {
 } from "./dev-config.mjs";
 // import getRuntimeModules from "./runtime-modules.mjs";
 
-const HTML_TEMPLATE_FILE = readFile(
-  new URL(HTML_TEMPLATE_FILE_NAME, INPUT_DIR),
-  "utf-8"
-);
+const templateFileCache = new Map();
+function getTemplateFile(url) {
+  const templateURL = new URL(
+    HTML_TEMPLATE_FILE_NAME,
+    new URL("." + url, INPUT_DIR)
+  );
+
+  let HTML_TEMPLATE_FILE = templateFileCache.get(templateURL.pathname);
+
+  if (HTML_TEMPLATE_FILE == null) {
+    HTML_TEMPLATE_FILE = readFile(
+      new URL(HTML_TEMPLATE_FILE_NAME, INPUT_DIR),
+      "utf-8"
+    );
+    templateFileCache.set(HTML_TEMPLATE_FILE_NAME.pathname);
+  }
+
+  return HTML_TEMPLATE_FILE;
+}
 
 export default (url) =>
   Promise.all([
     import("jsdom"),
-    HTML_TEMPLATE_FILE,
+    getTemplateFile(url),
     //     getRuntimeModules(),
   ]).then(
     ([

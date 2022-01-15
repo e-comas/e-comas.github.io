@@ -9,7 +9,10 @@ function loadContentFromTSXModule(tsxUrl) {
 }
 
 const pageURLs = new Set();
-export default async function* findPages(browser, originRelativeUrl = "/") {
+export default async function* findPages(
+  browser,
+  originRelativeUrl = "/_layouts/blog.html"
+) {
   const url = new URL(originRelativeUrl, origin);
   if (url.pathname === "/") url.pathname = "/index.html";
   if (url.origin !== origin || pageURLs.has(url.pathname)) return;

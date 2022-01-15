@@ -73,8 +73,11 @@ url = "/resources.html"
 
 [[root.children.children]]
 name = "Blog"
-url = "https://amazon-expert.medium.com/"
-# url = "/news.html"
+url = "/news.html"
+
+[[root.children.children.children]]
+name = "{{ page.title }}"
+url = "/_layouts/blog.html"
 
 [[root.children.children]]
 name = "Podcast"
