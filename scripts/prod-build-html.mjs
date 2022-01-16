@@ -5,6 +5,7 @@ import {
 } from "./prod-build-images.mjs";
 import sass2css from "./prod-build-css.mjs";
 import buildRuntimeJS from "./prod-build-js.mjs";
+import copyRSSFeed from "./prod-build-rss-feed.mjs";
 import { CANONICAL_ORIGIN, GA_ID } from "./prod-config.mjs";
 import viewportsToTest from "./prod-viewports-to-test.mjs";
 
@@ -90,6 +91,19 @@ async function editPage(page, signalIn, signalOut) {
   }
 
   signalOut();
+
+  const rssFeed = await page.$(
+    "link[rel='alternate'][type='application/atom+xml']"
+  );
+  if (rssFeed) {
+    const href = await rssFeed.evaluate((link) =>
+      link.getAttribute("href").replace("{ origin }", ".")
+    );
+    await rssFeed.evaluate(
+      (link, href) => link.setAttribute("href", href),
+      await copyRSSFeed(href)
+    );
+  }
 
   const vectorFavicon = await page.$("link[rel='icon'][type='image/svg+xml']");
   if (vectorFavicon) {
