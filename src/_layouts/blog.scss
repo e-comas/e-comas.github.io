@@ -1,1 +1,14 @@
 @use "../utils/variables" as *;
+
+main > p,
+main > h3,
+main > h4,
+main > h5,
+main > h6,
+.publishing-info {
+  padding: 0 1ch;
+}
+.publishing-info {
+  font-size: 0.75rem;
+  margin-left: auto;
+}

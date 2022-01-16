@@ -13,7 +13,12 @@ export default (
     <Breadcrumbs />
     <main>
       <h2>{"{{ page.title }}"}</h2>
-      <p>{"{{ page.date }} - Written by {{ page.author }}"}</p>
+      <div class="publishing-info">
+        <time dateTime={'{{ page.date | date: "%Y-%m-%dT%H:%M:%S" }}'}>
+          {'{{ page.date | date: "%a, %b %d, %Y" }}'}
+        </time>
+        {" – Written by {{ page.author }}"}
+      </div>
       {"{{ content }}"}
     </main>
     <Footer />
