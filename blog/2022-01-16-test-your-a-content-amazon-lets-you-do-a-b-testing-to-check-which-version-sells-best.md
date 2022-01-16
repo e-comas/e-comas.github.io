@@ -2,7 +2,7 @@
 layout: blog
 title: "Test your A+ content: Amazon lets you do A/B testing to check which
   version sells best"
-author: Jérôme de Guignée
+author: Jérôme de Guigné
 date: 2022-01-16T18:47:08.282Z
 excerpt: >
   Did you know you can do A/B testing on your Amazon A+ content?
