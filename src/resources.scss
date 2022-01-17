@@ -10,6 +10,49 @@ main > p {
   @extend %p-after-title;
 }
 
+.blog-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  article {
+    a,
+    a:visited,
+    a:hover {
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 23 / 20;
+      object-fit: cover;
+    }
+
+    h4,
+    p {
+      letter-spacing: 0;
+      line-height: 1.5rem;
+      padding: 0 1ch;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 main > section {
   display: flex;
   flex-direction: column;

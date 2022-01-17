@@ -35,21 +35,23 @@ export default (
           We love to share our online retail expertise. Find out useful{" "}
           <ECommerce /> tips and what's new in the Amazon world.
         </p>
-        {"{% for post in site.posts limit:3 %}"}
-        {"{% if post.sitemap != false %}"}
-        <article>
-          <a href="{{ post.url }}">
-            <img src="{{ post.thumbnail }}" alt="" />
-          </a>
-          <h4>
-            <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
-          </h4>
-          <p>
-            <a href="{{ post.url }}">{"{{ post.excerpt | markdownify }}"}</a>
-          </p>
-        </article>
-        {"{% endif %}"}
-        {"{% endfor %}"}
+        <div class="blog-articles">
+          {"{% for post in site.posts limit:3 %}"}
+          {"{% if post.sitemap != false %}"}
+          <article>
+            <a href="{{ post.url }}">
+              <img src="{{ post.thumbnail }}" alt="" />
+            </a>
+            <h4>
+              <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
+            </h4>
+            <p>
+              <a href="{{ post.url }}">{"{{ post.excerpt | markdownify }}"}</a>
+            </p>
+          </article>
+          {"{% endif %}"}
+          {"{% endfor %}"}
+        </div>
         <a href="/news.html" className="cta">
           Read our blog
         </a>
