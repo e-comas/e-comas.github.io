@@ -1,5 +1,7 @@
 import { h } from "@aduh95/async-jsx";
 
+import yaml from "./utils/yaml.js";
+
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
 import Breadcrumbs from "./views/Breadcrumbs.js";
@@ -108,4 +110,11 @@ export default (
     </main>
     <Footer />
   </Body>
-).then((e) => document.body.append(e));
+).then(
+  (e) => (
+    document.body.append(e),
+    yaml`
+layout:none
+`
+  )
+);
