@@ -114,7 +114,7 @@ export default (
   (e) => (
     document.body.append(e),
     yaml`
-layout:none
+layout: none
 `
   )
 );
