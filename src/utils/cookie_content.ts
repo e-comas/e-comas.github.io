@@ -49,7 +49,7 @@ function createDialog() {
     privacyLink.href = "/privacy.html";
     privacyLink.textContent = "privacy policy";
     p.append(
-      "This website wants to store statistics cookies on your computer. You can read more about this in our ",
+      "This website wants to store statistical cookies on your computer. You can read more about this in our ",
       privacyLink,
       ".",
       ...previousConsentInfo
@@ -101,6 +101,7 @@ link.textContent = "Cookie settings";
 li.append(link);
 document.querySelector("footer ul")?.append(li);
 
-if (previousConsent == null && location.pathname !== '/privacy.html') showModal();
+if (previousConsent == null && location.pathname !== "/privacy.html")
+  showModal();
 
 export {};
