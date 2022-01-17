@@ -10,11 +10,12 @@ main > article {
     color: inherit;
   }
 
-  h4,
+  h3,
   p {
     letter-spacing: 0;
     line-height: 1.5rem;
     padding: 0 1ch;
+    text-align: center;
   }
 
   h3 {
@@ -24,7 +25,6 @@ main > article {
 
   p {
     font-size: 1rem;
-    text-align: center;
   }
 
   img {
@@ -37,6 +37,20 @@ main > article {
   @media screen and (min-width: 600px) {
     display: grid;
     grid-template-columns: 200px auto;
+
+    h3,
+    p {
+      padding: 0;
+      text-align: unset;
+    }
+
+    & > a:first-child {
+      grid-row: span 3;
+    }
+
+    .cta {
+      height: min-content;
+    }
   }
   @media screen and (min-width: 900px) {
     grid-template-columns: 300px auto;
