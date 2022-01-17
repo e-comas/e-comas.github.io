@@ -33,7 +33,8 @@ export default async function* findPages(
   }
 
   yield page;
-  const links = await page.$$("a");
+  // If `href` contains "{{ }}", it's a Liquid tag that we should leave alone for Jekyll to handle.
+  const links = await page.$$("a:not([href*='{{'],[href*='}}'])");
   for (const link of links) {
     yield* findPages(browser, await link.evaluate((link) => link.href));
   }

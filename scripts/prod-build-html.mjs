@@ -125,7 +125,10 @@ async function editPage(page, signalIn, signalOut) {
 
   const leadingSlash = await page.evaluate(() => leadingSlash);
 
-  const vectorImages = await page.$$("img:not(picture>img)");
+  const vectorImages = await page.$$(
+    // If `src` contains "{{ }}", it's a Liquid tag that we should leave alone for Jekyll to handle.
+    "img:not(picture>img):not([src*='{{'],[src*='}}'])"
+  );
   for (const elem of vectorImages) {
     const src = await elem.evaluate((image) =>
       image.src.replace(location.origin, ".")
