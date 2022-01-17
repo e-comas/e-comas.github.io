@@ -3,11 +3,13 @@
 main > article {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
 
   a,
   a:visited,
   a:hover {
     color: inherit;
+    text-decoration: none;
   }
 
   h3,
@@ -34,9 +36,14 @@ main > article {
     object-fit: cover;
   }
 
+  .cta {
+    margin: auto;
+  }
+
   @media screen and (min-width: 600px) {
     display: grid;
     grid-template-columns: 200px auto;
+    padding: 0 1ch;
 
     h3,
     p {
@@ -49,10 +56,13 @@ main > article {
     }
 
     .cta {
-      height: min-content;
+      margin-left: 0;
     }
   }
   @media screen and (min-width: 900px) {
     grid-template-columns: 300px auto;
+  }
+  @media screen and (min-width: #{$max-width + $body-padding}) {
+    padding: 0;
   }
 }
