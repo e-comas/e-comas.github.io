@@ -19,11 +19,11 @@ export default (
         <a href="{{ post.url }}">
           <img src="{{ post.thumbnail }}" alt="" loading="lazy" />
         </a>
-        <h4>
+        <h3>
           <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
-        </h4>
+        </h3>
         <p>
-          <a href="{{ post.url }}">{"{{ post.excerpt | markdownify }}"}</a>
+          <a href="{{ post.url }}">{"{{ post.excerpt | escape }}"}</a>
         </p>
         <a href="{{ post.url }}" class="cta">
           Read the article
