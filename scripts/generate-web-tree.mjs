@@ -3,7 +3,7 @@ const origin = `http://localhost:${PORT_NUMBER}`;
 
 function loadContentFromTSXModule(tsxUrl) {
   console.log("trying to import", tsxUrl);
-  return import(tsxUrl);
+  return import(tsxUrl).then((m) => m.default);
 }
 
 const pageURLs = new Set();
@@ -21,7 +21,7 @@ export default async function* findPages(
   await page.goto(url.toString());
   await page.evaluate((env) => (window.process = { env }), process.env);
   try {
-    const { default: yamlFrontMatter } = await page.evaluate(
+    const yamlFrontMatter = await page.evaluate(
       loadContentFromTSXModule,
       url.pathname.replace(/\.html$/, ".tsx")
     );
