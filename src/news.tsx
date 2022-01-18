@@ -17,7 +17,11 @@ export default (
       {"{% if post.sitemap != false %}"}
       <article>
         <a href="{{ post.url }}">
-          <img src="{{ post.thumbnail }}" alt="" loading="lazy" />
+          <img
+            src="{{ post.thumbnail }}"
+            alt="{{ post.thumbnail_alt }}"
+            loading="lazy"
+          />
         </a>
         <h3>
           <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
