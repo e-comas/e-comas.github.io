@@ -105,7 +105,7 @@ export default async function router(req, res) {
     }
     const url =
       req.url === "/" || req.url.startsWith("/?")
-        ? "./index.tsx"
+        ? "/index.tsx"
         : new URL(req.url, "root://").pathname.replace(/\.html$/, ".tsx");
     getRenderedHTML(url)
       .then((html) => res.end(html))
