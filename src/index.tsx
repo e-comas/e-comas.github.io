@@ -18,31 +18,29 @@ export default (
   <Body>
     <Header />
     <main>
-      <section>
-        <figure>
-          <figcaption>
-            <h3>Trust our amazing team</h3>
-            <p>
-              If you're looking to <strong>open</strong> an Amazon account,{" "}
-              <strong>grow</strong> your existing <ECommerce /> sales or{" "}
-              <strong>scale</strong> your business globally – or all three – we
-              know exactly how to help you.
-              <br />
-              We have an incredible team of <ECommerce /> experts with
-              specialist knowledge to help you expand your business across
-              Amazon and other platforms... and across the globe!
-            </p>
-            <a href="/contact.html" class="cta">
-              Meet with us
-            </a>
-          </figcaption>
-          <VideoEmbedLink
-            tagName="div"
-            previewImage="/images/Banner2Video.jpg"
-            videoId="vjGxQNji05U"
-          />
-        </figure>
-      </section>
+      <figure class="video-hero">
+        <VideoEmbedLink
+          tagName="div"
+          previewImage="/images/Banner2Video.png"
+          videoId="vjGxQNji05U"
+        />
+        <figcaption>
+          <h3>Trust our amazing team</h3>
+          <p>
+            If you're looking to <strong>open</strong> an Amazon account,{" "}
+            <strong>grow</strong> your existing <ECommerce /> sales or{" "}
+            <strong>scale</strong> your business globally – or all three – we
+            know exactly how to help you.
+            <br />
+            We have an incredible team of <ECommerce /> experts with specialist
+            knowledge to help you expand your business across Amazon and other
+            platforms... and across the globe!
+          </p>
+          <a href="/contact.html" class="cta">
+            Meet with us
+          </a>
+        </figcaption>
+      </figure>
 
       {/* <section class="area-of-expertise">
         <figure>

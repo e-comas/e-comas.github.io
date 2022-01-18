@@ -2,7 +2,7 @@
 
 @use "./utils/title" as *;
 
-section {
+main > section {
   min-height: 500px;
   display: flex;
   width: 100%;
