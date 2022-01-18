@@ -35,7 +35,7 @@ jobs:
         # Re-try several times in case there's a crash.
         run: corepack yarn build || corepack yarn build || corepack yarn build
       - name: Tweak Jekyll config for Base64Encoded file names
-        run: find -E . -regex '.*_[^.]{42}\.[a-z]{3,4}' | awk '{ if (NR == 1) { print "include:" } print "  - " $0 }' > docs/_config.yml
+        run: find . -regextype posix-extended -regex '.*_[^.]{42}\.[a-z]{3,4}' | awk '{ if (NR == 1) { print "include:" } print "  - " $0 }' > docs/_config.yml
       - name: Deploy
         run: |
           cd docs
