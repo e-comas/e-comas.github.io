@@ -2,6 +2,30 @@
 
 $gap: 1.2rem;
 
+.FourStepApproach-shape path {
+  stroke-dasharray: var(--dash-array);
+  animation: dash 5s linear;
+  &:first-of-type {
+    --dash-array: 236;
+  }
+  &:last-of-type {
+    --dash-array: 69;
+    // stroke-dashoffset: var(--dash-array);
+    // animation-name: dash2;
+    animation-duration: 1.5s;
+    animation-delay: 5s;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: var(--dash-array);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 section.four-step {
   display: flex;
   flex-direction: column;
@@ -33,17 +57,6 @@ section.four-step {
     flex-direction: column;
     gap: $gap;
     padding: 1rem;
-    border-radius: $border-radius;
-    background-color: $greyLike;
-
-    &:hover {
-      @extend %inverted;
-      img {
-        // Computed by https://codepen.io/sosuke/pen/Pjoqqp
-        filter: brightness(0) invert(11%) sepia(21%) saturate(6521%)
-          hue-rotate(218deg) brightness(98%) contrast(108%);
-      }
-    }
 
     img {
       max-width: 2.5rem;
@@ -52,18 +65,9 @@ section.four-step {
 
   @media screen and (min-width: 650px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    &::before {
-      content: "";
-      grid-column: 2;
-      grid-row: 1;
-    }
-
-    & > div {
-      padding: 2.5rem;
-      &:nth-child(even) {
-        transform: translateY(3.3rem);
-      }
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .FourStepApproach-shape {
+      grid-column: span 4;
     }
   }
 }

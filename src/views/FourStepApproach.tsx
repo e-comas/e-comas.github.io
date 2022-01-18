@@ -2,10 +2,13 @@ import { h } from "@aduh95/async-jsx";
 import { ECommerce } from "./eWords.js";
 
 import "./FourStepApproach.scss";
+import FourStepApproachSvg from "./FourStepApproach.svg.js";
 
 export default () => (
   <section class="four-step">
     <h2>Our 4-step approach</h2>
+
+    <FourStepApproachSvg />
 
     <div>
       <img src="/images/chess.svg" alt="Chess knight" />
