@@ -36,6 +36,16 @@ main > article {
     object-fit: cover;
   }
 
+  .tags {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    color: $grey;
+    & > li::before {
+      content: "#";
+    }
+  }
+
   .cta {
     margin: auto;
   }
@@ -43,7 +53,6 @@ main > article {
   @media screen and (min-width: 600px) {
     display: grid;
     grid-template-columns: 200px auto;
-    grid-template-rows: 1fr auto 1fr;
     padding: 0 1ch;
 
     h3,
@@ -57,7 +66,7 @@ main > article {
     }
 
     & > a:first-child {
-      grid-row: span 3;
+      grid-row: span 5;
     }
 
     .cta {
