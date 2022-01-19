@@ -1,5 +1,12 @@
 @use "../utils/variables" as *;
 
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+  margin: auto;
+}
+
 main > p,
 main > h3,
 main > h4,
@@ -10,5 +17,6 @@ main > h6,
 }
 .publishing-info {
   font-size: 0.75rem;
+  margin: 2rem 0;
   margin-left: auto;
 }

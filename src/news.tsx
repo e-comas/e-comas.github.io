@@ -23,9 +23,17 @@ export default (
             loading="lazy"
           />
         </a>
+        <time dateTime={'{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}'}>
+          {'{{ post.date | date: "%b %d, %Y" }}'}
+        </time>
         <h3>
           <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
         </h3>
+        <ul class="tags">
+          {"{% for tag in post.tags %}"}
+          <li>{"{{ tag }}"}</li>
+          {"{% endfor %}"}
+        </ul>
         <p>
           <a href="{{ post.url }}">{"{{ post.excerpt | escape }}"}</a>
         </p>
