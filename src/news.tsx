@@ -7,6 +7,7 @@ import Header from "./views/Header.js";
 import Footer from "./views/Footer.js";
 
 import "./news.scss";
+import "runtime:./news-runtime.js";
 
 export default (
   <Body title="Blog">

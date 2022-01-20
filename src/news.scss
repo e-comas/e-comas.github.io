@@ -5,6 +5,10 @@ main > article {
   flex-direction: column;
   gap: 0.5rem;
 
+  &[hidden] {
+    display: none;
+  }
+
   a,
   a:visited,
   a:hover {
