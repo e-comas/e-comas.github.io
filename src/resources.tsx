@@ -23,6 +23,7 @@ export default (
     <Breadcrumbs />
     <main>
       <h2>Resources</h2>
+      {/* Check the spacing here and make h3s as big as h2 */}
       <p>
         Learn from our amazing team of <ECommerce /> experts in whatever way
         suits you - we’ve got {/*blogs, */}webinars, podcasts, white papers, and
@@ -71,7 +72,7 @@ export default (
       </section>
 
       <section id="podcast" class="podcast">
-        <h2>Podcast</h2>
+        <h3>Podcast</h3>
         <p>
           Introducing the <EComas /> podcast, now available on your favourite
           streaming service! Listen now to find out how to grow on Amazon and

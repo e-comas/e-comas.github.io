@@ -1,6 +1,6 @@
 @use "./variables" as *;
 
-main > h2 {
+%main-title {
   font-size: 2rem;
   letter-spacing: -0.5px;
   text-align: center;
@@ -20,4 +20,8 @@ main > h2 {
   padding: 0 1rem;
   max-width: $max-width;
   margin: 0 auto 3rem;
+}
+
+main > h2 {
+  @extend %main-title;
 }
