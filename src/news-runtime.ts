@@ -11,8 +11,9 @@ for (const article of articles) {
       const tag = "#" + li.textContent;
 
       const link = document.createElement("a");
-      link.textContent = link.href = tag;
-      li.replaceWith(link);
+      link.href = tag;
+      link.append(li.firstChild!);
+      li.append(link);
 
       tags.add(tag);
       return tag;
