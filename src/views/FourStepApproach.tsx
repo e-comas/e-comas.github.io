@@ -1,6 +1,7 @@
 import { h } from "@aduh95/async-jsx";
 import { ECommerce } from "./eWords.js";
 
+import "runtime:./FourStepApproach.runtime.js";
 import "./FourStepApproach.scss";
 import FourStepApproachSvg from "./FourStepApproach.svg.js";
 
