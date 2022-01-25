@@ -8,10 +8,34 @@ export default () => (
   <section class="four-step">
     <h2>Our 4-step approach</h2>
 
-    <FourStepApproachSvg />
+    <ol>
+      <li>
+        <img src="/images/icons/people.svg" alt="" aria-hidden="true" />
+        <span>Define strategy</span>
+        <FourStepApproachSvg />
+      </li>
+      <li>
+        <img src="/images/icons/target.svg" alt="" aria-hidden="true" />
+        <span>Manage operations</span>
+        <FourStepApproachSvg />
+      </li>
+      <li>
+        <img
+          src="/images/icons/successful-person.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <span>Grow traffic</span>
+        <FourStepApproachSvg />
+      </li>
+      <li>
+        <img src="/images/icons/globe.svg" alt="" aria-hidden="true" />
+        <span>Drive conversion</span>
+        <FourStepApproachSvg />
+      </li>
+    </ol>
 
     <div>
-      <img src="/images/chess.svg" alt="Chess knight" />
       <h3>
         Define <strong>strategy</strong>
       </h3>
@@ -32,7 +56,6 @@ export default () => (
       </a>
     </div>
     <div>
-      <img src="/images/euro-cog.svg" alt="Cog" />
       <h3>
         Manage <strong>operations</strong>
       </h3>
@@ -54,7 +77,6 @@ export default () => (
       </a>
     </div>
     <div>
-      <img src="/images/directions.svg" alt="Directions" />
       <h3>
         Drive <strong>conversion</strong>
       </h3>
@@ -74,7 +96,6 @@ export default () => (
       </a>
     </div>
     <div>
-      <img src="/images/search.svg" alt="SEO" />
       <h3>
         Grow <strong>traffic</strong>
       </h3>
