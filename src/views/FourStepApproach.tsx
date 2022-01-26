@@ -7,7 +7,7 @@ import FourStepApproachSvg from "./FourStepApproach.svg.js";
 
 export default () => (
   <section class="four-step">
-    <h2>Our 4-step approach</h2>
+    <h2>Our 4&#8209;step approach</h2>
 
     <ol>
       <li>
@@ -62,7 +62,7 @@ export default () => (
       </h3>
       <ul>
         <li>
-          We can <strong>manage your account</strong> on multiple <ECommerce />
+          We can <strong>manage your account</strong> on multiple <ECommerce />{" "}
           platforms.
         </li>
         <li>
@@ -70,30 +70,11 @@ export default () => (
           Veepee, Bol, Walmart, and more.
         </li>
         <li>
-          We can help you with <strong>logistics</strong> and VAT.
+          We can help you with <strong>logistics</strong> &amp; VAT.
         </li>
       </ul>
       <a href="/operations.html" class="cta">
         Run your <ECommerce />
-      </a>
-    </div>
-    <div>
-      <h3>
-        Drive <strong>conversion</strong>
-      </h3>
-      <ul>
-        <li>
-          We can help you <strong>create</strong> outstanding listings.
-        </li>
-        <li>
-          We can <strong>manage</strong> your product information.
-        </li>
-        <li>
-          We can <strong>globalise</strong> your listings content.
-        </li>
-      </ul>
-      <a href="/syndication.html" class="cta">
-        Maximise your content
       </a>
     </div>
     <div>
@@ -114,6 +95,25 @@ export default () => (
       </ul>
       <a href="/advertising.html" class="cta">
         Enhance your advertising
+      </a>
+    </div>
+    <div>
+      <h3>
+        Drive <strong>conversion</strong>
+      </h3>
+      <ul>
+        <li>
+          We can help you <strong>create</strong> outstanding listings.
+        </li>
+        <li>
+          We can <strong>manage</strong> your product information.
+        </li>
+        <li>
+          We can <strong>globalise</strong> your listings content.
+        </li>
+      </ul>
+      <a href="/syndication.html" class="cta">
+        Maximise your content
       </a>
     </div>
   </section>

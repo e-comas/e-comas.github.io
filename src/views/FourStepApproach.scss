@@ -41,11 +41,16 @@ section.four-step {
   }
 
   h3 {
+    &::before {
+      content: counter(four-step-approach) ". ";
+    }
     &,
     & strong {
-      text-transform: capitalize;
+      text-transform: uppercase;
       font-weight: 600;
-      // font-variant: small-caps;
+      font-size: 1.1rem;
+      letter-spacing: 0;
+      line-height: 1.5rem;
     }
   }
 
@@ -61,10 +66,28 @@ section.four-step {
     display: flex;
     flex-direction: column;
     gap: $gap;
-    padding: 1rem;
+    padding: 0rem;
 
-    img {
-      max-width: 2.5rem;
+    &:first-of-type {
+      counter-reset: four-step-approach;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      & > li {
+        &::before {
+          content: "- ";
+        }
+        font-size: 0.9rem;
+        letter-spacing: 0;
+        line-height: 1.3rem;
+        strong {
+          text-transform: unset;
+          font-weight: inherit;
+        }
+      }
     }
 
     .cta {
@@ -74,6 +97,7 @@ section.four-step {
 
   & > div,
   & > ol > * {
+    counter-increment: four-step-approach;
     &:nth-of-type(1) {
       --accent-color: #fed140;
     }
@@ -92,6 +116,7 @@ section.four-step {
     display: grid;
     position: relative;
     grid-template-columns: repeat(4, 1fr);
+    row-gap: 3rem;
     h2 {
       position: absolute;
       top: 22.5rem;
@@ -104,6 +129,8 @@ section.four-step {
       display: grid;
       grid-column: span 4;
       margin: 0 auto;
+
+      animation: fadeIn 500ms; // To avoid flashing when the page loads.
 
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
@@ -125,7 +152,7 @@ section.four-step {
       & > :nth-child(3) {
         grid-area: traffic;
         svg {
-          transform: rotate(0.75turn) translate(55px, -50px);
+          transform: rotate(0.75turn) translate(55px, -2.5rem);
         }
       }
       & > :nth-child(4) {
@@ -134,7 +161,6 @@ section.four-step {
 
       & > * {
         position: relative;
-        counter-increment: four-step-approach;
 
         display: flex;
         gap: 0.5rem;
@@ -147,25 +173,44 @@ section.four-step {
         font-size: 1.5rem;
         padding: 2.5rem;
         text-align: center;
-        svg {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: -50px;
-          transform: translate(5px, -50px);
+      }
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% + 2.5rem);
+        transform: translate(5px, -2.5rem);
+      }
+      img {
+        height: 1.5em;
+        width: auto;
+      }
+      span {
+        &::before {
+          content: counter(four-step-approach) ". ";
         }
-        img {
-          height: 1em;
-          width: auto;
-        }
-        span {
-          &::before {
-            content: counter(four-step-approach) ". ";
-          }
-          text-transform: uppercase;
-          line-height: 1.1em;
-        }
+        text-transform: uppercase;
+        line-height: 1.1em;
       }
     }
+    .cta {
+      margin-top: auto;
+    }
+  }
+  @media screen and(min-width:#{$max-width+$body-padding}) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
