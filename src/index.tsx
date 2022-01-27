@@ -115,15 +115,16 @@ export default (
         class="key-figures"
       >
         <p>
-          <AnimatedFigure tagName="strong" countTo={125_000} /> listing managed
+          <AnimatedFigure tagName="strong" countTo={125_000} />
+          <span>listing managed</span>
         </p>
         <p>
-          <AnimatedFigure tagName="strong" countTo={1_000} /> vendor &amp;
-          seller accounts opened/managed
+          <AnimatedFigure tagName="strong" countTo={1_000} />
+          <span>vendor &amp; seller accounts opened/managed</span>
         </p>
         <p>
-          <AnimatedFigure tagName="strong" countTo={2_500_000} currency="EUR" />{" "}
-          advertising campaigns handled
+          <AnimatedFigure tagName="strong" countTo={2_500_000} currency="EUR" />
+          <span>advertising campaigns handled</span>
         </p>
       </ElementWithBackgroundImage>
 
