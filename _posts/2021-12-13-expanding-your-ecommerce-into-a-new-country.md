@@ -4,7 +4,7 @@ title: >-
   Know your new market: What to remember when you’re expanding into a new
   country
 author: Jérôme de Guigné
-date: 2022-01-23T14:20:09.017Z
+date: 2021-12-13T14:20:09.017Z
 excerpt: >
   People from different countries have different cultures when it comes to
   buying stuff online.
