@@ -64,6 +64,7 @@ div.testimonies {
 
     .slider.js-auto-slide {
       width: 75%;
+      max-width: $max-width;
       margin: 0 auto;
       scrollbar-width: none;
       &::-webkit-scrollbar {
@@ -75,7 +76,8 @@ div.testimonies {
         position: absolute;
         top: 50%;
         // transform: translateX(-50px);
-        left: 12.5%;
+        --margin: 12.5%;
+        left: var(--margin);
 
         -webkit-appearance: none;
         appearance: none;
@@ -91,7 +93,7 @@ div.testimonies {
         transform: rotate(-0.125turn);
 
         &:last-child {
-          right: 12.5%;
+          right: var(--margin);
           left: unset;
           transform: rotate(0.375turn);
         }
@@ -99,6 +101,13 @@ div.testimonies {
       figure {
         width: 100%;
       }
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    .slider.js-auto-slide button {
+      --margin: calc(
+        50% - #{math.div($max-width, 2) + math.div($max-width, 10)}
+      );
     }
   }
   .slider.js-auto-slide {
