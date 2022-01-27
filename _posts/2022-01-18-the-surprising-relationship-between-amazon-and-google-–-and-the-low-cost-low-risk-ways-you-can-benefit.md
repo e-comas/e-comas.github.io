@@ -7,24 +7,28 @@ date: 2022-01-18T14:20:09.017Z
 excerpt: >
   Amazon and Google: bitter rivals? 
 
-  They compete against each other. You would think they'd keep out of each other's way.
+  They compete against each other. You would think they'd keep out of each
+  other's way.
 
-  Google even relaunched its shopping platform last year in order to better compete against Amazon.
+  Google even relaunched its shopping platform last year in order to better
+  compete against Amazon.
 
   But even so, the two companies have a surprisingly fruitful relationship.
 
   A large proportion of Amazon's traffic comes directly from Google searches.
 
-  And because of that, a huge proportion of Google's income comes from Amazon itself: Amazon is one of Google's biggest clients.
+  And because of that, a huge proportion of Google's income comes from Amazon
+  itself: Amazon is one of Google's biggest clients.
 thumbnail: /images/uploads/amazonvsgoogle.png
 thumbnail_alt: Amazon versus Google
 tags:
   - AmazonAdvertising
   - GoogleAds
-  - Amazonsellers
-  - ecommerce
+  - AmazonSellers
+  - eCommerce
   - retail
 ---
+
 #### Focused, targeted advertising
 
 It's estimated that as much as a quarter of Amazon sellers now use Google to advertise their products.
