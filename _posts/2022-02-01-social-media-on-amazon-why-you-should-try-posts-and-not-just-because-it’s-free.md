@@ -22,8 +22,6 @@ It's Amazon's version of social media: Posts consist of an image, a caption and 
 
 Amazon automatically places Posts based on relevance and customer engagement. There's a good chance they'll end up on your competitors' detail pages, so they’re great for ‘competitor conquesting’ - and will allow you to defend your own product detail pages from competitors.
 
-
-
 #### What's the idea behind it?
 
 The idea is to create a Twitter or Instagram-style experience. Amazon encourages brands to post the same product-focused content they already post on social media, with the same regularity.
@@ -36,13 +34,7 @@ Your customers can 'follow' you, so they're kept up to date with your deals and 
 
 Alas it's only available in the USA for now, while it's in beta version. We're hoping it comes to Europe and beyond soon.
 
-
-
-![](https://lh5.googleusercontent.com/EJtGOJFqAOf0g7UO73ww-LnLFGwszCeWtr3000k_c4i4bDXuCoZ8XwWKWl_o3Lx18oZvpWoSV3tMhfBdxyrkqW3QanuUWCdKZbQ5VQsmikDwhTi1RrXguL0LAALluWREm-10IGLZ)
-
-\[caption: The Posts dashboard lets you see which Posts are performing best]
-
-
+![The Posts dashboard lets you see which Posts are performing best](https://lh5.googleusercontent.com/EJtGOJFqAOf0g7UO73ww-LnLFGwszCeWtr3000k_c4i4bDXuCoZ8XwWKWl_o3Lx18oZvpWoSV3tMhfBdxyrkqW3QanuUWCdKZbQ5VQsmikDwhTi1RrXguL0LAALluWREm-10IGLZ "The Posts dashboard lets you see which Posts are performing best")
 
 #### Do Posts drive up traffic?
 
