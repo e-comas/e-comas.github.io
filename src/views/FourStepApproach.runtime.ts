@@ -1,4 +1,4 @@
-const scale = 0.75;
+const scale = 1;
 
 function animate(
   obj: SVGElement | HTMLElement,
