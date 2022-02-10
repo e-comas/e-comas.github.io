@@ -14,14 +14,17 @@ main {
   }
   & > aside {
     grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
   }
 
   a.tag {
     font-size: 0.9rem;
     color: $grey;
     letter-spacing: 0;
-    text-align: center;
     line-height: 1rem;
+    text-decoration: none;
   }
 }
 main > section > article {
@@ -69,7 +72,7 @@ main > section > article {
     display: flex;
     gap: 1rem;
     color: $grey;
-    & > li::before {
+    & > li > a.tag::before {
       content: "#";
     }
   }
