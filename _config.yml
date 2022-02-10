@@ -1,17 +1,17 @@
 include:
-  - ./node_modules/@squoosh/lib/build/rotate-e8fb6784.wasm
-  - ./node_modules/@squoosh/lib/build/visdif-f4d1bd06.wasm
-  - ./node_modules/postcss-discard-overridden/package.json
-  - ./node_modules/devtools-protocol/json/js_protocol.json
-  - ./node_modules/postcss-minify-font-values/package.json
-  - ./node_modules/jsdom/lib/jsdom/browser/js-globals.json
-  - ./node_modules/web-streams-polyfill/dist/ponyfill.mjs
-  - ./node_modules/web-streams-polyfill/dist/polyfill.mjs
-  - ./node_modules/electron-to-chromium/full-versions.json
-  - ./node_modules/postcss-discard-duplicates/package.json
+  - ./node_modules/sucrase/dist/util/getJSXPragmaInfo.mjs
+  - ./node_modules/sucrase/dist/util/isAsyncOperation.mjs
   - ./node_modules/sucrase/dist/parser/util/charcodes.mjs
-  - ./node_modules/sucrase/dist/parser/traverser/base.mjs
   - ./node_modules/sucrase/dist/parser/traverser/util.mjs
   - ./node_modules/sucrase/dist/parser/traverser/lval.mjs
-  - ./node_modules/sucrase/dist/util/isAsyncOperation.mjs
-  - ./node_modules/sucrase/dist/util/getJSXPragmaInfo.mjs
+  - ./node_modules/sucrase/dist/parser/traverser/base.mjs
+  - ./node_modules/postcss-discard-duplicates/package.json
+  - ./node_modules/electron-to-chromium/full-versions.json
+  - ./node_modules/web-streams-polyfill/dist/polyfill.mjs
+  - ./node_modules/web-streams-polyfill/dist/ponyfill.mjs
+  - ./node_modules/jsdom/lib/jsdom/browser/js-globals.json
+  - ./node_modules/@squoosh/lib/build/rotate-e8fb6784.wasm
+  - ./node_modules/@squoosh/lib/build/visdif-f4d1bd06.wasm
+  - ./node_modules/postcss-minify-font-values/package.json
+  - ./node_modules/devtools-protocol/json/js_protocol.json
+  - ./node_modules/postcss-discard-overridden/package.json
