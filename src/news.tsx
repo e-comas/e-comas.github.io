@@ -14,36 +14,44 @@ export default (
     <Header />
     <main>
       <h2>Our Blog</h2>
-      {"{% for post in site.posts %}"}
-      {"{% if post.sitemap != false %}"}
-      <article>
-        <a href="{{ post.url }}">
-          <img
-            src="{{ post.thumbnail }}"
-            alt="{{ post.thumbnail_alt }}"
-            loading="lazy"
-          />
-        </a>
-        <time dateTime={'{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}'}>
-          {'{{ post.date | date: "%b %d, %Y" }}'}
-        </time>
-        <h3>
-          <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
-        </h3>
-        <ul class="tags">
-          {"{% for tag in post.tags %}"}
-          <li>{"{{ tag }}"}</li>
-          {"{% endfor %}"}
-        </ul>
-        <p>
-          <a href="{{ post.url }}">{"{{ post.excerpt | escape }}"}</a>
-        </p>
-        <a href="{{ post.url }}" class="cta">
-          Read the article
-        </a>
-      </article>
-      {"{% endif %}"}
-      {"{% endfor %}"}
+      <section>
+        {"{% for post in site.posts %}"}
+        {"{% if post.sitemap != false %}"}
+        <article>
+          <a href="{{ post.url }}">
+            <img
+              src="{{ post.thumbnail }}"
+              alt="{{ post.thumbnail_alt }}"
+              loading="lazy"
+            />
+          </a>
+          <time dateTime={'{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}'}>
+            {'{{ post.date | date: "%b %d, %Y" }}'}
+          </time>
+          <h3>
+            <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
+          </h3>
+          <ul class="tags">
+            {"{% for tag in post.tags %}"}
+            <li>{"{{ tag }}"}</li>
+            {"{% endfor %}"}
+          </ul>
+          <p>
+            <a href="{{ post.url }}">{"{{ post.excerpt | escape }}"}</a>
+          </p>
+          <a href="{{ post.url }}" class="cta">
+            Read the article
+          </a>
+        </article>
+        {"{% endif %}"}
+        {"{% endfor %}"}
+      </section>
+      <aside>
+        <a class="cta">Strategy</a>
+        <a class="cta">Operations</a>
+        <a class="cta">Conversion</a>
+        <a class="cta">Traffic</a>
+      </aside>
     </main>
     <Footer />
   </Body>

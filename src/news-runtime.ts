@@ -12,6 +12,7 @@ for (const article of articles) {
 
       const link = document.createElement("a");
       link.href = tag;
+      link.className = "tag";
       link.append(li.firstChild!);
       li.append(link);
 
@@ -21,36 +22,54 @@ for (const article of articles) {
   );
 }
 
-const scrollDownMenu = document.createElement("select");
-const firstOption = document.createElement("option");
-firstOption.text = "No filter";
-firstOption.value = "";
-scrollDownMenu.append(
-  firstOption,
+const dataList = document.createElement("datalist");
+dataList.id = "tags-list";
+dataList.append(
   ...Array.from(tags, (tag) => {
     const option = document.createElement("option");
     option.text = tag;
     return option;
   })
 );
-scrollDownMenu.addEventListener("change", (e) => {
-  location.hash = scrollDownMenu.value;
+const filterField = document.createElement("input");
+filterField.placeholder = "Filter by tag";
+filterField.setAttribute("aria-label", filterField.placeholder);
+filterField.setAttribute("list", dataList.id);
+filterField.addEventListener("change", (e) => {
+  location.hash = filterField.value;
 });
-document.querySelector("main>h2")!.after(scrollDownMenu);
+document.querySelector("main>aside")!.append(
+  dataList,
+  filterField,
+  ...Array.from(tags, (tag) => {
+    const link = document.createElement("a");
+    link.textContent = tag;
+    link.href = tag;
+    link.className = "tag";
+    return link;
+  })
+);
 
+const style: HTMLStyleElement = document.createElement("style");
 function filter() {
   if (tags.has(location.hash)) {
     for (const article of articles) {
       article.hidden = !tagsCache.get(article)!.includes(location.hash);
     }
-    scrollDownMenu.value = location.hash;
+    filterField.value = location.hash;
+    style.sheet!.disabled = false;
+    style.sheet!.insertRule(
+      `a.tag[href=${JSON.stringify(location.hash)}]{color:#65D7BE}`,
+      0
+    );
   } else {
     for (const article of articles) {
       article.hidden = false;
     }
-    firstOption.selected = true;
+    filterField.value = "";
+    style.sheet!.disabled = true;
   }
-  scrollDownMenu.scrollIntoView({
+  filterField.scrollIntoView({
     behavior: "smooth",
     block: "start",
     inline: "start",

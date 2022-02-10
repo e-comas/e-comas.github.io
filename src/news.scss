@@ -1,6 +1,30 @@
 @use "./utils/variables" as *;
 
-main > article {
+main {
+  display: grid;
+  grid-template-columns: 460px auto;
+  grid-template-areas: "title title" "aside articles";
+  gap: inherit;
+  & > h2 {
+    grid-column: span 2;
+  }
+
+  & > section {
+    grid-area: articles;
+  }
+  & > aside {
+    grid-area: aside;
+  }
+
+  a.tag {
+    font-size: 0.9rem;
+    color: $grey;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 1rem;
+  }
+}
+main > section > article {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -58,11 +82,15 @@ main > article {
     display: grid;
     grid-template-columns: 200px auto;
     padding: 0 1ch;
+    max-width: 1100px;
 
     h3,
     p {
       padding: 0;
       text-align: unset;
+      max-height: 4.5em;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     h3 {
