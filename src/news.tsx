@@ -46,12 +46,7 @@ export default (
         {"{% endif %}"}
         {"{% endfor %}"}
       </section>
-      <aside>
-        <a class="cta">Strategy</a>
-        <a class="cta">Operations</a>
-        <a class="cta">Conversion</a>
-        <a class="cta">Traffic</a>
-      </aside>
+      <aside></aside>
     </main>
     <Footer />
   </Body>

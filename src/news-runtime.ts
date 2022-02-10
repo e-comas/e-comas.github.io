@@ -1,7 +1,7 @@
 const tags = new Set() as Set<string>;
 const tagsCache = new WeakMap() as Map<HTMLElement, string[]>;
 const articles = document.querySelectorAll(
-  "main>article"
+  "main>section>article"
 ) as NodeListOf<HTMLElement>;
 
 for (const article of articles) {
@@ -27,7 +27,7 @@ dataList.id = "tags-list";
 dataList.append(
   ...Array.from(tags, (tag) => {
     const option = document.createElement("option");
-    option.text = tag;
+    option.value = tag;
     return option;
   })
 );
