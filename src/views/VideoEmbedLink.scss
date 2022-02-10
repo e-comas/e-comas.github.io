@@ -29,6 +29,7 @@
   &.video-loading::before,
   &:hover::before {
     opacity: 1;
+    z-index: 1;
   }
 
   a {

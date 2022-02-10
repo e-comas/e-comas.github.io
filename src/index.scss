@@ -57,9 +57,13 @@ section {
     position: relative;
     aspect-ratio: 2 / 1;
 
+    iframe {
+      position: absolute;
+      z-index: 1;
+    }
+
     figcaption {
       position: absolute;
-      z-index: -1;
       right: 0;
       top: 50%;
       padding: 2.5rem;
