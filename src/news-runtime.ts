@@ -57,7 +57,7 @@ function filter() {
       article.hidden = !tagsCache.get(article)!.includes(location.hash);
     }
     filterField.value = location.hash;
-    style.sheet!.disabled = false;
+    document.head.append(style);
     style.sheet!.insertRule(
       `a.tag[href=${JSON.stringify(location.hash)}]{color:#65D7BE}`,
       0
@@ -67,7 +67,7 @@ function filter() {
       article.hidden = false;
     }
     filterField.value = "";
-    style.sheet!.disabled = true;
+    style.remove();
   }
   filterField.scrollIntoView({
     behavior: "smooth",
