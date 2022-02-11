@@ -21,7 +21,7 @@ export default (
       <figure class="video-hero">
         <VideoEmbedLink
           tagName="div"
-          previewImage="/images/Banner2Video.png"
+          previewImage="/images/HomeVideoBanner.jpg"
           videoId="vjGxQNji05U"
         />
         <figcaption>
