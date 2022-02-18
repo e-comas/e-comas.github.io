@@ -1,4 +1,4 @@
-const scale = 1;
+const scale = 0.5;
 
 function animate(
   obj: SVGElement | HTMLElement,
@@ -25,6 +25,7 @@ async function runAnimation({ target }: IntersectionObserverEntry) {
   }
 
   (target as HTMLElement).style.visibility = "unset";
+  let associatedText = target.nextElementSibling as HTMLElement;
   for (const child of target.children) {
     const [illustration, title] = child.children;
 
@@ -69,6 +70,12 @@ async function runAnimation({ target }: IntersectionObserverEntry) {
       ],
       { duration: scale * 71 }
     );
+
+    associatedText.style.visibility = "unset";
+    await animate(associatedText, [{ opacity: "0" }, { opacity: "1" }], {
+      duration: scale * 710,
+    });
+    associatedText = associatedText.nextElementSibling as HTMLElement;
   }
 }
 
@@ -84,9 +91,12 @@ const observer = new IntersectionObserver(
 );
 
 function activate() {
-  for (const elem of document.querySelectorAll(".four-step>ol")) {
-    (elem as HTMLElement).style.visibility = "hidden";
+  for (let elem of document.querySelectorAll(".four-step>ol")) {
     observer.observe(elem);
+    do {
+      (elem as HTMLElement).style.visibility = "hidden";
+      elem = elem.nextElementSibling!;
+    } while (elem);
   }
 }
 
