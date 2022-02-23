@@ -13,6 +13,7 @@ import FourStepApproach from "./views/FourStepApproach.js";
 import Picture from "./utils/Picture.js";
 
 import "./index.scss";
+import TeamCertifications from "./views/TeamCertifications.js";
 
 export default (
   <Body>
@@ -129,6 +130,7 @@ export default (
       </ElementWithBackgroundImage>
 
       <Partners />
+      <TeamCertifications />
     </main>
     <Footer />
   </Body>

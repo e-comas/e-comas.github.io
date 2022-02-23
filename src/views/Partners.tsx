@@ -7,7 +7,7 @@ import "./Partners.scss";
 export default () => (
   <section class="partners">
     <h2>Partners we trust</h2>
-    <div>
+    <div role="list">
       <a href="salsify.html">
         <img alt="Salsify" src="/images/partners/salsify.svg" />
       </a>
