@@ -21,6 +21,16 @@ export default () => (
         />
       </a>
       <a>Salsify</a>
+      <a
+        href="https://www.google.com/partners/agency?id=3553874603"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          src="/images/brands/Google Partner.svg"
+          alt="Google Partner certification badge"
+        />
+      </a>
     </div>
   </section>
 );
