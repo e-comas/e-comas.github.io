@@ -2,13 +2,20 @@
 
 main {
   display: grid;
-  grid-template-columns: 460px auto;
-  grid-template-areas: "title title" "aside articles";
   gap: inherit;
-  & > h2 {
-    grid-column: span 2;
+  grid-template-areas: "title" "aside" "articles";
+
+  @media screen and (min-width: #{$max-width}) {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "title title" "aside articles";
+  }
+  @media screen and (min-width: #{$max-width+500px}) {
+    grid-template-columns: 400px auto;
   }
 
+  & > h2 {
+    grid-area: title;
+  }
   & > section {
     grid-area: articles;
   }
@@ -17,6 +24,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: inherit;
+
+    @media screen and (max-width: 799px) {
+      & > a.tag {
+        display: none;
+      }
+    }
   }
 
   a.tag {
@@ -31,6 +44,19 @@ main > section > article {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 1rem 0;
+  &:first-of-type {
+    padding-top: 0;
+  }
+  @media screen and (min-width: #{$max-width+500px}) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    img:first-of-type {
+      transform: scale(1.285);
+      transform-origin: right;
+    }
+  }
 
   &[hidden] {
     display: none;
@@ -49,6 +75,9 @@ main > section > article {
     line-height: 1.5rem;
     padding: 0 1ch;
     text-align: center;
+  }
+  time {
+    padding: 0 1ch;
   }
 
   h3 {
@@ -70,6 +99,7 @@ main > section > article {
   .tags {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     color: $grey;
     & > li > a.tag::before {
