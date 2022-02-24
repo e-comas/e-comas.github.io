@@ -1,0 +1,12 @@
+@use "../utils/variables" as *;
+@use "./Partners.scss" as *;
+
+section.certifications {
+  @extend %partners;
+
+  & > div {
+    img {
+      max-height: unset;
+    }
+  }
+}

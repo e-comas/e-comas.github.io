@@ -1,6 +1,6 @@
 @use "../utils/variables" as *;
 
-section.partners {
+%partners {
   padding: 5rem;
   gap: 3rem;
   min-height: auto;
@@ -21,4 +21,8 @@ section.partners {
       object-fit: contain;
     }
   }
+}
+
+section.partners {
+  @extend %partners;
 }
