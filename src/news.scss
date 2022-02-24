@@ -44,19 +44,6 @@ main > section > article {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 1rem 0;
-  &:first-of-type {
-    padding-top: 0;
-  }
-  @media screen and (min-width: #{$max-width+500px}) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 4rem;
-    img:first-of-type {
-      transform: scale(1.285);
-      transform-origin: right;
-    }
-  }
 
   &[hidden] {
     display: none;
@@ -114,8 +101,11 @@ main > section > article {
   @media screen and (min-width: 600px) {
     display: grid;
     grid-template-columns: 200px auto;
-    padding: 0 1ch;
     max-width: 1100px;
+    padding: 1rem 0;
+    &:first-of-type {
+      padding-top: 0;
+    }
 
     h3,
     p {
@@ -142,7 +132,13 @@ main > section > article {
   @media screen and (min-width: 900px) {
     grid-template-columns: 300px auto;
   }
-  @media screen and (min-width: #{$max-width + $body-padding}) {
-    padding: 0;
+  @media screen and (min-width: #{$max-width+500px}) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    img:first-of-type {
+      transform: scale(1.285);
+      transform-origin: right;
+    }
   }
 }
