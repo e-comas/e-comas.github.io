@@ -10,7 +10,8 @@ excerpt: >
 thumbnail: /images/uploads/social-media.jpg
 thumbnail_alt: Posts social media
 tags:
-  - Operations AmazonFeatures
+  - Operations
+  - AmazonFeatures
 ---
 #### What is Amazon Posts?
 
