@@ -6,8 +6,10 @@ date: 2022-09-22T10:06:01.330Z
 excerpt: e-Comas is proud to announce it is now an approved member of the Amazon
   Advertising Partner Network. It includes a directory to search for ideal
   partners.
-thumbnail: /images/uploads/amazonadvertising.png
-thumbnail_alt: Amazon ads logo
+thumbnail: /images/uploads/advertising.jpg
+thumbnail_alt: Amazon ads
+tags:
+  - Advertising
 ---
 
 e-Comas is proud to announce it is now an approved member of the
