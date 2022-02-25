@@ -4,9 +4,8 @@ title: "Make your excess stock pay: Amazon offers FBA Liquidations"
 author: Jérôme de Guigné
 date: 2021-10-14T10:19:07.491Z
 excerpt: >
-  If you need to get rid of excess and customer-returned stock, Amazon has a
-  nice solution. It's called FBA Liquidations, and it can help you avoid
-  disposal costs and long-term storage fees.
+  If you need to get rid of excess and customer-returned stock, Amazon offers
+  FBA Liquidations. It can help you avoid disposal costs and storage fees.
 thumbnail: /images/uploads/unnamed.png
 thumbnail_alt: Well stocked warehouse possibly Amazon FBA
 tags:
