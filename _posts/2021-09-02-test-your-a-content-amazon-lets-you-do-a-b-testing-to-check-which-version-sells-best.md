@@ -11,7 +11,7 @@ excerpt: >
 thumbnail: /images/uploads/computers.jpg
 thumbnail_alt: illustration of a computer
 tags:
-  - "#Content"
+  - Content
 ---
 
 Did you know you can do A/B testing on your Amazon A+ content?
