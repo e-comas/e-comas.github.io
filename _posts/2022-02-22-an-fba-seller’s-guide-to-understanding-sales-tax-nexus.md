@@ -4,8 +4,8 @@ title: An FBA Seller’s Guide to Understanding Sales Tax Nexus
 author: Hammad Nafees, ZonGuru
 date: 2022-01-21T14:24:19.185Z
 excerpt: Most Amazon sellers get confused by sales tax collections. So to help
-  you, our friends at ZonGuru have covered all the basics you’ll need to get
-  started with the sales tax nexus and how it impacts your collection.
+  you, our friends at ZonGuru have covered how to get started with the sales tax
+  nexus.
 thumbnail: /images/uploads/tax-nexus.jpeg
 thumbnail_alt: Map of USA with flags
 tags:
