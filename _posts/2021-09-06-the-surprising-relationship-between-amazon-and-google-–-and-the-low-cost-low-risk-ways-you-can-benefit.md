@@ -8,7 +8,7 @@ excerpt: >-
   Amazon and Google: bitter rivals? 
 
   They compete against each other. But even so, the two companies have a surprisingly fruitful relationship.
-thumbnail: /images/uploads/amazonvsgoogle.png
+thumbnail: /images/uploads/amazon-vs-google.jpg
 thumbnail_alt: Amazon versus Google
 tags:
   - AmazonAdvertising
