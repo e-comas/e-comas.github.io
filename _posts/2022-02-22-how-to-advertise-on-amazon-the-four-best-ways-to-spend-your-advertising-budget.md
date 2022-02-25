@@ -7,7 +7,7 @@ date: 2021-12-10T11:01:07.454Z
 excerpt: >
   What’s the quickest way to grow on Amazon? Advertising your listings is
   usually cost-effective and can see a return on ad spend very quickly indeed.
-thumbnail: /images/uploads/advertising-on-amazon.png
+thumbnail: /images/uploads/advertising.jpg
 thumbnail_alt: Advertising on Amazon
 tags:
   - Advertising
