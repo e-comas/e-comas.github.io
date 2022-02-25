@@ -9,7 +9,8 @@ excerpt: Most Amazon sellers get confused by sales tax collections. So to help
 thumbnail: /images/uploads/tax-nexus.jpeg
 thumbnail_alt: Map of USA with flags
 tags:
-  - Operations VAT
+  - Operations
+  - VAT
 ---
 <!--StartFragment-->
 
