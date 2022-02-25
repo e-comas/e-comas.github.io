@@ -5,10 +5,8 @@ title: "Social media on Amazon: Why you should try Posts (and not just because
 author: Jérôme de Guigné
 date: 2021-12-13T14:14:42.669Z
 excerpt: >
-  Are you selling on Amazon.com? Have you tried Posts yet? If not, you really
-  should!
-
-  Our clients love it - it’s great for brand awareness, it’s free, and it's a great opportunity to showcase your content in a less sales-y format.
+  Have you tried Posts yet? Our clients love it - it’s great for brand
+  awareness, it’s free, and it's a great opportunity to showcase your content.
 thumbnail: /images/uploads/pasted-image-0.png
 thumbnail_alt: "Amazon advertising "
 ---
