@@ -9,7 +9,7 @@ excerpt: >
 thumbnail: /images/uploads/unnamed.png
 thumbnail_alt: Well stocked warehouse possibly Amazon FBA
 tags:
-  - Amazon FBA
+  - "#Strategy #AmazonFBA"
 ---
 <!--StartFragment-->
 
