@@ -10,7 +10,8 @@ excerpt: >
 thumbnail: /images/uploads/reveals.jpg
 thumbnail_alt: Jérôme de Guigné from e-Comas and David Recchia from Reveals
 tags:
-  - Strategy Business
+  - Strategy
+  - Business
 ---
 <!--StartFragment-->
 
