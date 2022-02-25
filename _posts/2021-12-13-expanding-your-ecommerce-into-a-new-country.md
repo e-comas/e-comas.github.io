@@ -8,10 +8,11 @@ excerpt: >
   Localisation is a key part of successful international expansion. And that
   means knowing your audience in each country, and how they look at your
   product.
-thumbnail: /images/uploads/amazonvsgoogle.png
-thumbnail_alt: Amazon versus Google
+thumbnail: /images/uploads/countries.png
+thumbnail_alt: Map with pins
 tags:
-  - eCommerce
+  - Operations
+  - AmazonFeatures
 ---
 
 #### The USA
