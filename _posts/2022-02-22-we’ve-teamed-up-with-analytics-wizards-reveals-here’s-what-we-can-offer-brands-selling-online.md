@@ -5,9 +5,8 @@ title: We’ve teamed up with analytics wizards Reveals! Here’s what we can of
 author: Jérôme de Guigné
 date: 2021-11-02T11:07:06.397Z
 excerpt: >
-  We’ve joined up with a fellow Luxembourg business: data experts Reveals.
-
-  The partnership gives us the ability to offer analytics and insights services to our clients.
+  We’ve joined up with a fellow Luxembourg business, data experts Reveals,
+  giving us the ability to offer analytics and insights services to our clients.
 thumbnail: /images/uploads/reveals-team.png
 thumbnail_alt: Jérôme de Guigné from e-Comas and David Recchia from Reveals
 tags:
