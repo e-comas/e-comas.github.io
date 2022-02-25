@@ -11,11 +11,7 @@ excerpt: >-
 thumbnail: /images/uploads/amazon-vs-google.jpg
 thumbnail_alt: Amazon versus Google
 tags:
-  - AmazonAdvertising
-  - GoogleAds
-  - AmazonSellers
-  - eCommerce
-  - retail
+  - Advertising
 ---
 
 #### Focused, targeted advertising
