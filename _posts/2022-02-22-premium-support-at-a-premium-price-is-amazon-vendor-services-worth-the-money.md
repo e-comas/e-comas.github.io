@@ -9,7 +9,8 @@ excerpt: With the fees attached, is this help from the inside of Amazon worth
 thumbnail: /images/uploads/resize.jpg
 thumbnail_alt: Professional man using Amazon AVS
 tags:
-  - Strategy Vendor
+  - Strategy
+  - Vendor
 ---
 <!--StartFragment-->
 
