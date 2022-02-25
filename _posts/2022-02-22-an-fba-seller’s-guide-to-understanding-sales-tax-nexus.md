@@ -23,7 +23,7 @@ Sales tax regulatory laws are a broad topic, and [taking it all in one guide](ht
 
 Let’s jump right into the very basics…
 
-## Do you pay taxes on Amazon FBA?
+### Do you pay taxes on Amazon FBA?
 
 Many Amazon sellers are unaware of the fact that they need to pay taxes on Amazon. However, the point still stands – online retailers (including those selling on the e-commerce giant) need to pay taxes like all other brick-and-mortar businesses. 
 
@@ -47,41 +47,41 @@ So will you go through each jurisdiction one by one? Certainly not!
 
 That is where the sales nexus comes in handy. The sales tax collection regulations you have to abide by depends on the location of your sales nexus.
 
-## What is Amazon FBA sales tax nexus?
+### What is Amazon FBA sales tax nexus?
 
 To put it in simple terms, nexus is a commercial connection, and sales tax nexus is the commercial connection between a seller and the state, which makes the seller liable to collect, register, and remit sales tax in that state.
 
 Traditionally, it meant having sufficient physical or business presence like a shop or a sales representative in a region. This was easy to understand. However, things have evolved with time and now we have many different types of sales tax nexus. Let’s take a look at them one by one.
 
-### Physical Nexus
+#### Physical Nexus
 
 Physical nexus refers to a business having a direct connection to a state. A business could be based in that state or have a branch, warehouse, home office, company, etc. 
 
 For example, if you’re selling socks and your retail outlet is in Nevada, then you have a physical nexus in Nevada.
 
-### Inventory Nexus
+#### Inventory Nexus
 
 Many states consider that if you store your inventory or goods in their state, then you have a nexus with them. This is one nexus Amazon sellers can relate well to, as they store their items in Amazon fulfillment centers in different states.
 
-### Affiliate Nexus
+#### Affiliate Nexus
 
 If you’re affiliated with an individual or a business in a particular state that gets you sales (in exchange for a percentage of the profit) above the threshold set, then you have a nexus in that state. Referrals and affiliate marketing are the primary sources for this type of nexus.
 
 If you partner with an influencer in another state for your business and that gets you a good boost in your sales volume, a nexus with that state is formed.
 
-### Click-through nexus
+#### Click-through nexus
 
 Similar to affiliate nexus but without the affiliation, click-through nexus is formed when you get sales based on a recommendation from a business in another state, or you get sales through advertising your product in that state.
 
 Affiliate nexus ties to in-state affiliates and click-through nexus links to in-state websites.
 
-### Economic Nexus
+#### Economic Nexus
 
 Economic nexus is formed when your sales or any other eCommerce performance metric reach above the set standard limit for that state. 
 
 Suppose your sock business surpassed $150,000 in sales and the annual sales limit for the state was $100,000. Since you surpassed the limit, you now have a nexus in the state. This is the most upcoming nexus and might phase out the other types listed above.
 
-## Where does Amazon FBA give you sales tax nexus?
+### Where does Amazon FBA give you sales tax nexus?
 
 As we discussed earlier, storing inventory for sale also creates a nexus, which is the case for Amazon sellers. 
 
@@ -117,7 +117,7 @@ Here is a list of few of the states that impose the marketplace facilitator law:
 
 And there are many more. In fact, almost all states practice marketplace facilitator law in the US. The only ones that don’t have it are Delaware, Montana, New Hampshire, and Oregon.
 
-## How is Nexus sales tax calculated?
+### How is Nexus sales tax calculated?
 
 When collecting nexus sales tax, there are two types of states: a) origin-based states, and b) destination-based states.
 
@@ -137,7 +137,7 @@ These are in state laws. Now, what if we want to ship from an origin-based state
 
 Well, you’ll typically collect sales tax at the destination state rate. However, there are a few exceptions to this rule, that is, when you are shipping from California, Arizona, or New Mexico, you must collect sales tax based on your origin state.
 
-## Conclusion
+### Conclusion
 
 The subject of taxes can be daunting, but their importance is far too much to overlook. In this blog, we cleared the confusion of whether amazon sellers need to pay taxes on the sales they make, covered the basics of sales tax nexus and its different types, and how sales tax is collected and calculated when you are doing FBA.
 
