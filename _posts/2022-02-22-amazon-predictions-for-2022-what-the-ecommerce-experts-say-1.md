@@ -9,7 +9,7 @@ excerpt: >
 thumbnail: /images/uploads/2022-predicks.jpg
 thumbnail_alt: "2022"
 tags:
-  - "#Strategy#Business"
+  - Strategy Business
 ---
 <!--StartFragment-->
 
