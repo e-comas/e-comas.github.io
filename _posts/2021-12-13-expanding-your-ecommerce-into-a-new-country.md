@@ -11,8 +11,8 @@ excerpt: >
 thumbnail: /images/uploads/countries.png
 thumbnail_alt: Map with pins
 tags:
-  - Operations
-  - AmazonFeatures
+  - Strategy
+  - Expansion
 ---
 
 #### The USA
