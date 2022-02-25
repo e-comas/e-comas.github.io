@@ -1,25 +1,13 @@
 ---
 layout: blog
-title:
-  The surprising relationship between Amazon and Google – and the low-cost,
+title: The surprising relationship between Amazon and Google – and the low-cost,
   low-risk ways you can benefit
 author: Jérôme de Guigné
 date: 2021-09-06T14:20:09.017Z
-excerpt: >
+excerpt: >-
   Amazon and Google: bitter rivals? 
 
-  They compete against each other. You would think they'd keep out of each
-  other's way.
-
-  Google even relaunched its shopping platform last year in order to better
-  compete against Amazon.
-
-  But even so, the two companies have a surprisingly fruitful relationship.
-
-  A large proportion of Amazon's traffic comes directly from Google searches.
-
-  And because of that, a huge proportion of Google's income comes from Amazon
-  itself: Amazon is one of Google's biggest clients.
+  They compete against each other. But even so, the two companies have a surprisingly fruitful relationship.
 thumbnail: /images/uploads/amazonvsgoogle.png
 thumbnail_alt: Amazon versus Google
 tags:
