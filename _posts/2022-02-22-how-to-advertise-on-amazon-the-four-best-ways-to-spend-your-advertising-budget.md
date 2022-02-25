@@ -5,10 +5,8 @@ title: "How to advertise on Amazon: the four best ways to spend your advertising
 author: Jérôme de Guigné
 date: 2021-12-10T11:01:07.454Z
 excerpt: >
-  What’s the quickest way to grow on Amazon? Advertise. That’s what we tell all
-  our clients. Then we tell them that advertising your Amazon listings is
-  usually cost-effective and can see a return on ad spend (ROAS) very quickly
-  indeed.
+  What’s the quickest way to grow on Amazon? Advertising your listings is
+  usually cost-effective and can see a return on ad spend very quickly indeed.
 thumbnail: /images/uploads/advertising-on-amazon.png
 thumbnail_alt: Advertising on Amazon
 tags:
