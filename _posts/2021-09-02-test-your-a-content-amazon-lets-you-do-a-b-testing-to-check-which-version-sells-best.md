@@ -1,19 +1,17 @@
 ---
 layout: blog
-title:
-  "Test your A+ content: Amazon lets you do A/B testing to check which version
-  sells best"
+title: "Test your A+ content: Amazon lets you do A/B testing to check which
+  version sells best"
 author: Jérôme de Guigné
 date: 2021-09-02T18:47:08.282Z
 excerpt: >
   Did you know you can do A/B testing on your Amazon A+ content?
 
-  It's an easy way for you to find out what formats work best for your enhanced
-  listings content.
-thumbnail: https://lh6.googleusercontent.com/v6anm4QziMhfYWAn2FsdqxORi28htUYYqUa_K-TvfXGktkhLPjEbW8BRtL5d0c3Zv0a0WckK6HscJuzJXSe7-pqHo8h3g9HGbNskPAWq5rcCZMTdcUxwaho6aOvg_Bx3Gt_3bRPO
+  It's an easy way for you to find out what formats work best for your enhanced listings content.
+thumbnail: /images/uploads/computers.jpg
 thumbnail_alt: illustration of a computer
 tags:
-  - eCommerce
+  - "#Content"
 ---
 
 Did you know you can do A/B testing on your Amazon A+ content?
