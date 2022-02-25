@@ -1,23 +1,13 @@
 ---
 layout: blog
-title: >-
-  Know your new market: What to remember when you’re expanding into a new
-  country
+title: "Know your new market: What to remember when you’re expanding into a new
+  country"
 author: Jérôme de Guigné
 date: 2021-12-13T14:20:09.017Z
 excerpt: >
-  People from different countries have different cultures when it comes to
-  buying stuff online.
-
-  Localisation is a crucial part of successful international expansion.
-
-  And it's about more than just good translation: it means knowing who your
-  audience is in each country, and how they're likely to look at your product
-  and product content.
-
-  We've asked our multinational team how people buy online in their home
-  countries – and here are their insights so you can get your localisation
-  right.
+  Localisation is a key part of successful international expansion. And that
+  means knowing your audience in each country, and how they look at your
+  product.
 thumbnail: /images/uploads/amazonvsgoogle.png
 thumbnail_alt: Amazon versus Google
 tags:
