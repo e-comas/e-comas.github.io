@@ -7,7 +7,7 @@ date: 2021-11-02T11:07:06.397Z
 excerpt: >
   We’ve joined up with a fellow Luxembourg business, data experts Reveals,
   giving us the ability to offer analytics and insights services to our clients.
-thumbnail: /images/uploads/reveals-team.png
+thumbnail: /images/uploads/reveals.jpg
 thumbnail_alt: Jérôme de Guigné from e-Comas and David Recchia from Reveals
 tags:
   - "#Strategy#Business"
@@ -18,9 +18,7 @@ We’ve joined up with a fellow Luxembourg business: data experts [Reveals](http
 
 The partnership gives us the ability to offer analytics and insights services to our clients.
 
-
-
-**New services**
+### **New services**
 
 Using Reveals' data expertise, we can now add useful insights and bespoke API or dashboard-building to our unrivalled collection of eCommerce services.
 
@@ -28,9 +26,7 @@ Our clients can use Reveals to turn the masses of unstructured data they get fro
 
 Clients will be able to see all their data and analytics on one tailor-made dashboard, called their ‘e-Cockpit’. 
 
-
-
-**Using Reveals in-house**
+### **Using Reveals in-house**
 
 We’ll also be using Reveals to take care of our own data warehouse and reporting needs, streamlining our operations for the benefit of our clients.
 
@@ -38,9 +34,7 @@ This has the added benefit of giving our team an even more in-depth working know
 
 We have also invested in Reveals, becoming a minority shareholder of the young company, which was launched in July this year by data expert David Recchia.
 
-
-
-**What Jérôme says**
+### **What Jérôme says**
 
 Our CEO Jérôme de Guigné says: “Analytics – gathering business insights through data – is key in business in general, but even more in eCommerce, because so much data is made available that it can get overwhelming if not processed and presented well.
 
@@ -52,9 +46,7 @@ Our CEO Jérôme de Guigné says: “Analytics – gathering business insights t
 
 “These are very exciting times, and I believe this is getting us to the next level, integrating Reveals into our team to lead this new analytics service.”
 
-
-
-**What David says**
+### **What David says**
 
 David Recchia, CEO of [Reveals](http://reveals.lu), says: “Our idea is to develop data analytics and insights for e-Comas internally, but also to develop new offers with e-Comas for clients, leveraging our expertise in data acquired in the banking industry.
 
