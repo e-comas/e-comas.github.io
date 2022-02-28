@@ -2,7 +2,9 @@
 @use "./utils/title" as *;
 @use "./utils/iframe" as *;
 
-body {
+body > main {
+  display: inherit;
+  flex-direction: inherit;
   gap: 3rem;
 }
 
