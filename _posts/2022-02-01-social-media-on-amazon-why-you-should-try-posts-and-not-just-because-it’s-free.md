@@ -7,7 +7,7 @@ date: 2021-12-13T14:14:42.669Z
 excerpt: >
   Have you tried Posts yet? Our clients love it - it’s great for brand
   awareness, it’s free, and it's a great opportunity to showcase your content.
-thumbnail: /images/uploads/social-media.jpg
+thumbnail: /images/uploads/social-media-1-.jpg
 thumbnail_alt: Posts social media
 tags:
   - Operations
