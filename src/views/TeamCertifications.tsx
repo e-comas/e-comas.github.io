@@ -20,7 +20,11 @@ export default () => (
           alt="Amazon Seller Central Partner Network – Service Partner badge"
         />
       </a>
-      <a target="_blank" rel="noopener">
+      <a
+        href="https://www.salsify.com/salsify-e-comas-partnership"
+        target="_blank"
+        rel="noopener"
+      >
         <Picture
           alt="Salsify Registered Partner badge"
           src="/images/certifications/Salsify.png"
