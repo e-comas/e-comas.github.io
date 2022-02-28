@@ -86,7 +86,10 @@ function filter() {
     filterField.value = location.hash;
     document.head.append(style);
     style.sheet!.insertRule(
-      `a.tag[href=${JSON.stringify(location.hash)}]{color:#65D7BE}`,
+      `a.tag:not(.cta)[href=${JSON.stringify(location.hash)}]{color:#65D7BE}
+      a.cta.tag[href=${JSON.stringify(
+        location.hash
+      )}]{background-color:#65D7BE}`,
       0
     );
   } else {
