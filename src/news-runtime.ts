@@ -4,11 +4,20 @@ const articles = document.querySelectorAll(
   "main>section>article"
 ) as NodeListOf<HTMLElement>;
 
+const categoriesArticles = new Map(
+  ["#Strategy", "#Operations", "#Content", "#Advertising"].map((category) => [
+    category,
+    [],
+  ])
+) as Map<string, HTMLElement[]>;
+
 for (const article of articles) {
   tagsCache.set(
     article,
     Array.from(article.querySelectorAll(".tags>li"), (li) => {
       const tag = "#" + li.textContent;
+
+      categoriesArticles.get(tag)?.push(article);
 
       const link = document.createElement("a");
       link.href = tag;
@@ -38,16 +47,36 @@ filterField.setAttribute("list", dataList.id);
 filterField.addEventListener("change", (e) => {
   location.hash = filterField.value;
 });
+const noFilterLink = document.createElement("a");
+const noFilterLinkText = document.createElement("em");
+noFilterLinkText.append("No filter");
+noFilterLink.append(noFilterLinkText);
+noFilterLink.href = "#";
 document.querySelector("main>aside")!.append(
   dataList,
   filterField,
-  ...Array.from(tags, (tag) => {
+  noFilterLink,
+  ...Array.from(categoriesArticles, ([category, articles]) => {
     const link = document.createElement("a");
-    link.textContent = tag;
-    link.href = tag;
-    link.className = "tag";
-    return link;
-  })
+    link.textContent = category;
+    link.href = category;
+    link.className = "cta tag";
+    return [
+      link,
+      ...articles
+        .flatMap((article) => tagsCache.get(article))
+        .map((tag) => {
+          if (tag == null || tag === category)
+            return document.createDocumentFragment();
+
+          const link = document.createElement("a");
+          link.textContent = tag;
+          link.href = tag;
+          link.className = "tag";
+          return link;
+        }),
+    ];
+  }).flat()
 );
 
 const style: HTMLStyleElement = document.createElement("style");
