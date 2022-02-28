@@ -8,7 +8,7 @@ excerpt: >
   Did you know you can do A/B testing on your Amazon A+ content?
 
   It's an easy way for you to find out what formats work best for your enhanced listings content.
-thumbnail: /images/uploads/computers.jpg
+thumbnail: /images/uploads/computers-1-.jpg
 thumbnail_alt: illustration of a computer
 tags:
   - Content
