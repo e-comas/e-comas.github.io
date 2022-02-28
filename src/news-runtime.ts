@@ -41,21 +41,18 @@ dataList.append(
   })
 );
 const filterField = document.createElement("input");
+filterField.type = "search";
 filterField.placeholder = "Filter by tag";
 filterField.setAttribute("aria-label", filterField.placeholder);
 filterField.setAttribute("list", dataList.id);
-filterField.addEventListener("change", (e) => {
+const updateSearch = () => {
   location.hash = filterField.value;
-});
-const noFilterLink = document.createElement("a");
-const noFilterLinkText = document.createElement("em");
-noFilterLinkText.append("No filter");
-noFilterLink.append(noFilterLinkText);
-noFilterLink.href = "#";
+};
+filterField.addEventListener("change", updateSearch);
+filterField.addEventListener("search", updateSearch);
 document.querySelector("main>aside")!.append(
   dataList,
   filterField,
-  noFilterLink,
   ...Array.from(categoriesArticles, ([category, articles]) => {
     const link = document.createElement("a");
     link.textContent = category;
@@ -63,9 +60,9 @@ document.querySelector("main>aside")!.append(
     link.className = "cta tag";
     return [
       link,
-      ...articles
-        .flatMap((article) => tagsCache.get(article))
-        .map((tag) => {
+      ...Array.from(
+        new Set(articles.flatMap((article) => tagsCache.get(article))),
+        (tag) => {
           if (tag == null || tag === category)
             return document.createDocumentFragment();
 
@@ -74,7 +71,8 @@ document.querySelector("main>aside")!.append(
           link.href = tag;
           link.className = "tag";
           return link;
-        }),
+        }
+      ),
     ];
   }).flat()
 );
