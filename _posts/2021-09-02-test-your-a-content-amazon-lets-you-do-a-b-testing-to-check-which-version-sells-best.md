@@ -12,6 +12,7 @@ thumbnail: /images/uploads/computers-1-.jpg
 thumbnail_alt: illustration of a computer
 tags:
   - Content
+  - SEO
 ---
 
 Did you know you can do A/B testing on your Amazon A+ content?
