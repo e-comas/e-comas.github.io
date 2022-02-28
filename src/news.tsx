@@ -4,6 +4,7 @@ import yaml from "./utils/yaml.js";
 
 import Body from "./views/Body.js";
 import Header from "./views/Header.js";
+import Breadcrumbs from "./views/Breadcrumbs.js";
 import Footer from "./views/Footer.js";
 
 import "./news.scss";
@@ -12,6 +13,7 @@ import "runtime:./news-runtime.js";
 export default (
   <Body title="Blog">
     <Header />
+    <Breadcrumbs />
     <main>
       <h2>Our Blog</h2>
       <section>

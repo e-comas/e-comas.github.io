@@ -18,6 +18,15 @@ main {
   }
   & > section {
     grid-area: articles;
+    @media screen and (max-width: 599px) {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      time {
+        padding: 0 1ch;
+      }
+    }
   }
   & > aside {
     grid-area: aside;
@@ -62,9 +71,6 @@ main > section > article {
     line-height: 1.5rem;
     padding: 0 1ch;
     text-align: center;
-  }
-  time {
-    padding: 0 1ch;
   }
 
   h3 {
