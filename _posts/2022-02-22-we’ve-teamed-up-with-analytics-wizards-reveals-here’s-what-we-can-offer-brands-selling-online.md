@@ -7,7 +7,7 @@ date: 2021-11-02T11:07:06.397Z
 excerpt: >
   We’ve joined up with a fellow Luxembourg business, data experts Reveals,
   giving us the ability to offer analytics and insights services to our clients.
-thumbnail: /images/uploads/reveals.jpg
+thumbnail: /images/uploads/reveals-1-.jpg
 thumbnail_alt: Jérôme de Guigné from e-Comas and David Recchia from Reveals
 tags:
   - Strategy
