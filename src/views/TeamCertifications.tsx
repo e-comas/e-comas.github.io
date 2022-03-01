@@ -14,7 +14,11 @@ export default () => (
       >
         <img src="/images/certifications/Amazon Ads.svg" alt="Amazon Ads" />
       </a>
-      <a target="_blank" rel="noopener">
+      <a
+        href="https://sellercentral.amazon.com/gspn/provider-details/Advertising%20Optimization/29c1240a-ec5f-4b3b-ba87-98955093c9a2?ref_=sc_gspn_alst_adt-29c1240a"
+        target="_blank"
+        rel="noopener"
+      >
         <Picture
           src="/images/certifications/Amazon Seller Central.png"
           alt="Amazon Seller Central Partner Network – Service Partner badge"
