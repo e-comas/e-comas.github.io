@@ -9,7 +9,10 @@ excerpt: >+
 
 
 thumbnail: /images/uploads/computers-1-.jpg
-thumbnail_alt: Content,Syndication
+thumbnail_alt: Salsify
+tags:
+  - Content
+  - Syndication
 ---
 Salsify is a magnificent platform.
 In the rapidly-growing eCommerce world, the services it provides quickly become essential: one place for all your product content, meaning it's consistent across all the platforms you sell your products on.
