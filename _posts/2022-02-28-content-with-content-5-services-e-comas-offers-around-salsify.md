@@ -14,7 +14,7 @@ excerpt: >+
 
 
 thumbnail: /images/uploads/computers-1-.jpg
-thumbnail_alt: "#content #Syndication"
+thumbnail_alt: Content,Syndication
 ---
 What is Salsify?
 It's a multi-faceted tool that can do many wonderful things, but put simply, Salsify is a product experience management (PXM) tool that allows you to upload all your product content into one place, then push it out easily to where ever it's needed – on multiple Amazon marketplaces, for example, or to different distribution channels.
