@@ -8,7 +8,7 @@ excerpt: >+
   one place, then push it out easily to wherever it’s needed. Find out more…
 
 
-thumbnail: /images/uploads/computers-1-.jpg
+thumbnail: /images/uploads/salsify.jpg
 thumbnail_alt: Salsify
 tags:
   - Content
