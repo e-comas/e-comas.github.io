@@ -30,7 +30,7 @@ jobs:
         run: npx envinfo
       - name: Install dependencies
         run: corepack yarn install --immutable
-      - run: cd docs && git rm *.svg *.html *.css *.js
+      - run: cd docs && git rm --ignore-unmatch -- *.svg *.html *.css *.js
       - name: Build website
         # Re-try several times in case there's a crash.
         run: corepack yarn build || corepack yarn build || corepack yarn build
