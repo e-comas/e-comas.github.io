@@ -4,18 +4,18 @@ title: "Content with content: 5 services e-Comas offers around Salsify"
 author: Aguène Sambou
 date: 2022-02-28T18:48:26.550Z
 excerpt: >+
-  Salsify is a magnificent platform.
-
-  In the rapidly-growing eCommerce world, the services it provides quickly become essential: one place for all your product content, meaning it's consistent across all the platforms you sell your products on.
-
-  That gives you a professional, omnichannel strategy aligned on all platforms, and it also saves you a lot of time.
-
-  As a major eCommerce agency, e-Comas works very closely with Salsify. We have great working relationships with their team, talking to them daily and learning about new Salsify updates as they happen. Their product content expertise, combined with our eCommerce strategy, operations and traffic know-how, make an unstoppable combination.
+  Salsify is a PXM tool that allows you to upload all your product content into
+  one place, then push it out easily to wherever it’s needed. Find out more…
 
 
 thumbnail: /images/uploads/computers-1-.jpg
 thumbnail_alt: Content,Syndication
 ---
+Salsify is a magnificent platform.
+In the rapidly-growing eCommerce world, the services it provides quickly become essential: one place for all your product content, meaning it's consistent across all the platforms you sell your products on.
+That gives you a professional, omnichannel strategy aligned on all platforms, and it also saves you a lot of time.
+As a major eCommerce agency, e-Comas works very closely with Salsify. We have great working relationships with their team, talking to them daily and learning about new Salsify updates as they happen. Their product content expertise, combined with our eCommerce strategy, operations and traffic know-how, make an unstoppable combination.
+
 What is Salsify?
 It's a multi-faceted tool that can do many wonderful things, but put simply, Salsify is a product experience management (PXM) tool that allows you to upload all your product content into one place, then push it out easily to where ever it's needed – on multiple Amazon marketplaces, for example, or to different distribution channels.
 Think of massive brands that sell their products on many different stores, online and offline: the imagery, branding and wording for their products is always consistent wherever the product is being sold, and that creates a super-strong brand: consistent, professional, and trustworthy.
