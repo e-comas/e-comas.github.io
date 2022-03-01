@@ -1,4 +1,4 @@
-import { writeFile } from "node:fs/promises";
+import { mkdir, writeFile } from "node:fs/promises";
 import puppeteer from "puppeteer";
 
 import { startServer } from "./dev-server.mjs";
@@ -21,13 +21,12 @@ await Promise.all([
       if (process.env.DEBUG) await new Promise(Function.prototype);
       for (const page of pages) {
         const url = new URL(page.url());
-        await writeFile(
-          new URL(
-            url.pathname === "/" ? "./index.html" : "." + url.pathname,
-            OUTPUT_DIR
-          ),
-          await page.content()
+        const fileUrl = new URL(
+          url.pathname === "/" ? "./index.html" : "." + url.pathname,
+          OUTPUT_DIR
         );
+        await mkdir(new URL("./", fileUrl), { recursive: true });
+        await writeFile(fileUrl, await page.content());
         console.log("Wrote", url.pathname);
       }
     } finally {
