@@ -15,11 +15,11 @@ tags:
   - Syndication
 ---
 Salsify is a magnificent platform.
-
+/
 In the rapidly-growing eCommerce world, the services it provides quickly become essential: one place for all your product content, meaning it's consistent across all the platforms you sell your products on.
-
+/
 That gives you a professional, omnichannel strategy aligned on all platforms, and it also saves you a lot of time.
-
+/
 As a major eCommerce agency, e-Comas works very closely with Salsify. We have great working relationships with their team, talking to them daily and learning about new Salsify updates as they happen. Their product content expertise, combined with our eCommerce strategy, operations and traffic know-how, make an unstoppable combination.
 
 ### What is Salsify?
