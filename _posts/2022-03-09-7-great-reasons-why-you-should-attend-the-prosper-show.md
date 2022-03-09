@@ -2,7 +2,7 @@
 layout: blog
 title: 7 great reasons why you should attend the Prosper Show
 author: Jérôme de Guigné
-date: 2022-03-09T14:31:07.320Z
+date: 2022-03-09T09:31:07.320Z
 excerpt: "Las Vegas is the place to be next week as The Prosper Show lands: one
   of the biggest eCommerce shows in the world. Here's why you should drop
   everything and come with us"
