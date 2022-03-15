@@ -9,7 +9,7 @@ import "./privacy.scss";
 export default (
   <Body>
     <Header />
-    <main>
+    <main id="main-content">
       <h2>Privacy policy</h2>
       <p>
         We (e-Comas - eCommerce Made Simple) collect data about you on our

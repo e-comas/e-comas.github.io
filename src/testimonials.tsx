@@ -12,7 +12,7 @@ export default (
   <Body title="Testimonials">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <section id="testimonials">
         <h2>What our clients are saying</h2>
         <Testimonies />

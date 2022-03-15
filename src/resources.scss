@@ -3,8 +3,6 @@
 @use "./utils/iframe" as *;
 
 body > main {
-  display: inherit;
-  flex-direction: inherit;
   gap: 3rem;
 }
 

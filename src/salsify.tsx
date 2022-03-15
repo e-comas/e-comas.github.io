@@ -12,7 +12,7 @@ export default (
   <Body title="Syndication with Salsify">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         World class expertise for <strong>PIM &amp; syndication</strong>
       </h2>

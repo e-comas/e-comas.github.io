@@ -18,7 +18,7 @@ import TeamCertifications from "./views/TeamCertifications.js";
 export default (
   <Body>
     <Header />
-    <main>
+    <main id="main-content">
       <figure class="video-hero">
         <VideoEmbedLink
           tagName="div"

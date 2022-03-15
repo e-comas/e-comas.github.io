@@ -11,7 +11,7 @@ export default (
   <Body title="Experience">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <p>TODO</p>
     </main>
     <Footer />

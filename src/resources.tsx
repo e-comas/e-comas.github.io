@@ -21,7 +21,7 @@ export default (
   <Body title="Resources">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>Resources</h2>
       {/* Check the spacing here and make h3s as big as h2 */}
       <p>

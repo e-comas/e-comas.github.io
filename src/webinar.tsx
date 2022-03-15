@@ -16,7 +16,7 @@ export default (
   <Body title="Webinar">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>Webinars</h2>
       <p>
         We run our own popular webinar programme, talking to our friends in the{" "}

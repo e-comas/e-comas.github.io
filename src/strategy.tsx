@@ -16,7 +16,7 @@ export default (
   <Body title="Strategy">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <ElementWithIcon tagName="section" src="/images/chess.svg">
         <h1>{pageTitle}</h1>
         <ul>

@@ -11,7 +11,7 @@ export default (
   <Body title="{{ page.title }}">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>{"{{ page.title | escape }}"}</h2>
       <div class="publishing-info">
         <time dateTime={'{{ page.date | date: "%Y-%m-%dT%H:%M:%S" }}'}>

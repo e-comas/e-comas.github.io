@@ -11,7 +11,7 @@ export default (
   <Body>
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         Profitero: the <strong>next level</strong> in market insights
       </h2>

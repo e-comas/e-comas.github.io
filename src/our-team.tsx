@@ -48,7 +48,7 @@ export default (
   <Body title="The Team">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         The <EComas /> team
       </h2>

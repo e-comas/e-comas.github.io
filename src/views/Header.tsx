@@ -35,6 +35,10 @@ export default () => (
     tagName="header"
     src="/images/Banner1 Hero 3x .png"
   >
+    <a href="#main-content" class="skip-nav">
+      Skip navigation
+    </a>
+
     <a href="/">
       <img
         src="/images/logo.svg"

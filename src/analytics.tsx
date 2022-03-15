@@ -16,7 +16,7 @@ export default (
   <Body title="Analytics">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         World class expertise <strong>analytics</strong> to{" "}
         <strong>drive</strong> your <ECommerce />!

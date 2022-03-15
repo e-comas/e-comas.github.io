@@ -10,7 +10,7 @@ export default (
   <Body title="Partners">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <ElementWithIcon src="/images/chess.svg" tagName="section">
         <h2>Our partners</h2>
       </ElementWithIcon>

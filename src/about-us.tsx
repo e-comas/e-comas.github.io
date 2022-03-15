@@ -13,7 +13,7 @@ export default (
   <Body title="About eComas">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>How it started</h2>
       <Picture
         src="/images/jerome-thinking.png"

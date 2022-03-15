@@ -20,7 +20,7 @@ export default (
   <Body title="Contact us">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>Get in touch!</h2>
       <p>
         Do you want to work with us to build a global <ECommerce /> empire from

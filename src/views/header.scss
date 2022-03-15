@@ -7,6 +7,20 @@ $breakpoint: $nav-width + $logo-width + 20px;
 
 $hamburgerThickness: 2px;
 
+a.skip-nav {
+  @extend %button;
+
+  position: absolute;
+  transform: translateY(-120%);
+  left: 0.5rem;
+  border-radius: 0 0 $border-radius $border-radius;
+  transition: transform 300ms ease-in;
+
+  &:focus {
+    transform: none;
+  }
+}
+
 header {
   display: grid;
   @media screen and (min-width: $breakpoint) {

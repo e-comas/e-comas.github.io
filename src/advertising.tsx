@@ -17,7 +17,7 @@ export default (
   <Body title="Advertising">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         World class expertise to <strong>enhance</strong> your advertising!
       </h2>

@@ -13,7 +13,7 @@ export default (
   <Body title="Podcast">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>Listen to our podcast</h2>
       <p>
         Introducing the <EComas /> podcast, now available on your favourite

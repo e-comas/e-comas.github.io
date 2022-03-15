@@ -14,7 +14,7 @@ export default (
   <Body title="White paper">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>White paper</h2>
       <p>
         We research hot topics in the <ECommerce /> industry and report our

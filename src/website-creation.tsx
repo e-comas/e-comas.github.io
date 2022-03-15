@@ -14,7 +14,7 @@ export default (
   <Body title="Website creation">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         World class expertise to <strong>create</strong> your Shopify <EStore />
         !

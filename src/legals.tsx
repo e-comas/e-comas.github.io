@@ -9,7 +9,7 @@ import "./privacy.scss";
 export default (
   <Body>
     <Header />
-    <main>
+    <main id="main-content">
       <h2>Legal information</h2>
       <p>
         Legal name: e-Comas

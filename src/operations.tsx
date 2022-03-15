@@ -17,7 +17,7 @@ export default (
   <Body title="Operations">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         World class expertise to <strong>run</strong> your <ECommerce />!
       </h2>

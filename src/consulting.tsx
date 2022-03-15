@@ -17,7 +17,7 @@ export default (
   <Body title="Content / Syndication">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         World class expertise to <strong>boost</strong> your <ECommerce />!
       </h2>

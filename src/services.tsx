@@ -16,7 +16,7 @@ export default (
   <Body title="Strategy">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         World class expertise <strong>services</strong> to <strong>win</strong>{" "}
         on the digital shelf!

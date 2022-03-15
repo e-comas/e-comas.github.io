@@ -17,7 +17,7 @@ export default (
   <Body title="Analytics">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>
         Reveals: the next step of your <strong>analytics</strong> &amp;{" "}
         <strong>insights</strong>

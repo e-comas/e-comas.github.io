@@ -102,7 +102,9 @@ h5 {
 }
 
 main {
-  display: contents;
+  display: inherit;
+  flex-direction: inherit;
+  gap: inherit;
 }
 
 p,

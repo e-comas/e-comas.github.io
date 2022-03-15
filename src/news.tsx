@@ -14,7 +14,7 @@ export default (
   <Body title="Blog">
     <Header />
     <Breadcrumbs />
-    <main>
+    <main id="main-content">
       <h2>Our Blog</h2>
       <section>
         {"{% for post in site.posts %}"}
