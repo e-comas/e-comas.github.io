@@ -11,6 +11,7 @@ export default () => (
         href="https://advertising.amazon.com/partners/directory/details/amzn1.ads1.ma1.cj3vydv54i8qcb80mhstj0em0/"
         target="_blank"
         rel="noopener"
+        role="listitem"
       >
         <img src="/images/certifications/Amazon Ads.svg" alt="Amazon Ads" />
       </a>
@@ -18,6 +19,7 @@ export default () => (
         href="https://sellercentral.amazon.com/gspn/provider-details/Advertising%20Optimization/29c1240a-ec5f-4b3b-ba87-98955093c9a2?ref_=sc_gspn_alst_adt-29c1240a"
         target="_blank"
         rel="noopener"
+        role="listitem"
       >
         <Picture
           src="/images/certifications/Amazon Seller Central.png"
@@ -28,6 +30,7 @@ export default () => (
         href="https://www.salsify.com/salsify-e-comas-partnership"
         target="_blank"
         rel="noopener"
+        role="listitem"
       >
         <Picture
           alt="Salsify Registered Partner badge"
@@ -38,6 +41,7 @@ export default () => (
         href="https://www.google.com/partners/agency?id=3553874603"
         target="_blank"
         rel="noopener"
+        role="listitem"
       >
         <img
           src="/images/certifications/Google Partner.svg"
