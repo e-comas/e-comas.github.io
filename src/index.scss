@@ -1,6 +1,12 @@
 @use "./utils/variables" as *;
 @use "./classic-page.scss";
 
+h2:first-of-type {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+
 section {
   &:nth-child(2n + 2),
   &:nth-child(2n + 3) {

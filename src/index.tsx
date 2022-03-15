@@ -26,7 +26,7 @@ export default (
           videoId="vjGxQNji05U"
         />
         <figcaption>
-          <h3>Trust our amazing team</h3>
+          <h2>Trust our amazing team</h2>
           <p>
             If you're looking to <strong>open</strong> an Amazon account,{" "}
             <strong>grow</strong> your existing <ECommerce /> sales or{" "}
