@@ -19,6 +19,7 @@ export function clickHandler(this: HTMLElement, e: MouseEvent) {
     parentElement.classList.remove("video-link");
     parentElement.classList.remove("video-loading");
     parentElement.classList.add("video-playing");
+    requestAnimationFrame(() => iframe.contentWindow!.focus());
   });
   this.replaceWith(iframe);
 }

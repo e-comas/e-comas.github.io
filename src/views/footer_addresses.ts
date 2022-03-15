@@ -19,11 +19,13 @@ function clickHandler(this: HTMLAnchorElement, event: Event) {
 addresses.replaceWith(
   ...Array.from(addresses.children, (child, i) => {
     const link = document.createElement("a");
+    const address = child.querySelector("address");
     link.href = "#";
-    addressesCache.set(link, child.querySelector("address"));
+    addressesCache.set(link, address);
     link.textContent = child.firstElementChild!.textContent;
     link.style.fontWeight = "normal";
     link.addEventListener("click", clickHandler);
+    link.title = address!.textContent!;
     return link;
   }).flatMap((link, i) => [i ? " | " : " ", link])
 );
