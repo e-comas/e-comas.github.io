@@ -38,7 +38,7 @@ export function SocialURLs({ url }: SocialTeamMemberProps) {
   return (
     <div class="social">
       {Object.entries(url).map(([socialMedium, url]) => (
-        <a href={url} target="_blank" rel="noopener">
+        <a href={url} target="_blank" rel="noopener" title={socialMedium}>
           <FontAwesomeIcon icon={socialMediaIcons[socialMedium]} />
         </a>
       ))}
