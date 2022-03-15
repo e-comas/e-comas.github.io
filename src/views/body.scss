@@ -33,7 +33,7 @@ body {
   @media screen and (min-width: $max-width) {
     padding: calc((100vw - #{$max-width}) / 2);
   }
-  @media screen and (min-width: $max-width+$body-padding*2) {
+  @media screen and (min-width: #{$max-width+$body-padding*2}) {
     padding: $body-padding;
     margin: 0 auto;
   }
