@@ -9,7 +9,7 @@ excerpt: Once a potential customer clicked the link in the ad and entered the
 thumbnail: /images/uploads/amazon-attribution.png
 thumbnail_alt: amazon attribution metrics
 tags:
-  - Advertising
+  - Operations
 ---
 Certain things are undeniably true.
  
