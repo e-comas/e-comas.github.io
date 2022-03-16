@@ -50,6 +50,7 @@ export default (
           Read the article
         </a>
       </article>
+      {"{% endif %}"}
       <p>
         We run our own popular webinar programme, talking to our friends in the{" "}
         <ECommerce /> world about how brands can improve and grow. See our
