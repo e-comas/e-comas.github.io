@@ -10,6 +10,7 @@ thumbnail: /images/uploads/amazon-attribution.png
 thumbnail_alt: amazon attribution metrics
 tags:
   - Operations
+  - Tools
 ---
 Certain things are undeniably true.
  
