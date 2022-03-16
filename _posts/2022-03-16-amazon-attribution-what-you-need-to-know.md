@@ -8,8 +8,8 @@ excerpt: Amazon Attribution is a game-changer as it allows you to track
 thumbnail: /images/uploads/amazon-attribution.png
 thumbnail_alt: amazon attribution metrics
 tags:
-  - Operations
-  - Tools
+  - "#Operations"
+  - "#Tools"
 ---
 Certain things are undeniably true.
 
