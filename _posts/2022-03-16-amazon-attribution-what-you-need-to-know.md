@@ -3,9 +3,8 @@ layout: blog
 title: "Amazon Attribution: What You Need to Know"
 author: Jérôme de Guigné
 date: 2022-03-16T09:39:11.945Z
-excerpt: Once a potential customer clicked the link in the ad and entered the
-  Amazon database, there was no way of knowing whether they followed through and
-  bought the product. That is until Amazon Attribution arrived on the scene...
+excerpt: Amazon Attribution is a game-changer as it allows you to track
+  customers throughout the entire sales funnel. Read more…
 thumbnail: /images/uploads/amazon-attribution.png
 thumbnail_alt: amazon attribution metrics
 tags:
