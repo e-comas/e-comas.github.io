@@ -13,6 +13,7 @@ import webinars_playlists from "./utils/webinars.toml";
 import "./views/VideoEmbedLink.scss";
 import "runtime:./utils/youtube_feed.js";
 import "./resources.scss";
+import "./webinar.scss";
 
 export default (
   <Body title="Webinar">

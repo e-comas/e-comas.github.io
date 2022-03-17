@@ -1,0 +1,5 @@
+@use "./utils/blog-article-preview" as *;
+
+main > article {
+  @extend %blog-article-preview;
+}
