@@ -2,4 +2,5 @@
 
 main > article {
   @extend %blog-article-preview;
+  margin: auto;
 }
