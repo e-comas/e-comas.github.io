@@ -11,11 +11,7 @@ tags:
   - "#Operations"
   - "#Tools"
 ---
-Certain things are undeniably true.
-
-For instance, the sky is blue, the grass is green, and Amazon is the largest online retailer globally.
-
-In the 28 years since its creation, Amazon has become the top eCommerce platform globally and shows no sign of waning.
+Amazon is the largest online retailer globally. In the 28 years since its creation, it has become the top eCommerce platform globally and shows no sign of waning.
 
 With over 350 million products sold on Amazon, it is hard to believe it began as a small online bookstore.
 
@@ -56,7 +52,6 @@ Amazon Attribution gives you insight into the following:
 * Units Sold
 * New to Brand Customers
 
-### 
 Who can use Amazon Attribution?
 
 Amazon Attribution is currently only available for professional sellers enrolled in Amazon Brand Registry.
