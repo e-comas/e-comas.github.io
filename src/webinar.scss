@@ -3,4 +3,5 @@
 main > article {
   @extend %blog-article-preview;
   margin: auto;
+  --number-of-rows: 4;
 }
