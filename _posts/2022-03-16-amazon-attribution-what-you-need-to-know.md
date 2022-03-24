@@ -8,8 +8,8 @@ excerpt: Amazon Attribution is a game-changer as it allows you to track
 thumbnail: /images/uploads/amazon-attribution.png
 thumbnail_alt: amazon attribution metrics
 tags:
-  - "#Operations"
-  - "#Tools"
+  - Operations
+  - Tools
 ---
 Amazon is the largest online retailer globally. In the 28 years since its creation, it has become the top eCommerce platform globally and shows no sign of waning.
 
