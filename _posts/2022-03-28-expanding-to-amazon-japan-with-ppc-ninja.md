@@ -2,7 +2,7 @@
 layout: blog
 title: Expanding to Amazon Japan, with PPC Ninja
 author: Jérôme de Guigné
-date: 2022-03-28T10:01:43.014Z
+date: 2022-04-07T10:01:43.014Z
 excerpt: Join us as Ritu Java from PPC Ninja discusses some of the key
   considerations for expanding to Amazon Japan.
 thumbnail: /images/uploads/untitled-design-2022-03-28t110346.252.png
