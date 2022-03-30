@@ -79,7 +79,7 @@
     }
 
     & > a:first-child {
-      grid-row: span 5;
+      grid-row: span var(--number-of-rows, 5);
     }
 
     .cta {

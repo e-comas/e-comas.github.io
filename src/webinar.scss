@@ -4,4 +4,7 @@ main > article {
   @extend %blog-article-preview;
   margin: auto;
   --number-of-rows: 4;
+  & > h3 {
+    margin-left: 0;
+  }
 }
