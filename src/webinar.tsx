@@ -32,7 +32,7 @@ export default (
         </a>
         <time
           dateTime={
-            '{{ site.tags.Webinar[0].date | date: "%Y-%m-%dT%H:%M:%S" }}'
+            "{{ site.tags.Webinar[0].date | date: '%Y-%m-%dT%H:%M:%S' }}"
           }
         >
           {'{{ site.tags.Webinar[0].date | date: "%b %d, %Y" }}'}
