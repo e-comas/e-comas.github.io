@@ -18,7 +18,7 @@ export default (
       <h2>Our Blog</h2>
       <section>
         {"{% for post in site.posts %}"}
-        {"{% if post.sitemap != false %}"}
+        {"{% unless post.tags contains 'Webinar' or post.sitemap == false %}"}
         <article>
           <a href="{{ post.url }}">
             <img
@@ -45,7 +45,7 @@ export default (
             Read the article
           </a>
         </article>
-        {"{% endif %}"}
+        {"{% endunless %}"}
         {"{% endfor %}"}
       </section>
       <aside></aside>

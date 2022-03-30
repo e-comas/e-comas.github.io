@@ -37,7 +37,10 @@ export default (
           <ECommerce /> tips and what's new in the Amazon world.
         </p>
         <div class="blog-articles">
-          {"{% for post in site.posts limit:3 %}"}
+          {"{% assign counter = 0 -%}"}
+          {"{% for post in site.posts -%}"}
+          {"{% unless post.tags contains 'Webinar' %}"}
+          {"{% assign counter = counter | plus: 1 -%}"}
           {"{% if post.sitemap != false %}"}
           <article>
             <a href="{{ post.url }}">
@@ -51,6 +54,8 @@ export default (
             </p>
           </article>
           {"{% endif %}"}
+          {"{% if counter == 3 %}{% break %}{% endif -%}"}
+          {"{% endunless %}"}
           {"{% endfor %}"}
         </div>
         <a href="/news.html" className="cta">
