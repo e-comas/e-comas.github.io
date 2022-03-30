@@ -27,7 +27,7 @@ export default (
               loading="lazy"
             />
           </a>
-          <time dateTime={'{{ post.date | date: "%Y-%m-%dT%H:%M:%S" }}'}>
+          <time dateTime={"{{ post.date | date: '%Y-%m-%dT%H:%M:%S' }}"}>
             {'{{ post.date | date: "%b %d, %Y" }}'}
           </time>
           <h3>

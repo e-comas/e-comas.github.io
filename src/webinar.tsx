@@ -48,7 +48,7 @@ export default (
           </a>
         </p>
         <a href="{{ site.tags.Webinar[0].url }}" class="cta">
-          Read the article
+          Register now
         </a>
       </article>
       {"{% endif %}"}

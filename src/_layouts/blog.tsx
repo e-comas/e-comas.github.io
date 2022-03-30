@@ -14,7 +14,7 @@ export default (
     <main id="main-content">
       <h2>{"{{ page.title | escape }}"}</h2>
       <div class="publishing-info">
-        <time dateTime={'{{ page.date | date: "%Y-%m-%dT%H:%M:%S" }}'}>
+        <time dateTime={"{{ page.date | date: '%Y-%m-%dT%H:%M:%S' }}"}>
           {'{{ page.date | date: "%a, %b %d, %Y" }}'}
         </time>
         {" – Written by {{ page.author | escape }}"}
