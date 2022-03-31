@@ -6,7 +6,7 @@ date: 2022-04-07T15:00:00.000Z
 excerpt: Amazon Japan presents a huge opportunity for scaling internationally.
   Join us as Ritu Java from PPC Ninja discusses some of the key considerations
   for expanding to Amazon Japan.
-thumbnail: /images/uploads/untitled-design-2022-03-28t110346.252.png
+thumbnail: /images/uploads/ppc-ninja-blog-post.jpg
 thumbnail_alt: Expanding to Amazon Japan webinar
 tags:
   - Webinar
