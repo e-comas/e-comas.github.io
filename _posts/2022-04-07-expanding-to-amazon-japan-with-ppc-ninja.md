@@ -19,4 +19,6 @@ Join us as Ritu Java from [PPC Ninja](https://www.ppcninja.com/) discusses some 
 
 **WHEN: Thursday 7th April, 5pm CET**
 
+<iframe src="https://us02web.zoom.us/webinar/register/WN_wNydK6QOQfSu8_LNCNB-7g" width="680" height="1150"></iframe>
+
 <!--EndFragment-->
