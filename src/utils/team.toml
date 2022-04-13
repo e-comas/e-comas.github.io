@@ -387,6 +387,7 @@ pictureUrl = "/images/team/Alexandre-Zambeaux.png"
 contactPage = true
 url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux/"
 url.YouTube = "https://www.youtube.com/watch?v=lW1ffcwiyP8"
+url.Calendly = "https://calendly.com/alexz-ecommerce"
 
 
 [[team_member]]
@@ -397,6 +398,7 @@ quote = "\" Offer an omnichannel experience to your customer is the future of e-
 pictureUrl = "/images/team/christel.png"
 contactPage = true
 url.LinkedIn = "https://www.linkedin.com/in/c-bordoni-amazonspecialist/"
+url.Calendly = "https://calendly.com/cbordoni-amazon-expert"
 
 
 [[team_member]]
