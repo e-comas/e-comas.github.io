@@ -12,6 +12,7 @@
     "@aduh95/toml": "^0.4.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-sucrase": "4.0.1",
     "@squoosh/lib": "^0.4.0",
