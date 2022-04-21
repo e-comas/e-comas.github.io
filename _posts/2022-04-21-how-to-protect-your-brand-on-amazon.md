@@ -5,7 +5,7 @@ author: Jérôme de Guigné
 date: 2022-04-12T10:11:41.550Z
 excerpt: In this blog, we look at the types of threats your brand faces on
   Amazon and what you can do to best protect it.
-thumbnail: /images/uploads/protect-your-brand.png
+thumbnail: /images/uploads/protect-your-band.png
 thumbnail_alt: Protect your brand on Amazon
 tags:
   - Operations
