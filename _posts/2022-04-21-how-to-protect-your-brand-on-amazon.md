@@ -20,7 +20,7 @@ In this blog, we look at the types of threats your brand faces and what you can 
 
 ### Types of attacks
 
-#### List hijacking
+#### 1. List hijacking
 
 In a nutshell, this is where someone sells a counterfeit or similar version of your product. Having your listing "hijacked" is a major concern among Amazon sellers, with 48% worrying about hijackers creating copycat listings.
 
@@ -28,7 +28,7 @@ A hijacked listing impacts both your customers and your bottom line. 
 
 Suppose an unsuspecting customer purchases your product. But instead of receiving the original product from you, your Amazon hijacker gets the sale, and the customer gets an inferior, counterfeit version. Unhappy with their purchase because of the poor quality, the customer leaves a negative review on your listing. You get a bad review for something that you don't even sell, discouraging future visitors from purchasing your product.
 
-#### Trademark infringement
+#### 2. Trademark infringement
 
 A trademark protects items that help define your brand, such as your name or logo.
 
@@ -36,7 +36,7 @@ Some sellers may use your business name or trademark to sell competing goods. Th
 
 This can result in customer disloyalty and negative reviews for your products.
 
-#### Fake reviews
+#### 3. Fake reviews
 
 Fake one-star reviews are an obvious way of sabotaging a competitor. Fake five-star reviews are also a significant problem. Wily black hat sellers use them to trick the algorithm into flagging a listing by flooding it with fake five-star reviews.
 
@@ -58,13 +58,13 @@ Here is how you can make your brand more unique:
 * Find market gaps to fill— Counterfeiting tends to be prevalent in an overcrowded market. That's why you need to develop unique ideas that will address customers' pain points. When your brand offers better value than what your competitors offer, it becomes difficult for shady sellers to copy.
 * Explain what makes your product better than your competitors' products - Along with highlighting the unique selling points of your product, be sure to expose the weaknesses of other brands to gain a competitive edge.
 
-2. #### Catalogue your brand's items on a separate site
+#### 2. Catalogue your brand's items on a separate site
 
 This is an added security step to prove that you're the rightful owner of your brand and products. 
 
 The longer the digital paper trail, the more you can prove that you are the brains behind the idea.
 
-3. #### Negotiate strong contracts with distributors
+#### 3. Negotiate strong contracts with distributors
 
 Your ideal option is to make yourself the sole purchaser of products, making it impossible for other sellers — and even the distributors themselves — to sell your brand on Amazon or anywhere else. You may have to enlist the help of a lawyer to make the contract binding. 
 
@@ -72,7 +72,7 @@ You can do many things to protect your brand, and these are just three of them.
 
 However, perhaps the most important method of fending off any unscrupulous sellers is enrolling in the Amazon Brand Registry program. 
 
-4. #### Register your brand
+#### 4. Register your brand
 
 Amazon Brand Registry is a program that identifies brand owners to Amazon, giving them greater control and protection over their intellectual property and content.
 
