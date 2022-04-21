@@ -48,7 +48,7 @@ These are three of the most common attacks sellers face on Amazon, and as you ca
 
 ### 4 ways to protect your brand
 
-1. #### Make your brand as unique as possible
+#### 1. Make your brand as unique as possible
 
 The more unique your brand is, the more it will stick out when someone tries to copy you.
 
