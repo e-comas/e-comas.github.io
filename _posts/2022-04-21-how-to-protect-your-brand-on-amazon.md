@@ -5,7 +5,7 @@ author: Jérôme de Guigné
 date: 2022-04-12T10:11:41.550Z
 excerpt: In this blog, we look at the types of threats your brand faces on
   Amazon and what you can do to best protect it.
-thumbnail: /images/uploads/protect-your-brand.png
+thumbnail: /images/uploads/protect-your-band.png
 thumbnail_alt: Protect your brand on Amazon
 tags:
   - Operations
@@ -48,7 +48,7 @@ These are three of the most common attacks sellers face on Amazon, and as you ca
 
 ### 4 ways to protect your brand
 
-1. #### Make your brand as unique as possible
+#### 1. Make your brand as unique as possible
 
 The more unique your brand is, the more it will stick out when someone tries to copy you.
 
