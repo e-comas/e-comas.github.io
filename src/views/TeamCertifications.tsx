@@ -5,7 +5,7 @@ import "./TeamCertifications.scss";
 
 export default () => (
   <section class="certifications">
-    <h2>Team certifications:</h2>
+    <h2>Certifications:</h2>
     <div role="list">
       <a
         href="https://advertising.amazon.com/partners/directory/details/amzn1.ads1.ma1.cj3vydv54i8qcb80mhstj0em0/"
@@ -47,6 +47,18 @@ export default () => (
           src="/images/certifications/Google Partner.svg"
           alt="Google Partner certification badge"
         />
+      </a>
+      <a
+        href="https://profiles.forbes.com/u/d139bcfc-f77c-43fe-bd6f-3db5f2f23543"
+        target="_blank"
+        rel="noopener"
+        role="listitem"
+      >
+        <img
+          src="/images/certifications/ForbesBC.svg"
+          alt="Forbes Business Council official partner 2022 badge"
+        />
+        <p>Jérôme de Guigné</p>
       </a>
     </div>
   </section>

@@ -8,5 +8,10 @@ section.certifications {
     img {
       max-height: unset;
     }
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: inherit;
+    }
   }
 }
