@@ -14,7 +14,6 @@ import Picture from "./utils/Picture.js";
 
 import "./index.scss";
 import TeamCertifications from "./views/TeamCertifications.js";
-import CEOCertifications from "./views/CEOCertifications.js";
 
 export default (
   <Body>
@@ -132,7 +131,6 @@ export default (
 
       <Partners />
       <TeamCertifications />
-      <CEOCertifications />
     </main>
     <Footer />
   </Body>
