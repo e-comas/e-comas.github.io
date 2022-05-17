@@ -44,7 +44,7 @@ export function SocialURLs({ url }: SocialTeamMemberProps) {
         .concat(
           location.pathname !== "/contact.html"
             ? []
-            : [["email", "sales@e-comas.com"]]
+            : [["email", "mailto:sales@e-comas.com"]]
         )
         .map(([socialMedium, url]) =>
           location.pathname !== "/contact.html" &&
