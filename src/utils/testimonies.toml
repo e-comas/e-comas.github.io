@@ -1,5 +1,17 @@
 [[item]]
 text = """\
+e-Comas was instrumental in helping us take our first steps towards centralising and streamlining our product data. \
+What was initially a daunting undertaking was made simple and clear with their approach and guidance. \
+We were incredibly happy with the outcome of our initial Salsify implementation phase with e-Comas.\
+"""
+name = "Jacqueline Sargeant"
+title = "Project Manager"
+company = "On Running"
+image = "/images/Jacqueline-Sargeant.png"
+logo = "/images/brands/on.svg"
+
+[[item]]
+text = """\
     We have worked with e-Comas's consulting services team to help us define \
     our global Amazon approach for our bicycle tyres business line. They \
     quickly adapted their in-depth and hands-on knowledge of the Amazon \
