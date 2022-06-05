@@ -13,7 +13,10 @@ export default () => (
         rel="noopener"
         role="listitem"
       >
-        <img src="/images/certifications/Amazon Ads.svg" alt="Amazon Ads" />
+        <Picture
+          src="/images/certifications/Verified partner badge.png"
+          alt="Amazon Ads Verified Partner badge"
+        />
       </a>
       <a
         href="https://sellercentral.amazon.com/gspn/provider-details/Advertising%20Optimization/29c1240a-ec5f-4b3b-ba87-98955093c9a2?ref_=sc_gspn_alst_adt-29c1240a"
