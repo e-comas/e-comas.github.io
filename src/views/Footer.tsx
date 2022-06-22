@@ -115,7 +115,7 @@ export default () => (
       </li>
       <li>
         <a
-          href="https://www.facebook.com/ecommerce.made.simple/"
+          href="https://www.facebook.com/ecomas.ecommerce.made.simple/"
           rel="noopener"
           target="_blank"
           title="Facebook"
@@ -125,7 +125,7 @@ export default () => (
       </li>
       <li>
         <a
-          href="https://www.instagram.com/e.comas.amazon.made.simple/"
+          href="https://www.instagram.com/ecomas.ecommerce.made.simple/"
           rel="noopener"
           target="_blank"
           title="Instagram"
@@ -154,7 +154,11 @@ export default () => (
         </a>
       </li>
     </ul>
-    <img src="/images/MadeInLux.svg" alt="Made in Luxembourg" class="made_in_lux" />
+    <img
+      src="/images/MadeInLux.svg"
+      alt="Made in Luxembourg"
+      class="made_in_lux"
+    />
     <div class="copyright-notice">© 2022 · e-Comas · All Rights Reserved</div>
   </footer>
 );
