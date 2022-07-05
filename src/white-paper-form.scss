@@ -6,6 +6,11 @@ main > p {
   @extend %p-after-title;
 }
 
+dialog.form-in-modal {
+  width: 90%;
+  height: 75%;
+}
+
 main section {
   display: grid;
   grid-template-rows: 1fr auto auto;

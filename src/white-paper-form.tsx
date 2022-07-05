@@ -8,7 +8,7 @@ import Footer from "./views/Footer.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 
 import "./white-paper-form.scss";
-import "runtime:./utils/frame-auto-height.js";
+import "runtime:./utils/open-form-in-modal.js";
 
 export default (
   <Body title="White paper">
@@ -46,20 +46,14 @@ export default (
           feedback they were getting on Amazon, they turned to our analytics
           tool Compas. Here’s how we helped.
         </p>
-        <a href="https://bit.ly/305VmK1" className="cta">
+        <a
+          href="//go.pardot.com/l/885733/2020-11-09/4vbg"
+          target="_blank"
+          className="cta open-in-modal"
+        >
           Download the white paper
         </a>
       </ElementWithBackgroundImage>
-
-      <iframe
-        title="Contact us form"
-        width="100%"
-        height="1305"
-        frameborder="0"
-        allowtransparency
-        loading="lazy"
-        src="//go.pardot.com/l/885733/2020-11-09/4vbg"
-      />
     </main>
     <Footer />
   </Body>
