@@ -1,20 +1,31 @@
 let modal: HTMLDialogElement;
 function clickHandler(ev: Event) {
   ev.preventDefault();
-  const iframe = document.createElement("iframe");
-  iframe.src = (ev.target as HTMLAnchorElement).href;
-  iframe.width = "100%";
-  iframe.height = (window.innerHeight * 0.75 - 40) as any as string;
+
   if (modal == null) {
+    const modalCloseForm = document.createElement("form");
+    const modalCloseFormWrapper = document.createElement("div");
+    const modalCloseButton = document.createElement("button");
+    modalCloseForm.method = "dialog";
+    modalCloseButton.type = "submit";
+    modalCloseButton.title = "Dismiss and close";
+    modalCloseButton.append("❌");
+    modalCloseFormWrapper.append(modalCloseButton);
+    modalCloseForm.append(modalCloseFormWrapper);
+
+    const iframe = document.createElement("iframe");
+    iframe.width = "100%";
+
     modal = document.createElement("dialog");
     modal.className = "form-in-modal";
-    modal.append(iframe);
+    modal.append(modalCloseForm, iframe);
     document.body.append(modal);
-  } else if (modal.firstChild) {
-    modal.replaceChild(iframe, modal.firstChild);
-  } else {
-    modal.append(iframe);
   }
+
+  const iframe = modal.lastChild as HTMLIFrameElement;
+  const targetSrc = (ev.target as HTMLAnchorElement).href;
+  if (iframe.src !== targetSrc) iframe.src = targetSrc;
+  iframe.height = (window.innerHeight * 0.75 - 40) as any as string;
 
   modal.showModal();
 }
