@@ -28,7 +28,7 @@ function addAnalyticsSnippet(id, ANALYTICS_ID) {
     `gtag("config",${JSON.stringify(id)});`;
   const script = document.createElement("script");
   script.defer = true;
-  script.dataset.domain = id;
+  script.dataset.domain = ANALYTICS_ID;
   script.src = "https://plausible.io/js/plausible.js";
   document.head.append(script);
   document.head.append(script, gtm, inline);
