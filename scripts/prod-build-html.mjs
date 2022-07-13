@@ -6,13 +6,13 @@ import {
 import sass2css from "./prod-build-css.mjs";
 import buildRuntimeJS from "./prod-build-js.mjs";
 import copyRSSFeed from "./prod-build-rss-feed.mjs";
-import { CANONICAL_ORIGIN, GA_ID } from "./prod-config.mjs";
+import { ANALYTICS_ID, CANONICAL_ORIGIN, GA_ID } from "./prod-config.mjs";
 import viewportsToTest from "./prod-viewports-to-test.mjs";
 
 const imgData = new Map();
 const sassMappings = new Map();
 
-function addGoogleAnalyticsSnippet(id) {
+function addAnalyticsSnippet(id, ANALYTICS_ID) {
   const gtm = document.createElement("script");
   gtm.async = true;
   gtm.src =
@@ -26,7 +26,12 @@ function addGoogleAnalyticsSnippet(id) {
     "function gtag(){dataLayer.push(arguments)}" +
     'gtag("js",new Date);' +
     `gtag("config",${JSON.stringify(id)});`;
-  document.head.append(gtm, inline);
+  const script = document.createElement("script");
+  script.defer = true;
+  script.dataset.domain = id;
+  script.src = "https://plausible.io/js/plausible.js";
+  document.head.append(script);
+  document.head.append(script, gtm, inline);
 }
 
 async function editPage(page, signalIn, signalOut) {
@@ -251,7 +256,7 @@ async function editPage(page, signalIn, signalOut) {
 
   if (GA_ID) {
     await page.setOfflineMode(true);
-    await page.evaluate(addGoogleAnalyticsSnippet, GA_ID);
+    await page.evaluate(addAnalyticsSnippet, GA_ID, ANALYTICS_ID);
   }
 }
 
