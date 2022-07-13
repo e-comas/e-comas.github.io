@@ -1,5 +1,6 @@
 import { h } from "@aduh95/async-jsx";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import {
   faLinkedinIn,
   faFacebookF,
@@ -110,7 +111,7 @@ export default () => (
           target="_blank"
           title="LinkedIn"
         >
-          <FontAwesomeIcon icon={faLinkedinIn} />
+          <FontAwesomeIcon icon={faLinkedinIn as IconProp} />
         </a>
       </li>
       <li>
@@ -120,7 +121,7 @@ export default () => (
           target="_blank"
           title="Facebook"
         >
-          <FontAwesomeIcon icon={faFacebookF} />
+          <FontAwesomeIcon icon={faFacebookF as IconProp} />
         </a>
       </li>
       <li>
@@ -130,7 +131,7 @@ export default () => (
           target="_blank"
           title="Instagram"
         >
-          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faInstagram as IconProp} />
         </a>
       </li>
       <li>
@@ -140,7 +141,7 @@ export default () => (
           target="_blank"
           title="Medium"
         >
-          <FontAwesomeIcon icon={faMediumM} />
+          <FontAwesomeIcon icon={faMediumM as IconProp} />
         </a>
       </li>
       <li>
@@ -150,7 +151,7 @@ export default () => (
           target="_blank"
           title="YouTube"
         >
-          <FontAwesomeIcon icon={faYoutube} />
+          <FontAwesomeIcon icon={faYoutube as IconProp} />
         </a>
       </li>
     </ul>
