@@ -20,8 +20,8 @@ function sortTM(a: TeamMemberProps, b: TeamMemberProps) {
   if (a.priority! < b.priority!) return 1;
   if (a.priority! > b.priority!) return -1;
 
-  const aHead = a.Title.startsWith("Head of");
-  const bHead = b.Title.startsWith("Head of");
+  const aHead = a.Title?.startsWith("Head of");
+  const bHead = b.Title?.startsWith("Head of");
   if (aHead && !bHead) return -1;
   if (!aHead && bHead) return 1;
   return a.Name.localeCompare(b.Name);
@@ -38,6 +38,9 @@ function getTeams(teamMembers: TeamMemberProps[]) {
   return team.team_order
     .map((teamName) => {
       const r = teams[teamName];
+      if (r == null) {
+        throw new Error("No member for team " + teamName);
+      }
       delete teams[teamName];
       return r;
     })
