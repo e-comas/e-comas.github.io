@@ -277,7 +277,7 @@ url.LinkedIn = "https://www.linkedin.com/in/arjun-narayan-881166196/"
 [[team_member]]
 Name = "Joel Young"
 Title = "Lead Creative"
-Team = "Content & Social Media"
+Team = "Content & Social Media team"
 quote = "Be happy in everything you do. That's most important. And give a pet a home."
 pictureUrl = "/images/team/Joel.png"
 
@@ -285,7 +285,7 @@ pictureUrl = "/images/team/Joel.png"
 [[team_member]]
 Name = "Jessica Barton"
 Title = "Social & Copywriting Manager"
-Team = "Content & Social Media"
+Team = "Content & Social Media team"
 quote = ""
 pictureUrl = "/images/team/Jessica-Barton-.png"
 
@@ -293,7 +293,7 @@ pictureUrl = "/images/team/Jessica-Barton-.png"
 [[team_member]]
 Name = "Jessamy Chapman"
 Title = "Press Manager"
-Team = "Content & Social Media"
+Team = "Content & Social Media team"
 quote = ""
 pictureUrl = "/images/team/Jessamy-Chapman.png"
 
@@ -301,7 +301,7 @@ pictureUrl = "/images/team/Jessamy-Chapman.png"
 [[team_member]]
 Name = "Antoine du Hamel"
 Title = "Front End and Back End Engineer"
-Team = "Content & Social Media"
+Team = "Content & Social Media team"
 quote = ""
 pictureUrl = "/images/team/Antoine.png"
 
@@ -394,7 +394,7 @@ url.LinkedIn = "https://www.linkedin.com/in/misa-manass%C3%A9-3994a4225/"
 
 [[team_member]]
 Name = "Jan Puhlmann"
-Team = "Account Management"
+Team = "Account management"
 Title = "Account Manager"
 quote = "\"Take a simple idea and take it seriously.\" (Charlie Munger)"
 pictureUrl = "/images/team/Jan.png"
@@ -402,7 +402,7 @@ pictureUrl = "/images/team/Jan.png"
 
 [[team_member]]
 Name = "Manasa Krishnamurthy"
-Team = "Account Management"
+Team = "Account management"
 Title = "Account Support"
 quote = "You can not shake hands with clenched fist"
 url.LinkedIn = "https://www.linkedin.com/in/manasa-k-53a084197/"
@@ -411,7 +411,7 @@ pictureUrl = "/images/team/Manasa.png"
 
 [[team_member]]
 Name = "Mehul James"
-Team = "Account Management"
+Team = "Account management"
 Title = "Account Support"
 url.LinkedIn = "https://www.linkedin.com/in/mehul-james-86654a10a"
 pictureUrl = "/images/team/Mehul.png"
@@ -419,7 +419,7 @@ pictureUrl = "/images/team/Mehul.png"
 
 [[team_member]]
 Name = "Richard Arokiaraj"
-Team = "Account Management"
+Team = "Account management"
 Title = "Account Support"
 quote = "Leap, and the net will appear."
 url.LinkedIn = "https://www.linkedin.com/in/richie7/"
@@ -428,7 +428,7 @@ pictureUrl = "/images/team/Richie.png"
 
 [[team_member]]
 Name = "Suzanne Kleinveld"
-Team = "Account Management"
+Team = "Account management"
 Title = "Account Manager"
 url.LinkedIn = "https://www.linkedin.com/in/suzanne-kleinveld/"
 pictureUrl = "/images/team/Suzanne.png"
@@ -436,14 +436,14 @@ pictureUrl = "/images/team/Suzanne.png"
 
 [[team_member]]
 Name = "Julie Caillet"
-Team = "Content & Social Media"
+Team = "Content & Social Media team"
 Title = "Community Manager"
 pictureUrl = "/images/team/Julie.png"
 
 
 [[team_member]]
 Name = "Anders Hjorth"
-Team = "Advertising Team"
+Team = "Advertising team"
 Title = "Head of Advertising"
 pictureUrl = "/images/team/Anders.png"
 
