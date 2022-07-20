@@ -268,7 +268,7 @@ url.LinkedIn = "https://www.linkedin.com/in/sven-jacobsen-diaz/"
 [[team_member]]
 Name = "Arjun Narayan"
 Title = "Account Support"
-Team = "Retail"
+Team = "Account Management"
 quote = "The key to success is to concentrate on GOALS, not OBSTACLES."
 pictureUrl = "/images/team/Arjun.png"
 url.LinkedIn = "https://www.linkedin.com/in/arjun-narayan-881166196/"
@@ -445,6 +445,7 @@ pictureUrl = "/images/team/Julie.png"
 Name = "Anders Hjorth"
 Team = "Advertising team"
 Title = "Head of Advertising"
+url.LinkedIn = "https://www.linkedin.com/in/ahjorth/"
 pictureUrl = "/images/team/Anders.png"
 
 
@@ -462,3 +463,11 @@ Name = "Snophia D'monte"
 Team = "Retail"
 Title = "Finance and Retail Support"
 pictureUrl = "/images/team/Snophia.png"
+
+
+[[team_member]]
+Name = "Umer Mohammed"
+Team = "Account Management"
+Title = "Account Support"
+quote = "Sucess is best when its shared"
+pictureUrl = "/images/team/Umer.png"
