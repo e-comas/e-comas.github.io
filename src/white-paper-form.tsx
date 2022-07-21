@@ -22,16 +22,21 @@ export default (
       </p>
 
       <ElementWithBackgroundImage
-        src="/images/white-paper-1.png"
+        src="/images/white-paper-3.jpg"
         tagName="section"
       >
-        <h3>How to manage Amazon</h3>
+        <h3>When luxury meets the mass market</h3>
         <p>
-          Here’s our beginner’s guide to building a solid Amazon strategy,
-          managing your operations, creating content and growing traffic.
+          Amazon Luxury Stores is now live in Europe and the US. Read our
+          deep-dive into what Amazon Luxury Stores is, how it looks for
+          customers, and the pros and cons for luxury brands.
         </p>
-        <a href="https://bit.ly/3dtG2Ka" className="cta">
-          Read our guide
+        <a
+          href="https://go.pardot.com/l/885733/2022-06-20/83wgg"
+          target="_blank"
+          className="cta open-in-modal"
+        >
+          Download the white paper
         </a>
       </ElementWithBackgroundImage>
 
@@ -52,6 +57,20 @@ export default (
           className="cta open-in-modal"
         >
           Download the white paper
+        </a>
+      </ElementWithBackgroundImage>
+
+      <ElementWithBackgroundImage
+        src="/images/white-paper-1.png"
+        tagName="section"
+      >
+        <h3>How to manage Amazon</h3>
+        <p>
+          Here’s our beginner’s guide to building a solid Amazon strategy,
+          managing your operations, creating content and growing traffic.
+        </p>
+        <a href="https://bit.ly/3dtG2Ka" className="cta">
+          Read our guide
         </a>
       </ElementWithBackgroundImage>
     </main>
