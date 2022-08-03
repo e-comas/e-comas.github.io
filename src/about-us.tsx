@@ -29,10 +29,16 @@ export default (
       </p>
 
       <h2>How it's going</h2>
-      <Picture
-        src="/images/team-picture.png"
-        alt="e-Comas Europe team picture"
-      />
+      <section>
+        <Picture
+          src="/images/team-picture-EU.jpg"
+          alt="e-Comas Europe team picture"
+        />
+        <Picture
+          src="/images/team-picture-IN.jpg"
+          alt="e-Comas India team picture"
+        />
+      </section>
       <p>
         Today our experts coach brands and handle their accounts to sustainably
         grow their business and improve their agility in tackling everyday

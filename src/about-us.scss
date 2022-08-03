@@ -14,6 +14,13 @@ main > .picture-wrapper {
 main > .cta {
   margin: 0 auto;
 }
+main > section {
+  @extend %containsCoverPicture;
+  @media screen and (min-width: 800px) {
+    // There are 23 people on the first image, 17 on the second one.
+    grid-template-columns: 23fr 17fr;
+  }
+}
 @media screen and(min-width: 800px) {
   main {
     display: grid;
