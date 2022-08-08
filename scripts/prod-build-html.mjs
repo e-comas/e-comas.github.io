@@ -13,25 +13,11 @@ const imgData = new Map();
 const sassMappings = new Map();
 
 function addAnalyticsSnippet(id, ANALYTICS_ID) {
-  const gtm = document.createElement("script");
-  gtm.async = true;
-  gtm.src =
-    "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
-  const inline = document.createElement("script");
-  inline.textContent =
-    "window.dataLayer=window.dataLayer||[];" +
-    `if(!localStorage.getItem("cookie-consent"))window["ga-disable-"+${JSON.stringify(
-      id
-    )}]=true;` +
-    "function gtag(){dataLayer.push(arguments)}" +
-    'gtag("js",new Date);' +
-    `gtag("config",${JSON.stringify(id)});`;
   const script = document.createElement("script");
   script.defer = true;
   script.dataset.domain = ANALYTICS_ID;
   script.src = "https://plausible.io/js/plausible.js";
   document.head.append(script);
-  document.head.append(script, gtm, inline);
 }
 
 async function editPage(page, signalIn, signalOut) {

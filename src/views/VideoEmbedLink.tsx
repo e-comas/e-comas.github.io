@@ -2,6 +2,7 @@ import { h } from "@aduh95/async-jsx";
 import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.js";
 
 import "./VideoEmbedLink.scss";
+import "../utils/cookie_consent.scss";
 import "runtime:./video-embed-runtime.js";
 
 interface VideoEmbedLinkProps {

@@ -49,7 +49,9 @@ function createDialog() {
     privacyLink.href = "/privacy.html";
     privacyLink.textContent = "privacy policy";
     p.append(
-      "This website wants to store statistical cookies on your computer. You can read more about this in our ",
+      "You are trying to access a part of this website that relies on " +
+        "third-party content that might store cookies on your computer. You " +
+        "can read more about this in our ",
       privacyLink,
       ".",
       ...previousConsentInfo
@@ -85,12 +87,24 @@ function createDialog() {
   return dialog;
 }
 
-function showModal(e?: Event) {
+function showModal(e?: Event | null, createPromise?: boolean) {
   e?.preventDefault?.();
   const dialog = createDialog();
   document.body.append(dialog);
   dialog.showModal();
   dialog.addEventListener("close", () => dialog.remove(), { once: true });
+  if (createPromise) {
+    return new Promise<void>((resolve, reject) => {
+      dialog.addEventListener(
+        "close",
+        () => {
+          if (previousConsent) resolve();
+          else reject();
+        },
+        { once: true }
+      );
+    });
+  }
 }
 
 const li = document.createElement("li");
@@ -101,7 +115,8 @@ link.textContent = "Cookie settings";
 li.append(link);
 document.querySelector("footer ul")?.append(li);
 
-if (previousConsent == null && location.pathname !== "/privacy.html")
-  showModal();
-
-export {};
+export function getConsent() {
+  if (previousConsent == null) {
+    return showModal(null, true);
+  } else return previousConsent;
+}
