@@ -31,10 +31,7 @@ function layoutArborescence(node: ArborescenceNode) {
 }
 
 export default () => (
-  <ElementWithBackgroundImage
-    tagName="header"
-    src="/images/Banner1 Hero 3x .png"
-  >
+  <ElementWithBackgroundImage tagName="header" src="/images/BannerHero.png">
     <a href="#main-content" class="skip-nav">
       Skip navigation
     </a>
