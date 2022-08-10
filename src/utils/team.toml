@@ -115,6 +115,7 @@ url.LinkedIn = "https://www.linkedin.com/in/richard-ravichandar-a1929a50/"
 Name = "Riley Bell"
 Title = "Senior Account Manager & Team lead"
 Team = "Account management"
+priority = 1
 quote = "\"eCommerce is an ever evolving landscape with fresh challenges and new opportunities emerging each day\""
 pictureUrl = "/images/team/Riley.png"
 url.LinkedIn = "https://www.linkedin.com/in/bellriley/"
