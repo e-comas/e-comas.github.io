@@ -129,6 +129,24 @@ section.twoThird {
     grid-template-columns: 2fr 1fr;
   }
 }
+section.oneThirdTwoThird {
+  @extend %containsCoverPicture;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+section.halfHalf {
+  @extend %containsCoverPicture;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+section.oneQuarterThreeQuarter {
+  @extend %containsCoverPicture;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 3fr;
+  }
+}
 section.threeQuarter {
   @extend %containsCoverPicture;
   @media screen and (min-width: 800px) {
