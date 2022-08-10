@@ -83,12 +83,12 @@ export default (
         some other websites (such as YouTube, Pardot, etc.) that might use
         cookies on their own. When you try to access those area and you haven't
         yet decided if you agree with the use of cookies, a popup will be
-        displayed asking you to choose to accept cookies. See Google's
+        displayed asking you to choose to accept cookies. See Google's{" "}
         <a href="https://policies.google.com/technologies/cookies">
           Cookie policy page
         </a>{" "}
         for more information on their use of cookies when using YouTube. See
-        SalesForce's
+        SalesForce's{" "}
         <a href="https://www.salesforce.com/uk/company/privacy/full_privacy/">
           Privacy Statement
         </a>{" "}
