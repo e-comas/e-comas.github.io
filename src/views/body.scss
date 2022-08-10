@@ -135,6 +135,12 @@ section.oneThirdTwoThird {
     grid-template-columns: 1fr 2fr;
   }
 }
+section.fourSeventhThreeSeventh {
+  @extend %containsCoverPicture;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 4fr 3fr;
+  }
+}
 section.halfHalf {
   @extend %containsCoverPicture;
   @media screen and (min-width: 800px) {

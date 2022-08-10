@@ -58,7 +58,7 @@ export default (
 
       <FourStepApproach />
 
-      <section class="halfHalf">
+      <section class="fourSeventhThreeSeventh">
         <Picture src="/images/Banner3.1 Testimonials 3x .png" alt="" />
         <Picture src="/images/Banner3.2 Testimonials 3x .png" alt="" />
       </section>
