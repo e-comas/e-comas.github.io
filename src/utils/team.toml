@@ -113,7 +113,7 @@ url.LinkedIn = "https://www.linkedin.com/in/richard-ravichandar-a1929a50/"
 
 [[team_member]]
 Name = "Riley Bell"
-Title = "AM Team Lead"
+Title = "Senior Account Manager & Team lead"
 Team = "Account management"
 quote = "\"eCommerce is an ever evolving landscape with fresh challenges and new opportunities emerging each day\""
 pictureUrl = "/images/team/Riley.png"
@@ -239,7 +239,7 @@ url.LinkedIn = "https://www.linkedin.com/in/elviskisekka/"
 
 [[team_member]]
 Name = "Asha Upadhya"
-Title = "Support Account Manager"
+Title = "Account Support"
 Team = "Account management"
 quote = "Do not underestimate the power of 'Word of Mouth\"Give your customers something Wonderful to talk about and they will do the rest"
 pictureUrl = "/images/team/Asha.png"
@@ -424,14 +424,6 @@ Title = "Account Support"
 quote = "Leap, and the net will appear."
 url.LinkedIn = "https://www.linkedin.com/in/richie7/"
 pictureUrl = "/images/team/Richie.png"
-
-
-[[team_member]]
-Name = "Suzanne Kleinveld"
-Team = "Account management"
-Title = "Account Manager"
-url.LinkedIn = "https://www.linkedin.com/in/suzanne-kleinveld/"
-pictureUrl = "/images/team/Suzanne.png"
 
 
 [[team_member]]
