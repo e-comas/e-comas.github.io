@@ -8,6 +8,7 @@ import Footer from "./views/Footer.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 
 import "./white-paper-form.scss";
+import "./utils/cookie_consent.scss";
 import "runtime:./utils/open-form-in-modal.js";
 
 export default (

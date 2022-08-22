@@ -1,7 +1,25 @@
-let modal: HTMLDialogElement;
-function clickHandler(ev: Event) {
-  ev.preventDefault();
+import { getConsent } from "./cookie_consent.js";
 
+function clickHandler(this: HTMLAnchorElement, e: MouseEvent) {
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+
+  const consent = getConsent();
+
+  if (!consent) return;
+  e.preventDefault();
+
+  if (consent === "yes") generateIFrame(this);
+  else
+    (consent as Promise<void>).then(
+      () => generateIFrame(this),
+      () => {
+        window.open(this.href);
+      }
+    );
+}
+
+let modal: HTMLDialogElement;
+function generateIFrame(target: HTMLAnchorElement) {
   if (modal == null) {
     const modalCloseForm = document.createElement("form");
     const modalCloseFormWrapper = document.createElement("div");
@@ -23,7 +41,7 @@ function clickHandler(ev: Event) {
   }
 
   const iframe = modal.lastChild as HTMLIFrameElement;
-  const targetSrc = (ev.target as HTMLAnchorElement).href;
+  const targetSrc = target.href;
   if (iframe.src !== targetSrc) iframe.src = targetSrc;
   iframe.height = (window.innerHeight * 0.75 - 40) as any as string;
 
@@ -31,7 +49,7 @@ function clickHandler(ev: Event) {
 }
 if ("HTMLDialogElement" in window) {
   for (const link of document.querySelectorAll(".open-in-modal")) {
-    link.addEventListener("click", clickHandler);
+    link.addEventListener("click", clickHandler as any);
   }
 }
 

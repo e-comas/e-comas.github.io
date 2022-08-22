@@ -49,9 +49,8 @@ function createDialog() {
     privacyLink.href = "/privacy.html";
     privacyLink.textContent = "privacy policy";
     p.append(
-      "You are trying to access a part of this website that relies on " +
-        "third-party content that might store cookies on your computer. You " +
-        "can read more about this in our ",
+      "Some parts of this website that relies on third-party content that might" +
+        " store cookies on your computer. You can read more about this in our ",
       privacyLink,
       ".",
       ...previousConsentInfo
