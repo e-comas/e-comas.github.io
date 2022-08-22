@@ -23,6 +23,9 @@ export default (
 
       <section id="podcast">
         <hr />
+        <noscript>
+          You need JavaScript enabled to pull the content for this page.
+        </noscript>
       </section>
     </main>
     <Footer />
