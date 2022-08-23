@@ -33,7 +33,7 @@ dialog#ask-consent {
     @extend %button;
     cursor: pointer;
 
-    &:last-child {
+    &.once {
       background: none;
       padding-left: 0;
       padding-right: 0;

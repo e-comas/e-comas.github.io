@@ -59,8 +59,6 @@ function createDialog() {
     const form = document.createElement("form");
     form.method = "dialog";
     const formElementsWrapper = document.createElement("div");
-    const optInWrapper = document.createElement("div");
-    const optOutWrapper = document.createElement("div");
     const optOutButton = document.createElement("input");
     optOutButton.type = "submit";
     optOutButton.name = "no";
@@ -72,15 +70,24 @@ function createDialog() {
     optInButton.value = "Accept and close";
     const optInOnceButton = document.createElement("input");
     optInOnceButton.type = "submit";
+    optInOnceButton.className = "once";
     optInOnceButton.name = "once";
     optInOnceButton.value = "Yes, but keep asking me";
     const optOutOnceButton = document.createElement("input");
     optOutOnceButton.type = "submit";
+    optOutOnceButton.className = "once";
     optOutOnceButton.name = "maybe-later";
     optOutOnceButton.value = "Not this time, decide later";
-    optInWrapper.append(optInButton, optInOnceButton);
-    optOutWrapper.append(optOutButton, optOutOnceButton);
-    formElementsWrapper.append(optOutWrapper, optInWrapper);
+
+    if (previousConsent == null) {
+      const optInWrapper = document.createElement("div");
+      const optOutWrapper = document.createElement("div");
+      optInWrapper.append(optInOnceButton, optInButton);
+      optOutWrapper.append(optOutOnceButton, optOutButton);
+      formElementsWrapper.append(optOutWrapper, optInWrapper);
+    } else {
+      formElementsWrapper.append(optInButton, optOutButton);
+    }
     form.append(formElementsWrapper);
     dialog.append(heading, p, form);
     form.addEventListener("submit", (e) => {
