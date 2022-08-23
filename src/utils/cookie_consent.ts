@@ -1,5 +1,6 @@
 const CLASS_NAME = "ask-consent";
 let previousConsent = localStorage.getItem("cookie-consent");
+let immediateConsent: boolean = false;
 
 interface HTMLDialogElement extends HTMLElement {
   showModal: () => void;
@@ -58,6 +59,8 @@ function createDialog() {
     const form = document.createElement("form");
     form.method = "dialog";
     const formElementsWrapper = document.createElement("div");
+    const optInWrapper = document.createElement("div");
+    const optOutWrapper = document.createElement("div");
     const optOutButton = document.createElement("input");
     optOutButton.type = "submit";
     optOutButton.name = "no";
@@ -67,11 +70,25 @@ function createDialog() {
     optInButton.name = "yes";
     optInButton.autofocus = true;
     optInButton.value = "Accept and close";
-    formElementsWrapper.append(optOutButton, optInButton);
+    const optInOnceButton = document.createElement("input");
+    optInOnceButton.type = "submit";
+    optInOnceButton.name = "once";
+    optInOnceButton.value = "Yes, but keep asking me";
+    const optOutOnceButton = document.createElement("input");
+    optOutOnceButton.type = "submit";
+    optOutOnceButton.name = "maybe-later";
+    optOutOnceButton.value = "Not this time, decide later";
+    optInWrapper.append(optInButton, optInOnceButton);
+    optOutWrapper.append(optOutButton, optOutOnceButton);
+    formElementsWrapper.append(optOutWrapper, optInWrapper);
     form.append(formElementsWrapper);
     dialog.append(heading, p, form);
     form.addEventListener("submit", (e) => {
-      toggleConsent((e.submitter as HTMLInputElement | null)?.name === "yes");
+      const button = (e.submitter as HTMLInputElement | null)?.name;
+      if (button !== "once" && button !== "maybe-later") {
+        toggleConsent(button === "yes");
+      }
+      immediateConsent = button === "yes" || button === "once";
       if (areDialogNotSupported) {
         e.preventDefault();
         dialog.remove();
@@ -97,8 +114,9 @@ function showModal(e?: Event | null, createPromise?: boolean) {
       dialog.addEventListener(
         "close",
         () => {
-          if (previousConsent) resolve();
+          if (immediateConsent) resolve();
           else reject();
+          immediateConsent = false;
         },
         { once: true }
       );

@@ -32,6 +32,17 @@ dialog#ask-consent {
   input {
     @extend %button;
     cursor: pointer;
+
+    &:last-child {
+      background: none;
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 0.45rem;
+      width: 100%;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &.ask-consent {
