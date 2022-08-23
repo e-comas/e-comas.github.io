@@ -33,6 +33,10 @@ function generateIFrame(target: HTMLAnchorElement) {
 
     const iframe = document.createElement("iframe");
     iframe.width = "100%";
+    iframe.setAttribute(
+      "sandbox",
+      "allow-same-origin allow-scripts allow-popups allow-forms"
+    );
 
     modal = document.createElement("dialog");
     modal.className = "form-in-modal";
