@@ -11,6 +11,9 @@ import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
+import "./utils/cookie_consent.scss";
+import "./utils/open-form-in-modal.scss";
+import "runtime:./utils/open-form-in-modal.js";
 
 export default (
   <Body title="Content and Syndication">
@@ -138,7 +141,11 @@ export default (
                 world.
               </li>
             </ul>
-            <a href="#" className="cta">
+            <a
+              href="https://go.pardot.com/l/885733/2022-09-02/bwml5"
+              target="_blank"
+              className="cta open-in-modal"
+            >
               Case study: Michelin
             </a>
           </figcaption>

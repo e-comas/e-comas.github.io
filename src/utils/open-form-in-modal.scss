@@ -1,0 +1,11 @@
+dialog.form-in-modal {
+  width: 90%;
+  height: 75%;
+
+  iframe {
+    display: block;
+  }
+  form button {
+    float: right;
+  }
+}
