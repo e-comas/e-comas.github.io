@@ -70,8 +70,11 @@ export default (
           Here’s our beginner’s guide to building a solid Amazon strategy,
           managing your operations, creating content and growing traffic.
         </p>
-        <a href="https://bit.ly/3dtG2Ka" className="cta">
-          Read our guide
+        <a
+          href="https://go.pardot.com/l/885733/2022-09-02/bwmm8"
+          className="cta open-in-modal"
+        >
+          Download our guide
         </a>
       </ElementWithBackgroundImage>
     </main>
