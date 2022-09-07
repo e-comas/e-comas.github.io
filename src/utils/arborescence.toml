@@ -91,6 +91,10 @@ url = "/webinar.html"
 name = "White paper"
 url = "/white-paper-form.html"
 
+[[root.children.children]]
+name = "Case studies"
+url = "/case-studies.html"
+
 # [[root.children.children]]
 # name = "Partners"
 # url = "/partners.html"

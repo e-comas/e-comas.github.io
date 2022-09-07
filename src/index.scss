@@ -14,6 +14,10 @@ section {
   }
 }
 
+section#case-studies {
+  flex-direction: column;
+}
+
 .area-of-expertise {
   img {
     object-fit: contain;
