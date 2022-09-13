@@ -103,7 +103,7 @@ export default (
       </ElementWithBackgroundImage>
 
       <ElementWithBackgroundImage
-        src="/images/case-studies/michelin.jpg"
+        src="/images/case-studies/index.png"
         tagName="section"
       >
         <h3>Case studies</h3>
