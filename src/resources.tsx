@@ -102,6 +102,20 @@ export default (
         </a>
       </ElementWithBackgroundImage>
 
+      <ElementWithBackgroundImage
+        src="/images/case-studies/michelin.jpg"
+        tagName="section"
+      >
+        <h3>Case studies</h3>
+        <p>
+          We research hot topics in the <ECommerce /> industry and report our
+          findings in our in-depth case studies. Learn more from us here!
+        </p>
+        <a href="/case-studies.html" className="cta">
+          Read our case studies
+        </a>
+      </ElementWithBackgroundImage>
+
       <section>
         <h3>Hear more from us</h3>
         <p>
