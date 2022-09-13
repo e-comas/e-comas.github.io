@@ -146,7 +146,7 @@ export default (
               target="_blank"
               className="cta open-in-modal"
             >
-              Case study: Michelin
+              Case study: Saving time through upload automation
             </a>
           </figcaption>
           <Picture src="/images/Content Management.png" alt="" />
