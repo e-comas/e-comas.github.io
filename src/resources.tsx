@@ -95,7 +95,7 @@ export default (
         <h3>White papers</h3>
         <p>
           We research hot topics in the <ECommerce /> industry and report our
-          findings in our in-depth white papers. Learn more from us here!
+          findings in our in&#8209;depth white papers. Learn more from us here!
         </p>
         <a href="/white-paper-form.html" className="cta">
           Check out our white papers
@@ -108,8 +108,8 @@ export default (
       >
         <h3>Case studies</h3>
         <p>
-          We research hot topics in the <ECommerce /> industry and report our
-          findings in our in-depth case studies. Learn more from us here!
+          It worked for them! Learn about how we've helped our clients boost
+          their sales and grow their business globally.
         </p>
         <a href="/case-studies.html" className="cta">
           Read our case studies
