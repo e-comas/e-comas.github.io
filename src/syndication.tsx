@@ -11,7 +11,6 @@ import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
 import Footer from "./views/Footer.js";
 
 import "./classic-page.scss";
-import "./utils/cookie_consent.scss";
 import "./utils/open-form-in-modal.scss";
 import "runtime:./utils/open-form-in-modal.js";
 

@@ -9,6 +9,8 @@ import Picture from "./utils/Picture.js";
 import { EComas } from "./views/eWords.js";
 
 import "./index.scss";
+import "./utils/open-form-in-modal.scss";
+import "runtime:./utils/open-form-in-modal.js";
 
 const testimonies = [
   {
