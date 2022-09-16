@@ -27,9 +27,7 @@ export default (
     <Breadcrumbs />
     <main id="main-content">
       <section id="case-studies">
-        <h2>
-          What <EComas /> is doing for their clients
-        </h2>
+        <h2>Customer Success Stories</h2>
         {testimonies.map((testimony) => (
           <figure class="testimonial">
             <Picture src={testimony.image} alt={testimony.name} />
