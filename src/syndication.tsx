@@ -142,7 +142,7 @@ export default (
               </li>
             </ul>
             <a
-              href="https://go.pardot.com/l/885733/2022-09-02/bwml5"
+              href="//go.e-comas.com/l/885733/2022-09-02/bwml5"
               target="_blank"
               className="cta open-in-modal"
             >

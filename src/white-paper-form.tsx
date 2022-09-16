@@ -34,7 +34,7 @@ export default (
           customers, and the pros and cons for luxury brands.
         </p>
         <a
-          href="https://go.pardot.com/l/885733/2022-06-20/83wgg"
+          href="//go.e-comas.com/l/885733/2022-06-20/83wgg"
           target="_blank"
           className="cta open-in-modal"
         >
@@ -54,7 +54,7 @@ export default (
           tool Compas. Here’s how we helped.
         </p>
         <a
-          href="//go.pardot.com/l/885733/2020-11-09/4vbg"
+          href="//go.e-comas.com/l/885733/2020-11-09/4vbg"
           target="_blank"
           className="cta open-in-modal"
         >
@@ -72,7 +72,7 @@ export default (
           managing your operations, creating content and growing traffic.
         </p>
         <a
-          href="https://go.pardot.com/l/885733/2022-09-02/bwmm8"
+          href="//go.e-comas.com/l/885733/2022-09-02/bwmm8"
           className="cta open-in-modal"
         >
           Download our guide

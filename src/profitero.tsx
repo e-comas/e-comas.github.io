@@ -97,7 +97,7 @@ export default (
       </section>
       <p>
         <a
-          href="https://go.pardot.com/l/885733/2021-11-22/4fy3v/885733/1637569997FEgshzPK/one_pager_for_e_Comas.pdf"
+          href="//go.e-comas.com/l/885733/2021-11-22/4fy3v/885733/1637569997FEgshzPK/one_pager_for_e_Comas.pdf"
           className="cta"
         >
           Know more about our partnership

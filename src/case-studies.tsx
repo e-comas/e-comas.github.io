@@ -15,7 +15,7 @@ const testimonies = [
     image: "/images/case-studies/michelin.jpg",
     name: "Saving time through upload automation",
     text: "When you have thousands of product listings, you need a robust solution for content management and upload. Here’s how we and our partners at Salsify helped a leading tyres brand save time and improve consistency.",
-    link: "https://go.pardot.com/l/885733/2022-09-02/bwml5",
+    link: "//go.e-comas.com/l/885733/2022-09-02/bwml5",
   },
 ];
 
