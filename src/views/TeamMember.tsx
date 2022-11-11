@@ -3,14 +3,15 @@ import { h } from "@aduh95/async-jsx";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faCalendarAlt, faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import Picture from "../utils/Picture.js";
 
 const socialMediaIcons = {
   LinkedIn: faLinkedinIn,
   YouTube: faYoutube,
-  Calendly: faCalendarAlt,
+  Calendly: faPhone,
   email: faEnvelope,
 } as {
   [socialMedium: string]: IconDefinition;
