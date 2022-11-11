@@ -21,7 +21,7 @@ main > section {
     grid-template-columns: 23fr 17fr;
   }
 }
-@media screen and(min-width: 800px) {
+@media screen and (min-width: 800px) {
   main {
     display: grid;
     gap: inherit;

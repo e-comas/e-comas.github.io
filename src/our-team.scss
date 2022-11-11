@@ -119,7 +119,7 @@ article > h3 {
     @extend %teamMember;
   }
 
-  @media screen and(min-width: 750px) {
+  @media screen and (min-width: 750px) {
     display: flex;
     flex-wrap: wrap;
     img {

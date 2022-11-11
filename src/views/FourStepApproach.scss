@@ -198,7 +198,7 @@ section.four-step {
       margin-top: auto;
     }
   }
-  @media screen and(min-width:#{$max-width+$body-padding}) {
+  @media screen and (min-width:#{$max-width+$body-padding}) {
     padding-left: 0;
     padding-right: 0;
   }

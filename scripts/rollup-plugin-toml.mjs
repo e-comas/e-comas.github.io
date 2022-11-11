@@ -1,3 +1,4 @@
+import { fileURLToPath, pathToFileURL } from "node:url";
 import TOML from "@aduh95/toml";
 
 const reservedNames = [
@@ -85,10 +86,12 @@ export function getTOMLKeys(toml) {
 export default function plugin() {
   return {
     name: "toml",
-    resolveId(source) {
+    resolveId(source, importer) {
       // This signals that rollup should not ask other plugins or check the file
       // system to find this id.
-      return source.endsWith(".toml") ? source : null;
+      return source.endsWith(".toml")
+        ? fileURLToPath(new URL(source, pathToFileURL(importer)))
+        : null;
     },
     transform(code, id) {
       if (!id.endsWith(".toml")) {

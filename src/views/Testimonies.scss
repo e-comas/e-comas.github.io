@@ -168,7 +168,7 @@ figure.testimonial {
       grid-area: quote;
       align-self: center;
     }
-    @media screen and(max-width:369px) {
+    @media screen and (max-width: 369px) {
       grid-template-columns: unset;
       grid-template-areas: "portait" "name" "title";
       & > img {

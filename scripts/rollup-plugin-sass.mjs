@@ -1,3 +1,4 @@
+import { fileURLToPath, pathToFileURL } from "node:url";
 import sass from "sass";
 
 const PLUGIN_HELPER = "rollup-plugin:sass-createStyleElement";
@@ -13,11 +14,17 @@ function createStyleElement(css, id) {
 export default function plugin() {
   return {
     name: "sass",
-    resolveId(source) {
+    resolveId(source, importer) {
+      if (source === PLUGIN_HELPER) {
+        // It is important that side effects are always respected for polyfills,
+        // otherwise using "treeshake.moduleSideEffects: false" may prevent the
+        // polyfill from being included.
+        return { id: PLUGIN_HELPER, moduleSideEffects: true };
+      }
       // This signals that rollup should not ask other plugins or check the file
       // system to find this id.
-      return source.endsWith(".scss") || source === PLUGIN_HELPER
-        ? source
+      return source.endsWith(".scss")
+        ? fileURLToPath(new URL(source, pathToFileURL(importer)))
         : null;
     },
     load(id) {
