@@ -116,7 +116,7 @@ export default (
         </a>
       </ElementWithBackgroundImage>
 
-      <section>
+      <section id="newsletter">
         <h3>Hear more from us</h3>
         <p>
           Sign up to our newsletter and we'll send you regular updates on the

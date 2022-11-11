@@ -9,6 +9,8 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
+import team from "../utils/team.toml";
+
 import NavLink from "../utils/NavLink.js";
 
 import "runtime:./footer_addresses.js";
@@ -69,7 +71,25 @@ export default () => (
     </strong>
     <ul class="contact-us">
       <li>
+        <a
+          href={
+            (team.team_member as { url: Record<string, string> }[]).find(
+              (m) => m.url?.Calendly
+            )!.url.Calendly
+          }
+          target="_blank"
+          rel="noopener"
+        >
+          Book a call
+        </a>
+      </li>
+      <li>
         Email: <a href="mailto:sales@e-comas.com">sales@e-comas.com</a>
+      </li>
+      <li>
+        <NavLink href="/resources.html#newsletter">
+          Subscribe to the newsletter
+        </NavLink>
       </li>
       <li>
         Addresses:
