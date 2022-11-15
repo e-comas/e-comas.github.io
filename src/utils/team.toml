@@ -2,11 +2,13 @@ __use_generic_keys__ = { url = "socialNetwork" }
 
 team_order = [
   "Consulting",
+  "Business Development & Marketing team",
+  "Team lead",
+  "Advertising team",
   "Account management",
   "Retail",
-  "Advertising team",
-  "Analytics team",
   "Administration team",
+  "Content & Social Media team",
 ]
 
 [CEO]
@@ -95,7 +97,7 @@ url.LinkedIn = "https://www.linkedin.com/in/nagapooja-ramesh-a77850136"
 [[team_member]]
 Name = "Sarra Maatallah"
 Title = "Senior Account Manager & Team lead"
-Team = "Account management"
+Team = "Team lead"
 priority = 2
 quote = "'I always believe that the work you deliever is an extension of yourself. Care about the way you want your work performance to be look at the same way you care about your own image. Quality, passion and care should  be what define you. This is my own recipe to success.''"
 pictureUrl = "/images/team/Sarra.png"
@@ -114,7 +116,7 @@ url.LinkedIn = "https://www.linkedin.com/in/richard-ravichandar-a1929a50/"
 [[team_member]]
 Name = "Riley Bell"
 Title = "Senior Account Manager & Team lead"
-Team = "Account management"
+Team = "Team lead"
 priority = 1
 quote = "\"eCommerce is an ever evolving landscape with fresh challenges and new opportunities emerging each day\""
 pictureUrl = "/images/team/Riley.png"
@@ -144,7 +146,7 @@ url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
 [[team_member]]
 Name = "Carlos De Almeida"
 Title = "Senior Account Manager & Team lead"
-Team = "Account management"
+Team = "Team lead"
 priority = 1
 quote = "\"Care is the key of any successful business partnership\""
 pictureUrl = "/images/team/Carlos.png"
@@ -153,8 +155,9 @@ url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida-amazonexpert/"
 
 [[team_member]]
 Name = "Withney Lupter"
-Title = "Senior Account Manager"
-Team = "Account management"
+Title = "Senior AM & Team lead"
+priority = 1
+Team = "Team lead"
 quote = "\"If Amazon offers something for free, take advantage of it.\""
 pictureUrl = "/images/team/Whitney.png"
 url.LinkedIn = "https://www.linkedin.com/in/lupterwithney/"
@@ -163,7 +166,7 @@ url.YouTube = "https://www.youtube.com/watch?v=IvLMNwh9z70"
 
 [[team_member]]
 Name = "Ang\u00e9lica L\u00f3pez"
-Title = "Account Manager"
+Title = "Senior Account Manager"
 Team = "Account management"
 quote = "\"Who is not able to adapt to the constant changes is out of the game\""
 pictureUrl = "/images/team/Angelica.png"
@@ -202,7 +205,7 @@ url.YouTube = "https://www.youtube.com/watch?v=GvEk-ZTJka4"
 [[team_member]]
 Name = "Seval Andıç"
 Title = "Senior Account Manager & Team lead"
-Team = "Account management"
+Team = "Team lead"
 priority = 1
 quote = "The ability to adapt is the main ingredient behind succesful growth recipes."
 pictureUrl = "/images/team/Sevel.png"
@@ -308,45 +311,9 @@ pictureUrl = "/images/team/Antoine.png"
 
 
 [[team_member]]
-Name = "Dheeraj Chawla"
-Title = "DSP Expert"
-Team = "Advertising team"
-quote = "\u201cThe modern marketer is an experimenter, a lover of data, a content creator, a justifier of ROI\u201d"
-pictureUrl = "/images/team/DJ.png"
-url.LinkedIn = "https://www.linkedin.com/in/dheerajchawla1/"
-
-
-[[team_member]]
-Name = "David Recchia"
-Title = "Head of Analytics"
-Team = "Analytics team"
-quote = "\"Working with e-Comas, we can help brands leverage the real potential of their data\""
-pictureUrl = "/images/team/David-Recchia.png"
-url.LinkedIn = "https://www.linkedin.com/in/david-recchia-42744820/"
-
-
-[[team_member]]
-Name = "Julien Soyer"
-Title = "Senior Data analyst"
-Team = "Analytics team"
-quote = "\u201cGiving up is the only sure way to fail.\u201d - Gena Showalter"
-pictureUrl = "/images/team/Julien-Soyer-.png"
-url.LinkedIn = "https://www.linkedin.com/in/julien-s-36837891/"
-
-
-[[team_member]]
-Name = "Paul Mordant"
-Title = "Data Scientist Consultant"
-Team = "Analytics team"
-quote = "\"What gets measured, gets managed\""
-pictureUrl = "/images/team/Paul.png"
-url.LinkedIn = "https://www.linkedin.com/in/paul-mordant-a5445917a/"
-
-
-[[team_member]]
 Name = "Alexandre Zambeaux"
 Title = "Senior Business Development Manager"
-Team = "Business Development & marketing team"
+Team = "Business Development & Marketing team"
 quote = "\u201cKnow the rules well, so you can break them effectively.\u201d"
 pictureUrl = "/images/team/Alexandre-Zambeaux.png"
 contactPage = true
@@ -358,7 +325,7 @@ url.Calendly = "https://calendly.com/alexz-ecommerce"
 [[team_member]]
 Name = "Christel Bordoni"
 Title = "Head of Partnerships & Communication"
-Team = "Business Development & marketing team"
+Team = "Business Development & Marketing team"
 quote = "\" Offer an omnichannel experience to your customer is the future of e-commerce \""
 pictureUrl = "/images/team/christel.png"
 contactPage = true
@@ -391,14 +358,6 @@ Team = "Administration team"
 quote = "\"Persistence is the path to success\" C Chaplin"
 pictureUrl = "/images/team/Misa.png"
 url.LinkedIn = "https://www.linkedin.com/in/misa-manass%C3%A9-3994a4225/"
-
-
-[[team_member]]
-Name = "Jan Puhlmann"
-Team = "Account management"
-Title = "Account Manager"
-quote = "\"Take a simple idea and take it seriously.\" (Charlie Munger)"
-pictureUrl = "/images/team/Jan.png"
 
 
 [[team_member]]
@@ -435,14 +394,6 @@ pictureUrl = "/images/team/Julie.png"
 
 
 [[team_member]]
-Name = "Anders Hjorth"
-Team = "Advertising team"
-Title = "Head of Advertising"
-url.LinkedIn = "https://www.linkedin.com/in/ahjorth/"
-pictureUrl = "/images/team/Anders.png"
-
-
-[[team_member]]
 Name = "Romain Dattée"
 Team = "Retail"
 Title = "Head of Retail & Finance"
@@ -465,3 +416,59 @@ Team = "Account management"
 Title = "Account Support"
 quote = "Sucess is best when its shared"
 pictureUrl = "/images/team/Umer.png"
+
+
+[[team_member]]
+Name = "Anchit Abraham"
+Team = "Account management"
+Title = "Account Support"
+pictureUrl = "/images/team/Anchit.png"
+
+
+[[team_member]]
+Name = "Antonella Argenziano"
+Team = "Advertising team"
+Title = "Head of Advertising"
+pictureUrl = "/images/team/Nella.png"
+
+
+[[team_member]]
+Name = "Davy Mouyabi"
+Team = "Advertising team"
+Title = "Head of DSP & Programmatic"
+pictureUrl = "/images/team/Dave.png"
+
+
+[[team_member]]
+Name = "Anusha Banda"
+Team = "Consulting"
+Title = "Power BI Developer"
+pictureUrl = "/images/team/Anusha.png"
+
+
+[[team_member]]
+Name = "Appachu Kodira"
+Team = "Account management"
+Title = "Account Support"
+pictureUrl = "/images/team/Appachu.png"
+
+
+[[team_member]]
+Name = "Kharym Rasool"
+Team = "Business Development & Marketing team"
+Title = "Business Development Manager"
+pictureUrl = "/images/team/Kharym.png"
+
+
+[[team_member]]
+Name = "Stefan Marian"
+Team = "Account management"
+Title = "Account Manager"
+pictureUrl = "/images/team/Stefan.png"
+
+
+[[team_member]]
+Name = "Varuna Sridhar"
+Team = "Consulting"
+Title = "Salsify support"
+pictureUrl = "/images/team/Varuna.png"
