@@ -422,6 +422,7 @@ Name = "Anchit Abraham"
 Team = "Account management"
 Title = "Account Support"
 pictureUrl = "/images/team/Anchit.png"
+url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
 
 
 [[team_member]]
@@ -429,6 +430,7 @@ Name = "Antonella Argenziano"
 Team = "Advertising team"
 Title = "Head of Advertising"
 pictureUrl = "/images/team/Nella.png"
+url.LinkedIn = "https://www.linkedin.com/in/antonella-argenziano"
 
 
 [[team_member]]
@@ -436,6 +438,7 @@ Name = "Davy Mouyabi"
 Team = "Advertising team"
 Title = "Head of DSP & Programmatic"
 pictureUrl = "/images/team/Dave.png"
+url.LinkedIn = "https://www.linkedin.com/in/davy-m-b950b622"
 
 
 [[team_member]]
@@ -443,6 +446,7 @@ Name = "Anusha Banda"
 Team = "Consulting"
 Title = "Power BI Developer"
 pictureUrl = "/images/team/Anusha.png"
+url.LinkedIn = "https://www.linkedin.com/in/anusha-banda-788500243/"
 
 
 [[team_member]]
@@ -450,6 +454,7 @@ Name = "Appachu Kodira"
 Team = "Account management"
 Title = "Account Support"
 pictureUrl = "/images/team/Appachu.png"
+url.LinkedIn = "https://www.linkedin.com/in/appachu-kodira-4b875789/"
 
 
 [[team_member]]
@@ -459,6 +464,7 @@ Title = "Business Development Manager"
 contactPage = true
 pictureUrl = "/images/team/Kharym.png"
 url.LinkedIn = "https://www.linkedin.com/in/kharym-rasool/"
+url.Calendly = "https://calendly.com/k-rasool/30min"
 
 
 [[team_member]]
@@ -466,6 +472,7 @@ Name = "Stefan Marian"
 Team = "Account management"
 Title = "Account Manager"
 pictureUrl = "/images/team/Stefan.png"
+url.LinkedIn = "https://www.linkedin.com/in/stefan-marian-712779239"
 
 
 [[team_member]]
@@ -473,3 +480,4 @@ Name = "Varuna Sridhar"
 Team = "Consulting"
 Title = "Salsify support"
 pictureUrl = "/images/team/Varuna.png"
+url.LinkedIn = "https://www.linkedin.com/in/varuna-sridhar-805193116"
