@@ -172,11 +172,17 @@ export default () => (
         </a>
       </li>
     </ul>
-    <img
-      src="/images/MadeInLux.svg"
-      alt="Made in Luxembourg"
-      class="made_in_lux"
-    />
+    <div class="logos">
+      <a
+        href="https://pruefgesellschaft.bio/webserv/kdk/LU-04-17381-HD.pdf"
+        target="_blank"
+        rel="noopener"
+      >
+        <img src="/images/brands/EU_Organic.svg" alt="EU Organic" />
+        LU-BIO-04
+      </a>
+      <img src="/images/MadeInLux.svg" alt="Made in Luxembourg" />
+    </div>
     <div class="copyright-notice">© 2022 · e-Comas · All Rights Reserved</div>
   </footer>
 );

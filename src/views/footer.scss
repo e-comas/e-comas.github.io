@@ -87,7 +87,7 @@ footer {
     & > .social {
       grid-row: span 2;
     }
-    .made_in_lux {
+    .logos {
       margin: 0 auto;
     }
     .copyright-notice {
@@ -96,11 +96,21 @@ footer {
   }
   @media screen and (min-width: 1555px) {
     grid-template-columns: 1fr 1fr 1fr auto;
-    .made_in_lux {
+    .logos {
       margin-right: 0;
     }
     .copyright-notice {
       text-align: right;
+    }
+  }
+
+  .logos {
+    display: flex;
+    gap: 0.5rem;
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
