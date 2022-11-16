@@ -47,14 +47,11 @@ export function SocialURLs({ url }: SocialTeamMemberProps) {
             ? []
             : [["email", "mailto:sales@e-comas.com"]]
         )
-        .map(([socialMedium, url]) =>
-          location.pathname !== "/contact.html" &&
-          socialMedium === "Calendly" ? null : (
-            <a href={url} target="_blank" rel="noopener" title={socialMedium}>
-              <FontAwesomeIcon icon={socialMediaIcons[socialMedium]} />
-            </a>
-          )
-        )}
+        .map(([socialMedium, url]) => (
+          <a href={url} target="_blank" rel="noopener" title={socialMedium}>
+            <FontAwesomeIcon icon={socialMediaIcons[socialMedium]} />
+          </a>
+        ))}
     </div>
   );
 }
