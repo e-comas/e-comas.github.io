@@ -328,7 +328,6 @@ Title = "Head of Partnerships & Communication"
 Team = "Business Development & Marketing team"
 quote = "\" Offer an omnichannel experience to your customer is the future of e-commerce \""
 pictureUrl = "/images/team/christel.png"
-contactPage = true
 url.LinkedIn = "https://www.linkedin.com/in/c-bordoni-amazonspecialist/"
 url.Calendly = "https://calendly.com/cbordoni-amazon-expert"
 
@@ -457,7 +456,9 @@ pictureUrl = "/images/team/Appachu.png"
 Name = "Kharym Rasool"
 Team = "Business Development & Marketing team"
 Title = "Business Development Manager"
+contactPage = true
 pictureUrl = "/images/team/Kharym.png"
+url.LinkedIn = "https://www.linkedin.com/in/kharym-rasool/"
 
 
 [[team_member]]
