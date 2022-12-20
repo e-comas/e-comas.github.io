@@ -458,16 +458,6 @@ url.LinkedIn = "https://www.linkedin.com/in/appachu-kodira-4b875789/"
 
 
 [[team_member]]
-Name = "Kharym Rasool"
-Team = "Business Development & Marketing team"
-Title = "Business Development Manager"
-contactPage = true
-pictureUrl = "/images/team/Kharym.png"
-url.LinkedIn = "https://www.linkedin.com/in/kharym-rasool/"
-url.Calendly = "https://calendly.com/k-rasool/30min"
-
-
-[[team_member]]
 Name = "Stefan Marian"
 Team = "Account management"
 Title = "Account Manager"
