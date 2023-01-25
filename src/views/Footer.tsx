@@ -102,7 +102,9 @@ export default () => (
           </li>
           <li>
             <span>US</span>:{" "}
-            <address>457 Wilshire Lane - Santa Maria, CA 93455 - USA</address>
+            <address>
+              e-Comas LLC, 16192 Coastal Highway, Lewes, Delaware
+            </address>
           </li>
           <li>
             <span>MG</span>:{" "}
