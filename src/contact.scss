@@ -32,5 +32,16 @@ main > h3 {
 
   @media screen and (min-width: 800px) {
     grid-template-columns: repeat(2, 20rem);
+    figure:last-of-type {
+      grid-column: span 2;
+      margin: auto;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(3, 20rem);
+    figure:last-of-type {
+      grid-column: unset;
+      margin: unset;
+    }
   }
 }
