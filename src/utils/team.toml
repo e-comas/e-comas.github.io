@@ -312,7 +312,7 @@ pictureUrl = "/images/team/Antoine.png"
 
 [[team_member]]
 Name = "Alexandre Zambeaux"
-Title = "Head of Business Development"
+Title = "Head of EMEA Business Development"
 Team = "Business Development & Marketing team"
 quote = "\u201cKnow the rules well, so you can break them effectively.\u201d"
 pictureUrl = "/images/team/Alexandre-Zambeaux.png"
@@ -320,16 +320,6 @@ contactPage = true
 url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux/"
 url.YouTube = "https://www.youtube.com/watch?v=lW1ffcwiyP8"
 url.Calendly = "https://calendly.com/alexz-ecommerce"
-
-
-[[team_member]]
-Name = "Christel Bordoni"
-Title = "Head of Partnerships & Communication"
-Team = "Business Development & Marketing team"
-quote = "\" Offer an omnichannel experience to your customer is the future of e-commerce \""
-pictureUrl = "/images/team/christel.png"
-url.LinkedIn = "https://www.linkedin.com/in/c-bordoni-amazonspecialist/"
-url.Calendly = "https://calendly.com/cbordoni-amazon-expert"
 
 
 [[team_member]]
@@ -471,3 +461,19 @@ Team = "Consulting"
 Title = "Salsify support"
 pictureUrl = "/images/team/Varuna.png"
 url.LinkedIn = "https://www.linkedin.com/in/varuna-sridhar-805193116"
+
+
+[[team_member]]
+Name = "Michael Yanez"
+Team = "Business Development & Marketing team"
+Title = "Head of US Business Development"
+pictureUrl = "/images/team/Michael.png"
+url.LinkedIn = "https://www.linkedin.com/in/michaelyanez/"
+
+
+[[team_member]]
+Name = "Pete Du Pon"
+Team = "Business Development & Marketing team"
+Title = "Head of Partnerships & Communication"
+pictureUrl = "/images/team/Michael.png"
+url.LinkedIn = "https://www.linkedin.com/in/pete-du-pon/"
