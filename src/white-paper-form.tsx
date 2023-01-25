@@ -23,6 +23,25 @@ export default (
       </p>
 
       <ElementWithBackgroundImage
+        src="/images/white-paper-4.jpg"
+        tagName="section"
+      >
+        <h3>Owning your brand: why you need brand registry</h3>
+        <p>
+          Amazon experts are unanimous on this: all Amazon sellers should enrol
+          in Brand Registry. Here's our complete guide to Amazon Brand Registry,
+          including all the features you might not already know about.
+        </p>
+        <a
+          href="//go.e-comas.com/l/885733/2023-01-17/l8998"
+          target="_blank"
+          className="cta open-in-modal"
+        >
+          Download the white paper
+        </a>
+      </ElementWithBackgroundImage>
+
+      <ElementWithBackgroundImage
         src="/images/white-paper-3.jpg"
         tagName="section"
       >
