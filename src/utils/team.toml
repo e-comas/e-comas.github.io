@@ -95,16 +95,6 @@ url.LinkedIn = "https://www.linkedin.com/in/nagapooja-ramesh-a77850136"
 
 
 [[team_member]]
-Name = "Sarra Maatallah"
-Title = "Senior Account Manager & Team lead"
-Team = "Team lead"
-priority = 2
-quote = "'I always believe that the work you deliever is an extension of yourself. Care about the way you want your work performance to be look at the same way you care about your own image. Quality, passion and care should  be what define you. This is my own recipe to success.''"
-pictureUrl = "/images/team/Sarra.png"
-url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
-
-
-[[team_member]]
 Name = "Richard Ravichandar"
 Title = "Senior Account Manager"
 Team = "Account management"
@@ -141,36 +131,6 @@ quote = "Alone we can do so little, together we can do so much"
 pictureUrl = "/images/team/Manu.png"
 url.LinkedIn = "https://www.linkedin.com/in/manujoymathew"
 url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
-
-
-[[team_member]]
-Name = "Carlos De Almeida"
-Title = "Senior Account Manager & Team lead"
-Team = "Team lead"
-priority = 1
-quote = "\"Care is the key of any successful business partnership\""
-pictureUrl = "/images/team/Carlos.png"
-url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida-amazonexpert/"
-
-
-[[team_member]]
-Name = "Withney Lupter"
-Title = "Senior Account Manager & Team lead"
-priority = 1
-Team = "Team lead"
-quote = "\"If Amazon offers something for free, take advantage of it.\""
-pictureUrl = "/images/team/Whitney.png"
-url.LinkedIn = "https://www.linkedin.com/in/lupterwithney/"
-url.YouTube = "https://www.youtube.com/watch?v=IvLMNwh9z70"
-
-
-[[team_member]]
-Name = "Ang\u00e9lica L\u00f3pez"
-Title = "Senior Account Manager"
-Team = "Account management"
-quote = "\"Who is not able to adapt to the constant changes is out of the game\""
-pictureUrl = "/images/team/Angelica.png"
-url.LinkedIn = "https://www.linkedin.com/in/angelicalopez8661/"
 
 
 [[team_member]]
@@ -477,5 +437,5 @@ Name = "Pete Du Pon"
 Team = "Business Development & Marketing team"
 Title = "Head of Partnerships & Communication"
 contactPage = true
-pictureUrl = "/images/team/Michael.png"
+pictureUrl = "/images/team/Pete.png"
 url.LinkedIn = "https://www.linkedin.com/in/pete-du-pon/"
