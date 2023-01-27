@@ -14,6 +14,7 @@ import "runtime:./utils/open-form-in-modal.js";
 
 const testimonies = [
   {
+    // N.B.: Michelin doesn't want its logo or name to appear on the illustration.
     image: "/images/case-studies/michelin.png",
     name: "Saving time through upload automation",
     text: "When you have thousands of product listings, you need a robust solution for content management and upload. Here’s how we and our partners at Salsify helped a leading tyres brand save time and improve consistency.",
