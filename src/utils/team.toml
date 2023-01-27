@@ -435,7 +435,7 @@ url.LinkedIn = "https://www.linkedin.com/in/michaelyanez/"
 [[team_member]]
 Name = "Pete Du Pon"
 Team = "Business Development & Marketing team"
-Title = "Head of Partnerships & Communication"
+Title = "Head of Partnerships"
 contactPage = true
 pictureUrl = "/images/team/Pete.png"
 url.LinkedIn = "https://www.linkedin.com/in/pete-du-pon/"
