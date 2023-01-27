@@ -430,6 +430,7 @@ Title = "Head of US Business Development"
 contactPage = true
 pictureUrl = "/images/team/Michael.png"
 url.LinkedIn = "https://www.linkedin.com/in/michaelyanez/"
+url.Calendly = "https://calendly.com/michael-ecomas"
 
 
 [[team_member]]
@@ -439,3 +440,4 @@ Title = "Head of Partnerships"
 contactPage = true
 pictureUrl = "/images/team/Pete.png"
 url.LinkedIn = "https://www.linkedin.com/in/pete-du-pon/"
+url.Calendly = "https://calendly.com/pete-ecomas"
