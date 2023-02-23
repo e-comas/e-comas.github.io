@@ -110,7 +110,7 @@ export default (
       </section>
 
       <section id="content_management">
-        <figure>
+        <figure id="michelin">
           <figcaption>
             <h3>Content management</h3>
             <p>
@@ -153,7 +153,7 @@ export default (
       </section>
 
       <section id="content_localisation">
-        <figure>
+        <figure id="mycarrypotty">
           <Picture src="/images/Content Localisation.png" alt="" />
           <figcaption>
             <h3>Content localisation</h3>
@@ -177,7 +177,11 @@ export default (
                 Salsify.
               </li>
             </ul>
-            <a href="#" className="cta">
+            <a
+              href="//go.e-comas.com/l/885733/2023-01-16/l813c"
+              target="_blank"
+              className="cta"
+            >
               Case study: My Carry Potty
             </a>
           </figcaption>

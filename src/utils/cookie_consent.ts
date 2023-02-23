@@ -110,24 +110,30 @@ function createDialog() {
   return dialog;
 }
 
+let currentDialogPromise: Promise<void> | undefined | null;
 function showModal(e?: Event | null, createPromise?: boolean) {
   e?.preventDefault?.();
+  if (currentDialogPromise != null) return currentDialogPromise;
   const dialog = createDialog();
   document.body.append(dialog);
   dialog.showModal();
   dialog.addEventListener("close", () => dialog.remove(), { once: true });
   if (createPromise) {
-    return new Promise<void>((resolve, reject) => {
+    return (currentDialogPromise = new Promise<void>((resolve, reject) => {
       dialog.addEventListener(
         "close",
         () => {
           if (immediateConsent) resolve();
           else reject();
           immediateConsent = false;
+          // The "once" consent is valid for 1s I decided.
+          setTimeout(() => {
+            currentDialogPromise = null;
+          }, 999);
         },
         { once: true }
       );
-    });
+    }));
   }
 }
 

@@ -1,5 +1,8 @@
 @use "./cookie_consent" as *;
 
+figure:target a.open-in-modal {
+  outline: solid 5px black;
+}
 dialog.form-in-modal {
   width: 90%;
   height: 75%;
