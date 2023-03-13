@@ -29,13 +29,6 @@ const testimonies = [
     link: "//go.e-comas.com/l/885733/2023-01-16/l812r",
   },
   {
-    image: "/images/case-studies/suki.png",
-    id: "suki",
-    name: "Building a strategy on insight",
-    text: "Moving primarily B2B and traditional sales into the online retail sphere can be daunting. Here’s how we helped hardware market leader Suki design a strategy to take their successful products to Amazon.",
-    link: "//go.e-comas.com/l/885733/2023-01-16/l812y",
-  },
-  {
     image: "/images/case-studies/miamily.png",
     id: "miamily",
     name: "The social strategy",
