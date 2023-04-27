@@ -6,18 +6,32 @@ import {
 import sass2css from "./prod-build-css.mjs";
 import buildRuntimeJS from "./prod-build-js.mjs";
 import copyRSSFeed from "./prod-build-rss-feed.mjs";
-import { ANALYTICS_ID, CANONICAL_ORIGIN, GA_ID } from "./prod-config.mjs";
+import {
+  ANALYTICS_ID,
+  CANONICAL_ORIGIN,
+  DEALFRONT_ID,
+} from "./prod-config.mjs";
 import viewportsToTest from "./prod-viewports-to-test.mjs";
 
 const imgData = new Map();
 const sassMappings = new Map();
 
-function addAnalyticsSnippet(id, ANALYTICS_ID) {
-  const script = document.createElement("script");
-  script.defer = true;
-  script.dataset.domain = ANALYTICS_ID;
-  script.src = "https://plausible.io/js/plausible.js";
-  document.head.append(script);
+function addAnalyticsSnippet(DEALFRONT_ID, ANALYTICS_ID) {
+  const scriptPlausible = document.createElement("script");
+  scriptPlausible.defer = true;
+  scriptPlausible.dataset.domain = ANALYTICS_ID;
+  scriptPlausible.src = "https://plausible.io/js/plausible.js";
+  document.head.append(scriptPlausible);
+
+  const scriptDealFront = document.createElement("script");
+  scriptDealFront.async = true;
+  scriptDealFront.defer = true;
+  scriptDealFront.src = `https://sc.lfeeder.com/lftracker_v1_${DEALFRONT_ID}.js`;
+
+  const script0 = document.createElement("script");
+  script0.textContent =
+    "window.ldfdr||=()=>{(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}";
+  document.head.append(script0, scriptPlausible, scriptDealFront);
 }
 
 async function editPage(page, signalIn, signalOut) {
@@ -240,9 +254,9 @@ async function editPage(page, signalIn, signalOut) {
     Array.from(document.querySelectorAll("a.cta[href='#']"), (e) => e.remove())
   );
 
-  if (GA_ID) {
+  if (DEALFRONT_ID) {
     await page.setOfflineMode(true);
-    await page.evaluate(addAnalyticsSnippet, GA_ID, ANALYTICS_ID);
+    await page.evaluate(addAnalyticsSnippet, DEALFRONT_ID, ANALYTICS_ID);
   }
 }
 
