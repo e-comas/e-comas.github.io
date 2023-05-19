@@ -6,7 +6,7 @@ import Footer from "./views/Footer.js";
 import Testimonies from "./views/Testimonies.js";
 import Partners from "./views/Partners.js";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
-import { ECommerce } from "./views/eWords.js";
+import { EComas, ECommerce } from "./views/eWords.js";
 import AnimatedFigure from "./views/AnimatedFigure.js";
 import VideoEmbedLink from "./views/VideoEmbedLink.js";
 import FourStepApproach from "./views/FourStepApproach.js";
@@ -26,16 +26,15 @@ export default (
           videoId="vjGxQNji05U"
         />
         <figcaption>
-          <h2>Trust our amazing team</h2>
+          <h2>
+            The boutique agency you need to thrive & expand on Amazon &
+            multi-channel across the world
+          </h2>
           <p>
-            If you're looking to <strong>open</strong> an Amazon account,{" "}
-            <strong>grow</strong> your existing <ECommerce /> sales or{" "}
-            <strong>scale</strong> your business globally – or all three – we
-            know exactly how to help you.
-            <br />
-            We have an incredible team of <ECommerce /> experts with specialist
-            knowledge to help you expand your business across Amazon and other
-            platforms... and across the globe!
+            Let <EComas />, a global full service <ECommerce /> agency, help
+            your brand grow on Amazon and other marketplaces through strategic
+            global expansion, technological infrastructure and cutting edge
+            media campaigns.
           </p>
           <a href="/contact.html" class="cta">
             Meet with us

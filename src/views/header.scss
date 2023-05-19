@@ -218,8 +218,9 @@ header {
   h1 {
     grid-column: span 2;
     color: $white;
-    max-width: 800px;
+    // max-width: 800px;
     align-self: center;
+    text-align: right;
     transform: translateY(3rem);
   }
 
