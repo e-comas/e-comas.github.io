@@ -26,7 +26,7 @@ export default (
           videoId="vjGxQNji05U"
         />
         <figcaption>
-          <h2>Trust our amazing team</h2>
+          {/* <h2>Trust our amazing team</h2> */}
           <p>
             Let <EComas />, a global full service <ECommerce /> agency, help
             your brand grow on Amazon and other marketplaces through strategic

@@ -76,11 +76,12 @@ section#case-studies {
       position: absolute;
       right: 0;
       top: 50%;
-      padding: 2.5rem;
+      padding: 3.5rem 2.5rem;
       background-color: $green;
       transform: translate(50%, -50%);
       width: 600px;
       color: $white;
+      gap: 2.5rem;
 
       h2 {
         font-weight: 600;
@@ -93,7 +94,8 @@ section#case-studies {
       }
 
       p {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        line-height: 1.6rem;
         letter-spacing: 0;
         text-align: center;
       }
