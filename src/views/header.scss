@@ -223,6 +223,12 @@ header {
     // text-align: right;
     transform: translateY(3rem);
     // margin: 0 calc(50% - 400px);
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    @media screen and (min-width: 800px) {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
   }
 
   @media screen and (min-width: #{$max-width + 100px}) {
