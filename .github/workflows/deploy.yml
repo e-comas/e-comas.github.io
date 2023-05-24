@@ -8,7 +8,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  NODE_VERSION: v16.x
+  NODE_VERSION: v18.x
 
 jobs:
   deploy:
@@ -22,7 +22,7 @@ jobs:
           path: docs
       - name: Cache npm dependencies
         id: cache-npm-libraries
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: .yarn/cache/*
           key: ${{ runner.os }}
