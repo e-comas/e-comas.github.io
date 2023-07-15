@@ -1,7 +1,7 @@
 import { h } from "@aduh95/async-jsx";
 
-import "runtime:./AnimatedFigures/runtime-animation.js";
-import createNumberFormatter from "./AnimatedFigures/createNumberFormatter.js";
+import "runtime:./AnimatedFigures/runtime-animation.ts";
+import createNumberFormatter from "./AnimatedFigures/createNumberFormatter.ts";
 
 interface AnimatedFigureProps {
   tagName?: string;

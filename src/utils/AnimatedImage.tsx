@@ -1,6 +1,6 @@
 import { h } from "@aduh95/async-jsx";
-import Picture from "./Picture.js";
-import type { PictureProps } from "./Picture.js";
+import Picture from "./Picture.tsx";
+import type { PictureProps } from "./Picture.tsx";
 
 interface AnimatedImageProps extends PictureProps {
   children?: any[];

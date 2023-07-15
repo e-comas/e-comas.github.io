@@ -1,5 +1,5 @@
 import { fileURLToPath, pathToFileURL } from "node:url";
-import sass from "sass";
+import * as sass from "sass";
 
 const PLUGIN_HELPER = "rollup-plugin:sass-createStyleElement";
 

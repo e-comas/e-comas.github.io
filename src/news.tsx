@@ -1,14 +1,14 @@
 import { h } from "@aduh95/async-jsx";
 
-import yaml from "./utils/yaml.js";
+import yaml from "./utils/yaml.ts";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
-import Footer from "./views/Footer.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
+import Footer from "./views/Footer.tsx";
 
 import "./news.scss";
-import "runtime:./news-runtime.js";
+import "runtime:./news-runtime.ts";
 
 export default (
   <Body title="Blog">

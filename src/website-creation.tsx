@@ -1,14 +1,14 @@
 import { h } from "@aduh95/async-jsx";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
-import NativeECommerce from "./views/NativeECommerce.js";
-import { ECommerce, EStore } from "./views/eWords.js";
-import Footer from "./views/Footer.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
+import NativeECommerce from "./views/NativeECommerce.tsx";
+import { ECommerce, EStore } from "./views/eWords.tsx";
+import Footer from "./views/Footer.tsx";
 
 import "./shopify.scss";
-import "runtime:./utils/auto-scroll-data-delay.js";
+import "runtime:./utils/auto-scroll-data-delay.ts";
 
 export default (
   <Body title="Website creation">

@@ -11,9 +11,9 @@ import {
 
 import team from "../utils/team.toml";
 
-import NavLink from "../utils/NavLink.js";
+import NavLink from "../utils/NavLink.tsx";
 
-import "runtime:./footer_addresses.js";
+import "runtime:./footer_addresses.ts";
 import "./footer.scss";
 
 export default () => (

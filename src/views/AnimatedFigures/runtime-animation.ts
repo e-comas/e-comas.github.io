@@ -1,4 +1,4 @@
-import createNumberFormatter from "./createNumberFormatter.js";
+import createNumberFormatter from "./createNumberFormatter.ts";
 
 const cache = new WeakMap();
 

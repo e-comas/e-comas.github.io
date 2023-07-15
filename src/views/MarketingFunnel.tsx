@@ -1,6 +1,6 @@
 import { h } from "@aduh95/async-jsx";
 
-import MarketingFunnelIllustration from "./MarketingFunnelIllustration.js";
+import MarketingFunnelIllustration from "./MarketingFunnelIllustration.tsx";
 
 import "./MarketingFunnel.scss";
 

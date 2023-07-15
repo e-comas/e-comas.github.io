@@ -1,9 +1,9 @@
 import { h } from "@aduh95/async-jsx";
-import { ECommerce } from "./eWords.js";
+import { ECommerce } from "./eWords.tsx";
 
-import "runtime:./FourStepApproach.runtime.js";
+import "runtime:./FourStepApproach.runtime.ts";
 import "./FourStepApproach.scss";
-import FourStepApproachSvg from "./FourStepApproach.svg.js";
+import FourStepApproachSvg from "./FourStepApproach.svg.tsx";
 
 export default () => (
   <section class="four-step">

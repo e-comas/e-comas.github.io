@@ -1,12 +1,12 @@
 import { h } from "@aduh95/async-jsx";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
-import Footer from "./views/Footer.js";
-import Picture from "./utils/Picture.js";
-import ElementWithIcon from "./utils/ElementWithIcon.js";
-import AnimatedImage from "./utils/AnimatedImage.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
+import Footer from "./views/Footer.tsx";
+import Picture from "./utils/Picture.tsx";
+import ElementWithIcon from "./utils/ElementWithIcon.tsx";
+import AnimatedImage from "./utils/AnimatedImage.tsx";
 
 import "./strategy.scss";
 

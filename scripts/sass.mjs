@@ -1,5 +1,5 @@
 import { fileURLToPath } from "node:url";
-import sass from "sass";
+import * as sass from "sass";
 
 export default function sass2css(url) {
   const file = fileURLToPath(url);

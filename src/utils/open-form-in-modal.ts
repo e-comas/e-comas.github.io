@@ -1,4 +1,4 @@
-import { getConsent } from "./cookie_consent.js";
+import { getConsent } from "./cookie_consent.ts";
 
 function clickHandler(this: HTMLAnchorElement, e: MouseEvent) {
   if (e.ctrlKey || e.metaKey || e.altKey) return;

@@ -1,19 +1,19 @@
 import { h } from "@aduh95/async-jsx";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Footer from "./views/Footer.js";
-import Testimonies from "./views/Testimonies.js";
-import Partners from "./views/Partners.js";
-import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
-import { EComas, ECommerce } from "./views/eWords.js";
-import AnimatedFigure from "./views/AnimatedFigure.js";
-import VideoEmbedLink from "./views/VideoEmbedLink.js";
-import FourStepApproach from "./views/FourStepApproach.js";
-import Picture from "./utils/Picture.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Footer from "./views/Footer.tsx";
+import Testimonies from "./views/Testimonies.tsx";
+import Partners from "./views/Partners.tsx";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
+import { EComas, ECommerce } from "./views/eWords.tsx";
+import AnimatedFigure from "./views/AnimatedFigure.tsx";
+import VideoEmbedLink from "./views/VideoEmbedLink.tsx";
+import FourStepApproach from "./views/FourStepApproach.tsx";
+import Picture from "./utils/Picture.tsx";
 
 import "./index.scss";
-import TeamCertifications from "./views/TeamCertifications.js";
+import TeamCertifications from "./views/TeamCertifications.tsx";
 
 export default (
   <Body>

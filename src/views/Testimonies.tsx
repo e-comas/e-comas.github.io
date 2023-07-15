@@ -2,9 +2,9 @@ import { Fragment, h } from "@aduh95/async-jsx";
 
 import testimonies from "../utils/testimonies.toml";
 
-import Picture from "../utils/Picture.js";
+import Picture from "../utils/Picture.tsx";
 
-import "runtime:../utils/auto-scroll-data-delay.js";
+import "runtime:../utils/auto-scroll-data-delay.ts";
 import "./Testimonies.scss";
 
 interface TestimoniesProps {

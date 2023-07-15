@@ -3,9 +3,9 @@ import { h } from "@aduh95/async-jsx";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
-import NativeECommerceIllustration from "./NativeECommerceIllustration.js";
+import NativeECommerceIllustration from "./NativeECommerceIllustration.tsx";
 import "./NativeECommerce.scss";
-import { ECommerce } from "./eWords.js";
+import { ECommerce } from "./eWords.tsx";
 
 export default () => (
   <section id="native-eCommerce">

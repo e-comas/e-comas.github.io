@@ -1,6 +1,6 @@
-import { fetchRSSFeed } from "./podcast_fetch.js";
-import autoScroll from "./auto-scroll.js";
-import { createDynamicList } from "./rss_feed.js";
+import { fetchRSSFeed } from "./podcast_fetch.ts";
+import autoScroll from "./auto-scroll.ts";
+import { createDynamicList } from "./rss_feed.ts";
 
 const hashtag = /#\w+\b/g;
 

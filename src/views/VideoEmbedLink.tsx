@@ -1,9 +1,9 @@
 import { h } from "@aduh95/async-jsx";
-import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.js";
+import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.tsx";
 
 import "./VideoEmbedLink.scss";
 import "../utils/cookie_consent.scss";
-import "runtime:./video-embed-runtime.js";
+import "runtime:./video-embed-runtime.ts";
 
 interface VideoEmbedLinkProps {
   tagName?: string;

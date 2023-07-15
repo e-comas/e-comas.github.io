@@ -1,12 +1,12 @@
 import { h } from "@aduh95/async-jsx";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
-import Footer from "./views/Footer.js";
-import { EComas, ECommerce } from "./views/eWords.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
+import Footer from "./views/Footer.tsx";
+import { EComas, ECommerce } from "./views/eWords.tsx";
 
-import "runtime:./utils/podcast_feeds.js";
+import "runtime:./utils/podcast_feeds.ts";
 import "./resources.scss";
 
 export default (

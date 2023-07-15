@@ -1,4 +1,4 @@
-import _fetchRSSFeed from "./rss_feed.js";
+import _fetchRSSFeed from "./rss_feed.ts";
 
 export interface PodcastItem {
   title: string;

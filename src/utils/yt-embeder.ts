@@ -1,4 +1,4 @@
-import { getConsent } from "./cookie_consent.js";
+import { getConsent } from "./cookie_consent.ts";
 
 function generateIFrame(target: HTMLElement) {
   const iframe = document.createElement("iframe");

@@ -1,16 +1,16 @@
 import { h } from "@aduh95/async-jsx";
 
-import TeamMember, { SocialURLs } from "./views/TeamMember.js";
-import type { Team, TeamMemberProps } from "./views/TeamMember.js";
+import TeamMember, { SocialURLs } from "./views/TeamMember.tsx";
+import type { Team, TeamMemberProps } from "./views/TeamMember.tsx";
 
 import team from "./utils/team.toml";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
-import Picture from "./utils/Picture.js";
-import Footer from "./views/Footer.js";
-import { EComas } from "./views/eWords.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
+import Picture from "./utils/Picture.tsx";
+import Footer from "./views/Footer.tsx";
+import { EComas } from "./views/eWords.tsx";
 
 import "./our-team.scss";
 

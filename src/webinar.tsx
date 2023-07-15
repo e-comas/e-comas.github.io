@@ -1,17 +1,17 @@
 import { h } from "@aduh95/async-jsx";
 
-import yaml from "./utils/yaml.js";
+import yaml from "./utils/yaml.ts";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
-import Footer from "./views/Footer.js";
-import { ECommerce } from "./views/eWords.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
+import Footer from "./views/Footer.tsx";
+import { ECommerce } from "./views/eWords.tsx";
 
 import webinars_playlists from "./utils/webinars.toml";
 
 import "./views/VideoEmbedLink.scss";
-import "runtime:./utils/youtube_feed.js";
+import "runtime:./utils/youtube_feed.ts";
 import "./resources.scss";
 import "./webinar.scss";
 

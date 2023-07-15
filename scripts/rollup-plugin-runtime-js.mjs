@@ -3,7 +3,7 @@ import { pathToFileURL } from "node:url";
 import { INPUT_DIR } from "./dev-config.mjs";
 
 const PLUGIN_HELPER = "rollup-plugin:runtime-createScriptElement";
-const tsRuntime = /^runtime:.+\.js$/;
+const tsRuntime = /^runtime:.+\.ts$/;
 
 async function createScriptElement(relativeUrl, id) {
   const script = document.createElement("script");
@@ -25,7 +25,7 @@ export default function plugin() {
 
       const result =
         tsRuntime.test(source) &&
-        (await this.resolve(source.slice(8, -2) + "ts", importer, options));
+        (await this.resolve(source.slice(8), importer, options));
       modulesToTransform.add(result?.id);
       return result ? `runtime-resolved:${result.id}` : null;
     },

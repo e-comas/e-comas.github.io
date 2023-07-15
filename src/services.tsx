@@ -1,13 +1,13 @@
 import { h } from "@aduh95/async-jsx";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
-import Footer from "./views/Footer.js";
-import { ECommerce } from "./views/eWords.js";
-import FourStepApproach from "./views/FourStepApproach.js";
-import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
-import SlidingText from "./views/SlidingText.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
+import Footer from "./views/Footer.tsx";
+import { ECommerce } from "./views/eWords.tsx";
+import FourStepApproach from "./views/FourStepApproach.tsx";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
+import SlidingText from "./views/SlidingText.tsx";
 
 import "./classic-page.scss";
 import "./services.scss";

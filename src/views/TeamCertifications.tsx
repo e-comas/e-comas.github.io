@@ -1,6 +1,6 @@
 import { h } from "@aduh95/async-jsx";
 
-import Picture from "../utils/Picture.js";
+import Picture from "../utils/Picture.tsx";
 import "./TeamCertifications.scss";
 
 export default () => (

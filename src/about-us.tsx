@@ -1,11 +1,11 @@
 import { h } from "@aduh95/async-jsx";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
-import Picture from "./utils/Picture.js";
-import { EComas, ECommerce } from "./views/eWords.js";
-import Footer from "./views/Footer.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
+import Picture from "./utils/Picture.tsx";
+import { EComas, ECommerce } from "./views/eWords.tsx";
+import Footer from "./views/Footer.tsx";
 
 import "./about-us.scss";
 

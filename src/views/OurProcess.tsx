@@ -1,6 +1,6 @@
 import { h } from "@aduh95/async-jsx";
 
-import OurProcessIllustration from "./OurProcessIllustration.js";
+import OurProcessIllustration from "./OurProcessIllustration.tsx";
 
 import "./OurProcess.scss";
 

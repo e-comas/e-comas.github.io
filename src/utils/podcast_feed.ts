@@ -1,5 +1,5 @@
-import { fetchRSSFeed } from "./podcast_fetch.js";
-import autoScroll from "./auto-scroll.js";
+import { fetchRSSFeed } from "./podcast_fetch.ts";
+import autoScroll from "./auto-scroll.ts";
 
 const dummy = document.createElement("span");
 document.getElementById("podcast")!.lastElementChild?.before(dummy);

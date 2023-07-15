@@ -1,6 +1,6 @@
-import { clickHandler } from "./yt-embeder.js";
-import fetchRSSFeed from "./rss_feed.js";
-import autoScroll from "./auto-scroll.js";
+import { clickHandler } from "./yt-embeder.ts";
+import fetchRSSFeed from "./rss_feed.ts";
+import autoScroll from "./auto-scroll.ts";
 
 interface YouTubeThumbnail {
   url: string;

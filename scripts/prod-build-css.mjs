@@ -2,7 +2,7 @@ import { writeFile } from "node:fs/promises";
 
 import cssnano from "cssnano";
 import postcss from "postcss";
-import sass from "sass";
+import * as sass from "sass";
 
 import copyAssets from "./postcss-copy-assets.mjs";
 

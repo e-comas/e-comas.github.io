@@ -1,19 +1,19 @@
 import { h } from "@aduh95/async-jsx";
 
-import yaml from "./utils/yaml.js";
+import yaml from "./utils/yaml.ts";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
-import Footer from "./views/Footer.js";
-import { EComas, ECommerce } from "./views/eWords.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
+import Footer from "./views/Footer.tsx";
+import { EComas, ECommerce } from "./views/eWords.tsx";
 
 import "./views/VideoEmbedLink.scss";
-import "runtime:./utils/youtube_feed.js";
-import "runtime:./utils/podcast_feed.js";
-import "runtime:./utils/frame-auto-height.js";
+import "runtime:./utils/youtube_feed.ts";
+import "runtime:./utils/podcast_feed.ts";
+import "runtime:./utils/frame-auto-height.ts";
 import "./resources.scss";
-import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.js";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 
 const playlist_id = "PLIISXNQzZ8ZrvjOjGsK9iJykSn_x6xO3k";
 

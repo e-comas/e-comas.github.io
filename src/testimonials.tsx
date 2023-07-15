@@ -1,10 +1,10 @@
 import { h } from "@aduh95/async-jsx";
 
-import Body from "./views/Body.js";
-import Header from "./views/Header.js";
-import Footer from "./views/Footer.js";
-import Testimonies from "./views/Testimonies.js";
-import Breadcrumbs from "./views/Breadcrumbs.js";
+import Body from "./views/Body.tsx";
+import Header from "./views/Header.tsx";
+import Footer from "./views/Footer.tsx";
+import Testimonies from "./views/Testimonies.tsx";
+import Breadcrumbs from "./views/Breadcrumbs.tsx";
 
 import "./testimonials.scss";
 
