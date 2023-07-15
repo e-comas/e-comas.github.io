@@ -7,6 +7,24 @@ $breakpoint: $nav-width + $logo-width + 20px;
 
 $hamburgerThickness: 2px;
 
+.background-wrapper {
+  position: relative;
+}
+.background {
+  &,
+  & * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+
 a.skip-nav {
   @extend %button;
 
@@ -34,18 +52,19 @@ header {
     grid-template-columns: 1fr minmax(auto, $nav-width);
   }
   grid-template-rows: auto 1fr;
-  padding: 2rem;
+  padding: 1rem;
   gap: 1rem 3rem;
 
-  height: 50vh;
-  $min-height: 300px;
+  background-color: rgb(101,214,190);
+  height: 1vh;
+  $min-height: 100px;
   min-height: $min-height;
   $max-height: 720px;
   max-height: $max-height;
 
-  @media screen and (max-height: 2*$min-height) and (max-aspect-ratio: 85/100),
-    screen and (min-height: 2*$max-height) and (max-width: 1290px),
-    screen and (min-height: 2*$min-height + 1) and (max-height: 2*$max-height - 1) and (max-aspect-ratio: 297/324) {
+  @media screen and (max-height: #{2*$min-height}) and (max-aspect-ratio: 85/100),
+    screen and (min-height: #{2*$max-height}) and (max-width: 1290px),
+    screen and (min-height: #{2*$min-height + 1}) and (max-height: #{2*$max-height - 1}) and (max-aspect-ratio: 297/324) {
     .background * {
       object-position: left;
     }
@@ -79,7 +98,7 @@ header {
 
       a:hover,
       a:not(:last-child).active {
-        color: $green;
+        color: $gold;
       }
     }
     ul {

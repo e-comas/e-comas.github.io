@@ -31,7 +31,7 @@ function layoutArborescence(node: ArborescenceNode) {
 }
 
 export default () => (
-  <ElementWithBackgroundImage tagName="header" src="/images/BannerHero.png">
+  <header>
     <a href="#main-content" class="skip-nav">
       Skip navigation
     </a>
@@ -47,6 +47,6 @@ export default () => (
       <summary aria-label="Open navigation menu" />
     </details>
     <nav>{arborescence.root.children.map(layoutArborescence)}</nav>
-    <h1>A Global, Full Service Amazon & Marketplace Agency</h1>
-  </ElementWithBackgroundImage>
+    {/* <h1>A Global, Full Service Amazon & Marketplace Agency</h1> */}
+  </header>
 );
