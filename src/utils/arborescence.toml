@@ -99,6 +99,6 @@ url = "/case-studies.html"
 # name = "Partners"
 # url = "/partners.html"
 
-[[root.children]]
-name = "Contact us"
-url = "/contact.html"
+# [[root.children]]
+# name = "Contact us"
+# url = "/contact.html"
