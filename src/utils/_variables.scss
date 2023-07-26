@@ -44,6 +44,9 @@ $animationDuration: 300ms;
 @mixin invertedCta {
   background-color: $grey;
   color: $green;
+  a {
+    color: $green;
+  }
 }
 %invertedCta {
   @include invertedCta();

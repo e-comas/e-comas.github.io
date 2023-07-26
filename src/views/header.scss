@@ -93,6 +93,7 @@ header {
     gap: 1rem;
 
     a {
+      margin:  1rem;
       @extend %uppercase;
       display: block;
       color: $white;
