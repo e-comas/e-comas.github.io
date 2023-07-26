@@ -8,7 +8,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  NODE_VERSION: v18.x
+  NODE_VERSION: v16.x
 
 jobs:
   deploy:
