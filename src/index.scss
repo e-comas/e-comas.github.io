@@ -41,14 +41,23 @@ section#case-studies {
   background-image: url(images/map-new-gradient.svg);
   background-position: center center;
   background-size: cover;
+  display: inline-flex;
+  position: relative; 
 }
 
 .intro-container-overlay {
   background-color: #ffff;
   opacity: .95;
+  position: absolute;
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .intro {
+  z-index: 1;
   width: 50%;
   min-width: 40rem;
 
@@ -67,6 +76,17 @@ section#case-studies {
     color: black;
     margin-left: 1rem;
     font-size: 1rem;
+  }
+}
+
+.earth-graphic {
+  z-index: 1;
+  margin-left: auto;  
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @media screen and (max-width:90rem){
+    display: none;
   }
 }
    

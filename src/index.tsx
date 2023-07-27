@@ -20,23 +20,25 @@ export default (
     <Header />
     <main id="main-content">
       <div class="intro-container">
-        <div class="intro-container-overlay">
-          <div class="intro">
-            <h5>THE BOUTIQUE AGENCY YOU NEED TO THRIVE ON</h5>
-            <br />
-            <img src="images/partners/amazon.svg"></img>
-            <br />
-            <p>
-              Let <EComas />, a global full service <ECommerce /> agency, help
-              your brand grow on Amazon and other marketplaces through strategic
-              global expansion, technological infrastructure and cutting edge
-              media campaigns.
-            </p>
-            <br />
-            <a href="/services.html" class="cta">
-              Our services →
-            </a>
-          </div>
+        <div class="intro-container-overlay"></div>
+        <div class="intro">
+          <h5>THE BOUTIQUE AGENCY YOU NEED TO THRIVE ON</h5>
+          <br />
+          <img src="images/partners/amazon.svg"></img>
+          <br />
+          <p>
+            Let <EComas />, a global full service <ECommerce /> agency, help
+            your brand grow on Amazon and other marketplaces through strategic
+            global expansion, technological infrastructure and cutting edge
+            media campaigns.
+          </p>
+          <br />
+          <a href="/services.html" class="cta">
+            Our services →
+          </a>
+        </div>
+        <div class="earth-graphic">
+          <img src="images/earth.svg"></img>
         </div>
       </div>
       {/* <figure class="video-hero">
