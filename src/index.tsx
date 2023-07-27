@@ -19,14 +19,28 @@ export default (
   <Body>
     <Header />
     <main id="main-content">
-      <figure class="video-hero">
+      <div class="intro">
+        <h5>THE BOUTIQUE AGENCY YOU NEED TO THRIVE ON</h5>
+        <img src="images/partners/amazon.svg"></img>
+        <p>
+          Let <EComas />, a global full service <ECommerce /> agency, help your
+          brand grow on Amazon and other marketplaces through strategic global
+          expansion, technological infrastructure and cutting edge media
+          campaigns.
+        </p>
+
+        <a href="/services.html" class="cta">
+            Our services →
+          </a>
+      </div>
+      {/* <figure class="video-hero">
         <VideoEmbedLink
           tagName="div"
           previewImage="/images/HomeVideoBanner.jpg"
           videoId="vjGxQNji05U"
         />
         <figcaption>
-          {/* <h2>Trust our amazing team</h2> */}
+          <h2>Trust our amazing team</h2>
           <p>
             Let <EComas />, a global full service <ECommerce /> agency, help
             your brand grow on Amazon and other marketplaces through strategic
@@ -34,10 +48,10 @@ export default (
             media campaigns.
           </p>
           <a href="/contact.html" class="cta">
-            Meet with us
+            Meet with us 
           </a>
         </figcaption>
-      </figure>
+      </figure> */}
 
       {/* <section class="area-of-expertise">
         <figure>
