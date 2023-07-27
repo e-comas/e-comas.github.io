@@ -8,7 +8,7 @@ import Partners from "./views/Partners.tsx";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import { EComas, ECommerce } from "./views/eWords.tsx";
 import AnimatedFigure from "./views/AnimatedFigure.tsx";
-import VideoEmbedLink from "./views/VideoEmbedLink.tsx";
+// import VideoEmbedLink from "./views/VideoEmbedLink.tsx";
 import FourStepApproach from "./views/FourStepApproach.tsx";
 import Picture from "./utils/Picture.tsx";
 
@@ -19,19 +19,25 @@ export default (
   <Body>
     <Header />
     <main id="main-content">
-      <div class="intro">
-        <h5>THE BOUTIQUE AGENCY YOU NEED TO THRIVE ON</h5>
-        <img src="images/partners/amazon.svg"></img>
-        <p>
-          Let <EComas />, a global full service <ECommerce /> agency, help your
-          brand grow on Amazon and other marketplaces through strategic global
-          expansion, technological infrastructure and cutting edge media
-          campaigns.
-        </p>
-
-        <a href="/services.html" class="cta">
-            Our services →
-          </a>
+      <div class="intro-container">
+        <div class="intro-container-overlay">
+          <div class="intro">
+            <h5>THE BOUTIQUE AGENCY YOU NEED TO THRIVE ON</h5>
+            <br />
+            <img src="images/partners/amazon.svg"></img>
+            <br />
+            <p>
+              Let <EComas />, a global full service <ECommerce /> agency, help
+              your brand grow on Amazon and other marketplaces through strategic
+              global expansion, technological infrastructure and cutting edge
+              media campaigns.
+            </p>
+            <br />
+            <a href="/services.html" class="cta">
+              Our services →
+            </a>
+          </div>
+        </div>
       </div>
       {/* <figure class="video-hero">
         <VideoEmbedLink

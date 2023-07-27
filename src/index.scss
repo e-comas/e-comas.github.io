@@ -37,6 +37,17 @@ section#case-studies {
   }
 }
 
+.intro-container {
+  background-image: url(images/map-new-gradient.svg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.intro-container-overlay {
+  background-color: #ffff;
+  opacity: .95;
+}
+
 .intro {
   width: 50%;
   min-width: 40rem;
