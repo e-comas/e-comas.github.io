@@ -8,7 +8,7 @@ import Partners from "./views/Partners.tsx";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import { EComas, ECommerce } from "./views/eWords.tsx";
 import AnimatedFigure from "./views/AnimatedFigure.tsx";
-// import VideoEmbedLink from "./views/VideoEmbedLink.tsx";
+import VideoEmbedLink from "./views/VideoEmbedLink.tsx";
 import FourStepApproach from "./views/FourStepApproach.tsx";
 import Picture from "./utils/Picture.tsx";
 
@@ -41,25 +41,17 @@ export default (
           <img src="images/earth.svg"></img>
         </div>
       </div>
-      {/* <figure class="video-hero">
+      {/* <div class="video-container" onclick={() => showVideo()} id="video-player">
+        <div></div>
+      </div> */}
+      <div class="video-container">
         <VideoEmbedLink
           tagName="div"
-          previewImage="/images/HomeVideoBanner.jpg"
+          previewImage="images/team-picture-EU.jpg"
           videoId="vjGxQNji05U"
         />
-        <figcaption>
-          <h2>Trust our amazing team</h2>
-          <p>
-            Let <EComas />, a global full service <ECommerce /> agency, help
-            your brand grow on Amazon and other marketplaces through strategic
-            global expansion, technological infrastructure and cutting edge
-            media campaigns.
-          </p>
-          <a href="/contact.html" class="cta">
-            Meet with us 
-          </a>
-        </figcaption>
-      </figure> */}
+      </div>
+
 
       {/* <section class="area-of-expertise">
         <figure>
