@@ -38,7 +38,7 @@ export default (
           </a>
         </div>
         <div class="earth-graphic">
-          <img src="images/earth.svg"></img>
+          <img src="images/Earth.svg"></img>
         </div>
       </div>
       {/* <div class="video-container" onclick={() => showVideo()} id="video-player">
