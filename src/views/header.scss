@@ -46,8 +46,20 @@ a.skip-nav {
   }
 }
 
+.padding {
+  height: 1vh;
+  $min-height: 100px;
+  min-height: $min-height;
+  $max-height: 720px;
+  max-height: $max-height;
+  gap: 1rem 3rem;
+}
+
 .header-container {
+  position: fixed;
   background-color: rgb(101,214,190); /* Replace with your specific color */
+  z-index: 1;
+  width: 100%;
 }
 
 header {

@@ -31,25 +31,29 @@ function layoutArborescence(node: ArborescenceNode) {
 }
 
 export default () => (
-  <div class="header-container">
-    <header>
-      <a href="#main-content" class="skip-nav">
-        Skip navigation
-      </a>
+  <div class="padding">
+    <div class="header-container">
+      <header>
+        <a href="#main-content" class="skip-nav">
+          Skip navigation
+        </a>
 
-      <a href="/">
-        <img
-          src="/images/logo.svg"
-          alt="e-Comas, eCommerce made simple"
-          class="logo"
-        />
-      </a>
-      <details>
-        <summary aria-label="Open navigation menu" />
-      </details>
-      <nav>{arborescence.root.children.map(layoutArborescence)}</nav>
-      <a class = "contact-button" href="/contact.html">Contact us</a>
-      {/* <h1>A Global, Full Service Amazon & Marketplace Agency</h1> */}
-    </header>
+        <a href="/">
+          <img
+            src="/images/logo.svg"
+            alt="e-Comas, eCommerce made simple"
+            class="logo"
+          />
+        </a>
+        <details>
+          <summary aria-label="Open navigation menu" />
+        </details>
+        <nav>{arborescence.root.children.map(layoutArborescence)}</nav>
+        <a class="contact-button" href="/contact.html">
+          Contact us
+        </a>
+        {/* <h1>A Global, Full Service Amazon & Marketplace Agency</h1> */}
+      </header>
+    </div>
   </div>
 );
