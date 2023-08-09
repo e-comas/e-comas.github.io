@@ -24,7 +24,7 @@ export default (
         <div class="intro">
           <h5>THE BOUTIQUE AGENCY YOU NEED TO THRIVE ON</h5>
           <br />
-          <img src="images/partners/amazon.svg"></img>
+          <img src="images/partners/minified-anim.svg"></img>
           <br />
           <p>
             Let <EComas />, a global full service <ECommerce /> agency, help
