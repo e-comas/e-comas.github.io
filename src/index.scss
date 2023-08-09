@@ -81,6 +81,11 @@ section#case-studies {
     margin-left: 1rem;
     font-size: 1rem;
   }
+
+  h5 {
+    margin-top: 4rem;
+    font-size: xx-large;
+  }
 }
 
 .earth-graphic {
@@ -103,9 +108,11 @@ section#case-studies {
   overflow: hidden;
   margin: auto;
   width: 75%;
+
   @media screen and (max-width: 1066px) {
     width: 800px;
   }
+
   border-radius: 20px;
 
   // min-width: 50vw;
