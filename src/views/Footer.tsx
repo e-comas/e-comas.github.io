@@ -195,11 +195,10 @@ export default () => (
           Made with ❤️ by <EComas /> Team
         </div>
       </div>
-      <div class="button-container">
-        <div>
-          <a href="TODO">Book a Call</a>
-        </div>
-      </div>
     </div>
+
+    <a class="button" href="TODO">
+      Book a Call
+    </a>
   </footer>
 );
