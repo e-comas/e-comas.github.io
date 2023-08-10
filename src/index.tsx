@@ -9,7 +9,7 @@ import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import { EComas, ECommerce } from "./views/eWords.tsx";
 import AnimatedFigure from "./views/AnimatedFigure.tsx";
 import VideoEmbedLink from "./views/VideoEmbedLink.tsx";
-import FourStepApproach from "./views/FourStepApproach.tsx";
+import OurServices from "./views/OurServices.tsx";
 import Picture from "./utils/Picture.tsx";
 
 import "./index.scss";
@@ -66,7 +66,7 @@ export default (
         </figure>
       </section> */}
 
-      <FourStepApproach />
+      <OurServices />
 
       <section class="fourSeventhThreeSeventh">
         <Picture src="/images/Banner3.1 Testimonials 3x .png" alt="" />
