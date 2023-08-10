@@ -197,7 +197,7 @@ export default () => (
       </div>
     </div>
 
-    <a class="button" href="TODO">
+    <a id="book-a-call" href="/contact.html">
       Book a Call
     </a>
   </footer>
