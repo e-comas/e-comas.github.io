@@ -1,9 +1,9 @@
 @use "sass:math";
 @use "../utils/variables" as *;
 
-$nav-width: 600px;
+$nav-width: 650px;
 $logo-width: 200px;
-$breakpoint: $nav-width + $logo-width + 20px;
+$breakpoint: $nav-width + $logo-width + 60px;
 
 $hamburgerThickness: 2px;
 
@@ -24,12 +24,11 @@ $hamburgerThickness: 2px;
   }
 }
 
-
 a.skip-nav {
   @extend %button;
 
   position: absolute;
-  transform: translateY(-120%);
+  transform: translateY(-150%);
   left: 0.5rem;
   border-radius: 0 0 $border-radius $border-radius;
   transition: transform 300ms ease-in;
@@ -46,27 +45,26 @@ a.skip-nav {
   }
 }
 
-.padding {
-  height: 1vh;
-  $min-height: 100px;
-  min-height: $min-height;
-  $max-height: 720px;
-  max-height: $max-height;
-  gap: 1rem 3rem;
-}
-
-.header-container {
-  position: fixed;
-  background-color: rgb(101,214,190); /* Replace with your specific color */
-  z-index: 1;
-  width: 100%;
-}
-
 header {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+  background-color: rgb(101, 214, 190); /* Replace with your specific color */
   @media screen and (min-width: $breakpoint) {
-    grid-template-columns: 1fr minmax(auto, $nav-width);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  @media screen and (min-width: $body-max-width) {
+    display: grid;
+    grid-template-columns: 1fr 9rem calc(#{$body-max-width} - 2 * 9rem) 9rem 1fr;
+    column-gap: 0;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+    }
   }
   grid-template-rows: auto 1fr;
   padding: 1rem;
@@ -78,13 +76,12 @@ header {
   $max-height: 720px;
   max-height: $max-height;
   width: 100%;
-  max-width: $body-max-width;
-  margin:auto;
+  margin: auto;
 
   @media screen and (max-height: #{2*$min-height}) and (max-aspect-ratio: 85/100),
     screen and (min-height: #{2*$max-height}) and (max-width: 1290px),
     screen and (min-height: #{2*$min-height + 1}) and (max-height: #{2*$max-height - 1}) and (max-aspect-ratio: 297/324) {
-      .background * {
+    .background * {
       object-position: left;
     }
   }
@@ -103,14 +100,14 @@ header {
     display: flex;
     justify-content: center;
     gap: 1rem;
-
+    margin: 0 auto;
     a {
-      margin:  1rem;
+      margin: 1rem;
       @extend %uppercase;
       display: block;
       color: $white;
       text-decoration: none;
-      font-size: large;
+      font-size: 0.8rem;
     }
 
     @media screen and (min-width: $breakpoint) {
@@ -277,10 +274,9 @@ header {
     }
   }
 
-  @media screen and (min-width: #{$max-width + 100px}) {
-    grid-template-columns: auto minmax(auto, #{$max-width - $nav-width}) $nav-width auto;
-    column-gap: 0;
-  }
+  // @media screen and (min-width: #{$max-width + 100px}) {
+  //   grid-template-columns: auto minmax(auto, #{$max-width - $nav-width}) $nav-width auto;
+  // }
 }
 
 @keyframes delayAppearance {
