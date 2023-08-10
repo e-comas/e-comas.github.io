@@ -8,7 +8,6 @@ h2:first-of-type {
 }
 
 section {
-
   &:nth-child(2n + 2),
   &:nth-child(2n + 3) {
     // background-color: unset;
@@ -33,7 +32,6 @@ section#case-studies {
 }
 
 .cover {
-
   &,
   & img {
     @extend %cover;
@@ -50,7 +48,7 @@ section#case-studies {
 
 .intro-container-overlay {
   background-color: #ffff;
-  opacity: .95;
+  opacity: 0.95;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -71,7 +69,7 @@ section#case-studies {
   }
 
   img {
-    width: 50%
+    width: 50%;
   }
 
   .cta {
@@ -95,7 +93,7 @@ section#case-studies {
   margin-top: 2rem;
   margin-bottom: 2rem;
 
-  @media screen and (max-width:90rem) {
+  @media screen and (max-width: 90rem) {
     display: none;
   }
 
@@ -125,7 +123,6 @@ section#case-studies {
   position: relative;
   z-index: 0;
 }
-
 
 section.news {
   display: flex;
