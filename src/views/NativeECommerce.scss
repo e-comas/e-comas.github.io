@@ -39,7 +39,7 @@
         &:first-of-type {
           --primary-color: #d8a62a;
           --secondary-color: #f4c542;
-          --tertiary-color: #fed13f;
+          --tertiary-color: $golder;
         }
         &:last-of-type {
           --primary-color: #81ad64;

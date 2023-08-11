@@ -4,6 +4,7 @@ import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
 import Footer from "./views/Footer.tsx";
 import Testimonies from "./views/Testimonies.tsx";
+import AboutUs from "./views/about-us.tsx";
 import Partners from "./views/Partners.tsx";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import { EComas, ECommerce } from "./views/eWords.tsx";
@@ -70,6 +71,8 @@ export default (
       </section>
 
       <Testimonies withBlock />
+
+      <AboutUs />
 
       {/* <section class="news">
         <h3>Our latest news</h3>

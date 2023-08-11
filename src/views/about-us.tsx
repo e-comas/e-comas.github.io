@@ -1,0 +1,54 @@
+import { h } from "@aduh95/async-jsx";
+
+import Picture from "../utils/Picture.tsx";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import type { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faChess } from "@fortawesome/free-solid-svg-icons";
+import { EComas } from "../views/eWords.tsx";
+
+import "./about-us.scss";
+import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.tsx";
+
+export default () => (
+  <ElementWithBackgroundImage tagName="section" src="https://ecomas.elhadjseck.com/wp-content/uploads/2023/05/Ecomma-b2.jpg" class="about-us">
+    <h2>About us</h2>
+    <h3>
+      Why <EComas />?
+    </h3>
+    <div role="list">
+      <section role="listitem">
+        <FontAwesomeIcon size="3x" icon={faChess as IconProp} />
+        <h4>Benefit</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure
+          assumenda eius repudiandae reprehenderit sequi minus, blanditiis,
+          possimus distinctio et sint, numquam corporis obcaecati dicta deleniti
+          explicabo. Et, voluptates. Dolorem.
+        </p>
+      </section>
+      <section role="listitem">
+        <FontAwesomeIcon size="3x" icon={faChess as IconProp} />
+        <h4>Benefit</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure
+          assumenda eius repudiandae reprehenderit sequi minus, blanditiis,
+          possimus distinctio et sint, numquam corporis obcaecati dicta deleniti
+          explicabo. Et, voluptates. Dolorem.
+        </p>
+      </section>
+      <section role="listitem">
+        <FontAwesomeIcon size="3x" icon={faChess as IconProp} />
+        <h4>Benefit</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure
+          assumenda eius repudiandae reprehenderit sequi minus, blanditiis,
+          possimus distinctio et sint, numquam corporis obcaecati dicta deleniti
+          explicabo. Et, voluptates. Dolorem.
+        </p>
+      </section>
+    </div>
+    <a href="about:blank" class="cta">
+      More about us
+    </a>
+  </>
+);
