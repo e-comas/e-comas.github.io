@@ -28,7 +28,9 @@ export default () => (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
-        <a href="about:blank">Discover more</a>
+        <a href="about:blank" class="cta">
+          Discover more
+        </a>
       </figcaption>
     </figure>
     <figure class="animate-in">
@@ -40,7 +42,9 @@ export default () => (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
-        <a href="about:blank">Discover more</a>
+        <a href="about:blank" class="cta">
+          Discover more
+        </a>
       </figcaption>
     </figure>
     <figure class="animate-in">
@@ -52,7 +56,9 @@ export default () => (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
-        <a href="about:blank">Discover more</a>
+        <a href="about:blank" class="cta">
+          Discover more
+        </a>
       </figcaption>
     </figure>
   </section>
