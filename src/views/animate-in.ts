@@ -14,7 +14,7 @@ const observer = new IntersectionObserver(
 function activate() {
   for (const elem of document.querySelectorAll(".animate-in")) {
     const { style } = elem as HTMLElement;
-    style.setProperty("--animate-in-transform", "100%");
+    style.setProperty("--animate-in-transform", "200%");
     cache.set(elem, () => {
       setTimeout(() => {
         style.setProperty("--animate-in-transform", "0");
