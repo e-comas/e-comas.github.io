@@ -155,6 +155,9 @@ header {
         }
       }
     }
+    & > span:last-child {
+      position: absolute; // just there to make the menu work until `:has(div:hover)::after` is supported.
+    }
     // & > :last-child {
     //   @extend %button;
     //   &:hover {

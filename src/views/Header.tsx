@@ -46,7 +46,11 @@ export default () => (
     <details>
       <summary aria-label="Open navigation menu" />
     </details>
-    <nav>{arborescence.root.children.map(layoutArborescence)}</nav>
+    <nav>
+      {arborescence.root.children.map(layoutArborescence)}
+      {/* until `:has(div:hover)::after` is supported, we need a last element:*/}
+      <span />
+    </nav>
     <a class="contact-button" href="/contact.html">
       Contact us
     </a>
