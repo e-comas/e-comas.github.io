@@ -45,6 +45,12 @@ a.skip-nav {
   }
 }
 
+@media screen and (min-width: $breakpoint) {
+  body {
+    // to account for the fixed header
+    padding-top: 5rem;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;

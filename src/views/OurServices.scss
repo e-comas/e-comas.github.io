@@ -43,20 +43,3 @@
     }
   }
 }
-
-.animate-in {
-  @media (prefers-reduced-motion: no-preference) {
-    animation: fadeIn 600ms; // To avoid flashing when the page loads.
-    &.animate-in-ready > * {
-      transition: transform 500ms;
-    }
-  }
-  &:nth-child(2n + 3) > :last-child,
-  &:nth-child(2n + 4) > :first-child {
-    transform: translateX(var(--animate-in-transform, "0%"));
-  }
-  &:nth-child(2n + 3) > :first-child,
-  &:nth-child(2n + 4) > :last-child {
-    transform: translateX(calc(-1 * var(--animate-in-transform, "0%")));
-  }
-}

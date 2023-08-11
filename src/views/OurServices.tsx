@@ -7,6 +7,7 @@ import GlobalExpansion from "./GlobalExpansion.svg";
 import RetailMedia from "./RetailMedia.svg";
 import Technology from "./Technology.svg";
 
+import "./animate-in.scss";
 import "runtime:./animate-in.ts";
 
 export default () => (
