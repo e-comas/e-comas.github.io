@@ -1,6 +1,7 @@
 .animate-in {
   @media (prefers-reduced-motion: no-preference) {
     animation: fadeIn 600ms; // To avoid flashing when the page loads.
+    overflow: hidden;
     &.animate-in-ready > * {
       transition: transform 500ms;
     }
@@ -12,5 +13,17 @@
   &:nth-child(2n + 0) > :last-child,
   &:nth-child(2n + 1) > :first-child {
     transform: translateX(calc(-1 * var(--animate-in-transform, "0%")));
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
