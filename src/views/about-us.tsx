@@ -7,16 +7,21 @@ import { faChess } from "@fortawesome/free-solid-svg-icons";
 import { EComas } from "../views/eWords.tsx";
 
 import "./about-us.scss";
+import "runtime:./about-us-runtime.ts";
 import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.tsx";
 
 export default () => (
-  <ElementWithBackgroundImage tagName="section" src="https://ecomas.elhadjseck.com/wp-content/uploads/2023/05/Ecomma-b2.jpg" class="about-us">
+  <ElementWithBackgroundImage
+    tagName="section"
+    src="https://ecomas.elhadjseck.com/wp-content/uploads/2023/05/Ecomma-b2.jpg"
+    class="about-us"
+  >
     <h2>About us</h2>
     <h3>
       Why <EComas />?
     </h3>
     <div role="list">
-      <section role="listitem">
+      <section role="listitem" class="animatable">
         <FontAwesomeIcon size="3x" icon={faChess as IconProp} />
         <h4>Benefit</h4>
         <p>
@@ -26,7 +31,7 @@ export default () => (
           explicabo. Et, voluptates. Dolorem.
         </p>
       </section>
-      <section role="listitem">
+      <section role="listitem" class="animatable">
         <FontAwesomeIcon size="3x" icon={faChess as IconProp} />
         <h4>Benefit</h4>
         <p>
@@ -36,7 +41,7 @@ export default () => (
           explicabo. Et, voluptates. Dolorem.
         </p>
       </section>
-      <section role="listitem">
+      <section role="listitem" class="animatable">
         <FontAwesomeIcon size="3x" icon={faChess as IconProp} />
         <h4>Benefit</h4>
         <p>
@@ -47,8 +52,8 @@ export default () => (
         </p>
       </section>
     </div>
-    <a href="about:blank" class="cta">
+    <a href="about:blank" class="cta animatable">
       More about us
     </a>
-  </>
+  </ElementWithBackgroundImage>
 );

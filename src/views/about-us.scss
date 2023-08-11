@@ -4,6 +4,7 @@ section.about-us {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  animation: fadeIn 600ms;
 
   & > picture.background {
     max-height: 15rem;
