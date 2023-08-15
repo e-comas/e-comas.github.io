@@ -40,10 +40,14 @@ section.about-us {
   }
 
   & > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
     padding: 0 1rem;
+    @media screen and (min-width: 650px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
     & > * {
       padding: 1.5rem;
       background-color: $white;
