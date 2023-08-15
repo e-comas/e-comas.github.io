@@ -34,6 +34,7 @@ function deactivate() {
     const { classList, style } = elem as HTMLElement;
     classList.remove("animate-in-ready");
     style.removeProperty("--animate-in-transform");
+    cache.delete(elem);
   }
   observer.disconnect();
 }

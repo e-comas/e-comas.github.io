@@ -30,6 +30,7 @@ function activate() {
           }
         ).finished;
       }
+      cache.delete(elem);
     });
     observer.observe(elem);
   }
