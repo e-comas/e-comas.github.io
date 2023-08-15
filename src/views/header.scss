@@ -3,7 +3,8 @@
 
 $nav-width: 650px;
 $logo-width: 200px;
-$breakpoint: $nav-width + $logo-width + 60px;
+$contact-us-width: 100px;
+$breakpoint: $nav-width + 20px + $logo-width + 20px + $contact-us-width;
 
 $hamburgerThickness: 2px;
 
@@ -84,13 +85,13 @@ header {
   width: 100%;
   margin: auto;
 
-  @media screen and (max-height: #{2*$min-height}) and (max-aspect-ratio: 85/100),
-    screen and (min-height: #{2*$max-height}) and (max-width: 1290px),
-    screen and (min-height: #{2*$min-height + 1}) and (max-height: #{2*$max-height - 1}) and (max-aspect-ratio: 297/324) {
-    .background * {
-      object-position: left;
-    }
-  }
+  // @media screen and (max-height: #{2*$min-height}) and (max-aspect-ratio: 85/100),
+  //   screen and (min-height: #{2*$max-height}) and (max-width: 1290px),
+  //   screen and (min-height: #{2*$min-height + 1}) and (max-height: #{2*$max-height - 1}) and (max-aspect-ratio: 297/324) {
+  //   .background * {
+  //     object-position: left;
+  //   }
+  // }
 
   .logo {
     position: relative;
@@ -169,6 +170,9 @@ header {
     @extend %button;
     &:hover {
       @extend %invertedCta;
+    }
+    @media screen and (max-width: #{$breakpoint - 1px}) {
+      display: none;
     }
   }
 
