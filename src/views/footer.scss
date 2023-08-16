@@ -2,9 +2,21 @@
 
 .free-consultation {
   display: flex;
+  flex-direction: line;
+  width: 100%;
+  max-width: $body-max-width;
+  padding: 1rem;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
 
   strong {
-    color: $green
+    color: $green;
+  }
+
+  div {
+    padding: 1rem;
   }
 
   form {
@@ -17,18 +29,19 @@
     textarea {
       border-radius: 15px;
       border-color: lightgray;
+      border-style: solid;
       margin: 1%;
     }
 
     input {
       width: 48%;
-      height: 3vh;
+      height: 3rem;
       padding: 1rem;
     }
 
     textarea {
       width: 98%;
-      height: 5vh;
+      height: 5rem;
       padding-left: 1rem;
       padding-right: 1rem;
       padding-top: 0.5rem;
@@ -37,12 +50,17 @@
     .submit {
       @extend %button;
       border-radius: 15px;
-      height: 4vh;
-      color:white;
+      height: 3rem;
+      color: white;
       background-color: $grey;
       margin: 1%;
     }
   }
+}
+
+hr {
+  width: 75%;
+  max-width: #{$body-max-width*0.75};
 }
 
 .upper-footer {
