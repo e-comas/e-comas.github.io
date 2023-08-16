@@ -41,6 +41,8 @@
 
     textarea {
       width: 98%;
+      resize: vertical;
+      min-height: 2rem;
       height: 5rem;
       padding-left: 1rem;
       padding-right: 1rem;
