@@ -1,5 +1,50 @@
 @use "../utils/variables" as *;
 
+.free-consultation {
+  display: flex;
+
+  strong {
+    color: $green
+  }
+
+  form {
+    display: block;
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: $green;
+
+    input,
+    textarea {
+      border-radius: 15px;
+      border-color: lightgray;
+      margin: 1%;
+    }
+
+    input {
+      width: 48%;
+      height: 3vh;
+      padding: 1rem;
+    }
+
+    textarea {
+      width: 98%;
+      height: 5vh;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.5rem;
+    }
+
+    .submit {
+      @extend %button;
+      border-radius: 15px;
+      height: 4vh;
+      color:white;
+      background-color: $grey;
+      margin: 1%;
+    }
+  }
+}
+
 .upper-footer {
   display: flex;
   flex-direction: column;
@@ -79,17 +124,17 @@
     grid-auto-flow: column;
     text-align: unset;
 
-    & > strong {
+    &>strong {
       align-self: end;
       margin-bottom: 0;
     }
 
-    & > ul,
-    & > nav {
+    &>ul,
+    &>nav {
       grid-row: span 3;
     }
 
-    & > .social {
+    &>.social {
       grid-row: span 2;
     }
 
@@ -149,6 +194,7 @@
       margin: auto;
     }
   }
+
   height: 3rem;
 }
 

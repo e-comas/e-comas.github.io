@@ -9,6 +9,7 @@ import {
   faMediumM,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons";
 
 import team from "../utils/team.toml";
 
@@ -19,6 +20,28 @@ import "./footer.scss";
 
 export default () => (
   <footer>
+    <div class="free-consultation">
+      <div>
+      <strong>Request a free consultation</strong>
+      <br />
+      <h1>Get in Touch Today</h1>
+      <br />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+      luctus nec ullamcorper mattis, pulvinar dapibus leo.
+      <br />
+      <FontAwesomeIcon icon={faEnvelopeOpen as IconProp} color="gold" />
+      hello@ecomas.com
+      </div>
+      <form>
+        <input placeholder="Name"></input>
+        <input type="email" placeholder="Email"></input>
+        <input type="tel" placeholder="Phone number"></input>
+        <input placeholder="Company"></input>
+        <textarea placeholder="Message"></textarea>
+        <input type="submit" value="Contact Us" class="submit"></input>
+      </form>
+    </div>
+    <hr />
     <div class="upper-footer">
       <img
         src="/images/logo.svg"
