@@ -1,6 +1,6 @@
 import { h } from "@aduh95/async-jsx";
 
-// import OurProcessIllustration from "./OurProcessIllustration.tsx";
+import Picture from "../utils/Picture";
 
 import "./OurServices.scss";
 import GlobalExpansion from "./GlobalExpansion.svg";
@@ -20,7 +20,7 @@ export default () => (
       eveniet aliquam alias?
     </p>
     <figure class="animate-in">
-      <img src="/images/consulting01.png" alt="illustration" />
+      <Picture src="/images/consulting01.png" alt="illustration" />
       <figcaption>
         <GlobalExpansion />
         <h4>Global Expansion</h4>
@@ -34,7 +34,7 @@ export default () => (
       </figcaption>
     </figure>
     <figure class="animate-in">
-      <img src="/images/consulting02.png" alt="illustration" />
+      <Picture src="/images/consulting02.png" alt="illustration" />
       <figcaption>
         <RetailMedia />
         <h4>Retail Media</h4>
@@ -48,7 +48,7 @@ export default () => (
       </figcaption>
     </figure>
     <figure class="animate-in">
-      <img src="/images/consulting03.png" alt="illustration" />
+      <Picture src="/images/consulting03.png" alt="illustration" />
       <figcaption>
         <Technology />
         <h4>Technology</h4>
