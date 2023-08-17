@@ -8,7 +8,6 @@ h2:first-of-type {
 }
 
 section {
-
   &:nth-child(2n + 2),
   &:nth-child(2n + 3) {
     // background-color: unset;
@@ -33,7 +32,6 @@ section#case-studies {
 }
 
 .cover {
-
   &,
   & img {
     @extend %cover;
@@ -74,7 +72,7 @@ figure.intro {
     max-width: 1200px;
     margin: auto;
 
-    &>* {
+    & > * {
       display: block;
       width: 100%;
       margin: auto;
@@ -187,12 +185,7 @@ section.key-figures {
   }
 }
 
-
-img {
-  border-color: red;
-  border-style: solid;
-  border-width: 15px;
-}
-picture img, img[src$="svg"] {
-  border-style: none;
+:not(picture) > img:not([src$=".svg"]) {
+  outline: solid 1rem cyan;
+  filter: invert(1);
 }
