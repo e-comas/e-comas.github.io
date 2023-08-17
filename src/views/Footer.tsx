@@ -17,22 +17,27 @@ import NavLink from "../utils/NavLink.tsx";
 
 import "runtime:./footer_addresses.ts";
 import "./footer.scss";
+import { CSSProperties } from "react";
 
 export default () => (
   <footer>
-    <div class="free-consultation">
-      <div>
-      <strong>Request a free consultation</strong>
-      <br />
-      <h1>Get in Touch Today</h1>
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-      luctus nec ullamcorper mattis, pulvinar dapibus leo.
-      <br />
-      <br />
-      <FontAwesomeIcon icon={faEnvelopeOpen as IconProp} color="gold" />
-      hello@ecomas.com
-      </div>
+    <figure class="free-consultation">
+      <figcaption>
+        <strong>Request a free consultation</strong>
+        <h1>Get in Touch Today</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <a href="mailto:hello@ecomas.com">
+          <FontAwesomeIcon
+            icon={faEnvelopeOpen as IconProp}
+            color="gold"
+            style={{"margin-right":"1ch"} as CSSProperties}
+          />
+          hello@ecomas.com
+        </a>
+      </figcaption>
       <form>
         <input placeholder="Name"></input>
         <input type="email" placeholder="Email"></input>
@@ -41,7 +46,7 @@ export default () => (
         <textarea placeholder="Message"></textarea>
         <input type="submit" value="Contact Us" class="submit"></input>
       </form>
-    </div>
+    </figure>
     <hr />
     <div class="upper-footer">
       <img
