@@ -33,8 +33,8 @@ export default (
             global expansion, technological infrastructure and cutting edge
             media campaigns.
           </p>
-          <a href="/services.html" class="cta">
-            Our services →
+          <a href="#our-services" class="cta">
+            Our services
           </a>
         </figcaption>
         <img src="images/Earth.svg"></img>
