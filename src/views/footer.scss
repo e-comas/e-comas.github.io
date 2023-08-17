@@ -2,31 +2,32 @@
 
 .free-consultation {
   display: flex;
-  flex-direction: line;
+  flex-direction: column;
+  @media screen and (min-width: 800px) {
+    flex-direction: row;
+  }
   width: 100%;
   max-width: $body-max-width;
   padding: 1rem;
-
-  @media screen and (max-width: 800px) {
-    flex-direction: column;
-  }
-
-  strong {
-    color: $green;
-  }
-
+  margin: auto;
+  
   figcaption {
     padding: 1rem;
     display: grid;
     gap: 1rem;
+    margin: auto;
+    strong {
+      color: $green;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 
-  a {
-    color: black;
-    text-decoration: none;
-  }
 
   form {
+    margin: auto;
     display: block;
     border-radius: 20px;
     padding: 2rem;
