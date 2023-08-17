@@ -29,7 +29,7 @@ a.skip-nav {
   @extend %button;
 
   position: absolute;
-  transform: translateY(-150%);
+  transform: translateY(-170%);
   left: 0.5rem;
   border-radius: 0 0 $border-radius $border-radius;
   transition: transform 300ms ease-in;
@@ -55,6 +55,7 @@ a.skip-nav {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(101, 214, 190); /* Replace with your specific color */
   @media screen and (min-width: $breakpoint) {
     position: fixed;
