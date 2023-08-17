@@ -33,18 +33,23 @@ export default () => (
           <FontAwesomeIcon
             icon={faEnvelopeOpen as IconProp}
             color="gold"
-            style={{"margin-right":"1ch"} as CSSProperties}
+            style={{ "margin-right": "1ch" } as CSSProperties}
           />
           hello@ecomas.com
         </a>
       </figcaption>
       <form>
-        <input placeholder="Name"></input>
-        <input type="email" placeholder="Email"></input>
-        <input type="tel" placeholder="Phone number"></input>
-        <input placeholder="Company"></input>
-        <textarea placeholder="Message"></textarea>
-        <input type="submit" value="Contact Us" class="submit"></input>
+        <input placeholder="Name" name="name"></input>
+        <input type="email" placeholder="Email" name="email"></input>
+        <input
+          type="tel"
+          placeholder="Phone number"
+          name="phone"
+          pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
+        ></input>
+        <input placeholder="Company" name="company"></input>
+        <textarea placeholder="Message" name="message"></textarea>
+        <input type="submit" value="Contact Us"></input>
       </form>
     </figure>
     <hr />

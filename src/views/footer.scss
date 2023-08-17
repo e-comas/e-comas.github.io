@@ -57,7 +57,7 @@
       padding-top: 0.5rem;
     }
 
-    .submit {
+    input[type=submit] {
       @extend %button;
       border-radius: 15px;
       height: 3rem;
