@@ -8,22 +8,23 @@ import copyAssets from "./postcss-copy-assets.mjs";
 
 import { INPUT_DIR, OUTPUT_DIR } from "./prod-config.mjs";
 import createHash from "./prod-hash.mjs";
+import { pathToFileURL } from "node:url";
 
 const cache = new WeakMap();
 export default async function sass2css(sassFiles, inlineStyles) {
   const cachedValue = cache.get(sassFiles);
   if (cachedValue != null) return cachedValue;
-
-  const sassResult = sass.renderSync({
-    data: sassFiles
-      .map((path) => `@use ${JSON.stringify(path)}`)
+  const sassResult = sass.compileString(
+    sassFiles
+      .map((path) => `@use ${JSON.stringify(pathToFileURL(path))}`)
       .concat(
         Object.entries(inlineStyles).filter(([file]) =>
           sassFiles.some((sassFile) => sassFile.endsWith(file))
         )
       )
       .join(";"),
-  });
+    { url: INPUT_DIR }
+  );
 
   const { css } = await postcss([
     cssnano({
