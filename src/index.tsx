@@ -26,7 +26,7 @@ export default (
       <figure class="intro animate-in">
         <figcaption>
           <h5>The boutique agency you need to thrive on</h5>
-          <img src="images/partners/minified-anim.svg"></img>
+          <img src="images/partners/anim.svg"></img>
           <p>
             Let <EComas />, a global full service <ECommerce /> agency, help
             your brand grow on Amazon and other marketplaces through strategic
