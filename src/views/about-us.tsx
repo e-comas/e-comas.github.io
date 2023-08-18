@@ -1,6 +1,5 @@
 import { h } from "@aduh95/async-jsx";
 
-import Picture from "../utils/Picture.tsx";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faChess } from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +12,7 @@ import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.tsx"
 export default () => (
   <ElementWithBackgroundImage
     tagName="section"
-    src="https://ecomas.elhadjseck.com/wp-content/uploads/2023/05/Ecomma-b2.jpg"
+    src="images/team/Ecomma-b2.jpg"
     class="about-us"
   >
     <h2>About us</h2>
