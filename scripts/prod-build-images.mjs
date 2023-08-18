@@ -135,7 +135,10 @@ export async function optimizeMatrix(src, sizes) {
       break;
   }
 
-  const fileContent = await fs.readFile(url);
+  const fileContent = await fs.readFile(url).catch((err) => {
+    err.cause = url;
+    throw err;
+  });
   const fileHash = createHash(fileContent, "base64");
   const image =
     originalCodec === "gif"
