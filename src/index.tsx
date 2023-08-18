@@ -26,7 +26,7 @@ export default (
       <figure class="intro animate-in">
         <figcaption>
           <h5>The boutique agency you need to thrive on</h5>
-          <img src="images/partners/anim.svg"></img>
+          <img src="/images/partners/anim.svg"></img>
           <p>
             Let <EComas />, a global full service <ECommerce /> agency, help
             your brand grow on Amazon and other marketplaces through strategic
@@ -37,7 +37,7 @@ export default (
             Our services
           </a>
         </figcaption>
-        <img src="images/Earth.svg"></img>
+        <img src="/images/Earth.svg"></img>
       </figure>
       {/* <div class="video-container" onclick={() => showVideo()} id="video-player">
         <div></div>
@@ -45,7 +45,7 @@ export default (
       <div class="video-container">
         <VideoEmbedLink
           tagName="div"
-          previewImage="images/team-picture-EU.jpg"
+          previewImage="/images/team-picture-EU.jpg"
           videoId="vjGxQNji05U"
         />
       </div>

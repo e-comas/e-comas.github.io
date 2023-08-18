@@ -12,7 +12,7 @@ import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.tsx"
 export default () => (
   <ElementWithBackgroundImage
     tagName="section"
-    src="images/team/Ecomma-b2.jpg"
+    src="/images/team/Ecomma-b2.jpg"
     class="about-us"
   >
     <h2>About us</h2>

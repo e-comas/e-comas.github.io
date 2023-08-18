@@ -45,19 +45,19 @@ export default (
         </li>
         <li style={"color:#A2D385" as any}>
           <div aria-hidden="true" class="icon-wrapper">
-            <img src="images/icons/price-tag.svg" alt="" />
+            <img src="/images/icons/price-tag.svg" alt="" />
           </div>
           <span>Is my price competitive enough to win the sale?</span>
         </li>
         <li style={"color:#85D4A1" as any}>
           <div aria-hidden="true" class="icon-wrapper">
-            <img src="images/icons/doc-approved.svg" alt="" />
+            <img src="/images/icons/doc-approved.svg" alt="" />
           </div>
           <span>Do my product reviews reflect a positive experience?</span>
         </li>
         <li style={"color:#69D5BD" as any}>
           <div aria-hidden="true" class="icon-wrapper">
-            <img src="images/icons/money-graph.svg" alt="" />
+            <img src="/images/icons/money-graph.svg" alt="" />
           </div>
           <span>
             Has the market share increased and am I gaining category share?
