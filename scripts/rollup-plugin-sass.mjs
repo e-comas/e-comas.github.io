@@ -1,5 +1,5 @@
 import { fileURLToPath, pathToFileURL } from "node:url";
-import * as sass from "sass";
+import sass2css from "./dev-build-sass.mjs";
 
 const PLUGIN_HELPER = "rollup-plugin:sass-createStyleElement";
 
@@ -31,19 +31,10 @@ export default function plugin() {
       if (id === PLUGIN_HELPER) {
         return `export default ${createStyleElement};`;
       } else if (id.endsWith(".scss")) {
-        return new Promise((resolve, reject) =>
-          sass.render(
-            {
-              file: id,
-              sourceMap: "true",
-              sourceMapEmbed: true,
-            },
-            (err, result) => (err ? reject(err) : resolve(result))
-          )
-        ).then(
-          ({ css }) =>
+        return sass2css(id).then(
+          (css) =>
             `import helper from "${PLUGIN_HELPER}";export default helper(${JSON.stringify(
-              css.toString()
+              css
             )},${JSON.stringify(id)})`
         );
       }

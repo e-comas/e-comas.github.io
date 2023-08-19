@@ -37,12 +37,12 @@ export const startServer = () =>
     }
   );
 
-export const refreshBrowser = () => {
+export const refreshBrowser = (file) => {
   const OPEN = 1;
   for (const wsConnection of connections) {
     if (wsConnection.readyState === OPEN) {
       console.log("Sending socket to refresh browser");
-      wsConnection.send("refresh");
+      wsConnection.send(file);
     }
   }
   return true;

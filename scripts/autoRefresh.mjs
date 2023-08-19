@@ -27,7 +27,22 @@ const onClose = () => {
 };
 
 // Listen for messages to reload the page
-socket.addEventListener("message", () => {
+socket.addEventListener("message", (message) => {
+  if (message.data.endsWith(".scss")) {
+    const style = document.head.querySelector(
+      `style[data-file=${JSON.stringify(message.data)}]`
+    );
+    if (style) {
+      fetch("/sass?file=" + encodeURIComponent(message.data)).then(
+        async (response) => {
+          if (response.ok) {
+            style.textContent = await response.text();
+          }
+        }
+      );
+      return;
+    }
+  }
   socket.removeEventListener("close", onClose);
   window.sessionStorage.setItem(SCROLL_POSITION_STORAGE, window.scrollY);
   window.requestAnimationFrame(reloadPage);

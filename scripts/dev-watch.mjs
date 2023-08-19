@@ -1,4 +1,5 @@
 import { watch } from "node:fs/promises";
+import { fileURLToPath } from "node:url";
 
 import { INPUT_DIR } from "./dev-config.mjs";
 import { sendRebuildSignal } from "./dev-build-js-from-worker.mjs";
@@ -18,7 +19,7 @@ for await (const { eventType, filename } of watcher) {
       if (antiReboundForSameFile === filename) antiReboundForSameFile = null;
     }, 3000);
     antiReboundForAnyFile = setTimeout(() => {
-      refreshBrowser();
+      refreshBrowser(fileURLToPath(new URL(filename, INPUT_DIR)));
       antiReboundForAnyFile = null;
     }, 90);
   }

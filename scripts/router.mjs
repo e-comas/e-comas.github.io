@@ -5,6 +5,7 @@ import getRenderedHTML from "./dev-build-html.mjs";
 import buildJS from "./dev-build-js-from-worker.mjs";
 import { HTML_TEMPLATE_FILE_NAME } from "./dev-config.mjs";
 import buildAnimatedImage from "./dev-build-animated-images.mjs";
+import sass2css from "./dev-build-sass.mjs";
 
 const showErrorOnBrowser = function (errorMessage) {
   const d = document.createElement("dialog");
@@ -42,6 +43,22 @@ export default async function router(req, res) {
     res.statusCode = 404;
     res.end("Virtual module, can't load anything");
     return;
+  }
+
+  if (req.url.startsWith("/sass?file=")) {
+    const url = new URL(req.url, "root://");
+    res.setHeader("Cache-Control", "no-store");
+    sass2css(url.searchParams.get("file")).then(
+      (css) => {
+        res.setHeader("Content-Type", "text/css");
+        res.end(css);
+      },
+      (e) => {
+        console.error(e);
+        res.statusCode = 500;
+        res.end();
+      }
+    );
   }
 
   if (req.url.startsWith("/src/") || req.url.startsWith("/node_modules/")) {
