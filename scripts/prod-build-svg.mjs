@@ -1,9 +1,9 @@
 const config = {
   plugins: [
     {
-      name: "preset-default",
+      name: "cleanupIds",
       params: {
-        overrides: {},
+        preservePrefixes: ["t"],
       },
     },
   ],
