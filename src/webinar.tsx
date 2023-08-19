@@ -20,6 +20,15 @@ export default (
     <Header />
     <Breadcrumbs />
     <main id="main-content">
+      <div class="hero">
+        <h1> Webinar</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
+          eget erat lacinia pretium. Donec non imperdiet odio, ullamcorper
+          gravida nunc.
+        </p>
+        <a href="TODO" class ="cta"> Register Now</a>
+      </div>
       <h2>Webinars</h2>
       {"{% if site.tags.Webinar.length != 0 %}"}
       <article>
