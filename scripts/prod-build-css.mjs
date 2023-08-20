@@ -32,6 +32,7 @@ export default async function sass2css(sassFiles, inlineStyles) {
         "advanced",
         {
           reduceIdents: false,
+          cssDeclarationSorter: false,
         },
       ],
     }),
