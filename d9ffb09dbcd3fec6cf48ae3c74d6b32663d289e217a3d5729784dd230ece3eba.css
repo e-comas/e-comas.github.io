@@ -1,0 +1,1 @@
+.breadcrumbs{list-style:none;display:flex;font-family:Source Sans Pro,Source Sans Pro-fallback,sans-serif;font-size:.55rem;letter-spacing:.175em;text-transform:uppercase;font-weight:700}.breadcrumbs li:not(:last-child):after{content:">";padding:1ch}.breadcrumbs a{text-decoration:none;color:inherit}
