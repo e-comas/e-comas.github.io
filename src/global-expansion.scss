@@ -1,0 +1,58 @@
+.title {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  min-height: 500px;
+}
+
+.made-easy {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1rem;
+  figcaption {
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    flex-direction: column;
+    gap: 1.5rem;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .picture-wrapper {
+    position: relative;
+    margin: 0;
+    min-height: 20rem;
+    overflow: hidden;
+    picture {
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: auto;
+
+    & > * {
+      display: block;
+      width: 100%;
+      margin: auto;
+    }
+    .picture-wrapper {
+      min-height: unset;
+      max-height: 100%;
+      height: auto;
+    }
+  }
+}
