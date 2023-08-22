@@ -27,7 +27,7 @@ export default (props: ElementWithBackgroundImageProps, children: any[]) => {
       <picture class="background" aria-hidden="true">
         <img src={props.src} alt="background" />
       </picture>,
-      ...children,
+      ...children.splice(0),
     ]
   ) as JSX.Element;
 };
