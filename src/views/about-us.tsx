@@ -21,36 +21,18 @@ export default () => (
       Why <EComas />?
     </h3>
     <div role="list">
-      <section role="listitem" class="animatable">
-        <FontAwesomeIcon size="3x" icon={faChess as IconProp} />
-        <h4>Benefit</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure
-          assumenda eius repudiandae reprehenderit sequi minus, blanditiis,
-          possimus distinctio et sint, numquam corporis obcaecati dicta deleniti
-          explicabo. Et, voluptates. Dolorem.
-        </p>
-      </section>
-      <section role="listitem" class="animatable">
-        <FontAwesomeIcon size="3x" icon={faChess as IconProp} />
-        <h4>Benefit</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure
-          assumenda eius repudiandae reprehenderit sequi minus, blanditiis,
-          possimus distinctio et sint, numquam corporis obcaecati dicta deleniti
-          explicabo. Et, voluptates. Dolorem.
-        </p>
-      </section>
-      <section role="listitem" class="animatable">
-        <FontAwesomeIcon size="3x" icon={faChess as IconProp} />
-        <h4>Benefit</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure
-          assumenda eius repudiandae reprehenderit sequi minus, blanditiis,
-          possimus distinctio et sint, numquam corporis obcaecati dicta deleniti
-          explicabo. Et, voluptates. Dolorem.
-        </p>
-      </section>
+      <ListElement
+        title="Benefit"
+        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+      />
+      <ListElement
+        title="Benefit"
+        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+      />
+      <ListElement
+        title="Benefit"
+        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+      />
     </div>
     <a href="about:blank" class="cta animatable">
       More about us
