@@ -8,11 +8,12 @@ import { EComas } from "../views/eWords.tsx";
 import "./about-us.scss";
 import "runtime:./about-us-runtime.ts";
 import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.tsx";
+import ListElement from "./ListElement.tsx";
 
 export default () => (
   <ElementWithBackgroundImage
     tagName="section"
-    src="/images/team/Ecomma-b2.jpg"
+    src="/images/Ecomma-b2.jpg"
     class="about-us"
   >
     <h2>About us</h2>
