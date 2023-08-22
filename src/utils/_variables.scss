@@ -91,3 +91,8 @@ $animationDuration: 300ms;
     min-height: 500px;
   }
 }
+
+:not(picture) > img:not([src$=".svg"]), img:not([src^="/"]) {
+  outline: solid 1rem cyan;
+  filter: invert(1);
+}
