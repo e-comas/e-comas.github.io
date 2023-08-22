@@ -2,6 +2,7 @@ import { h } from "@aduh95/async-jsx";
 
 import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
+import Hero from "./views/hero.tsx";
 import Footer from "./views/Footer.tsx";
 import Testimonies from "./views/Testimonies.tsx";
 import AboutUs from "./views/about-us.tsx";
@@ -23,22 +24,19 @@ export default (
   <Body>
     <Header />
     <main id="main-content">
-      <figure class="intro animate-in">
-        <figcaption>
-          <h5>The boutique agency you need to thrive on</h5>
-          <img src="/images/partners/anim.svg"></img>
-          <p>
-            Let <EComas />, a global full service <ECommerce /> agency, help
-            your brand grow on Amazon and other marketplaces through strategic
-            global expansion, technological infrastructure and cutting edge
-            media campaigns.
-          </p>
-          <a href="#our-services" class="cta">
-            Our services
-          </a>
-        </figcaption>
-        <img src="/images/Earth.svg"></img>
-      </figure>
+      <Hero class="animate in">
+        <h5>The boutique agency you need to thrive on</h5>
+        <img src="/images/partners/anim.svg"></img>
+        <p>
+          Let <EComas />, a global full service <ECommerce /> agency, help your
+          brand grow on Amazon and other marketplaces through strategic global
+          expansion, technological infrastructure and cutting edge media
+          campaigns.
+        </p>
+        <a href="#our-services" class="cta">
+          Our services
+        </a>
+      </Hero>
       {/* <div class="video-container" onclick={() => showVideo()} id="video-player">
         <div></div>
       </div> */}
@@ -49,7 +47,6 @@ export default (
           videoId="vjGxQNji05U"
         />
       </div>
-
       {/* <section class="area-of-expertise">
         <figure>
           <Picture src="/images/expertise_area.png" alt="" lossless />
@@ -62,18 +59,13 @@ export default (
           </figcaption>
         </figure>
       </section> */}
-
       <OurServices />
-
       <section class="fourSeventhThreeSeventh">
         <Picture src="/images/Banner3.1 Testimonials 3x .png" alt="" />
         <Picture src="/images/Banner3.2 Testimonials 3x .png" alt="" />
       </section>
-
       <Testimonies withBlock />
-
       <AboutUs />
-
       {/* <section class="news">
         <h3>Our latest news</h3>
 
@@ -118,7 +110,6 @@ export default (
           The news
         </a>
       </section> */}
-
       <ElementWithBackgroundImage
         tagName="section"
         src="/images/Banner6 3x .png"
@@ -137,7 +128,6 @@ export default (
           <span>advertising campaigns handled</span>
         </p>
       </ElementWithBackgroundImage>
-
       <Partners />
       <TeamCertifications />
     </main>

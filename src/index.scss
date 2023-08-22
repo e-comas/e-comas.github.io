@@ -38,47 +38,6 @@ section#case-studies {
   }
 }
 
-figure.intro {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 0;
-
-  p {
-    text-align: justify;
-  }
-
-  .cta {
-    @extend %button;
-    background-color: $gold;
-  }
-
-  figcaption {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    img {
-      max-height: 8rem;
-      width: auto;
-      margin-right: auto;
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: auto;
-
-    & > * {
-      display: block;
-      width: 100%;
-      margin: auto;
-    }
-  }
-}
 
 .video-container {
   overflow: hidden;
@@ -183,9 +142,4 @@ section.key-figures {
     line-height: 3rem;
     font-variant-numeric: tabular-nums;
   }
-}
-
-:not(picture) > img:not([src$=".svg"]), img:not([src^="/"]) {
-  outline: solid 1rem cyan;
-  filter: invert(1);
 }
