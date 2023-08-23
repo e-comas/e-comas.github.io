@@ -13,6 +13,9 @@ import "./views/animate-in.scss";
 import "runtime:./views/animate-in.ts";
 import WhatWeDo from "./views/what-we-do.tsx";
 import Picture from "./utils/Picture.tsx";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default (
   <Body title="Global Expansion">
@@ -26,6 +29,7 @@ export default (
       </p>
       <a href="./contact.html" class="cta">
         Book a Call
+        <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>
     </Hero>
     <figure class="made-easy">
@@ -44,7 +48,7 @@ export default (
           relax with our hassle-free 360° turnkey solution.
         </p>
       </figcaption>
-      <Picture src="/images/pencil.jpg" alt=""/>
+      <Picture src="/images/pencil.jpg" alt="" />
     </figure>
     <WhatWeDo />
 

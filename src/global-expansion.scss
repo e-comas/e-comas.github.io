@@ -5,6 +5,10 @@
 
 .intro {
   min-height: 500px;
+  padding: 1rem;
+  .cta > svg {
+    margin-left: 0.5rem;
+  }
 }
 
 .made-easy {
