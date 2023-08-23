@@ -1,6 +1,6 @@
 import { h } from "@aduh95/async-jsx";
 
-import "./ListElement.scss"
+import "./ListElement.scss";
 
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import type { IconProp } from "@fortawesome/fontawesome-svg-core";
@@ -13,13 +13,25 @@ interface Props
   > {
   title: string;
   desc: string;
+  centered?: boolean;
+  invertSVG?: boolean;
   icon?: IconProp;
 }
 
-export default (props: Props | undefined) => (
-  <section role="listitem" class="animatable card">
-    <FontAwesomeIcon size="3x" icon={props?.icon || (faChess as IconProp)} />
-    <h4>{props?.title}</h4>
-    <p>{props?.desc}</p>
+export default (props: Props | undefined, children: JSX.Element[]) => (
+  <section
+    role="listitem"
+    class={
+      "animatable card" + (props?.centered ?? true ? " centered_card" : "")
+    }
+  >
+    <FontAwesomeIcon
+      size="3x"
+      icon={props?.icon || (faChess as IconProp)}
+      class={props?.invertSVG ?? false ? "inverted_svg" : ""}
+    />
+    <h4 id="title">{props?.title}</h4>
+    <p id="desc">{props?.desc}</p>
+    {...children.splice(0)}
   </section>
 );

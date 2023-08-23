@@ -13,11 +13,17 @@
     border-radius: 50%;
     color: $white;
     box-shadow: 0px 0px 0px 1rem $golder;
-    margin: 1rem auto;
+    margin: 1rem 0;
+    max-width: 3rem;
+  }
+  
+  .inverted_svg {
+    background-color: $white;
+    color: $golder;
+    box-shadow: 0px 0px 0px 1rem $white;
   }
 
-  h4 {
-    text-align: center;
+  #title {
     margin-block-start: 0.5rem;
     margin-block-end: 1rem;
     font-size: 2rem;
@@ -30,8 +36,17 @@
     text-transform: none;
   }
 
-  p {
-    text-align: center;
+  #desc {
     text-wrap: balance;
+    color: black;
+  }
+}
+
+.centered_card {
+  & > svg {
+    margin: 1rem auto;
+  }
+  #title #desc {
+    text-align: center;
   }
 }
