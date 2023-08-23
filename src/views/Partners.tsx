@@ -4,9 +4,18 @@ import Picture from "../utils/Picture.tsx";
 
 import "./Partners.scss";
 
-export default () => (
+interface Props
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLElement>,
+    HTMLElement
+  > {
+  title?: string;
+}
+
+export default (props: Props | undefined, children: JSX.Element[]) => (
   <section class="partners">
-    <h2>Partners we trust</h2>
+    <h2>{props?.title ?? "Partners we trust"}</h2>
+    {...children.splice(0)}
     <div role="list">
       <a role="listitem" href="salsify.html">
         <img alt="Salsify" src="/images/partners/salsify.svg" />
