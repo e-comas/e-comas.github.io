@@ -65,25 +65,21 @@ export default (
         <div role="list">
           <FlipCard
             title="Define Strategy"
-            number={1}
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
         eget erat lacinia pretium"
           />
           <FlipCard
             title="Manage Operations"
-            number={2}
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
         eget erat lacinia pretium"
           />
           <FlipCard
             title="Grow Traffic"
-            number={3}
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
         eget erat lacinia pretium"
           />
           <FlipCard
             title="Drive Conversion"
-            number={4}
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
         eget erat lacinia pretium"
           />

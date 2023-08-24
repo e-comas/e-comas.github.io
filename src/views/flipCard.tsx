@@ -9,17 +9,11 @@ interface Props
   > {
   title: string;
   desc: string;
-  number: number;
 }
 
 export default (props: Props | undefined) => (
   <div class="flip_card">
-    <div class="card_head">
-      <h1>
-        {props?.number}
-        <p>{props?.title}</p>
-      </h1>
-    </div>
+    <h5 class="card_head">{props?.title}</h5>
     <p class="card_tail">{props?.desc}</p>
   </div>
 );

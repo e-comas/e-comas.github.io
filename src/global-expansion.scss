@@ -65,6 +65,7 @@
 }
 
 #how-we-do-it {
+  counter-reset: card-number;
   padding: 2rem;
   text-align: center;
   display: flex;
