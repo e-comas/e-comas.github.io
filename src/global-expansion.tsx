@@ -64,7 +64,7 @@ export default (
         </p>
         <div role="list">
           <FlipCard
-            title="Define Startegy"
+            title="Define Strategy"
             number={1}
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
         eget erat lacinia pretium"
