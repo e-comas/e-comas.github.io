@@ -28,7 +28,7 @@ export default () => (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
-        <a href="about:blank" class="cta">
+        <a href="/global-expansion.html" class="cta">
           Discover more
         </a>
       </figcaption>
