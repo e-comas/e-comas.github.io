@@ -31,12 +31,15 @@ export default function plugin() {
       if (id === PLUGIN_HELPER) {
         return `export default ${createStyleElement};`;
       } else if (id.endsWith(".scss")) {
-        return sass2css(id).then(
-          (css) =>
-            `import helper from "${PLUGIN_HELPER}";export default helper(${JSON.stringify(
-              css
-            )},${JSON.stringify(id)})`
-        );
+        return sass2css(id).then((css) => {
+          css += String.raw`:not(picture) > img:not([src$=".svg"]), img:not([src^="/"]) {
+          outline: solid 1rem cyan;
+          filter: invert(1);
+        }`;
+          return `import helper from "${PLUGIN_HELPER}";export default helper(${JSON.stringify(
+            css
+          )},${JSON.stringify(id)})`;
+        });
       }
     },
   };
