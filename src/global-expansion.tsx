@@ -48,7 +48,7 @@ export default (
           relax with our hassle-free 360° turnkey solution.
         </p>
       </figcaption>
-      <Picture src="/images/pencil.jpg" alt="" />
+      <Picture src="/images/PENCIL.jpg" alt="" />
     </figure>
     <WhatWeDo />
 
