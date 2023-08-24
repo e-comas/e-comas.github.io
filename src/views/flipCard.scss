@@ -1,0 +1,83 @@
+@use "../utils/variables" as *;
+
+.flip_card {
+  position: relative;
+  max-width: 15rem;
+  margin: 1rem auto;
+  .card_head {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > * {
+      width: 100%;
+      height: 100%;
+    }
+    & > h1 {
+      position: relative;
+      margin-top: 2.5rem;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
+
+      font-size: 15rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: rgba($color: white, $alpha: 0.5);
+      & > p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) translateY(-1.25rem);
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/blurry.png");
+    background-size: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  .card_tail {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    background-color: $green;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  & > * {
+    transition-duration: 600ms;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .flip_card:hover > .card_head {
+    transform: perspective(1000px) RotateX(180deg);
+  }
+  .flip_card:not(:hover) > .card_tail {
+    transform: perspective(1000px) RotateX(-180deg);
+  }
+  .flip_card:hover > .card_tail:hover,
+  .flip_card:not(:hover) > .card_head {
+    transform: perspective(1000px) RotateX(0);
+  }
+}

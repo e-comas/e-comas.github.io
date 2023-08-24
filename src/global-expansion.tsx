@@ -13,6 +13,7 @@ import "./views/animate-in.scss";
 import "runtime:./views/animate-in.ts";
 import WhatWeDo from "./views/what-we-do.tsx";
 import Picture from "./utils/Picture.tsx";
+import FlipCard from "./views/flipCard.tsx";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
@@ -51,7 +52,39 @@ export default (
       <Picture src="/images/PENCIL.jpg" alt="" />
     </figure>
     <WhatWeDo />
-
+    <section id="how-we-do-it">
+      <h2>How We Do It</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
+        eget erat lacinia pretium
+      </p>
+      <div role="list">
+        <FlipCard
+          title="Define Startegy"
+          number={1}
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
+        eget erat lacinia pretium"
+        />
+        <FlipCard
+          title="Manage Operations"
+          number={2}
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
+        eget erat lacinia pretium"
+        />
+        <FlipCard
+          title="Grow Traffic"
+          number={3}
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
+        eget erat lacinia pretium"
+        />
+        <FlipCard
+          title="Drive Conversion"
+          number={4}
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
+        eget erat lacinia pretium"
+        />
+      </div>
+    </section>
     <Footer />
   </Body>
 ).then((e) => (document.body.append(e), yaml`layout: none`));
