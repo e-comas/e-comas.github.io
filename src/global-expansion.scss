@@ -1,17 +1,20 @@
+@use "./utils/variables" as *;
+
 .title {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
+.cta > svg {
+  margin-left: 0.5rem;
+}
+
 .intro {
   min-height: 500px;
   padding: 1rem;
-  .cta > svg {
-    margin-left: 0.5rem;
-  }
 }
 
-.made-easy {
+#made-easy {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -61,15 +64,14 @@
   }
 }
 
-
 #how-we-do-it {
   padding: 2rem;
-  background-color: #F5F7FC;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  & > div{
+  background-color: #f5f7fc;
+  & > div {
     display: flex;
     flex-direction: column;
     @media screen and (min-width: 1000px) {
@@ -80,5 +82,125 @@
     padding-right: 1rem;
     max-width: 1500px;
     margin: auto;
+  }
+}
+
+#see-the-results {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+
+  & > figure {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+    max-width: 1800px;
+    figcaption {
+      display: flex;
+      padding: 2rem 0 2rem 0;
+      flex-direction: column;
+      gap: 1.5rem;
+      p {
+        font-size: 1rem;
+      }
+      .cta {
+        margin-top: 1rem;
+        @extend %button;
+        background-color: $gold;
+        color: white;
+        font-size: 0.75rem;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+    @media screen and (min-width: 900px) {
+      flex-direction: row;
+      gap: 3rem;
+      figcaption {
+        margin: auto;
+        text-align: left;
+        .cta {
+          position: relative;
+          margin-left: 0;
+        }
+      }
+      .picture-wrapper {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+#blog {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  background-color: #f5f5f5;
+  article {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 100%;
+    min-height: 25rem;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    a,
+    a:visited,
+    a:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h3,
+    p {
+      letter-spacing: 0;
+      line-height: 1.5rem;
+      padding: 0 1ch;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      padding: 0 2rem 0 2rem;
+    }
+
+    & > h3 {
+      margin-left: 0;
+    }
+    .cta {
+      @extend %button;
+      background-color: $gold;
+      &:hover {
+        @extend %invertedCta;
+        color: $gold;
+      }
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+
+    & > a:first-child {
+      grid-row: 1;
+    }
+
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.02);
   }
 }
