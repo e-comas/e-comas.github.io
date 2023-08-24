@@ -64,6 +64,7 @@
     backface-visibility: hidden;
   }
   & > * {
+    border-radius: 0.5rem;
     transition-duration: 600ms;
     transition-property: transform;
     transition-timing-function: ease-in-out;
