@@ -24,11 +24,11 @@ export default (
   <Body title="Global Expansion">
     <Header />
     <Hero class="animate-in">
-      <h5 class="title">Grow your brand locally, faster</h5>
+      <h5 class="title">Global Expansion</h5>
       <p>
-        Wherever you are in the world, our experienced teams can help you reach
-        the major markets across North and South America, Europe, the Middle
-        East, and Asia.
+        Break into new markets and unlock more global sales with a clear
+        strategy and our international team of <ECommerce /> experts guiding you
+        every step of the way.
       </p>
       <a href="./contact.html" class="cta">
         Book a Call
@@ -41,16 +41,19 @@ export default (
         <figcaption>
           <h3>Global Growth Made Easy</h3>
           <p>
+            <EComas /> helps brands expand globally, faster. Wherever you are in
+            the world, we can help you reach the major markets across North and
+            South America, Europe, the Middle East, and Asia. We specialise in
+            helping ambitious brands like yours grow on Amazon and other online
+            marketplaces worldwide.
+          </p>
+          <h4>How do we make it happen?</h4>
+          <p>
             Our international teams comprise ex-brand directors, ex-Amazonians
             and operational experts who have successfully built brands for over
             a decade on Amazon and beyond. We speak the local languages and have
-            strong partnerships with key eCommerce players to drive your
+            strong partnerships with key <ECommerce /> players to drive your
             business forward on a global scale.
-          </p>
-          <p>
-            From account management and strategy to advertising and localisation
-            (plus everything in between!), we’ve got you covered. Sit back and
-            relax with our hassle-free 360° turnkey solution.
           </p>
         </figcaption>
         <Picture src="/images/PENCIL.jpg" alt="" />
@@ -59,29 +62,25 @@ export default (
       <section id="how-we-do-it">
         <h2>How We Do It</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
-          eget erat lacinia pretium
+          We combine strategic planning, data analysis and hands-on operational
+          work to help brands break into new and growing markets.
         </p>
         <div role="list">
           <FlipCard
             title="Define Strategy"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
-        eget erat lacinia pretium"
+            desc="We audit of your brand’s current eCommerce presence and work closely with you to set clear and measurable goals."
           />
           <FlipCard
             title="Manage Operations"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
-        eget erat lacinia pretium"
+            desc="From optimising product listings to handling logistics and VAT, we can manage your account on multiple platforms."
           />
           <FlipCard
             title="Grow Traffic"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
-        eget erat lacinia pretium"
+            desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximise ROI."
           />
           <FlipCard
             title="Drive Conversion"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
-        eget erat lacinia pretium"
+            desc="We use analytics tools to track key performance metrics, such as sales, traffic, conversion rates, and customer feedback."
           />
         </div>
       </section>
@@ -96,8 +95,10 @@ export default (
           <figcaption>
             <h3>Creating content for other countries</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              When expanding globally, the key to building trust in your brand
+              is good-quality localised content. Download our success story to
+              find out how we helped My Carry Potty grow its Amazon presence
+              internationally.
             </p>
             <a class="cta" href="TODO">
               Download

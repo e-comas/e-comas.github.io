@@ -11,48 +11,48 @@ export default () => (
     src="/images/Ecomma-b2.jpg"
     class="about-us"
   >
-    <h3>What We Do</h3>
+    <h3>Our Expertise</h3>
     <p>
-      From account management and strategy to advertising and localisation (plus
-      everything in between!), we’ve got you covered. Sit back and relax with
-      our hassle-free 360° turnkey solution.
+      From handling logistics and taxes to product translation and localisation,
+      we've got you covered. Sit back and relax with our hassle-free full
+      service solution.
     </p>
     <div role="list">
       <ListElement
         title="Strategy & Planning"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        desc="Learn what it takes to be successful on Amazon and in eCommerce. Once you’re up to speed, our experts help you define the best growth strategy for your brands and market."
       />
       <ListElement
         title="EU Expansion"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        desc="Don’t miss out on the huge opportunity that is Europe. Split into multiple countries, you’ll have to conquer them one by one but don’t worry; our native speakers will get you ready in no time."
       />
       <ListElement
         title="US Expansion"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        desc="The US is Amazon’s home base, which means the largest market to sell in. We’ve helped many brands expand from Europe or Asia to the US; let us help you thrive in this key market."
       />
       <ListElement
         title="Asia Expansion"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        desc="The Asian eCommerce market is massive, but with our local teams on hand, we can help you navigate these complex marketplaces and expand on Amazon in India, Singapore and Japan."
       />
       <ListElement
         title="RoW Expansion"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        desc="Want to expand in South America, South Africa or Australia? We work closely with trusted local partners that can help you reach and succeed in each corner of the world."
       />
       <ListElement
         title="Account Management"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        desc="We can manage the day-to-day aspects of your eCommerce account. From cataloguing to handling your retail media campaigns and analytics reporting, we’ve got you covered."
       />
       <ListElement
         title="Retail"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        desc="Use our Seller account and team of experts to import and sell your products in your name. The best part? We’ll take care of taxes and all the management of the account."
       />
       <ListElement
         title="Retail Media"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        desc="Let us handle your social media, search engine and marketplace advertising. We can also give you access to AMC (Amazon Marketing Cloud) and Amazon Marketing Stream to help you grow faster."
       />
       <ListElement
         title="Technology & Analytics"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        desc="Our multilingual team can target your strategy to drive sales in new markets and engage online shoppers worldwide with their knowledge of the nuances of different countries, languages and cultures."
       />
     </div>
     <a href="about:blank" class="cta animatable">
