@@ -32,9 +32,10 @@ export default (
         We make <ECommerce /> simple
       </h5>
       <p>
-        It’s no secret: selling on Amazon and other online marketplaces can be
-        tricky. we help brands grow faster box – can be an image background with
-        the text
+        It's no secret: selling online can be tricky. That's why, for over 10
+        years, we've been helping brands tackle seemingly "unmanageable"
+        challenges (hello, Amazon!) by breaking them down into smaller, more
+        manageable pieces to help you grow faster in <ECommerce />.
       </p>
       <a href="./contact.html" class="cta">
         Book a Call
@@ -74,9 +75,10 @@ export default (
             Today our experts coach brands and handle their accounts to
             sustainably grow their business and improve their agility in
             tackling everyday challenges with online retail. Working across
-            Amazon, Shopify, CDiscount, Veepee, Bol, Walmart and more, we get
-            you set up, we scale your business and make it profitable, handling
-            your account, content and advertising.
+            Amazon, Shopify, CDiscount, Veepee, Bol, Walmart and more, we scale
+            your business and make it profitable by combining global expansion,
+            retail media and data technology to create winning strategies that
+            help you shine in online retail.
             <br />
             Put simply, we help brands grow faster on <ECommerce /> – globally,
             quickly, across multiple online channels!
@@ -94,90 +96,90 @@ export default (
           Global full service <ECommerce /> agency
         </h2>
         <p>
-          Our international teams of ex-brand directors, ex-Amazonians and
-          operational experts help ambitious brands grow on Amazon and other
-          online marketplaces.
+          We make eCommerce simple with three pillars of full-service account
+          management to power your brand’s global growth across all major online
+          marketplaces.
         </p>
         <div role="list">
           <ListElement
             title={"Global expansion"}
             desc={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              "Our experts have successfully built brands for over a decade on Amazon and beyond. We speak the local languages and have strong partnerships with key eCommerce players to drive your business forward globally.              "
             }
             icon={faGem as IconProp}
             centered={false}
             invertSVG={true}
           >
             <a class="cta animate-once" href="TODO">
-              Discover more
+              Learn more
             </a>
           </ListElement>
           <ListElement
             title={"Retail Media"}
             desc={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              "We’re an Amazon-verified partner and Google Ads-certified agency, handling your advertising campaigns and leveraging the full capabilities of digital media platforms to expand your reach and grow your sales."
             }
             icon={faGem as IconProp}
             centered={false}
             invertSVG={true}
           >
             <a class="cta animate-once" href="TODO">
-              Discover more
+              Learn more
             </a>
           </ListElement>
           <ListElement
             title={"Data & Technology"}
             desc={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              "Get better visibility over your business and make growth-fuelling data-driven decisions with the latest tech, which automates processes and gives you a holistic view of customer habits, major trends and more."
             }
             icon={faGem as IconProp}
             centered={false}
             invertSVG={true}
           >
             <a class="cta animate-once" href="TODO">
-              Discover more
+              Learn more
             </a>
           </ListElement>
         </div>
       </section>
-      <Partners title="Our partners">
+      <Partners title="Some of our clients">
         <p>
-          <EComas /> is proud to work with brilliant partners across the{" "}
-          <ECommerce /> space, including
+          We work with major multinational brands to develop strong{" "}
+          <ECommerce /> strategies worldwide.
         </p>
       </Partners>
       <section id="get_to_know" class="section">
         <h2>Get To Know Us</h2>
         <p>
-          Some of the known industry stalwarts with proven experience have come
-          together to form team: e-Comas was born. Our team’s passion helps your
-          business grow by coaching you in Amazon’s Key Success Factors. Our
-          team comprises ex-brand directors, ex-Amazonians, and operational
-          experts to help you grow on Amazon.
+          We're a friendly bunch who love getting creative to solve problems in
+          unique ways. Our passion lies in helping our clients harness the power
+          of <ECommerce />, driving innovation and growth in the ever-evolving
+          digital landscape. And we work closely with you, taking the time to
+          understand your needs and tailoring our approach.
         </p>
         <div role="list">
           <ListElement
-            title={"Mission"}
+            title={"Our Mission"}
             desc={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              "To help brands thrive on the world's top online marketplaces, coaching you in the key success factors of eCommerce."
             }
             icon={faChartPie as IconProp}
             centered={false}
             invertSVG={true}
           />
           <ListElement
-            title={"Data & Technology"}
+            title={"Our Vision"}
             desc={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              "To be the most customer-centric eCommerce global agency in North America and Europe."
             }
             icon={faEye as IconProp}
             centered={false}
             invertSVG={true}
           />
           <ListElement
-            title={"Data & Technology"}
+            title={"Our Values"}
             desc={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+              "Entrepreneurship, Benevolence, Dedication, Optimism, and Integrity"
             }
             icon={faGem as IconProp}
             centered={false}
