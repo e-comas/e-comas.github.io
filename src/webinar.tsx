@@ -30,38 +30,6 @@ export default (
     </div>
     <Breadcrumbs />
     <main id="main-content">
-        {/* {"{% if site.tags.Webinar.length != 0 %}"}
-      <article>
-        <a href="{{ site.tags.Webinar[0].url }}">
-          <img
-            src="images/chess.svg"
-            alt="{{ site.tags.Webinar[0].thumbnail_alt }}"
-            loading="lazy"
-          />
-        </a>
-        <h3>
-          <a href="{{ site.tags.Webinar[0].url }}">
-            Amazon Advertising Metrics: Should ACoS Be Your North Star Metric?
-          </a>
-        </h3>
-        <time
-          dateTime={
-            "{{ site.tags.Webinar[0].date | date: '%Y-%m-%dT%H:%M:%S' }}"
-          }
-        >
-          {'{{ site.tags.Webinar[0].date | date: "%b %d, %Y" }}'}
-        </time>
-        <p>
-          A holistic approach is crucial for measuring the effectiveness of your
-          Amazon advertising campaigns. Join us for our next webinar with Amazon
-          Ads as Nella Argenziano, Head of Advertising at e-Comas, explains why.
-        </p>
-        <a href="{{ site.tags.Webinar[0].url }}" class="cta">
-          Register now
-        </a>
-      </article>
-      {"{% endif %}"} */}
-
       {"{% for webinar in site.tags.Webinar | slice: 0, 3 %}"}
       <article>
         <a href="{{ webinar.url }}">
