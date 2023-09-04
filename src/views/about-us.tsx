@@ -1,8 +1,5 @@
 import { h } from "@aduh95/async-jsx";
 
-import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
-import type { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faChess } from "@fortawesome/free-solid-svg-icons";
 import { EComas } from "../views/eWords.tsx";
 
 import "./about-us.scss";
@@ -34,8 +31,8 @@ export default () => (
         desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
       />
     </div>
-    <a href="about:blank" class="cta animatable">
-      More about us
+    <a href="/about-us.html" class="cta animatable">
+      More about us 
     </a>
   </ElementWithBackgroundImage>
 );
