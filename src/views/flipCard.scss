@@ -17,7 +17,7 @@
     align-items: center;
 
     &::before {
-      content: counter(card-number)" ";
+      content: counter(card-number) " ";
       position: absolute;
       margin-top: 0;
 
@@ -59,14 +59,29 @@
   }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .flip_card:hover > .card_head {
-    transform: perspective(1000px) RotateX(180deg);
+  @media not (hover: none) {
+    .flip_card:hover > .card_head {
+      transform: perspective(1000px) RotateX(180deg);
+    }
+    .flip_card:not(:hover) > .card_tail {
+      transform: perspective(1000px) RotateX(-180deg);
+    }
+    .flip_card:hover > .card_tail:hover,
+    .flip_card:not(:hover) > .card_head {
+      transform: perspective(1000px) RotateX(0);
+    }
   }
-  .flip_card:not(:hover) > .card_tail {
-    transform: perspective(1000px) RotateX(-180deg);
-  }
-  .flip_card:hover > .card_tail:hover,
-  .flip_card:not(:hover) > .card_head {
-    transform: perspective(1000px) RotateX(0);
+
+  @media (hover: none) {
+    .flip_card:active > .card_head {
+      transform: perspective(1000px) RotateX(180deg);
+    }
+    .flip_card:not(:active) > .card_tail {
+      transform: perspective(1000px) RotateX(-180deg);
+    }
+    .flip_card:active > .card_tail:active,
+    .flip_card:not(:active) > .card_head {
+      transform: perspective(1000px) RotateX(0);
+    }
   }
 }
