@@ -66,20 +66,23 @@
     .flip_card:not(:hover) > .card_tail {
       transform: perspective(1000px) RotateX(-180deg);
     }
-    .flip_card:hover > .card_tail:hover,
+    .flip_card:hover > .card_tail,
     .flip_card:not(:hover) > .card_head {
       transform: perspective(1000px) RotateX(0);
     }
   }
 
   @media (hover: none) {
+    .flip_card{
+      user-select: none;
+    }
     .flip_card:active > .card_head {
       transform: perspective(1000px) RotateX(180deg);
     }
     .flip_card:not(:active) > .card_tail {
       transform: perspective(1000px) RotateX(-180deg);
     }
-    .flip_card:active > .card_tail:active,
+    .flip_card:active > .card_tail,
     .flip_card:not(:active) > .card_head {
       transform: perspective(1000px) RotateX(0);
     }
