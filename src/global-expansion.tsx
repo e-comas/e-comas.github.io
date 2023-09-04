@@ -113,7 +113,7 @@ export default (
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
           eget erat lacinia pretium.
         </p>
-        {"{% for post in site.tags.TODO | slice: 0, 3 %}"}
+        {"{% for post in site.tags.Expansion | slice: 0, 3 %}"}
         <article>
           <a href="{{ post.url }}">
             <img
