@@ -18,7 +18,6 @@ import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import { faDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { EComas, ECommerce } from "./views/eWords.tsx";
-import Blog from "./_layouts/blog.tsx";
 
 export default (
   <Body title="Global Expansion">
@@ -110,27 +109,29 @@ export default (
       <section id="blog">
         <h2>Blog</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
-          eget erat lacinia pretium.
+          Find out useful eCommerce tips and what's new in the Amazon world
+          relating to global expansion.
         </p>
-        {"{% for post in site.tags.Expansion | slice: 0, 3 %}"}
-        <article>
-          <a href="{{ post.url }}">
-            <img
-              src="{{ post.thumbnail }}"
-              alt="{{ post.thumbnail_alt }}"
-              loading="lazy"
-            />
-          </a>
-          <h3>
-            <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
-          </h3>
-          <p>{"{{ post.excerpt | escape }}"}</p>
-          <a href="{{ post.url }}" class="cta">
-            Read More
-          </a>
-        </article>
-        {"{% endfor %}"}
+        <div role="list">
+          {"{% for post in site.tags.Expansion | slice: 0, 3 %}"}
+          <article>
+            <a href="{{ post.url }}">
+              <img
+                src="{{ post.thumbnail }}"
+                alt="{{ post.thumbnail_alt }}"
+                loading="lazy"
+              />
+            </a>
+            <h3>
+              <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
+            </h3>
+            <p>{"{{ post.excerpt | escape }}"}</p>
+            <a href="{{ post.url }}" class="cta">
+              Read More
+            </a>
+          </article>
+          {"{% endfor %}"}
+        </div>
       </section>
     </main>
     <Footer />
