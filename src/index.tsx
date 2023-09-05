@@ -19,6 +19,9 @@ import TeamCertifications from "./views/TeamCertifications.tsx";
 
 import "./views/animate-in.scss";
 import "runtime:./views/animate-in.ts";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default (
   <Body>
@@ -33,13 +36,10 @@ export default (
           <EComas />, is the <em>full</em> service <ECommerce /> agency to help
           you get there.
         </p>
-        <a href="#our-services" class="cta">
-          Our services
+        <a href="/contact.html" class="cta">
+          Let's talk
         </a>
       </Hero>
-      {/* <div class="video-container" onclick={() => showVideo()} id="video-player">
-        <div></div>
-      </div> */}
       <div class="video-container">
         <VideoEmbedLink
           tagName="div"
@@ -47,69 +47,31 @@ export default (
           videoId="vjGxQNji05U"
         />
       </div>
-      {/* <section class="area-of-expertise">
-        <figure>
-          <Picture src="/images/expertise_area.png" alt="" lossless />
-          <figcaption>
-            <h3>Trust our amazing team</h3>
-            <p></p>
-            <a href="/experience.html" class="cta">
-              Meet with us
-            </a>
-          </figcaption>
-        </figure>
-      </section> */}
       <OurServices />
+      <Partners>
+        <p>
+          We work with the best partners to help you grow your eCommerce
+          business.
+        </p>
+      </Partners>
+      <AboutUs />
       <section class="fourSeventhThreeSeventh">
         <Picture src="/images/Banner3.1 Testimonials 3x .png" alt="" />
         <Picture src="/images/Banner3.2 Testimonials 3x .png" alt="" />
       </section>
       <Testimonies withBlock />
-      <AboutUs />
-      {/* <section class="news">
-        <h3>Our latest news</h3>
-
-        <article>
-          <time dateTime="2021-04-07T14:32:09Z">07.04.2021</time>
-          <h4>News headline title</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-            quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat
-            eum hic ex non. Maiores delectus nemo magni sunt quod et?
-          </p>
-          <a class="cta" href="">
-            Read more
-          </a>
-        </article>
-        <article>
-          <time dateTime="2021-04-07T14:32:09Z">07.04.2021</time>
-          <h4>News headline title</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-            quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat
-            eum hic ex non. Maiores delectus nemo magni sunt quod et?
-          </p>
-          <a class="cta" href="">
-            Read more
-          </a>
-        </article>
-        <article>
-          <time dateTime="2021-04-07T14:32:09Z">07.04.2021</time>
-          <h4>News headline title</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni
-            quos commodi sunt, expedita nesciunt maxime, doloribus, enim quaerat
-            eum hic ex non. Maiores delectus nemo magni sunt quod et?
-          </p>
-          <a class="cta" href="">
-            Read more
-          </a>
-        </article>
-
-        <a href="/news.html" class="cta inverted">
-          The news
+      <section class="partners">
+        <h2>Free White Paper</h2>
+        <strong> How to manage Amazon</strong>
+        <p>
+          Here’s our beginner’s guide to building a solid Amazon strategy,
+          managing your operations, creating content and growing traffic.
+        </p>
+        <a href="about:blank" class="cta">
+          Download <FontAwesomeIcon icon={faDownload as IconProp} />
         </a>
-      </section> */}
+      </section>
+
       <ElementWithBackgroundImage
         tagName="section"
         src="/images/Banner6 3x .png"
@@ -128,7 +90,6 @@ export default (
           <span>advertising campaigns handled</span>
         </p>
       </ElementWithBackgroundImage>
-      <Partners />
       <TeamCertifications />
     </main>
     <Footer />

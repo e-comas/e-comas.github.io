@@ -23,11 +23,11 @@ export default () => (
   <footer>
     <figure class="free-consultation">
       <figcaption>
-        <strong>Request a free consultation</strong>
-        <h1>Get in Touch Today</h1>
+        <strong>Let’s talk!</strong>
+        <h1>Book a call today</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          Reach out to our team to find out how we can help you grow your brand
+          faster, globally, across all the leading online channels.
         </p>
         <a href="mailto:hello@ecomas.com">
           <FontAwesomeIcon

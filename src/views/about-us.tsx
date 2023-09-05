@@ -6,6 +6,8 @@ import "./about-us.scss";
 import "runtime:./about-us-runtime.ts";
 import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.tsx";
 import ListElement from "./ListElement.tsx";
+import { faDroplet, faGlobe, faMedal } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default () => (
   <ElementWithBackgroundImage
@@ -19,20 +21,23 @@ export default () => (
     </h3>
     <div role="list">
       <ListElement
-        title="Benefit"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        icon={faGlobe as IconProp}
+        title="Global perspective"
+        desc="Our multilingual teams across Europe, North America and India can help you navigate the complexities of global markets, including localisation, international SEO and cross-border logistics."
       />
       <ListElement
-        title="Benefit"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        icon={faMedal as IconProp}
+        title="Specialist Support"
+        desc="With decades of combined experience helping brands succeed in eCommerce, we have the expertise to grow your business sustainably and help you tackle everyday challenges with online retail."
       />
       <ListElement
-        title="Benefit"
-        desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iure assumenda eius repudiandae reprehenderit sequi minus, blanditiis, possimus distinctio et sint, numquam corporis obcaecati dicta deleniti explicabo. Et, voluptates. Dolorem."
+        icon={faDroplet as IconProp}
+        title="Passionate Team"
+        desc="We live and breathe eCommerce, keeping abreast of all the latest industry trends and developments to ensure we find the best solutions and deliver the highest standard of service to our clients."
       />
     </div>
     <a href="/about-us.html" class="cta animatable">
-      More about us 
+      More about us
     </a>
   </ElementWithBackgroundImage>
 );

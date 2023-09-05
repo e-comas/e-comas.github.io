@@ -14,7 +14,7 @@ interface Props
 
 export default (props: Props | undefined, children: JSX.Element[]) => (
   <section class="partners">
-    <h2>{props?.title ?? "Partners we trust"}</h2>
+    <h2>{props?.title ?? "Our Partners"}</h2>
     {...children.splice(0)}
     <div role="list">
       <a role="listitem" href="salsify.html">
