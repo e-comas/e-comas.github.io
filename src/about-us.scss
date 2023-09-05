@@ -195,3 +195,10 @@ main > :nth-child(even) {
   padding: 1rem;
   font-size: 1rem;
 }
+
+#line-EC {
+  margin: auto;
+  img {
+    filter: drop-shadow(3px 5px 4px rgb(0, 0, 0, 0.2));
+  }
+}

@@ -191,6 +191,9 @@ export default (
           Meet Our team
         </a>
       </section>
+      {/* <figure id="line-EC">
+        <img src="/images/line-EC-WIP.svg" />
+      </figure> */}
     </main>
     <Footer />
   </Body>
