@@ -58,6 +58,7 @@ export default (
         <Picture src="/images/PENCIL.jpg" alt="" />
       </figure>
       <WhatWeDo />
+      </main>
       <section id="how-we-do-it">
         <h2>How We Do It</h2>
         <p>
@@ -133,7 +134,6 @@ export default (
           {"{% endfor %}"}
         </div>
       </section>
-    </main>
     <Footer />
   </Body>
 ).then((e) => (document.body.append(e), yaml`layout: none`));
