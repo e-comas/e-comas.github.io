@@ -9,6 +9,7 @@
   flex-direction: column;
   overflow: hidden;
   padding: 1rem;
+  margin: 0;
   figcaption {
     display: flex;
     padding: 2rem 0 0 0;
@@ -24,8 +25,11 @@
   .picture-wrapper {
     position: relative;
     margin: 0;
-    min-height: 20rem;
     overflow: hidden;
+    min-height: 10rem;
+    @media screen and (min-width: 500px) {
+      min-height: 20rem;
+    }
     picture {
       img {
         position: absolute;
@@ -59,7 +63,7 @@
 
 #how-we-do-it {
   counter-reset: card-number;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -80,7 +84,7 @@
 }
 
 #see-the-results {
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -132,13 +136,16 @@
 }
 
 #blog {
-  padding: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 100%;
   background-color: #f5f5f5;
+  padding: 1rem;
+  @media screen and (min-width: 800px) {
+    padding: 2rem 1rem;
+  }
   div {
     display: flex;
     flex-wrap: wrap;
