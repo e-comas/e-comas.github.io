@@ -28,10 +28,10 @@ export default (
         <h5>The boutique agency you need to thrive on</h5>
         <img src="/images/partners/anim.svg"></img>
         <p>
-          Let <EComas />, a global full service <ECommerce /> agency, help your
-          brand grow on Amazon and other marketplaces through strategic global
-          expansion, technological infrastructure and cutting edge media
-          campaigns.
+          Skyrocket your success and grow your brand with proven global
+          expansion strategies, winning media campaigns and powerful technology.{" "}
+          <EComas />, is the <em>full</em> service <ECommerce /> agency to help
+          you get there.
         </p>
         <a href="#our-services" class="cta">
           Our services

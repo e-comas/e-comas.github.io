@@ -5,6 +5,7 @@ figure.intro {
   flex-direction: column;
   gap: 1rem;
   margin: 0;
+  padding: 1rem;
   overflow: visible;
   // min-height: 20rem;
   p {
@@ -20,8 +21,13 @@ figure.intro {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    img {
+      max-height: 8rem;
+      width: auto;
+      margin-right: auto;
+    }
   }
-  img {
+  & > img {
     height: 100%;
     max-height: 12rem;
     max-width: calc(100% + 4rem);
