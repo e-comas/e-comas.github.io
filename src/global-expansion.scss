@@ -1,17 +1,7 @@
 @use "./utils/variables" as *;
 
-.title {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
 .cta > svg {
   margin-left: 0.5rem;
-}
-
-.intro {
-  min-height: 500px;
-  padding: 1rem;
 }
 
 #made-easy {
@@ -21,7 +11,10 @@
   padding: 1rem;
   figcaption {
     display: flex;
+    padding: 2rem 0 0 0;
+    @media screen and (min-width: 800px) {
     padding: 2rem 0 2rem 0;
+    }
     flex-direction: column;
     gap: 1.5rem;
     p {
@@ -45,7 +38,7 @@
     }
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
