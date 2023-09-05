@@ -42,7 +42,7 @@ export default (
         <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>
     </Hero>
-    <Breadcrumbs />
+    {/* <Breadcrumbs /> */}
     <main id="main-content">
       <figure class="how_it">
         <Picture
