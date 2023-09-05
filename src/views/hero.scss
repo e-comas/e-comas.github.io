@@ -5,8 +5,8 @@ figure.intro {
   flex-direction: column;
   gap: 1rem;
   margin: 0;
-  min-height: 25rem;
-
+  overflow: visible;
+  // min-height: 20rem;
   p {
     text-align: justify;
   }
@@ -19,20 +19,20 @@ figure.intro {
   figcaption {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-
-    img {
-      max-height: 8rem;
-      width: auto;
-      margin-right: auto;
-    }
+    gap: 2rem;
+  }
+  img {
+    height: 100%;
+    max-height: 12rem;
+    max-width: calc(100% + 4rem);
+    width: auto;
   }
 
   @media screen and (min-width: 800px) {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 3rem;
-    max-width: 1200px;
+    gap: 1ch;
+    max-width: calc(min(1400px, 100vw - 8rem));
     margin: auto;
 
     & > * {
