@@ -10,13 +10,14 @@
 
   & > svg {
     background-color: $golder;
-    border-radius: 50%;
+    // border-radius: 50%;
     color: $white;
+    clip-path: circle(70.71% at center);
     box-shadow: 0px 0px 0px 1rem $golder;
     margin: 1rem 0;
     max-width: 3rem;
   }
-  
+
   .inverted_svg {
     background-color: $white;
     color: $golder;
