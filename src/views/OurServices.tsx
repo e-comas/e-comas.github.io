@@ -9,6 +9,9 @@ import Technology from "./Technology.svg";
 
 import "./animate-in.scss";
 import "runtime:./animate-in.ts";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import { ecDataAndTech, ecDigitalRetailMedia, ecGlobalExpansion } from "../utils/customIconDefinition";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default () => (
   <section id="our-services">
@@ -21,7 +24,12 @@ export default () => (
     <figure class="animate-in">
       <Picture src="/images/consulting01.png" alt="illustration" />
       <figcaption>
-        <GlobalExpansion />
+        {/* <GlobalExpansion /> */}
+        <FontAwesomeIcon
+          size="4x"
+          icon={ecGlobalExpansion as IconProp}
+          color="#fed13f"
+        />
         <h4>Global Expansion</h4>
         <p>
           Our team of ex-brand directors, ex-Amazonians and operational experts
@@ -37,7 +45,12 @@ export default () => (
     <figure class="animate-in">
       <Picture src="/images/consulting02.png" alt="illustration" />
       <figcaption>
-        <RetailMedia />
+        {/* <RetailMedia /> */}
+        <FontAwesomeIcon
+          size="4x"
+          icon={ecDigitalRetailMedia as IconProp}
+          color="#fed13f"
+        />
         <h4>Digital Retail Media</h4>
         <p>
           As an Amazon-verified partner and Google Ads-certified agency, we
@@ -54,7 +67,12 @@ export default () => (
     <figure class="animate-in">
       <Picture src="/images/consulting03.png" alt="illustration" />
       <figcaption>
-        <Technology />
+        {/* <Technology /> */}
+        <FontAwesomeIcon
+          size="4x"
+          icon={ecDataAndTech as IconProp}
+          color="#fed13f"
+        />
         <h4>Technology & Data</h4>
         <p>
           Get better visibility over your business and make data-driven
