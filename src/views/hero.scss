@@ -35,13 +35,15 @@ figure.intro {
   }
 
   @media screen and (min-width: 800px) {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+    display: flex;
+    flex-direction: row;
     gap: 1ch;
-    max-width: calc(min(1400px, 100vw - 8rem));
+    width: 100%;
+    max-width: calc(min($body-max-width, 100vw - 4rem));
     margin: auto;
 
     & > * {
+      flex: 0 0 50%;
       display: block;
       width: 100%;
       margin: auto;
