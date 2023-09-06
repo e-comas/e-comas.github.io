@@ -107,7 +107,7 @@ export default (
               "Our experts have successfully built brands for over a decade on Amazon and beyond. We speak the local languages and have strong partnerships with key eCommerce players to drive your business forward globally.              "
             }
             icon={faGem as IconProp}
-            centered={false}
+            centered={true}
             invertSVG={true}
           >
             <a class="cta animate-once" href="TODO">
@@ -120,7 +120,7 @@ export default (
               "We’re an Amazon-verified partner and Google Ads-certified agency, handling your advertising campaigns and leveraging the full capabilities of digital media platforms to expand your reach and grow your sales."
             }
             icon={faGem as IconProp}
-            centered={false}
+            centered={true}
             invertSVG={true}
           >
             <a class="cta animate-once" href="TODO">
@@ -133,7 +133,7 @@ export default (
               "Get better visibility over your business and make growth-fuelling data-driven decisions with the latest tech, which automates processes and gives you a holistic view of customer habits, major trends and more."
             }
             icon={faGem as IconProp}
-            centered={false}
+            centered={true}
             invertSVG={true}
           >
             <a class="cta animate-once" href="TODO">
@@ -164,7 +164,7 @@ export default (
               "To help brands thrive on the world's top online marketplaces, coaching you in the key success factors of eCommerce."
             }
             icon={faChartPie as IconProp}
-            centered={false}
+            centered={true}
             invertSVG={true}
           />
           <ListElement
@@ -173,7 +173,7 @@ export default (
               "To be the most customer-centric eCommerce global agency in North America and Europe."
             }
             icon={faEye as IconProp}
-            centered={false}
+            centered={true}
             invertSVG={true}
           />
           <ListElement
@@ -182,7 +182,7 @@ export default (
               "Entrepreneurship, Benevolence, Dedication, Optimism, and Integrity"
             }
             icon={faGem as IconProp}
-            centered={false}
+            centered={true}
             invertSVG={true}
           />
         </div>
