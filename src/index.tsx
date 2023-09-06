@@ -60,7 +60,7 @@ export default (
         <Picture src="/images/Banner3.2 Testimonials 3x .png" alt="" />
       </section>
       <Testimonies withBlock />
-      <section class="partners">
+      <section class="papers" id="FreePaper">
         <h2>Free White Paper</h2>
         <strong> How to manage Amazon</strong>
         <p>

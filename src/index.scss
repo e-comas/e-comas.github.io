@@ -38,7 +38,6 @@ section#case-studies {
   }
 }
 
-
 .video-container {
   overflow: hidden;
   margin: auto;
@@ -106,6 +105,16 @@ section.news {
     grid-column: 2;
     place-self: center;
   }
+}
+
+.papers {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  min-height: unset;
 }
 
 section.key-figures {
