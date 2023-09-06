@@ -50,12 +50,12 @@ export default (
           alt="e-Comas Europe team picture"
         />
         <figcaption>
-          <h3>About us</h3>
+          {/* <h3>About us</h3> */}
           <h2>How it started</h2>
           <p>
             <EComas /> – <ECommerce /> Made Simple was founded by Jérôme de
             Guigné in 2013, with the simple idea of helping brands sell products
-            online. We quickly realised companies were struggling with
+            online. We quickly realized companies were struggling with
             establishing profitable and sustainable <ECommerce /> strategies.
             That’s when ‘Amazon Made Simple’ was born, which later became ‘
             <ECommerce /> Made Simple’ –
@@ -69,7 +69,7 @@ export default (
           alt="e-Comas Europe team picture"
         />
         <figcaption>
-          <h3>About us</h3>
+          {/* <h3>About us</h3> */}
           <h2>How it's going</h2>
           <p>
             Today our experts coach brands and handle their accounts to
