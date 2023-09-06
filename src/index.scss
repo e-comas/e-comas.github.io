@@ -7,13 +7,6 @@ h2:first-of-type {
   text-transform: uppercase;
 }
 
-section {
-  &:nth-child(2n + 2),
-  &:nth-child(2n + 3) {
-    // background-color: unset;
-  }
-}
-
 section#case-studies {
   flex-direction: column;
 }
