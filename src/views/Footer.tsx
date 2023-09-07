@@ -21,7 +21,7 @@ import { CSSProperties } from "react";
 
 export default () => (
   <footer>
-    <figure class="free-consultation">
+    <figure class="free-consultation" id="bookACall">
       <figcaption>
         <strong>Let’s talk!</strong>
         <h1>Book a call today</h1>
@@ -231,7 +231,7 @@ export default () => (
       </div>
     </div>
 
-    <a id="book-a-call" href="/contact.html">
+    <a id="book-a-call" href="#bookACall">
       Book a Call
     </a>
   </footer>
