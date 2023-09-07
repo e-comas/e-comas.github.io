@@ -6,9 +6,10 @@ figure:target a.open-in-modal {
 dialog.form-in-modal {
   width: 90%;
   height: 75%;
-
   iframe {
     display: block;
+    height: calc(100% - 1.5rem);
+    margin: auto;
   }
   form button {
     float: right;
