@@ -61,11 +61,8 @@ main > .cta {
     flex-direction: column;
     gap: 0;
   }
-  h3 {
-    font-size: 1rem;
-    font-weight: normal;
-    // padding-left: 1rem;
-    letter-spacing: 0.2rem;
+  h2 {
+    text-transform: uppercase;
   }
   img {
     border: 10px;
