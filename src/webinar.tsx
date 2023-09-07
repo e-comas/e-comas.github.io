@@ -20,15 +20,15 @@ export default (
     <div class="hero">
       <h1> Webinar</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel urna
-        eget erat lacinia pretium. Donec non imperdiet odio, ullamcorper gravida
-        nunc.
+        We run our own popular webinar programme, talking to our friends in the
+        eCommerce world about how brands can improve and grow. See our next
+        events here!
       </p>
       <a href="TODO" class="cta">
         Register Now
       </a>
     </div>
-    <Breadcrumbs />
+    {/* <Breadcrumbs /> */}
     <main id="main-content">
       {"{% for webinar in site.tags.Webinar | slice: 0, 3 %}"}
       <article>
