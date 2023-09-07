@@ -157,7 +157,7 @@ header {
       margin-left: auto;
       margin-right: 0;
       @extend %button;
-      &:hover {
+      &:hover, &.active {
         @extend %invertedCta;
       }
     }
