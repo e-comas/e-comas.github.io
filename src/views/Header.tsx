@@ -1,5 +1,4 @@
 import { h } from "@aduh95/async-jsx";
-import ElementWithBackgroundImage from "../utils/ElementWithBackgroundImage.tsx";
 import NavLink from "../utils/NavLink.tsx";
 import arborescence from "../utils/arborescence.toml";
 
@@ -49,11 +48,6 @@ export default () => (
     <nav>
       {arborescence.root.children.map(layoutArborescence)}
       {/* until `:has(div:hover)::after` is supported, we need a last element:*/}
-      <span />
     </nav>
-    <a class="contact-button" href="/contact.html">
-      Contact us
-    </a>
-    {/* <h1>A Global, Full Service Amazon & Marketplace Agency</h1> */}
   </header>
 );

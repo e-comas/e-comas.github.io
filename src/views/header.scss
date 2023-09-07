@@ -56,7 +56,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(101, 214, 190); /* Replace with your specific color */
+  background-color: $green;
   @media screen and (min-width: $breakpoint) {
     position: fixed;
     z-index: 1;
@@ -86,17 +86,8 @@ header {
   width: 100%;
   margin: auto;
 
-  // @media screen and (max-height: #{2*$min-height}) and (max-aspect-ratio: 85/100),
-  //   screen and (min-height: #{2*$max-height}) and (max-width: 1290px),
-  //   screen and (min-height: #{2*$min-height + 1}) and (max-height: #{2*$max-height - 1}) and (max-aspect-ratio: 297/324) {
-  //   .background * {
-  //     object-position: left;
-  //   }
-  // }
-
   .logo {
     position: relative;
-
     z-index: 20;
     width: $logo-width;
     min-width: math.div($logo-width, 2);
@@ -109,6 +100,7 @@ header {
     justify-content: center;
     gap: 1rem;
     margin: 0 auto;
+    width: 100%;
     a {
       margin: 1rem;
       @extend %uppercase;
@@ -126,6 +118,9 @@ header {
       a:hover,
       a:not(:last-child).active {
         color: $gold;
+      }
+      & > :first-child {
+        margin-left: auto;
       }
     }
     ul {
@@ -157,23 +152,14 @@ header {
         }
       }
     }
-    & > span:last-child {
-      position: absolute; // just there to make the menu work until `:has(div:hover)::after` is supported.
-    }
-    // & > :last-child {
-    //   @extend %button;
-    //   &:hover {
-    //     @extend %invertedCta;
-    //   }
-    // }
-  }
-  .contact-button {
-    @extend %button;
-    &:hover {
-      @extend %invertedCta;
-    }
-    @media screen and (max-width: #{$breakpoint - 1px}) {
-      display: none;
+
+    & > :last-child {
+      margin-left: auto;
+      margin-right: 0;
+      @extend %button;
+      &:hover {
+        @extend %invertedCta;
+      }
     }
   }
 
