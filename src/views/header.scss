@@ -259,9 +259,6 @@ header {
     }
   }
 
-  // @media screen and (min-width: #{$max-width + 100px}) {
-  //   grid-template-columns: auto minmax(auto, #{$max-width - $nav-width}) $nav-width auto;
-  // }
 }
 
 @keyframes delayAppearance {
