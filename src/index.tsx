@@ -18,6 +18,10 @@ import "./index.scss";
 import TeamCertifications from "./views/TeamCertifications.tsx";
 
 import "./views/animate-in.scss";
+
+import "./utils/open-form-in-modal.scss";
+import "runtime:./utils/open-form-in-modal.ts";
+
 import "runtime:./views/animate-in.ts";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -67,7 +71,7 @@ export default (
           Here’s our beginner’s guide to building a solid Amazon strategy,
           managing your operations, creating content and growing traffic.
         </p>
-        <a href="about:blank" class="cta">
+        <a href="//go.e-comas.com/l/885733/2022-09-02/bwmm8" className="cta open-in-modal">
           Download <FontAwesomeIcon icon={faDownload as IconProp} />
         </a>
       </section>
