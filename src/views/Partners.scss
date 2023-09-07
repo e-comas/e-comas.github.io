@@ -24,6 +24,11 @@
       object-fit: contain;
     }
   }
+  @media screen and (min-width: 800px) {
+    & > h2 {
+      margin: unset;
+    }
+  }
 }
 
 section.partners {
