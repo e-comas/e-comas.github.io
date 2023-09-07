@@ -55,7 +55,7 @@ export default (
             business forward on a global scale.
           </p>
         </figcaption>
-        <Picture src="/images/PENCIL.jpg" alt="" />
+        <Picture src="/images/discussion.jpg" alt="" />
       </figure>
       <WhatWeDo />
       </main>
