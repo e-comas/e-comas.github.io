@@ -58,82 +58,82 @@ export default (
         <Picture src="/images/discussion.jpg" alt="" />
       </figure>
       <WhatWeDo />
-      </main>
-      <section id="how-we-do-it">
-        <h2>How We Do It</h2>
-        <p>
-          We combine strategic planning, data analysis and hands-on operational
-          work to help brands break into new and growing markets.
-        </p>
-        <div role="list">
-          <FlipCard
-            title="Define Strategy"
-            desc="We audit of your brand’s current eCommerce presence and work closely with you to set clear and measurable goals."
-          />
-          <FlipCard
-            title="Manage Operations"
-            desc="From optimising product listings to handling logistics and VAT, we can manage your account on multiple platforms."
-          />
-          <FlipCard
-            title="Grow Traffic"
-            desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximise ROI."
-          />
-          <FlipCard
-            title="Drive Conversion"
-            desc="We use analytics tools to track key performance metrics, such as sales, traffic, conversion rates, and customer feedback."
-          />
-        </div>
-      </section>
-      <section id="see-the-results">
-        <h2>See The Results</h2>
-        <p>
-          <EComas /> is proud to work with brilliant partners across the{" "}
-          <ECommerce /> space, including
-        </p>
-        <figure>
-          <Picture src={"/images/team-picture-EU.jpg"} alt={""} />
-          <figcaption>
-            <h3>Creating content for other countries</h3>
-            <p>
-              When expanding globally, the key to building trust in your brand
-              is good-quality localised content. Download our success story to
-              find out how we helped My Carry Potty grow its Amazon presence
-              internationally.
-            </p>
-            <a class="cta" href="TODO">
-              Download
-              <FontAwesomeIcon icon={faDownload as IconProp} />
-            </a>
-          </figcaption>
-        </figure>
-      </section>
-      <section id="blog">
-        <h2>Blog</h2>
-        <p>
-          Find out useful eCommerce tips and what's new in the Amazon world
-          relating to global expansion.
-        </p>
-        <div role="list">
-          {"{% for post in site.tags.Expansion | slice: 0, 3 %}"}
-          <article>
-            <a href="{{ post.url }}">
-              <img
-                src="{{ post.thumbnail }}"
-                alt="{{ post.thumbnail_alt }}"
-                loading="lazy"
-              />
-            </a>
-            <h3>
-              <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
-            </h3>
-            <p>{"{{ post.excerpt | escape }}"}</p>
-            <a href="{{ post.url }}" class="cta">
-              Read More
-            </a>
-          </article>
-          {"{% endfor %}"}
-        </div>
-      </section>
+    </main>
+    <section id="how-we-do-it">
+      <h2>How We Do It</h2>
+      <p>
+        We combine strategic planning, data analysis and hands-on operational
+        work to help brands break into new and growing markets.
+      </p>
+      <div role="list">
+        <FlipCard
+          title="Define Strategy"
+          desc="We audit of your brand’s current eCommerce presence and work closely with you to set clear and measurable goals."
+        />
+        <FlipCard
+          title="Manage Operations"
+          desc="From optimising product listings to handling logistics and VAT, we can manage your account on multiple platforms."
+        />
+        <FlipCard
+          title="Grow Traffic"
+          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximise ROI."
+        />
+        <FlipCard
+          title="Drive Conversion"
+          desc="We use analytics tools to track key performance metrics, such as sales, traffic, conversion rates, and customer feedback."
+        />
+      </div>
+    </section>
+    <section id="see-the-results">
+      <h2>See The Results</h2>
+      <p>
+        Don’t take our word for it – find out how we helped a British brand
+        launch in all the European marketplaces and the USA.
+      </p>
+      <figure>
+        <Picture src={"/images/theResults.png"} alt={""} />
+        <figcaption>
+          <h3>Creating content for other countries</h3>
+          <p>
+            When expanding globally, the key to building trust in your brand is
+            good-quality localized content. Download our success story to find
+            out how we helped My Carry Potty grow its Amazon presence
+            internationally.
+          </p>
+          <a class="cta" href="TODO">
+            Download
+            <FontAwesomeIcon icon={faDownload as IconProp} />
+          </a>
+        </figcaption>
+      </figure>
+    </section>
+    <section id="blog">
+      <h2>Blog</h2>
+      <p>
+        Find out useful eCommerce tips and what's new in the Amazon world
+        relating to global expansion.
+      </p>
+      <div role="list">
+        {"{% for post in site.tags.Expansion | slice: 0, 3 %}"}
+        <article>
+          <a href="{{ post.url }}">
+            <img
+              src="{{ post.thumbnail }}"
+              alt="{{ post.thumbnail_alt }}"
+              loading="lazy"
+            />
+          </a>
+          <h3>
+            <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
+          </h3>
+          <p>{"{{ post.excerpt | escape }}"}</p>
+          <a href="{{ post.url }}" class="cta">
+            Read More
+          </a>
+        </article>
+        {"{% endfor %}"}
+      </div>
+    </section>
     <Footer />
   </Body>
 ).then((e) => (document.body.append(e), yaml`layout: none`));
