@@ -30,7 +30,7 @@ export const ecGlobalExpansion: IconDefinition = {
 
 export const ecDataAndTech: IconDefinition = {
   icon: [
-    168,
+    993.41742,
     839.57355,
     [],
     "",
