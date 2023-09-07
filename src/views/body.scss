@@ -31,6 +31,10 @@ body {
   padding: 0;
 }
 
+body.noScroll {
+  overflow: hidden;
+}
+
 .inverted {
   @extend %inverted;
 }

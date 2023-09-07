@@ -4,6 +4,8 @@ import arborescence from "../utils/arborescence.toml";
 
 import "./header.scss";
 
+import "runtime:./Header_runtime.ts";
+
 interface ArborescenceNode {
   name: string;
   url: string;
