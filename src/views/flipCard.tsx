@@ -8,7 +8,7 @@ interface Props
     HTMLElement
   > {
   title: string;
-  desc: string;
+  desc: string | JSX.Element;
 }
 
 export default (props: Props | undefined) => (

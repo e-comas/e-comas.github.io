@@ -1,4 +1,4 @@
-import { h } from "@aduh95/async-jsx";
+import { h, Fragment } from "@aduh95/async-jsx";
 
 import yaml from "./utils/yaml.ts";
 
@@ -14,12 +14,21 @@ import "runtime:./views/animate-in.ts";
 import Picture from "./utils/Picture.tsx";
 import FlipCard from "./views/flipCard.tsx";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
-import { faBullhorn, faDownload, faMagnifyingGlass, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBullhorn,
+  faDownload,
+  faMagnifyingGlass,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { EComas, ECommerce } from "./views/eWords.tsx";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import ListElement from "./views/ListElement.tsx";
-import { ecAccountManagement, ecGlobalExpansion, ecTrolley } from "./utils/customIconDefinition.ts";
+import {
+  ecAccountManagement,
+  ecGlobalExpansion,
+  ecTrolley,
+} from "./utils/customIconDefinition.ts";
 
 export default (
   <Body title="Global Expansion">
@@ -73,7 +82,13 @@ export default (
         <div role="list">
           <ListElement
             title="Strategy & Planning"
-            desc="Learn what it takes to be successful on Amazon and in eCommerce. Once you’re up to speed, our experts help you define the best growth strategy for your brands and market."
+            desc={
+              <>
+                Learn what it takes to be successful on Amazon and in{" "}
+                <ECommerce />. Once you’re up to speed, our experts help you
+                define the best growth strategy for your brands and market.
+              </>
+            }
           />
           <ListElement
             icon={ecGlobalExpansion as IconProp}
@@ -88,7 +103,13 @@ export default (
           <ListElement
             icon={ecGlobalExpansion as IconProp}
             title="Asia Expansion"
-            desc="The Asian eCommerce market is massive, but with our local teams on hand, we can help you navigate these complex marketplaces and expand on Amazon in India, Singapore and Japan."
+            desc={
+              <>
+                The Asian <ECommerce /> market is massive, but with our local
+                teams on hand, we can help you navigate these complex
+                marketplaces and expand on Amazon in India, Singapore and Japan.
+              </>
+            }
           />
           <ListElement
             icon={ecGlobalExpansion as IconProp}
@@ -98,7 +119,13 @@ export default (
           <ListElement
             icon={ecAccountManagement as IconProp}
             title="Account Management"
-            desc="We can manage the day-to-day aspects of your eCommerce account. From cataloguing to handling your retail media campaigns and analytics reporting, we’ve got you covered."
+            desc={
+              <>
+                We can manage the day-to-day aspects of your <ECommerce />{" "}
+                account. From cataloguing to handling your retail media
+                campaigns and analytics reporting, we’ve got you covered.
+              </>
+            }
           />
           <ListElement
             icon={ecTrolley as IconProp}
@@ -130,15 +157,20 @@ export default (
       <div role="list">
         <FlipCard
           title="Define Strategy"
-          desc="We audit of your brand’s current eCommerce presence and work closely with you to set clear and measurable goals."
+          desc={
+            <>
+              We audit of your brand’s current <ECommerce /> presence and work
+              closely with you to set clear and measurable goals."
+            </>
+          }
         />
         <FlipCard
           title="Manage Operations"
-          desc="From optimising product listings to handling logistics and VAT, we can manage your account on multiple platforms."
+          desc="From optimizing product listings to handling logistics and VAT, we can manage your account on multiple platforms."
         />
         <FlipCard
           title="Grow Traffic"
-          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximise ROI."
+          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximize ROI."
         />
         <FlipCard
           title="Drive Conversion"
@@ -172,7 +204,7 @@ export default (
     <section id="blog" class="blog">
       <h2>Blog</h2>
       <p>
-        Find out useful eCommerce tips and what's new in the Amazon world
+        Find out useful <ECommerce /> tips and what's new in the Amazon world
         relating to global expansion.
       </p>
       <div role="list">

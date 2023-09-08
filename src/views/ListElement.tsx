@@ -12,7 +12,7 @@ interface Props
     HTMLElement
   > {
   title: string;
-  desc: string;
+  desc: string | JSX.Element;
   centered?: boolean;
   invertSVG?: boolean;
   icon?: IconProp;

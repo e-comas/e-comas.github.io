@@ -1,4 +1,4 @@
-import { h } from "@aduh95/async-jsx";
+import { h, Fragment } from "@aduh95/async-jsx";
 
 import yaml from "./utils/yaml.ts";
 
@@ -20,7 +20,7 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { EComas, ECommerce } from "./views/eWords.tsx";
+import { ECommerce } from "./views/eWords.tsx";
 import ListElement from "./views/ListElement.tsx";
 import { faAmazon, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
@@ -139,15 +139,20 @@ export default (
       <div role="list">
         <FlipCard
           title="Define Strategy"
-          desc="We audit of your brand’s current eCommerce presence and work closely with you to set clear and measurable goals."
+          desc={
+            <>
+              We audit of your brand’s current <ECommerce /> presence and work
+              closely with you to set clear and measurable goals."
+            </>
+          }
         />
         <FlipCard
           title="Manage Operations"
-          desc="From optimising product listings to handling logistics and VAT, we can manage your account on multiple platforms."
+          desc="From optimizing product listings to handling logistics and VAT, we can manage your account on multiple platforms."
         />
         <FlipCard
           title="Grow Traffic"
-          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximise ROI."
+          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximize ROI."
         />
         <FlipCard
           title="Drive Conversion"
@@ -181,8 +186,8 @@ export default (
     <section class="blog" id="blog">
       <h2>Blog</h2>
       <p>
-        Find out useful eCommerce tips and what's new in the Amazon world
-        relating to global expansion.
+        Find out useful <ECommerce /> tips and what's new in the Amazon world
+        relating to online retail media.
       </p>
       <div role="list">
         {"{% for post in site.tags.Advertising | slice: 0, 3 %}"}
