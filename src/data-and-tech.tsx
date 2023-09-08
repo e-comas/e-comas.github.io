@@ -27,7 +27,7 @@ import ListElement from "./views/ListElement.tsx";
 import { faAmazon } from "@fortawesome/free-brands-svg-icons";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import { ecDataAndTech, ecHoleInSquare } from "./utils/customIconDefinition.ts";
-import { faCompass, faEye } from "@fortawesome/free-regular-svg-icons";
+import { faCompass, faEye, faNewspaper } from "@fortawesome/free-regular-svg-icons";
 
 export default (
   <Body title="Data & Technology">
@@ -140,7 +140,7 @@ export default (
             desc="Partner with us and harness the full capabilities of Salsify, making PIM more streamlined and effective for your business. Our team not only assists with the day-to-day tasks of using Salsify but also expertly integrates new features tailored to your instance."
           />
           <ListElement
-            icon={ecHoleInSquare as IconProp}
+            icon={faNewspaper as IconProp}
             title={"D2C Website Development"}
             desc={
               <>
