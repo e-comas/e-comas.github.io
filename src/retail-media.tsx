@@ -125,7 +125,7 @@ export default (
             Analytics"
           />
         </div>
-        <a href="about:blank" class="cta animatable">
+        <a href="/contact.html" class="cta animatable">
           Book a Call
         </a>
       </ElementWithBackgroundImage>

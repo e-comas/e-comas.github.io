@@ -49,4 +49,11 @@ section.about-us {
       }
     }
   }
+
+  & > .cta {
+    @extend %button;
+    margin: auto;
+    color: white;
+    background-color: $green;
+  }
 }

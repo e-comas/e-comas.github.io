@@ -108,6 +108,18 @@ section.news {
   gap: 1rem;
   padding: 2rem 0;
   min-height: unset;
+  .cta {
+    @extend %button;
+    &::after{
+      content: "";
+    }
+    margin: auto;
+    background-color:$golder;
+    &:hover{
+      background-color: $grey;
+      color: white;
+    }
+  }
 }
 
 section.key-figures {

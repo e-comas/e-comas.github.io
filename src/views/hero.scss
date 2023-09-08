@@ -24,6 +24,10 @@ figure.intro {
   .cta {
     @extend %button;
     background-color: $gold;
+    &:hover{
+      background-color: $grey;
+      color: white;
+    }
   }
 
   figcaption {

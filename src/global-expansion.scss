@@ -117,6 +117,9 @@
         background-color: $gold;
         color: white;
         font-size: 0.75rem;
+        &::after {
+          content: " ";
+        }
       }
     }
     img {

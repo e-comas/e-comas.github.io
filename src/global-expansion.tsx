@@ -143,7 +143,7 @@ export default (
             desc="Our multilingual team can target your strategy to drive sales in new markets and engage online shoppers worldwide with their knowledge of the nuances of different countries, languages and cultures."
           />
         </div>
-        <a href="about:blank" class="cta animatable">
+        <a href="/contact.html" class="cta animatable">
           Book a Call
         </a>
       </ElementWithBackgroundImage>
