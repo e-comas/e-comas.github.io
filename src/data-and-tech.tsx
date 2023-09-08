@@ -206,7 +206,7 @@ export default (
         </figcaption>
       </figure>
     </section>
-    <section id="blog">
+    <section class="blog" id="blog">
       <h2>Blog</h2>
       <p>
         Find out useful <ECommerce /> tips and what's new in the Amazon world
