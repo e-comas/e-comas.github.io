@@ -16,7 +16,7 @@ url = "/retail-media.html"
 
 [[root.children.children]]
 name = "Data & Technology"
-url = "about:blank"
+url = "/data-and-tech.html"
 
 [[root.children.children]]
 name = "Content Syndication"
