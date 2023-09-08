@@ -1,12 +1,11 @@
 @use "./utils/variables" as *;
-@use "./views/what-we-do.scss" as * ;
-
+@use "./views/what-we-do.scss" as *;
 
 .cta > svg {
   margin-left: 0.5rem;
 }
 
-#made-easy {
+.made-easy {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -22,6 +21,11 @@
     gap: 1.5rem;
     p {
       font-size: 1rem;
+      br {
+        content: " ";
+        display: block;
+        margin: 1rem 0;
+      }
     }
   }
   .picture-wrapper {
@@ -63,7 +67,7 @@
   }
 }
 
-#how-we-do-it {
+.how-we-do-it {
   counter-reset: card-number;
   padding: 2rem 1rem;
   text-align: center;
@@ -85,7 +89,7 @@
   }
 }
 
-#see-the-results {
+.see-the-results {
   padding: 2rem 1rem;
   text-align: center;
   display: flex;
@@ -137,7 +141,7 @@
   }
 }
 
-#blog {
+.blog {
   text-align: center;
   display: flex;
   flex-direction: column;

@@ -38,7 +38,7 @@ export default (
     </Hero>
 
     <main id="main-content">
-      <figure id="made-easy">
+      <figure id="made-easy" class="made-easy">
         <figcaption>
           <h3>Global Growth Made Easy</h3>
           <p>
@@ -121,7 +121,7 @@ export default (
         </a>
       </ElementWithBackgroundImage>
     </main>
-    <section id="how-we-do-it">
+    <section id="how-we-do-it" class="how-we-do-it">
       <h2>How We Do It</h2>
       <p>
         We combine strategic planning, data analysis and hands-on operational
@@ -146,7 +146,7 @@ export default (
         />
       </div>
     </section>
-    <section id="see-the-results">
+    <section id="see-the-results" class="see-the-results">
       <h2>See The Results</h2>
       <p>
         Don’t take our word for it – find out how we helped a British brand
@@ -169,7 +169,7 @@ export default (
         </figcaption>
       </figure>
     </section>
-    <section id="blog">
+    <section id="blog" class="blog">
       <h2>Blog</h2>
       <p>
         Find out useful eCommerce tips and what's new in the Amazon world
