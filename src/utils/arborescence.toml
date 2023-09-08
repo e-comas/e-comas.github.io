@@ -12,7 +12,7 @@ url = "/global-expansion.html"
 
 [[root.children.children]]
 name = "Retail Media"
-url = "about:blank"
+url = "/retail-media.html"
 
 [[root.children.children]]
 name = "Data & Technology"
