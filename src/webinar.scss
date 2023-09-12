@@ -14,6 +14,8 @@ main {
     flex-direction: row;
   }
   min-height: 35rem;
+  overflow-x: hidden;
+  max-width: calc(100% - 1rem);
 }
 
 body {
