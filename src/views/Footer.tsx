@@ -49,7 +49,7 @@ export default () => (
         ></input>
         <input placeholder="Company" name="company"></input>
         <textarea placeholder="Message" name="message"></textarea>
-        <input type="submit" value="Contact Us"></input>
+        <input type="submit" value="Submit Request"></input>
       </form>
     </figure>
     <hr />
