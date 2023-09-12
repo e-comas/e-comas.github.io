@@ -13,11 +13,12 @@ import Footer from "./views/Footer.tsx";
 import "./views/VideoEmbedLink.scss";
 import "runtime:./utils/youtube_feed.ts";
 import "./webinar.scss";
+import Hero from "./views/hero.tsx";
 
 export default (
   <Body title="Webinar">
     <Header />
-    <div class="hero">
+    <Hero>
       <h1> Webinar</h1>
       <p>
         We run our own popular webinar programme, talking to our friends in the
@@ -27,7 +28,7 @@ export default (
       <a href="TODO" class="cta">
         Register Now
       </a>
-    </div>
+    </Hero>
     {/* <Breadcrumbs /> */}
     <main id="main-content">
       {"{% for webinar in site.tags.Webinar | slice: 0, 3 %}"}

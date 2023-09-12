@@ -10,6 +10,7 @@ import "./views/VideoEmbedLink.scss";
 import "runtime:./utils/youtube_feed.ts";
 import "./webinar.scss";
 import Picture from "./utils/Picture.tsx";
+import Hero from "./views/hero.tsx";
 
 const testimonies = [
   {
@@ -46,7 +47,7 @@ const testimonies = [
 export default (
   <Body title="Case studies">
     <Header />
-    <div class="hero">
+    <Hero>
       <h1>Case Studies</h1>
       <p>
         It worked for them! Download our case studies to learn all about how
@@ -56,7 +57,7 @@ export default (
       <a href="TODO" class="cta">
         Register Now
       </a>
-    </div>
+    </Hero>
     {/* <Breadcrumbs /> */}
     {/* TODO: Take from Blog? */}
     {/* TODO: display only 3 at a time/carrousel? */}

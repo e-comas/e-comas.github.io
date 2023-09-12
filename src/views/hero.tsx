@@ -10,9 +10,9 @@ interface HeroProps
   imgClass?: string;
 }
 export default (props: HeroProps | undefined, children: any[]) => {
-  const className = "intro " + (props?.class || props?.className || "");
+  const className = "hero " + (props?.class || props?.className || "");
   return h(
-    "figure",
+    "div",
     {
       ...props,
       className,
@@ -20,11 +20,6 @@ export default (props: HeroProps | undefined, children: any[]) => {
       tagName: undefined,
       src: undefined,
     } as any,
-    [
-      <figcaption class={props?.captionClass ?? ""}>
-        {...children.splice(0)}
-      </figcaption>,
-      <img src="/images/Earth.svg" class={props?.imgClass ?? ""}></img>,
-    ]
+    [...children.splice(0)]
   ) as JSX.Element;
 };
