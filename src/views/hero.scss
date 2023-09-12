@@ -1,5 +1,9 @@
 @use "../utils/variables" as *;
 
+html {
+  scroll-timeline: --page-scroll block;
+}
+
 div.hero {
   position: relative;
   height: 20rem;
@@ -36,9 +40,10 @@ div.hero {
 $hero_zoom: 150%;
 $hero_translate_y: 15%;
 $hero_translate_x_start: 0;
-$hero_translate_x_end: -200px;
+$hero_translate_x_end_short: -200px;
+$hero_translate_x_end_long: -900px;
 
-.hero::before {
+div.hero::before {
   content: "";
   position: absolute;
   background-image: url("images/Earth_nopins.svg");
@@ -52,17 +57,37 @@ $hero_translate_x_end: -200px;
   left: 0px;
   opacity: 25%;
 
-  transform: scale($hero_zoom) translateY($hero_translate_y) translateX($hero_translate_x_start);
-  animation: 1s linear forwards heroAnim;
+  transform: scale($hero_zoom) translateY($hero_translate_y)
+    translateX($hero_translate_x_start);
+  animation: 1s linear forwards heroAnim_short;
   animation-timeline: --page-scroll;
   z-index: -10;
 }
+div.hero.long-page::before {
+  // transform: scale($hero_zoom) translateY($hero_translate_y)
+  //   translateX($hero_translate_x_start);
+  animation: 1s linear forwards heroAnim_long;
+  animation-timeline: --page-scroll;
+}
 
-@keyframes heroAnim {
+@keyframes heroAnim_short {
   from {
-    transform: scale($hero_zoom) translateY($hero_translate_y) translateX($hero_translate_x_start);
+    transform: scale($hero_zoom) translateY($hero_translate_y)
+      translateX($hero_translate_x_start);
   }
   to {
-    transform: scale($hero_zoom) translateY($hero_translate_y) translateX($hero_translate_x_end);
+    transform: scale($hero_zoom) translateY($hero_translate_y)
+      translateX($hero_translate_x_end_short);
+  }
+}
+
+@keyframes heroAnim_long {
+  from {
+    transform: scale($hero_zoom) translateY($hero_translate_y)
+      translateX($hero_translate_x_start);
+  }
+  to {
+    transform: scale($hero_zoom) translateY($hero_translate_y)
+      translateX($hero_translate_x_end_long);
   }
 }

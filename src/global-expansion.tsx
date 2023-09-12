@@ -33,7 +33,7 @@ import {
 export default (
   <Body title="Global Expansion">
     <Header />
-    <Hero class="animate-in">
+    <Hero class="animate-in long-page">
       <h5 class="title">Global Expansion</h5>
       <p>
         Break into new markets and unlock more global sales with a clear

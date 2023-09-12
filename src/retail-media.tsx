@@ -29,7 +29,7 @@ import { ecHoleInSquare } from "./utils/customIconDefinition.ts";
 export default (
   <Body title="Retail Media">
     <Header />
-    <Hero class="animate-in">
+    <Hero class="animate-in long-page">
       <h5 class="title">Online Retail Media</h5>
       <p>
         Whether you want to kickstart your retail media strategy or enhance an

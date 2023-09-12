@@ -32,7 +32,7 @@ import { faCompass, faEye, faNewspaper } from "@fortawesome/free-regular-svg-ico
 export default (
   <Body title="Data & Technology">
     <Header />
-    <Hero class="animate-in">
+    <Hero class="animate-in long-page">
       <h5 class="title">Data & Technology</h5>
       <p>
         Cut the guesswork and navigate the complexities of big <ECommerce />{" "}

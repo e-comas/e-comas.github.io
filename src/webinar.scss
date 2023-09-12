@@ -1,9 +1,6 @@
 @use "./utils/blog-article-preview" as *;
 @use "./utils/variables" as *;
 
-html {
-  scroll-timeline: --page-scroll block;
-}
 
 main {
   background-color: #f5f5f5;
