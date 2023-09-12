@@ -188,8 +188,7 @@ export default (
             invertSVG={true}
           />
         </div>
-        <a href="TODO" class="cta">
-          {" "}
+        <a href="/our-team.html" class="cta">
           Meet Our team
         </a>
       </section>
