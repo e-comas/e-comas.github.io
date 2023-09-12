@@ -24,7 +24,7 @@ figure.intro {
   .cta {
     @extend %button;
     background-color: $gold;
-    &:hover{
+    &:hover {
       background-color: $grey;
       color: white;
     }
@@ -48,7 +48,7 @@ figure.intro {
     width: auto;
   }
   @media screen and (max-width: 370px) {
-    padding: .5rem;
+    padding: 0.5rem;
     h5 {
       font-size: 2rem;
       line-height: 2.5rem;
@@ -71,7 +71,9 @@ figure.intro {
     }
 
     figcaption {
-      padding: 5rem 0;
+      @media screen and (min-height: calc(750px - 5rem)) {
+        padding: min(5rem, calc(100vh - 750px)) 0;
+      }
     }
     h5 {
       text-align: unset;
