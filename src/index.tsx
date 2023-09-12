@@ -31,19 +31,23 @@ export default (
   <Body>
     <Header />
     <main id="main-content">
-      <Hero class="animate in">
-        <h5>The boutique agency you need to thrive on</h5>
-        <img src="/images/partners/anim.svg"></img>
-        <p>
-          Skyrocket your success and grow your brand with proven global
-          expansion strategies, winning media campaigns and powerful technology.{" "}
-          <EComas />, is the <em>full</em> service <ECommerce /> agency to help
-          you get there.
-        </p>
-        <a href="/contact.html" class="cta">
-          Let's talk
-        </a>
-      </Hero>
+      <figure class="intro animate in">
+        <figcaption>
+          <h5>The boutique agency you need to thrive on</h5>
+          <img src="/images/partners/anim.svg"></img>
+          <p>
+            Skyrocket your success and grow your brand with proven global
+            expansion strategies, winning media campaigns and powerful
+            technology. <EComas />, is the <em>full</em> service <ECommerce />{" "}
+            agency to help you get there.
+          </p>
+          <a href="/contact.html" class="cta">
+            Let's talk
+          </a>
+        </figcaption>
+        <img src="/images/Earth.svg" />
+      </figure>
+
       <div class="video-container">
         <VideoEmbedLink
           tagName="div"
@@ -71,7 +75,10 @@ export default (
           Here’s our beginner’s guide to building a solid Amazon strategy,
           managing your operations, creating content and growing traffic.
         </p>
-        <a href="//go.e-comas.com/l/885733/2022-09-02/bwmm8" className="cta open-in-modal">
+        <a
+          href="//go.e-comas.com/l/885733/2022-09-02/bwmm8"
+          className="cta open-in-modal"
+        >
           Download <FontAwesomeIcon icon={faDownload as IconProp} />
         </a>
       </section>
