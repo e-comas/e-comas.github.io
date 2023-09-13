@@ -30,7 +30,7 @@ export default (
   <Body title="Retail Media">
     <Header />
     <Hero class="animate-in long-page">
-      <h5 class="title">Online Retail Media</h5>
+      <h1 class="title">Online Retail Media</h1>
       <p>
         Whether you want to kickstart your retail media strategy or enhance an
         existing campaign, we can handle all aspects of your advertising to

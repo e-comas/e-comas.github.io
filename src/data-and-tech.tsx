@@ -33,7 +33,7 @@ export default (
   <Body title="Data & Technology">
     <Header />
     <Hero class="animate-in long-page">
-      <h5 class="title">Data & Technology</h5>
+      <h1 class="title">Data & Technology</h1>
       <p>
         Cut the guesswork and navigate the complexities of big <ECommerce />{" "}
         data with our expertise and the latest technology to steer your brand to
