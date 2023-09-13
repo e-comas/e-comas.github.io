@@ -50,7 +50,7 @@ function getTeams(teamMembers: TeamMemberProps[]) {
 export default (
   <Body title="The Team">
     <Header />
-    <Breadcrumbs />
+    {/* <Breadcrumbs /> */}
     <main id="main-content">
       <h2>
         The <EComas /> team

@@ -1,14 +1,16 @@
 __use_generic_keys__ = { url = "socialNetwork" }
 
 team_order = [
-  "Consulting",
-  "Business Development & Marketing team",
+  "Global Expansion",
+  "Technology & Analytics",
+  "Business Development",
   "Team lead",
-  "Advertising team",
-  "Account management",
+  "Account Management",
+  "Content",
+  "Advertising",
   "Retail",
-  "Administration team",
-  "Content & Social Media team",
+  "Admin",
+  "Marketing",
 ]
 
 [CEO]
@@ -50,7 +52,7 @@ url.YouTube = "https://www.youtube.com/watch?v=0-TBc8-UC1w"
 [[team_member]]
 Name = "Nazlı Kayıkçı"
 Title = "Head of Consulting"
-Team = "Consulting"
+Team = "Global Expansion"
 quote = "Identifying your gaps and needs at the beginning of your ecom journey is the greatest favor that you can do for your brand'"
 pictureUrl = "/images/team/Nazli.png"
 url.LinkedIn = "https://www.linkedin.com/in/nazl%C4%B1-ipek-kay%C4%B1k%C3%A7%C4%B1-86644a23/"
@@ -60,16 +62,40 @@ url.YouTube = "https://www.youtube.com/watch?v=nN8QWZ5S7-M"
 [[team_member]]
 Name = "Agu\u00e8ne Sambou"
 Title = "Salsify Project Manager"
-Team = "Consulting"
+Team = "Global Expansion"
 quote = "\"Whithout challenge, There Isn't Change\""
 pictureUrl = "/images/team/Aguene.png"
 url.LinkedIn = "https://www.linkedin.com/in/agu%C3%A8ne-sambou/"
 
 
 [[team_member]]
+Name = "Nagapooja Ramesh"
+Title = "PIM specialist"
+Team = "Global Expansion"
+quote = "\"When we really pay attention,everything is your teacher.\""
+pictureUrl = "/images/team/Nagapooja.png"
+url.LinkedIn = "https://www.linkedin.com/in/nagapooja-ramesh-a77850136"
+
+
+[[team_member]]
+Name = "Varuna Sridhar"
+Team = "Global Expansion"
+Title = "PIM specialist"
+pictureUrl = "/images/team/Varuna.png"
+url.LinkedIn = "https://www.linkedin.com/in/varuna-sridhar-805193116"
+
+
+[[team_member]]
+Name = "Michael Baron"
+Team = "Global Expansion"
+Title = "PIM Consultant"
+url.LinkedIn = "https://www.linkedin.com/in/michael-baron-a0808822/"
+
+
+[[team_member]]
 Name = "Claudiu Clement"
 Title = "Senior Consultant / Salsify Expert"
-Team = "Consulting"
+Team = "Technology & Analytics"
 quote = "\"Building a great experience for the right client is the main driver of success in ecommerce.\""
 pictureUrl = "/images/team/Claudiu.png"
 url.LinkedIn = "https://www.linkedin.com/in/claudiu-clement/"
@@ -77,40 +103,42 @@ url.YouTube = "https://www.youtube.com/watch?v=LgI0R1hmyCE&ab_channel=e-Comas"
 
 
 [[team_member]]
-Name = "Antonio Vicedo Mart\u00ednez"
-Title = "Senior Consultant / Salsify Expert"
-Team = "Consulting"
-quote = "\"In a world that moves and evolves as fast as e-commerce, make sure to save some time to reflect and plan\""
-pictureUrl = "/images/team/Antonio.png"
-url.LinkedIn = "https://www.linkedin.com/in/antoniovicedo/"
+Name = "Aditya Jain"
+Team = "Technology & Analytics"
+Title = "Senior Data Analyst"
+url.LinkedIn = "https://www.linkedin.com/in/adipec16"
 
 
 [[team_member]]
-Name = "Nagapooja Ramesh"
-Title = "Salsify Support"
-Team = "Consulting"
-quote = "\"When we really pay attention,everything is your teacher.\""
-pictureUrl = "/images/team/Nagapooja.png"
-url.LinkedIn = "https://www.linkedin.com/in/nagapooja-ramesh-a77850136"
+Name = "Alexandre Zambeaux"
+Title = "Head of EMEA Business Development"
+Team = "Business Development"
+quote = "\u201cKnow the rules well, so you can break them effectively.\u201d"
+pictureUrl = "/images/team/Alexandre-Zambeaux.png"
+contactPage = true
+url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux/"
+url.YouTube = "https://www.youtube.com/watch?v=lW1ffcwiyP8"
+url.Calendly = "https://calendly.com/alexz-ecommerce"
 
 
 [[team_member]]
-Name = "Sarra Maatallah"
-Title = "Senior Account Manager & Team lead"
-Team = "Team lead"
-priority = 2
-quote = "'I always believe that the work you deliever is an extension of yourself. Care about the way you want your work performance to be look at the same way you care about your own image. Quality, passion and care should  be what define you. This is my own recipe to success.''"
-pictureUrl = "/images/team/Sarra.png"
-url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
+Name = "Michael Yanez"
+Team = "Business Development"
+Title = "Head of US Business Development"
+contactPage = true
+pictureUrl = "/images/team/Michael.png"
+url.LinkedIn = "https://www.linkedin.com/in/michaelyanez/"
+url.Calendly = "https://calendly.com/michael-ecomas"
 
 
 [[team_member]]
-Name = "Richard Ravichandar"
-Title = "Senior Account Manager"
-Team = "Account management"
-quote = "We CARE for your business like no one else did. We GROW your business like never before."
-pictureUrl = "/images/team/Richard.png"
-url.LinkedIn = "https://www.linkedin.com/in/richard-ravichandar-a1929a50/"
+Name = "Pete Du Pon"
+Team = "Business Development"
+Title = "Head of Partnerships"
+contactPage = true
+pictureUrl = "/images/team/Pete.png"
+url.LinkedIn = "https://www.linkedin.com/in/pete-du-pon/"
+url.Calendly = "https://calendly.com/pete-ecomas"
 
 
 [[team_member]]
@@ -125,84 +153,6 @@ url.YouTube = "https://www.youtube.com/watch?v=miLaUlqNruc"
 
 
 [[team_member]]
-Name = "Raichel Rajan"
-Title = "Account Support"
-Team = "Account management"
-quote = "\"Success is not a one time life achievement. Success is a habit\""
-pictureUrl = "/images/team/Raichel.png"
-url.LinkedIn = "https://www.linkedin.com/in/raichel-rajan-34a894b9"
-
-
-[[team_member]]
-Name = "Manu Mathew"
-Title = "Account Support"
-Team = "Account management"
-quote = "Alone we can do so little, together we can do so much"
-pictureUrl = "/images/team/Manu.png"
-url.LinkedIn = "https://www.linkedin.com/in/manujoymathew"
-url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
-
-
-[[team_member]]
-Name = "Carlos De Almeida"
-Title = "Senior Account Manager & Team lead"
-Team = "Team lead"
-priority = 1
-quote = "\"Care is the key of any successful business partnership\""
-pictureUrl = "/images/team/Carlos.png"
-url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida-amazonexpert/"
-
-
-[[team_member]]
-Name = "Withney Lupter"
-Title = "Senior Account Manager & Team lead"
-priority = 1
-Team = "Team lead"
-quote = "\"If Amazon offers something for free, take advantage of it.\""
-pictureUrl = "/images/team/Whitney.png"
-url.LinkedIn = "https://www.linkedin.com/in/lupterwithney/"
-url.YouTube = "https://www.youtube.com/watch?v=IvLMNwh9z70"
-
-
-[[team_member]]
-Name = "Ang\u00e9lica L\u00f3pez"
-Title = "Senior Account Manager"
-Team = "Account management"
-quote = "\"Who is not able to adapt to the constant changes is out of the game\""
-pictureUrl = "/images/team/Angelica.png"
-url.LinkedIn = "https://www.linkedin.com/in/angelicalopez8661/"
-
-
-[[team_member]]
-Name = "Henintsoa Andriatianarivo"
-Title = "Account Support"
-Team = "Account management"
-quote = "\"A smooth sea never made a skilled sailor.\""
-pictureUrl = "/images/team/Henintsoa.png"
-url.LinkedIn = "https://www.linkedin.com/in/henintsoa/"
-url.YouTube = "https://www.youtube.com/watch?v=rmB-6-x9spA"
-
-
-[[team_member]]
-Name = "Mireille Rasoa"
-Title = "Account Support"
-Team = "Account management"
-quote = "\"You are your only limit\""
-pictureUrl = "/images/team/Mireille.png"
-url.LinkedIn = "https://www.linkedin.com/in/mireille-rasoa-605194215/"
-
-
-[[team_member]]
-Name = "Monika Palagiri"
-Title = "Account Support"
-Team = "Account management"
-quote = "\"The way to smooth,efficient & successful business is attention to little details\""
-pictureUrl = "/images/team/Monika.png"
-url.LinkedIn = "https://www.linkedin.com/in/monika-palagiri-67711bb2"
-url.YouTube = "https://www.youtube.com/watch?v=GvEk-ZTJka4"
-
-
-[[team_member]]
 Name = "Seval Andıç"
 Title = "Senior Account Manager & Team lead"
 Team = "Team lead"
@@ -214,9 +164,68 @@ url.YouTube = "https://www.youtube.com/watch?v=1lhz5W6uTUs"
 
 
 [[team_member]]
+Name = "Sven Jacosben Diaz"
+Title = "Account Manager"
+Team = "Account Management"
+quote = "You miss 100% of the shots you don't take"
+pictureUrl = "/images/team/Sven.png"
+url.LinkedIn = "https://www.linkedin.com/in/sven-jacobsen-diaz/"
+
+
+[[team_member]]
+Name = "Claire Guilleautot"
+Title = "Account manager"
+Team = "Account Management"
+quote = "Details create the big picture."
+pictureUrl = "/images/team/Claire.png"
+url.LinkedIn = "https://www.linkedin.com/in/claire-guilleautot-0347b8172/"
+
+
+[[team_member]]
+Name = "Anchit Abraham"
+Team = "Account Management"
+Title = "Account Support"
+pictureUrl = "/images/team/Anchit.png"
+url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
+
+
+[[team_member]]
+Name = "Yohann Paul"
+Title = "Account Support"
+Team = "Account Management"
+quote = "\"There is a superhero in all of us, We just need the courage to put on the cape.\""
+pictureUrl = "/images/team/Yohann.png"
+url.LinkedIn = "https://www.linkedin.com/in/yohannpaul/"
+
+
+[[team_member]]
+Name = "Stefan Marian"
+Team = "Account Management"
+Title = "Account Manager"
+pictureUrl = "/images/team/Stefan.png"
+url.LinkedIn = "https://www.linkedin.com/in/stefan-marian-712779239"
+
+
+[[team_member]]
+Name = "Marius Popov"
+Team = "Account Management"
+Title = "Senior Account Manager"
+url.LinkedIn = "https://www.linkedin.com/in/marius-popov-488a5752/"
+
+
+[[team_member]]
+Name = "Richard Ravichandar"
+Title = "Senior Account Manager"
+Team = "Account Management"
+quote = "We CARE for your business like no one else did. We GROW your business like never before."
+pictureUrl = "/images/team/Richard.png"
+url.LinkedIn = "https://www.linkedin.com/in/richard-ravichandar-a1929a50/"
+
+
+[[team_member]]
 Name = "Charl\u00e8ne Gr\u00e9goire"
 Title = "Senior Account Manager"
-Team = "Account management"
+Team = "Account Management"
 quote = "\"Every problem is a gift - without problems we would not grow\""
 pictureUrl = "/images/team/Charlene-Gregoire.png"
 url.LinkedIn = "https://www.linkedin.com/in/charlene-gregoire"
@@ -224,151 +233,17 @@ url.YouTube = "https://www.youtube.com/watch?v=DTdtGuAuY6E"
 
 
 [[team_member]]
-Name = "Claire Guilleautot"
-Title = "Account manager"
-Team = "Account management"
-quote = "Details create the big picture."
-pictureUrl = "/images/team/Claire.png"
-url.LinkedIn = "https://www.linkedin.com/in/claire-guilleautot-0347b8172/"
-
-
-[[team_member]]
-Name = "Elvis Kisekka"
-Title = "Account Manager"
-Team = "Account management"
-quote = "\"The secret to success is to do the common things uncommonly well.\""
-pictureUrl = "/images/team/Elvis.png"
-url.LinkedIn = "https://www.linkedin.com/in/elviskisekka/"
-
-
-[[team_member]]
-Name = "Asha Upadhya"
-Title = "Account Support"
-Team = "Account management"
-quote = "Do not underestimate the power of 'Word of Mouth\"Give your customers something Wonderful to talk about and they will do the rest"
-pictureUrl = "/images/team/Asha.png"
-url.LinkedIn = "https://www.linkedin.com/in/asha-upadhya-6781a6108/"
-url.YouTube = "https://www.youtube.com/watch?v=rHKvKtK4dsI"
-
-
-[[team_member]]
-Name = "Yohann Paul"
-Title = "Account Support"
-Team = "Account management"
-quote = "\"There is a superhero in all of us, We just need the courage to put on the cape.\""
-pictureUrl = "/images/team/Yohann.png"
-url.LinkedIn = "https://www.linkedin.com/in/yohannpaul/"
-
-
-[[team_member]]
-Name = "Sven Jacosben Diaz"
-Title = "Account Manager"
-Team = "Account management"
-quote = "You miss 100% of the shots you don't take"
-pictureUrl = "/images/team/Sven.png"
-url.LinkedIn = "https://www.linkedin.com/in/sven-jacobsen-diaz/"
-
-
-[[team_member]]
-Name = "Arjun Narayan"
-Title = "Account Support"
-Team = "Account management"
-quote = "The key to success is to concentrate on GOALS, not OBSTACLES."
-pictureUrl = "/images/team/Arjun.png"
-url.LinkedIn = "https://www.linkedin.com/in/arjun-narayan-881166196/"
-
-
-[[team_member]]
-Name = "Joel Young"
-Title = "Lead Creative"
-Team = "Content & Social Media team"
-quote = "Be happy in everything you do. That's most important. And give a pet a home."
-pictureUrl = "/images/team/Joel.png"
-
-
-[[team_member]]
-Name = "Jessica Barton"
-Title = "Social & Copywriting Manager"
-Team = "Content & Social Media team"
-quote = ""
-pictureUrl = "/images/team/Jessica-Barton-.png"
-
-
-[[team_member]]
-Name = "Jessamy Chapman"
-Title = "Press Manager"
-Team = "Content & Social Media team"
-quote = ""
-pictureUrl = "/images/team/Jessamy-Chapman.png"
-
-
-[[team_member]]
-Name = "Antoine du Hamel"
-Title = "Front End and Back End Engineer"
-Team = "Content & Social Media team"
-quote = ""
-pictureUrl = "/images/team/Antoine.png"
-
-
-[[team_member]]
-Name = "Alexandre Zambeaux"
-Title = "Head of EMEA Business Development"
-Team = "Business Development & Marketing team"
-quote = "\u201cKnow the rules well, so you can break them effectively.\u201d"
-pictureUrl = "/images/team/Alexandre-Zambeaux.png"
-contactPage = true
-url.LinkedIn = "https://www.linkedin.com/in/alexandrezambeaux/"
-url.YouTube = "https://www.youtube.com/watch?v=lW1ffcwiyP8"
-url.Calendly = "https://calendly.com/alexz-ecommerce"
-
-
-[[team_member]]
-Name = "Karolina M'besso"
-Title = "Head of Admin"
-Team = "Administration team"
-quote = "\"It is not for us to forecast the future, but to shape it\", AS Exup\u00e9ry"
-pictureUrl = "/images/team/Karo.png"
-url.LinkedIn = "https://www.linkedin.com/in/karol%C3%ADna-m-besso-70172b35/"
-
-
-[[team_member]]
-Name = "Oscar Samson"
-Title = "India Team lead"
-Team = "Administration team"
-quote = "Success is the sum of small efforts repeated day in and day out"
-pictureUrl = "/images/team/Oscar.png"
-url.LinkedIn = "https://www.linkedin.com/in/oscar-samson"
-
-
-[[team_member]]
-Name = "Misa Manass\u00e9"
-Title = "Office Manager"
-Team = "Administration team"
-quote = "\"Persistence is the path to success\" C Chaplin"
-pictureUrl = "/images/team/Misa.png"
-url.LinkedIn = "https://www.linkedin.com/in/misa-manass%C3%A9-3994a4225/"
-
-
-[[team_member]]
-Name = "Manasa Krishnamurthy"
-Team = "Account management"
-Title = "Account Support"
-quote = "You can not shake hands with clenched fist"
-url.LinkedIn = "https://www.linkedin.com/in/manasa-k-53a084197/"
-pictureUrl = "/images/team/Manasa.png"
-
-
-[[team_member]]
-Name = "Mehul James"
-Team = "Account management"
-Title = "Account Support"
-url.LinkedIn = "https://www.linkedin.com/in/mehul-james-86654a10a"
-pictureUrl = "/images/team/Mehul.png"
+Name = "Antonio Vicedo Mart\u00ednez"
+Title = "Head of Content"
+Team = "Content"
+quote = "\"In a world that moves and evolves as fast as e-commerce, make sure to save some time to reflect and plan\""
+pictureUrl = "/images/team/Antonio.png"
+url.LinkedIn = "https://www.linkedin.com/in/antoniovicedo/"
 
 
 [[team_member]]
 Name = "Richard Arokiaraj"
-Team = "Account management"
+Team = "Content"
 Title = "Account Support"
 quote = "Leap, and the net will appear."
 url.LinkedIn = "https://www.linkedin.com/in/richie7/"
@@ -376,10 +251,128 @@ pictureUrl = "/images/team/Richie.png"
 
 
 [[team_member]]
-Name = "Julie Caillet"
-Team = "Content & Social Media team"
-Title = "Community Manager"
-pictureUrl = "/images/team/Julie.png"
+Name = "Henintsoa Andriatianarivo"
+Title = "Account Support"
+Team = "Content"
+quote = "\"A smooth sea never made a skilled sailor.\""
+pictureUrl = "/images/team/Henintsoa.png"
+url.LinkedIn = "https://www.linkedin.com/in/henintsoa/"
+url.YouTube = "https://www.youtube.com/watch?v=rmB-6-x9spA"
+
+
+[[team_member]]
+Name = "Umer Mohammed"
+Team = "Content"
+Title = "Account Support"
+quote = "Sucess is best when its shared"
+pictureUrl = "/images/team/Umer.png"
+
+
+[[team_member]]
+Name = "Manasa Krishnamurthy"
+Team = "Content"
+Title = "Account Support"
+quote = "You can not shake hands with clenched fist"
+url.LinkedIn = "https://www.linkedin.com/in/manasa-k-53a084197/"
+pictureUrl = "/images/team/Manasa.png"
+
+
+[[team_member]]
+Name = "Raichel Rajan"
+Title = "Account Support"
+Team = "Content"
+quote = "\"Success is not a one time life achievement. Success is a habit\""
+pictureUrl = "/images/team/Raichel.png"
+url.LinkedIn = "https://www.linkedin.com/in/raichel-rajan-34a894b9"
+
+
+[[team_member]]
+Name = "Mireille Rasoa"
+Title = "Account Support"
+Team = "Content"
+quote = "\"You are your only limit\""
+pictureUrl = "/images/team/Mireille.png"
+url.LinkedIn = "https://www.linkedin.com/in/mireille-rasoa-605194215/"
+
+
+[[team_member]]
+Name = "Asha Upadhya"
+Title = "Account Support"
+Team = "Content"
+quote = "Do not underestimate the power of 'Word of Mouth\"Give your customers something Wonderful to talk about and they will do the rest"
+pictureUrl = "/images/team/Asha.png"
+url.LinkedIn = "https://www.linkedin.com/in/asha-upadhya-6781a6108/"
+url.YouTube = "https://www.youtube.com/watch?v=rHKvKtK4dsI"
+
+
+[[team_member]]
+Name = "Antonella Argenziano"
+Team = "Advertising"
+Title = "Head of Advertising"
+pictureUrl = "/images/team/Nella.png"
+url.LinkedIn = "https://www.linkedin.com/in/antonella-argenziano"
+
+
+[[team_member]]
+Name = "Davy Mouyabi"
+Team = "Advertising"
+Title = "Head of DSP & Programmatic"
+pictureUrl = "/images/team/Dave.png"
+url.LinkedIn = "https://www.linkedin.com/in/davy-m-b950b622"
+
+
+[[team_member]]
+Name = "Elvis Kisekka"
+Title = "Amazon Advertising Lead"
+Team = "Advertising"
+quote = "\"The secret to success is to do the common things uncommonly well.\""
+pictureUrl = "/images/team/Elvis.png"
+url.LinkedIn = "https://www.linkedin.com/in/elviskisekka/"
+
+
+[[team_member]]
+Name = "Arjun Narayan"
+Title = "Advertising Specialist"
+Team = "Advertising"
+quote = "The key to success is to concentrate on GOALS, not OBSTACLES."
+pictureUrl = "/images/team/Arjun.png"
+url.LinkedIn = "https://www.linkedin.com/in/arjun-narayan-881166196/"
+
+
+[[team_member]]
+Name = "Sam Millendo"
+Title = "Digital Marketing Leadr"
+Team = "Advertising"
+url.LinkedIn = "https://linkedin.com/sam-millendo"
+
+
+[[team_member]]
+Name = "Akash Sarkar"
+Title = "Advertising Specialist"
+Team = "Advertising"
+url.LinkedIn = "https://www.linkedin.com/in/akash-sarkar-2b72a1119/"
+
+
+[[team_member]]
+Name = "Appachu Kodira"
+Team = "Advertising"
+Title = "Advertising Specialist"
+pictureUrl = "/images/team/Appachu.png"
+url.LinkedIn = "https://www.linkedin.com/in/appachu-kodira-4b875789/"
+
+
+[[team_member]]
+Name = "Kevin"
+Title = "Advertising Specialist"
+Team = "Advertising"
+
+
+[[team_member]]
+Name = "Mehul James"
+Team = "Advertising"
+Title = "Advertising Specialist"
+url.LinkedIn = "https://www.linkedin.com/in/mehul-james-86654a10a"
+pictureUrl = "/images/team/Mehul.png"
 
 
 [[team_member]]
@@ -400,84 +393,159 @@ pictureUrl = "/images/team/Snophia.png"
 
 
 [[team_member]]
-Name = "Umer Mohammed"
-Team = "Account management"
-Title = "Account Support"
-quote = "Sucess is best when its shared"
-pictureUrl = "/images/team/Umer.png"
+Name = "Efigenia Miranda"
+Title = "Retail Support Specialist"
+Team = "Retail"
+url.LinkedIn = "https://www.linkedin.com/in/efigenia-miranda"
 
 
 [[team_member]]
-Name = "Anchit Abraham"
-Team = "Account management"
-Title = "Account Support"
-pictureUrl = "/images/team/Anchit.png"
-url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
+Name = "Karolina M'besso"
+Title = "Head of Admin"
+Team = "Admin"
+quote = "\"It is not for us to forecast the future, but to shape it\", AS Exup\u00e9ry"
+pictureUrl = "/images/team/Karo.png"
+url.LinkedIn = "https://www.linkedin.com/in/karol%C3%ADna-m-besso-70172b35/"
 
 
 [[team_member]]
-Name = "Antonella Argenziano"
-Team = "Advertising team"
-Title = "Head of Advertising"
-pictureUrl = "/images/team/Nella.png"
-url.LinkedIn = "https://www.linkedin.com/in/antonella-argenziano"
+Name = "Misa Manass\u00e9"
+Title = "Office Manager"
+Team = "Admin"
+quote = "\"Persistence is the path to success\" C Chaplin"
+pictureUrl = "/images/team/Misa.png"
+url.LinkedIn = "https://www.linkedin.com/in/misa-manass%C3%A9-3994a4225/"
 
 
 [[team_member]]
-Name = "Davy Mouyabi"
-Team = "Advertising team"
-Title = "Head of DSP & Programmatic"
-pictureUrl = "/images/team/Dave.png"
-url.LinkedIn = "https://www.linkedin.com/in/davy-m-b950b622"
+Name = "Oscar Samson"
+Title = "Head of India Operations and HR"
+Team = "Admin"
+quote = "Success is the sum of small efforts repeated day in and day out"
+pictureUrl = "/images/team/Oscar.png"
+url.LinkedIn = "https://www.linkedin.com/in/oscar-samson"
 
 
 [[team_member]]
-Name = "Anusha Banda"
-Team = "Consulting"
-Title = "Power BI Developer"
-pictureUrl = "/images/team/Anusha.png"
-url.LinkedIn = "https://www.linkedin.com/in/anusha-banda-788500243/"
+Name = "Audrey Palma"
+Title = "Administrative & accounting officer"
+Team = "Admin"
 
 
 [[team_member]]
-Name = "Appachu Kodira"
-Team = "Account management"
-Title = "Account Support"
-pictureUrl = "/images/team/Appachu.png"
-url.LinkedIn = "https://www.linkedin.com/in/appachu-kodira-4b875789/"
+Name = "Jessica Barton"
+Title = "Social & Copywriting Manager"
+Team = "Marketing"
+pictureUrl = "/images/team/Jessica-Barton-.png"
 
 
 [[team_member]]
-Name = "Stefan Marian"
-Team = "Account management"
-Title = "Account Manager"
-pictureUrl = "/images/team/Stefan.png"
-url.LinkedIn = "https://www.linkedin.com/in/stefan-marian-712779239"
+Name = "Jessamy Chapman"
+Title = "Press Manager"
+Team = "Marketing"
+pictureUrl = "/images/team/Jessamy-Chapman.png"
 
 
 [[team_member]]
-Name = "Varuna Sridhar"
-Team = "Consulting"
-Title = "Salsify support"
-pictureUrl = "/images/team/Varuna.png"
-url.LinkedIn = "https://www.linkedin.com/in/varuna-sridhar-805193116"
+Name = "Joel Young"
+Title = "Lead Creative"
+Team = "Marketing"
+quote = "Be happy in everything you do. That's most important. And give a pet a home."
+pictureUrl = "/images/team/Joel.png"
 
 
 [[team_member]]
-Name = "Michael Yanez"
-Team = "Business Development & Marketing team"
-Title = "Head of US Business Development"
-contactPage = true
-pictureUrl = "/images/team/Michael.png"
-url.LinkedIn = "https://www.linkedin.com/in/michaelyanez/"
-url.Calendly = "https://calendly.com/michael-ecomas"
+Name = "Mario Jeffrin"
+Title = "Designer"
+Team = "Marketing"
 
 
 [[team_member]]
-Name = "Pete Du Pon"
-Team = "Business Development & Marketing team"
-Title = "Head of Partnerships"
-contactPage = true
-pictureUrl = "/images/team/Pete.png"
-url.LinkedIn = "https://www.linkedin.com/in/pete-du-pon/"
-url.Calendly = "https://calendly.com/pete-ecomas"
+Name = "Antoine du Hamel"
+Title = "Front End and Back End Engineer"
+Team = "Marketing"
+pictureUrl = "/images/team/Antoine.png"
+
+
+[[team_member]]
+Name = "Julie Caillet"
+Team = "Marketing"
+Title = "Community Manager"
+pictureUrl = "/images/team/Julie.png"
+
+
+# [[team_member]]
+# Name = "Sarra Maatallah"
+# Title = "Senior Account Manager & Team lead"
+# Team = "Team lead"
+# priority = 2
+# quote = "'I always believe that the work you deliever is an extension of yourself. Care about the way you want your work performance to be look at the same way you care about your own image. Quality, passion and care should  be what define you. This is my own recipe to success.''"
+# pictureUrl = "/images/team/Sarra.png"
+# url.LinkedIn = "https://www.linkedin.com/in/sarramaatallah-amazonexpert"
+
+
+# [[team_member]]
+# Name = "Manu Mathew"
+# Title = "Account Support"
+# Team = "Account Management"
+# quote = "Alone we can do so little, together we can do so much"
+# pictureUrl = "/images/team/Manu.png"
+# url.LinkedIn = "https://www.linkedin.com/in/manujoymathew"
+# url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
+
+
+# [[team_member]]
+# Name = "Carlos De Almeida"
+# Title = "Senior Account Manager & Team lead"
+# Team = "Team lead"
+# priority = 1
+# quote = "\"Care is the key of any successful business partnership\""
+# pictureUrl = "/images/team/Carlos.png"
+# url.LinkedIn = "https://www.linkedin.com/in/carlos-de-almeida-amazonexpert/"
+
+
+# [[team_member]]
+# Name = "Withney Lupter"
+# Title = "Senior Account Manager & Team lead"
+# priority = 1
+# Team = "Team lead"
+# quote = "\"If Amazon offers something for free, take advantage of it.\""
+# pictureUrl = "/images/team/Whitney.png"
+# url.LinkedIn = "https://www.linkedin.com/in/lupterwithney/"
+# url.YouTube = "https://www.youtube.com/watch?v=IvLMNwh9z70"
+
+
+# [[team_member]]
+# Name = "Ang\u00e9lica L\u00f3pez"
+# Title = "Senior Account Manager"
+# Team = "Account Management"
+# quote = "\"Who is not able to adapt to the constant changes is out of the game\""
+# pictureUrl = "/images/team/Angelica.png"
+# url.LinkedIn = "https://www.linkedin.com/in/angelicalopez8661/"
+
+
+# [[team_member]]
+# Name = "Monika Palagiri"
+# Title = "Account Support"
+# Team = "Account Management"
+# quote = "\"The way to smooth,efficient & successful business is attention to little details\""
+# pictureUrl = "/images/team/Monika.png"
+# url.LinkedIn = "https://www.linkedin.com/in/monika-palagiri-67711bb2"
+# url.YouTube = "https://www.youtube.com/watch?v=GvEk-ZTJka4"
+
+
+# [[team_member]]
+# Name = "Richard Arokiaraj"
+# Team = "Content"
+# Title = "Account Support"
+# quote = "Leap, and the net will appear."
+# url.LinkedIn = "https://www.linkedin.com/in/richie7/"
+# pictureUrl = "/images/team/Richie.png"
+
+
+# [[team_member]]
+# Name = "Anusha Banda"
+# Team = "Consulting"
+# Title = "Power BI Developer"
+# pictureUrl = "/images/team/Anusha.png"
+# url.LinkedIn = "https://www.linkedin.com/in/anusha-banda-788500243/"

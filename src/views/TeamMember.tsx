@@ -64,7 +64,7 @@ export default function TeamMember({
 }: TeamMemberProps) {
   return (
     <figure>
-      <Picture src={pictureUrl} alt={"Picture of " + Name} />
+      <Picture src={pictureUrl ?? "/images/icons/missing-headshot.svg"} alt={"Picture of " + Name} />
       <figcaption>
         <strong>{Name}</strong>
         <em>{Title}</em>
