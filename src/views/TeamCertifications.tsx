@@ -5,6 +5,7 @@ import "./TeamCertifications.scss";
 
 export default () => (
   <section class="certifications">
+    {/* TODO? try getting SVGs for all of those */}
     <h2>Certifications:</h2>
     <div role="list">
       <a
@@ -60,6 +61,18 @@ export default () => (
         <img
           src="/images/certifications/ForbesBC.svg"
           alt="Forbes Business Council official partner 2022 badge"
+        />
+        <p>Jérôme de Guigné</p>
+      </a>
+      <a
+        href="https://prospershow.com/advisory-council/"
+        target="_blank"
+        rel="noopener"
+        role="listitem"
+      >
+        <Picture
+          alt="Prosper advisory council member badge"
+          src="/images/certifications/Prosper advisory council member.png"
         />
         <p>Jérôme de Guigné</p>
       </a>
