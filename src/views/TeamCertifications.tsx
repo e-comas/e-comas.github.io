@@ -77,7 +77,7 @@ export default () => (
         <p>Jérôme de Guigné</p>
       </a>
       <a
-        href="https://https://www.channelengine.com/en/partners/e-comas"
+        href="https://www.channelengine.com/en/partners/e-comas"
         target="_blank"
         rel="noopener"
         role="listitem"
