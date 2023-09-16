@@ -19,15 +19,24 @@ import "runtime:./footer_addresses.ts";
 import "./footer.scss";
 import { CSSProperties } from "react";
 
-export default () => (
+interface Props
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLElement>,
+    HTMLElement
+  > {
+  text?: string;
+}
+
+export default (props: Props | undefined) => (
   <footer>
     <figure class="free-consultation" id="bookACall">
       <figcaption>
         <strong>Let’s talk!</strong>
         <h1>Book a call today</h1>
         <p>
-          Reach out to our team to find out how we can help you grow your brand
-          faster, globally, across all the leading online channels.
+          {props?.text ??
+            "Reach out to our team to find out how we can help you grow your brand\
+          faster, globally, across all the leading online channels."}
         </p>
         <a href="mailto:hello@ecomas.com">
           <FontAwesomeIcon
