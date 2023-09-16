@@ -18,8 +18,6 @@ import "./partners.scss";
 import Hero from "./views/hero.tsx";
 import Picture from "./utils/Picture.tsx";
 
-
-
 // TODO?: get SVGs for all
 const partners = [
   {
@@ -68,7 +66,7 @@ const partners = [
   },
   {
     // TODO: get text
-    image: "/images/partners/amazon ADS.svg",
+    image: "/images/partners/Amazon ADS.svg",
     id: "amazonAds",
     name: "amazon ads",
     text: "Incididunt proident do eu cillum id officia culpa. Eu et veniam sunt ad elit cupidatat. Proident veniam duis aliquip dolor duis tempor irure culpa. Dolor velit non cupidatat incididunt. Cillum et commodo pariatur aliqua laborum nulla laboris commodo. Enim in proident velit ullamco fugiat. Laborum commodo consequat velit ea aute sint laboris nulla.",
@@ -165,7 +163,7 @@ export default (
         </article>
       ))}
     </main>
-    <Footer />
+    <Footer text="If you’d like to discuss joining our incredible community of trusted partners, please get in touch!" />
   </Body>
 ).then(
   (e) => (
