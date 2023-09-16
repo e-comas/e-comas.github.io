@@ -63,7 +63,7 @@ export default (
     {/* TODO: display only 3 at a time/carrousel? */}
     <main id="main-content">
       {testimonies.map((caseStudy) => (
-        <article>
+        <article id={caseStudy.id}>
           <a href={caseStudy.link}>
             <Picture src={caseStudy.image} alt={caseStudy.name} />
           </a>

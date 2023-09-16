@@ -1,0 +1,11 @@
+#main-content article {
+  .picture-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    picture {
+      width: 100%;
+    }
+  }
+}

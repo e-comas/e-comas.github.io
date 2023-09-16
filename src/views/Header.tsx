@@ -44,7 +44,7 @@ export default () => (
         class="logo"
       />
     </a>
-    <details>
+      <details>
       <summary aria-label="Open navigation menu" />
     </details>
     <nav>
