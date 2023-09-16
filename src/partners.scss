@@ -1,4 +1,6 @@
 #main-content article {
+  display: flex;
+  flex-direction: column;
   .picture-wrapper {
     display: flex;
     justify-content: center;
