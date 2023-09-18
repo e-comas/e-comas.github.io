@@ -9,11 +9,21 @@ import Footer from "./views/Footer.tsx";
 
 import "./news.scss";
 import "runtime:./news-runtime.ts";
+import Hero from "./views/hero.tsx";
+import { ECommerce } from "./views/eWords.tsx";
 
 export default (
   <Body title="Blog">
     <Header />
-    <Breadcrumbs />
+    {/* <Breadcrumbs /> */}
+    <Hero>
+      <h1>Blogs</h1>
+      <p>
+        We love to share our online retail expertise! Find out handy{" "}
+        <ECommerce /> tips and what's new in the Amazon world through our blogs
+        from the team.
+      </p>
+    </Hero>
     <main id="main-content">
       <h2>Our Blog</h2>
       <section>
