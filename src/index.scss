@@ -110,9 +110,6 @@ section.news {
   min-height: unset;
   .cta {
     @extend %button;
-    &::after {
-      content: "";
-    }
     margin: auto;
     background-color: $golder;
     &:hover {

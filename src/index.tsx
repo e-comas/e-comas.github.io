@@ -77,7 +77,7 @@ export default (
         </p>
         <a
           href="//go.e-comas.com/l/885733/2022-09-02/bwmm8"
-          className="cta open-in-modal"
+          className="cta open-in-modal no-arrow"
         >
           Download <FontAwesomeIcon icon={faDownload as IconProp} />
         </a>
