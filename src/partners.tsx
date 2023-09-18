@@ -17,6 +17,7 @@ import "./partners.scss";
 
 import Hero from "./views/hero.tsx";
 import Picture from "./utils/Picture.tsx";
+import { ECommerce } from "./views/eWords.tsx";
 
 // TODO?: get SVGs for all
 const partners = [
@@ -128,13 +129,13 @@ From wellness and dietary enhancements to children's toys, eCommerce businesses 
 ];
 
 export default (
-  <Body title="Webinar">
+  <Body title="Our partners">
     <Header />
     <Hero>
       <h1>Our Partners</h1>
       <p>
         We’re proud to work with leading technology and service providers across
-        the eCommerce space to support our clients’ global expansion goals.
+        the <ECommerce /> space to support our clients’ global expansion goals.
         These services include tech solutions, data insights platforms,
         regulatory and finance, media advertising, fulfillment and logistics and
         more!
