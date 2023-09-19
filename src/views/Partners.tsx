@@ -27,10 +27,10 @@ export default (props: Props | undefined, children: JSX.Element[]) => (
         <img alt="Profitero" src="/images/partners/pacvue.svg" />
       </a>
       <a role="listitem" href="partners.html#channelEngine">
-        <Picture alt="Reveals" src="/images/partners/ChannelEngine.svg" />
+        <img alt="Reveals" src="/images/partners/ChannelEngine.svg" />
       </a>
       <a role="listitem" href="partners.html#amazonAds">
-        <Picture alt="Reveals" src="/images/partners/Amazon ADS.svg" />
+        <img alt="Reveals" src="/images/partners/Amazon ADS.svg" />
       </a>
     </div>
     <a href="partners.html" class="cta">
