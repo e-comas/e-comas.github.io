@@ -33,5 +33,8 @@ export default (props: Props | undefined, children: JSX.Element[]) => (
         <Picture alt="Reveals" src="/images/partners/Amazon ADS.svg" />
       </a>
     </div>
+    <a href="partners.html" class="cta">
+      See more
+    </a>
   </section>
 );

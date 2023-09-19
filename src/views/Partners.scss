@@ -29,6 +29,16 @@
       margin: unset;
     }
   }
+  .cta {
+    @extend %button;
+    background-color: $gold;
+    &:hover {
+      @extend %invertedCta;
+      color: $gold;
+    }
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
 }
 
 section.partners {
