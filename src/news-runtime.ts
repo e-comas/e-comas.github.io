@@ -81,7 +81,7 @@ const style: HTMLStyleElement = document.createElement("style");
 function filter() {
   if (tags.has(location.hash)) {
     for (const article of articles) {
-      article.hidden = !tagsCache.get(article)!.includes(location.hash);
+      tagsCache.get(article)!.includes(location.hash)?article.classList.remove("hidden"):article.classList.add("hidden");
     }
     filterField.value = location.hash;
     document.head.append(style);

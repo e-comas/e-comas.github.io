@@ -23,7 +23,11 @@
     list-style-type: "# ";
     display: inline;
   }
+  &.hidden{
+    display: none !important;
+  }
 }
+
 
 
 main {
