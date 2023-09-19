@@ -81,9 +81,6 @@ export default (
           develop winning marketing content to get your products in front of the
           right people and boost sales.
         </p>
-        <h2>
-          World class expertise to <strong>maximise</strong> your content!
-        </h2>
         <div role="list">
           <ListElement
             title={"Content Creation"}
