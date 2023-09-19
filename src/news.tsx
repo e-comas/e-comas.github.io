@@ -28,40 +28,38 @@ export default (
     <main>
       <aside></aside>
       {/* <h2>Our Blog</h2> */}
-      <div id="main-content">
-        <section>
-          {"{% for post in site.posts %}"}
-          {"{% unless post.tags contains 'Webinar' or post.sitemap == false %}"}
-          <article>
-            <a href="{{ post.url }}">
-              <img
-                src="{{ post.thumbnail }}"
-                alt="{{ post.thumbnail_alt }}"
-                loading="lazy"
-              />
-            </a>
-            <time dateTime={"{{ post.date | date: '%Y-%m-%dT%H:%M:%S' }}"}>
-              {'{{ post.date | date: "%b %d, %Y" }}'}
-            </time>
-            <h3>
-              <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
-            </h3>
-            <ul class="tags">
-              {"{% for tag in post.tags %}"}
-              <li>{"{{ tag }}"}</li>
-              {"{% endfor %}"}
-            </ul>
-            <p>
-              <a href="{{ post.url }}">{"{{ post.excerpt | escape }}"}</a>
-            </p>
-            <a href="{{ post.url }}" class="cta">
-              Read the article
-            </a>
-          </article>
-          {"{% endunless %}"}
-          {"{% endfor %}"}
-        </section>
-      </div>
+      <section id="main-content">
+        {"{% for post in site.posts %}"}
+        {"{% unless post.tags contains 'Webinar' or post.sitemap == false %}"}
+        <article>
+          <a href="{{ post.url }}">
+            <img
+              src="{{ post.thumbnail }}"
+              alt="{{ post.thumbnail_alt }}"
+              loading="lazy"
+            />
+          </a>
+          <time dateTime={"{{ post.date | date: '%Y-%m-%dT%H:%M:%S' }}"}>
+            {'{{ post.date | date: "%b %d, %Y" }}'}
+          </time>
+          <h3>
+            <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
+          </h3>
+          <ul class="tags">
+            {"{% for tag in post.tags %}"}
+            <li>{"{{ tag }}"}</li>
+            {"{% endfor %}"}
+          </ul>
+          <p>
+            <a href="{{ post.url }}">{"{{ post.excerpt | escape }}"}</a>
+          </p>
+          <a href="{{ post.url }}" class="cta">
+            Read the article
+          </a>
+        </article>
+        {"{% endunless %}"}
+        {"{% endfor %}"}
+      </section>
     </main>
     <Footer />
   </Body>
