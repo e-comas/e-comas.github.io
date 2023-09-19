@@ -26,7 +26,7 @@ import { ECommerce } from "./views/eWords.tsx";
 import ListElement from "./views/ListElement.tsx";
 import { faAmazon } from "@fortawesome/free-brands-svg-icons";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
-import { ecDataAndTech, ecHoleInSquare } from "./utils/customIconDefinition.ts";
+import { ecData, ecHoleInSquare } from "./utils/customIconDefinition.ts";
 import { faCompass, faEye, faNewspaper } from "@fortawesome/free-regular-svg-icons";
 
 export default (
@@ -93,7 +93,7 @@ export default (
             desc="Our team anticipates future trends using state-of-the-art analytics, allowing you to plan confidently. Stay ahead of the curve, optimise your inventory and secure your financial future by harnessing the power of data-driven insights for robust and reliable forecasting."
           />
           <ListElement
-            icon={ecDataAndTech as IconProp}
+            icon={ecData as IconProp}
             title="Data Strategy"
             desc="We begin by evaluating your existing data infrastructure aligning it with strategic KPIs tailored to your specific market and brand goals. Our team provides forecasting assistance, using analytics to drive informed decision-making, resulting in robust P&L development."
           />

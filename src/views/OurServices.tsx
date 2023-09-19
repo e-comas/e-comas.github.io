@@ -10,7 +10,7 @@ import Technology from "./Technology.svg";
 import "./animate-in.scss";
 import "runtime:./animate-in.ts";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
-import { ecDataAndTech, ecDigitalRetailMedia, ecGlobalExpansion } from "../utils/customIconDefinition";
+import { ecData, ecTarget, ecGlobe } from "../utils/customIconDefinition";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default () => (
@@ -27,7 +27,7 @@ export default () => (
         {/* <GlobalExpansion /> */}
         <FontAwesomeIcon
           size="4x"
-          icon={ecGlobalExpansion as IconProp}
+          icon={ecGlobe as IconProp}
           color="#fed13f"
         />
         <h4>Global Expansion</h4>
@@ -48,7 +48,7 @@ export default () => (
         {/* <RetailMedia /> */}
         <FontAwesomeIcon
           size="4x"
-          icon={ecDigitalRetailMedia as IconProp}
+          icon={ecTarget as IconProp}
           color="#fed13f"
         />
         <h4>Digital Retail Media</h4>
@@ -70,7 +70,7 @@ export default () => (
         {/* <Technology /> */}
         <FontAwesomeIcon
           size="4x"
-          icon={ecDataAndTech as IconProp}
+          icon={ecData as IconProp}
           color="#fed13f"
         />
         <h4>Technology & Data</h4>

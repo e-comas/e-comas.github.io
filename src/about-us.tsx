@@ -24,7 +24,7 @@ import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import "./views/animate-in.scss";
 import "runtime:./views/animate-in.ts";
 import "runtime:./views/animate-on-view.ts";
-import { ecDataAndTech, ecDigitalRetailMedia, ecGlobalExpansion } from "./utils/customIconDefinition.ts";
+import { ecData, ecTarget, ecGlobe } from "./utils/customIconDefinition.ts";
 
 export default (
   <Body title="About eComas">
@@ -108,7 +108,7 @@ export default (
             desc={
               "Our experts have successfully built brands for over a decade on Amazon and beyond. We speak the local languages and have strong partnerships with key eCommerce players to drive your business forward globally.              "
             }
-            icon={ecGlobalExpansion as IconProp}
+            icon={ecGlobe as IconProp}
             centered={true}
             invertSVG={true}
           >
@@ -121,7 +121,7 @@ export default (
             desc={
               "We’re an Amazon-verified partner and Google Ads-certified agency, handling your advertising campaigns and leveraging the full capabilities of digital media platforms to expand your reach and grow your sales."
             }
-            icon={ecDigitalRetailMedia as IconProp}
+            icon={ecTarget as IconProp}
             centered={true}
             invertSVG={true}
           >
@@ -134,7 +134,7 @@ export default (
             desc={
               "Get better visibility over your business and make growth-fuelling data-driven decisions with the latest tech, which automates processes and gives you a holistic view of customer habits, major trends and more."
             }
-            icon={ecDataAndTech as IconProp}
+            icon={ecData as IconProp}
             centered={true}
             invertSVG={true}
           >

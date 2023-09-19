@@ -25,8 +25,8 @@ import { EComas, ECommerce } from "./views/eWords.tsx";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import ListElement from "./views/ListElement.tsx";
 import {
-  ecAccountManagement,
-  ecGlobalExpansion,
+  ecPersonAndCog,
+  ecGlobe,
   ecTrolley,
 } from "./utils/customIconDefinition.ts";
 
@@ -91,17 +91,17 @@ export default (
             }
           />
           <ListElement
-            icon={ecGlobalExpansion as IconProp}
+            icon={ecGlobe as IconProp}
             title="EU Expansion"
             desc="Don’t miss out on the huge opportunity that is Europe. Split into multiple countries, you’ll have to conquer them one by one but don’t worry; our native speakers will get you ready in no time."
           />
           <ListElement
-            icon={ecGlobalExpansion as IconProp}
+            icon={ecGlobe as IconProp}
             title="US Expansion"
             desc="The US is Amazon’s home base, which means the largest market to sell in. We’ve helped many brands expand from Europe or Asia to the US; let us help you thrive in this key market."
           />
           <ListElement
-            icon={ecGlobalExpansion as IconProp}
+            icon={ecGlobe as IconProp}
             title="Asia Expansion"
             desc={
               <>
@@ -112,12 +112,12 @@ export default (
             }
           />
           <ListElement
-            icon={ecGlobalExpansion as IconProp}
+            icon={ecGlobe as IconProp}
             title="RoW Expansion"
             desc="Want to expand in South America, South Africa or Australia? We work closely with trusted local partners that can help you reach and succeed in each corner of the world."
           />
           <ListElement
-            icon={ecAccountManagement as IconProp}
+            icon={ecPersonAndCog as IconProp}
             title="Account Management"
             desc={
               <>
