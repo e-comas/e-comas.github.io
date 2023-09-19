@@ -10,7 +10,7 @@ import "./blog.scss";
 export default (
   <Body title="{{ page.title }}">
     <Header />
-    <Breadcrumbs />
+    {/* <Breadcrumbs /> */}
     <main id="main-content">
       <h2>{"{{ page.title | escape }}"}</h2>
       <div class="publishing-info">

@@ -58,7 +58,7 @@ managing your operations, creating content and growing traffic.",
 export default (
   <Body title="White paper">
     <Header />
-    <Breadcrumbs />
+    {/* <Breadcrumbs /> */}
     <Hero>
       <h1>White paper</h1>
       <p>
