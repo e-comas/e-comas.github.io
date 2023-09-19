@@ -23,7 +23,7 @@
     list-style-type: "# ";
     display: inline;
   }
-  &.hidden{
+  &[hidden]{
     display: none !important;
   }
 }
