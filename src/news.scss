@@ -4,19 +4,16 @@
 main {
   display: grid;
   gap: inherit;
-  grid-template-areas: "title" "aside" "articles";
+  grid-template-areas: "aside" "articles";
 
   @media screen and (min-width: #{$max-width}) {
     grid-template-columns: 300px auto;
-    grid-template-areas: "title title" "aside articles";
+    grid-template-areas: "aside articles";
   }
   @media screen and (min-width: #{$max-width+500px}) {
     grid-template-columns: 400px auto;
   }
 
-  & > h2 {
-    grid-area: title;
-  }
   & > section {
     grid-area: articles;
     @media screen and (max-width: 599px) {
