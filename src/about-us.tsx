@@ -30,9 +30,9 @@ export default (
   <Body title="About eComas">
     <Header />
     <Hero class="animate-in">
-      <h5 class="title">
+      <h1 class="title">
         We make <ECommerce /> simple
-      </h5>
+      </h1>
       <p>
         It's no secret: selling online can be tricky. That's why, for over 10
         years, we've been helping brands tackle seemingly "unmanageable"
