@@ -68,7 +68,7 @@ url = "/podcast.html"
 
 [[root.children]]
 name = "Client Login"
-url = "about:blank"
+url = "/clientlogin.html"
 
 [[root.children]]
 name = "Contact us"
