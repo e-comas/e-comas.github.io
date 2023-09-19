@@ -1,4 +1,4 @@
-import { h } from "@aduh95/async-jsx";
+import { h, Fragment } from "@aduh95/async-jsx";
 
 import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
@@ -11,183 +11,231 @@ import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import Footer from "./views/Footer.tsx";
 
 import "./classic-page.scss";
+import "./global-expansion.scss";
+
 import "./utils/open-form-in-modal.scss";
 import "runtime:./utils/open-form-in-modal.ts";
+import Hero from "./views/hero.tsx";
+import ListElement from "./views/ListElement.tsx";
+import {
+  ecPersonAndCog,
+  ecTarget,
+  ecGlobe,
+  ecData,
+  ecTrolley,
+} from "./utils/customIconDefinition.ts";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faDownload, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import FlipCard from "./views/flipCard.tsx";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 
 export default (
-  <Body title="Content and Syndication">
+  <Body title="Content & Creative">
     <Header />
-    <Breadcrumbs />
+    {/* <Breadcrumbs /> */}
+    <Hero class="animate-in">
+      <h1>Content & Creative</h1>
+      <p>
+        We create outstanding product content, help you organize and manage your
+        content, and globalize your listings to make your brand truly shine.
+        Maximize your online retail content strategy and watch those sales
+        skyrocket with our world-class expertise today.
+      </p>
+      <a href="/contact.html" class="cta">
+        Book a Call
+      </a>
+    </Hero>
     <main id="main-content">
-      <h2>
-        World class expertise to <strong>maximise</strong> your content!
-      </h2>
-
-      <section class="slidable-section">
-        <SlidingText>
-          We <strong>create</strong> outstanding content.
-        </SlidingText>
-        <SlidingText>
-          We help you <strong>organise &amp; manage</strong> your content.
-        </SlidingText>
-        <SlidingText>
-          We can <strong>globalise</strong> your listings.
-        </SlidingText>
-      </section>
-
-      <HoverableMenu>
-        <ElementWithBackgroundImage
-          tagName="section"
-          src="/images/Content Creation.png"
-        >
-          <h3>Content creation</h3>
-          <p>Great content leads to great conversion, therefore great sales.</p>
+      <figure id="boost-your-brand" class="made-easy">
+        <figcaption>
+          <h3>BOOST YOUR BRAND & DRIVE TRAFFIC</h3>
           <p>
-            <a href="#content_creation">Read further</a>
+            Elevate your Amazon presence and supercharge your sales with our
+            expert content solutions. Our content pros specialize in crafting
+            compelling product listings that grab shoppers’ attention and make
+            them hit that "Add to Cart" button. We'll help you create,
+            streamline and manage your listings, ensuring a seamless customer
+            experience.
+            <br />
+            <br />
+            With our global reach, we'll expand your listings to reach a wider
+            audience, making your brand stand out in the crowded marketplace.
+            Count on us to ramp up your sales and help your brand rock on Amazon
+            and beyond.
           </p>
-        </ElementWithBackgroundImage>
-        <ElementWithBackgroundImage
-          tagName="section"
-          src="/images/Content Management.png"
-        >
-          <h3>Content management</h3>
-          <p>
-            We take care of the complex process of content organisation and
-            syndication.
-          </p>
-          <p>
-            <a href="#content_management">Read further</a>
-          </p>
-        </ElementWithBackgroundImage>
-        <ElementWithBackgroundImage
-          tagName="section"
-          src="/images/Content Localisation.png"
-        >
-          <h3>Content localisation</h3>
-          <p>We help you to scale and expand your business internationally.</p>
-          <p>
-            <a href="#content_localisation">Read further</a>
-          </p>
-        </ElementWithBackgroundImage>
-      </HoverableMenu>
-
-      <section id="content_creation">
-        <figure>
-          <Picture src="/images/Content Creation.png" alt="" />
-          <figcaption>
-            <h3>Content creation</h3>
-            <p>
-              Our team of content experts can help you define your needs and
-              ensure you send customers to pages which really convert - with
-              compelling content, relevant to your audience, that will turn into
-              sales. We can support on:
-            </p>
-            <ul>
-              <li>
-                <strong>Copy</strong>: titles, bullet points, descriptions,
-                below the fold content;
-              </li>
-              <li>
-                <strong>Pictures</strong>: product simple pictures, in
-                situation, in use, with graphic designs;
-              </li>
-              <li>
-                <strong>Videos</strong>: user friendly videos displaying ranges
-                or product benefits;
-              </li>
-              <li>
-                <strong>A+ / below the fold</strong>: design and execution;
-              </li>
-              <li>
-                <strong>Brand Stores</strong>: design, structure, content.
-              </li>
-            </ul>
-            <a href="#" className="cta">
-              Case study: Qhali Kay
-            </a>
-          </figcaption>
-        </figure>
-      </section>
-
-      <section id="content_management">
-        <figure id="michelin">
-          <figcaption>
-            <h3>Content management</h3>
-            <p>
-              We proudly partner with Salsify to help you with Product
-              Information Management (PIM) &amp; Syndication, organising and
-              uploading your content across multiple ecommerce platforms so you
-              can <strong>win on the digital shelf</strong>.
-            </p>
-            <a class="cta" href="salsify.html">
-              More about Salsify
-            </a>
-            <p>
-              A PIM and syndication tool will solve the following challenges:
-            </p>
-            <ul>
-              <li>
-                <strong>One source of truth</strong>: have all your content in
-                one place.
-              </li>
-              <li>
-                <strong>Ensure scalability</strong> with one system handling all
-                your copies in all languages.
-              </li>
-              <li>
-                <strong>Save up to 50%</strong> on content upload with an
-                automated system linked to all the major marketplaces in the
-                world.
-              </li>
-            </ul>
-            <a
-              href="//go.e-comas.com/l/885733/2022-09-02/bwml5"
-              target="_blank"
-              className="cta open-in-modal"
-            >
-              Case study: Saving time through upload automation
-            </a>
-          </figcaption>
-          <Picture src="/images/Content Management.png" alt="" />
-        </figure>
-      </section>
-
-      <section id="content_localisation">
-        <figure id="mycarrypotty">
-          <Picture src="/images/Content Localisation.png" alt="" />
-          <figcaption>
-            <h3>Content localisation</h3>
-            <p>
-              <ECommerce /> makes it easy to expand in the different countries
-              in the world. However, customers of each country in the world
-              still want to be addressed in their own language, with the local
-              specificities. We therefore can help you with:
-            </p>
-            <ul>
-              <li>
-                <strong>Content translation</strong> by native speakers.
-              </li>
-              <li>
-                <strong>SEO optimisation</strong> done locally - not translating
-                keywords but researching the proper keywords.
-              </li>
-              <li>
-                <strong>Support to upload</strong> to all the different
-                platforms localised content in the world thanks to the use of
-                Salsify.
-              </li>
-            </ul>
-            <a
-              href="//go.e-comas.com/l/885733/2023-01-16/l813c"
-              target="_blank"
-              className="cta"
-            >
-              Case study: My Carry Potty
-            </a>
-          </figcaption>
-        </figure>
-      </section>
+        </figcaption>
+        <Picture
+          src={"/images/e-Comas16651.jpg"}
+          alt={"eCommas Content team"}
+        />
+      </figure>
+      <ElementWithBackgroundImage
+        tagName="section"
+        src="/images/Ecomma-b2.jpg"
+        class="about-us"
+      >
+        <h3>Our Expertise</h3>
+        <p>
+          We optimize listings, craft compelling product descriptions, and
+          develop winning marketing content to get your products in front of the
+          right people and boost sales.
+        </p>
+        <h2>
+          World class expertise to <strong>maximise</strong> your content!
+        </h2>
+        <div role="list">
+          <ListElement
+            title={"Content Creation"}
+            desc={
+              "We can audit your existing content, help you define your needs and craft high-converting pages with relevant and compelling Amazon A+ content, pictures, videos and more."
+            }
+          />
+          <ListElement
+            icon={ecPersonAndCog as IconProp}
+            title={"Content Management"}
+            desc={
+              <>
+                We partner with Salsify to help you with Product Information
+                Management (PIM) and Syndication, organizing and uploading your
+                content across multiple <ECommerce /> platforms.
+              </>
+            }
+          />
+          <ListElement
+            icon={ecGlobe as IconProp}
+            title={"Content Localization"}
+            desc={
+              "Adapting your content to suit the preferences, shopping habits and culture of target international markets, our global team can help you optimise sales and customer engagement."
+            }
+          />
+          <ListElement
+            icon={ecGlobe as IconProp}
+            title={"Content Translation"}
+            desc={
+              <>
+                <ECommerce /> makes it easy to expand in the different countries
+                in the world. Get your content translated by native speakers to
+                speed up global growth and access diverse customer bases.
+              </>
+            }
+          />
+          <ListElement
+            icon={ecTarget as IconProp}
+            title={"Website Creation"}
+            desc={
+              "From the research phase to design and development, we can build custom stores on Shopify that perfectly captures your brand and gets your products in front of the right people."
+            }
+          />
+          <ListElement
+            icon={faMagnifyingGlass as IconProp}
+            title={"Salsify Implementation"}
+            desc={
+              "From designing the ideal data model to ensuring a seamless flow of your product data to the desired syndication channels, we handle it all and set up Salsify to suit your needs."
+            }
+          />
+          <ListElement
+            icon={ecPersonAndCog as IconProp}
+            title={"Salsify Managed Services"}
+            desc={
+              "Whether you're looking for routine maintenance, data management or feature enhancements, our experts ensure your Salsify platform operates smoothly and efficiently."
+            }
+          />
+          <ListElement
+            icon={ecTrolley as IconProp}
+            title={"Brand Stores"}
+            desc={
+              "Enhance your brand and boost traffic using our team's expertise in creating Amazon Storefronts, featuring compelling visuals and expertly crafted copy to bring your brand story to life."
+            }
+          />
+          <ListElement
+            icon={faMagnifyingGlass as IconProp}
+            title={"SEO Optimization"}
+            desc={
+              "We can improve your product visibility, rankings and sales by optimising product listings with strategic keywords and engaging content tailored to each marketplace."
+            }
+          />
+        </div>
+      </ElementWithBackgroundImage>
     </main>
+    <section id="how-we-do-it" class="how-we-do-it">
+      <h2>How We Do It</h2>
+      <p>
+        We combine strategic planning, data analysis and hands-on operational
+        work to help brands break into new and growing markets.
+      </p>
+      <div role="list">
+        <FlipCard
+          title="Define Strategy"
+          desc={
+            <>
+              We audit of your brand’s current <ECommerce /> presence and work
+              closely with you to set clear and measurable goals."
+            </>
+          }
+        />
+        <FlipCard
+          title="Manage Operations"
+          desc="From optimizing product listings to handling logistics and VAT, we can manage your account on multiple platforms."
+        />
+        <FlipCard
+          title="Grow Traffic"
+          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximize ROI."
+        />
+        <FlipCard
+          title="Drive Conversion"
+          desc="We use analytics tools to track key performance metrics, such as sales, traffic, conversion rates, and customer feedback."
+        />
+      </div>
+    </section>
+    <section id="see-the-results" class="see-the-results">
+      <h2>See The Results</h2>
+      <figure>
+        <Picture
+          src={"/images/case-studies/michelin.png"}
+          alt={"stack of tires"}
+        />
+        <figcaption>
+          <h3>Saving time through upload automation</h3>
+          <p>
+            When you have thousands of product listings, you need a robust
+            solution for content management and upload. Here’s how we and our
+            partners at Salsify helped a leading tyres brand save time and
+            improve consistency.
+          </p>
+          <a class="cta" href="TODO">
+            Download
+            <FontAwesomeIcon icon={faDownload as IconProp} />
+          </a>
+        </figcaption>
+      </figure>
+    </section>
+    <section id="blog" class="blog">
+      <h2>Blog</h2>
+      <p>
+        Find out useful <ECommerce /> tips and what's new in the Amazon world
+        relating to content.
+      </p>
+      <div role="list">
+        {"{% for post in site.tags.Syndication | slice: 0, 3 %}"}
+        <article>
+          <a href="{{ post.url }}">
+            <img
+              src="{{ post.thumbnail }}"
+              alt="{{ post.thumbnail_alt }}"
+              loading="lazy"
+            />
+          </a>
+          <h3>
+            <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
+          </h3>
+          <p>{"{{ post.excerpt | escape }}"}</p>
+          <a href="{{ post.url }}" class="cta">
+            Read More
+          </a>
+        </article>
+        {"{% endfor %}"}
+      </div>
+    </section>
     <Footer />
   </Body>
 ).then((e) => document.body.append(e));
