@@ -5,8 +5,6 @@ import Header from "./views/Header.tsx";
 import Breadcrumbs from "./views/Breadcrumbs.tsx";
 import Picture from "./utils/Picture.tsx";
 import { ECommerce } from "./views/eWords.tsx";
-import SlidingText from "./views/SlidingText.tsx";
-import HoverableMenu from "./views/HoverableMenu.tsx";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import Footer from "./views/Footer.tsx";
 
@@ -21,13 +19,16 @@ import {
   ecPersonAndCog,
   ecTarget,
   ecGlobe,
-  ecData,
   ecTrolley,
 } from "./utils/customIconDefinition.ts";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { faDownload, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDownload,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import FlipCard from "./views/flipCard.tsx";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import yaml from "./utils/yaml.ts";
 
 export default (
   <Body title="Content & Creative">
@@ -238,4 +239,4 @@ export default (
     </section>
     <Footer />
   </Body>
-).then((e) => document.body.append(e));
+).then((e) => (document.body.append(e), yaml`layout: none`));
