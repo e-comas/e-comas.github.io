@@ -18,6 +18,9 @@ import "./partners.scss";
 import Hero from "./views/hero.tsx";
 import Picture from "./utils/Picture.tsx";
 import { ECommerce } from "./views/eWords.tsx";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 // TODO?: get SVGs for all
 const partners = [
@@ -139,9 +142,13 @@ export default (
         These services include tech solutions, data insights platforms,
         regulatory and finance, media advertising, fulfillment and logistics and
         more!
+        <br />
+        <br />
+        To find out more about our partnership network speak with the team.
       </p>
       <a href="https://calendly.com/pete-ecomas" class="cta">
-        Learn More
+        Book a Call
+        <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>
     </Hero>
     {/* <Breadcrumbs /> */}
