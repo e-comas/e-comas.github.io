@@ -24,7 +24,7 @@ export default (
       <h1>Get in touch!</h1>
       <p>
         Do you want to work with us to build a global <ECommerce /> empire from
-        the ground up? Or maybe you've just got a quick question about Amazon?
+        the ground up? Or maybe you've just got a quick question about Amazon?{" "}
         <strong>Either way, we can help - just give us a shout!</strong>
       </p>
       <h3>Chat to our lovely Business Development team today</h3>
