@@ -45,7 +45,20 @@ export default (
             Let's talk
           </a>
         </figcaption>
-        <img src="/images/Earth.svg" />
+        <div>
+          <img src="/images/Earth.svg" />
+          <a
+            href="https://advertising.amazon.com/partners/directory/details/amzn1.ads1.ma1.cj3vydv54i8qcb80mhstj0em0/"
+            target="_blank"
+            rel="noopener"
+            role="listitem"
+          >
+            <Picture
+              src="/images/certifications/Verified partner badge.png"
+              alt="Amazon Ads Verified Partner badge"
+            />
+          </a>
+        </div>
       </figure>
 
       <div class="video-container">

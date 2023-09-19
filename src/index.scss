@@ -196,11 +196,29 @@ figure.intro {
       max-width: 100%;
     }
   }
-  & > img {
-    height: 100%;
-    max-height: 12rem;
+  & > div {
+    height: 90%;
+    max-height: 24rem;
     max-width: calc(100% + 4rem);
     width: auto;
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    * {
+      min-width: 0;
+      min-height: 0;
+      max-height: 100%;
+      max-width: 100%;
+      display: flex;
+    }
+    a picture {
+      display: flex;
+      // max-height: 100%;
+      & > img {
+        height: 100%;
+        max-height: 20rem;
+      }
+    }
   }
   @media screen and (max-width: 370px) {
     padding: 0.5rem;
