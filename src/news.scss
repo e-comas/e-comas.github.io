@@ -1,17 +1,42 @@
 @use "./utils/variables" as *;
 @use "./utils/blog-article-preview" as *;
 
+#main-content {
+  padding: 1rem;
+  & > * {
+    flex: 0 0 100%;
+    @media screen and (min-width: 1000px) {
+      flex: 0 0 calc(50% - 1rem);
+    }
+    @media screen and (min-width: 1400px) {
+      flex: 0 0 calc(33% - 1rem);
+    }
+    @media screen and (min-width: 1800px) {
+      flex: 0 0 calc(25% - 1rem);
+    }
+  }
+}
+
+#main-content > article {
+  padding: 1rem;
+  .tags{
+    list-style-type: "# ";
+    display: inline;
+  }
+}
+
+
 main {
   display: grid;
   gap: inherit;
   grid-template-areas: "aside" "articles";
 
   @media screen and (min-width: #{$max-width}) {
-    grid-template-columns: 300px auto;
+    grid-template-columns: 200px auto;
     grid-template-areas: "aside articles";
   }
   @media screen and (min-width: #{$max-width+500px}) {
-    grid-template-columns: 400px auto;
+    grid-template-columns: 250px auto;
   }
 
   // & > section {

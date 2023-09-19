@@ -45,14 +45,14 @@ export default (
           <h3>
             <a href="{{ post.url }}">{"{{ post.title | escape }}"}</a>
           </h3>
+          <p>
+            <a href="{{ post.url }}">{"{{ post.excerpt | escape }}"}</a>
+          </p>
           <ul class="tags">
             {"{% for tag in post.tags %}"}
             <li>{"{{ tag }}"}</li>
             {"{% endfor %}"}
           </ul>
-          <p>
-            <a href="{{ post.url }}">{"{{ post.excerpt | escape }}"}</a>
-          </p>
           <a href="{{ post.url }}" class="cta">
             Read the article
           </a>
