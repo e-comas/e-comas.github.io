@@ -96,7 +96,7 @@ export default (
         </a>
       </section>
 
-      <ElementWithBackgroundImage
+      {/* <ElementWithBackgroundImage
         tagName="section"
         src="/images/Banner6 3x .png"
         class="key-figures"
@@ -113,7 +113,7 @@ export default (
           <AnimatedFigure tagName="strong" countTo={2_500_000} currency="EUR" />
           <span>advertising campaigns handled</span>
         </p>
-      </ElementWithBackgroundImage>
+      </ElementWithBackgroundImage> */}
       <TeamCertifications />
     </main>
     <Footer />
