@@ -66,7 +66,7 @@ export default (
         findings in our in-depth white papers. Learn more from us here!
       </p>
     </Hero>
-    <main id="main-content">
+    <main id="main-content" class="blog">
       {papers.map((paper) => (
         <article>
           {paper.image.endsWith("svg") ? (

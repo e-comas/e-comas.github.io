@@ -25,10 +25,10 @@ export default (
         from the team.
       </p>
     </Hero>
-    <main>
+    <main id="main-content">
       <aside></aside>
       {/* <h2>Our Blog</h2> */}
-      <section id="main-content">
+      <section class="blog">
         {"{% for post in site.posts %}"}
         {"{% unless post.tags contains 'Webinar' or post.sitemap == false %}"}
         <article>

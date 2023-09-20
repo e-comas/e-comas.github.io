@@ -61,7 +61,7 @@ export default (
     {/* <Breadcrumbs /> */}
     {/* TODO: Take from Blog? */}
     {/* TODO: display only 3 at a time/carrousel? */}
-    <main id="main-content">
+    <main id="main-content" class="blog">
       {testimonies.map((caseStudy) => (
         <article id={caseStudy.id}>
           <a href={caseStudy.link}>

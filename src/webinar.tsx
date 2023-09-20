@@ -30,7 +30,7 @@ export default (
       </a>
     </Hero>
     {/* <Breadcrumbs /> */}
-    <main id="main-content">
+    <main id="main-content" class="blog">
       {"{% for webinar in site.tags.Webinar | slice: 0, 3 %}"}
       <article>
         <a href="{{ webinar.url }}">

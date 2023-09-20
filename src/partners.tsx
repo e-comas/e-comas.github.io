@@ -152,7 +152,7 @@ export default (
       </a>
     </Hero>
     {/* <Breadcrumbs /> */}
-    <main id="main-content">
+    <main id="main-content" class="blog">
       {partners.map((partner) => (
         <article id={partner.id}>
           <a href={partner.link}>
