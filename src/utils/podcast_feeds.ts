@@ -76,7 +76,7 @@ function generateFilterField() {
 }
 
 const loading = document.createElement("p");
-loading.textContent = "Fetching content, please wait...";
+loading.textContent = "Fetching content from RSS feed, please wait...";
 document.getElementById("podcast")?.prepend(loading);
 
 fetchRSSFeed(dummy, (card, fragment, item: PodcastItem) => {
@@ -92,11 +92,16 @@ fetchRSSFeed(dummy, (card, fragment, item: PodcastItem) => {
     }
   }
   fragment.append(card);
-}).then((podcastContainer) => {
-  generateFilterField();
-  filter();
-  document.getElementById("podcast")?.removeChild(loading);
-  return podcastContainer;
-}, console.warn);
+})
+  .catch((e) => {
+    loading.textContent = "Error: " + e.message;
+    throw e;
+  })
+  .then((podcastContainer) => {
+    generateFilterField();
+    filter();
+    document.getElementById("podcast")?.removeChild(loading);
+    return podcastContainer;
+  }, console.warn);
 
 addEventListener("hashchange", filter);
