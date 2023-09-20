@@ -6,7 +6,7 @@ const hashtag = /#\w+\b/g;
 
 const dummy = document.createElement("span");
 document.getElementById("podcast")!.lastElementChild?.before(dummy);
-document.getElementById("podcast")?.classList.add("podcast");
+// document.getElementById("podcast")?.classList.add("podcast");
 
 const hashtags = new Set() as Set<string>;
 const tagsCache = new WeakMap() as Map<HTMLElement, string[]>;
@@ -40,9 +40,20 @@ function filter() {
   }
 }
 
+const dataList = document.createElement("datalist");
+dataList.id = "tags-list";
+filterField.type = "search";
+filterField.placeholder = "Filter by tag";
+filterField.setAttribute("aria-label", filterField.placeholder);
+filterField.setAttribute("list", dataList.id);
+const updateSearch = () => {
+  location.hash = filterField.value;
+};
+filterField.addEventListener("change", updateSearch);
+filterField.addEventListener("search", updateSearch);
+document.querySelector("main>aside")!.append(dataList, filterField);
+
 function generateFilterField() {
-  const dataList = document.createElement("datalist");
-  dataList.id = "tags-list";
   dataList.append(
     ...Array.from(hashtags, (tag) => {
       const option = document.createElement("option");
@@ -50,18 +61,7 @@ function generateFilterField() {
       return option;
     })
   );
-  filterField.type = "search";
-  filterField.placeholder = "Filter by tag";
-  filterField.setAttribute("aria-label", filterField.placeholder);
-  filterField.setAttribute("list", dataList.id);
-  const updateSearch = () => {
-    location.hash = filterField.value;
-  };
-  filterField.addEventListener("change", updateSearch);
-  filterField.addEventListener("search", updateSearch);
   document.querySelector("main>aside")!.append(
-    dataList,
-    filterField,
     ...Array.from(
       new Set(Array.from(cards).flatMap((card) => tagsCache.get(card))),
       (tag) => {
@@ -74,6 +74,10 @@ function generateFilterField() {
     )
   );
 }
+
+const loading = document.createElement("p");
+loading.textContent = "Fetching content, please wait...";
+document.getElementById("podcast")?.prepend(loading);
 
 fetchRSSFeed(dummy, (card, fragment, item: PodcastItem) => {
   cards.add(card as HTMLElement);
@@ -91,6 +95,7 @@ fetchRSSFeed(dummy, (card, fragment, item: PodcastItem) => {
 }).then((podcastContainer) => {
   generateFilterField();
   filter();
+  document.getElementById("podcast")?.removeChild(loading);
   return podcastContainer;
 }, console.warn);
 
