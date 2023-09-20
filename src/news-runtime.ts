@@ -79,10 +79,11 @@ document.querySelector("main>aside")!.append(
 
 const style: HTMLStyleElement = document.createElement("style");
 function filter() {
-  if (tags.has(location.hash)) {
-    for (const article of articles) {
-      article.hidden = !tagsCache.get(article)!.includes(location.hash);
-    }
+  const hasTag = tags.has(location.hash);
+  for (const article of articles) {
+    article.hidden = hasTag && !tagsCache.get(article)!.includes(location.hash);
+  }
+  if (hasTag) {
     filterField.value = location.hash;
     document.head.append(style);
     style.sheet!.insertRule(
@@ -96,9 +97,6 @@ function filter() {
       1
     );
   } else {
-    for (const article of articles) {
-      article.hidden = false;
-    }
     filterField.value = "";
     style.remove();
   }
