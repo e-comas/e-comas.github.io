@@ -1,7 +1,7 @@
 @use "./utils/variables" as *;
 @use "./utils/blog-article-preview" as *;
 
-#main-content {
+.blog {
   padding: 1rem;
   & > * {
     flex: 0 0 100%;
@@ -17,7 +17,7 @@
   }
 }
 
-#main-content > article {
+.blog > article {
   padding: 1rem;
   .tags{
     list-style-type: "# ";
