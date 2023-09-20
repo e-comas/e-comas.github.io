@@ -22,7 +22,7 @@ export default function fetchRSSFeed(
   mapFunction: MapFunction
 ) {
   const { feedContainer, feedContainerWrapper } = createDynamicList();
-  feedContainer.classList.add("dynamic-list", "loading");
+  feedContainer.classList.add("blog", "loading");
   element.replaceWith(feedContainerWrapper);
   return fetch(url)
     .then((response) =>

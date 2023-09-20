@@ -8,7 +8,8 @@ import { EComas, ECommerce } from "./views/eWords.tsx";
 
 import "runtime:./utils/podcast_feeds.ts";
 import Hero from "./views/hero.tsx";
-import "./resources.scss";
+import "./podcast.scss";
+import "./webinar.scss";
 
 export default (
   <Body title="Podcast">
@@ -23,6 +24,7 @@ export default (
         </p>
       </Hero>
     <main id="main-content">
+    <aside></aside>
 
       <section id="podcast">
         <hr />

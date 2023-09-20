@@ -27,6 +27,7 @@ export function createCard(item: PodcastItem, parser: DOMParser) {
   playLink.target = "_blank";
   playLink.rel = "noopener";
   playLink.textContent = "Play";
+  playLink.classList.add("cta");
 
   box.append(title, description, playLink);
   return box;
