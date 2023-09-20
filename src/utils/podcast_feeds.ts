@@ -14,14 +14,30 @@ const cards = new Set() as Set<HTMLElement>;
 
 const filterField = document.createElement("input");
 
+const style: HTMLStyleElement = document.createElement("style");
+
 function filter() {
-  console.log(location.hash);
+  const hasTag = hashtags.has(location.hash);
   for (const card of cards) {
-    card.hidden =
-      hashtags.has(location.hash) &&
-      !tagsCache.get(card)!.includes(location.hash);
+    card.hidden = hasTag && !tagsCache.get(card)!.includes(location.hash);
   }
-  filterField.value = location.hash;
+  if (hasTag) {
+    filterField.value = location.hash;
+    document.head.append(style);
+    style.sheet!.insertRule(
+      `a.tag:not(.cta)[href=${JSON.stringify(location.hash)}]{color:#65D7BE}`,
+      0
+    );
+    style.sheet!.insertRule(
+      `a.cta.tag[href=${JSON.stringify(
+        location.hash
+      )}]{background-color:#65D7BE}`,
+      1
+    );
+  } else {
+    filterField.value = "";
+    style.remove();
+  }
 }
 
 function generateFilterField() {
