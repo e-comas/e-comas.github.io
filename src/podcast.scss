@@ -1,3 +1,11 @@
 #podcast {
   text-align: center;
 }
+
+#loadingMessage {
+  font-weight: bold;
+  color: gray;
+  &.error {
+    color: red;
+  }
+}

@@ -1,12 +1,9 @@
 import { PodcastItem, fetchRSSFeed } from "./podcast_fetch.ts";
-import autoScroll from "./auto-scroll.ts";
-import { createDynamicList } from "./rss_feed.ts";
 
 const hashtag = /#\w+\b/g;
 
 const dummy = document.createElement("span");
 document.getElementById("podcast")!.lastElementChild?.before(dummy);
-// document.getElementById("podcast")?.classList.add("podcast");
 
 const hashtags = new Set() as Set<string>;
 const tagsCache = new WeakMap() as Map<HTMLElement, string[]>;
@@ -53,7 +50,7 @@ filterField.addEventListener("change", updateSearch);
 filterField.addEventListener("search", updateSearch);
 document.querySelector("main>aside")!.append(dataList, filterField);
 
-function generateFilterField() {
+function populateFilterField() {
   dataList.append(
     ...Array.from(hashtags, (tag) => {
       const option = document.createElement("option");
@@ -76,6 +73,7 @@ function generateFilterField() {
 }
 
 const loading = document.createElement("p");
+loading.id = "loadingMessage";
 loading.textContent = "Fetching content from RSS feed, please wait...";
 document.getElementById("podcast")?.prepend(loading);
 
@@ -95,10 +93,11 @@ fetchRSSFeed(dummy, (card, fragment, item: PodcastItem) => {
 })
   .catch((e) => {
     loading.textContent = "Error: " + e.message;
+    loading.classList.add("error");
     throw e;
   })
   .then((podcastContainer) => {
-    generateFilterField();
+    populateFilterField();
     filter();
     document.getElementById("podcast")?.removeChild(loading);
     return podcastContainer;
