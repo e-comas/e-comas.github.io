@@ -8,7 +8,7 @@ import { EComas, ECommerce } from "./views/eWords.tsx";
 
 import "runtime:./utils/podcast_feeds.ts";
 import Hero from "./views/hero.tsx";
-import "./podcast.scss";
+import "./news.scss";
 import "./webinar.scss";
 
 export default (
