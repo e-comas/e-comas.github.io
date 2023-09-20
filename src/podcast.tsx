@@ -10,6 +10,7 @@ import "runtime:./utils/podcast_feeds.ts";
 import Hero from "./views/hero.tsx";
 import "./news.scss";
 import "./webinar.scss";
+import "./podcast.scss";
 
 export default (
   <Body title="Podcast">
@@ -26,7 +27,6 @@ export default (
     <main id="main-content">
     <aside></aside>
       <section id="podcast">
-        <hr />
         <noscript>
           You need JavaScript enabled to pull the content for this page.
         </noscript>
