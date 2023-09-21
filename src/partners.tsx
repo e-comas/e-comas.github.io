@@ -1,4 +1,4 @@
-import { h } from "@aduh95/async-jsx";
+import { h, Fragment } from "@aduh95/async-jsx";
 
 import yaml from "./utils/yaml.ts";
 
@@ -61,20 +61,25 @@ const partners = [
     link: "https://www.zonguru.com",
   },
   {
-    // TODO: get text
     image: "/images/partners/shopify.svg",
     id: "shopify",
     name: "Shopify",
-    text: "Est commodo nostrud sunt nisi consectetur duis voluptate. Nostrud eiusmod ut aute tempor eu magna exercitation deserunt minim officia eu nisi. Ullamco velit tempor do exercitation ipsum cillum ad deserunt culpa sint ut irure. Ad veniam esse nisi exercitation cillum. Ea dolor dolore incididunt excepteur et amet.",
-    link: "https://www.shopify.com/",
+    text: "Shopify is a complete commerce platform that lets you start, grow, and manage a business. Our expertise and leadership in commerce comes from the experiences of millions of merchants on our platform. Their successes allow us to forecast and build the right features to not only power commerce today but to help shape and define what the industry looks like tomorrow.",
+    link: "/website-creation.html#Shopify",
   },
   {
-    // TODO: get text
     image: "/images/partners/Amazon ADS.svg",
     id: "amazonAds",
     name: "amazon ads",
-    text: "Incididunt proident do eu cillum id officia culpa. Eu et veniam sunt ad elit cupidatat. Proident veniam duis aliquip dolor duis tempor irure culpa. Dolor velit non cupidatat incididunt. Cillum et commodo pariatur aliqua laborum nulla laboris commodo. Enim in proident velit ullamco fugiat. Laborum commodo consequat velit ea aute sint laboris nulla.",
-    link: "https://advertising.amazon.com/",
+    text: (
+      <>
+        <strong>Grow your business on and off Amazon</strong> <br /> Reach
+        customers while they shop. Our offerings help you achieve your
+        advertising goals while helping to bring a global audience of customers
+        the products they’re looking for.
+      </>
+    ),
+    link: "/retail-media.html",
   },
   {
     image: "/images/partners/complizon.png",
@@ -94,11 +99,10 @@ From wellness and dietary enhancements to children's toys, eCommerce businesses 
     link: "https://datahawk.co/",
   },
   {
-    // TODO: get text
     image: "/images/partners/helium10.svg",
     id: "helium10",
     name: "Helium 10",
-    text: "Labore duis dolore cupidatat culpa ut nulla esse duis aute aliquip velit ullamco. Lorem eu fugiat ad proident cillum laborum. Fugiat occaecat duis laborum aliqua ex ipsum ullamco aute officia laborum. Deserunt fugiat eiusmod exercitation qui magna adipisicing cillum deserunt amet magna. Cupidatat cillum consequat dolore Lorem dolore irure ex sunt mollit tempor anim esse est.",
+    text: "Helium 10 is the leading all-in-one software platform for Amazon merchants, delivering accurate, data-driven solutions to sellers. Headquartered in Irvine, California, Helium 10 empowers entrepreneurs globally with the power of data, ongoing education, and community support necessary to maximize their potential and thrive in the future of e-commerce. From opportunity seekers to solopreneurs, to full-time sellers, enterprises, agencies, and everyone in between, Helium 10 champions entrepreneurship at all stages with the playbook to build, grow and scale a meaningful and steadfast e-commerce business",
     link: "https://www.helium10.com",
   },
   {
