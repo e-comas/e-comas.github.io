@@ -89,6 +89,7 @@ url.LinkedIn = "https://www.linkedin.com/in/varuna-sridhar-805193116"
 Name = "Michael Baron"
 Team = "Global Expansion"
 Title = "PIM Consultant"
+pictureUrl = "/images/team/Michael Baron.png"
 url.LinkedIn = "https://www.linkedin.com/in/michael-baron-a0808822/"
 
 
@@ -365,6 +366,7 @@ url.LinkedIn = "https://www.linkedin.com/in/appachu-kodira-4b875789/"
 Name = "Kevin"
 Title = "Advertising Specialist"
 Team = "Advertising"
+pictureUrl = "/images/team/Kevin.png"
 
 
 [[team_member]]
@@ -397,6 +399,7 @@ Name = "Efigenia Miranda"
 Title = "Retail Support Specialist"
 Team = "Retail"
 url.LinkedIn = "https://www.linkedin.com/in/efigenia-miranda"
+pictureUrl = "/images/team/Efigenia.png"
 
 
 [[team_member]]
