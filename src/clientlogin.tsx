@@ -5,6 +5,7 @@ import yaml from "./utils/yaml";
 import "./clientlogin.scss";
 import Hero from "./views/hero";
 import { ECommerce } from "./views/eWords";
+import Footer from "./views/Footer";
 
 export default (
   <Body title="Login page">
@@ -22,6 +23,7 @@ export default (
       <a href="https://reports.e-comas.com/seller">Seller</a>
       <a href="https://reports.e-comas.com/vendor">Vendor</a>
     </main>
+    <Footer />
   </Body>
 ).then(
   (e) => (
