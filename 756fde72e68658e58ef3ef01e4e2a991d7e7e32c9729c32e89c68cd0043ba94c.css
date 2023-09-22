@@ -1,0 +1,1 @@
+#main-content{display:flex;margin:auto;padding:3rem 0 2rem}@media screen and (min-width:800px){#main-content{flex-direction:row}}#main-content .cta{width:10rem;border-radius:1.5rem;background-color:#ffb300;padding:.75rem}#main-content .cta:hover{background-color:#3e4152;color:#fff}
