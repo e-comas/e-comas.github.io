@@ -42,7 +42,15 @@ const partners = [
     image: "/images/partners/ChannelEngine.svg",
     id: "channelEngine",
     name: "ChannelEngine",
-    text: "ChannelEngine connects brands and retailers to over 700 marketplaces and digital sales channels worldwide. Sellers can automate and streamline eCommerce management, making it easy to manage listings, content, and pricing and synchronise stock levels (across all locations) from one central platform.",
+    text: (
+      <>
+        ChannelEngine connects brands and retailers to over 700 marketplaces and
+        digital sales channels worldwide. Sellers can automate and streamline
+        <ECommerce /> management, making it easy to manage listings, content,
+        and pricing and synchronise stock levels (across all locations) from one
+        central platform.
+      </>
+    ),
     link: "https://eu1.hubs.ly/H04_VHP0",
   },
   {
@@ -56,8 +64,19 @@ const partners = [
     image: "/images/partners/zonguru.svg",
     id: "zonGuru",
     name: "ZonGuru",
-    text: "ZonGuru is an innovative eCommerce software toolset to grow Amazon brands and agencies. Established in 2016, its core team consists of seasoned, expert-level Amazon sellers who know from experience what information is key to making important decisions. Used globally by thousands of sellers, enterprise-level brands and specialist agencies — and home to the world’s-first AI-powered Product Listing Optimizer — ZonGuru supports 10 major Amazon marketplaces, is an Amazon-approved partner and features the #1 ranked support team in the business.\
-(Source: Trustpilot)",
+    text: (
+      <>
+        ZonGuru is an innovative <ECommerce /> software toolset to grow Amazon
+        brands and agencies. Established in 2016, its core team consists of
+        seasoned, expert-level Amazon sellers who know from experience what
+        information is key to making important decisions. Used globally by
+        thousands of sellers, enterprise-level brands and specialist agencies —
+        and home to the world’s-first AI-powered Product Listing Optimizer —
+        ZonGuru supports 10 major Amazon marketplaces, is an Amazon-approved
+        partner and features the #1 ranked support team in the business.
+        (Source: Trustpilot)
+      </>
+    ),
     link: "https://www.zonguru.com",
   },
   {
@@ -85,17 +104,32 @@ const partners = [
     image: "/images/partners/complizon.png",
     id: "complizon",
     name: "Complizon",
-    text: "Don’t let non-compliance costs threaten your expansion efforts. Complizon expertly manages your company's product and regulatory compliance issues, carefully crafting strategies to considerably enhance worldwide success.\
-It's a lucrative world out there, and having your affairs in order means you can enter the UK and EU markets with confidence, unlocking potentially millions in revenue.\
-\
-From wellness and dietary enhancements to children's toys, eCommerce businesses seeking success in the UK and EU can gain from our know-how. Complizon serves as your beacon in the realm of global regulatory adherence.",
+    text: (
+      <>
+        Don’t let non-compliance costs threaten your expansion efforts.
+        Complizon expertly manages your company's product and regulatory
+        compliance issues, carefully crafting strategies to considerably enhance
+        worldwide success.\ It's a lucrative world out there, and having your
+        affairs in order means you can enter the UK and EU markets with
+        confidence, unlocking potentially millions in revenue.\ \ From wellness
+        and dietary enhancements to children's toys, <ECommerce /> businesses
+        seeking success in the UK and EU can gain from our know-how. Complizon
+        serves as your beacon in the realm of global regulatory adherence.
+      </>
+    ),
     link: "https://www.complizon.com/",
   },
   {
     image: "/images/partners/datahawk.svg",
     id: "datahawk",
     name: "Datahawk",
-    text: "Datahawk is the next-generation eCommerce Analytics Platform helping you unify eCommerce data and turn it into actionable insights and business recommendations. ",
+    text: (
+      <>
+        Datahawk is the next-generation <ECommerce /> Analytics Platform helping you
+        unify <ECommerce /> data and turn it into actionable insights and business
+        recommendations.
+      </>
+    ),
     link: "https://datahawk.co/",
   },
   {
