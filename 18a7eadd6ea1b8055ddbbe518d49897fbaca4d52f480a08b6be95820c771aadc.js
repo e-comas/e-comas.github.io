@@ -1,1 +1,0 @@
-const e=document.querySelector("details");e?.addEventListener("toggle",(function(){e?.hasAttribute("open")?document.body.classList.add("noScroll"):document.body.classList.remove("noScroll")}));
