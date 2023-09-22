@@ -9,7 +9,7 @@ export default(
         <Header />
         <main id="main-content">
             <a href="https://reports.e-comas.com/seller">Seller</a>
-            <a href="https://reports.e-comas.com/seller">Vendor</a>
+            <a href="https://reports.e-comas.com/vendor">Vendor</a>
         </main>
     </Body>
 ).then(
