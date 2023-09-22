@@ -59,7 +59,7 @@ export default () => (
           campaigns, focusing on the metrics that matter to take your brand to
           new heights.
         </p>
-        <a href="about:blank" class="cta">
+        <a href="/retail-media.html" class="cta">
           Learn more
         </a>
       </figcaption>
@@ -81,7 +81,7 @@ export default () => (
           you a holistic view of customer habits and experiences, major trends
           and more.
         </p>
-        <a href="about:blank" class="cta">
+        <a href="/data-and-tech.html" class="cta">
           Learn more
         </a>
       </figcaption>

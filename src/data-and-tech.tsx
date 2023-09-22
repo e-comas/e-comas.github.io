@@ -199,7 +199,7 @@ export default (
             partners at Salsify helped a leading tyres brand save time and
             improve consistency.
           </p>
-          <a class="cta" href="TODO">
+          <a class="cta" href="https://go.e-comas.com/l/885733/2022-09-02/bwml5">
             Download
             <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>

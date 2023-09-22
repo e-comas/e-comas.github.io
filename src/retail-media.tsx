@@ -176,7 +176,7 @@ export default (
             Swiss baby brand MiaMily interweave its social media and advertising
             to enhance its brand presence and grow its sales.
           </p>
-          <a class="cta" href="TODO">
+          <a class="cta" href="https://go.e-comas.com/l/885733/2023-01-16/l812v">
             Download
             <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>

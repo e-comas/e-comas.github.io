@@ -194,7 +194,7 @@ export default (
             out how we helped My Carry Potty grow its Amazon presence
             internationally.
           </p>
-          <a class="cta" href="TODO">
+          <a class="cta" href="https://go.e-comas.com/l/885733/2023-01-16/l813c">
             Download
             <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>

@@ -125,7 +125,7 @@ export default (
             centered={true}
             invertSVG={true}
           >
-            <a class="cta animate-once" href="TODO">
+            <a class="cta animate-once" href="/retail-mdeia.html">
               Learn more
             </a>
           </ListElement>
@@ -138,7 +138,7 @@ export default (
             centered={true}
             invertSVG={true}
           >
-            <a class="cta animate-once" href="TODO">
+            <a class="cta animate-once" href="/data-and-tech.html">
               Learn more
             </a>
           </ListElement>
