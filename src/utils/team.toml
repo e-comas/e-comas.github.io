@@ -1,7 +1,7 @@
 __use_generic_keys__ = { url = "socialNetwork" }
 
 team_order = [
-  "Global Expansion",
+  "PIM Implementation & Syndication Team",
   "Technology & Analytics",
   "Business Development",
   "Team lead",
@@ -52,7 +52,7 @@ url.YouTube = "https://www.youtube.com/watch?v=0-TBc8-UC1w"
 [[team_member]]
 Name = "Nazlı Kayıkçı"
 Title = "Head of Consulting"
-Team = "Global Expansion"
+Team = "Team lead"
 quote = "Identifying your gaps and needs at the beginning of your ecom journey is the greatest favor that you can do for your brand'"
 pictureUrl = "/images/team/Nazli.png"
 url.LinkedIn = "https://www.linkedin.com/in/nazl%C4%B1-ipek-kay%C4%B1k%C3%A7%C4%B1-86644a23/"
@@ -62,7 +62,7 @@ url.YouTube = "https://www.youtube.com/watch?v=nN8QWZ5S7-M"
 [[team_member]]
 Name = "Agu\u00e8ne Sambou"
 Title = "Salsify Project Manager"
-Team = "Global Expansion"
+Team = "PIM Implementation & Syndication Team"
 quote = "\"Whithout challenge, There Isn't Change\""
 pictureUrl = "/images/team/Aguene.png"
 url.LinkedIn = "https://www.linkedin.com/in/agu%C3%A8ne-sambou/"
@@ -71,7 +71,7 @@ url.LinkedIn = "https://www.linkedin.com/in/agu%C3%A8ne-sambou/"
 [[team_member]]
 Name = "Nagapooja Ramesh"
 Title = "PIM specialist"
-Team = "Global Expansion"
+Team = "PIM Implementation & Syndication Team"
 quote = "\"When we really pay attention,everything is your teacher.\""
 pictureUrl = "/images/team/Nagapooja.png"
 url.LinkedIn = "https://www.linkedin.com/in/nagapooja-ramesh-a77850136"
@@ -79,7 +79,7 @@ url.LinkedIn = "https://www.linkedin.com/in/nagapooja-ramesh-a77850136"
 
 [[team_member]]
 Name = "Varuna Sridhar"
-Team = "Global Expansion"
+Team = "PIM Implementation & Syndication Team"
 Title = "PIM specialist"
 pictureUrl = "/images/team/Varuna.png"
 url.LinkedIn = "https://www.linkedin.com/in/varuna-sridhar-805193116"
@@ -87,7 +87,7 @@ url.LinkedIn = "https://www.linkedin.com/in/varuna-sridhar-805193116"
 
 [[team_member]]
 Name = "Michael Baron"
-Team = "Global Expansion"
+Team = "PIM Implementation & Syndication Team"
 Title = "PIM Consultant"
 pictureUrl = "/images/team/Michael Baron.png"
 url.LinkedIn = "https://www.linkedin.com/in/michael-baron-a0808822/"
