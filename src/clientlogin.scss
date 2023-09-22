@@ -1,4 +1,22 @@
+@use "./utils/variables" as *;
+
 #main-content {
-  text-align: center;
+  display: flex;
+  @media screen and (min-width: 800px) {
+    flex-direction: row;
+  }
   margin:auto;
+  .cta {
+    color:red;
+    border: 1px solid red;
+    width: 10rem;
+    height:4rem;
+    border-radius: 1.5rem;
+    padding: 1.4rem;
+    box-shadow: 0 0 3px 3px red;
+    &:hover{
+      font-weight: bold;
+      box-shadow: 0 0 5px 5px red;
+    }
+  }
 }

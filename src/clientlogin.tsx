@@ -20,8 +20,12 @@ export default (
       <h3>Chat to our lovely Business Development team today</h3>
     </Hero>
     <main id="main-content">
-      <a href="https://reports.e-comas.com/seller">Seller</a>
-      <a href="https://reports.e-comas.com/vendor">Vendor</a>
+      <a href="https://reports.e-comas.com/seller" class="cta">
+        Seller
+      </a>
+      <a href="https://reports.e-comas.com/vendor" class="cta">
+        Vendor
+      </a>
     </main>
     <Footer />
   </Body>
