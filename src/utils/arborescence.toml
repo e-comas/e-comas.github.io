@@ -26,9 +26,9 @@ url = "/syndication.html"
 name = "About us"
 url = "/about-us.html"
 
-[[root.children.children]]
-name = "Company"
-url = "about:blank"
+# [[root.children.children]]
+# name = "Company"
+# url = "about:blank"
 
 [[root.children.children]]
 name = "Our Team"
