@@ -144,11 +144,65 @@ export default (
           </ListElement>
         </div>
       </section>
-      <Partners title="Some of our clients">
+      <Partners title="Our clients" id="clients">
         <p>
-          We work with major multinational brands to develop strong{" "}
-          <ECommerce /> strategies worldwide.
+          We work with inspiring and major multinational brands to develop,
+          execute and maintain expert <ECommerce /> strategies across all four
+          corners of the globe:
         </p>
+        <div role="list">
+          <a role="listitem" href="https://about.mattel.com/">
+            <Picture
+              src={"/images/brands/clients/Mattell Logo.png"}
+              alt={"Mattel"}
+            />
+          </a>
+          <a role="listitem" href="https://www.kao.com">
+            <Picture src={"/images/brands/clients/KAO.png"} alt={"KAO"} />
+          </a>
+          <a role="listitem" href="https://miamily.com/">
+            <Picture
+              src={"/images/brands/clients/miamily logo box dark purple.png"}
+              alt={"Miamily"}
+            />
+          </a>
+          <a role="listitem" href="https://www.michelin.com/">
+            <Picture
+              src={"/images/brands/clients/Michelin Logo.png"}
+              alt={"Michelin"}
+            />
+          </a>
+          <a role="listitem" href="https://www.reliefband.com/">
+            <Picture
+              src={"/images/brands/clients/relief band.jpeg"}
+              alt={"Relief Band"}
+            />
+          </a>
+          <a role="listitem" href="https://realshades.com/">
+            <Picture
+              src={"/images/brands/clients/logo_RS.png"}
+              alt={"Real Shades"}
+            />
+          </a>
+          <a role="listitem" href="https://skyorganics.com/">
+            <Picture
+              src={"/images/brands/clients/skyorganics.png"}
+              alt={"Sky Organics"}
+            />
+          </a>
+          <a role="listitem" href="https://www.mycarrypotty.com/">
+            <Picture
+              src={"/images/brands/clients/MCP.png"}
+              alt={"My Carry Potty"}
+            />
+          </a>
+          <a role="listitem" href="https://www.superfeet.com/">
+            <Picture
+              src={"/images/brands/clients/superfeet.png"}
+              alt={"Superfeet"}
+            />
+          </a>
+        </div>
       </Partners>
       <section id="get_to_know" class="section">
         <h2>Get To Know Us</h2>
