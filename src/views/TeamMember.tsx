@@ -27,7 +27,7 @@ export interface SocialTeamMemberProps {
 export interface TeamMemberProps extends SocialTeamMemberProps {
   Name: string;
   Title: string;
-  pictureUrl: string;
+  pictureUrl?: string;
   Team?: string;
   priority?: number;
 }
