@@ -15,7 +15,7 @@ import "./classic-page.scss";
 export default (
   <Body title="Analytics">
     <Header />
-    <Breadcrumbs />
+{/* <Breadcrumbs /> */}
     <main id="main-content">
       <h2>
         World class expertise <strong>analytics</strong> to{" "}

@@ -16,7 +16,7 @@ import "./classic-page.scss";
 export default (
   <Body title="Operations">
     <Header />
-    <Breadcrumbs />
+{/* <Breadcrumbs /> */}
     <main id="main-content">
       <h2>
         World class expertise to <strong>run</strong> your <ECommerce />!

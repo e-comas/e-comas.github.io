@@ -10,7 +10,7 @@ import "./profitero.scss";
 export default (
   <Body>
     <Header />
-    <Breadcrumbs />
+{/* <Breadcrumbs /> */}
     <main id="main-content">
       <h2>
         Profitero: the <strong>next level</strong> in market insights

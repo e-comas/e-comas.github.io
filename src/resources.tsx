@@ -20,7 +20,7 @@ const playlist_id = "PLIISXNQzZ8ZrvjOjGsK9iJykSn_x6xO3k";
 export default (
   <Body title="Resources">
     <Header />
-    <Breadcrumbs />
+{/* <Breadcrumbs /> */}
     <main id="main-content">
       <h2>Resources</h2>
       {/* Check the spacing here and make h3s as big as h2 */}

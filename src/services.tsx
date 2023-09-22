@@ -15,7 +15,7 @@ import "./services.scss";
 export default (
   <Body title="Strategy">
     <Header />
-    <Breadcrumbs />
+{/* <Breadcrumbs /> */}
     <main id="main-content">
       <h2>
         World class expertise <strong>services</strong> to <strong>win</strong>{" "}

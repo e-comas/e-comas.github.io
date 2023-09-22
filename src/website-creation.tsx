@@ -13,7 +13,7 @@ import "runtime:./utils/auto-scroll-data-delay.ts";
 export default (
   <Body title="Website creation">
     <Header />
-    <Breadcrumbs />
+{/* <Breadcrumbs /> */}
     <main id="main-content">
       <h2>
         World class expertise to <strong>create</strong> your Shopify <EStore />

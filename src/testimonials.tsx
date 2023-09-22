@@ -11,7 +11,7 @@ import "./testimonials.scss";
 export default (
   <Body title="Testimonials">
     <Header />
-    <Breadcrumbs />
+{/* <Breadcrumbs /> */}
     <main id="main-content">
       <section id="testimonials">
         <h2>What our clients are saying</h2>

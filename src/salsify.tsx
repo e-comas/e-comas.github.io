@@ -11,7 +11,7 @@ import "./salsify.scss";
 export default (
   <Body title="Syndication with Salsify">
     <Header />
-    <Breadcrumbs />
+{/* <Breadcrumbs /> */} */}
     <main id="main-content">
       <h2>
         World class expertise for <strong>PIM &amp; syndication</strong>
