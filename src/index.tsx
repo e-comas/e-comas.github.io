@@ -69,6 +69,45 @@ export default (
         />
       </div>
       <OurServices />
+      <Partners title="OUR CLIENTS">
+        <p>
+          We are super proud to have worked with ambitious brands from across
+          the world:
+        </p>
+        <div role="list">
+          <a role="listitem" href="https://about.mattel.com/">
+            <Picture
+              src={"/images/brands/clients/Mattell Logo.png"}
+              alt={"Mattel"}
+            />
+          </a>{" "}
+          <a role="listitem" href="https://www.kao.com">
+            <Picture src={"/images/brands/clients/KAO.png"} alt={"KAO"} />
+          </a>
+          <a role="listitem" href="https://miamily.com/">
+            <Picture
+              src={"/images/brands/clients/miamily logo box dark purple.png"}
+              alt={"Miamily"}
+            />
+          </a>
+          <a role="listitem" href="https://www.michelin.com/">
+            <Picture
+              src={"/images/brands/clients/Michelin Logo.png"}
+              alt={"Michelin"}
+            />
+          </a>
+          <a role="listitem" href="https://realshades.com/">
+            <Picture
+              src={"/images/brands/clients/logo_RS.png"}
+              alt={"Real Shades"}
+            />
+          </a>
+        </div>
+        <a href="/about-us.html#clients" class="cta">
+          See more
+        </a>
+      </Partners>
+      {/* <hr /> */}
       <Partners>
         <p>
           We work with the best partners to help you grow your eCommerce
