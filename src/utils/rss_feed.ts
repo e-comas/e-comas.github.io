@@ -9,8 +9,8 @@ export type MapFunction = (
 export function createDynamicList() {
   const feedContainerWrapper = document.createElement("div");
   const feedContainer = document.createElement("div");
-  feedContainerWrapper.style.position = "relative";
-  feedContainerWrapper.style.width = "100%";
+  // feedContainerWrapper.style.position = "relative";
+  // feedContainerWrapper.style.width = "100%";
   feedContainerWrapper.append(feedContainer);
   return { feedContainer, feedContainerWrapper };
 }
