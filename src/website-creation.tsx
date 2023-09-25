@@ -9,22 +9,23 @@ import Footer from "./views/Footer.tsx";
 
 import "./shopify.scss";
 import "runtime:./utils/auto-scroll-data-delay.ts";
+import Hero from "./views/hero.tsx";
 
 export default (
   <Body title="Website creation">
     <Header />
-{/* <Breadcrumbs /> */}
-    <main id="main-content">
-      <h2>
-        World class expertise to <strong>create</strong> your Shopify <EStore />
-        !
-      </h2>
+    {/* <Breadcrumbs /> */}
+    <Hero class="animate-in">
+      <h1 class="title">
+        World class expertise to create your Shopify <EStore />!
+      </h1>
 
       <p>
         The context of <ECommerce /> is evolving, with the importance of native
         commerce, the need for a selling branded website is critical for brands.
       </p>
-
+    </Hero>
+    <main id="main-content">
       <NativeECommerce />
 
       <p>
