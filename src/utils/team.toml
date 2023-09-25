@@ -212,6 +212,7 @@ Name = "Marius Popov"
 Team = "Account Management"
 Title = "Senior Account Manager"
 url.LinkedIn = "https://www.linkedin.com/in/marius-popov-488a5752/"
+pictureUrl = "/images/team/Marius.png"
 
 
 [[team_member]]
@@ -461,6 +462,7 @@ pictureUrl = "/images/team/Joel.png"
 Name = "Mario Jeffrin"
 Title = "Designer"
 Team = "Marketing"
+pictureUrl = "/images/team/Mario.png"
 
 
 [[team_member]]
