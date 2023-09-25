@@ -119,6 +119,18 @@ section.news {
   }
 }
 
+.clients {
+  position: relative;
+  &::before {
+    content:"";
+    position: absolute;
+    width:100%;
+    top: 15px;
+    bottom: 15px;
+    box-shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
 section.key-figures {
   display: flex;
   justify-content: space-evenly;

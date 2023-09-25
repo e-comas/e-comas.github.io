@@ -70,7 +70,7 @@ export default (
         />
       </div>
       <OurServices />
-      <Partners title="OUR CLIENTS">
+      <Partners title="OUR CLIENTS" class="clients">
         <p>
           We are super proud to have worked with ambitious brands from across
           the world:
