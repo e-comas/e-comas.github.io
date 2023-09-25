@@ -132,7 +132,7 @@ export default (props: Props | undefined) => (
           Email: <a href="mailto:sales@e-comas.com">sales@e-comas.com</a>
         </li>
         <li>
-          <NavLink href="/resources.html#newsletter">
+          <NavLink href="/index.html#newsletter">
             Subscribe to the newsletter
           </NavLink>
         </li>
