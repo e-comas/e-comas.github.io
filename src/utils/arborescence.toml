@@ -22,9 +22,17 @@ url = "/data-and-tech.html"
 name = "Content Syndication"
 url = "/syndication.html"
 
+[[root.children.children]]
+name = "Shopify"
+url = "/website-creation.html"
+
 [[root.children]]
 name = "About us"
 url = "/about-us.html"
+
+[[root.children]]
+url = "/about-us.html"
+
 
 # [[root.children.children]]
 # name = "Company"
