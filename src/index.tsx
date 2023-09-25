@@ -26,6 +26,7 @@ import "runtime:./views/animate-in.ts";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import Newsletter from "./views/newsletter.tsx";
 
 export default (
   <Body>
@@ -174,6 +175,7 @@ export default (
         </p>
       </ElementWithBackgroundImage> */}
       <TeamCertifications />
+      <Newsletter />
     </main>
     <Footer />
   </Body>

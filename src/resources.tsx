@@ -14,13 +14,14 @@ import "runtime:./utils/podcast_feed.ts";
 import "runtime:./utils/frame-auto-height.ts";
 import "./resources.scss";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
+import Newsletter from "./views/newsletter.tsx";
 
 const playlist_id = "PLIISXNQzZ8ZrvjOjGsK9iJykSn_x6xO3k";
 
 export default (
   <Body title="Resources">
     <Header />
-{/* <Breadcrumbs /> */}
+    {/* <Breadcrumbs /> */}
     <main id="main-content">
       <h2>Resources</h2>
       {/* Check the spacing here and make h3s as big as h2 */}
@@ -116,20 +117,7 @@ export default (
         </a>
       </ElementWithBackgroundImage>
 
-      <section id="newsletter">
-        <h3>Hear more from us</h3>
-        <p>
-          Sign up to our newsletter and we'll send you regular updates on the
-          world of Amazon, what's new in <ECommerce />, our upcoming webinars
-          and more!
-        </p>
-        <iframe
-          src="//go.e-comas.com/l/885733/2020-09-25/2wsd?Single_Opt_In=yes"
-          width="100%"
-          height="210"
-          sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-        />
-      </section>
+      <Newsletter />
     </main>
     <Footer />
   </Body>
