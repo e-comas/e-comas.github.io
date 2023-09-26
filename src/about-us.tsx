@@ -57,7 +57,7 @@ export default (
           <p>
             <EComas /> – <ECommerce /> Made Simple was founded by Jérôme de
             Guigné in 2013, with the simple idea of helping brands sell products
-            online. We quickly realized companies were struggling with
+            online. We quickly realised companies were struggling with
             establishing profitable and sustainable <ECommerce /> strategies.
             That’s when ‘Amazon Made Simple’ was born, which later became ‘
             <ECommerce /> Made Simple’ –

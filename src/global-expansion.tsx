@@ -190,7 +190,7 @@ export default (
           <h3>Creating content for other countries</h3>
           <p>
             When expanding globally, the key to building trust in your brand is
-            good-quality localized content. Download our success story to find
+            good-quality localised content. Download our success story to find
             out how we helped My Carry Potty grow its Amazon presence
             internationally.
           </p>

@@ -105,7 +105,7 @@ export default (
                 Using our unique COMAINDE framework (Collection, Management,
                 Insights, Decisions), we provide tailored training to enhance
                 your team's ability to understand and use <ECommerce /> data.
-                This specialized approach empowers you to make data-driven
+                This specialised approach empowers you to make data-driven
                 decisions, leveraging key insights to gain a competitive edge in
                 the market."
               </>
@@ -132,7 +132,7 @@ export default (
           <ListElement
             icon={faAmazon as IconProp}
             title={"Amazon Marketing Cloud"}
-            desc="Our experts specialize in running tailored queries to answer your most pressing Amazon Marketing Cloud questions. With us by your side, leverage deep insights and make informed decisions, amplifying your brand's success on Amazon."
+            desc="Our experts specialise in running tailored queries to answer your most pressing Amazon Marketing Cloud questions. With us by your side, leverage deep insights and make informed decisions, amplifying your brand's success on Amazon."
           />
           <ListElement
             icon={faUserGroup as IconProp}
@@ -178,8 +178,8 @@ export default (
           desc="The numbers don’t lie. Make smarter business choices based on concrete evidence rather than relying on gut feeling."
         />
         <FlipCard
-          title="Optimize your budgets"
-          desc="Allocate resources to the most effective marketing channels and optimize your advertising spend to maximise return on investment."
+          title="Optimise your budgets"
+          desc="Allocate resources to the most effective marketing channels and optimise your advertising spend to maximise return on investment."
         />
       </div>
     </section>

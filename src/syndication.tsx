@@ -37,8 +37,8 @@ export default (
     <Hero class="animate-in">
       <h1>Content & Creative</h1>
       <p>
-        We create outstanding product content, help you organize and manage your
-        content, and globalize your listings to make your brand truly shine.
+        We create outstanding product content, help you organise and manage your
+        content, and globalise your listings to make your brand truly shine.
         Maximise your online retail content strategy and watch those sales
         skyrocket with our world-class expertise today.
       </p>
@@ -52,7 +52,7 @@ export default (
           <h3>BOOST YOUR BRAND & DRIVE TRAFFIC</h3>
           <p>
             Elevate your Amazon presence and supercharge your sales with our
-            expert content solutions. Our content pros specialize in crafting
+            expert content solutions. Our content pros specialise in crafting
             compelling product listings that grab shoppers’ attention and make
             them hit that "Add to Cart" button. We'll help you create,
             streamline and manage your listings, ensuring a seamless customer
@@ -77,7 +77,7 @@ export default (
       >
         <h3>Our Expertise</h3>
         <p>
-          We optimize listings, craft compelling product descriptions, and
+          We optimise listings, craft compelling product descriptions, and
           develop winning marketing content to get your products in front of the
           right people and boost sales.
         </p>

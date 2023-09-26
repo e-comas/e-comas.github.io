@@ -126,9 +126,9 @@ export default (
         </li>
 
         <li>
-          <strong>Optimized</strong>
+          <strong>Optimised</strong>
           <p>
-            The PXM program is fully operationalized across business units and
+            The PXM program is fully operationalised across business units and
             data-driven decisions from analytics and insights are quickly acted
             on - fostered through a business culture focused on experimentation
             and continuous improvement.

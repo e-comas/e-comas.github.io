@@ -54,7 +54,7 @@ export default (
       </p>
       <ul>
         <li>
-          Session cookies, which allow websites to recognize and link the
+          Session cookies, which allow websites to recognise and link the
           actions of a user during a browsing session (e.g: cookies used to
           remember what a user has put in their shopping basket as they browse a
           site),

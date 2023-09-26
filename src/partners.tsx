@@ -71,7 +71,7 @@ const partners = [
         seasoned, expert-level Amazon sellers who know from experience what
         information is key to making important decisions. Used globally by
         thousands of sellers, enterprise-level brands and specialist agencies —
-        and home to the world’s-first AI-powered Product Listing Optimizer —
+        and home to the world’s-first AI-powered Product Listing Optimiser —
         ZonGuru supports 10 major Amazon marketplaces, is an Amazon-approved
         partner and features the #1 ranked support team in the business.
         (Source: Trustpilot)
