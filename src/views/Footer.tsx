@@ -24,7 +24,7 @@ interface Props
     React.HTMLAttributes<HTMLElement>,
     HTMLElement
   > {
-  text?: string;
+  text?: string | JSX.Element;
 }
 
 export default (props: Props | undefined) => (

@@ -49,7 +49,7 @@ const Testimonies = () => (
 export default (props?: TestimoniesProps) =>
   props?.withBlock ? (
     <div class="testimonies">
-      <h2>What our clients are saying</h2>
+      <h2>What Our Clients Say</h2>
       <div class="slider" data-auto-slide-delay="6000">
         <Testimonies />
       </div>

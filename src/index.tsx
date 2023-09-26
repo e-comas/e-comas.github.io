@@ -1,4 +1,4 @@
-import { h } from "@aduh95/async-jsx";
+import { h, Fragment } from "@aduh95/async-jsx";
 
 import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
@@ -39,8 +39,8 @@ export default (
           <p>
             Skyrocket your success and grow your brand with proven global
             expansion strategies, winning media campaigns and powerful
-            technology. <EComas /> is the full service <ECommerce />{" "}
-            agency to help you get there.
+            technology. <EComas /> is the full service <ECommerce /> agency to
+            help you get there.
           </p>
           <a href="/contact.html" class="cta">
             Let's talk
@@ -70,7 +70,7 @@ export default (
         />
       </div>
       <OurServices />
-      <Partners title="OUR CLIENTS" class="clients">
+      <Partners title="our clients" class="clients">
         <p>
           We are super proud to have worked with ambitious brands from across
           the world:
@@ -177,6 +177,8 @@ export default (
       <TeamCertifications />
       <Newsletter />
     </main>
-    <Footer />
+    <Footer
+
+    />
   </Body>
 ).then((e) => document.body.append(e));

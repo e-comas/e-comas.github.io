@@ -22,7 +22,7 @@ export default () => (
     <div role="list">
       <ListElement
         icon={faGlobe as IconProp}
-        title="Global perspective"
+        title="Global Perspective"
         desc="Our multilingual teams across Europe, North America and India can help you navigate the complexities of global markets, including localisation, international SEO and cross-border logistics."
       />
       <ListElement
@@ -37,7 +37,7 @@ export default () => (
       />
     </div>
     <a href="/about-us.html" class="cta animatable">
-      More about us
+      More About Us
     </a>
   </ElementWithBackgroundImage>
 );

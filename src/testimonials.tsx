@@ -14,7 +14,7 @@ export default (
 {/* <Breadcrumbs /> */}
     <main id="main-content">
       <section id="testimonials">
-        <h2>What our clients are saying</h2>
+        <h2>What Our Clients Say</h2>
         <Testimonies />
       </section>
     </main>

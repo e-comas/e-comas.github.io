@@ -1,34 +1,103 @@
+@use "../utils/variables" as *;
+
 #our-services {
+  position: relative;
+  & > * {
+    position: relative;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: -1rem;
+    background-color: $offWhite;
+  }
+  & > h3 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  &>p{
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+  text-align: center;
   display: flex;
+  gap: 0;
   flex-direction: column;
-  figcaption {
-    padding: 0;
-
-    & > svg {
-      max-width: 5rem;
-      margin-top: 0.5rem;
-    }
-  }
-
-  @media screen and (min-width: 800px) {
+  & > div {
+    background-color: white;
+    margin-top: 2rem;
+    margin: auto;
+    width: 100%;
+    max-width: 1500px;
+    margin-bottom: 2rem;
     figure {
+      &::before {
+        content: unset;
+      }
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      & img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .picture-wrapper {
+        max-height: 15rem;
+        overflow: hidden;
+      }
+      figcaption {
+        text-align: left;
 
-      &:nth-child(2n + 4) {
-        flex-direction: row-reverse;
+        & > svg {
+          max-width: 5rem;
+          margin-top: 0.5rem;
+        }
       }
-      & > img {
-        max-width: 33vw;
-      }
-      & .picture-wrapper{
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-      
-      a {
-        margin-left: 0;
+      @media screen and (min-width: 800px) {
+        .picture-wrapper {
+          max-height: unset;
+        }
+        figcaption {
+          padding: 1rem;
+          margin: auto;
+        }
+        flex-direction: row;
+        max-height: 20rem;
+        &:nth-child(2n) {
+          flex-direction: row-reverse;
+        }
+        & > * {
+          width: 50%;
+          overflow: hidden;
+        }
+        margin: 0;
+        padding: 0;
       }
     }
   }
+
+  // @media screen and (min-width: 800px) {
+  //   figure {
+  //     display: flex;
+  //     flex-direction: row;
+
+  //     &:nth-child(2n + 4) {
+  //       flex-direction: row-reverse;
+  //     }
+  //     & > img {
+  //       max-width: 33vw;
+  //     }
+  //     & .picture-wrapper {
+  //       margin-top: 30px;
+  //       margin-bottom: 30px;
+  //     }
+
+  //     a {
+  //       margin-left: 0;
+  //     }
+  //   }
+  // }
 }

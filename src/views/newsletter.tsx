@@ -7,8 +7,9 @@ export default () => (
   <section id="newsletter">
     <h3>Hear more from us</h3>
     <p>
-      Sign up to our newsletter and we'll send you regular updates on the world
-      of Amazon, what's new in <ECommerce />, our upcoming webinars and more!
+      Sign up to our newsletter for regular updates on the world of Amazon,{" "}
+      <ECommerce /> tips, our upcoming webinars, and more straight to your
+      inbox!
     </p>
     <iframe
       src="//go.e-comas.com/l/885733/2020-09-25/2wsd?Single_Opt_In=yes"
