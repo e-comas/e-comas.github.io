@@ -4,7 +4,7 @@ import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
 import Breadcrumbs from "./views/Breadcrumbs.tsx";
 import NativeECommerce from "./views/NativeECommerce.tsx";
-import { ECommerce, EStore } from "./views/eWords.tsx";
+import { EComas, ECommerce, EStore } from "./views/eWords.tsx";
 import Footer from "./views/Footer.tsx";
 
 import "./shopify.scss";
@@ -16,13 +16,12 @@ export default (
     <Header />
     {/* <Breadcrumbs /> */}
     <Hero class="animate-in">
-      <h1 class="title">
-        World class expertise to create your Shopify <EStore />!
-      </h1>
-
+      <h1 class="title">Shopify</h1>
       <p>
-        The context of <ECommerce /> is evolving, with the importance of native
-        commerce, the need for a selling branded website is critical for brands.
+        <EComas /> proudly partners with Shopify - the third largest online
+        retailer behind Amazon and eBay in the US. Our experts can help you
+        build and manage your Shopify store alongside your Amazon and other{" "}
+        <ECommerce /> accounts to boost your sales and amplify your brand.
       </p>
     </Hero>
     <main id="main-content">

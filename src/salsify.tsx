@@ -7,11 +7,22 @@ import VideoEmbedLink from "./views/VideoEmbedLink.tsx";
 import Footer from "./views/Footer.tsx";
 
 import "./salsify.scss";
+import Hero from "./views/hero.tsx";
 
 export default (
   <Body title="Syndication with Salsify">
     <Header />
-{/* <Breadcrumbs /> */} */}
+    {/* <Breadcrumbs /> */}
+    <Hero class="animate-in">
+      <h1 class="title">Salsify</h1>
+      <p>
+        We’re proud Salsify partners, helping you win on the digital shelf with
+        its leading Product Information Management (PIM) and Syndication
+        solution. From organising your content across multiple platforms to
+        routine maintenance, we offer a range of implementation and managed
+        services.
+      </p>
+    </Hero>
     <main id="main-content">
       <h2>
         World class expertise for <strong>PIM &amp; syndication</strong>
