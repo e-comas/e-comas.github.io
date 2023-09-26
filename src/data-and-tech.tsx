@@ -48,7 +48,7 @@ export default (
     <main id="main-content">
       <figure class="made-easy">
         <figcaption>
-          <h3>Maximize performance with data & tech</h3>
+          <h3>Maximise performance with data & tech</h3>
           <p>
             Get better visibility over your business and make data-driven
             decisions that propel growth and success with e-Comas. Our
@@ -179,7 +179,7 @@ export default (
         />
         <FlipCard
           title="Optimize your budgets"
-          desc="Allocate resources to the most effective marketing channels and optimize your advertising spend to maximize return on investment."
+          desc="Allocate resources to the most effective marketing channels and optimize your advertising spend to maximise return on investment."
         />
       </div>
     </section>

@@ -136,7 +136,7 @@ const partners = [
     image: "/images/partners/helium10.svg",
     id: "helium10",
     name: "Helium 10",
-    text: "Helium 10 is the leading all-in-one software platform for Amazon merchants, delivering accurate, data-driven solutions to sellers. Headquartered in Irvine, California, Helium 10 empowers entrepreneurs globally with the power of data, ongoing education, and community support necessary to maximize their potential and thrive in the future of e-commerce. From opportunity seekers to solopreneurs, to full-time sellers, enterprises, agencies, and everyone in between, Helium 10 champions entrepreneurship at all stages with the playbook to build, grow and scale a meaningful and steadfast e-commerce business",
+    text: "Helium 10 is the leading all-in-one software platform for Amazon merchants, delivering accurate, data-driven solutions to sellers. Headquartered in Irvine, California, Helium 10 empowers entrepreneurs globally with the power of data, ongoing education, and community support necessary to maximise their potential and thrive in the future of e-commerce. From opportunity seekers to solopreneurs, to full-time sellers, enterprises, agencies, and everyone in between, Helium 10 champions entrepreneurship at all stages with the playbook to build, grow and scale a meaningful and steadfast e-commerce business",
     link: "https://www.helium10.com",
   },
   {

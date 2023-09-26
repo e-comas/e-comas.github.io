@@ -170,7 +170,7 @@ export default (
         />
         <FlipCard
           title="Grow Traffic"
-          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximize ROI."
+          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximise ROI."
         />
         <FlipCard
           title="Drive Conversion"

@@ -101,7 +101,7 @@ export default (
           <ListElement
             icon={faAmazon as IconProp}
             title="AMS"
-            desc="We’ll help you maximize your advertising campaigns with real-time data from Amazon Marketing Stream to make the most of the high conversion hours of the day."
+            desc="We’ll help you maximise your advertising campaigns with real-time data from Amazon Marketing Stream to make the most of the high conversion hours of the day."
           />
           <ListElement
             icon={faAmazon as IconProp}
@@ -152,7 +152,7 @@ export default (
         />
         <FlipCard
           title="Grow Traffic"
-          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximize ROI."
+          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximise ROI."
         />
         <FlipCard
           title="Drive Conversion"

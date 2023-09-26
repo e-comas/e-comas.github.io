@@ -39,7 +39,7 @@ export default (
       <p>
         We create outstanding product content, help you organize and manage your
         content, and globalize your listings to make your brand truly shine.
-        Maximize your online retail content strategy and watch those sales
+        Maximise your online retail content strategy and watch those sales
         skyrocket with our world-class expertise today.
       </p>
       <a href="/contact.html" class="cta">
@@ -177,7 +177,7 @@ export default (
         />
         <FlipCard
           title="Grow Traffic"
-          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximize ROI."
+          desc="Whether it’s using Amazon PPC, DSP, Google or socials, we monitor and adjust your campaigns to maximise ROI."
         />
         <FlipCard
           title="Drive Conversion"
