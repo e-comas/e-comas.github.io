@@ -39,7 +39,7 @@ export default (
           <p>
             Skyrocket your success and grow your brand with proven global
             expansion strategies, winning media campaigns and powerful
-            technology. <EComas />, is the <em>full</em> service <ECommerce />{" "}
+            technology. <EComas /> is the full service <ECommerce />{" "}
             agency to help you get there.
           </p>
           <a href="/contact.html" class="cta">
