@@ -136,25 +136,28 @@ export default (
         </a>
       </Partners>
       <AboutUs />
-      <section class="fourSeventhThreeSeventh">
+      {/* <section class="fourSeventhThreeSeventh">
         <Picture src="/images/Banner3.1 Testimonials 3x .png" alt="" />
         <Picture src="/images/Banner3.2 Testimonials 3x .png" alt="" />
-      </section>
+      </section> */}
       <Testimonies withBlock />
-      <section class="papers" id="FreePaper">
-        <h2>Free White Paper</h2>
-        <strong> How to manage Amazon</strong>
-        <p>
-          Here’s our beginner’s guide to building a solid Amazon strategy,
-          managing your operations, creating content and growing traffic.
-        </p>
-        <a
-          href="//go.e-comas.com/l/885733/2022-09-02/bwmm8"
-          className="cta open-in-modal no-arrow"
-        >
-          Download <FontAwesomeIcon icon={faDownload as IconProp} />
-        </a>
-      </section>
+      <figure class="papers" id="FreePaper">
+        <figcaption>
+          <strong>Free White Paper</strong>
+          <h2> How to manage Amazon</h2>
+          <p>
+            Here’s our beginner’s guide to building a solid Amazon strategy,
+            managing your operations, creating content and growing traffic.
+          </p>
+          <a
+            href="//go.e-comas.com/l/885733/2022-09-02/bwmm8"
+            className="cta open-in-modal no-arrow"
+          >
+            Download <FontAwesomeIcon icon={faDownload as IconProp} />
+          </a>
+        </figcaption>
+        <Picture src={"/images/team-picture-EU.jpg"} alt={"eComas Team"} />
+      </figure>
 
       {/* <ElementWithBackgroundImage
         tagName="section"
@@ -177,8 +180,6 @@ export default (
       <TeamCertifications />
       <Newsletter />
     </main>
-    <Footer
-
-    />
+    <Footer />
   </Body>
 ).then((e) => document.body.append(e));

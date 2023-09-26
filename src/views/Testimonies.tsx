@@ -53,9 +53,6 @@ export default (props?: TestimoniesProps) =>
       <div class="slider" data-auto-slide-delay="6000">
         <Testimonies />
       </div>
-      <a href="/testimonials.html#testimonials" class="cta">
-        Read more testimonials
-      </a>
     </div>
   ) : (
     <Testimonies />
