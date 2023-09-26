@@ -191,6 +191,7 @@ figure.intro {
   .cta {
     @extend %button;
     background-color: $gold;
+    text-transform: unset;
     &:hover {
       background-color: $grey;
       color: white;
