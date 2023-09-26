@@ -30,9 +30,6 @@ url = "/website-creation.html"
 name = "About us"
 url = "/about-us.html"
 
-[[root.children]]
-url = "/about-us.html"
-
 
 # [[root.children.children]]
 # name = "Company"
