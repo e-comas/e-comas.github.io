@@ -49,7 +49,7 @@ export default (
     <main id="main-content">
       <figure id="boost-your-brand" class="made-easy">
         <figcaption>
-          <h3>BOOST YOUR BRAND & DRIVE TRAFFIC</h3>
+          <h3>boost your brand & drive traffic</h3>
           <p>
             Elevate your Amazon presence and supercharge your sales with our
             expert content solutions. Our content pros specialise in crafting
