@@ -36,12 +36,14 @@ export default (
     <Hero class="animate-in long-page">
       <h1 class="title">Global Expansion</h1>
       <p>
+        Global markets can be a goldmine of exciting opportunities, but
+        international expansion requires some serious thinking and planning.
         Break into new markets and unlock more global sales with a clear
         strategy and our international team of <ECommerce /> experts guiding you
         every step of the way.
       </p>
       <a href="./contact.html" class="cta">
-        Book a Call
+        Book a call
         <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>
     </Hero>
@@ -75,9 +77,10 @@ export default (
       >
         <h3>Our Expertise</h3>
         <p>
-          From handling logistics and taxes to product translation and
-          localizations, we've got you covered. Sit back and relax with our
-          hassle-free full service solution.
+          Our international team can help you overcome any challenges that come
+          with going global. From handling logistics and taxes to product
+          translation and localisations, we've got you covered. Sit back and
+          relax with our hassle-free full service solution.
         </p>
         <div role="list">
           <ListElement
@@ -140,7 +143,7 @@ export default (
           <ListElement
             icon={faMagnifyingGlass as IconProp}
             title="Technology & Analytics"
-            desc="Our multilingual team can target your strategy to drive sales in new markets and engage online shoppers worldwide with their knowledge of the nuances of different countries, languages and cultures."
+            desc="We partner with the industry’s leading platforms and use our own custom-built tech to gather data from various sources, automate processes and provide actionable insights to help you make the best decisions for your brand."
           />
         </div>
         <a href="/contact.html" class="cta animatable">
@@ -160,13 +163,13 @@ export default (
           desc={
             <>
               We audit of your brand’s current <ECommerce /> presence and work
-              closely with you to set clear and measurable goals."
+              closely with you to set clear and measurable goals.
             </>
           }
         />
         <FlipCard
           title="Manage Operations"
-          desc="From optimizing product listings to handling logistics and VAT, we can manage your account on multiple platforms."
+          desc="From optimising product listings to handling logistics and VAT, we can manage your account on multiple platforms."
         />
         <FlipCard
           title="Grow Traffic"
@@ -190,11 +193,14 @@ export default (
           <h3>Creating content for other countries</h3>
           <p>
             When expanding globally, the key to building trust in your brand is
-            good-quality localised content. Download our success story to find
+            good-quality localise content. Download our success story to find
             out how we helped My Carry Potty grow its Amazon presence
             internationally.
           </p>
-          <a class="cta" href="https://go.e-comas.com/l/885733/2023-01-16/l813c">
+          <a
+            class="cta"
+            href="https://go.e-comas.com/l/885733/2023-01-16/l813c"
+          >
             Download
             <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>
@@ -202,10 +208,10 @@ export default (
       </figure>
     </section>
     <section id="blog" class="blog">
-      <h2>Blog</h2>
+      <h2>Our blog</h2>
       <p>
-        Find out useful <ECommerce /> tips and what's new in the Amazon world
-        relating to global expansion.
+        Read our latest blogs for helpful <ECommerce /> tips and what's new in
+        the Amazon world relating to expanding your brand internationally.
       </p>
       <div role="list">
         {"{% for post in site.tags.Expansion | slice: 0, 3 %}"}

@@ -29,13 +29,15 @@ div.hero {
 
   .cta {
     @extend %button;
-    background-color: $grey;
-    color: white;
+    text-transform: capitalize;
+    background-color: $gold;
+    color: $grey;
     font-weight: bold;
     margin: auto;
     font-size: 0.75rem;
     &:hover {
-      color: $gold;
+      background-color: $grey;
+      color: white;
     }
   }
 }
