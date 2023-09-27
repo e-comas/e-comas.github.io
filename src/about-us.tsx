@@ -59,8 +59,8 @@ export default (
             Guigné in 2013, with the simple idea of helping brands sell products
             online. We quickly realised companies were struggling with
             establishing profitable and sustainable <ECommerce /> strategies.
-            That’s when ‘Amazon Made Simple’ was born, which later became ‘
-            <ECommerce /> Made Simple’ –
+            That’s when ‘Amazon Made Simple’ was born, which later became ‘{" "}
+            <ECommerce /> Made Simple’ –{" "}
             <EComas />.
           </p>
         </figcaption>

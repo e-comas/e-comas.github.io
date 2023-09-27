@@ -45,7 +45,7 @@ const partners = [
     text: (
       <>
         ChannelEngine connects brands and retailers to over 700 marketplaces and
-        digital sales channels worldwide. Sellers can automate and streamline
+        digital sales channels worldwide. Sellers can automate and streamline{" "}
         <ECommerce /> management, making it easy to manage listings, content,
         and pricing and synchronise stock levels (across all locations) from one
         central platform.
