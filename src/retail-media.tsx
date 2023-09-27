@@ -20,7 +20,7 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { ECommerce } from "./views/eWords.tsx";
+import { EComas, ECommerce } from "./views/eWords.tsx";
 import ListElement from "./views/ListElement.tsx";
 import { faAmazon, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
@@ -34,7 +34,9 @@ export default (
       <p>
         Whether you want to kickstart your retail media strategy or enhance an
         existing campaign, we can handle all aspects of your advertising to
-        expand your reach and grow your sales.
+        expand your reach and grow your sales. With <EComas /> by your side,
+        you’ll have a dedicated, proficient and certified partner who knows
+        retail media inside and out.
       </p>
       <a href="./contact.html" class="cta">
         Book a Call
@@ -48,10 +50,10 @@ export default (
           <h3>Unlock your retail media success</h3>
           <p>
             An Amazon-verified partner and Google Ads-certified agency, we
-            leverage the full capabilities of digital media platforms through
-            our partnerships with Criteo and Citrus Ads. Our expert team helps
-            you rock your campaigns and hit ambitious targets, focusing on the
-            metrics that matter to take your brand to new heights.
+            leverage the full capabilities of digital media platforms to
+            transform your omnichannel reach and profitability. Our expert team
+            helps you rock your campaigns and hit ambitious targets, focusing on
+            the metrics that matter to take your brand to new heights.
             <br />
             We've successfully managed big advertising budgets and applied the
             latest media innovations to achieve impressive results for our
@@ -65,7 +67,10 @@ export default (
             rankings.
           </p>
         </figcaption>
-        <Picture src="/images/discussion.jpg" alt="" />
+        <Picture
+          src="/images/cropped-image-woman-inputting-card-information-key-phone-laptop-while-shopping-online.jpg"
+          alt=""
+        />
       </figure>
       <ElementWithBackgroundImage
         tagName="section"
@@ -74,9 +79,10 @@ export default (
       >
         <h3>Our Expertise</h3>
         <p>
-          With the e-Comas team by your side, you’ll have a dedicated,
-          proficient and certified partner who knows retail media inside and
-          out.
+          With our retail media expertise, we drive results way beyond
+          traditional search engines. Using the likes of Advertising and Walmart
+          Connect, we get your products right where they belong - in front of
+          the perfect audience, exactly when they're ready for it.
         </p>
         <div role="list">
           <ListElement
@@ -96,12 +102,12 @@ export default (
           <ListElement
             icon={faAmazon as IconProp}
             title="AMC"
-            desc="Our Amazon Marketing Cloud-certified professionals leverage deep insights and make informed decisions, amplifying your success. Whether it's creating custom dashboards or navigating the sea of data, we provide insights that can transform your strategy."
+            desc="Whether it's creating custom dashboards or navigating the sea of data, our Amazon Marketing Cloud-certified professionals provide deeper insights that can transform your ads strategy."
           />
           <ListElement
             icon={faAmazon as IconProp}
             title="AMS"
-            desc="We’ll help you maximise your advertising campaigns with real-time data from Amazon Marketing Stream to make the most of the high conversion hours of the day."
+            desc="We’ll help you maximise your advertising campaigns and make more informed decisions with real-time data from Amazon Marketing Stream to make the most of the high conversion hours of the day."
           />
           <ListElement
             icon={faAmazon as IconProp}
@@ -142,7 +148,7 @@ export default (
           desc={
             <>
               We audit of your brand’s current <ECommerce /> presence and work
-              closely with you to set clear and measurable goals."
+              closely with you to set clear and measurable goals.
             </>
           }
         />
@@ -176,7 +182,10 @@ export default (
             Swiss baby brand MiaMily interweave its social media and advertising
             to enhance its brand presence and grow its sales.
           </p>
-          <a class="cta" href="https://go.e-comas.com/l/885733/2023-01-16/l812v">
+          <a
+            class="cta"
+            href="https://go.e-comas.com/l/885733/2023-01-16/l812v"
+          >
             Download
             <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>
@@ -184,10 +193,10 @@ export default (
       </figure>
     </section>
     <section class="blog" id="blog">
-      <h2>Blog</h2>
+      <h2>Our blog</h2>
       <p>
-        Find out useful <ECommerce /> tips and what's new in the Amazon world
-        relating to online retail media.
+        Read our latest blogs for helpful <ECommerce /> tips and what's new in
+        the Amazon world relating to online retail media.
       </p>
       <div role="list">
         {"{% for post in site.tags.Advertising | slice: 0, 3 %}"}
