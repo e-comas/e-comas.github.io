@@ -39,14 +39,19 @@
       }
       display: flex;
       flex-direction: column;
-      & img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
       .picture-wrapper {
-        max-height: 15rem;
+        height: 15rem;
         overflow: hidden;
+        & > picture{
+          position: inherit;
+          display: block;
+          height: 100%;
+          & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
       }
       figcaption {
         text-align: left;
@@ -58,7 +63,7 @@
       }
       @media screen and (min-width: 800px) {
         .picture-wrapper {
-          max-height: unset;
+          height: unset;
         }
         figcaption {
           padding: 1rem;

@@ -23,7 +23,7 @@ export default () => (
     </p>
     <div role="list">
       <figure class="animate-in">
-        <Picture src="/images/consulting01.png" alt="illustration" />
+        <Picture src="/images/consulting01_crop.png" alt="illustration" />
         <figcaption>
           {/* <GlobalExpansion /> */}
           <FontAwesomeIcon
