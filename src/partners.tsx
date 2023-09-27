@@ -109,12 +109,15 @@ const partners = [
         Don’t let non-compliance costs threaten your expansion efforts.
         Complizon expertly manages your company's product and regulatory
         compliance issues, carefully crafting strategies to considerably enhance
-        worldwide success.\ It's a lucrative world out there, and having your
-        affairs in order means you can enter the UK and EU markets with
-        confidence, unlocking potentially millions in revenue.\ \ From wellness
-        and dietary enhancements to children's toys, <ECommerce /> businesses
-        seeking success in the UK and EU can gain from our know-how. Complizon
-        serves as your beacon in the realm of global regulatory adherence.
+        worldwide success.
+        <br /> It's a lucrative world out there, and having your affairs in
+        order means you can enter the UK and EU markets with confidence,
+        unlocking potentially millions in revenue.
+        <br />
+        <br /> From wellness and dietary enhancements to children's toys,{" "}
+        <ECommerce /> businesses seeking success in the UK and EU can gain from
+        our know-how. Complizon serves as your beacon in the realm of global
+        regulatory adherence.
       </>
     ),
     link: "https://www.complizon.com/",
@@ -125,9 +128,9 @@ const partners = [
     name: "Datahawk",
     text: (
       <>
-        Datahawk is the next-generation <ECommerce /> Analytics Platform helping you
-        unify <ECommerce /> data and turn it into actionable insights and business
-        recommendations.
+        Datahawk is the next-generation <ECommerce /> Analytics Platform helping
+        you unify <ECommerce /> data and turn it into actionable insights and
+        business recommendations.
       </>
     ),
     link: "https://datahawk.co/",
