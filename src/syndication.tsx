@@ -167,7 +167,7 @@ export default (
           desc={
             <>
               We audit of your brand’s current <ECommerce /> presence and work
-              closely with you to set clear and measurable goals."
+              closely with you to set clear and measurable goals.
             </>
           }
         />
