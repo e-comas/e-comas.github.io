@@ -48,7 +48,7 @@ export default (
     <main id="main-content">
       <figure class="how_it">
         <Picture
-          src="/images/team-picture-EU.jpg"
+          src="/images/jerome-thinking.png"
           alt="e-Comas Europe team picture"
         />
         <figcaption>
@@ -146,9 +146,8 @@ export default (
       </section>
       <Partners title="Our clients" id="clients">
         <p>
-          We work with inspiring and major multinational brands to develop,
-          execute and maintain expert <ECommerce /> strategies across all four
-          corners of the globe:
+          We work with major multinational brands to develop, execute and
+          maintain expert <ECommerce /> strategies across the world.
         </p>
         <div role="list">
           <a role="listitem" href="https://about.mattel.com/">
