@@ -148,7 +148,7 @@ export default (
         />
         <FlipCard
           title="Manage Operations"
-          desc="From optimizing product listings to handling logistics and VAT, we can manage your account on multiple platforms."
+          desc="From optimising product listings to handling logistics and VAT, we can manage your account on multiple platforms."
         />
         <FlipCard
           title="Grow Traffic"

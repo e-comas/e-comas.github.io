@@ -94,7 +94,7 @@ export default (
             desc={
               <>
                 We partner with Salsify to help you with Product Information
-                Management (PIM) and Syndication, organizing and uploading your
+                Management (PIM) and Syndication, organising and uploading your
                 content across multiple <ECommerce /> platforms.
               </>
             }
@@ -173,7 +173,7 @@ export default (
         />
         <FlipCard
           title="Manage Operations"
-          desc="From optimizing product listings to handling logistics and VAT, we can manage your account on multiple platforms."
+          desc="From optimising product listings to handling logistics and VAT, we can manage your account on multiple platforms."
         />
         <FlipCard
           title="Grow Traffic"
