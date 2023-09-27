@@ -27,7 +27,11 @@ import ListElement from "./views/ListElement.tsx";
 import { faAmazon } from "@fortawesome/free-brands-svg-icons";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import { ecData, ecHoleInSquare } from "./utils/customIconDefinition.ts";
-import { faCompass, faEye, faNewspaper } from "@fortawesome/free-regular-svg-icons";
+import {
+  faCompass,
+  faEye,
+  faNewspaper,
+} from "@fortawesome/free-regular-svg-icons";
 
 export default (
   <Body title="Data & Technology">
@@ -35,9 +39,10 @@ export default (
     <Hero class="animate-in long-page">
       <h1 class="title">Data & Technology</h1>
       <p>
-        Cut the guesswork and navigate the complexities of big <ECommerce />{" "}
-        data with our expertise and the latest technology to steer your brand to
-        success.
+        Data can reveal what's happening in your business and predict trends,
+        but making sense of it all can be a challenge. Cut the guesswork and
+        navigate the complexities of big <ECommerce /> data with our expertise
+        and the latest technology to steer your brand to success.
       </p>
       <a href="./contact.html" class="cta">
         Book a Call
@@ -58,7 +63,7 @@ export default (
             different aspects impact your sales.
             <br />
             Supported by our expert analysts, our unique frameworks and
-            sophisticated intelligence tools decode your reams of <ECommerce />
+            sophisticated intelligence tools decode your reams of <ECommerce />{" "}
             data, helping you to make the right business decisions quickly and
             confidently.
             <br />
@@ -69,7 +74,7 @@ export default (
             streamlines processes and saves you tons of time.
           </p>
         </figcaption>
-        <Picture src="/images/discussion.jpg" alt="" />
+        <Picture src="/images/stephen-dawson-qwtCeJ5cLYs-unsplash.jpg" alt="" />
       </figure>
       <ElementWithBackgroundImage
         tagName="section"
@@ -107,7 +112,7 @@ export default (
                 your team's ability to understand and use <ECommerce /> data.
                 This specialised approach empowers you to make data-driven
                 decisions, leveraging key insights to gain a competitive edge in
-                the market."
+                the market.
               </>
             }
           />
@@ -120,7 +125,7 @@ export default (
                 and various ad platforms, we build your dream dashboard to
                 display <ECommerce /> performance across channels. Our ability
                 to consolidate this data enables a true Marketing Efficiency
-                Ratio (MER), offering actionable insights."
+                Ratio (MER), offering actionable insights.
               </>
             }
           />
@@ -199,7 +204,10 @@ export default (
             partners at Salsify helped a leading tyres brand save time and
             improve consistency.
           </p>
-          <a class="cta" href="https://go.e-comas.com/l/885733/2022-09-02/bwml5">
+          <a
+            class="cta"
+            href="https://go.e-comas.com/l/885733/2022-09-02/bwml5"
+          >
             Download
             <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>
@@ -207,10 +215,10 @@ export default (
       </figure>
     </section>
     <section class="blog" id="blog">
-      <h2>Blog</h2>
+      <h2>Our blog</h2>
       <p>
-        Find out useful <ECommerce /> tips and what's new in the Amazon world
-        relating to data and technology.
+        Read our latest blogs for helpful <ECommerce /> tips and what's new in
+        the Amazon world relating to data and technology.
       </p>
       <div role="list">
         {/* TODO: is it the right tag for this page? */}

@@ -68,6 +68,9 @@
 }
 
 .how-we-do-it {
+  h2{
+    text-transform: capitalize;
+  }
   counter-reset: card-number;
   padding: 2rem 1rem;
   text-align: center;
