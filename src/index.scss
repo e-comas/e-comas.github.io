@@ -117,17 +117,17 @@ section.news {
       color: white;
     }
   }
-  &>*{
+  & > * {
     max-width: 100%;
   }
   @media screen and (min-width: 800px) {
     flex-direction: row-reverse;
     max-width: 1500px;
-    gap:1.5rem;
-    &>*{
+    gap: 1.5rem;
+    & > * {
       width: 50%;
     }
-    figcaption{
+    figcaption {
       display: flex;
       flex-direction: column;
       margin: auto;
@@ -135,26 +135,27 @@ section.news {
       gap: 1.5rem;
       .cta {
         margin: 0;
-        margin-top: .5rem;
+        margin-top: 0.5rem;
       }
     }
   }
-  img{
+  img {
     max-width: 100%;
-    height:auto;
+    height: auto;
   }
 }
 
 .clients {
   position: relative;
   &::before {
-    content:"";
+    content: "";
     position: absolute;
-    width:100vw;
+    width: 100vw;
     top: 15px;
     bottom: 15px;
-    left:-1rem;
-    box-shadow: 0 .5rem .5rem 0 rgba(0, 0, 0, 0.1);
+    left: -1rem;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+    z-index: -1;
   }
 }
 
@@ -218,7 +219,7 @@ figure.intro {
 
   .cta {
     @extend %button;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     font-size: 1rem;
     background-color: $gold;
     text-transform: capitalize;
