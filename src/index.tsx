@@ -24,7 +24,7 @@ import "runtime:./utils/open-form-in-modal.ts";
 
 import "runtime:./views/animate-in.ts";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import Newsletter from "./views/newsletter.tsx";
 
@@ -42,8 +42,9 @@ export default (
             technology. <EComas /> is the full service <ECommerce /> agency to
             help you get there.
           </p>
-          <a href="/contact.html" class="cta">
-            Let's talk
+          <a href="/contact.html" class="cta no-arrow">
+            book a call
+            <FontAwesomeIcon icon={faPhone as IconProp} />
           </a>
         </figcaption>
         <div>
