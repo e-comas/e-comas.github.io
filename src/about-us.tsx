@@ -60,8 +60,7 @@ export default (
             online. We quickly realised companies were struggling with
             establishing profitable and sustainable <ECommerce /> strategies.
             That’s when ‘Amazon Made Simple’ was born, which later became ‘{" "}
-            <ECommerce /> Made Simple’ –{" "}
-            <EComas />.
+            <ECommerce /> Made Simple’ – <EComas />.
           </p>
         </figcaption>
       </figure>
@@ -146,8 +145,8 @@ export default (
       </section>
       <Partners title="Our clients" id="clients">
         <p>
-          We work with major multinational brands to develop, execute and
-          maintain expert <ECommerce /> strategies across the world.
+          We work with multinational retailers and boutique brands to develop,
+          execute and maintain <ECommerce /> strategies worldwide.
         </p>
         <div role="list">
           <a role="listitem" href="https://about.mattel.com/">

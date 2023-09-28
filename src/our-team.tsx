@@ -13,6 +13,7 @@ import Footer from "./views/Footer.tsx";
 import { EComas } from "./views/eWords.tsx";
 
 import "./our-team.scss";
+import Hero from "./views/hero.tsx";
 
 function sortTM(a: TeamMemberProps, b: TeamMemberProps) {
   if (a.priority != null && b.priority == null) return -1;
@@ -59,9 +60,9 @@ export default (
   <Body title="The Team">
     <Header />
     {/* <Breadcrumbs /> */}
-    <main id="main-content">
+    <Hero class="animate-in long-page">
       <h2>
-        The <EComas /> team
+        meet the <EComas /> team
       </h2>
       <p>
         Some of the known industry stalwarts with proven experience have come
@@ -70,6 +71,8 @@ export default (
         Amazon's Key Success Factors. Our team comprises ex-brand directors,
         ex-Amazonians, and operational experts to help you grow on Amazon.
       </p>
+    </Hero>
+    <main id="main-content">
       <figure>
         <Picture
           src={team.CEO.pictureUrl}
