@@ -30,7 +30,7 @@ export default (
   <Body title="Retail Media">
     <Header />
     <Hero class="animate-in long-page">
-      <h1 class="title">Online Retail Media</h1>
+      <h1 class="title">Retail Media</h1>
       <p>
         Whether you want to kickstart your retail media strategy or enhance an
         existing campaign, we can handle all aspects of your advertising to
@@ -130,8 +130,9 @@ export default (
             desc="Let us audit your account, create a winning strategy and help you with your advertising campaign setup and optimisation to succeed on these two major retail media platforms."
           />
         </div>
-        <a href="/contact.html" class="cta animatable">
+        <a href="/contact.html" class="cta animatable no-arrow">
           Book a Call
+          <FontAwesomeIcon icon={faPhone as IconProp} />
         </a>
       </ElementWithBackgroundImage>
     </main>

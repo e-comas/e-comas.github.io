@@ -52,7 +52,6 @@ section.about-us {
 
   & > .cta {
     @extend %button;
-    text-transform: capitalize;
     font-size: 0.75rem;
     margin: auto;
     color: white;

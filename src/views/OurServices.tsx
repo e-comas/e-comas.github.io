@@ -53,7 +53,7 @@ export default () => (
             icon={ecTarget as IconProp}
             color="#fed13f"
           />
-          <h4>Digital Retail Media</h4>
+          <h4>Retail Media</h4>
           <p>
             As an Amazon-verified partner and Google Ads-certified agency, we
             leverage the full capabilities of digital media platforms to expand

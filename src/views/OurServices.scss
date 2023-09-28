@@ -54,11 +54,17 @@
         }
       }
       figcaption {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         text-align: left;
 
         & > svg {
           max-width: 5rem;
           margin-top: 0.5rem;
+        }
+        .cta {
+          margin: unset;
         }
       }
       @media screen and (min-width: 800px) {

@@ -146,8 +146,9 @@ export default (
             desc="We partner with the industry’s leading platforms and use our own custom-built tech to gather data from various sources, automate processes and provide actionable insights to help you make the best decisions for your brand."
           />
         </div>
-        <a href="/contact.html" class="cta animatable">
+        <a href="/contact.html" class="cta animatable no-arrows">
           Book a Call
+          <FontAwesomeIcon icon={faPhone as IconProp} />
         </a>
       </ElementWithBackgroundImage>
     </main>

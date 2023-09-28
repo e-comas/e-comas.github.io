@@ -37,7 +37,7 @@ export default () => (
       />
     </div>
     <a href="/about-us.html" class="cta animatable">
-      More about us
+      Learn more
     </a>
   </ElementWithBackgroundImage>
 );

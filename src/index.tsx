@@ -73,8 +73,8 @@ export default (
       <OurServices />
       <Partners title="our clients" class="clients">
         <p>
-          We are super proud to have worked with ambitious brands from across
-          the world:
+          We help ambitious global retailers and boutique brands like these grow
+          their <ECommerce /> presence internationally.
         </p>
         <div role="list">
           <a role="listitem" href="https://about.mattel.com/">
@@ -112,8 +112,8 @@ export default (
       {/* <hr /> */}
       <Partners>
         <p>
-          We work with the best partners to help you grow your eCommerce
-          business.
+          These are some of the top partners we work with to help you grow your{" "}
+          <ECommerce /> business.
         </p>
         <div role="list">
           <a role="listitem" href="salsify.html">

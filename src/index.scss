@@ -106,7 +106,7 @@ section.news {
   margin: auto;
   text-align: center;
   gap: 1rem;
-  padding: 2rem 0;
+  padding: 0;
   min-height: unset;
   .cta {
     @extend %button;
@@ -220,7 +220,7 @@ figure.intro {
   .cta {
     @extend %button;
     margin-top: 0.5rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
     background-color: $gold;
     text-transform: capitalize;
     &:hover {
