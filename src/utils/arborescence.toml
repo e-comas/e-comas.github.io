@@ -19,8 +19,12 @@ name = "Data & Technology"
 url = "/data-and-tech.html"
 
 [[root.children.children]]
-name = "Content Syndication"
+name = "Content & Creative"
 url = "/syndication.html"
+
+[[root.children.children]]
+name = "Content Syndication"
+url = "/salsify.html"
 
 [[root.children.children]]
 name = "Shopify"
@@ -78,4 +82,3 @@ url = "/clientlogin.html"
 [[root.children]]
 name = "Contact us"
 url = "/contact.html"
-
