@@ -57,7 +57,7 @@ quote = "Identifying your gaps and needs at the beginning of your ecom journey i
 pictureUrl = "/images/team/Nazli.png"
 url.LinkedIn = "https://www.linkedin.com/in/nazl%C4%B1-ipek-kay%C4%B1k%C3%A7%C4%B1-86644a23/"
 url.YouTube = "https://www.youtube.com/watch?v=nN8QWZ5S7-M"
-
+priority= 3
 
 [[team_member]]
 Name = "Agu\u00e8ne Sambou"
@@ -144,9 +144,9 @@ url.Calendly = "https://calendly.com/pete-ecomas"
 
 [[team_member]]
 Name = "Riley Bell"
-Title = "Senior Account Manager and Team Lead”"
+Title = "Senior Account Manager and Team Lead"
 Team = "Team lead"
-priority = 1
+priority = 2
 quote = "\"eCommerce is an ever evolving landscape with fresh challenges and new opportunities emerging each day\""
 pictureUrl = "/images/team/Riley.png"
 url.LinkedIn = "https://www.linkedin.com/in/bellriley/"
@@ -155,14 +155,13 @@ url.YouTube = "https://www.youtube.com/watch?v=miLaUlqNruc"
 
 [[team_member]]
 Name = "Seval Andıç"
-Title = "Senior Account Manager and Team Lead”"
+Title = "Senior Account Manager and Team Lead"
 Team = "Team lead"
 priority = 1
 quote = "The ability to adapt is the main ingredient behind succesful growth recipes."
 pictureUrl = "/images/team/Sevel.png"
 url.LinkedIn = "https://www.linkedin.com/in/sevalsolmaz/"
 url.YouTube = "https://www.youtube.com/watch?v=1lhz5W6uTUs"
-
 
 [[team_member]]
 Name = "Sven Jacosben Diaz"
@@ -209,8 +208,8 @@ url.LinkedIn = "https://www.linkedin.com/in/stefan-marian-712779239"
 
 [[team_member]]
 Name = "Marius Popov"
-Team = "Account Management"
-Title = "Senior Account Manager and Team Lead”"
+Team = ["Account Management", "Team lead"]
+Title = "Senior Account Manager and Team Lead"
 url.LinkedIn = "https://www.linkedin.com/in/marius-popov-488a5752/"
 pictureUrl = "/images/team/Marius.png"
 
@@ -482,7 +481,7 @@ pictureUrl = "/images/team/Julie.png"
 
 # [[team_member]]
 # Name = "Sarra Maatallah"
-# Title = "Senior Account Manager and Team Lead”"
+# Title = "Senior Account Manager and Team Lead"
 # Team = "Team lead"
 # priority = 2
 # quote = "'I always believe that the work you deliever is an extension of yourself. Care about the way you want your work performance to be look at the same way you care about your own image. Quality, passion and care should  be what define you. This is my own recipe to success.''"
@@ -502,7 +501,7 @@ pictureUrl = "/images/team/Julie.png"
 
 # [[team_member]]
 # Name = "Carlos De Almeida"
-# Title = "Senior Account Manager and Team Lead”"
+# Title = "Senior Account Manager and Team Lead"
 # Team = "Team lead"
 # priority = 1
 # quote = "\"Care is the key of any successful business partnership\""
@@ -512,7 +511,7 @@ pictureUrl = "/images/team/Julie.png"
 
 # [[team_member]]
 # Name = "Withney Lupter"
-# Title = "Senior Account Manager and Team Lead”"
+# Title = "Senior Account Manager and Team Lead"
 # priority = 1
 # Team = "Team lead"
 # quote = "\"If Amazon offers something for free, take advantage of it.\""

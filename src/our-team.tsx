@@ -29,10 +29,18 @@ function sortTM(a: TeamMemberProps, b: TeamMemberProps) {
 function getTeams(teamMembers: TeamMemberProps[]) {
   const teams: Record<string, Team> = Object.create(null);
   for (const teamMember of teamMembers.sort(sortTM)) {
-    if (teamMember.Team && teamMember.Team in teams) {
-      teams[teamMember.Team].members.push(teamMember);
-    } else if (teamMember.Team) {
-      teams[teamMember.Team] = { name: teamMember.Team, members: [teamMember] };
+    const memberTeams = Array.isArray(teamMember.Team)
+      ? teamMember.Team
+      : [teamMember.Team];
+    for (const team of memberTeams) {
+      if (team && team in teams) {
+        teams[team].members.push(teamMember);
+      } else if (team) {
+        teams[team] = {
+          name: team,
+          members: [teamMember],
+        };
+      }
     }
   }
   return team.team_order
