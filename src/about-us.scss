@@ -61,9 +61,7 @@ main > .cta {
     flex-direction: column;
     gap: 0;
   }
-  h2 {
-    text-transform: uppercase;
-  }
+
   img {
     border: 10px;
     border-radius: 1rem;
@@ -200,4 +198,8 @@ main > :nth-child(even) {
   img {
     filter: drop-shadow(3px 5px 4px rgb(0, 0, 0, 0.2));
   }
+}
+
+section.partners {
+  display: inline !important;
 }
