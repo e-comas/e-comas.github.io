@@ -35,6 +35,7 @@
 main {
   display: flex;
   gap: inherit;
+  padding: 0;
   grid-template-areas: "aside" "articles";
 
   // @media screen and (min-width: #{$max-width}) {
