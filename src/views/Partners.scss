@@ -1,6 +1,7 @@
 @use "../utils/variables" as *;
 
 %partners {
+  display: flex;
   padding: 2rem;
   gap: 3rem;
   min-height: auto;
