@@ -127,8 +127,7 @@ export default (
           <ListElement
             icon={ecHoleInSquare as IconProp}
             title={"Criteo & Citrus Ads"}
-            desc="Let us audit your account, create a winning strategy and help you with your advertising campaign setup and optimisation to succeed on these two major retail media platforms. 
-            Analytics"
+            desc="Let us audit your account, create a winning strategy and help you with your advertising campaign setup and optimisation to succeed on these two major retail media platforms."
           />
         </div>
         <a href="/contact.html" class="cta animatable">
