@@ -43,9 +43,9 @@ url = "/our-team.html"
 name = "Partners"
 url = "/partners.html"
 
-[[root.children.children]]
-name = "Careers"
-url = "about:blank"
+# [[root.children.children]]
+# name = "Careers"
+# url = "about:blank"
 
 [[root.children]]
 name = "Resources"
