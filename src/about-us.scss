@@ -79,17 +79,6 @@ main > .cta {
   }
 }
 
-main > :nth-child(even) {
-  h3 {
-    color: $green;
-  }
-  @media screen and (min-width: 800px) {
-    & > :first-child {
-      order: 1;
-    }
-  }
-}
-
 .section {
   & > :not(div) {
     text-align: center;
@@ -198,8 +187,4 @@ main > :nth-child(even) {
   img {
     filter: drop-shadow(3px 5px 4px rgb(0, 0, 0, 0.2));
   }
-}
-
-section.partners {
-  display: inline !important;
 }
