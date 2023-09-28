@@ -39,7 +39,7 @@ export default (
         challenges (hello, Amazon!) by breaking them down into smaller, more
         manageable pieces to help you grow faster in <ECommerce />.
       </p>
-      <a href="./contact.html" class="cta">
+      <a href="./contact.html" class="cta no-arrow">
         Book a Call
         <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>

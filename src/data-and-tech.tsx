@@ -44,7 +44,7 @@ export default (
         navigate the complexities of big <ECommerce /> data with our expertise
         and the latest technology to steer your brand to success.
       </p>
-      <a href="./contact.html" class="cta">
+      <a href="./contact.html" class="cta no-arrow">
         Book a Call
         <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>

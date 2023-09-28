@@ -187,7 +187,7 @@ export default (
         <br />
         To find out more about our partnership network speak with the team.
       </p>
-      <a href="https://calendly.com/pete-ecomas" class="cta">
+      <a href="https://calendly.com/pete-ecomas" class="cta no-arrow">
         Book a Call
         <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>

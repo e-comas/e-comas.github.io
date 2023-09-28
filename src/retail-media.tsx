@@ -38,7 +38,7 @@ export default (
         you’ll have a dedicated, proficient and certified partner who knows
         retail media inside and out.
       </p>
-      <a href="./contact.html" class="cta">
+      <a href="./contact.html" class="cta no-arrow">
         Book a Call
         <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>

@@ -42,7 +42,7 @@ export default (
         strategy and our international team of <ECommerce /> experts guiding you
         every step of the way.
       </p>
-      <a href="./contact.html" class="cta">
+      <a href="./contact.html" class="cta no-arrow">
         Book a call
         <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>
