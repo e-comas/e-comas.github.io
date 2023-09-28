@@ -74,7 +74,7 @@ export default (
           <SocialURLs url={team.CEO.url} />
         </figcaption>
       </figure>
-      <figure>
+      {/* <figure>
         <Picture
           src={team.COO.pictureUrl}
           alt={team.COO.Name + ", " + team.COO.Title}
@@ -85,7 +85,7 @@ export default (
           <p>{team.COO.bio}</p>
           <SocialURLs url={team.COO.url} />
         </figcaption>
-      </figure>
+      </figure> */}
       {getTeams(team.team_member).map((team) => (
         <article>
           <h3>{team.name}</h3>
