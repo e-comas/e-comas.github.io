@@ -87,8 +87,8 @@ export default (
             />
           </a>
           <a role="listitem" href="https://about.mattel.com/">
-            <Picture
-              src={"/images/brands/clients/Mattell Logo.png"}
+            <img
+              src={"/images/brands/clients/Mattel-brand.svg"}
               alt={"Mattel"}
             />
           </a>
