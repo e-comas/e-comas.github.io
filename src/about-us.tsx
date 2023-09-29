@@ -205,6 +205,36 @@ export default (
               alt={"Superfeet"}
             />
           </a>
+          <a role="listitem" href="https://dickieslife.com/">
+            <Picture
+              src={"/images/brands/clients/dickies.png"}
+              alt={"Dickies"}
+            />
+          </a>
+          <a role="listitem" href="https://galderma.com/">
+            <Picture
+              src={"/images/brands/clients/galderma.png"}
+              alt={"Galderma"}
+            />
+          </a>
+          <a role="listitem" href="https://loreal.com/">
+            <Picture
+              src={"/images/brands/clients/loreal.png"}
+              alt={"L'Oréal"}
+            />
+          </a>
+          <a role="listitem" href="https://timberland.com/">
+            <Picture
+              src={"/images/brands/clients/timberland.png"}
+              alt={"Timberland"}
+            />
+          </a>
+          <a role="listitem" href="https://zerowater.com/">
+            <Picture
+              src={"/images/brands/clients/zerowater.png"}
+              alt={"Zero Water"}
+            />
+          </a>
         </div>
       </Partners>
       <section id="get_to_know" class="section">
