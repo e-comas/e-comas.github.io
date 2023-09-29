@@ -32,12 +32,12 @@ url = "/website-creation.html"
 
 [[root.children]]
 name = "About us"
+# url = "/about-us.html"
+
+
+[[root.children.children]]
+name = "Company"
 url = "/about-us.html"
-
-
-# [[root.children.children]]
-# name = "Company"
-# url = "about:blank"
 
 [[root.children.children]]
 name = "Our Team"
@@ -53,7 +53,7 @@ url = "/partners.html"
 
 [[root.children]]
 name = "Resources"
-url = "/resources.html"
+# url = "/resources.html"
 
 [[root.children.children]]
 name = "Webinars"
