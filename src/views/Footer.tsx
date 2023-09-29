@@ -92,22 +92,19 @@ export default (props: Props | undefined) => (
       <nav>
         <ul>
           <li>
-            <NavLink href="/consulting.html">Consulting</NavLink>
+            <NavLink href="/global-expansion.html">Global Expansion Services</NavLink>
           </li>
           <li>
-            <NavLink href="/operations.html">Operations</NavLink>
+            <NavLink href="/retail-media.html">Advertising Services</NavLink>
           </li>
           <li>
-            <NavLink href="/syndication.html">Content/PIM/Syndications</NavLink>
+            <NavLink href="/data-and-tech.html">Analytics</NavLink>
           </li>
           <li>
-            <NavLink href="/advertising.html">Advertising</NavLink>
+            <NavLink href="/salsify.html">Content/PIM/Syndications</NavLink>
           </li>
           <li>
             <NavLink href="/website-creation.html">Website Creation</NavLink>
-          </li>
-          <li>
-            <NavLink href="/analytics.html">Analytics</NavLink>
           </li>
         </ul>
       </nav>
