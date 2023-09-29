@@ -43,8 +43,8 @@ main > section {
         @extend %border-rounded;
         content: "";
         position: absolute;
-        top: 15px;
-        bottom: 15px;
+        top: -15px;
+        bottom: -15px;
         left: 0;
         right: 0;
         box-shadow: 0 0.25rem 1.25rem 0 rgba(0, 0, 0, 0.1);
