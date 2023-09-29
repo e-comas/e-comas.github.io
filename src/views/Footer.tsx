@@ -47,18 +47,27 @@ export default (props: Props | undefined) => (
           hello@ecomas.com
         </a>
       </figcaption>
-      <form>
-        <input placeholder="Name" name="name"></input>
-        <input type="email" placeholder="Email" name="email"></input>
+      <form method="post">
+        <input placeholder="Name" name="name" />
+        <input type="email" placeholder="Email" name="email" />
         <input
           type="tel"
           placeholder="Phone number"
           name="phone"
           pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
-        ></input>
-        <input placeholder="Company" name="company"></input>
+        />
+        <input placeholder="Company" name="company" />
         <textarea placeholder="Message" name="message"></textarea>
-        <input type="submit" value="Submit Request"></input>
+        <input type="submit" value="Submit Request" />
+        {/* Honeypot */}
+        <div style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
+          <label htmlFor="pardot_extra_field">Comments</label>
+          <input
+            type="text"
+            id="pardot_extra_field"
+            name="pardot_extra_field"
+          />
+        </div>
       </form>
     </figure>
     <hr />
@@ -92,7 +101,9 @@ export default (props: Props | undefined) => (
       <nav>
         <ul>
           <li>
-            <NavLink href="/global-expansion.html">Global Expansion Services</NavLink>
+            <NavLink href="/global-expansion.html">
+              Global Expansion Services
+            </NavLink>
           </li>
           <li>
             <NavLink href="/retail-media.html">Advertising Services</NavLink>
