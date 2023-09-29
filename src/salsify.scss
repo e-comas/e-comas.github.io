@@ -37,7 +37,7 @@ main > .video-playing {
   gap: 1rem;
   margin: 0 auto;
   padding: math.div($min-width, 2);
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 
