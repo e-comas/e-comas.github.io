@@ -57,7 +57,7 @@ quote = "Identifying your gaps and needs at the beginning of your ecom journey i
 pictureUrl = "/images/team/Nazli.png"
 url.LinkedIn = "https://www.linkedin.com/in/nazl%C4%B1-ipek-kay%C4%B1k%C3%A7%C4%B1-86644a23/"
 url.YouTube = "https://www.youtube.com/watch?v=nN8QWZ5S7-M"
-priority= 3
+priority = 3
 
 [[team_member]]
 Name = "Agu\u00e8ne Sambou"
@@ -208,7 +208,7 @@ url.LinkedIn = "https://www.linkedin.com/in/stefan-marian-712779239"
 
 [[team_member]]
 Name = "Marius Popov"
-Team = ["Account Management", "Team lead"]
+Team = "Team lead"
 Title = "Senior Account Manager and Team Lead"
 url.LinkedIn = "https://www.linkedin.com/in/marius-popov-488a5752/"
 pictureUrl = "/images/team/Marius.png"
