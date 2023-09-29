@@ -22,6 +22,9 @@
       color: white;
     }
   }
+  a>.e-word {
+    display: unset;
+  }
   section {
     display: flex;
     flex-direction: column;
