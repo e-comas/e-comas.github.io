@@ -121,7 +121,8 @@ header {
       padding: 0;
       margin: 0;
     }
-    &>div:hover {
+
+    & > div:hover {
       ul {
         display: block;
         // position: relative;
@@ -138,10 +139,12 @@ header {
           z-index: -1;
         }
       }
-    }
-    & > div:hover {
       @media screen and (min-width: $breakpoint) {
         z-index: 1;
+        ul::before {
+          content: none;
+        }
+
         & + ::before {
           content: "";
           display: block;
