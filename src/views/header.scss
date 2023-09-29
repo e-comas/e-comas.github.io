@@ -85,6 +85,7 @@ header {
     gap: 1rem;
     margin: 0 auto;
     width: 100%;
+    span,
     a {
       margin: 1rem;
       @extend %uppercase;
@@ -94,6 +95,7 @@ header {
       font-size: 0.8rem;
     }
 
+    span:hover,
     a:hover,
     a:not(:last-child).active {
       color: $gold;
