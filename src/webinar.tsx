@@ -14,6 +14,7 @@ import "./views/VideoEmbedLink.scss";
 import "runtime:./utils/youtube_feed.ts";
 import "./webinar.scss";
 import Hero from "./views/hero.tsx";
+import { ECommerce } from "./views/eWords.tsx";
 
 export default (
   <Body title="Webinar">
@@ -21,13 +22,12 @@ export default (
     <Hero>
       <h1> Webinar</h1>
       <p>
-        We run our own popular webinar programme, talking to our friends in the
-        eCommerce world about how brands can improve and grow. See our next
-        events here!
+        We love talking to our friends and industry experts in the <ECommerce />
+        world about how brands can improve and grow. From expanding into other
+        markets to compliance and VAT, we cover it all with top tips you can
+        learn from in our own popular webinar programme.
       </p>
-      <a href="TODO" class="cta">
-        Register Now
-      </a>
+      <p>See our previous events and register for our next webinar here!</p>
     </Hero>
     {/* <Breadcrumbs /> */}
     <main id="main-content" class="blog">
@@ -43,12 +43,9 @@ export default (
         <h3>
           <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
         </h3>
-        <time dateTime={"{{ webinar.date | date: '%Y-%m-%dT%H:%M:%S' }}"}>
-          {'{{ webinar.date | date: "%b %d, %Y" }}'}
-        </time>
         <p>{"{{ webinar.excerpt | escape }}"}</p>
         <a href="{{ webinar.url }}" class="cta">
-          Register now
+          Watch now
         </a>
       </article>
       {"{% endfor %}"}
