@@ -160,7 +160,7 @@ export default (
           </a>
           <a role="listitem" href="https://miamily.com/">
             <Picture
-              src={"/images/brands/clients/miamily logo box dark purple.png"}
+              src={"/images/brands/clients/MiaMily.png"}
               alt={"Miamily"}
             />
           </a>
