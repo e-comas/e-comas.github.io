@@ -23,8 +23,6 @@ export default (
         your operations in one place, including retail channels, product
         information, sales, advertising, and more!
       </p>
-    </Hero>
-    <main id="main-content">
       <section id="links">
         <a href="https://reports.e-comas.com/seller" class="cta">
           Seller
@@ -33,6 +31,8 @@ export default (
           Vendor
         </a>
       </section>
+    </Hero>
+    <main id="main-content">
       <section>
         <h2> ONE login, HOURLY insights YOUR data, YOUR way</h2>
         <p>

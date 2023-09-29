@@ -1,9 +1,17 @@
 @use "./utils/variables" as *;
 
+#links {
+  display: flex;
+  @media screen and (min-width: 800px) {
+    width: 50%;
+    margin: auto;
+    flex-direction: row;
+  }
+}
 #main-content {
   display: flex;
   margin: auto;
-  padding: 3rem 0 2rem;
+  padding: 0 0 2rem;
   .cta {
     width: 10rem;
     border-radius: 1.5rem;
@@ -14,17 +22,10 @@
       color: white;
     }
   }
-  #links {
-    display: flex;
-    @media screen and (min-width: 800px) {
-      flex-direction: row;
-    }
-  }
   section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2rem 0;
     gap: 1rem;
     figure {
       .picture-wrapper {

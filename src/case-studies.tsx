@@ -11,6 +11,9 @@ import "runtime:./utils/youtube_feed.ts";
 import "./webinar.scss";
 import Picture from "./utils/Picture.tsx";
 import Hero from "./views/hero.tsx";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import { faDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const testimonies = [
   {
@@ -54,8 +57,9 @@ export default (
         we've helped our valued clients boost their sales and grow their
         businesses globally.
       </p>
-      <a href="TODO" class="cta">
-        Register Now
+      <a href="./contact.html" class="cta no-arrow">
+        Book a Call
+        <FontAwesomeIcon icon={faPhone as IconProp} />
       </a>
     </Hero>
     {/* <Breadcrumbs /> */}
@@ -71,8 +75,8 @@ export default (
             <a href={caseStudy.link}>{caseStudy.name}</a>
           </h3>
           <p>{caseStudy.text}</p>
-          <a href={caseStudy.link} class="cta">
-            Download the case study
+          <a href={caseStudy.link} class="cta no-arrow">
+            Download <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>
         </article>
       ))}

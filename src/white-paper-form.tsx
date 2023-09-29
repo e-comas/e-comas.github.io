@@ -12,7 +12,7 @@ import Hero from "./views/hero.tsx";
 import Picture from "./utils/Picture.tsx";
 import "./webinar.scss";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 const papers: {
@@ -65,6 +65,10 @@ export default (
         We research hot topics in the <ECommerce /> industry and report our
         findings in our in-depth white papers. Learn more from us here!
       </p>
+      <a href="./contact.html" class="cta no-arrow">
+        Book a Call
+        <FontAwesomeIcon icon={faPhone as IconProp} />
+      </a>
     </Hero>
     <main id="main-content" class="blog">
       {papers.map((paper) => (
@@ -83,7 +87,7 @@ export default (
             target="_blank"
             className="cta open-in-modal no-arrow"
           >
-            Download the white paper
+            Download
             <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>
         </article>
