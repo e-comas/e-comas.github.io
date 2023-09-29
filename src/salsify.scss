@@ -101,7 +101,7 @@ main > .video-playing {
     // }
   }
 
-  @media screen and (min-width: $max-width+$body-padding) {
+  @media screen and (min-width: calc($max-width + $body-padding)) {
     padding-left: 0;
     padding-right: 0;
   }
