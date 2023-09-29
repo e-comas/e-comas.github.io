@@ -6,12 +6,8 @@ import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faChess } from "@fortawesome/free-solid-svg-icons";
 
-interface Props
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLElement>,
-    HTMLElement
-  > {
-  title: string;
+interface Props {
+  title: string | JSX.Element;
   desc: string | JSX.Element;
   centered?: boolean;
   invertSVG?: boolean;

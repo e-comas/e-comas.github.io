@@ -1,6 +1,7 @@
 @use "../utils/variables" as *;
 
 .card {
+  overflow: hidden;
   padding: 1.5rem;
   background-color: $white;
   display: flex;

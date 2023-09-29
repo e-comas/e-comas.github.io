@@ -1,15 +1,38 @@
-import { h } from "@aduh95/async-jsx";
+import { h, Fragment } from "@aduh95/async-jsx";
+
+import yaml from "./utils/yaml.ts";
 
 import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
-import Breadcrumbs from "./views/Breadcrumbs.tsx";
-import NativeECommerce from "./views/NativeECommerce.tsx";
-import { EComas, ECommerce, EStore } from "./views/eWords.tsx";
 import Footer from "./views/Footer.tsx";
 
-import "./shopify.scss";
-import "runtime:./utils/auto-scroll-data-delay.ts";
+import "./global-expansion.scss";
 import Hero from "./views/hero.tsx";
+
+import "./views/animate-in.scss";
+import "runtime:./views/animate-in.ts";
+import Picture from "./utils/Picture.tsx";
+import FlipCard from "./views/flipCard.tsx";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import {
+  faBullhorn,
+  faDownload,
+  faMagnifyingGlass,
+  faPaintBrush,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { EComas, ECommerce } from "./views/eWords.tsx";
+import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
+import ListElement from "./views/ListElement.tsx";
+import {
+  ecPersonAndCog,
+  ecGlobe,
+  ecTrolley,
+  ecData,
+} from "./utils/customIconDefinition.ts";
+
+import "./shopify.scss";
 
 export default (
   <Body title="Website creation">
@@ -25,117 +48,101 @@ export default (
       </p>
     </Hero>
     <main id="main-content">
-      <NativeECommerce />
-
-      <p>
-        Each platform is working as a silo, keeping customers inside their
-        environment. It becomes of importance for brands to be able to speak the
-        language (in terms of technology, logistics and tactics) of these
-        platforms, but also to have it’s own <ECommerce /> website.
-      </p>
-
-      <div class="slider-wrapper">
-        <section data-auto-slide-delay="7500">
-          <article>
-            <h4>Why Shopify?</h4>
-
-            <p>
-              We proudly partner with Shopify, the leading <ECommerce />{" "}
-              platform allowing brands to build and manage their own standalone
-              online retail stores. Shopify is the third largest online retailer
-              behind Amazon and eBay in the US, with 20% market share.
-              <br />
-              We believe Shopify is one of the keys to a successful omni-channel
-              online retail strategy.
-              <br />
-              Running a Shopify store alongside your Amazon and other{" "}
-              <ECommerce /> accounts can boost your sales and amplify your
-              brand.
-            </p>
-            <p>Some facts about Shopify:</p>
-            <ul>
-              <li>
-                Shopify is the fastest growing online store builder in the
-                world.
-              </li>
-              <li>
-                Shopify is the most searched <ECommerce /> solution.
-              </li>
-              <li>
-                In 2019, 62 million buyers worldwide made repeat purchases on
-                Shopify stores.
-              </li>
-              <li>
-                From 2019 to 2020, Shopify stores saw an increase of 40% in
-                customers.
-              </li>
-              <li>
-                Shopify buyers purchased 3.8 times on average from the same
-                store.
-              </li>
-            </ul>
-          </article>
-
-          <article>
-            <h4>What we will do</h4>
-            <p>
-              Our strength is to support brands on their <ECommerce /> journey, on
-              marketplaces and on their own <ECommerce /> Shopify website. Our
-              roadmap in three steps follows these steps:
-            </p>
-            <table cellPadding="0" cellSpacing="0">
-              <tbody>
-                <tr aria-hidden="true">
-                  <td>
-                    <img src="/images/icons/convert.svg" alt="" />
-                  </td>
-                  <td>
-                    <img src="/images/icons/traffic.svg" alt="" />
-                  </td>
-                  <td>
-                    <img src="/images/icons/repeat.svg" alt="" />
-                  </td>
-                </tr>
-                <tr>
-                  <th>Convert</th>
-                  <th>Traffic</th>
-                  <th>Repeat</th>
-                </tr>
-              </tbody>
-            </table>
-            <p>Our process will start with:</p>
-            <ol>
-              <li>Au audit of your existing online presence.</li>
-              <li>Support to design your <ECommerce /> strategy.</li>
-              <li>Briefing on your products and brand.</li>
-              <li>Development of your Shopify Site.</li>
-              <li>Daily Management of the site.</li>
-            </ol>
-          </article>
-
-          <article>
-            <h4>How we will help you</h4>
-            <p>We have a team of Shopify experts:</p>
-            <ul>
-              <li>UX designers;</li>
-              <li>Front end and back end designers;</li>
-              <li>
-                A <a href="syndication.html#content_creation">content team</a>;
-              </li>
-              <li>
-                <a href="consulting.html">
-                  <ECommerce /> consultants;
-                </a>
-              </li>
-              <li>
-                An <a href="advertising.html">advertising team</a> to generate
-                traffic.
-              </li>
-            </ul>
-          </article>
-        </section>
-      </div>
+      <figure id="about" class="made-easy">
+        <figcaption>
+          <h3>About Shopify</h3>
+          <p>
+            We proudly partner with Shopify, the leading <ECommerce /> platform
+            allowing brands to build and manage their own standalone online
+            retail stores. Shopify is the third largest online retailer behind
+            Amazon and eBay in the US, with 20% market share. We believe Shopify
+            is one of the keys to a successful omni-channel online retail
+            strategy. Running a Shopify store alongside your Amazon and other
+            <ECommerce /> accounts can boost your sales and amplify your brand.
+          </p>
+        </figcaption>
+        <Picture src="/images/placeholder.jpg" alt="" />
+      </figure>
+      <ElementWithBackgroundImage
+        tagName="section"
+        src="/images/Ecomma-b2.jpg"
+        class="about-us"
+      >
+        <h3>How we can help</h3>
+        <p>We have a team of Shopify experts including:</p>
+        <div role="list">
+          <ListElement
+            icon={ecPersonAndCog as IconProp}
+            title="UX designers"
+            desc={""}
+          />
+          <ListElement
+            icon={faPaintBrush as IconProp}
+            title="Front end and back end designers"
+            desc={""}
+          />
+          <ListElement
+            icon={ecData as IconProp}
+            title="A content team"
+            desc={""}
+          />
+          <ListElement
+            icon={ecTrolley as IconProp}
+            title={
+              <>
+                <ECommerce /> consultants
+              </>
+            }
+            desc={""}
+          />
+          <ListElement
+            icon={ecGlobe as IconProp}
+            title="An advertising team to generate traffic."
+            desc={""}
+          />
+        </div>
+        <a href="/contact.html" class="cta animatable no-arrow">
+          Book a Call
+          <FontAwesomeIcon icon={faPhone as IconProp} />
+        </a>
+      </ElementWithBackgroundImage>
     </main>
-    <Footer />
+    <section class="how-we-do-it">
+      <h2>What We’ll Do</h2>
+      <p>
+        Our strength is to support brands on their <ECommerce /> journey, on
+        marketplaces and on their own eCommerce Shopify website.
+      </p>
+      <h4>Our processes will start with:</h4>
+      <ol>
+        <li>Au audit of your existing online presence.</li>
+        <li>Support to design your eCommerce strategy.</li>
+        <li>Briefing on your products and brand.</li>
+        <li>Development of your Shopify Site.</li>
+        <li>Daily Management of the site.</li>
+      </ol>
+    </section>
+    <section id="roadmap" class="see-the-results">
+      <h2>Our roadmap in three easy steps</h2>
+      <div role="list">
+        <figure>
+          <img src="/images/icons/convert.svg" alt="" />
+          <figcaption>Convert</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/icons/traffic.svg" alt="" />
+          <figcaption>Traffic</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/icons/repeat.svg" alt="" />
+          <figcaption>Repeat</figcaption>
+        </figure>
+      </div>
+    </section>
+    <Footer
+      text={
+        "Reach out to our team to find out how we can help you create your website to help you grow your brand faster."
+      }
+    />
   </Body>
-).then((e) => document.body.append(e));
+).then((e) => (document.body.append(e), yaml`layout: none`));
