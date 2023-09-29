@@ -12,6 +12,7 @@ import "runtime:./animate-in.ts";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import { ecData, ecTarget, ecGlobe } from "../utils/customIconDefinition";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { ECommerce } from "./eWords";
 
 export default () => (
   <section id="our-services">
@@ -36,7 +37,7 @@ export default () => (
             Our team of ex-brand directors, ex-Amazonians and operational
             experts have successfully built brands for over a decade on Amazon
             and beyond. We speak the local languages and have strong
-            partnerships with key eCommerce players to drive your business
+            partnerships with key <ECommerce /> players to drive your business
             forward globally.
           </p>
           <a href="/global-expansion.html" class="cta">

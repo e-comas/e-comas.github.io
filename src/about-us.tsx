@@ -1,4 +1,4 @@
-import { h } from "@aduh95/async-jsx";
+import { h, Fragment } from "@aduh95/async-jsx";
 
 import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
@@ -97,15 +97,20 @@ export default (
           Global full service <ECommerce /> agency
         </h2>
         <p>
-          We make eCommerce simple with three pillars of full-service account
-          management to power your brand’s global growth across all major online
-          marketplaces.
+          We make <ECommerce /> simple with three pillars of full-service
+          account management to power your brand’s global growth across all
+          major online marketplaces.
         </p>
         <div role="list">
           <ListElement
             title={"Global expansion"}
             desc={
-              "Our experts have successfully built brands for over a decade on Amazon and beyond. We speak the local languages and have strong partnerships with key eCommerce players to drive your business forward globally.              "
+              <>
+                Our experts have successfully built brands for over a decade on
+                Amazon and beyond. We speak the local languages and have strong
+                partnerships with key <ECommerce /> players to drive your
+                business forward globally. "
+              </>
             }
             icon={ecGlobe as IconProp}
             centered={true}
@@ -215,7 +220,10 @@ export default (
           <ListElement
             title={"Our Mission"}
             desc={
-              "To help brands thrive on the world's top online marketplaces, coaching you in the key success factors of eCommerce."
+              <>
+                To help brands thrive on the world's top online marketplaces,
+                coaching you in the key success factors of <ECommerce />.
+              </>
             }
             icon={faChartPie as IconProp}
             centered={true}
@@ -224,7 +232,10 @@ export default (
           <ListElement
             title={"Our Vision"}
             desc={
-              "To be the most customer-centric eCommerce global agency in North America and Europe."
+              <>
+                To be the most customer-centric <ECommerce /> global agency in
+                North America and Europe.
+              </>
             }
             icon={faEye as IconProp}
             centered={true}

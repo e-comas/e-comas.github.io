@@ -100,7 +100,7 @@ export default (
               </li>
             </ul>
             <p>
-              e-Comas is an official Amazon Advertising partner and our team is
+              <EComas /> is an official Amazon Advertising partner and our team is
               composed of seasoned digital marketers with many years of
               experience.
               <br />

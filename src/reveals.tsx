@@ -7,7 +7,7 @@ import Picture from "./utils/Picture.tsx";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import SlidingText from "./views/SlidingText.tsx";
 import HoverableMenu from "./views/HoverableMenu.tsx";
-import { ECockpits } from "./views/eWords.tsx";
+import { ECockpits, EComas, ECommerce } from "./views/eWords.tsx";
 import Footer from "./views/Footer.tsx";
 import DataRetrieval from "./views/DataRetrieval.tsx";
 
@@ -126,8 +126,8 @@ export default (
             </h3>
 
             <p>
-              Reveals and e-Comas have an e-Cockpit solution, to offer the
-              expertise in eCommerce as well as a technical approach, to provide
+              Reveals and <EComas /> have an e-Cockpit solution, to offer the
+              expertise in <ECommerce /> as well as a technical approach, to provide
               a highly functional and insightful solution, which can be tailor
               made for you, and integrate all the platforms you work with:
             </p>

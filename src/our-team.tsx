@@ -10,7 +10,7 @@ import Header from "./views/Header.tsx";
 import Breadcrumbs from "./views/Breadcrumbs.tsx";
 import Picture from "./utils/Picture.tsx";
 import Footer from "./views/Footer.tsx";
-import { EComas } from "./views/eWords.tsx";
+import { EComas, ECommerce } from "./views/eWords.tsx";
 
 import "./our-team.scss";
 import Hero from "./views/hero.tsx";
@@ -65,11 +65,11 @@ export default (
         meet the <EComas /> team
       </h2>
       <p>
-        Some of the known industry stalwarts with proven experience have come
-        together to form team: <strong>e-Comas</strong> was born. Our team's
-        passion <strong>helps your business grow</strong> by coaching you in
-        Amazon's Key Success Factors. Our team comprises ex-brand directors,
-        ex-Amazonians, and operational experts to help you grow on Amazon.
+        Our global teams are made up of ex-brand directors, ex-Amazonians and
+        operational experts who have successfully built brands for over a decade
+        on Amazon and other online marketplaces. We’re passionate about helping
+        our clients harness the power of <ECommerce />, using our combined expertise
+        to help you grow and thrive internationally.
       </p>
     </Hero>
     <main id="main-content">

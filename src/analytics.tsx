@@ -128,7 +128,7 @@ export default (
             <p>
               With our partner Reveals, we can build your reporting
               infrastructure through automation to give you full control on your
-              complex eCommerce data. This technological-based solution will
+              complex <ECommerce /> data. This technological-based solution will
               enhance your business to the next level.
             </p>
 

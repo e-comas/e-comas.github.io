@@ -12,7 +12,7 @@ export default (
     <main id="main-content">
       <h2>Privacy policy</h2>
       <p>
-        We (e-Comas - eCommerce Made Simple) collect data about you on our
+        We (<EComas /> - <ECommerce /> Made Simple) collect data about you on our
         website, for our own use, for marketing purposes and so that we can
         contact you. <br />
         Our data collection is mainly through forms on the website. When you
@@ -30,7 +30,7 @@ export default (
         you.
         <br />
         From time to time we may send you emails and newsletters with useful
-        information about eCommerce. You can opt out of these by clicking the
+        information about <ECommerce />. You can opt out of these by clicking the
         “unsubscribe” button.
       </p>
 
@@ -118,15 +118,15 @@ export default (
       <p>
         This website, as well as the contents including all information, text,
         graphics, images, hyperlinks and other material are for general
-        information purpose about e-Comas.
+        information purpose about <EComas />.
       </p>
 
       <h3>Links to other websites</h3>
 
       <p>
         This website may contain links to other websites, which are provided
-        solely as convenience to you and not as an endorsement by e-Comas of the
-        contents of such other websites. e-Comas is not responsible for the
+        solely as convenience to you and not as an endorsement by <EComas /> of the
+        contents of such other websites. <EComas /> is not responsible for the
         content of any other websites and does not make any representations or
         warranties regarding any other websites or the contents or materials of
         such websites.

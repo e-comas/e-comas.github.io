@@ -1,6 +1,6 @@
-import { h } from "@aduh95/async-jsx";
+import { h, Fragment } from "@aduh95/async-jsx";
 
-import { EComas } from "../views/eWords.tsx";
+import { EComas, ECommerce } from "../views/eWords.tsx";
 
 import "./about-us.scss";
 import "runtime:./about-us-runtime.ts";
@@ -28,12 +28,26 @@ export default () => (
       <ListElement
         icon={faMedal as IconProp}
         title="Specialist Support"
-        desc="With decades of combined experience helping brands succeed in eCommerce, we have the expertise to grow your business sustainably and help you tackle everyday challenges with online retail."
+        desc={
+          <>
+            With decades of combined experience helping brands succeed in{" "}
+            <ECommerce />, we have the expertise to grow your business
+            sustainably and help you tackle everyday challenges with online
+            retail.
+          </>
+        }
       />
       <ListElement
         icon={faDroplet as IconProp}
         title="Passionate Team"
-        desc="We live and breathe eCommerce, keeping abreast of all the latest industry trends and developments to ensure we find the best solutions and deliver the highest standard of service to our clients."
+        desc={
+          <>
+            We live and breathe <ECommerce />, keeping abreast of all the latest
+            industry trends and developments to ensure we find the best
+            solutions and deliver the highest standard of service to our
+            clients.
+          </>
+        }
       />
     </div>
     <a href="/about-us.html" class="cta animatable">

@@ -23,7 +23,7 @@ export default (
     <Hero>
       <h1>contact us</h1>
       <p>
-        Do you want to work with us to build a global eCommerce empire from the
+        Do you want to work with us to build a global <ECommerce /> empire from the
         ground up? Or maybe you've got a quick question about Amazon? Either
         way, we can help - just give us a shout!
       </p>

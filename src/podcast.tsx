@@ -21,7 +21,7 @@ export default (
         <p>
           Listen to the <ECommerce /> Made Simple podcast with <EComas /> CEO
           Jérôme de Guigné and our expert friends to find out how to grow and
-          succeed in eCommerce.
+          succeed in <ECommerce />.
         </p>
       </Hero>
     <main id="main-content">

@@ -12,7 +12,7 @@ export default (
     <main id="main-content">
       <h2>Legal information</h2>
       <p>
-        Legal name: e-Comas
+        Legal name: <EComas />
         <br />
         Head office: 68 Avenue de la Liberté - L-1930 Luxembourg - LUXEMBOURG
         <br />

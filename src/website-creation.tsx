@@ -106,7 +106,7 @@ export default (
             <p>Our process will start with:</p>
             <ol>
               <li>Au audit of your existing online presence.</li>
-              <li>Support to design your eCommerce strategy.</li>
+              <li>Support to design your <ECommerce /> strategy.</li>
               <li>Briefing on your products and brand.</li>
               <li>Development of your Shopify Site.</li>
               <li>Daily Management of the site.</li>

@@ -157,7 +157,7 @@ export default (props: Props | undefined) => (
             <li>
               <span>US</span>:{" "}
               <address>
-                e-Comas LLC, 6303 Blue Lagoon Drive, Suite 200 Miami, FL 33126
+                <EComas /> LLC, 6303 Blue Lagoon Drive, Suite 200 Miami, FL 33126
               </address>
             </li>
             <li>
@@ -239,7 +239,7 @@ export default (props: Props | undefined) => (
         </a>
         <img src="/images/MadeInLux.svg" alt="Made in Luxembourg" />
       </div>
-      <div class="copyright-notice">© 2022 · e-Comas · All Rights Reserved</div>
+      <div class="copyright-notice">© 2022 · <EComas /> · All Rights Reserved</div>
     </div>
     <div class="lower-footer">
       <div class="luv">

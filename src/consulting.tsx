@@ -74,7 +74,7 @@ export default (
         >
           <h3>Account audit</h3>
           <p>
-            COMPAS by e-Comas provides you insights on how you are doing on
+            COMPAS by <EComas /> provides you insights on how you are doing on
             Amazon, but also on the market &amp; the competition, guiding you to
             better sales and profits.
           </p>

@@ -22,7 +22,7 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { ECommerce } from "./views/eWords.tsx";
+import { EComas, ECommerce } from "./views/eWords.tsx";
 import ListElement from "./views/ListElement.tsx";
 import { faAmazon } from "@fortawesome/free-brands-svg-icons";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
@@ -56,7 +56,7 @@ export default (
           <h3>Maximise performance with data & tech</h3>
           <p>
             Get better visibility over your business and make data-driven
-            decisions that propel growth and success with e-Comas. Our
+            decisions that propel growth and success with <EComas />. Our
             custom-built reporting tool, Compas, collates all your sales,
             advertising, and product information in a single place. So, you can
             easily see the big picture of your business and understand how
