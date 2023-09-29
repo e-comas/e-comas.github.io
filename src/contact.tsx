@@ -21,13 +21,13 @@ export default (
   <Body title="Contact us">
     <Header />
     <Hero>
-      <h1>Get in touch!</h1>
+      <h1>contact us</h1>
       <p>
-        Do you want to work with us to build a global <ECommerce /> empire from
-        the ground up? Or maybe you've just got a quick question about Amazon?{" "}
-        <strong>Either way, we can help - just give us a shout!</strong>
+        Do you want to work with us to build a global eCommerce empire from the
+        ground up? Or maybe you've got a quick question about Amazon? Either
+        way, we can help - just give us a shout!
       </p>
-      <h3>Chat to our lovely Business Development team today</h3>
+      <p>Our Business Development Team are on hand and happy to answer any questions.</p>
     </Hero>
     {/* <Breadcrumbs /> */}
     <main id="main-content">
