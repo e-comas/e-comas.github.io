@@ -27,7 +27,7 @@ import "runtime:./views/animate-on-view.ts";
 import { ecData, ecTarget, ecGlobe } from "./utils/customIconDefinition.ts";
 
 export default (
-  <Body title="About eComas">
+  <Body title="About e-Comas">
     <Header />
     <Hero class="animate-in">
       <h1 class="title">

@@ -79,7 +79,7 @@ export default (
           <article>
             <h4>What we will do</h4>
             <p>
-              Our strength is to support brands on their e-Commerce journey, on
+              Our strength is to support brands on their <ECommerce /> journey, on
               marketplaces and on their own <ECommerce /> Shopify website. Our
               roadmap in three steps follows these steps:
             </p>

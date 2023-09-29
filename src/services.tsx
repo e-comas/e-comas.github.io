@@ -62,7 +62,7 @@ export default (
 
           <p>
             We help our customers automate and secure their data retrieval, we
-            build relevant dashboards and e-Cockpits with our LOOTS KPI
+            build relevant dashboards and <ECockpits/> with our LOOTS KPI
             framework. We also provide market insights to empower brands to win
             on the digital shelf.
           </p>

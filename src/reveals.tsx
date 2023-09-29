@@ -7,7 +7,7 @@ import Picture from "./utils/Picture.tsx";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import SlidingText from "./views/SlidingText.tsx";
 import HoverableMenu from "./views/HoverableMenu.tsx";
-import { ECockpits, EComas, ECommerce } from "./views/eWords.tsx";
+import { ECockpit, ECockpits, EComas, ECommerce } from "./views/eWords.tsx";
 import Footer from "./views/Footer.tsx";
 import DataRetrieval from "./views/DataRetrieval.tsx";
 
@@ -126,7 +126,7 @@ export default (
             </h3>
 
             <p>
-              Reveals and <EComas /> have an e-Cockpit solution, to offer the
+              Reveals and <EComas /> have an <ECockpit /> solution, to offer the
               expertise in <ECommerce /> as well as a technical approach, to provide
               a highly functional and insightful solution, which can be tailor
               made for you, and integrate all the platforms you work with:
@@ -157,7 +157,7 @@ export default (
               Leverage the power of data by using Artificial Intelligence to get
               to the next level in your business insights generation processes.
               Once the reporting is up and running, the data is stored, and all
-              its history, and displayed in your e-Cockpit, you can know produce
+              its history, and displayed in your <ECockpits />, you can know produce
               specific insights to guide your decision making:
             </p>
 
