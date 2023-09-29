@@ -1,10 +1,6 @@
 @use "./utils/variables" as *;
 @use "./views/what-we-do.scss" as *;
 
-.cta > svg {
-  margin-left: 0.5rem;
-}
-
 .made-easy {
   display: flex;
   flex-direction: column;
