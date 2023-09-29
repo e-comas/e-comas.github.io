@@ -18,9 +18,9 @@ url = "/retail-media.html"
 name = "Data & Technology"
 url = "/data-and-tech.html"
 
-[[root.children.children]]
-name = "Content & Creative"
-url = "/syndication.html"
+# [[root.children.children]]
+# name = "Content & Creative"
+# url = "/syndication.html"
 
 [[root.children.children]]
 name = "Content Syndication"
