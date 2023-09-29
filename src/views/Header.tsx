@@ -8,7 +8,7 @@ import "runtime:./Header_runtime.ts";
 
 interface ArborescenceNode {
   name: string;
-  url: string;
+  url?: string;
   children?: ArborescenceNode[];
 }
 function createNavLink(node: ArborescenceNode) {
