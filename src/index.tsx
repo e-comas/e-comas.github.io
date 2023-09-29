@@ -77,12 +77,6 @@ export default (
           their <ECommerce /> presence internationally.
         </p>
         <div role="list">
-          <a role="listitem" href="https://about.mattel.com/">
-            <Picture
-              src={"/images/brands/clients/Mattell Logo.png"}
-              alt={"Mattel"}
-            />
-          </a>{" "}
           <a role="listitem" href="https://www.kao.com">
             <Picture src={"/images/brands/clients/KAO.png"} alt={"KAO"} />
           </a>
@@ -90,6 +84,12 @@ export default (
             <Picture
               src={"/images/brands/clients/miamily logo box dark purple.png"}
               alt={"Miamily"}
+            />
+          </a>
+          <a role="listitem" href="https://about.mattel.com/">
+            <Picture
+              src={"/images/brands/clients/Mattell Logo.png"}
+              alt={"Mattel"}
             />
           </a>
           <a role="listitem" href="https://www.michelin.com/">
