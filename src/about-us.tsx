@@ -64,7 +64,7 @@ export default (
           </p>
         </figcaption>
       </figure>
-      <figure class="how_it going">
+      <figure class="how_it">
         <Picture
           src="/images/team-picture-EU.jpg"
           alt="e-Comas Europe team picture"
