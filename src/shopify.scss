@@ -9,9 +9,13 @@ ol {
 #roadmap {
   div {
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 900px) {
+      flex-direction: row;
+    }
     margin: auto;
     img {
-      max-width: 30vh;
+      max-width: 30vw;
       width: 10rem;
       height: auto;
     }
