@@ -32,49 +32,50 @@ export default (
     {/* <Breadcrumbs /> */}
     <main id="main-content" >
       <section id="upcoming" class="blog">
-      {"{% for webinar in site.tags.Webinar %}"}
-      {"{% if webinar.date|to_datetime - now() == 0 }"}
-      <article>
-        <a href="{{ webinar.url }}">
-          <img
-            src="{{ webinar.thumbnail }}"
-            alt="{{ webinar.thumbnail_alt }}"
-            loading="lazy"
-          />
-        </a>
-        <h3>
-          <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
-        </h3>
-        <p>{"{{ webinar.excerpt | escape }}"}</p>
-        <a href="{{ webinar.url }}" class="cta">
-          Register now
-        </a>
-      </article>
-      {"{% endif %}"}
-      {"{% endfor %}"}
+        {"{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}"}
+        {"{% for webinar in site.tags.Webinar %}"}
+        {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
+        {"{% if posttime < nowunix %}"}
+        <article>
+          <a href="{{ webinar.url }}">
+            <img
+              src="{{ webinar.thumbnail }}"
+              alt="{{ webinar.thumbnail_alt }}"
+              loading="lazy"
+            />
+          </a>
+          <h3>
+            <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
+          </h3>
+          <p>{"{{ webinar.excerpt | escape }}"}</p>
+          <a href="{{ webinar.url }}" class="cta">
+            Register now
+          </a>
+        </article>
+        {"{% endif %}"}
+        {"{% endfor %}"}
       </section>
       <section id="replays" class="blog">
-
-      {"{% for webinar in site.tags.Webinar%}"}
-      {"{% if webinar.date|to_datetime - now() != 0 }"}
-      <article>
-        <a href="{{ webinar.url }}">
-          <img
-            src="{{ webinar.thumbnail }}"
-            alt="{{ webinar.thumbnail_alt }}"
-            loading="lazy"
-          />
-        </a>
-        <h3>
-          <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
-        </h3>
-        <p>{"{{ webinar.excerpt | escape }}"}</p>
-        <a href="{{ webinar.url }}" class="cta">
-          Watch now
-        </a>
-      </article>
-      {"{% endif %}"}
-      {"{% endfor %}"}
+        {"{% for webinar in site.tags.Webinar%}"}
+        {"{% if webinar.date|to_datetime - now() != 0 %}"}
+        <article>
+          <a href="{{ webinar.url }}">
+            <img
+              src="{{ webinar.thumbnail }}"
+              alt="{{ webinar.thumbnail_alt }}"
+              loading="lazy"
+            />
+          </a>
+          <h3>
+            <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
+          </h3>
+          <p>{"{{ webinar.excerpt | escape }}"}</p>
+          <a href="{{ webinar.url }}" class="cta">
+            Watch now
+          </a>
+        </article>
+        {"{% endif %}"}
+        {"{% endfor %}"}
       </section>
 
     </main>
