@@ -30,14 +30,13 @@ export default (
       <p>See our previous events and register for our next webinar here!</p>
     </Hero>
     {/* <Breadcrumbs /> */}
-    <main id="main-content" >
+    <main id="main-content">
       <section id="upcoming" class="blog">
         {"{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}"}
         {"{% for webinar in site.tags.Webinar %}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
         {"{% if posttime >= nowunix %}"}
-        <p>{"{{ posttime }}"}</p>
-        <p>{"{{ nowunix }}"}</p>
+
         <article>
           <a href="{{ webinar.url }}">
             <img
@@ -50,6 +49,8 @@ export default (
             <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
           </h3>
           <p>{"{{ webinar.excerpt | escape }}"}</p>
+          <p>{"{{ posttime }}"}</p>
+          <p>{"{{ nowunix }}"}</p>
           <a href="{{ webinar.url }}" class="cta">
             Register now
           </a>
@@ -80,7 +81,6 @@ export default (
         {"{% endif %}"}
         {"{% endfor %}"}
       </section>
-
     </main>
     <Footer />
   </Body>
