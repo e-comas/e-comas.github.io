@@ -31,11 +31,11 @@ export default (
     </Hero>
     {/* <Breadcrumbs /> */}
     <main id="main-content">
-        {"{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}"}
+      {"{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}"}
       {/* <section id="upcoming" class="blog">
         {"{% for webinar in site.tags.Webinar %}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
-        {"{% if posttime &#62;= nowunix %}"}
+        {"{% if posttime >= nowunix %}"}
 
         <article>
           <a href="{{ webinar.url }}">
@@ -59,7 +59,7 @@ export default (
       <section id="replays" class="blog">
         {"{% for webinar in site.tags.Webinar%}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
-        {"{% if posttime &#60; nowunix %}"}
+        <script type="jekyll">{"{% if posttime < nowunix %}"}</script>
         <article>
           <a href="{{ webinar.url }}">
             <img
