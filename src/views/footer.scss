@@ -127,6 +127,7 @@ hr {
   a {
     color: inherit;
     text-decoration: inherit;
+    text-transform: capitalize;
 
     &:hover {
       text-decoration: underline;
