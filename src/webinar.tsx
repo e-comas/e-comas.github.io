@@ -35,7 +35,7 @@ export default (
         {"{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}"}
         {"{% for webinar in site.tags.Webinar %}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
-        {"{% if posttime < nowunix %}"}
+        {"{% if posttime >= nowunix %}"}
         <article>
           <a href="{{ webinar.url }}">
             <img
@@ -57,7 +57,8 @@ export default (
       </section>
       <section id="replays" class="blog">
         {"{% for webinar in site.tags.Webinar%}"}
-        {"{% if webinar.date|to_datetime - now() != 0 %}"}
+        {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
+        {"{% if posttime < nowunix %}"}
         <article>
           <a href="{{ webinar.url }}">
             <img
