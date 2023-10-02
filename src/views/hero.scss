@@ -63,8 +63,8 @@ div.hero::before {
   left: 0px;
   opacity: 25%;
 
-  // transform: scale($hero_zoom) translateY($hero_translate_y)
-  //   translateX($hero_translate_x_start);
+  transform: scale($hero_zoom) translateY($hero_translate_y)
+    translateX($hero_translate_x_start);
   // animation: 1s linear forwards heroAnim_short;
   // animation-timeline: --page-scroll;
   z-index: -10;
