@@ -28,8 +28,8 @@ await Promise.all([
         await mkdir(new URL("./", fileUrl), { recursive: true });
         await writeFile(
           fileUrl,
-          await page
-            .content()
+          (await page
+            .content())
             .replace(/<script type="jekyll">(.+)<\/script>/, "$1")
         );
         console.log("Wrote", url.pathname);
