@@ -154,82 +154,82 @@ export default (
           execute and maintain <ECommerce /> strategies worldwide.
         </p>
         <div role="list">
-          <a role="listitem" href="https://about.mattel.com/">
+          <a role="listitem" target="_blank" href="https://about.mattel.com/">
             <img
               src={"/images/brands/clients/Mattel-brand.svg"}
               alt={"Mattel"}
             />
           </a>
-          <a role="listitem" href="https://www.kao.com">
+          <a role="listitem" target="_blank" href="https://www.kao.com">
             <Picture src={"/images/brands/clients/KAO.png"} alt={"KAO"} />
           </a>
-          <a role="listitem" href="https://miamily.com/">
+          <a role="listitem" target="_blank" href="https://miamily.com/">
             <Picture
               src={"/images/brands/clients/MiaMily.png"}
               alt={"Miamily"}
             />
           </a>
-          <a role="listitem" href="https://www.michelin.com/">
+          <a role="listitem" target="_blank" href="https://www.michelin.com/">
             <Picture
               src={"/images/brands/clients/Michelin Logo.png"}
               alt={"Michelin"}
             />
           </a>
-          <a role="listitem" href="https://www.reliefband.com/">
+          <a role="listitem" target="_blank" href="https://www.reliefband.com/">
             <Picture
               src={"/images/brands/clients/relief band.jpeg"}
               alt={"Relief Band"}
             />
           </a>
-          <a role="listitem" href="https://realshades.com/">
+          <a role="listitem" target="_blank" href="https://realshades.com/">
             <Picture
               src={"/images/brands/clients/logo_RS.png"}
               alt={"Real Shades"}
             />
           </a>
-          <a role="listitem" href="https://skyorganics.com/">
+          <a role="listitem" target="_blank" href="https://skyorganics.com/">
             <Picture
               src={"/images/brands/clients/skyorganics.png"}
               alt={"Sky Organics"}
             />
           </a>
-          <a role="listitem" href="https://www.mycarrypotty.com/">
+          <a role="listitem" target="_blank" href="https://www.mycarrypotty.com/">
             <Picture
               src={"/images/brands/clients/MCP.png"}
               alt={"My Carry Potty"}
             />
           </a>
-          <a role="listitem" href="https://www.superfeet.com/">
+          <a role="listitem" target="_blank" href="https://www.superfeet.com/">
             <Picture
               src={"/images/brands/clients/superfeet.png"}
               alt={"Superfeet"}
             />
           </a>
-          <a role="listitem" href="https://dickieslife.com/">
+          <a role="listitem" target="_blank" href="https://dickieslife.com/">
             <Picture
               src={"/images/brands/clients/dickies.png"}
               alt={"Dickies"}
             />
           </a>
-          <a role="listitem" href="https://galderma.com/">
+          <a role="listitem" target="_blank" href="https://galderma.com/">
             <Picture
               src={"/images/brands/clients/galderma.png"}
               alt={"Galderma"}
             />
           </a>
-          <a role="listitem" href="https://loreal.com/">
+          <a role="listitem" target="_blank" href="https://loreal.com/">
             <Picture
               src={"/images/brands/clients/loreal.png"}
               alt={"L'Oréal"}
             />
           </a>
-          <a role="listitem" href="https://timberland.com/">
+          <a role="listitem" target="_blank" href="https://timberland.com/">
             <Picture
               src={"/images/brands/clients/timberland.png"}
               alt={"Timberland"}
             />
           </a>
-          <a role="listitem" href="https://zerowater.com/">
+          <a role="listitem" target="_blank" href="https://zerowater.com/">
             <Picture
               src={"/images/brands/clients/zerowater.png"}
               alt={"Zero Water"}

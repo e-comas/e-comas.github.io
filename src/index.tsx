@@ -77,28 +77,28 @@ export default (
           their <ECommerce /> presence internationally.
         </p>
         <div role="list">
-          <a role="listitem" href="https://www.kao.com">
+          <a role="listitem" target="_blank" href="https://www.kao.com">
             <Picture src={"/images/brands/clients/KAO.png"} alt={"KAO"} />
           </a>
-          <a role="listitem" href="https://miamily.com/">
+          <a role="listitem" target="_blank" href="https://miamily.com/">
             <Picture
               src={"/images/brands/clients/MiaMily.png"}
               alt={"Miamily"}
             />
           </a>
-          <a role="listitem" href="https://about.mattel.com/">
+          <a role="listitem" target="_blank" href="https://about.mattel.com/">
             <img
               src={"/images/brands/clients/Mattel-brand.svg"}
               alt={"Mattel"}
             />
           </a>
-          <a role="listitem" href="https://www.michelin.com/">
+          <a role="listitem" target="_blank" href="https://www.michelin.com/">
             <Picture
               src={"/images/brands/clients/Michelin Logo.png"}
               alt={"Michelin"}
             />
           </a>
-          <a role="listitem" href="https://realshades.com/">
+          <a role="listitem" target="_blank" href="https://realshades.com/">
             <Picture
               src={"/images/brands/clients/logo_RS.png"}
               alt={"Real Shades"}
