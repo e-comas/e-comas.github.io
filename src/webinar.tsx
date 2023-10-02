@@ -32,8 +32,8 @@ export default (
     {/* <Breadcrumbs /> */}
     <main id="main-content" >
       <section id="upcoming" class="blog">
-      {"{% for webinar in site.tags.Webinar | slice: 0, 3 %}"}
-      {"{% if webinar.date|to_datetime - now() > 0 }"}
+      {"{% for webinar in site.tags.Webinar %}"}
+      {"{% if webinar.date|to_datetime - now() == 0 }"}
       <article>
         <a href="{{ webinar.url }}">
           <img
@@ -55,8 +55,8 @@ export default (
       </section>
       <section id="replays" class="blog">
 
-      {"{% for webinar in site.tags.Webinar | slice: 0, 3 %}"}
-      {"{% if webinar.date|to_datetime - now() <= 0 }"}
+      {"{% for webinar in site.tags.Webinar%}"}
+      {"{% if webinar.date|to_datetime - now() != 0 }"}
       <article>
         <a href="{{ webinar.url }}">
           <img
