@@ -85,6 +85,8 @@ async function editPage(page, signalIn, signalOut) {
   const jekyllNodes = await page.$$("script[type='jekyll']");
   for (const elem of jekyllNodes) {
     console.error(elem);
+    console.log(elem);
+    console.warn(elem);
     throw new Error(elem);
     // const js = await elem.evaluate((elem) => elem.dataset.file);
     // jsRuntimeModules.push(js);
