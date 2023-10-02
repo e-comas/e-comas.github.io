@@ -31,8 +31,8 @@ export default (
     </Hero>
     {/* <Breadcrumbs /> */}
     <main id="main-content">
-      <section id="upcoming" class="blog">
         {"{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}"}
+      {/* <section id="upcoming" class="blog">
         {"{% for webinar in site.tags.Webinar %}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
         {"{% if posttime &#62;= nowunix %}"}
@@ -49,15 +49,13 @@ export default (
             <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
           </h3>
           <p>{"{{ webinar.excerpt | escape }}"}</p>
-          <p>{"{{ posttime }}"}</p>
-          <p>{"{{ nowunix }}"}</p>
           <a href="{{ webinar.url }}" class="cta">
             Register now
           </a>
         </article>
         {"{% endif %}"}
         {"{% endfor %}"}
-      </section>
+      </section> */}
       <section id="replays" class="blog">
         {"{% for webinar in site.tags.Webinar%}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
@@ -74,8 +72,6 @@ export default (
             <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
           </h3>
           <p>{"{{ webinar.excerpt | escape }}"}</p>
-          <p>{"{{ posttime }}"}</p>
-          <p>{"{{ nowunix }}"}</p>
           <a href="{{ webinar.url }}" class="cta">
             Watch now
           </a>
