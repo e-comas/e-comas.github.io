@@ -82,19 +82,6 @@ async function editPage(page, signalIn, signalOut) {
     await elem.dispose();
   }
 
-  const jekyllNodes = await page.$$("script[type='jekyll']");
-  for (const elem of jekyllNodes) {
-    console.error(elem);
-    console.log(elem);
-    console.warn(elem);
-    console.log(await elem.frame.content());
-    throw new Error(elem);
-    // const js = await elem.evaluate((elem) => elem.dataset.file);
-    // jsRuntimeModules.push(js);
-    // await elem.evaluate((elem) => elem.remove());
-    // await elem.dispose();
-  }
-
   const openGraphImages = await page.$$(
     'meta[property="og:image"],meta[property="og:image:url"],meta[property="og:image:secure_url"]'
   );
