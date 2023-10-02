@@ -12,6 +12,7 @@ interface Props {
   centered?: boolean;
   invertSVG?: boolean;
   icon?: IconProp;
+  children?: any;
 }
 
 export default (props: Props | undefined, children: JSX.Element[]) => (
