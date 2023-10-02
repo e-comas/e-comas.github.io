@@ -30,7 +30,7 @@ await Promise.all([
           fileUrl,
           await page
             .content()
-            .replace(/\<script type="jekyll"\>(.+)\<\/script\>/, "$1")
+            // .replace(/\<script type="jekyll"\>(.+)\<\/script\>/, "$1")
         );
         console.log("Wrote", url.pathname);
       }
