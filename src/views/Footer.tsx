@@ -239,7 +239,7 @@ export default (props: Props | undefined) => (
         </a>
         <img src="/images/MadeInLux.svg" alt="Made in Luxembourg" />
       </div>
-      <div class="copyright-notice">© 2022 · <EComas /> · All Rights Reserved</div>
+      <div class="copyright-notice">© 2023 · <EComas /> · All Rights Reserved</div>
     </div>
     <div class="lower-footer">
       <div class="luv">
