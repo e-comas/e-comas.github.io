@@ -38,13 +38,13 @@ export default (props: Props | undefined) => (
             "Reach out to our team to find out how we can help you grow your brand\
           faster, globally, across all the leading online channels."}
         </p>
-        <a href="mailto:contact@ecomas.com">
+        <a href="mailto:contact@e-comas.com">
           <FontAwesomeIcon
             icon={faEnvelopeOpen as IconProp}
             color="gold"
             style={{ "margin-right": "1ch" } as CSSProperties}
           />
-          contact@ecomas.com
+          contact@e-comas.com
         </a>
       </figcaption>
       {/* TODO: create a form handler on Pardot and set it as this form's action */}
