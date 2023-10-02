@@ -32,10 +32,10 @@ export default (
     {/* <Breadcrumbs /> */}
     <main id="main-content">
       {"{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}"}
-      {/* <section id="upcoming" class="blog">
+      <section id="upcoming" class="blog">
         {"{% for webinar in site.tags.Webinar %}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
-        {"{% if posttime >= nowunix %}"}
+        <script type="jekyll">{"{% if posttime >= nowunix %}"}</script>
 
         <article>
           <a href="{{ webinar.url }}">
@@ -55,7 +55,7 @@ export default (
         </article>
         {"{% endif %}"}
         {"{% endfor %}"}
-      </section> */}
+      </section>
       <section id="replays" class="blog">
         {"{% for webinar in site.tags.Webinar%}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
