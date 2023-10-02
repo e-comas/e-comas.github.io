@@ -74,6 +74,8 @@ export default (
             <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
           </h3>
           <p>{"{{ webinar.excerpt | escape }}"}</p>
+          <p>{"{{ posttime }}"}</p>
+          <p>{"{{ nowunix }}"}</p>
           <a href="{{ webinar.url }}" class="cta">
             Watch now
           </a>
