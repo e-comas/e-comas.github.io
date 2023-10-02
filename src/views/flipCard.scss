@@ -34,6 +34,7 @@
     background-size: cover;
 
     transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   .card_tail {
@@ -49,6 +50,7 @@
 
     background-color: $green;
     transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   & > * {
