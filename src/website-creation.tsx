@@ -61,7 +61,7 @@ export default (
             <ECommerce /> accounts can boost your sales and amplify your brand.
           </p>
         </figcaption>
-        <Picture src="/images/placeholder.jpg" alt="" />
+        <Picture src="/images/shopify-laptop-at-small-meeting.jpg" alt="illustration" />
       </figure>
       <ElementWithBackgroundImage
         tagName="section"
