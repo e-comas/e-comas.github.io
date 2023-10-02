@@ -184,10 +184,10 @@ export default (
     </section>
     <section id="see-the-results" class="see-the-results">
       <h2>See The Results</h2>
-      <p>
+      {/* <p>
         Don’t take our word for it – find out how we helped a British brand
         launch in all the European marketplaces and the USA.
-      </p>
+      </p> */}
       <figure>
         <Picture src={"/images/case-studies/mycarrypotty.png"} alt={""} />
         <figcaption>
