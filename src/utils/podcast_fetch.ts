@@ -17,10 +17,11 @@ export function createCard(item: PodcastItem, parser: DOMParser) {
   const title = document.createElement("h4");
   title.textContent = item.title;
 
-  const description = document.createElement("p");
+  const description = document.createElement("div");
   const desc = parser.parseFromString(item.description, "text/html");
-  description.textContent =
-    desc.body.firstElementChild?.nextElementSibling?.textContent ?? "";
+  console.log(desc.body)
+  description.innerHTML =
+    desc.body.innerHTML ?? "";
 
   const playLink = document.createElement("a");
   playLink.href = item.link;
