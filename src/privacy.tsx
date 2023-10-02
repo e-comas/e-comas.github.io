@@ -5,6 +5,7 @@ import Header from "./views/Header.tsx";
 import Footer from "./views/Footer.tsx";
 
 import "./privacy.scss";
+import { EComas, ECommerce } from "./views/eWords.tsx";
 
 export default (
   <Body>
