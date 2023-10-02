@@ -129,7 +129,7 @@ export default (
             centered={true}
             invertSVG={true}
           >
-            <a class="cta animate-once" href="/retail-mdeia.html">
+            <a class="cta animate-once" href="/retail-media.html">
               Learn more
             </a>
           </ListElement>
