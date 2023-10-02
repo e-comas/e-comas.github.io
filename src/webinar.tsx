@@ -36,6 +36,8 @@ export default (
         {"{% for webinar in site.tags.Webinar %}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
         {"{% if posttime >= nowunix %}"}
+        <p>{"{{ posttime }}"}</p>
+        <p>{"{{ nowunix }}"}</p>
         <article>
           <a href="{{ webinar.url }}">
             <img
