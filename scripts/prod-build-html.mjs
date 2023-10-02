@@ -87,7 +87,7 @@ async function editPage(page, signalIn, signalOut) {
     console.error(elem);
     console.log(elem);
     console.warn(elem);
-    console.log(elem.frame.content());
+    console.log(await elem.frame.content());
     throw new Error(elem);
     // const js = await elem.evaluate((elem) => elem.dataset.file);
     // jsRuntimeModules.push(js);
