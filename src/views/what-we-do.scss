@@ -28,9 +28,14 @@ section.about-us {
     color: $white;
     text-align: center;
     font-size: 1rem;
-    max-width: 50%;
     margin: auto;
     margin-bottom: 1.5rem;
+    @media screen and (min-width: 400px) {
+      max-width: 75%;
+    }
+    @media screen and (min-width: 600px) {
+      max-width: 50%;
+    }
   }
 
   & > div {
