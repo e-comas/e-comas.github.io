@@ -52,6 +52,7 @@
     transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    // transform: perspective(1000px) RotateX(180deg);
   }
   & > * {
     border-radius: 0.5rem;
@@ -61,7 +62,7 @@
   }
 }
 @media (prefers-reduced-motion: no-preference) {
-  @media not (hover: none) {
+  @media not all and (hover: none) {
     .flip_card:hover > .card_head {
       transform: perspective(1000px) RotateX(180deg);
     }
