@@ -3,7 +3,7 @@
 
 div.testimonies {
   padding-top: 2rem;
-
+  position: relative;
   &::before {
     content: "";  
     position: absolute;
@@ -68,7 +68,6 @@ div.testimonies {
     }
   }
   @media screen and (min-width: 800px) {
-    position: relative;
     padding: 2rem;
     h2 {
       padding: 0;
