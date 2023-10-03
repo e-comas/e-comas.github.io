@@ -46,6 +46,11 @@ export default (
         build and manage your Shopify store alongside your Amazon and other{" "}
         <ECommerce /> accounts to boost your sales and amplify your brand.
       </p>
+      {/* TODO: maybe add this button to the template at this point */}
+      <a href="./contact.html" class="cta no-arrow">
+        Book a call
+        <FontAwesomeIcon icon={faPhone as IconProp} />
+      </a>
     </Hero>
     <main id="main-content">
       <figure id="about" class="made-easy">
@@ -61,7 +66,10 @@ export default (
             <ECommerce /> accounts can boost your sales and amplify your brand.
           </p>
         </figcaption>
-        <Picture src="/images/shopify-laptop-at-small-meeting.jpg" alt="illustration" />
+        <Picture
+          src="/images/shopify-laptop-at-small-meeting.jpg"
+          alt="illustration"
+        />
       </figure>
       <ElementWithBackgroundImage
         tagName="section"
