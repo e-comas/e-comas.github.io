@@ -56,7 +56,7 @@ export default (
         {"{% endif %}"}
         {"{% endfor %}"}
       </section> */}
-      {/* <section id="replays" class="blog"> */}
+      <section id="replays" class="blog">
         {"{% for webinar in site.tags.Webinar%}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
         {/* <script type="jekyll">{"{% if posttime < nowunix %}"}</script> */}
@@ -78,7 +78,7 @@ export default (
         </article>
         {/* {"{% endif %}"} */}
         {"{% endfor %}"}
-      {/* </section> */}
+      </section>
     </main>
     <Footer />
   </Body>
