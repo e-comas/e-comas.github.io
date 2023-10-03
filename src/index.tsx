@@ -93,6 +93,12 @@ export default (
               alt={"Mattel"}
             />
           </a> */}
+          <a role="listitem" target="_blank" href="https://skyorganics.com/">
+            <Picture
+              src={"/images/brands/clients/skyorganics.png"}
+              alt={"Sky Organics"}
+            />
+          </a>
           <a role="listitem" target="_blank" href="https://www.michelin.com/">
             <Picture
               src={"/images/brands/clients/Michelin Logo.png"}
