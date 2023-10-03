@@ -48,7 +48,7 @@ export default (props: Props | undefined) => (
         </a>
       </figcaption>
       {/* TODO: create a form handler on Pardot and set it as this form's action */}
-      <form action="http://go.e-comas.com/l/885733/2023-10-03/m8gzb" method="post">
+      <form action="https://go.e-comas.com/l/885733/2023-10-03/m8gzb" method="post">
         <input placeholder="Name" name="name" />
         <input type="email" placeholder="Email" name="email" required />
         <input
