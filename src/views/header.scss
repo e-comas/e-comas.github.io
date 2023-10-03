@@ -94,6 +94,7 @@ header {
       color: $white;
       text-decoration: none;
       font-size: 0.8rem;
+      z-index:2;
     }
 
     span:hover,
@@ -114,7 +115,7 @@ header {
     ul {
       display: none;
       position: absolute;
-      z-index: 1;
+      z-index: 10;
       list-style: none;
       flex-direction: column;
       gap: 1em;
@@ -123,7 +124,7 @@ header {
     }
 
     & > div:hover {
-      ul {
+      & > ul {
         display: block;
         // position: relative;
         color: gray;
@@ -140,13 +141,14 @@ header {
         }
       }
       @media screen and (min-width: $breakpoint) {
-        z-index: 1;
+        // z-index: 1;
         ul::before {
           content: none;
         }
 
-        & + ::before {
+        &::before {
           content: "";
+          z-index: -1;
           display: block;
           position: fixed;
           top: 0;

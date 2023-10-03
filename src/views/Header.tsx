@@ -24,7 +24,7 @@ function layoutArborescence(node: ArborescenceNode) {
   return node.children?.length ? (
     <div className="safariHover">
       {createNavLink(node)}
-      <ul>{node.children.map(createNavLink)}</ul>
+      <ul className="safariHover">{node.children.map(createNavLink)}</ul>
     </div>
   ) : (
     createNavLink(node)
