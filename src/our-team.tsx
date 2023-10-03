@@ -98,7 +98,7 @@ export default (
         </figcaption>
       </figure> */}
       {getTeams(team.team_member).map((team) => (
-        <article>
+        <article id={team.name}>
           <h3>{team.name}</h3>
           <ul class="face-book">
             {team.members.map((infos) => (
