@@ -6,6 +6,9 @@ main {
   max-width: 680px;
   margin: auto;
   gap: 1rem 0;
+  img{
+    max-width: 100%;
+  }
 }
 
 main > h3,
