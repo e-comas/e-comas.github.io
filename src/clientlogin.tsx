@@ -34,7 +34,7 @@ export default (
     </Hero>
     <main id="main-content">
       <section>
-        <h2> ONE login, HOURLY insights YOUR data, YOUR way</h2>
+        <p> ONE login, HOURLY insights YOUR data, YOUR way</p>
         <p>
           Want to get up to speed on the{" "}
           <a href="https://e-comas.com/2023/04/25/introducing-compas-dashboard-the-all-in-one-reporting-tool-for-amazon-sellers.html">

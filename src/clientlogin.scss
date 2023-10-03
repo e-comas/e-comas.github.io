@@ -12,8 +12,10 @@
   display: flex;
   margin: auto;
   padding: 0 0 2rem;
-  h2 {
-    font-size: 2rem;
+
+  p,
+  a {
+    font-size: 1rem;
   }
   .cta {
     width: 10rem;
@@ -25,7 +27,7 @@
       color: white;
     }
   }
-  a>.e-word {
+  a > .e-word {
     display: unset;
   }
   section {
