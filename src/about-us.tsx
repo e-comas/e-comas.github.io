@@ -239,6 +239,7 @@ export default (
               alt={"Zero Water"}
             />
           </a>
+          {/* TODO: add links */}
           <span role="listitem">
             <Picture
               src={"/images/brands/clients/cetaphil.png"}
