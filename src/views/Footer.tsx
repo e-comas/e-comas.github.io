@@ -47,7 +47,6 @@ export default (props: Props | undefined) => (
           contact@e-comas.com
         </a>
       </figcaption>
-      {/* TODO: create a form handler on Pardot and set it as this form's action */}
       <form action="https://go.e-comas.com/l/885733/2023-10-03/m8gzb" method="post">
         <input placeholder="Name" name="name" />
         <input type="email" placeholder="Email" name="email" required />
@@ -56,6 +55,7 @@ export default (props: Props | undefined) => (
           placeholder="Phone number"
           name="phone"
           pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
+          title="Please enter a valid phone number"
         />
         <input placeholder="Company" name="company" />
         <textarea placeholder="Message" name="message"></textarea>
