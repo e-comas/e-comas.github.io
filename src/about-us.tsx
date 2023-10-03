@@ -193,7 +193,11 @@ export default (
               alt={"Sky Organics"}
             />
           </a>
-          <a role="listitem" target="_blank" href="https://www.mycarrypotty.com/">
+          <a
+            role="listitem"
+            target="_blank"
+            href="https://www.mycarrypotty.com/"
+          >
             <Picture
               src={"/images/brands/clients/MCP.png"}
               alt={"My Carry Potty"}
@@ -235,6 +239,66 @@ export default (
               alt={"Zero Water"}
             />
           </a>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/cetaphil.png"}
+              alt={"Cetaphil"}
+            />
+          </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/escali.png"}
+              alt={"Escali"}
+            />
+          </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/cuddle club.png"}
+              alt={"Cuddle Club"}
+            />
+          </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/teissiere.png"}
+              alt={"Teissiere"}
+            />
+          </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/simply nursry.png"}
+              alt={"Simply Nursery"}
+            />
+          </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/rivolier.png"}
+              alt={"Rivolier"}
+            />
+          </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/danone.png"}
+              alt={"Danone"}
+            />
+          </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/church & dwight.png"}
+              alt={"Curch & Dwight"}
+            />
+          </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/Pure for men.png"}
+              alt={"Pure for Men"}
+            />
+          </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/britvic.png"}
+              alt={"Britvic"}
+            />
+          </span>
         </div>
       </Partners>
       <section id="get_to_know" class="section">
