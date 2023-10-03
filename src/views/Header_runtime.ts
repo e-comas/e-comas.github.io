@@ -6,6 +6,12 @@ details?.addEventListener("toggle", function () {
     document.body.classList.remove("noScroll");
   }
 });
+addEventListener("resize", (event) => {
+  if (window.innerWidth > 990) {
+    details?.removeAttribute("open");
+    document.body.classList.remove("noScroll");
+  }
+});
 
 export {};
 
