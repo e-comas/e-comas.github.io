@@ -42,6 +42,7 @@ header {
   align-items: center;
   background-color: $green;
   @media screen and (min-width: $breakpoint) {
+    transform: translateZ(200px);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -153,7 +154,7 @@ header {
           display: block;
           position: fixed;
           top: 0;
-          bottom: 0;
+          height: 100vh;
           right: 0;
           left: 0;
           background-color: $semiTransparentBlack;
