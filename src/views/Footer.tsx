@@ -30,6 +30,8 @@ interface Props
 export default (props: Props | undefined) => (
   <footer>
     <figure class="free-consultation" id="bookACall">
+      <a href="/success.html" style={{ display: "none" }} />
+      <a href="/failure.html" style={{ display: "none" }} />
       <figcaption>
         <strong>Let’s talk!</strong>
         <h1>Book a call today</h1>
@@ -47,7 +49,10 @@ export default (props: Props | undefined) => (
           contact@e-comas.com
         </a>
       </figcaption>
-      <form action="https://go.e-comas.com/l/885733/2023-10-03/m8gzb" method="post">
+      <form
+        action="https://go.e-comas.com/l/885733/2023-10-03/m8gzb"
+        method="post"
+      >
         <input placeholder="Name" name="name" />
         <input type="email" placeholder="Email" name="email" required />
         <input
@@ -157,7 +162,8 @@ export default (props: Props | undefined) => (
             <li>
               <span>US</span>:{" "}
               <address>
-                <EComas /> LLC, 6303 Blue Lagoon Drive, Suite 200 Miami, FL 33126
+                <EComas /> LLC, 6303 Blue Lagoon Drive, Suite 200 Miami, FL
+                33126
               </address>
             </li>
             <li>
@@ -239,7 +245,9 @@ export default (props: Props | undefined) => (
         </a>
         <img src="/images/MadeInLux.svg" alt="Made in Luxembourg" />
       </div>
-      <div class="copyright-notice">© 2023 · <EComas /> · All Rights Reserved</div>
+      <div class="copyright-notice">
+        © 2023 · <EComas /> · All Rights Reserved
+      </div>
     </div>
     <div class="lower-footer">
       <div class="luv">
