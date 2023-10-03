@@ -154,12 +154,12 @@ export default (
           execute and maintain <ECommerce /> strategies worldwide.
         </p>
         <div role="list">
-          <a role="listitem" target="_blank" href="https://about.mattel.com/">
+          {/* <a role="listitem" target="_blank" href="https://about.mattel.com/">
             <img
               src={"/images/brands/clients/Mattel-brand.svg"}
               alt={"Mattel"}
             />
-          </a>
+          </a> */}
           <a role="listitem" target="_blank" href="https://www.kao.com">
             <Picture src={"/images/brands/clients/KAO.png"} alt={"KAO"} />
           </a>
