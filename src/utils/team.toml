@@ -346,6 +346,7 @@ Name = "Sam Millendo"
 Title = "Digital Marketing Lead"
 Team = "Advertising"
 url.LinkedIn = "https://linkedin.com/sam-millendo"
+pictureUrl = "/images/team/Sam.png"
 
 
 [[team_member]]
@@ -434,6 +435,7 @@ url.LinkedIn = "https://www.linkedin.com/in/oscar-samson"
 Name = "Audrey Palma"
 Title = "Administrative & accounting officer"
 Team = "Admin"
+pictureUrl = "/images/team/Audrey.png"
 
 
 [[team_member]]
