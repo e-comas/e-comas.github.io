@@ -49,11 +49,12 @@ export default (
         <figcaption>
           <h3>Unlock your retail media success</h3>
           <p>
-            An Amazon-verified partner and Google Ads-certified agency, we
-            leverage the full capabilities of digital media platforms to
-            transform your omnichannel reach and profitability. Our expert team
-            helps you rock your campaigns and hit ambitious targets, focusing on
-            the metrics that matter to take your brand to new heights.
+            As an Amazon-verified partner and an AMC & Google Ads-certified
+            agency, we leverage the full capabilities of digital media platforms
+            to transform your omnichannel reach and profitability. Our expert
+            team helps you rock your campaigns and hit ambitious targets,
+            focusing on the metrics that matter to take your brand to new
+            heights.
             <br />
             We've successfully managed big advertising budgets and applied the
             latest media innovations to achieve impressive results for our
