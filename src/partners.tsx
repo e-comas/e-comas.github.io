@@ -92,10 +92,11 @@ const partners = [
     name: "amazon ads",
     text: (
       <>
-        <strong>Grow your business on and off Amazon</strong> <br /> Reach
-        customers while they shop. Our offerings help you achieve your
-        advertising goals while helping to bring a global audience of customers
-        the products they’re looking for.
+        Grow your business on and off Amazon
+        <br />
+        <br /> Reach customers while they shop. Our offerings help you achieve
+        your advertising goals while helping to bring a global audience of
+        customers the products they’re looking for.
       </>
     ),
     link: "/retail-media.html",
@@ -110,6 +111,7 @@ const partners = [
         Complizon expertly manages your company's product and regulatory
         compliance issues, carefully crafting strategies to considerably enhance
         worldwide success.
+        <br />
         <br /> It's a lucrative world out there, and having your affairs in
         order means you can enter the UK and EU markets with confidence,
         unlocking potentially millions in revenue.
