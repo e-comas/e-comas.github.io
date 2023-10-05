@@ -62,7 +62,7 @@ export default (
             retail stores. Shopify is the third largest online retailer behind
             Amazon and eBay in the US, with 20% market share. We believe Shopify
             is one of the keys to a successful omni-channel online retail
-            strategy. Running a Shopify store alongside your Amazon and other
+            strategy. Running a Shopify store alongside your Amazon and other{" "}
             <ECommerce /> accounts can boost your sales and amplify your brand.
           </p>
         </figcaption>
