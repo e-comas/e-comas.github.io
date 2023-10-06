@@ -39,7 +39,7 @@ export default (
     <Header />
     {/* <Breadcrumbs /> */}
     <Hero class="animate-in">
-      <h1 class="title">Shopify</h1>
+      <h1 class="title">Website Creation</h1>
       <p>
         <EComas /> proudly partners with Shopify - the third largest online
         retailer behind Amazon and eBay in the US. Our experts can help you

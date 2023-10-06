@@ -27,7 +27,7 @@ name = "Content Syndication"
 url = "/salsify.html"
 
 [[root.children.children]]
-name = "Shopify"
+name = "Website Creation"
 url = "/website-creation.html"
 
 [[root.children]]
