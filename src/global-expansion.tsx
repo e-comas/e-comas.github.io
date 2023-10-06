@@ -9,6 +9,9 @@ import Footer from "./views/Footer.tsx";
 import "./global-expansion.scss";
 import Hero from "./views/hero.tsx";
 
+import "./utils/open-form-in-modal.scss";
+import "runtime:./utils/open-form-in-modal.ts";
+
 import "./views/animate-in.scss";
 import "runtime:./views/animate-in.ts";
 import Picture from "./utils/Picture.tsx";
@@ -199,7 +202,7 @@ export default (
             internationally.
           </p>
           <a
-            class="cta"
+            class="cta open-in-modal"
             href="https://go.e-comas.com/l/885733/2023-01-16/l813c"
           >
             Download

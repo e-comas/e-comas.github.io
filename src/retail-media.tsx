@@ -9,6 +9,9 @@ import Footer from "./views/Footer.tsx";
 import "./global-expansion.scss";
 import Hero from "./views/hero.tsx";
 
+import "./utils/open-form-in-modal.scss";
+import "runtime:./utils/open-form-in-modal.ts";
+
 import "./views/animate-in.scss";
 import "runtime:./views/animate-in.ts";
 import Picture from "./utils/Picture.tsx";
@@ -167,7 +170,7 @@ export default (
         />
       </div>
     </section>
-    <section class="see-the-results">
+    <section class="see-the-results open-in-modal">
       <h2>See The Results</h2>
       {/* <p>
         Don’t take our word for it – find out how we helped a British brand

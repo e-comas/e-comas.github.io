@@ -6,8 +6,10 @@ import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
 import Footer from "./views/Footer.tsx";
 
+import "./utils/open-form-in-modal.scss";
+import "runtime:./utils/open-form-in-modal.ts";
+
 import "./views/VideoEmbedLink.scss";
-import "runtime:./utils/youtube_feed.ts";
 import "./webinar.scss";
 import Picture from "./utils/Picture.tsx";
 import Hero from "./views/hero.tsx";
@@ -75,7 +77,7 @@ export default (
             <a href={caseStudy.link}>{caseStudy.name}</a>
           </h3>
           <p>{caseStudy.text}</p>
-          <a href={caseStudy.link} class="cta no-arrow">
+          <a href={caseStudy.link} class="cta open-in-modal no-arrow">
             Download <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>
         </article>

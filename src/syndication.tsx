@@ -13,6 +13,9 @@ import "./global-expansion.scss";
 
 import "./utils/open-form-in-modal.scss";
 import "runtime:./utils/open-form-in-modal.ts";
+
+import "./utils/open-form-in-modal.scss";
+import "runtime:./utils/open-form-in-modal.ts";
 import Hero from "./views/hero.tsx";
 import ListElement from "./views/ListElement.tsx";
 import {
@@ -200,7 +203,7 @@ export default (
             partners at Salsify helped a leading tyres brand save time and
             improve consistency.
           </p>
-          <a class="cta" href="TODO">
+          <a class="cta open-in-modal" href="TODO">
             Download
             <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>
