@@ -16,7 +16,7 @@ export default (
     <Header />
     {/* <Breadcrumbs /> */}
     <Hero class="animate-in">
-      <h1 class="title">Salsify</h1>
+      <h1 class="title">Content Syndication</h1>
       <p>
         We’re proud Salsify partners, helping you win on the digital shelf with
         its leading Product Information Management (PIM) and Syndication
