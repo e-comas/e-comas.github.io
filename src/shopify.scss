@@ -26,3 +26,13 @@ ol {
     }
   }
 }
+
+.card #title {
+  font-size: 1.4rem;
+  height: auto;
+
+  @media screen and (min-width: 440px) {
+    font-size: 1.8rem;
+    height: 3rem;
+  }
+}
