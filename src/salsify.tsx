@@ -8,6 +8,8 @@ import Footer from "./views/Footer.tsx";
 
 import "./salsify.scss";
 import Hero from "./views/hero.tsx";
+import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default (
   <Body title="Syndication with Salsify">
@@ -22,6 +24,10 @@ export default (
         routine maintenance, we offer a range of implementation and managed
         services.
       </p>
+      <a href="./contact.html" class="cta no-arrow">
+        Book a call
+        <FontAwesomeIcon icon={faPhone as IconProp} />
+      </a>
     </Hero>
     <main id="main-content">
       <h2>
