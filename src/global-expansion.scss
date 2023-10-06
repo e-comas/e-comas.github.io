@@ -6,7 +6,8 @@
   flex-direction: column;
   overflow: hidden;
   padding: 1rem;
-  margin: 0;
+  margin: 0 auto;
+
   figcaption {
     display: flex;
     padding: 2rem 0 0 0;
@@ -45,10 +46,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 3rem;
     margin: auto;
+    min-height: 400px;
 
     & > * {
       display: block;
@@ -65,7 +67,7 @@
 }
 
 .how-we-do-it {
-  h2{
+  h2 {
     text-transform: capitalize;
   }
   counter-reset: card-number;
