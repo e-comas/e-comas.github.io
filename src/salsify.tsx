@@ -10,6 +10,7 @@ import "./salsify.scss";
 import Hero from "./views/hero.tsx";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 export default (
   <Body title="Syndication with Salsify">
