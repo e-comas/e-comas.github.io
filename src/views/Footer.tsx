@@ -18,6 +18,7 @@ import NavLink from "../utils/NavLink.tsx";
 import "runtime:./footer_addresses.ts";
 import "./footer.scss";
 import { CSSProperties } from "react";
+import onSubmit from "./Footer-runtime.ts";
 
 interface Props
   extends React.DetailedHTMLProps<
@@ -49,7 +50,10 @@ export default (props: Props | undefined) => (
           contact@e-comas.com
         </a>
       </figcaption>
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+
       <form
+        id="Requests"
         action="https://go.e-comas.com/l/885733/2023-10-03/m8gzb"
         method="post"
       >
@@ -64,7 +68,15 @@ export default (props: Props | undefined) => (
         />
         <input placeholder="Company" name="company" />
         <textarea placeholder="Message" name="message"></textarea>
-        <input type="submit" value="Submit Request" />
+        <button
+          class="g-recaptcha cta"
+          data-sitekey="6Lfh_o0oAAAAAK7a9LtloJE49bA-iasEOx224ICs"
+          data-callback="onSubmit"
+          data-action="submit"
+          onClick={onSubmit}
+        >
+          Submit Request
+        </button>
         {/* Honeypot */}
         <div style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
           <label htmlFor="pardot_extra_field">Comments</label>
