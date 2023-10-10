@@ -18,6 +18,7 @@ import NavLink from "../utils/NavLink.tsx";
 import "runtime:./footer_addresses.ts";
 import "./footer.scss";
 import { CSSProperties } from "react";
+import onSubmit from "./Footer-runtime.ts";
 
 interface Props
   extends React.DetailedHTMLProps<
@@ -50,21 +51,24 @@ export default (props: Props | undefined) => (
         </a>
       </figcaption>
       <form
+        id="Requests"
         action="https://go.e-comas.com/l/885733/2023-10-03/m8gzb"
         method="post"
       >
-        <input placeholder="Name" name="name" />
-        <input type="email" placeholder="Email" name="email" required />
+        <input placeholder="Name" name="fakenom" />
+        <input type="email" placeholder="Email" name="fakecourriel" required />
         <input
           type="tel"
           placeholder="Phone number"
-          name="phone"
+          name="faketel"
           pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
           title="Please enter a valid phone number"
         />
-        <input placeholder="Company" name="company" />
-        <textarea placeholder="Message" name="message"></textarea>
-        <input type="submit" value="Submit Request" />
+        <input placeholder="Company" name="fakeboite" />
+        <textarea placeholder="Message" name="fakedemande"></textarea>
+        <button class="cta no-arrow" onClick={onSubmit}>
+          Submit Request
+        </button>
         {/* Honeypot */}
         <div style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
           <label htmlFor="pardot_extra_field">Comments</label>
