@@ -69,7 +69,7 @@ export default (props: Props | undefined) => (
         <input placeholder="Company" name="company" />
         <textarea placeholder="Message" name="message"></textarea>
         <button
-          class="g-recaptcha cta"
+          class="g-recaptcha cta no-arrow"
           data-sitekey="6Lfh_o0oAAAAAK7a9LtloJE49bA-iasEOx224ICs"
           data-callback="onSubmit"
           data-action="submit"
