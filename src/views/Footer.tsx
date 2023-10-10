@@ -66,9 +66,6 @@ export default (props: Props | undefined) => (
         />
         <input placeholder="Company" name="fakeboite" />
         <textarea placeholder="Message" name="fakedemande"></textarea>
-        <button class="cta no-arrow" onClick={onSubmit}>
-          Submit Request
-        </button>
         {/* Honeypot */}
         <div style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
           <label htmlFor="pardot_extra_field">Comments</label>
@@ -78,6 +75,9 @@ export default (props: Props | undefined) => (
             name="pardot_extra_field"
           />
         </div>
+        <button id="submitRequest" class="cta no-arrow" onClick={onSubmit}>
+          Submit Request
+        </button>
       </form>
     </figure>
     <hr />
