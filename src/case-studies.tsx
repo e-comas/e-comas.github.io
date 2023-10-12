@@ -65,8 +65,6 @@ export default (
       </a>
     </Hero>
     {/* <Breadcrumbs /> */}
-    {/* TODO: Take from Blog? */}
-    {/* TODO: display only 3 at a time/carrousel? */}
     <main id="main-content" class="blog">
       {testimonies.map((caseStudy) => (
         <article id={caseStudy.id}>
