@@ -10,3 +10,4 @@ export const CANONICAL_ORIGIN = "https://e-comas.github.io";
 // TODO: change this to actual ID
 export const DEALFRONT_ID = "";
 export const ANALYTICS_ID = "";
+export const GTAG_ID = "";
