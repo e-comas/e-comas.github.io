@@ -38,7 +38,13 @@ function addAnalyticsSnippet(DEALFRONT_ID, ANALYTICS_ID, GTAG_ID) {
   const script0 = document.createElement("script");
   script0.textContent =
     "window.ldfdr||=()=>{(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}";
-  document.head.append(script0, scriptPlausible, scriptDealFront, scriptGTag);
+  document.head.append(
+    script0,
+    scriptPlausible,
+    scriptDealFront,
+    scriptGTM,
+    scriptGTag
+  );
 }
 
 async function editPage(page, signalIn, signalOut) {
