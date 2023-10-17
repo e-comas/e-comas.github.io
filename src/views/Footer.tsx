@@ -75,7 +75,7 @@ export default (props: Props | undefined) => (
             name="pardot_extra_field"
           />
         </div>
-        <button id="submitRequest" class="cta no-arrow" onClick={onSubmit}>
+        <button id="submitRequest" class="cta no-arrow plausible-event-name=Footer+Submit" onClick={onSubmit}>
           Submit Request
         </button>
       </form>
