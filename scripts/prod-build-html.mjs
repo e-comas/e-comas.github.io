@@ -21,7 +21,7 @@ function addAnalyticsSnippet(DEALFRONT_ID, ANALYTICS_ID, GTAG_ID) {
   const scriptPlausible = document.createElement("script");
   scriptPlausible.defer = true;
   scriptPlausible.dataset.domain = ANALYTICS_ID;
-  scriptPlausible.src = "https://plausible.io/js/plausible.js";
+  scriptPlausible.src = "https://plausible.io/js/script.tagged-events.js";
   document.head.append(scriptPlausible);
 
   const scriptDealFront = document.createElement("script");
