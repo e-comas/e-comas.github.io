@@ -18,7 +18,7 @@ import NavLink from "../utils/NavLink.tsx";
 import "runtime:./footer_addresses.ts";
 import "./footer.scss";
 import { CSSProperties } from "react";
-import onSubmit from "./Footer-runtime.ts";
+import "runtime:./Footer-runtime.ts";
 
 interface Props
   extends React.DetailedHTMLProps<
@@ -75,7 +75,7 @@ export default (props: Props | undefined) => (
             name="pardot_extra_field"
           />
         </div>
-        <button id="submitRequest" class="plausible-event-name=Footer+Submit cta no-arrow" onClick={onSubmit}>
+        <button id="submitRequest" class="plausible-event-name=Footer+Submit cta no-arrow">
           Submit Request
         </button>
       </form>
