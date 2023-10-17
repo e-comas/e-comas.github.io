@@ -7,3 +7,5 @@ export default function onSubmit(_token: any) {
   (document.getElementById("Requests") as HTMLFormElement).action = formAction;
   (document.getElementById("Requests") as HTMLFormElement)?.submit();
 }
+
+document.getElementById("submitRequest")?.addEventListener("click", onSubmit);
