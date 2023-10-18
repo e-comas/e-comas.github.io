@@ -300,6 +300,12 @@ export default (
               alt={"Britvic"}
             />
           </span>
+          <span role="listitem">
+            <Picture
+              src={"/images/brands/clients/simo.jpg"}
+              alt={"SIMO"}
+            />
+          </span>
         </div>
       </Partners>
       <section id="get_to_know" class="section">
