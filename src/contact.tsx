@@ -10,6 +10,7 @@ import team from "./utils/team.toml";
 
 import "./contact.scss";
 import "runtime:./utils/frame-auto-height.ts";
+import "runtime:./utils/add-plausible-class-in-iframe.ts";
 import { ECommerce } from "./views/eWords.tsx";
 import Hero from "./views/hero.tsx";
 
@@ -48,7 +49,6 @@ export default (
         allowtransparency
         src="//go.e-comas.com/l/885733/2020-09-10/25cw"
         sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-        class="plausible-event-name=Form+Signup"
       />
     </main>
     <Footer />
