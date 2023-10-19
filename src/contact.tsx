@@ -10,7 +10,6 @@ import team from "./utils/team.toml";
 
 import "./contact.scss";
 import "runtime:./utils/frame-auto-height.ts";
-import "runtime:./utils/add-plausible-class-in-iframe.ts";
 import { ECommerce } from "./views/eWords.tsx";
 import Hero from "./views/hero.tsx";
 
