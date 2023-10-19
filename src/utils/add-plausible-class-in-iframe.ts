@@ -1,4 +1,3 @@
-var edited = false;
 function setClass() {
   // Get a reference to the iframe by its ID
   const iframe = document.getElementById("myIframe") as HTMLIFrameElement;
@@ -10,16 +9,17 @@ function setClass() {
     const iframeDocument = iframeWindow.document;
 
     // Find the form element within the iframe content
-    const form = iframeDocument.getElementsByTagName("form")[0]; // Replace "myForm" with the actual ID of your form
+    const form = iframeDocument.getElementsByTagName("form")[0];
 
     // Add a class to the form element
     if (form) {
       form.classList.add("plausible-event-name=Form+Signup");
+    } else {
+      setTimeout(() => setClass(), 200);
     }
-    edited = true;
   } else {
     setTimeout(() => setClass(), 200);
   }
 }
-
 setClass();
+export {};
