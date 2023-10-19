@@ -23,11 +23,14 @@ export default (
     <Hero>
       <h1>contact us</h1>
       <p>
-        Do you want to work with us to build a global <ECommerce /> empire from the
-        ground up? Or maybe you've got a quick question about Amazon? Either
+        Do you want to work with us to build a global <ECommerce /> empire from
+        the ground up? Or maybe you've got a quick question about Amazon? Either
         way, we can help - just give us a shout!
       </p>
-      <p>Our Business Development Team are on hand and happy to answer any questions.</p>
+      <p>
+        Our Business Development Team are on hand and happy to answer any
+        questions.
+      </p>
     </Hero>
     {/* <Breadcrumbs /> */}
     <main id="main-content">
@@ -45,6 +48,7 @@ export default (
         allowtransparency
         src="//go.e-comas.com/l/885733/2020-09-10/25cw"
         sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+        class="plausible-event-name=Form+Signup"
       />
     </main>
     <Footer />
