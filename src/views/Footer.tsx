@@ -54,6 +54,7 @@ export default (props: Props | undefined) => (
         id="Requests"
         action="https://go.e-comas.com/l/885733/2023-10-03/m8gzb"
         method="post"
+        class="plausible-event-name=Footer+Submit"
       >
         <input placeholder="Name" name="fakenom" />
         <input type="email" placeholder="Email" name="fakecourriel" required />
@@ -75,7 +76,7 @@ export default (props: Props | undefined) => (
             name="pardot_extra_field"
           />
         </div>
-        <button id="submitRequest" class="cta no-arrow plausible-event-name=Footer+Submit">
+        <button id="submitRequest" class="cta no-arrow">
           Submit Request
         </button>
       </form>
