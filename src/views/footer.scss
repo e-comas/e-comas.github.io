@@ -33,7 +33,6 @@
     }
   }
 
-
   form {
     margin: auto;
     display: block;
@@ -42,17 +41,31 @@
     background-color: $green;
 
     input,
+    select,
     textarea {
       border-radius: 15px;
       border-color: lightgray;
       border-style: solid;
       margin: 1%;
     }
-
-    input {
+    label {
+      display: inline-block;
+      margin-inline: 1%;
+      font-weight: bold;
+      text-align: center;
+    }
+    input,
+    select,
+    label {
       width: 48%;
       height: 3rem;
       padding: 1rem;
+    }
+
+    select:invalid:not(:focus),
+    input::placeholder,
+    textarea::placeholder {
+      color: gray;
     }
 
     textarea {
@@ -65,7 +78,8 @@
       padding-top: 0.5rem;
     }
 
-    .cta, input[type=submit] {
+    .cta,
+    input[type="submit"] {
       @extend %button;
       border-radius: 15px;
       height: 3rem;
@@ -83,7 +97,7 @@
 
 hr {
   width: 75%;
-  max-width: #{$body-max-width*0.75};
+  max-width: #{$body-max-width * 0.75};
 }
 
 .upper-footer {
@@ -166,17 +180,17 @@ hr {
     grid-auto-flow: column;
     text-align: unset;
 
-    &>strong {
+    & > strong {
       align-self: end;
       margin-bottom: 0;
     }
 
-    &>ul,
-    &>nav {
+    & > ul,
+    & > nav {
       grid-row: span 3;
     }
 
-    &>.social {
+    & > .social {
       grid-row: span 2;
     }
 

@@ -66,6 +66,13 @@ export default (props: Props | undefined) => (
           title="Please enter a valid phone number"
         />
         <input placeholder="Company" name="fakeboite" />
+        <label htmlFor="region">Business location :</label>
+        <select name="region" required>
+          <option value={""}>Unspecified</option>
+          <option value={"The Americas"}>The Americas</option>
+          <option value={"APAC"}>APAC</option>
+          <option value={"EMEA"}>EMEA</option>
+        </select>
         <textarea placeholder="Message" name="fakedemande"></textarea>
         {/* Honeypot */}
         <div style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
