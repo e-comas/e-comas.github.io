@@ -62,7 +62,7 @@ export default (props: Props | undefined) => (
           type="tel"
           placeholder="Phone number"
           name="faketel"
-          pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
+          // pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
           title="Please enter a valid phone number"
         />
         <input placeholder="Company" name="fakeboite" />
