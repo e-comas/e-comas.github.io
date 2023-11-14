@@ -19,7 +19,7 @@ export function createCard(item: PodcastItem, parser: DOMParser) {
 
   const description = document.createElement("div");
   const desc = parser.parseFromString(item.description, "text/html");
-  console.log(desc.body)
+  // console.log(desc.body)
   description.innerHTML =
     desc.body.innerHTML ?? "";
 
