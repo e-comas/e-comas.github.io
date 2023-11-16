@@ -68,7 +68,7 @@ export default (props: Props | undefined) => (
         <input placeholder="Company" name="fakeboite" />
         {/* <label htmlFor="region">Business location :</label> */}
         <select name="region" required>
-          <option value={""} selected disabled hidden>
+          <option value={""} selected={true} disabled hidden>
             Business location
           </option>
           <option value={"The Americas"}>The Americas</option>
