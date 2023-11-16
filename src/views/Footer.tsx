@@ -68,7 +68,8 @@ export default (props: Props | undefined) => (
         <input placeholder="Company" name="fakeboite" />
         {/* <label htmlFor="region">Business location :</label> */}
         <select name="region" required>
-          <option value={""} selected={true} disabled hidden>
+          {/* @ts-ignore defaultSelected should actually work*/}
+          <option value={""} defaultSelected disabled hidden>
             Business location
           </option>
           <option value={"The Americas"}>The Americas</option>
