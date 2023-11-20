@@ -38,12 +38,17 @@ function addAnalyticsSnippet(DEALFRONT_ID, ANALYTICS_ID, GTAG_ID) {
   const script0 = document.createElement("script");
   script0.textContent =
     "window.ldfdr||=()=>{(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}";
+
+  const scriptPardot = document.createElement("script");
+  scriptPardot.type = "text/javascript";
+  scriptPardot.innerHTML = `piAId="886733";piCId="8017";piHostname="pi.pardot.com";(function(){functionasync_load(){vars=document.createElement("script");s.type="text/javascript";s.src=("https:"==document.location.protocol?"https://pi":"http://cdn")+".pardot.com/pd.js";varc=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(s,c);}if(window.attachEvent){window.attachEvent("onload",async_load);}else{window.addEventListener("load",async_load,false);}})();`
+  
   document.head.append(
     script0,
     scriptPlausible,
     scriptDealFront,
     scriptGTM,
-    scriptGTag
+    scriptGTag, scriptPardot
   );
 }
 
