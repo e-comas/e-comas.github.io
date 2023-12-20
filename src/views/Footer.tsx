@@ -76,6 +76,7 @@ export default (props: Props | undefined) => (
           <option value={"APAC"}>APAC</option>
           <option value={"EMEA"}>EMEA</option>
         </select>
+        <input placeholder="Website" name="fakesite" />
         {/* <label>*These fields are required :</label> */}
         <textarea placeholder="Message" name="fakedemande"></textarea>
         {/* Honeypot */}
