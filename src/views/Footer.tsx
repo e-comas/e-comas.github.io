@@ -65,7 +65,7 @@ export default (props: Props | undefined) => (
           // pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
           title="Please enter a valid phone number"
         />
-        <input placeholder="Company" name="fakeboite" />
+        <input placeholder="Company" name="fakeboite" required />
         {/* <label htmlFor="region">Business location :</label> */}
         <select name="region" required>
           {/* @ts-ignore defaultSelected should actually work*/}
