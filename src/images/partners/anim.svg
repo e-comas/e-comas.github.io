@@ -202,40 +202,40 @@
                 fill="#e23a05" />
         </g>
         <!-- amazon -->
-        <animateTransform id="t1" attributeName="transform" type="translate" begin="0s;tend.end" dur="5s" fill="freeze"
+        <animateTransform id="t1" attributeName="transform" type="translate" begin="0s;tend.end" dur="2.5s" fill="freeze"
             from="0 0" to="0 0" />
         <!-- amazon to ebay -->
-        <animateTransform id="t2" attributeName="transform" type="translate" begin="t1.end" dur="0.25s" fill="freeze"
+        <animateTransform id="t2" attributeName="transform" type="translate" begin="t1.end" dur="0.125s" fill="freeze"
             from="0 0" to="500 0" />
         <!-- ebay -->
-        <animateTransform id="t3" attributeName="transform" type="translate" begin="t2.end" dur="5s" fill="freeze"
+        <animateTransform id="t3" attributeName="transform" type="translate" begin="t2.end" dur="2.5s" fill="freeze"
             from="500 0" to="500 0" />
         <!-- ebay to bol -->
-        <animateTransform id="t4" attributeName="transform" type="translate" begin="t3.end" dur="0.25s" fill="freeze"
+        <animateTransform id="t4" attributeName="transform" type="translate" begin="t3.end" dur="0.125s" fill="freeze"
             from="500 0" to="1000 0" />
         <!-- bol -->
-        <animateTransform id="t5" attributeName="transform" type="translate" begin="t4.end" dur="5s" fill="freeze"
+        <animateTransform id="t5" attributeName="transform" type="translate" begin="t4.end" dur="2.5s" fill="freeze"
             from="1000 0" to="1000 0" />
         <!-- bol to wallmart -->
-        <animateTransform id="t6" attributeName="transform" type="translate" begin="t5.end" dur="0.25s" fill="freeze"
+        <animateTransform id="t6" attributeName="transform" type="translate" begin="t5.end" dur="0.125s" fill="freeze"
             from="1000 0" to="1500 0" />
         <!-- wallmart -->
-        <animateTransform id="t7" attributeName="transform" type="translate" begin="t6.end" dur="5s" fill="freeze"
+        <animateTransform id="t7" attributeName="transform" type="translate" begin="t6.end" dur="2.5s" fill="freeze"
             from="1500 0" to="1500 0" />
         <!-- wallmart to shopify-->
-        <animateTransform id="t8" attributeName="transform" type="translate" begin="t7.end" dur="0.25s" fill="freeze"
+        <animateTransform id="t8" attributeName="transform" type="translate" begin="t7.end" dur="0.125s" fill="freeze"
             from="1500 0" to="2000 0" />
         <!-- shopify -->
-        <animateTransform id="t9" attributeName="transform" type="translate" begin="t8.end" dur="5s" fill="freeze"
+        <animateTransform id="t9" attributeName="transform" type="translate" begin="t8.end" dur="2.5s" fill="freeze"
             from="2000 0" to="2000 0" />
         <!-- shopify to cdiscount-->
-        <animateTransform id="ta" attributeName="transform" type="translate" begin="t9.end" dur="0.25s" fill="freeze"
+        <animateTransform id="ta" attributeName="transform" type="translate" begin="t9.end" dur="0.125s" fill="freeze"
             from="2000 0" to="2500 0" />
         <!-- cdiscount-->
-        <animateTransform id="tb" attributeName="transform" type="translate" begin="ta.end" dur="5s" fill="freeze"
+        <animateTransform id="tb" attributeName="transform" type="translate" begin="ta.end" dur="2.5s" fill="freeze"
             from="2500 0" to="2500 0" />
         <!-- cdiscount2 to amazon -->
-        <animateTransform id="tend" attributeName="transform" type="translate" begin="tb.end" dur="0.25s" fill="freeze"
+        <animateTransform id="tend" attributeName="transform" type="translate" begin="tb.end" dur="0.125s" fill="freeze"
             from="-500 0" to="0 0" />
     </g>
 
