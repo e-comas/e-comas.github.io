@@ -83,7 +83,7 @@ export default (
           {"{% endif %}"}
 
         </article>
-        {"{% endif %}"}
+        {/* {"{% endif %}"} */}
         {"{% endfor %}"}
       </section>
     </main>
