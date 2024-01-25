@@ -59,7 +59,7 @@ export default (
       <section id="replays" class="blog">
         {"{% for webinar in site.tags.Webinar%}"}
         {"{% capture posttime %}{{webinar.date | date: '%s'}}{% endcapture %}"}
-        <script type="jekyll">{"{% if posttime < nowunix %}"}</script>
+        {/* <script type="jekyll">{"{% if posttime < nowunix %}"}</script> */}
         <article>
           <a href="{{ webinar.url }}">
             <img
@@ -72,14 +72,16 @@ export default (
             <a href="{{ webinar.url }}">{"{{ webinar.title | escape }}"}</a>
           </h3>
           <p>{"{{ webinar.excerpt | escape }}"}</p>
-          <a href="{{ webinar.url }}" class="cta">
           <script type="jekyll">{"{% if posttime >= nowunix %}"}</script>
+          <a href="{{ webinar.url }}" class="cta">
             Register now
+            </a>
           {"{% else %}"}
+          <a href="{{ webinar.url }}" class="cta">
             Watch now
+          </a>
           {"{% endif %}"}
 
-          </a>
         </article>
         {"{% endif %}"}
         {"{% endfor %}"}
