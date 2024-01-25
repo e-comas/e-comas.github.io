@@ -50,7 +50,7 @@ export default (
           </h3>
           <p>{"{{ webinar.excerpt | escape }}"}</p>
           <a href="{{ webinar.url }}" class="cta">
-            Register now
+            Register Now
           </a>
         </article>
         {"{% endif %}"}
@@ -73,7 +73,7 @@ export default (
           </h3>
           <p>{"{{ webinar.excerpt | escape }}"}</p>
           <a href="{{ webinar.url }}" class="cta">
-            Watch now
+            Watch Now
           </a>
         </article>
         {"{% endif %}"}
