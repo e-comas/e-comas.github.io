@@ -75,7 +75,7 @@ export default (
           <script type="jekyll">{"{% if posttime >= nowunix %}"}</script>
           <a href="{{ webinar.url }}" class="cta">
             Register now
-            </a>
+          </a>
           {"{% else %}"}
           <a href="{{ webinar.url }}" class="cta">
             Watch now
