@@ -187,6 +187,8 @@ export default (
       </ElementWithBackgroundImage> */}
       <TeamCertifications />
       <Newsletter />
+      {/* TODO: Remove this once a proper link is set */}
+      <a href="/walmart-marketplace.html" style={"display:none" as any} />
     </main>
     <Footer />
   </Body>
