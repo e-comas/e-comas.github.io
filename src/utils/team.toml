@@ -405,6 +405,12 @@ Team = "Retail"
 url.LinkedIn = "https://www.linkedin.com/in/efigenia-miranda"
 pictureUrl = "/images/team/Efigenia.png"
 
+[[team_member]]
+Name = "Sandeep Venkataraj"
+Title = "Retail Support Specialist"
+Team = "Retail"
+pictureUrl = "/images/team/Sandeep.png"
+
 
 [[team_member]]
 Name = "Karolina M'besso"
