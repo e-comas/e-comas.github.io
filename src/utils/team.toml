@@ -143,15 +143,15 @@ url.LinkedIn = "https://www.linkedin.com/in/pete-du-pon/"
 url.Calendly = "https://calendly.com/pete-ecomas"
 
 
-[[team_member]]
-Name = "Riley Bell"
-Title = "Senior Account Manager and Team Lead"
-Team = "Team lead"
-priority = 2
-quote = "\"eCommerce is an ever evolving landscape with fresh challenges and new opportunities emerging each day\""
-pictureUrl = "/images/team/Riley.png"
-url.LinkedIn = "https://www.linkedin.com/in/bellriley/"
-url.YouTube = "https://www.youtube.com/watch?v=miLaUlqNruc"
+# [[team_member]]
+# Name = "Riley Bell"
+# Title = "Senior Account Manager and Team Lead"
+# Team = "Team lead"
+# priority = 2
+# quote = "\"eCommerce is an ever evolving landscape with fresh challenges and new opportunities emerging each day\""
+# pictureUrl = "/images/team/Riley.png"
+# url.LinkedIn = "https://www.linkedin.com/in/bellriley/"
+# url.YouTube = "https://www.youtube.com/watch?v=miLaUlqNruc"
 
 
 [[team_member]]
@@ -199,12 +199,12 @@ pictureUrl = "/images/team/Yohann.png"
 url.LinkedIn = "https://www.linkedin.com/in/yohannpaul/"
 
 
-[[team_member]]
-Name = "Stefan Marian"
-Team = "Account Management"
-Title = "Account Manager"
-pictureUrl = "/images/team/Stefan.png"
-url.LinkedIn = "https://www.linkedin.com/in/stefan-marian-712779239"
+# [[team_member]]
+# Name = "Stefan Marian"
+# Team = "Account Management"
+# Title = "Account Manager"
+# pictureUrl = "/images/team/Stefan.png"
+# url.LinkedIn = "https://www.linkedin.com/in/stefan-marian-712779239"
 
 
 [[team_member]]
@@ -307,22 +307,22 @@ url.LinkedIn = "https://www.linkedin.com/in/asha-upadhya-6781a6108/"
 url.YouTube = "https://www.youtube.com/watch?v=rHKvKtK4dsI"
 
 
-[[team_member]]
-Name = "Antonella Argenziano"
-Team = "Advertising"
-Title = "Head of Advertising"
-pictureUrl = "/images/team/Nella.png"
-url.LinkedIn = "https://www.linkedin.com/in/antonella-argenziano"
-priority = 1
+# [[team_member]]
+# Name = "Antonella Argenziano"
+# Team = "Advertising"
+# Title = "Head of Advertising"
+# pictureUrl = "/images/team/Nella.png"
+# url.LinkedIn = "https://www.linkedin.com/in/antonella-argenziano"
+# priority = 1
 
 
-[[team_member]]
-Name = "Davy Mouyabi"
-Team = "Advertising"
-Title = "Head of DSP & Programmatic"
-pictureUrl = "/images/team/Dave.png"
-url.LinkedIn = "https://www.linkedin.com/in/davy-m-b950b622"
-priority = 1
+# [[team_member]]
+# Name = "Davy Mouyabi"
+# Team = "Advertising"
+# Title = "Head of DSP & Programmatic"
+# pictureUrl = "/images/team/Dave.png"
+# url.LinkedIn = "https://www.linkedin.com/in/davy-m-b950b622"
+# priority = 1
 
 [[team_member]]
 Name = "Elvis Kisekka"
@@ -366,11 +366,11 @@ pictureUrl = "/images/team/Appachu.png"
 url.LinkedIn = "https://www.linkedin.com/in/appachu-kodira-4b875789/"
 
 
-[[team_member]]
-Name = "Kevin"
-Title = "Advertising Specialist"
-Team = "Advertising"
-pictureUrl = "/images/team/Kevin.png"
+# [[team_member]]
+# Name = "Kevin"
+# Title = "Advertising Specialist"
+# Team = "Advertising"
+# pictureUrl = "/images/team/Kevin.png"
 
 
 [[team_member]]
