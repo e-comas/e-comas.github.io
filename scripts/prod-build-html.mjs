@@ -11,6 +11,7 @@ import {
   CANONICAL_ORIGIN,
   DEALFRONT_ID,
   GTAG_ID,
+  PARDOT_ID,
 } from "./prod-config.mjs";
 import viewportsToTest from "./prod-viewports-to-test.mjs";
 
@@ -41,19 +42,19 @@ function addAnalyticsSnippet(DEALFRONT_ID, ANALYTICS_ID, GTAG_ID) {
 
   const scriptPardot = document.createElement("script");
   scriptPardot.type = "text/javascript";
-  scriptPardot.innerHTML = `piAId="886733";piCId="8017";piHostname="pi.pardot.com";(function(){functionasync_load(){var s=document.createElement("script");s.type="text/javascript";s.src=("https:"==document.location.protocol?"https://pi":"http://cdn")+".pardot.com/pd.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(s,c);}if(window.attachEvent){window.attachEvent("onload",async_load);}else{window.addEventListener("load",async_load,false);}})();`
-  
+  scriptPardot.innerHTML = `piAId="${PARDOT_ID.Aid}";piCId="${PARDOT_ID.Cid}";piHostname="${PARDOT_ID.hostname}";(function(){functionasync_load(){var s=document.createElement("script");s.type="text/javascript";s.src=("https:"==document.location.protocol?"https://pi":"http://cdn")+".pardot.com/pd.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(s,c);}if(window.attachEvent){window.attachEvent("onload",async_load);}else{window.addEventListener("load",async_load,false);}})();`;
+
   const scriptEcom = document.createElement("script");
   scriptEcom.type = "text/javascript";
-  scriptEcom.innerHTML = `piAId="886733";piCId="";piHostname="go.e-comas.com";(function(){functionasync_load(){var s=document.createElement("script");s.type="text/javascript";s.src=("https:"==document.location.protocol?"https://":"http://")+piHostname+"/pd.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(s,c);}if(window.attachEvent){window.attachEvent("onload",async_load);}else{window.addEventListener("load",async_load,false);}})();`
-
+  scriptEcom.innerHTML = `piAId="886733";piCId="";piHostname="go.e-comas.com";(function(){functionasync_load(){var s=document.createElement("script");s.type="text/javascript";s.src=("https:"==document.location.protocol?"https://":"http://")+piHostname+"/pd.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(s,c);}if(window.attachEvent){window.attachEvent("onload",async_load);}else{window.addEventListener("load",async_load,false);}})();`;
 
   document.head.append(
     script0,
     scriptPlausible,
     scriptDealFront,
     scriptGTM,
-    scriptGTag, scriptPardot,
+    scriptGTag,
+    scriptPardot,
     scriptEcom
   );
 }

@@ -11,3 +11,4 @@ export const CANONICAL_ORIGIN = "https://e-comas.github.io";
 export const DEALFRONT_ID = "";
 export const ANALYTICS_ID = "";
 export const GTAG_ID = "";
+export const PARDOT_ID = { Aid: "", Cid: "", hostname: "" };
