@@ -18,7 +18,7 @@ import viewportsToTest from "./prod-viewports-to-test.mjs";
 const imgData = new Map();
 const sassMappings = new Map();
 
-function addAnalyticsSnippet(DEALFRONT_ID, ANALYTICS_ID, GTAG_ID) {
+function addAnalyticsSnippet(DEALFRONT_ID, ANALYTICS_ID, GTAG_ID, PARDOT_ID) {
   const scriptPlausible = document.createElement("script");
   scriptPlausible.defer = true;
   scriptPlausible.dataset.domain = ANALYTICS_ID;
@@ -279,7 +279,8 @@ async function editPage(page, signalIn, signalOut) {
       addAnalyticsSnippet,
       DEALFRONT_ID,
       ANALYTICS_ID,
-      GTAG_ID
+      GTAG_ID,
+      PARDOT_ID
     );
   }
 }
