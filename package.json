@@ -35,7 +35,7 @@
     "start": "node --experimental-json-modules --harmony-import-assertions scripts/dev-watch.mjs",
     "build": "NODE_ENV=production node --experimental-json-modules --harmony-import-assertions scripts/prod-build.mjs",
     "deploy": "git push && gh workflow run deploy.yml --ref main",
-    "prod": "git cherry-pick 2850f3b6f83dc5b768522d5f5183c23363057260 && git push e-comas.com -f && gh workflow run deploy.yml --repo e-comas/e-comas.com --ref main && git reset HEAD^ --hard",
+    "prod": "git cherry-pick 2422a9454fd745f4f0f0a97dbff5cbd609dfc0f2 && git push e-comas.com -f && gh workflow run deploy.yml --repo e-comas/e-comas.com --ref main && git reset HEAD^ --hard",
     "postinstall": "node scripts/dev-generate-toml-interop-files.mjs"
   },
   "resolutions": {
