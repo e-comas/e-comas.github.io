@@ -172,6 +172,24 @@ const partners = [
     text: "Syndigo powers modern commerce by enabling the continual flow of data and content throughout the entire commerce ecosystem. With industry-leading data management, syndication, and analytics, combined with the largest two-sided network for content distribution, we deliver accurate information that improves decision-making and accelerates sales on every shelf.",
     link: "https://syndigo.com/",
   },
+  {
+    image: "/images/partners/Davinci_Color_Grey_Tagline.png",
+    id: "davinci",
+    name: "Davinci Micro Fulfillment",
+    text: (
+      <>
+        Davinci Micro Fulfillment® provides an end-to-end solution for our
+        partners to utilise our physical location network strategically placed
+        in hyper-local areas. Brands and retailers can utilise forward-deployed
+        inventory to fulfil online orders to minimise lead time and cost. Using
+        proprietary technology, we can optimise all aspects of the <ECommerce />
+        ecosystem, including front-end merchandising, network optimisation, and
+        order fulfilment services provided by our fulfilment centres across the
+        US.
+      </>
+    ),
+    link: "https://davincimicrofulfillment.com/",
+  },
 ];
 
 export default (
