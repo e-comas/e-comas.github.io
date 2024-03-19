@@ -27,9 +27,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { EComas, ECommerce } from "./views/eWords.tsx";
 import ElementWithBackgroundImage from "./utils/ElementWithBackgroundImage.tsx";
 import ListElement from "./views/ListElement.tsx";
-import {
-  ecGlobe,
-} from "./utils/customIconDefinition.ts";
+import { ecGlobe } from "./utils/customIconDefinition.ts";
 
 export default (
   <Body title="Global Expansion">
@@ -54,16 +52,15 @@ export default (
         <figcaption>
           <h3>Your Walmart Journey Begins Here</h3>
           <p>
-            Walmart, the retail giant that caters to over{" "}
-            <a href="https://bloggingwizard.com/walmart-statistics/">
-              240 million customers weekly
-            </a>
-            , is where you want to be. And we're here to guide you on this
-            exciting journey. By leveraging our expertise, you can focus on your
-            core business activities while benefiting from specialised support
-            in navigating the complexities of the marketplace.
+            Walmart, the retail giant that caters to{" "}
+            {/* <a href="https://bloggingwizard.com/walmart-statistics/"> */}
+            millions of customers weekly
+            {/* </a> */}, is where you want to be. And we're here to guide you
+            on this exciting journey. By leveraging our expertise, you can focus
+            on your core business activities while benefiting from specialised
+            support in navigating the complexities of the marketplace.
           </p>
-          <h4>Succeed on Walmart with Our Expertise</h4>
+          <h4>We Can Help You Grow on Walmart</h4>
           <p>
             Our international team is made up of ex-brand directors and
             operational experts who’ve been helping ambitious brands and sellers
@@ -73,9 +70,8 @@ export default (
             for success.
           </p>
           <p>
-            Trust us to seamlessly manage your brand and partner with us to
-            boost visibility, drive sales and foster some serious growth on
-            Walmart. Let's make it happen together!
+            Partner with us to help drive your sales and growth on Walmart.
+            Let's make it happen together!
           </p>
         </figcaption>
         <Picture src="/images/Walmart.jpg" alt="" />
