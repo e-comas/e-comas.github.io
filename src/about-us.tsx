@@ -254,12 +254,6 @@ export default (
           </span>
           <span role="listitem">
             <Picture
-              src={"/images/brands/clients/cuddle club.png"}
-              alt={"Cuddle Club"}
-            />
-          </span>
-          <span role="listitem">
-            <Picture
               src={"/images/brands/clients/teissiere.png"}
               alt={"Teissiere"}
             />
