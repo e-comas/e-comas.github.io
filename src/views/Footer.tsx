@@ -140,6 +140,9 @@ export default (props: Props | undefined) => (
           <li>
             <NavLink href="/website-creation.html">Website Creation</NavLink>
           </li>
+          <li>
+            <NavLink href="/walmart-marketplace.html">Walmart</NavLink>
+          </li>
         </ul>
       </nav>
       <strong>
