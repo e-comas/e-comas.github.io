@@ -384,7 +384,15 @@ pictureUrl = "/images/team/Mehul.png"
 [[team_member]]
 Name = "Romain Dattée"
 Team = "Retail"
-Title = "Head of Retail & Finance"
+Title = "CFO & Head of Retail"
+quote = "\"Devil is in the detail\""
+url.LinkedIn = "https://www.linkedin.com/in/romain-datt%C3%A9e-48bb4759/"
+pictureUrl = "/images/team/Romain.png"
+# TODO: Allow multiple teams without duplicating?
+[[team_member]]
+Name = "Romain Dattée"
+Team = "Admin"
+Title = "CFO & Head of Retail"
 quote = "\"Devil is in the detail\""
 url.LinkedIn = "https://www.linkedin.com/in/romain-datt%C3%A9e-48bb4759/"
 pictureUrl = "/images/team/Romain.png"
