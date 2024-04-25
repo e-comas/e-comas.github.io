@@ -22,6 +22,13 @@ const papers: {
   link: string;
 }[] = [
   {
+    image: "/images/white-paper-5.png",
+    title: " AMC Unpacked: Demystifying 18 use cases of Amazon Marketing Cloud",
+    text: "Here’s our guide on 18 different ways you can use AMC to improve your \
+marketing game, maximise your ad spend and be more competitive.",
+    link: "https://go.e-comas.com/l/885733/2024-04-15/mzw27",
+  },
+  {
     image: "/images/white-paper-4.jpg",
     title: "Owning your brand: why you need brand registry",
     text: "Amazon experts are unanimous on this: all Amazon sellers should enrol \
