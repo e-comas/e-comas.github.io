@@ -38,7 +38,7 @@ including all the features you might not already know about.",
   },
   {
     image: "/images/white-paper-3.jpg",
-    title: "Amazon Marketing Cloud Unpacked",
+    title: "When luxury meets the mass market",
     text: "Amazon Luxury Stores is now live in Europe and the US. Read our \
 deep-dive into what Amazon Luxury Stores is, how it looks for \
 customers, and the pros and cons for luxury brands.",
