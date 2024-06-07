@@ -1,6 +1,8 @@
 @use "../utils/variables" as *;
 
 main {
+  grid-area: main;
+  justify-self: center;
   display: flex;
   flex-direction: column;
   max-width: 680px;
@@ -35,3 +37,30 @@ main > h6,
 h4 {
   font-size: 1.25rem;
 }
+
+.blog-page{
+  @media (min-width: 1500px){
+    display: grid;
+    grid-template-columns: 1fr 680px 1fr;
+    grid-template-areas: "_ main aside";
+  }
+}
+
+aside{
+  display:none;
+  //only show if screen with is over 1500px
+  @media (min-width: 1500px){
+    display: flex;
+    position: sticky;
+    top: calc(25% + 100px); 
+  }
+  grid-area: aside;
+  margin: auto;
+  margin-top: 25%;
+  max-width: 500px;
+  // thin gray rounded border
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+}
+
