@@ -42,7 +42,7 @@ h4 {
   // if the screen can fit both main and aside, then display them side by side
   @media (min-width: 1070px){
     // could overflow a little bit, but this allows for supporting more displays
-    overflow-x: hidden;
+    overflow-x: clip;
     display: 	grid;
     grid-template-columns: 1fr 680px 410px;
     grid-template-areas: "_ main aside";
