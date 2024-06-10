@@ -39,17 +39,24 @@ h4 {
 }
 
 .blog-page{
-  @media (min-width: 1500px){
-    display: grid;
-    grid-template-columns: 1fr 680px 1fr;
+  // if the screen can fit both main and aside, then display them side by side
+  @media (min-width: 1070px){
+    // could overflow a little bit, but this allows for supporting more displays
+    overflow-x: hidden;
+    display: 	grid;
+    grid-template-columns: 1fr 680px 410px;
     grid-template-areas: "_ main aside";
+  }
+  // center main if there is enough space
+  @media (min-width: 1500px){
+    grid-template-columns: 1fr 680px 1fr;
   }
 }
 
 aside{
   display:none;
-  //only show if screen with is over 1500px
-  @media (min-width: 1500px){
+  //only show if screen is wide enough
+  @media (min-width: 1070px){
     display: flex;
     position: sticky;
     top: calc(25% + 100px); 
