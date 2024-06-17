@@ -187,6 +187,8 @@ export default (
       </ElementWithBackgroundImage> */}
       <TeamCertifications />
       <Newsletter />
+      {/* hidden link to /newsletter-subscribe.html */}
+      <a href="/newsletter-subscribe.html" style={"display:none;" as any}></a>
     </main>
     <Footer />
   </Body>
