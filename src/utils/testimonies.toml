@@ -122,3 +122,14 @@ title = "Senior Brand Marketing Manager"
 company = "Kervan Food UK"
 image = "/images/GabriellaEgleton.png"
 logo = "/images/brands/kervan.png"
+
+[[item]]
+text =  """\
+  It has always been a pleasure to work with you and the team and I keep Ecomas \
+  as one of the best agencies I’ve ever worked with and with a huge quality service
+"""
+name = "Bruno Gangoiti Figar"
+title = "Marketing Manager"
+company = "Dickies"
+image =  "/images/blurry.png"
+logo = "/images/brands/clients/dickies.png"
