@@ -5,7 +5,7 @@ import runtime from "./rollup-plugin-runtime-js.mjs";
 import sass from "./rollup-plugin-sass.mjs";
 import toml from "./rollup-plugin-toml.mjs";
 
-import tsConfig from "../tsconfig.json" with { type: "json" };
+import tsConfig from "../tsconfig.json" assert { type: "json" };
 
 const plugins = [
   surcase({
