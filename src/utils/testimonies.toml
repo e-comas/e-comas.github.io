@@ -131,4 +131,5 @@ text =  """\
 name = "Bruno Gangoiti Figar"
 title = "Marketing Manager"
 company = "Dickies"
+image =  "/images/bruno.jpeg"
 logo = "/images/brands/clients/dickies.png"
