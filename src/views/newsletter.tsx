@@ -12,8 +12,8 @@ export default () => (
       inbox!
     </p>
     <iframe
-      src="//go.e-comas.com/l/885733/2020-09-25/2wsd?Single_Opt_In=yes"
-      width="100%"
+      src="//go.e-comas.com/l/885733/2024-07-25/nc1ft?Single_Opt_In=yes"
+      width="768"
       height="210"
       sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
     />
