@@ -24,7 +24,7 @@ export default () => (
     </p>
     <div role="list">
       <figure class="animate-in">
-        <Picture src="/images/consulting01_crop.png" alt="illustration" />
+        <Picture src="/images/Corpo shoot (9).jpg" alt="illustration" />
         <figcaption>
           {/* <GlobalExpansion /> */}
           <FontAwesomeIcon
@@ -46,7 +46,7 @@ export default () => (
         </figcaption>
       </figure>
       <figure class="animate-in">
-        <Picture src="/images/consulting02.png" alt="illustration" />
+        <Picture src="/images/e-comas-198.jpg" alt="illustration" />
         <figcaption>
           {/* <RetailMedia /> */}
           <FontAwesomeIcon
@@ -68,7 +68,7 @@ export default () => (
         </figcaption>
       </figure>
       <figure class="animate-in">
-        <Picture src="/images/consulting03.png" alt="illustration" />
+        <Picture src="/images/e-comas-22.jpg" alt="illustration" />
         <figcaption>
           {/* <Technology /> */}
           <FontAwesomeIcon

@@ -67,7 +67,7 @@ export default (
       <div class="video-container">
         <VideoEmbedLink
           tagName="div"
-          previewImage="/images/team-picture-EU.jpg"
+          previewImage="/images/e-comas-206.jpg"
           videoId="vjGxQNji05U"
         />
       </div>
@@ -164,7 +164,7 @@ export default (
             Download <FontAwesomeIcon icon={faDownload as IconProp} />
           </a>
         </figcaption>
-        <Picture src={"/images/team-picture-EU.jpg"} alt={"eComas Team"} />
+        <Picture src={"/images/e-comas-206.jpg"} alt={"eComas Team"} />
       </figure>
 
       {/* <ElementWithBackgroundImage

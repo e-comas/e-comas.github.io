@@ -12,7 +12,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 export default () => (
   <ElementWithBackgroundImage
     tagName="section"
-    src="/images/Ecomma-b2.jpg"
+    src="/images/e-comas-73.jpg"
     class="about-us"
   >
     <h2>About us</h2>
