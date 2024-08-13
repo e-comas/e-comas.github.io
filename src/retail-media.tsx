@@ -72,13 +72,13 @@ export default (
           </p>
         </figcaption>
         <Picture
-          src="/images/cropped-image-woman-inputting-card-information-key-phone-laptop-while-shopping-online.jpg"
+          src="/images/e-comas-210.jpg"
           alt=""
         />
       </figure>
       <ElementWithBackgroundImage
         tagName="section"
-        src="/images/Ecomma-b2.jpg"
+        src="/images/e-comas-16-crop.jpg"
         class="about-us"
       >
         <h3>Our Expertise</h3>

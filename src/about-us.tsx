@@ -66,7 +66,7 @@ export default (
       </figure>
       <figure class="how_it">
         <Picture
-          src="/images/team-picture-EU.jpg"
+          src="/images/e-comas-206.jpg"
           alt="e-Comas Europe team picture"
         />
         <figcaption>
