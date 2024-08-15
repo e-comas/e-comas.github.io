@@ -75,7 +75,7 @@ export default (
       </figure>
       <ElementWithBackgroundImage
         tagName="section"
-        src="/images/Ecomma-b2.jpg"
+        src="/images/e-comas-16-crop.jpg"
         class="about-us"
       >
         <h3>Our Expertise</h3>
