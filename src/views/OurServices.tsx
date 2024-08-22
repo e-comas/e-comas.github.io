@@ -24,7 +24,7 @@ export default () => (
     </p>
     <div role="list">
       <figure class="animate-in">
-        <Picture src="/images/Corpo shoot (9).jpg" alt="illustration" />
+        <Picture src="/images/e-comas-24.jpg" alt="illustration" />
         <figcaption>
           {/* <GlobalExpansion /> */}
           <FontAwesomeIcon

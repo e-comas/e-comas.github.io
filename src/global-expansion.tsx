@@ -71,7 +71,7 @@ export default (
             business forward on a global scale.
           </p>
         </figcaption>
-        <Picture src="/images/e-comas-24.jpg" alt="" />
+        <Picture src="/images/Corpo shoot (9).jpg" alt="illustration" />
       </figure>
       <ElementWithBackgroundImage
         tagName="section"
