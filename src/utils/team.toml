@@ -182,12 +182,12 @@ priority = 2
 # pictureUrl = "/images/team/Claire.png"
 # url.LinkedIn = "https://www.linkedin.com/in/claire-guilleautot-0347b8172/"
 
-[[team_member]]
-Name = "Rebecca Hubscher"
-Title = "US Account Director"
-Team = "Team lead & Account Management"
-pictureUrl = "/images/team/Rebecca.png"
-priority = 2
+# [[team_member]]
+# Name = "Rebecca Hubscher"
+# Title = "US Account Director"
+# Team = "Team lead & Account Management"
+# pictureUrl = "/images/team/Rebecca.png"
+# priority = 2
 
 
 [[team_member]]
