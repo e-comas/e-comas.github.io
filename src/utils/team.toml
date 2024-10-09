@@ -23,7 +23,7 @@ bio = """\
     results as great as multiplying revenue by five times or more within two \
     years.\
   """
-pictureUrl = "/images/team/jerome.png"
+pictureUrl = "/images/team/Teams-New-Jérôme.png"
 url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
 # url.Medium = "https://amazon-expert.medium.com/"
 url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
@@ -52,7 +52,7 @@ Name = "Nazlı Kayıkçı"
 Title = "Chief Operating Officer"
 Team = "Team lead & Account Management"
 quote = "Identifying your gaps and needs at the beginning of your ecom journey is the greatest favor that you can do for your brand'"
-pictureUrl = "/images/team/Nazli.png"
+pictureUrl = "/images/team/Teams-New-Nazli.png"
 url.LinkedIn = "https://www.linkedin.com/in/nazl%C4%B1-ipek-kay%C4%B1k%C3%A7%C4%B1-86644a23/"
 url.YouTube = "https://www.youtube.com/watch?v=nN8QWZ5S7-M"
 priority = 3
@@ -97,7 +97,7 @@ Name = "Claudiu Clement"
 Title = "Chief Technical Officer"
 Team = "Technology & Analytics"
 quote = "\"Building a great experience for the right client is the main driver of success in ecommerce.\""
-pictureUrl = "/images/team/Claudiu.png"
+pictureUrl = "/images/team/Teams-New-Claudiu.png"
 url.LinkedIn = "https://www.linkedin.com/in/claudiu-clement/"
 url.YouTube = "https://www.youtube.com/watch?v=LgI0R1hmyCE&ab_channel=e-Comas"
 priority = 3
@@ -250,7 +250,7 @@ Name = "Antonio Vicedo Mart\u00ednez"
 Title = "Head of Content"
 Team = "Content"
 quote = "\"In a world that moves and evolves as fast as e-commerce, make sure to save some time to reflect and plan\""
-pictureUrl = "/images/team/Antonio.png"
+pictureUrl = "/images/team/Teams-New-Antonio.png"
 url.LinkedIn = "https://www.linkedin.com/in/antoniovicedo/"
 priority = 3
 
@@ -274,7 +274,7 @@ Name = "Henintsoa Andriatianarivo"
 Title = "Content Specialist"
 Team = "Content"
 quote = "\"A smooth sea never made a skilled sailor.\""
-pictureUrl = "/images/team/Henintsoa.png"
+pictureUrl = "/images/team/Teams-New-Henintsoa.png"
 url.LinkedIn = "https://www.linkedin.com/in/henintsoa/"
 url.YouTube = "https://www.youtube.com/watch?v=rmB-6-x9spA"
 
@@ -310,7 +310,7 @@ Name = "Mireille Rasoa"
 Title = "Content Specialist"
 Team = "Content"
 quote = "\"You are your only limit\""
-pictureUrl = "/images/team/Mireille.png"
+pictureUrl = "/images/team/Teams-New-Mireille_.png"
 url.LinkedIn = "https://www.linkedin.com/in/mireille-rasoa-605194215/"
 
 
@@ -373,7 +373,7 @@ Name = "Sam Millendo"
 Title = "Digital Marketing Lead"
 Team = "Advertising"
 url.LinkedIn = "https://linkedin.com/sam-millendo"
-pictureUrl = "/images/team/Sam.png"
+pictureUrl = "/images/team/Teams-New-Sam.png"
 priority = 1
 
 [[team_member]]
@@ -445,7 +445,7 @@ Name = "Efigenia Miranda"
 Title = "Retail Support Specialist"
 Team = "Seller Performance, Retail & Distribution"
 url.LinkedIn = "https://www.linkedin.com/in/efigenia-miranda"
-pictureUrl = "/images/team/Efigenia.png"
+pictureUrl = "/images/team/Teams-New-Efigenia.png"
 
 [[team_member]]
 Name = "Sandeep Venkataraj"
@@ -468,7 +468,7 @@ Name = "Misa Manass\u00e9"
 Title = "Office Manager"
 Team = "Admin"
 quote = "\"Persistence is the path to success\" C Chaplin"
-pictureUrl = "/images/team/Misa.png"
+pictureUrl = "/images/team/Teams-New-Misa.png"
 url.LinkedIn = "https://www.linkedin.com/in/misa-manass%C3%A9-3994a4225/"
 
 
@@ -485,7 +485,7 @@ url.LinkedIn = "https://www.linkedin.com/in/oscar-samson"
 Name = "Audrey Palma"
 Title = "Administrative & accounting officer"
 Team = "Admin"
-pictureUrl = "/images/team/Audrey.png"
+pictureUrl = "/images/team/Teams-New-Audrey.png"
 
 
 [[team_member]]
