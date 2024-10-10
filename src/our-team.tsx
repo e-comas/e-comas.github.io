@@ -14,6 +14,8 @@ import { EComas, ECommerce } from "./views/eWords.tsx";
 
 import "./our-team.scss";
 import Hero from "./views/hero.tsx";
+import "./global-expansion.scss";
+
 
 function sortTM(a: TeamMemberProps, b: TeamMemberProps) {
   if (a.priority != null && b.priority == null) return -1;
@@ -68,11 +70,22 @@ export default (
         Our global teams are made up of ex-brand directors, ex-Amazonians and
         operational experts who have successfully built brands for over a decade
         on Amazon and other online marketplaces. We’re passionate about helping
-        our clients harness the power of <ECommerce />, using our combined expertise
-        to help you grow and thrive internationally.
+        our clients harness the power of <ECommerce />, using our combined
+        expertise to help you grow and thrive internationally.
       </p>
     </Hero>
     <main id="main-content">
+      <figure id="executive-committee" class="made-easy">
+        <figcaption>
+          <h3>Executive Committee</h3>
+          <p>
+          Our C-suite leads a global team of ex-brand directors, ex-Amazonians and operational experts to help brands succeed in <ECommerce /> worldwide. With broad expertise, they drive innovation, growth and exceptional customer service, ensuring sellers thrive in the digital marketplace.
+          </p>
+          <i>(L-R: Nazlı Kayıkçı, COO; Jérôme de Guigné, CEO; Romain Dattée, CFO; Claudiu Clement, CTO)</i>
+        </figcaption>
+        <Picture src="/images/e-comas-212.jpg" alt="Left to Right: Nazlı Kayıkçı, COO; Jérôme de Guigné, CEO; Romain Dattée, CFO; Claudiu Clement, CTO" />
+      </figure>
+
       <figure>
         <Picture
           src={team.CEO.pictureUrl}
@@ -85,6 +98,7 @@ export default (
           <SocialURLs url={team.CEO.url} />
         </figcaption>
       </figure>
+
       {/* <figure>
         <Picture
           src={team.COO.pictureUrl}

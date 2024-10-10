@@ -7,7 +7,7 @@ main > p {
   @extend %p-after-title;
 }
 
-main > figure {
+main > figure:not(.made-easy) {
   display: flex;
   flex-direction: column;
   text-align: center;
