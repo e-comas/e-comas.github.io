@@ -7,8 +7,8 @@ import team from "./utils/team.toml";
 
 import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
-import Breadcrumbs from "./views/Breadcrumbs.tsx";
-import Picture from "./utils/Picture.tsx";
+// import Breadcrumbs from "./views/Breadcrumbs.tsx";
+// import Picture from "./utils/Picture.tsx";
 import Footer from "./views/Footer.tsx";
 import { EComas, ECommerce } from "./views/eWords.tsx";
 
@@ -75,7 +75,8 @@ export default (
       </p>
     </Hero>
     <main id="main-content">
-      <figure id="executive-committee" class="made-easy">
+
+      {/* <figure id="executive-committee" class="made-easy">
         <figcaption>
           <h3>Executive Committee</h3>
           <p>
@@ -84,9 +85,9 @@ export default (
           <i>(L-R: Nazlı Kayıkçı, COO; Jérôme de Guigné, CEO; Romain Dattée, CFO; Claudiu Clement, CTO)</i>
         </figcaption>
         <Picture src="/images/e-comas-212.jpg" alt="Left to Right: Nazlı Kayıkçı, COO; Jérôme de Guigné, CEO; Romain Dattée, CFO; Claudiu Clement, CTO" />
-      </figure>
+      </figure> */}
 
-      <figure>
+      {/* <figure>
         <Picture
           src={team.CEO.pictureUrl}
           alt={team.CEO.Name + ", " + team.CEO.Title}
@@ -97,7 +98,7 @@ export default (
           <p>{team.CEO.bio}</p>
           <SocialURLs url={team.CEO.url} />
         </figcaption>
-      </figure>
+      </figure> */}
 
       {/* <figure>
         <Picture

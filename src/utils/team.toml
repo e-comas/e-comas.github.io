@@ -1,20 +1,57 @@
 __use_generic_keys__ = { url = "socialNetwork" }
 
 team_order = [
+  "Executive Committee",
   "Business Development",
   "Team lead & Account Management",
   "Technology & Analytics",
   "Content",
-  "Advertising",
+  "Retail Media",
   "Seller Performance, Retail & Distribution",
   "Admin",
   "Marketing",
 ]
 
-[CEO]
+# [CEO]
+# email = "j.deguigne@e-comas.com"
+# Name = "Jérôme de Guigné"
+# Title = "Founder & CEO"
+# bio = """\
+#     Jérôme specialises in helping global brands grow their distribution on \
+#     and through Amazon. His wealth of ecommerce expertise comes from 20 years \
+#     of sales and international distribution experience in Europe, Asia and \
+#     North America. Jérôme focuses on real-world proven solutions, with \
+#     results as great as multiplying revenue by five times or more within two \
+#     years.\
+#   """
+# pictureUrl = "/images/team/Teams-New-Jérôme.png"
+# url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
+# # url.Medium = "https://amazon-expert.medium.com/"
+# url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
+
+# [COO]
+# Name = "Amalia Sebakunzi"
+# Title = "Chief Operating Officer"
+# bio = """\
+#     Amalia is a business leader with over 14 years of international experience \
+#     spanning a broad range of industries, including FMCG, Food, Beauty, \
+#     Luxury, Ecommerce and Digital Health. Amalia joined e-Comas as Chief \
+#     Operating Officer in 2021, having worked in Nigeria for three years \
+#     heading up strategic marketing activities for one of the world’s leading \
+#     food brands. With over a decade of sales and marketing expertise, Amalia \
+#     has a wealth of knowledge to help brands succeed on all online \
+#     marketplaces.\n\
+#   """
+# quote = "\"Any business not investing time & ressources on e-commerce right now is missing out on the opportunity of the century\""
+# pictureUrl = "/images/team/amalia.png"
+# url.LinkedIn = "https://www.linkedin.com/in/amaliawidder/"
+# url.YouTube = "https://www.youtube.com/watch?v=0-TBc8-UC1w"
+
+[[team_member]]
 email = "j.deguigne@e-comas.com"
 Name = "Jérôme de Guigné"
 Title = "Founder & CEO"
+Team = "Executive Committee"
 bio = """\
     Jérôme specialises in helping global brands grow their distribution on \
     and through Amazon. His wealth of ecommerce expertise comes from 20 years \
@@ -27,35 +64,48 @@ pictureUrl = "/images/team/Teams-New-Jérôme.png"
 url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
 # url.Medium = "https://amazon-expert.medium.com/"
 url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
-
-[COO]
-Name = "Amalia Sebakunzi"
-Title = "Chief Operating Officer"
-bio = """\
-    Amalia is a business leader with over 14 years of international experience \
-    spanning a broad range of industries, including FMCG, Food, Beauty, \
-    Luxury, Ecommerce and Digital Health. Amalia joined e-Comas as Chief \
-    Operating Officer in 2021, having worked in Nigeria for three years \
-    heading up strategic marketing activities for one of the world’s leading \
-    food brands. With over a decade of sales and marketing expertise, Amalia \
-    has a wealth of knowledge to help brands succeed on all online \
-    marketplaces.\n\
-  """
-quote = "\"Any business not investing time & ressources on e-commerce right now is missing out on the opportunity of the century\""
-pictureUrl = "/images/team/amalia.png"
-url.LinkedIn = "https://www.linkedin.com/in/amaliawidder/"
-url.YouTube = "https://www.youtube.com/watch?v=0-TBc8-UC1w"
-
+priority = 4
 
 [[team_member]]
 Name = "Nazlı Kayıkçı"
 Title = "Chief Operating Officer"
-Team = "Team lead & Account Management"
+Team = "Executive Committee"
 quote = "Identifying your gaps and needs at the beginning of your ecom journey is the greatest favor that you can do for your brand'"
 pictureUrl = "/images/team/Teams-New-Nazli.png"
 url.LinkedIn = "https://www.linkedin.com/in/nazl%C4%B1-ipek-kay%C4%B1k%C3%A7%C4%B1-86644a23/"
 url.YouTube = "https://www.youtube.com/watch?v=nN8QWZ5S7-M"
 priority = 3
+
+[[team_member]]
+Name = "Romain Dattée"
+Team = "Executive Committee"
+Title = "CFO & Head of Retail"
+quote = "\"Devil is in the detail\""
+url.LinkedIn = "https://www.linkedin.com/in/romain-datt%C3%A9e-48bb4759/"
+pictureUrl = "/images/team/Romain.png"
+priority = 2
+
+[[team_member]]
+Name = "Claudiu Clement"
+Title = "Chief Technical Officer"
+Team = "Executive Committee"
+quote = "\"Building a great experience for the right client is the main driver of success in ecommerce.\""
+pictureUrl = "/images/team/Teams-New-Claudiu.png"
+url.LinkedIn = "https://www.linkedin.com/in/claudiu-clement/"
+url.YouTube = "https://www.youtube.com/watch?v=LgI0R1hmyCE&ab_channel=e-Comas"
+priority = 1
+
+
+
+# [[team_member]]
+# Name = "Nazlı Kayıkçı"
+# Title = "Chief Operating Officer"
+# Team = "Team lead & Account Management"
+# quote = "Identifying your gaps and needs at the beginning of your ecom journey is the greatest favor that you can do for your brand'"
+# pictureUrl = "/images/team/Teams-New-Nazli.png"
+# url.LinkedIn = "https://www.linkedin.com/in/nazl%C4%B1-ipek-kay%C4%B1k%C3%A7%C4%B1-86644a23/"
+# url.YouTube = "https://www.youtube.com/watch?v=nN8QWZ5S7-M"
+# priority = 3
 
 [[team_member]]
 Name = "Agu\u00e8ne Sambou"
@@ -92,15 +142,15 @@ pictureUrl = "/images/team/Michael Baron.png"
 url.LinkedIn = "https://www.linkedin.com/in/michael-baron-a0808822/"
 priority = 0
 
-[[team_member]]
-Name = "Claudiu Clement"
-Title = "Chief Technical Officer"
-Team = "Technology & Analytics"
-quote = "\"Building a great experience for the right client is the main driver of success in ecommerce.\""
-pictureUrl = "/images/team/Teams-New-Claudiu.png"
-url.LinkedIn = "https://www.linkedin.com/in/claudiu-clement/"
-url.YouTube = "https://www.youtube.com/watch?v=LgI0R1hmyCE&ab_channel=e-Comas"
-priority = 3
+# [[team_member]]
+# Name = "Claudiu Clement"
+# Title = "Chief Technical Officer"
+# Team = "Technology & Analytics"
+# quote = "\"Building a great experience for the right client is the main driver of success in ecommerce.\""
+# pictureUrl = "/images/team/Teams-New-Claudiu.png"
+# url.LinkedIn = "https://www.linkedin.com/in/claudiu-clement/"
+# url.YouTube = "https://www.youtube.com/watch?v=LgI0R1hmyCE&ab_channel=e-Comas"
+# priority = 3
 
 
 [[team_member]]
@@ -151,7 +201,7 @@ quote = "\"eCommerce is an ever evolving landscape with fresh challenges and new
 pictureUrl = "/images/team/Riley.png"
 url.LinkedIn = "https://www.linkedin.com/in/bellriley/"
 url.YouTube = "https://www.youtube.com/watch?v=miLaUlqNruc"
-priority = 2
+priority = 3
 
 
 # [[team_member]]
@@ -217,7 +267,7 @@ url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
 
 [[team_member]]
 Name = "Marius Popov"
-Team = "Advertising"
+Team = "Retail Media"
 Title = "Head of Retail Media"
 url.LinkedIn = "https://www.linkedin.com/in/marius-popov-488a5752/"
 pictureUrl = "/images/team/Marius.png"
@@ -317,7 +367,7 @@ url.LinkedIn = "https://www.linkedin.com/in/mireille-rasoa-605194215/"
 [[team_member]]
 Name = "Asha Upadhya"
 Title = "Advertising Specialist"
-Team = "Advertising"
+Team = "Retail Media"
 quote = "Do not underestimate the power of 'Word of Mouth\"Give your customers something Wonderful to talk about and they will do the rest"
 pictureUrl = "/images/team/Asha.png"
 url.LinkedIn = "https://www.linkedin.com/in/asha-upadhya-6781a6108/"
@@ -326,7 +376,7 @@ url.YouTube = "https://www.youtube.com/watch?v=rHKvKtK4dsI"
 
 # [[team_member]]
 # Name = "Antonella Argenziano"
-# Team = "Advertising"
+# Team = "Retail Media"
 # Title = "Head of Advertising"
 # pictureUrl = "/images/team/Nella.png"
 # url.LinkedIn = "https://www.linkedin.com/in/antonella-argenziano"
@@ -335,7 +385,7 @@ url.YouTube = "https://www.youtube.com/watch?v=rHKvKtK4dsI"
 
 # [[team_member]]
 # Name = "Davy Mouyabi"
-# Team = "Advertising"
+# Team = "Retail Media"
 # Title = "Head of DSP & Programmatic"
 # pictureUrl = "/images/team/Dave.png"
 # url.LinkedIn = "https://www.linkedin.com/in/davy-m-b950b622"
@@ -354,7 +404,7 @@ priority = 2
 [[team_member]]
 Name = "Tiffany Lemprière"
 Title = "Head of Performance Marketing"
-Team = "Advertising"
+Team = "Retail Media"
 pictureUrl = "/images/team/Tiffany.png"
 priority = 2
 
@@ -362,7 +412,7 @@ priority = 2
 # [[team_member]]
 # Name = "Arjun Narayan"
 # Title = "Advertising Specialist"
-# Team = "Advertising"
+# Team = "Retail Media"
 # quote = "The key to success is to concentrate on GOALS, not OBSTACLES."
 # pictureUrl = "/images/team/Arjun.png"
 # url.LinkedIn = "https://www.linkedin.com/in/arjun-narayan-881166196/"
@@ -371,7 +421,7 @@ priority = 2
 [[team_member]]
 Name = "Sam Millendo"
 Title = "Digital Marketing Lead"
-Team = "Advertising"
+Team = "Retail Media"
 url.LinkedIn = "https://linkedin.com/sam-millendo"
 pictureUrl = "/images/team/Teams-New-Sam.png"
 priority = 1
@@ -379,20 +429,20 @@ priority = 1
 [[team_member]]
 Name = "Joel Alex"
 Title = "Advertising Specialist"
-Team = "Advertising"
+Team = "Retail Media"
 pictureUrl = "/images/team/JoelAlex.png"
 
 # [[team_member]]
 # Name = "Akash Sarkar"
 # Title = "Advertising Specialist"
-# Team = "Advertising"
+# Team = "Retail Media"
 # url.LinkedIn = "https://www.linkedin.com/in/akash-sarkar-2b72a1119/"
 # pictureUrl = "/images/team/Akash.png"
 
 
 # [[team_member]]
 # Name = "Appachu Kodira"
-# Team = "Advertising"
+# Team = "Retail Media"
 # Title = "Advertising Specialist"
 # pictureUrl = "/images/team/Appachu.png"
 # url.LinkedIn = "https://www.linkedin.com/in/appachu-kodira-4b875789/"
@@ -401,35 +451,35 @@ pictureUrl = "/images/team/JoelAlex.png"
 # [[team_member]]
 # Name = "Kevin"
 # Title = "Advertising Specialist"
-# Team = "Advertising"
+# Team = "Retail Media"
 # pictureUrl = "/images/team/Kevin.png"
 
 
 [[team_member]]
 Name = "Mehul James"
-Team = "Advertising"
+Team = "Retail Media"
 Title = "Advertising Specialist"
 url.LinkedIn = "https://www.linkedin.com/in/mehul-james-86654a10a"
 pictureUrl = "/images/team/Mehul.png"
 
 
-[[team_member]]
-Name = "Romain Dattée"
-Team = "Seller Performance, Retail & Distribution"
-Title = "CFO & Head of Retail"
-quote = "\"Devil is in the detail\""
-url.LinkedIn = "https://www.linkedin.com/in/romain-datt%C3%A9e-48bb4759/"
-pictureUrl = "/images/team/Romain.png"
-# TODO: Allow multiple teams without duplicating?
+# [[team_member]]
+# Name = "Romain Dattée"
+# Team = "Seller Performance, Retail & Distribution"
+# Title = "CFO & Head of Retail"
+# quote = "\"Devil is in the detail\""
+# url.LinkedIn = "https://www.linkedin.com/in/romain-datt%C3%A9e-48bb4759/"
+# pictureUrl = "/images/team/Romain.png"
+# # TODO: Allow multiple teams without duplicating?
 
 
-[[team_member]]
-Name = "Romain Dattée"
-Team = "Admin"
-Title = "CFO & Head of Retail"
-quote = "\"Devil is in the detail\""
-url.LinkedIn = "https://www.linkedin.com/in/romain-datt%C3%A9e-48bb4759/"
-pictureUrl = "/images/team/Romain.png"
+# [[team_member]]
+# Name = "Romain Dattée"
+# Team = "Admin"
+# Title = "CFO & Head of Retail"
+# quote = "\"Devil is in the detail\""
+# url.LinkedIn = "https://www.linkedin.com/in/romain-datt%C3%A9e-48bb4759/"
+# pictureUrl = "/images/team/Romain.png"
 
 
 [[team_member]]
