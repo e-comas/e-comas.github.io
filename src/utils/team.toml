@@ -3,7 +3,7 @@ __use_generic_keys__ = { url = "socialNetwork" }
 team_order = [
   "Executive Committee",
   "Business Development",
-  "Team lead & Account Management",
+  "Brand Directors",
   "Technology & Analytics",
   "Content",
   "Retail Media",
@@ -100,7 +100,7 @@ priority = 1
 # [[team_member]]
 # Name = "Nazlı Kayıkçı"
 # Title = "Chief Operating Officer"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # quote = "Identifying your gaps and needs at the beginning of your ecom journey is the greatest favor that you can do for your brand'"
 # pictureUrl = "/images/team/Teams-New-Nazli.png"
 # url.LinkedIn = "https://www.linkedin.com/in/nazl%C4%B1-ipek-kay%C4%B1k%C3%A7%C4%B1-86644a23/"
@@ -196,7 +196,7 @@ url.Calendly = "https://calendly.com/michael-ecomas"
 [[team_member]]
 Name = "Riley Bell"
 Title = "Senior Account Director"
-Team = "Team lead & Account Management"
+Team = "Brand Directors"
 quote = "\"eCommerce is an ever evolving landscape with fresh challenges and new opportunities emerging each day\""
 pictureUrl = "/images/team/Riley.png"
 url.LinkedIn = "https://www.linkedin.com/in/bellriley/"
@@ -207,7 +207,7 @@ priority = 3
 # [[team_member]]
 # Name = "Seval Andıç"
 # Title = "Senior Account Director and Team Lead"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # priority = 1
 # quote = "The ability to adapt is the main ingredient behind succesful growth recipes."
 # pictureUrl = "/images/team/Sevel.png"
@@ -217,7 +217,7 @@ priority = 3
 [[team_member]]
 Name = "Sven Jacosben Diaz"
 Title = "Account Director"
-Team = "Team lead & Account Management"
+Team = "Brand Directors"
 quote = "You miss 100% of the shots you don't take"
 pictureUrl = "/images/team/Sven.png"
 url.LinkedIn = "https://www.linkedin.com/in/sven-jacobsen-diaz/"
@@ -227,7 +227,7 @@ priority = 2
 # [[team_member]]
 # Name = "Claire Guilleautot"
 # Title = "Senior Account manager"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # quote = "Details create the big picture."
 # pictureUrl = "/images/team/Claire.png"
 # url.LinkedIn = "https://www.linkedin.com/in/claire-guilleautot-0347b8172/"
@@ -235,14 +235,14 @@ priority = 2
 # [[team_member]]
 # Name = "Rebecca Hubscher"
 # Title = "US Account Director"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # pictureUrl = "/images/team/Rebecca.png"
 # priority = 2
 
 
 [[team_member]]
 Name = "Anchit Abraham"
-Team = "Team lead & Account Management"
+Team = "Brand Directors"
 Title = "Account Specialist"
 pictureUrl = "/images/team/Anchit.png"
 url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
@@ -251,7 +251,7 @@ url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
 # [[team_member]]
 # Name = "Yohann Paul"
 # Title = "Account Support"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # quote = "\"There is a superhero in all of us, We just need the courage to put on the cape.\""
 # pictureUrl = "/images/team/Yohann.png"
 # url.LinkedIn = "https://www.linkedin.com/in/yohannpaul/"
@@ -259,7 +259,7 @@ url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
 
 # [[team_member]]
 # Name = "Stefan Marian"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # Title = "Account Director"
 # pictureUrl = "/images/team/Stefan.png"
 # url.LinkedIn = "https://www.linkedin.com/in/stefan-marian-712779239"
@@ -277,7 +277,7 @@ priority = 3
 [[team_member]]
 Name = "Richard Ravichandar"
 Title = "Account Director"
-Team = "Team lead & Account Management"
+Team = "Brand Directors"
 quote = "We CARE for your business like no one else did. We GROW your business like never before."
 pictureUrl = "/images/team/Richard.png"
 url.LinkedIn = "https://www.linkedin.com/in/richard-ravichandar-a1929a50/"
@@ -287,7 +287,7 @@ priority = 2
 [[team_member]]
 Name = "Charl\u00e8ne Gr\u00e9goire"
 Title = "Account Director"
-Team = "Team lead & Account Management"
+Team = "Brand Directors"
 quote = "\"Every problem is a gift - without problems we would not grow\""
 pictureUrl = "/images/team/Charlene-Gregoire.png"
 url.LinkedIn = "https://www.linkedin.com/in/charlene-gregoire"
@@ -394,7 +394,7 @@ url.YouTube = "https://www.youtube.com/watch?v=rHKvKtK4dsI"
 [[team_member]]
 Name = "Elvis Kisekka"
 Title = "Account Director"
-Team = "Team lead & Account Management"
+Team = "Brand Directors"
 quote = "\"The secret to success is to do the common things uncommonly well.\""
 pictureUrl = "/images/team/Elvis.png"
 url.LinkedIn = "https://www.linkedin.com/in/elviskisekka/"
@@ -584,7 +584,7 @@ pictureUrl = "/images/team/Julie.png"
 # [[team_member]]
 # Name = "Sarra Maatallah"
 # Title = "Senior Account Director and Team Lead"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # priority = 2
 # quote = "'I always believe that the work you deliever is an extension of yourself. Care about the way you want your work performance to be look at the same way you care about your own image. Quality, passion and care should  be what define you. This is my own recipe to success.''"
 # pictureUrl = "/images/team/Sarra.png"
@@ -593,7 +593,7 @@ pictureUrl = "/images/team/Julie.png"
 
 [[team_member]]
 Name = "Manu Mathew"
-Team = "Team lead & Account Management"
+Team = "Brand Directors"
 Title = "Account Specialist"
 quote = "Alone we can do so little, together we can do so much"
 pictureUrl = "/images/team/Manu.png"
@@ -604,7 +604,7 @@ url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
 # [[team_member]]
 # Name = "Carlos De Almeida"
 # Title = "Senior Account Director and Team Lead"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # priority = 1
 # quote = "\"Care is the key of any successful business partnership\""
 # pictureUrl = "/images/team/Carlos.png"
@@ -615,7 +615,7 @@ url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
 # Name = "Withney Lupter"
 # Title = "Senior Account Director and Team Lead"
 # priority = 1
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # quote = "\"If Amazon offers something for free, take advantage of it.\""
 # pictureUrl = "/images/team/Whitney.png"
 # url.LinkedIn = "https://www.linkedin.com/in/lupterwithney/"
@@ -625,7 +625,7 @@ url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
 # [[team_member]]
 # Name = "Ang\u00e9lica L\u00f3pez"
 # Title = "Senior Account Director"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # quote = "\"Who is not able to adapt to the constant changes is out of the game\""
 # pictureUrl = "/images/team/Angelica.png"
 # url.LinkedIn = "https://www.linkedin.com/in/angelicalopez8661/"
@@ -634,7 +634,7 @@ url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
 # [[team_member]]
 # Name = "Monika Palagiri"
 # Title = "Account Support"
-# Team = "Team lead & Account Management"
+# Team = "Brand Directors"
 # quote = "\"The way to smooth,efficient & successful business is attention to little details\""
 # pictureUrl = "/images/team/Monika.png"
 # url.LinkedIn = "https://www.linkedin.com/in/monika-palagiri-67711bb2"
