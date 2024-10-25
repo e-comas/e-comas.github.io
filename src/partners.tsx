@@ -228,7 +228,7 @@ export default (
     </Hero>
     {/* <Breadcrumbs /> */}
     <main id="main-content" class="blog">
-      {partners.map((partner) => (
+      {partners.sort((a,b)=>a.name.toLowerCase()<b.name.toLowerCase()?-1:1).map((partner) => (
         <article id={partner.id}>
           <a href={partner.link}>
             {partner.image.endsWith("svg") ? (
