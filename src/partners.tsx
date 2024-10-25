@@ -190,6 +190,20 @@ const partners = [
     ),
     link: "https://davincimicrofulfillment.com/",
   },
+  {
+    image: "/images/partners/MyFBAPrep logo.png",
+    id: "myfbaprep",
+    name: "MyFBAPrep",
+    text: (
+      <>
+        MyFBAPrep is a global network of 3PLs with deep Amazon expertise, specialising
+        in marketplace and FBA prep for top Amazon sellers, enterprise brands, and 
+        fast-growing merchants. Our network scales with your growth and peak sales 
+        cycles, offering a broad range of logistics services for any business model.
+      </>
+    ),
+    link: "https://myfbaprep.com/?utm_source=referral&utm_medium=partner&utm_campaign=ecomas",
+  },
 ];
 
 export default (
