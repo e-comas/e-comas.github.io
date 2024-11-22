@@ -173,16 +173,6 @@ url.YouTube = "https://www.youtube.com/watch?v=lW1ffcwiyP8"
 url.Calendly = "https://calendly.com/alexz-ecommerce"
 
 
-[[team_member]]
-Name = "Michael Yanez"
-Team = "Business Development"
-Title = "Head of US Business Development"
-contactPage = true
-pictureUrl = "/images/team/Michael.png"
-url.LinkedIn = "https://www.linkedin.com/in/michaelyanez/"
-url.Calendly = "https://calendly.com/michael-ecomas"
-
-
 # [[team_member]]
 # Name = "Pete du Pon"
 # Team = "Business Development"
