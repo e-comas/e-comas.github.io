@@ -166,7 +166,7 @@ export default (
         </figcaption>
         <Picture src={"/images/e-comas-206.jpg"} alt={"eComas Team"} />
       </figure>
-
+      <a href="/torval.html" style={"display:none;" as any}></a>
       {/* <ElementWithBackgroundImage
         tagName="section"
         src="/images/Banner6 3x .png"
