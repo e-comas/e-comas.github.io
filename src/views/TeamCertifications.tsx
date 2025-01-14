@@ -87,6 +87,18 @@ export default () => (
           src="/images/certifications/channelengine_silver-partner.png"
         />
       </a>
+
+      <a
+        href="https://https://advertising.amazon.com/partners/directory/details/amzn1.ads1.ma1.cj3vydv54i8qcb80mhstj0em0/e-Comas-Sarl"
+        target="_blank"
+        rel="noopener"
+        role="listitem"
+      >
+        <Picture
+          alt="Amazon Marketing Cloud services provider"
+          src="/images/certifications/Amazon Marketing Cloud services provider crop.png"
+        />
+      </a>
     </div>
   </section>
 );
