@@ -20,7 +20,7 @@ await Promise.all([
         process.env.DEBUG && {
           devtools: true,
           args: ["--no-sandbox"],
-          protocolTimeout: 3600000,
+          protocolTimeout: 3600000000,
         }
       );
       const pages = await crawlPages(findPages(browser));
