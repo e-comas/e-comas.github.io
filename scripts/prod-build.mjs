@@ -16,7 +16,13 @@ await Promise.all([
   (async () => {
     let browser;
     try {
-      browser = await puppeteer.launch(process.env.DEBUG && { devtools: true, args: ['--no-sandbox'] });
+      browser = await puppeteer.launch(
+        process.env.DEBUG && {
+          devtools: true,
+          args: ["--no-sandbox"],
+          protocolTimeout: 3600000,
+        }
+      );
       const pages = await crawlPages(findPages(browser));
       if (process.env.DEBUG) await new Promise(Function.prototype);
       for (const page of pages) {
