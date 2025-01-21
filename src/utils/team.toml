@@ -381,15 +381,6 @@ url.YouTube = "https://www.youtube.com/watch?v=rHKvKtK4dsI"
 # url.LinkedIn = "https://www.linkedin.com/in/davy-m-b950b622"
 # priority = 1
 
-[[team_member]]
-Name = "Elvis Kisekka"
-Title = "Account Director"
-Team = "Brand Directors"
-quote = "\"The secret to success is to do the common things uncommonly well.\""
-pictureUrl = "/images/team/Elvis.png"
-url.LinkedIn = "https://www.linkedin.com/in/elviskisekka/"
-priority = 2
-
 
 [[team_member]]
 Name = "Tiffany Lemprière"
