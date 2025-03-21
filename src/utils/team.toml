@@ -182,6 +182,13 @@ url.Calendly = "https://calendly.com/alexz-ecommerce"
 # url.LinkedIn = "https://www.linkedin.com/in/pete-du-pon/"
 # url.Calendly = "https://calendly.com/pete-ecomas"
 
+[[team_member]]
+Name = "Devin booth"
+Team = "Business Development"
+Title = "Director of Sales"
+pictureUrl = "/images/team/Teams-New-Devin.png"
+# url.Calendly = "https://calendly.com/TODO"
+
 
 [[team_member]]
 Name = "Riley Bell"
