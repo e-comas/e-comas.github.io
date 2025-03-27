@@ -50,17 +50,30 @@ export default (
         <div>
           <img src="/images/Earth.svg" />
           <p>e-Comas Office Locations</p>
-          <a
-            href="https://advertising.amazon.com/partners/directory/details/amzn1.ads1.ma1.cj3vydv54i8qcb80mhstj0em0/"
-            target="_blank"
-            rel="noopener"
-            role="listitem"
-          >
-            <Picture
-              src="/images/certifications/Verified partner badge.png"
-              alt="Amazon Ads Verified Partner badge"
-            />
-          </a>
+          <div id="certifs">
+            <a
+              href="https://advertising.amazon.com/partners/directory/details/amzn1.ads1.ma1.cj3vydv54i8qcb80mhstj0em0/"
+              target="_blank"
+              rel="noopener"
+              role="listitem"
+            >
+              <Picture
+                src="/images/certifications/Verified partner badge.png"
+                alt="Amazon Ads Verified Partner badge"
+              />
+            </a>
+            <a
+              href="https://youtu.be/8VCCGLo0E9o?si=xAgxuiFJ2QxQMNW3"
+              target="_blank"
+              rel="noopener"
+              role="listitem"
+            >
+              <Picture
+                src="/images/certifications/BFM-WebsiteLogo.png"
+                alt="As seen on BFM"
+              />
+            </a>
+          </div>
         </div>
       </figure>
 
