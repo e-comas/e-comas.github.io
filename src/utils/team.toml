@@ -187,7 +187,8 @@ Name = "Devin booth"
 Team = "Business Development"
 Title = "Director of Sales"
 pictureUrl = "/images/team/Teams-New-Devin.png"
-# url.Calendly = "https://calendly.com/TODO"
+url.Calendly = "https://calendly.com/d.booth-e-comas"
+url.LinkedIn = "https://www.linkedin.com/in/devin-booth-amazon-expert/"
 
 
 [[team_member]]
@@ -286,7 +287,7 @@ Name = "Charl\u00e8ne Gr\u00e9goire"
 Title = "Account Director"
 Team = "Brand Directors"
 quote = "\"Every problem is a gift - without problems we would not grow\""
-pictureUrl = "/images/team/Charlene-Gregoire.png"
+pictureUrl = "/images/team/Teams-New-Charlène.png"
 url.LinkedIn = "https://www.linkedin.com/in/charlene-gregoire"
 url.YouTube = "https://www.youtube.com/watch?v=DTdtGuAuY6E"
 priority = 2
@@ -588,6 +589,19 @@ pictureUrl = "/images/team/Teams-New-Manu.png"
 url.LinkedIn = "https://www.linkedin.com/in/manujoymathew"
 url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
 
+[[team_member]]
+Name = "Preethi Gopakumar"
+Team = "Content"
+Title = "Content Intern"
+url.LinkedIn = "https://www.linkedin.com/in/preethi-gopakumar-2588b6138/"
+pictureUrl = "/images/team/Teams-New-Preethi.png"
+
+[[team_member]]
+Name = "Kevin Abraham Suresh"
+Team = "Content"
+Title = "Content Intern"
+url.LinkedIn = "https://www.linkedin.com/in/kevin-abraham-suresh-965730b8/"
+pictureUrl = "/images/team/Teams-New-KevinAbraham.png"
 
 # [[team_member]]
 # Name = "Carlos De Almeida"
