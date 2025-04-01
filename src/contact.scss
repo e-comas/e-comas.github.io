@@ -30,15 +30,15 @@ main > h3 {
     }
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 834px) {
     grid-template-columns: repeat(2, 20rem);
   }
-  @media screen and (min-width: 800px) and (max-width: 1199px) {
-    figure:last-of-type {
-      grid-column: span 2;
-      margin: auto;
-    }
-  }
+  // @media screen and (min-width: 800px) and (max-width: 1199px) {
+  //   figure:last-of-type {
+  //     grid-column: span 2;
+  //     margin: auto;
+  //   }
+  // }
   // @media screen and (min-width: 1200px) {
   //   grid-template-columns: repeat(3, 20rem);
   // }
