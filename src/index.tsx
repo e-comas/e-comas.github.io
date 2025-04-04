@@ -69,7 +69,7 @@ export default (
               role="listitem"
             >
               <Picture
-                src="/images/certifications/BFM-WebsiteLogo.png"
+                src="/images/certifications/WebsiteLogo-BFM.png"
                 alt="As seen on BFM"
               />
             </a>
