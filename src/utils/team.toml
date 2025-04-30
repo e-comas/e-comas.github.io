@@ -193,8 +193,8 @@ url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
 
 [[team_member]]
 Name = "Marius Popov"
-Team = "Retail Media"
-Title = "Head of Retail Media"
+Team = "Seller Performance, Retail & Distribution"
+Title = "Head of Distribution"
 url.LinkedIn = "https://www.linkedin.com/in/marius-popov-488a5752/"
 pictureUrl = "/images/team/Teams-New-MariusPopov.png"
 priority = 3
@@ -202,7 +202,7 @@ priority = 3
 
 [[team_member]]
 Name = "Richard Ravichandar"
-Title = "Account Director"
+Title = "Senior Account Director"
 Team = "Brand Directors"
 quote = "We CARE for your business like no one else did. We GROW your business like never before."
 pictureUrl = "/images/team/Teams-New-Richard.png"
@@ -316,13 +316,6 @@ pictureUrl = "/images/team/Snophia.png"
 
 
 [[team_member]]
-Name = "Efigenia Miranda"
-Title = "Retail Support Specialist"
-Team = "Seller Performance, Retail & Distribution"
-url.LinkedIn = "https://www.linkedin.com/in/efigenia-miranda"
-pictureUrl = "/images/team/Teams-New-Efigenia.png"
-
-[[team_member]]
 Name = "Sandeep Venkataraj"
 Title = "Content Specialist"
 Team = "Content"
@@ -420,3 +413,8 @@ Title = "Content Intern"
 url.LinkedIn = "https://www.linkedin.com/in/kevin-abraham-suresh-965730b8/"
 pictureUrl = "/images/team/Teams-New-Kevin.png"
 
+[[team_member]]
+Name = "Arjun Narayan"
+Team = "Retail Media"
+Title = "Advertising Specialist"
+pictureUrl = "/images/team/Arjun.png"
