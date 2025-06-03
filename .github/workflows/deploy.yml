@@ -33,7 +33,7 @@ jobs:
       - name: Environment Information
         run: npx envinfo
       - name: Install dependencies
-        run: corepack yarn install
+        run: corepack yarn install --immutable
       - run: cd docs && git rm --ignore-unmatch -- *.svg *.html *.css *.js
       - name: Build website
         # Re-try several times in case there's a crash.
