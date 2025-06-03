@@ -20,12 +20,12 @@ jobs:
         with:
           ref: gh-pages
           path: docs
-      - name: Cache npm dependencies
-        id: cache-npm-libraries
-        uses: actions/cache@v3
-        with:
-          path: .yarn/cache/*
-          key: ${{ runner.os }}
+      # - name: Cache npm dependencies
+      #   id: cache-npm-libraries
+      #   uses: actions/cache@v3
+      #   with:
+      #     path: .yarn/cache/*
+      #     key: ${{ runner.os }}
       - name: Use Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v3
         with:
