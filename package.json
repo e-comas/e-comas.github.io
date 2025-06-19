@@ -39,7 +39,6 @@
     "postinstall": "node scripts/dev-generate-toml-interop-files.mjs"
   },
   "resolutions": {
-    "@fortawesome/fontawesome-svg-core": "patch:@fortawesome/fontawesome-svg-core@npm:1.2.36#.yarn/patches/@fortawesome-fontawesome-svg-core-npm-1.2.36-a7e9aa4045",
     "@rollup/plugin-sucrase@4.0.1": "patch:@rollup/plugin-sucrase@npm:4.0.1#.yarn/patches/@rollup-plugin-sucrase-npm-4.0.1-4a1e7679d7",
     "prop-types": "patch:prop-types@npm:15.7.2#.yarn/patches/prop-types-npm-15.7.2-d7a04f2274"
   }
