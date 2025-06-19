@@ -21,10 +21,10 @@ await Promise.all([
           ? {
               devtools: true,
               args: ["--no-sandbox"],
-              protocolTimeout: 3600000000,
+              protocolTimeout: 2147483647,
               enableExtensions: true,
             }
-          : { protocolTimeout: 3600000000 }
+          : { protocolTimeout: 2147483647 }
       );
       const pages = await crawlPages(findPages(browser));
       if (process.env.DEBUG) await new Promise(Function.prototype);
