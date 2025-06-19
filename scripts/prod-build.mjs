@@ -22,9 +22,10 @@ await Promise.all([
               devtools: true,
               args: ["--no-sandbox"],
               protocolTimeout: 2147483647,
-              enableExtensions: true,
             }
-          : { protocolTimeout: 2147483647 }
+          : {
+              args: ["--headless=old"],
+            }
       );
       const pages = await crawlPages(findPages(browser));
       if (process.env.DEBUG) await new Promise(Function.prototype);
