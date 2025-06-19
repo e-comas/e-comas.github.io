@@ -21,6 +21,7 @@ await Promise.all([
           devtools: true,
           args: ["--no-sandbox"],
           protocolTimeout: 3600000000,
+          enableExtensions: true,
         }
       );
       const pages = await crawlPages(findPages(browser));
