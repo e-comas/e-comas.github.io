@@ -37,9 +37,5 @@
     "deploy": "git push && gh workflow run deploy.yml --ref main",
     "prod": "git cherry-pick 369a1def157262530f8c43c9d4205a5974edb1e4 && git push e-comas.com -f && gh workflow run deploy.yml --repo e-comas/e-comas.com --ref main && git reset HEAD^ --hard",
     "postinstall": "node scripts/dev-generate-toml-interop-files.mjs"
-  },
-  "resolutions": {
-    "@rollup/plugin-sucrase@4.0.1": "patch:@rollup/plugin-sucrase@npm:4.0.1#.yarn/patches/@rollup-plugin-sucrase-npm-4.0.1-4a1e7679d7",
-    "prop-types": "patch:prop-types@npm:15.7.2#.yarn/patches/prop-types-npm-15.7.2-d7a04f2274"
   }
 }
