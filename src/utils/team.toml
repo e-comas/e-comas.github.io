@@ -77,12 +77,11 @@ url.YouTube = "https://www.youtube.com/watch?v=nN8QWZ5S7-M"
 priority = 3
 
 [[team_member]]
-Name = "Romain Dattée"
+Name = "Janis Dechamps"
 Team = "Executive Committee"
 Title = "CFO & Head of Retail"
-quote = "\"Devil is in the detail\""
-url.LinkedIn = "https://www.linkedin.com/in/romain-datt%C3%A9e-48bb4759/"
-pictureUrl = "/images/team/Teams-New-RomainD.png"
+url.LinkedIn = "https://lu.linkedin.com/in/janis-dechamps-97b0295"
+pictureUrl = "/images/team/Teams-New-Janis.png"
 priority = 2
 
 [[team_member]]
