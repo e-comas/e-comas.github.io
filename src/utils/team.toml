@@ -9,7 +9,7 @@ team_order = [
   "Retail Media",
   "Seller Performance, Retail & Distribution",
   "Admin",
-  "Marketing",
+  "Creative & Digital Marketing",
 ]
 
 # [CEO]
@@ -78,15 +78,15 @@ priority = 3
 
 [[team_member]]
 Name = "Janis Dechamps"
-Team = "Executive Committee"
-Title = "CFO & Head of Retail"
+Team = "Admin"
+Title = "COO"
 url.LinkedIn = "https://lu.linkedin.com/in/janis-dechamps-97b0295"
 pictureUrl = "/images/team/Teams-New-Janis.png"
 priority = 2
 
 [[team_member]]
 Name = "Claudiu Clement"
-Title = "Chief Technical Officer"
+Title = "CTO"
 Team = "Executive Committee"
 quote = "\"Building a great experience for the right client is the main driver of success in ecommerce.\""
 pictureUrl = "/images/team/Teams-New-Claudiu.png"
@@ -189,7 +189,6 @@ pictureUrl = "/images/team/Anchit.png"
 url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
 
 
-
 [[team_member]]
 Name = "Marius Popov"
 Team = "Seller Performance, Retail & Distribution"
@@ -244,6 +243,7 @@ quote = "Leap, and the net will appear."
 url.LinkedIn = "https://www.linkedin.com/in/richie7/"
 pictureUrl = "/images/team/Teams-New-RichardArokiaraj.png"
 
+
 [[team_member]]
 Name = "Henintsoa Andriatianarivo"
 Title = "Content Specialist"
@@ -264,23 +264,12 @@ pictureUrl = "/images/team/Manasa.png"
 
 
 [[team_member]]
-Name = "Raichel Rajan"
-Title = "Content Specialist"
-Team = "Content"
-quote = "\"Success is not a one time life achievement. Success is a habit\""
-pictureUrl = "/images/team/Raichel.png"
-url.LinkedIn = "https://www.linkedin.com/in/raichel-rajan-34a894b9"
-
-
-[[team_member]]
 Name = "Mireille Rasoa"
 Title = "Content Specialist"
 Team = "Content"
 quote = "\"You are your only limit\""
 pictureUrl = "/images/team/Teams-New-Mireille_.png"
 url.LinkedIn = "https://www.linkedin.com/in/mireille-rasoa-605194215/"
-
-
 
 [[team_member]]
 Name = "Tiffany Lemprière"
@@ -354,21 +343,21 @@ pictureUrl = "/images/team/Teams-New-Audrey.png"
 [[team_member]]
 Name = "Jessica Barton"
 Title = "Social & Copywriting Manager"
-Team = "Marketing"
+Team = "Creative & Digital Marketing"
 pictureUrl = "/images/team/Teams-New-JessB.png"
 
 
 [[team_member]]
 Name = "Jessamy Chapman"
 Title = "Press Manager"
-Team = "Marketing"
+Team = "Creative & Digital Marketing"
 pictureUrl = "/images/team/Jessamy-Chapman.png"
 
 
 [[team_member]]
 Name = "Joel Young"
 Title = "Lead Creative"
-Team = "Marketing"
+Team = "Creative & Digital Marketing"
 quote = "Be happy in everything you do. That's most important. And give a pet a home."
 pictureUrl = "/images/team/Joel.png"
 
@@ -376,22 +365,15 @@ pictureUrl = "/images/team/Joel.png"
 [[team_member]]
 Name = "Mario Jeffrin"
 Title = "Designer"
-Team = "Marketing"
+Team = "Creative & Digital Marketing"
 pictureUrl = "/images/team/Mario.png"
 
 
 [[team_member]]
 Name = "Antoine du Hamel"
 Title = "Front End and Back End Engineer"
-Team = "Marketing"
+Team = "Creative & Digital Marketing"
 pictureUrl = "/images/team/Antoine.png"
-
-
-[[team_member]]
-Name = "Julie Caillet"
-Team = "Marketing"
-Title = "Community Manager"
-pictureUrl = "/images/team/Julie.png"
 
 
 [[team_member]]
@@ -422,3 +404,39 @@ Name = "Arjun Narayan"
 Team = "Retail Media"
 Title = "Advertising Specialist"
 pictureUrl = "/images/team/Arjun.png"
+
+[[team_member]]
+Name = "Hedi Guembri"
+Team = "Brand Directors"
+Title = "Account Director"
+# pictureUrl = "/images/team/TODO.png"
+url.LinkedIn = "https://www.linkedin.com/in/hedi-guembri/"
+
+
+[[team_member]]
+Name = "Josh Gibson"
+Team = "Brand Directors"
+Title = "Account Director"
+# pictureUrl = "/images/team/TODO.png"
+# url.LinkedIn = ""
+
+[[team_member]]
+Name = "Nikoleta Spasic"
+Team = "Content"
+Title = "Content Specialist"
+url.LinkedIn = "https://www.linkedin.com/in/nikoleta-spasic-929145197/"
+# pictureUrl = "/images/team/TODO.png"
+
+[[team_member]]
+Name = "Parker Amstutz"
+Title = "Head of Creative"
+Team = "Creative & Digital Marketing"
+# pictureUrl = "/images/team/TODO.png"
+url.LinkedIn = "https://www.linkedin.com/in/parker-amstutz-86493473/"
+
+[[team_member]]
+Name = "Loris Voyer"
+Title = "Head of Digital Marketing"
+Team = "Creative & Digital Marketing"
+# pictureUrl = "/images/team/TODO.png"
+url.LinkedIn = "https://www.linkedin.com/in/loris-voyer/"
