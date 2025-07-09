@@ -61,14 +61,14 @@ bio = """\
     years.\
   """
 pictureUrl = "/images/team/Teams-New-Jérôme.png"
-url.LinkedIn = "https://www.linkedin.com/in/jeromedeguigneamazonexpert/"
+url.LinkedIn = "https://www.linkedin.com/in/jerom$edeguigneamazonexpert/"
 # url.Medium = "https://amazon-expert.medium.com/"
 url.YouTube = "https://www.youtube.com/channel/UC8FEB3vsicxo5gI3mtdl50A"
 priority = 4
 
 [[team_member]]
 Name = "Nazlı Kayıkçı"
-Title = "Chief Operating Officer"
+Title = "COO"
 Team = "Executive Committee"
 quote = "Identifying your gaps and needs at the beginning of your ecom journey is the greatest favor that you can do for your brand'"
 pictureUrl = "/images/team/Teams-New-Nazli.png"
@@ -79,7 +79,7 @@ priority = 3
 [[team_member]]
 Name = "Janis Dechamps"
 Team = "Admin"
-Title = "COO"
+Title = "CFO & Head of Retail"
 url.LinkedIn = "https://lu.linkedin.com/in/janis-dechamps-97b0295"
 pictureUrl = "/images/team/Teams-New-Janis.png"
 priority = 2
