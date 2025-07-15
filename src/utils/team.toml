@@ -409,15 +409,15 @@ pictureUrl = "/images/team/Arjun.png"
 Name = "Hedi Guembri"
 Team = "Brand Directors"
 Title = "Account Director"
-# pictureUrl = "/images/team/TODO.png"
+pictureUrl = "/images/team/Teams-New-Hedy.png"
 url.LinkedIn = "https://www.linkedin.com/in/hedi-guembri/"
 
 
 [[team_member]]
 Name = "Josh Gibson"
 Team = "Brand Directors"
+pictureUrl = "/images/team/Teams-New-Josh.png"
 Title = "Account Director"
-# pictureUrl = "/images/team/TODO.png"
 # url.LinkedIn = ""
 
 [[team_member]]
@@ -425,7 +425,7 @@ Name = "Nikoleta Spasic"
 Team = "Content"
 Title = "Content Specialist"
 url.LinkedIn = "https://www.linkedin.com/in/nikoleta-spasic-929145197/"
-# pictureUrl = "/images/team/TODO.png"
+pictureUrl = "/images/team/Teams-New-Nikoleta.png"
 
 [[team_member]]
 Name = "Parker Amstutz"
@@ -438,5 +438,5 @@ url.LinkedIn = "https://www.linkedin.com/in/parker-amstutz-86493473/"
 Name = "Loris Voyer"
 Title = "Head of Digital Marketing"
 Team = "Creative & Digital Marketing"
-# pictureUrl = "/images/team/TODO.png"
+pictureUrl = "/images/team/Teams-New-Loris.png"
 url.LinkedIn = "https://www.linkedin.com/in/loris-voyer/"
