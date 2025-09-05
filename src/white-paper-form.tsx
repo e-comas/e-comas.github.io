@@ -22,8 +22,14 @@ const papers: {
   link: string;
 }[] = [
   {
+    image: "/images/high-angle-designer-holding-smartphone.jpg",
+    title: "Managing Content on Amazon",
+    text: "Using primary research and best practice examples from our clients, we offer a complete guide to managing the content of a large catalogue on Amazon, for better brand consistency, higher conversion rates, and boosted revenue.",
+    link: "https://go.e-comas.com/l/885733/2025-09-04/ptc3q",
+  },
+  {
     image: "/images/white-paper-5.png",
-    title: " AMC Unpacked: Demystifying 18 use cases of Amazon Marketing Cloud",
+    title: "AMC Unpacked: Demystifying 18 use cases of Amazon Marketing Cloud",
     text: "Here’s our guide on 18 different ways you can use AMC to improve your \
 marketing game, maximise your ad spend and be more competitive.",
     link: "https://go.e-comas.com/l/885733/2024-04-15/mzw27",
