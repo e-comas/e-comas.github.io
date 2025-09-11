@@ -429,9 +429,9 @@ pictureUrl = "/images/team/Teams-New-Nikoleta.png"
 
 [[team_member]]
 Name = "Parker Amstutz"
-Title = "Head of Creative"
+Title = "Head of Creatives"
 Team = "Creative & Digital Marketing"
-# pictureUrl = "/images/team/TODO.png"
+pictureUrl = "/images/team/Teams-New-Parker.png"
 url.LinkedIn = "https://www.linkedin.com/in/parker-amstutz-86493473/"
 
 [[team_member]]
