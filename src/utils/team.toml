@@ -440,3 +440,28 @@ Title = "Head of Digital Marketing"
 Team = "Creative & Digital Marketing"
 pictureUrl = "/images/team/Teams-New-Loris.png"
 url.LinkedIn = "https://www.linkedin.com/in/loris-voyer/"
+
+[[team_member]]
+Name = "Yusuf Kayikci"
+Title = "Distribution Specialist"
+Team = "Seller performance, Retail & Distribution"
+pictureUrl = "images/team/Teams-New-Yusuf Kayikci.png"
+
+[[team_member]]
+Name = "Radmila Zogovic"
+Title = "Retail Specialist"
+Team = "Seller performance, Retail & Distribution"
+pictureUrl = "images/team/Teams-New-Radmila.png"
+
+[[team_member]]
+Name = "Tijana Stepovic"
+Title = "Content Specialist"
+Team = "Content"
+# pictureUrl = "images/team/Teams-New-Tijana.png"
+
+[[team_member]]
+Name = "Manasa Murthy"
+Title = "Account Specialist"
+Team = "Brand Directors"
+url.LinkedIn = "https://www.linkedin.com/in/manasa-k-53a084197/"
+pictureUrl = "/images/team/Manasa.png"
