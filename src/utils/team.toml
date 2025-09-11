@@ -453,10 +453,10 @@ Title = "Retail Specialist"
 Team = "Seller performance, Retail & Distribution"
 pictureUrl = "images/team/Teams-New-Radmila.png"
 
-[[team_member]]
-Name = "Tijana Stepovic"
-Title = "Content Specialist"
-Team = "Content"
+# [[team_member]]
+# Name = "Tijana Stepovic"
+# Title = "Content Specialist"
+# Team = "Content"
 # pictureUrl = "images/team/Teams-New-Tijana.png"
 
 [[team_member]]
