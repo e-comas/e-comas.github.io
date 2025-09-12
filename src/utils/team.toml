@@ -465,3 +465,39 @@ Title = "Account Specialist"
 Team = "Brand Directors"
 url.LinkedIn = "https://www.linkedin.com/in/manasa-k-53a084197/"
 pictureUrl = "/images/team/Manasa.png"
+
+
+[[team_member]]
+Name = "Annette Lees"
+Title = "Head of UK Growth"
+Team = "Seller Performance, Retail & Distribution"
+pictureUrl = "images/team/teams-new-annettelees.png"
+
+[[team_member]]
+Name = "Tori Thomas"
+Title = "Marketing Executive"
+Team = "Seller Performance, Retail & Distribution"
+pictureUrl = "images/team/Teams-New-Tori.png"
+
+[[team_member]]
+Name = "Mick Swift"
+Title = "Warehouse Manager"
+Team = "Seller Performance, Retail & Distribution"
+pictureUrl = "images/team/Teams-New-Mick.png"
+
+[[team_member]]
+Name = "Harry Jones"
+Title = "Warehouse Assistant Manager"
+Team = "Seller Performance, Retail & Distribution"
+pictureUrl = "images/team/Teams-New-Harry.png"
+
+[[team_member]]
+Name = "Martyn Walley"
+Title = "Warehouse Assistant Manager"
+Team = "Seller Performance, Retail & Distribution"
+
+[[team_member]]
+Name = "Rachel Adamberry"
+Title = "Customer Service Executive"
+Team = "Seller Performance, Retail & Distribution"
+pictureUrl = "images/team/Teams-New-Rachel.png"
