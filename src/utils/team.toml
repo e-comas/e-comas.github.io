@@ -501,3 +501,15 @@ Name = "Rachel Adamberry"
 Title = "Customer Service Executive"
 Team = "Seller Performance, Retail & Distribution"
 pictureUrl = "images/team/Teams-New-Rachel.png"
+
+[[team_member]]
+Name = "Shanmuga Priya"
+Title = "Advertising specialist"
+Team = "Retail Media"
+pictureUrl = "images/team/Teams-New-Shanmuga.png"
+
+[[team_member]]
+Name = "El Idrissi Kawtar "
+Title = "Account Specialist"
+Team = "Brand Directors"
+pictureUrl = "images/team/Teams-New-Katawar.png"
