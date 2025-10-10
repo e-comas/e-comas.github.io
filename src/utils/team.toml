@@ -445,19 +445,19 @@ url.LinkedIn = "https://www.linkedin.com/in/loris-voyer/"
 Name = "Yusuf Kayikci"
 Title = "Distribution Specialist"
 Team = "Seller Performance, Retail & Distribution"
-pictureUrl = "images/team/Teams-New-Yusuf Kayikci.png"
+pictureUrl = "/images/team/Teams-New-Yusuf Kayikci.png"
 
 [[team_member]]
 Name = "Radmila Zogovic"
 Title = "Retail Specialist"
 Team = "Seller Performance, Retail & Distribution"
-pictureUrl = "images/team/Teams-New-Radmila.png"
+pictureUrl = "/images/team/Teams-New-Radmila.png"
 
 [[team_member]]
 Name = "Tijana Stepovic"
 Title = "Content Specialist"
 Team = "Content"
-# pictureUrl = "images/team/Teams-New-Tijana.png"
+# pictureUrl = "/images/team/Teams-New-Tijana.png"
 
 [[team_member]]
 Name = "Manasa Murthy"
@@ -471,25 +471,25 @@ pictureUrl = "/images/team/Manasa.png"
 Name = "Annette Lees"
 Title = "Head of UK Growth"
 Team = "Seller Performance, Retail & Distribution"
-pictureUrl = "images/team/teams-new-annettelees.png"
+pictureUrl = "/images/team/teams-new-annettelees.png"
 
 [[team_member]]
 Name = "Tori Thomas"
 Title = "Marketing Executive"
 Team = "Seller Performance, Retail & Distribution"
-pictureUrl = "images/team/Teams-New-Tori.png"
+pictureUrl = "/images/team/Teams-New-Tori.png"
 
 [[team_member]]
 Name = "Mick Swift"
 Title = "Warehouse Manager"
 Team = "Seller Performance, Retail & Distribution"
-pictureUrl = "images/team/Teams-New-Mick.png"
+pictureUrl = "/images/team/Teams-New-Mick.png"
 
 [[team_member]]
 Name = "Harry Jones"
 Title = "Warehouse Assistant Manager"
 Team = "Seller Performance, Retail & Distribution"
-pictureUrl = "images/team/Teams-New-Harry.png"
+pictureUrl = "/images/team/Teams-New-Harry.png"
 
 [[team_member]]
 Name = "Martyn Walley"
@@ -500,16 +500,16 @@ Team = "Seller Performance, Retail & Distribution"
 Name = "Rachel Adamberry"
 Title = "Customer Service Executive"
 Team = "Seller Performance, Retail & Distribution"
-pictureUrl = "images/team/Teams-New-Rachel.png"
+pictureUrl = "/images/team/Teams-New-Rachel.png"
 
 [[team_member]]
 Name = "Shanmuga Priya"
 Title = "Advertising specialist"
 Team = "Retail Media"
-pictureUrl = "images/team/Team-Template-Shanmuga-Priya.png"
+pictureUrl = "/images/team/Team-Template-Shanmuga-Priya.png"
 
 [[team_member]]
 Name = "El Idrissi Kawtar"
 Title = "Account Specialist"
 Team = "Brand Directors"
-pictureUrl = "images/team/Team-Template-EL-IDRISSI.png"
+pictureUrl = "/images/team/Team-Template-EL-IDRISSI.png"
