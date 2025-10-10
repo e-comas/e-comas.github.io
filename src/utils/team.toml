@@ -506,10 +506,10 @@ pictureUrl = "images/team/Teams-New-Rachel.png"
 Name = "Shanmuga Priya"
 Title = "Advertising specialist"
 Team = "Retail Media"
-pictureUrl = "images/team/Teams-New-Shanmuga.png"
+pictureUrl = "images/team/Team-Template-Shanmuga-Priya.png"
 
 [[team_member]]
-Name = "El Idrissi Kawtar "
+Name = "El Idrissi Kawtar"
 Title = "Account Specialist"
 Team = "Brand Directors"
-pictureUrl = "images/team/Teams-New-Katawar.png"
+pictureUrl = "images/team/Team-Template-EL-IDRISSI.png"
