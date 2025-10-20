@@ -457,7 +457,7 @@ pictureUrl = "/images/team/Teams-New-Radmila.png"
 Name = "Tijana Stepovic"
 Title = "Content Specialist"
 Team = "Content"
-# pictureUrl = "/images/team/Teams-New-Tijana.png"
+pictureUrl = "/images/team/Team-Template-Tijana.png"
 
 [[team_member]]
 Name = "Manasa Murthy"
