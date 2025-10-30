@@ -501,3 +501,21 @@ Name = "El Idrissi Kawtar"
 Title = "Account Director"
 Team = "Brand Directors"
 pictureUrl = "/images/team/Team-Template-EL-IDRISSI.png"
+
+[[team_member]]
+Name = "Fred Rainjonneau"
+Title = "General Manager Distribution"
+Team = "Seller Performance, Retail & Distribution"
+pictureUrl = "/images/team/Team-Template-Fred.png"
+
+[[team_member]]
+Name = "Marc Villaseca"
+Title = "Senior Ads Strategist"
+Team = "Retail Media"
+pictureUrl = "/images/team/Team-Template-Marc.png"
+
+[[team_member]]
+Name = "Jack Turner"
+Title = "COO"
+Team = "Executive Committee"
+pictureUrl = "/images/team/Team-Template-Jack.png"
