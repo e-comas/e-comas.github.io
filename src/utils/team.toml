@@ -352,7 +352,7 @@ pictureUrl = "/images/team/Mario.png"
 Name = "Stéphane du Hamel"
 Title = "Front End and Back End Engineer"
 Team = "Creative & Digital Marketing"
-# pictureUrl = "/images/team/Antoine.png"
+pictureUrl = "/images/team/Team-Template-Stéphane.png"
 
 
 [[team_member]]
@@ -511,3 +511,10 @@ Name = "Jack Turner"
 Title = "COO"
 Team = "Executive Committee"
 pictureUrl = "/images/team/Team-Template-Jack.png"
+
+[[team_member]]
+Name = "Seval Solmaz"
+Title = "Head of strategy"
+Team = "Brand Directors"
+priority = 1
+pictureUrl = "/images/team/Sevel.png"
