@@ -184,7 +184,7 @@ priority = 2
 [[team_member]]
 Name = "Anchit Abraham"
 Team = "Brand Directors"
-Title = "Account Specialist"
+Title = "Senior Account Specialist"
 pictureUrl = "/images/team/Anchit.png"
 url.LinkedIn = "https://www.linkedin.com/in/anchitabraham/"
 
@@ -257,7 +257,7 @@ url.YouTube = "https://www.youtube.com/watch?v=rmB-6-x9spA"
 [[team_member]]
 Name = "Manasa Krishnamurthy"
 Team = "Content"
-Title = "Content Specialist"
+Title = "Senior Content Specialist"
 quote = "You can not shake hands with clenched fist"
 url.LinkedIn = "https://www.linkedin.com/in/manasa-k-53a084197/"
 pictureUrl = "/images/team/Manasa.png"
@@ -358,7 +358,7 @@ pictureUrl = "/images/team/Team-Template-Stéphane.png"
 [[team_member]]
 Name = "Manu Mathew"
 Team = "Brand Directors"
-Title = "Account Specialist"
+Title = "Senior Account Specialist"
 quote = "Alone we can do so little, together we can do so much"
 pictureUrl = "/images/team/Teams-New-Manu.png"
 url.LinkedIn = "https://www.linkedin.com/in/manujoymathew"
@@ -381,7 +381,7 @@ pictureUrl = "/images/team/Teams-New-Kevin.png"
 [[team_member]]
 Name = "Arjun Narayan"
 Team = "Retail Media"
-Title = "Advertising Specialist"
+Title = "Senior Advertising Specialist"
 pictureUrl = "/images/team/Arjun.png"
 
 # [[team_member]]
@@ -440,7 +440,7 @@ pictureUrl = "/images/team/Team-Template-Tijana.png"
 
 [[team_member]]
 Name = "Manasa Murthy"
-Title = "Account Specialist"
+Title = "Senior Account Specialist"
 Team = "Brand Directors"
 url.LinkedIn = "https://www.linkedin.com/in/manasa-k-53a084197/"
 pictureUrl = "/images/team/Manasa.png"
@@ -516,5 +516,5 @@ pictureUrl = "/images/team/Team-Template-Jack.png"
 Name = "Seval Solmaz"
 Title = "Head of strategy"
 Team = "Brand Directors"
-priority = 1
+priority = 4
 pictureUrl = "/images/team/Sevel.png"
