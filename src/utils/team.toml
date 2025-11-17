@@ -382,7 +382,7 @@ pictureUrl = "/images/team/Teams-New-Kevin.png"
 Name = "Arjun Narayan"
 Team = "Retail Media"
 Title = "Senior Advertising Specialist"
-pictureUrl = "/images/team/Arjun.png"
+pictureUrl = "/images/team/Team-Template-Arjun.png"
 
 # [[team_member]]
 # Name = "Hedi Guembri"
@@ -512,3 +512,9 @@ Title = "Head of strategy"
 Team = "Brand Directors"
 priority = 4
 pictureUrl = "/images/team/Team-Template-Seval.png"
+
+[[team_member]]
+Name = "Joe Swanston"
+Title = "Business & Category Manager"
+Team = "Seller Performance, Retail & Distribution"
+pictureUrl = "/images/team/Team-Template-JoeS.png"
