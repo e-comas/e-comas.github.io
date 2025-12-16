@@ -220,9 +220,16 @@ priority = 2
 
 
 [[team_member]]
-Name = "Antonio Vicedo Mart\u00ednez"
-Title = "Head of Content"
+Name = "Seval Solmaz"
+Title = "Content team Lead"
 Team = "Content"
+pictureUrl = "/images/team/Team-Template-Seval.png"
+priority = 3
+
+[[team_member]]
+Name = "Antonio Vicedo Mart\u00ednez"
+Title = "Head of Services"
+Team = "Technology & Analytics"
 quote = "\"In a world that moves and evolves as fast as e-commerce, make sure to save some time to reflect and plan\""
 pictureUrl = "/images/team/Teams-New-Antonio.png"
 url.LinkedIn = "https://www.linkedin.com/in/antoniovicedo/"
@@ -279,12 +286,12 @@ pictureUrl = "/images/team/Teams-New-TiffanyLemprière.png"
 priority = 2
 
 
-[[team_member]]
-Name = "Mehul James"
-Team = "Retail Media"
-Title = "Advertising Specialist"
-url.LinkedIn = "https://www.linkedin.com/in/mehul-james-86654a10a"
-pictureUrl = "/images/team/Mehul.png"
+# [[team_member]]
+# Name = "Mehul James"
+# Team = "Retail Media"
+# Title = "Advertising Specialist"
+# url.LinkedIn = "https://www.linkedin.com/in/mehul-james-86654a10a"
+# pictureUrl = "/images/team/Mehul.png"
 
 
 [[team_member]]
@@ -364,12 +371,12 @@ pictureUrl = "/images/team/Teams-New-Manu.png"
 url.LinkedIn = "https://www.linkedin.com/in/manujoymathew"
 url.YouTube = "https://www.youtube.com/watch?v=37Q_2Ta4BRY"
 
-[[team_member]]
-Name = "Preethi Gopakumar"
-Team = "Content"
-Title = "Content Specialist"
-url.LinkedIn = "https://www.linkedin.com/in/preethi-gopakumar-2588b6138/"
-pictureUrl = "/images/team/Teams-New-Preethi.png"
+# [[team_member]]
+# Name = "Preethi Gopakumar"
+# Team = "Content"
+# Title = "Content Specialist"
+# url.LinkedIn = "https://www.linkedin.com/in/preethi-gopakumar-2588b6138/"
+# pictureUrl = "/images/team/Teams-New-Preethi.png"
 
 [[team_member]]
 Name = "Kevin Abraham Suresh"
@@ -392,12 +399,12 @@ pictureUrl = "/images/team/Arjun.png"
 # url.LinkedIn = "https://www.linkedin.com/in/hedi-guembri/"
 
 
-[[team_member]]
-Name = "Josh Gibson"
-Team = "Brand Directors"
-pictureUrl = "/images/team/Teams-New-Josh.png"
-Title = "Account Director"
-# url.LinkedIn = ""
+# [[team_member]]
+# Name = "Josh Gibson"
+# Team = "Brand Directors"
+# pictureUrl = "/images/team/Teams-New-Josh.png"
+# Title = "Account Director"
+# # url.LinkedIn = ""
 
 # [[team_member]]
 # Name = "Nikoleta Spasic"
@@ -502,7 +509,7 @@ pictureUrl = "/images/team/Team-Template-Marc.png"
 
 [[team_member]]
 Name = "Jack Turner"
-Title = "COO"
+Title = "Group Head of Operations"
 Team = "Executive Committee"
 pictureUrl = "/images/team/Team-Template-Jack.png"
 
