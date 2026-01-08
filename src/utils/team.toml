@@ -115,28 +115,12 @@ url.LinkedIn = "https://www.linkedin.com/in/nagapooja-ramesh-a77850136"
 
 
 [[team_member]]
-Name = "Varuna Sridhar"
-Team = "Technology & Analytics"
-Title = "PIM specialist"
-pictureUrl = "/images/team/Varuna.png"
-url.LinkedIn = "https://www.linkedin.com/in/varuna-sridhar-805193116"
-priority = 1
-
-[[team_member]]
 Name = "Michael Baron"
 Team = "Technology & Analytics"
 Title = "PIM Consultant"
 pictureUrl = "/images/team/Michael Baron.png"
 url.LinkedIn = "https://www.linkedin.com/in/michael-baron-a0808822/"
 priority = 0
-
-
-[[team_member]]
-Name = "Aditya Jain"
-Team = "Technology & Analytics"
-Title = "Senior Data Analyst"
-url.LinkedIn = "https://www.linkedin.com/in/adipec16"
-pictureUrl = "/images/team/Teams-New-AdityaJain.png"
 
 
 [[team_member]]
