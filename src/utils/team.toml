@@ -500,3 +500,9 @@ Name = "Miloš Marlović"
 Title = "Financial Analyst & Controller"
 Team = "Seller Performance, Retail & Distribution"
 pictureUrl = "/images/team/Team-Template-MilosM.png"
+
+[[team_member]]
+Name = "Tushar Jarhad"
+Title = "Sr. Dev Specialist"
+Team =   "Technology & Analytics"
+pictureUrl = "/images/team/Teams-2ndFebTemplate2026-1-Old.png"
