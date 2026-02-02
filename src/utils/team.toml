@@ -270,21 +270,6 @@ pictureUrl = "/images/team/Teams-New-TiffanyLemprière.png"
 priority = 2
 
 
-# [[team_member]]
-# Name = "Mehul James"
-# Team = "Retail Media"
-# Title = "Advertising Specialist"
-# url.LinkedIn = "https://www.linkedin.com/in/mehul-james-86654a10a"
-# pictureUrl = "/images/team/Mehul.png"
-
-
-[[team_member]]
-Name = "Sandeep Venkataraj"
-Title = "Retail and distribution Specialist"
-Team = "Seller Performance, Retail & Distribution"
-pictureUrl = "/images/team/Sandeep.png"
-
-
 [[team_member]]
 Name = "Misa Manass\u00e9"
 Title = "Office Manager"
