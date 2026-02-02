@@ -509,3 +509,9 @@ Name = "Joe Swanston"
 Title = "Business & Category Manager"
 Team = "Seller Performance, Retail & Distribution"
 pictureUrl = "/images/team/Team-Template-JoeS.png"
+
+[[team_member]]
+Name = "Miloš Marlović"
+Title = "Financial Analyst & Controller"
+Team = "Retail Media"
+pictureUrl = "/images/team/Team-Template-MilosM.png"
