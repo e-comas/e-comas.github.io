@@ -138,7 +138,7 @@ main > section {
 
         height: 1rem;
         width: 1rem;
-        border: 4px none $green;
+        border: 4px none $navy;
         border-top-style: solid;
         border-left-style: solid;
         transform: translateX(-100%) rotate(-0.125turn);
@@ -190,7 +190,7 @@ main > section {
     height: 100%;
     overflow: hidden;
     flex-shrink: 0;
-    background-color: $green;
+    background-color: $navy;
     box-shadow: 0 0.05rem 1.25rem 0 rgba(0, 0, 0, 0.08);
     border-radius: 0.5rem;
     color: $white;

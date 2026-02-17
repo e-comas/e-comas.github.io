@@ -20,7 +20,7 @@
     margin: auto;
 
     strong {
-      color: $green;
+      color: $navy;
     }
 
     h1 {
@@ -38,7 +38,7 @@
     display: block;
     border-radius: 20px;
     padding: 2rem;
-    background-color: $green;
+    background-color: $navy;
 
     input,
     select,
@@ -256,7 +256,7 @@ hr {
 
 #book-a-call {
   @extend %button;
-  background-color: $green;
+  background-color: $navy;
   color: $white;
 
   position: fixed;

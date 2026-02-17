@@ -69,7 +69,7 @@ main > .video-playing {
       );
     }
     &:nth-child(3)::before {
-      background-color: #64d7be;
+      background-color: $navy;
       transform: scaleY(#{math.pow($grow_factor, $grow_power_init + 2)});
       clip-path: path(
         "M 230.81049,515.9 V 97.073046 A 5235.8452,5235.8452 0 0 1 0,181.48022 V 515.9 Z"

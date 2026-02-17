@@ -17,7 +17,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #{$green}c5;
+      background-color: #{$navy}c5;
       text-align: center;
       min-height: 5rem;
       font-size: 1.7rem;
@@ -29,7 +29,7 @@
     }
     &:hover {
       justify-content: center;
-      background-color: #{$green}c5;
+      background-color: #{$navy}c5;
       padding-left: 1rem;
       padding-right: 1rem;
       @media screen and (min-width: $max-width) {

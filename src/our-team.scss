@@ -21,7 +21,7 @@ main > figure:not(.made-easy) {
   h4 {
     font-weight: 600;
     font-size: 1rem;
-    color: $green;
+    color: $navy;
     line-height: 1.5rem;
   }
   h3,
@@ -41,7 +41,7 @@ main > figure:not(.made-easy) {
     &::after {
       content: "";
       display: block;
-      background-color: $green;
+      background-color: $navy;
       border-radius: 3.5px;
       width: 5rem;
       max-width: 100%;

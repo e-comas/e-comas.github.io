@@ -29,10 +29,14 @@ a.skip-nav {
   }
 }
 
+body {
+   top:-3rem;
+}
 @media screen and (min-width: $breakpoint) {
   body {
     // to account for the fixed header
     padding-top: 5rem;
+    gap:1.5rem;
   }
 }
 
@@ -40,7 +44,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $green;
+  background-color: $navy;
   @media screen and (min-width: $breakpoint) {
     transform: translateZ(200px);
     position: fixed;
@@ -131,7 +135,7 @@ header {
         color: gray;
         &::before {
           content: " ";
-          background-color: $green;
+          background-color: $navy;
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           display: flex;
           position: absolute;
@@ -252,7 +256,7 @@ header {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: $green;
+        background-color: $navy;
         transform: translateX(100%);
         z-index: 10;
 
@@ -262,7 +266,7 @@ header {
         a,
         a:hover,
         a.active {
-          color: $grey;
+          color: $green;
         }
         & > :last-child {
           @include invertedCta();
