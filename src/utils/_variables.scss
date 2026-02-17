@@ -1,8 +1,16 @@
 $border-radius: 1.5rem;
-$blue: #0c195a;
+
+$navy: #2f308d;
+
+$turquoise: #85c9bb;
+$pink: #d4387f;
+$blue: #4468b0;
+$orange: #f6a53d;
+
+$legacy-blue: #0c195a;
 $green: #64d7be;
 $grey: #3e4152;
-$greyLike: #{$blue}05;
+$greyLike: #{$legacy-blue}05;
 $white: #fff;
 $semiTransparentBlack: #000000d9;
 $gold: #ffb300;
@@ -48,10 +56,10 @@ $animationDuration: 300ms;
 }
 
 @mixin invertedCta {
-  background-color: $grey;
-  color: $green;
+  background-color: $offWhite;
+  color: $navy;
   a {
-    color: $green;
+    color: $navy;
   }
 }
 %invertedCta {
@@ -59,8 +67,8 @@ $animationDuration: 300ms;
 }
 
 %inverted {
-  background-color: $green;
-  color: $grey;
+  background-color: $navy;
+  color: $offWhite;
 
   .cta {
     @extend %invertedCta;

@@ -96,7 +96,7 @@ export default (props: Props | undefined) => (
     <hr />
     <div class="upper-footer">
       <img
-        src="/images/logo.svg"
+        src="/images/Logos_e-Comas/Groupe/Horizontal/e-Comas_LogosH_Groupe_HD.svg"
         alt="e-Comas, eCommerce made simple"
         class="logo"
       />
