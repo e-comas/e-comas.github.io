@@ -3,34 +3,6 @@ url = "/"
 name = "Home"
 
 [[root.children]]
-name = "Services"
-# url = "/services.html"
-
-[[root.children.children]]
-name = "Global Expansion"
-url = "/global-expansion.html"
-
-[[root.children.children]]
-name = "Retail Media"
-url = "/retail-media.html"
-
-[[root.children.children]]
-name = "Data & Technology"
-url = "/data-and-tech.html"
-
-# [[root.children.children]]
-# name = "Content & Creative"
-# url = "/syndication.html"
-
-[[root.children.children]]
-name = "Content Syndication"
-url = "/salsify.html"
-
-[[root.children.children]]
-name = "Website Creation"
-url = "/website-creation.html"
-
-[[root.children]]
 name = "About us"
 # url = "/about-us.html"
 
@@ -50,6 +22,34 @@ url = "/partners.html"
 # [[root.children.children]]
 # name = "Careers"
 # url = "about:blank"
+
+[[root.children]]
+name = "Services"
+# url = "/services.html"
+
+[[root.children.children]]
+name = "Marketplace"
+url = "/global-expansion.html"
+
+[[root.children.children]]
+name = "Distribution"
+url = "/syndication.html"
+
+# [[root.children.children]]
+# name = "Content Syndication"
+# url = "/salsify.html"
+
+[[root.children.children]]
+name = "Technology"
+url = "/data-and-tech.html"
+
+[[root.children.children]]
+name = "Digital Marketing"
+url = "/retail-media.html"
+
+# [[root.children.children]]
+# name = "Website Creation"
+# url = "/website-creation.html"
 
 [[root.children]]
 name = "Resources"
