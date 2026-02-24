@@ -101,6 +101,7 @@ export default async function router(req, res) {
     ".webp": "image/webp",
     ".mp4": "image/gif",
     ".woff2": "font/woff2",
+    ".ttf": "font/ttf",
   };
   const ext = url.pathname
     .slice(url.pathname.lastIndexOf("."))
