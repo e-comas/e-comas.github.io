@@ -29,11 +29,11 @@ name = "Services"
 
 [[root.children.children]]
 name = "Marketplace"
-url = "/global-expansion.html"
+url = "/marketplace.html"
 
 [[root.children.children]]
 name = "Distribution"
-url = "/syndication.html"
+url = "/distribution.html"
 
 # [[root.children.children]]
 # name = "Content Syndication"
@@ -41,11 +41,11 @@ url = "/syndication.html"
 
 [[root.children.children]]
 name = "Technology"
-url = "/data-and-tech.html"
+url = "/technology.html"
 
 [[root.children.children]]
 name = "Digital Marketing"
-url = "/retail-media.html"
+url = "/digital-marketing.html"
 
 # [[root.children.children]]
 # name = "Website Creation"

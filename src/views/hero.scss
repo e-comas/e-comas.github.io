@@ -16,6 +16,7 @@ div.hero {
   overflow: hidden;
   padding: 0;
   text-align: center;
+  color:$white;
 
   h1 {
     margin: auto;
@@ -43,32 +44,29 @@ div.hero {
   }
 }
 
+div.marketplace {
+  background: linear-gradient(135deg, $navy 0%, $turquoise 90%);
+}
+
+div.distribution {
+  background: linear-gradient(135deg, $navy 0%, $blue 90%);
+}
+
+div.technology {
+  background: linear-gradient(135deg, $navy 0%, $orange 90%);
+}
+
+div.digital-marketing {
+  background: linear-gradient(135deg, $navy 0%, $pink 90%);
+}
+
 $hero_zoom: 150%;
 $hero_translate_y: 11%;
 $hero_translate_x_start: 0;
 $hero_translate_x_end_short: -200px;
 $hero_translate_x_end_long: -900px;
 
-div.hero::before {
-  content: "";
-  position: absolute;
-  background-image: url("images/Earth_nopins.svg");
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 25%;
 
-  transform: scale($hero_zoom) translateY($hero_translate_y)
-    translateX($hero_translate_x_start);
-  // animation: 1s linear forwards heroAnim_short;
-  // animation-timeline: --page-scroll;
-  z-index: -10;
-}
 // div.hero.long-page::before {
 //   // transform: scale($hero_zoom) translateY($hero_translate_y)
 //   //   translateX($hero_translate_x_start);
