@@ -34,7 +34,7 @@ export default (
     <main id="main-content">
       <figure class="intro animate in">
         <figcaption>
-          <h5>The boutique agency you need to thrive on</h5>
+          <h4>The boutique agency you need to thrive on</h4>
           <img src="/images/partners/anim.svg"></img>
           <p>
             Skyrocket your success and grow your brand with proven global

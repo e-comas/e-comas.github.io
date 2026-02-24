@@ -1,6 +1,7 @@
 @use "../utils/variables" as *;
 
-@use "../fonts/SourceSansPro";
+@use "../fonts/Montserrat";
+// @use "../fonts/SourceSansPro";
 // @use "../fonts/Gilroy";
 // @use "../fonts/Lato";
 
@@ -12,7 +13,7 @@
 
 :root {
   font-size: 125%;
-  font-family: $SourceSansPro;
+  font-family: $Montserrat;
   color: $grey;
   width: 100%;
   min-height: 100%;
@@ -68,7 +69,16 @@ body.noScroll {
 %title {
   margin: 0;
   padding: 0;
-  font-family: $Gilroy;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+%subtitle {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 h1 {
@@ -107,7 +117,7 @@ h4 {
 }
 
 h5 {
-  @extend %title;
+  @extend %subtitle;
 
   font-size: 1rem;
   line-height: 2rem;
@@ -131,7 +141,6 @@ ol,
 ul {
   font-size: 0.85rem;
   line-height: 1.1rem;
-  font-family: $lato;
   margin: 0;
   padding: 0;
 }
