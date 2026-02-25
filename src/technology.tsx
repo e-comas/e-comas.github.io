@@ -31,9 +31,7 @@ export default (
     <Hero class="animate-in long-page" entity={entityClasses.technology}>
       <h1 class="title">Technology</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Delivering value through technology.
       </p>
       <a href="./contact.html" class="cta no-arrow">
         Book a call
@@ -41,8 +39,40 @@ export default (
       </a>
     </Hero>
     <main id="main-content">
-
-
+      <section id="what-we-do" class="what-we-do">
+        <h2>What do we do?</h2>
+        <p>
+          We deliver value through technology by turning complex, fragmented
+          e-commerce data into clear, actionable intelligence. Our core product,
+          Clarisix, shortens the distance between insight and decision-making by
+          providing clarity across six critical performance dimensions: Sales,
+          Advertising, Inventory, Profitability, Customer Experience, and
+          Content/Merchandising. We also support growth-enabling technologies
+          through implementation and managed services for tools such as Salsify
+          and Inventory Planner.
+        </p>
+        <h3>What do we do for the external customer?</h3>
+        <p>
+          We unify and maintain reliable performance data by integrating key
+          data sources into a single, accurate foundation. Through the Clarisix
+          SaaS platform, we deliver best-in-class visualisation, proprietary
+          metrics, and intuitive dashboards that enable faster, better
+          decisions. We also enable operational excellence by implementing and
+          managing PIM and forecasting tools that allow brands to scale their
+          digital commerce operations effectively.
+        </p>
+        <h3>What do we do for the internal customer?</h3>
+        <p>
+          We ensure data quality and integrity across all client-facing outputs,
+          resolving complex technical and data issues. We act as the internal
+          technical authority by providing product and platform training to
+          teams, supporting confident client decision-making. We drive
+          innovation and scalability by managing deployment, maintenance, and
+          growth of the group’s SaaS products and data infrastructure, while
+          also supporting core group functions with technical expertise,
+          planning, and implementation support.
+        </p>
+      </section>
     </main>
     <section id="blog" class="blog">
       <h2>Our blog</h2>

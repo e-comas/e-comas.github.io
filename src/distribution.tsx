@@ -31,9 +31,7 @@ export default (
     <Hero class="animate-in long-page" entity={entityClasses.distribution}>
       <h1 class="title">Distribution</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        The missing link between brands and retailers.
       </p>
       <a href="./contact.html" class="cta no-arrow">
         Book a call
@@ -41,7 +39,33 @@ export default (
       </a>
     </Hero>
     <main id="main-content">
-      
+      <section class="what-we-do">
+        <h2>What do we do?</h2>
+        <p>
+          We extend the group’s offering by providing advanced logistics and
+          fulfilment services that complement the Agency and Digital Marketing
+          teams. We enable brands to work with a single, full-service partner
+          for global, omni-channel distribution and business development.
+        </p>
+        <h3>What do we do for the external customer?</h3>
+        <p>
+          We provide flexible distribution models including 3PL, FBA, FBM, and
+          DTC across e-commerce platforms and brick-and-mortar channels.
+          Leveraging our operational and compliance expertise, we expand
+          clients’ market reach, support sales and growth, strengthen retailer
+          relationships, and track relevant KPIs. With facilities in the UK and
+          mainland Europe (Luxembourg), we enable fast and reliable supply
+          across wide geographies, supporting both B2B and B2C revenue growth.
+        </p>
+        <h3>What do we do for the internal customer?</h3>
+        <p>
+          We define and implement logistics processes to ensure smooth and
+          reliable operations. We set detailed sales forecasts to support
+          financial planning and assist sales teams in client engagement. We
+          work closely with the Agency and Digital Marketing teams to deliver a
+          consistent and integrated 360° offering across the group.
+        </p>
+      </section>
     </main>
     <section id="blog" class="blog">
       <h2>Our blog</h2>
