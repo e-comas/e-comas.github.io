@@ -115,7 +115,6 @@ section.news {
   .cta {
     @extend %button;
     margin: auto;
-    background-color: $golder;
     &:hover {
       background-color: $grey;
       color: white;
@@ -232,7 +231,6 @@ figure.intro {
     @extend %button;
     margin-top: 0.5rem;
     font-size: 0.8rem;
-    background-color: $gold;
     text-transform: capitalize;
     &:hover {
       background-color: $grey;

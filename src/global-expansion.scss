@@ -116,8 +116,6 @@
       .cta {
         margin-top: 1rem;
         @extend %button;
-        background-color: $gold;
-        color: white;
         font-size: 0.75rem;
         &::after {
           content: " ";
@@ -217,10 +215,8 @@
     }
     .cta {
       @extend %button;
-      background-color: $gold;
       &:hover {
         @extend %invertedCta;
-        color: $gold;
       }
       margin-bottom: 0;
       margin-left: 1rem;

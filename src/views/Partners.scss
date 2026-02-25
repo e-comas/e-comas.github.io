@@ -41,10 +41,8 @@
   }
   .cta {
     @extend %button;
-    background-color: $gold;
     &:hover {
       @extend %invertedCta;
-      color: $gold;
     }
     margin: auto;
     margin-top: 1rem;

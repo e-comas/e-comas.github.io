@@ -31,17 +31,24 @@ div.hero {
 
   .cta {
     @extend %button;
+    @extend %invertedCta;
     text-transform: capitalize;
-    background-color: $gold;
-    color: $grey;
     font-weight: bold;
     margin: auto;
     font-size: 0.75rem;
     &:hover {
-      background-color: $grey;
-      color: white;
+      @extend %button;
+      text-transform: capitalize;
+      font-weight: bold;
+      margin: auto;
+      font-size: 0.75rem;
     }
+
   }
+}
+
+div.group {
+  background-color: $navy;
 }
 
 div.marketplace {

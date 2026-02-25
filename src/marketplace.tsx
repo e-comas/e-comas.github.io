@@ -50,7 +50,7 @@ export default (
         the Amazon world relating to expanding your brand internationally.
       </p>
       <div role="list">
-        {"{% for post in site.tags.Expansion | slice: 0, 3 %}"}
+        {"{% for post in site.tags.Marketplace | slice: 0, 3 %}"}
         <article>
           <a href="{{ post.url }}">
             <img

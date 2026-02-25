@@ -125,14 +125,11 @@ main > .cta {
       }
       .cta {
         @extend %button;
-        background-color: $gold;
-        color: white;
         margin: auto;
         margin-bottom: 0;
         font-size: 0.75rem;
         &:hover {
           color: black;
-          background-color: $golder;
         }
       }
       .play-animation {
