@@ -32,50 +32,26 @@ export default (
   <Body>
     <Header />
     <main id="main-content">
-      <figure class="intro animate in">
-        <figcaption>
-          <h4>The boutique agency you need to thrive on</h4>
+      <div class="intro animate in">
+        <figure>
+
+          <figcaption class="text">
+            <h3>The boutique agency</h3>
+            <h3>you need to thrive on</h3>
+          </figcaption>
           <img src="/images/partners/anim.svg"></img>
-          <p>
-            Skyrocket your success and grow your brand with proven global
-            expansion strategies, winning media campaigns and powerful
-            technology. <EComas /> is the full service <ECommerce /> agency to
-            help you get there.
-          </p>
-          <a href="/contact.html" class="cta no-arrow">
-            book a call
-            <FontAwesomeIcon icon={faPhone as IconProp} />
-          </a>
-        </figcaption>
-        <div>
-          <img src="/images/Earth.svg" />
-          <p>e-Comas Office Locations</p>
-          <div id="certifs">
-            <a
-              href="https://advertising.amazon.com/partners/directory/details/amzn1.ads1.ma1.cj3vydv54i8qcb80mhstj0em0/"
-              target="_blank"
-              rel="noopener"
-              role="listitem"
-            >
-              <Picture
-                src="/images/certifications/Verified partner badge.png"
-                alt="Amazon Ads Verified Partner badge"
-              />
-            </a>
-            <a
-              href="https://youtu.be/8VCCGLo0E9o?si=xAgxuiFJ2QxQMNW3"
-              target="_blank"
-              rel="noopener"
-              role="listitem"
-            >
-              <Picture
-                src="/images/certifications/WebsiteLogo-BFM.png"
-                alt="As seen on BFM"
-              />
-            </a>
-          </div>
+        </figure>
+        <p>
+          Skyrocket your success and grow your brand with proven global
+          expansion strategies, winning media campaigns and powerful
+          technology. <EComas /> is the full service <ECommerce /> agency to
+          help you get there.
+        </p>
+        <a href="/contact.html" class="cta no-arrow">
+          book a call
+          <FontAwesomeIcon icon={faPhone as IconProp} />
+        </a>
         </div>
-      </figure>
 
       <div class="video-container">
         <VideoEmbedLink
