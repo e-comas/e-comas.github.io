@@ -12,7 +12,7 @@ name = "Company"
 url = "/about-us.html"
 
 [[root.children.children]]
-name = "Our Team"
+name = "Our People"
 url = "/our-team.html"
 
 [[root.children.children]]
