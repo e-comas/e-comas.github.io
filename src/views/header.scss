@@ -53,7 +53,7 @@ header {
     left: 0;
     right: 0;
   }
-  @media screen and (min-width: $body-max-width) {
+  @media screen and (min-width: calc(#{$body-max-width} - 9rem)) {
     display: grid;
     grid-template-columns: 1fr 9rem calc(#{$body-max-width} - 2 * 9rem) 9rem 1fr;
     column-gap: 0;

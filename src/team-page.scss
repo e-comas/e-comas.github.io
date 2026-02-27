@@ -1,8 +1,7 @@
 @use "./utils/variables" as *;
 
 main{
-    max-width: 1800px;
-    padding:2rem;
+    padding: $body-padding;
     margin:auto;
     section {
         h2,h3{
