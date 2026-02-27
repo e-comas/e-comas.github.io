@@ -6,19 +6,12 @@ import Body from "./views/Body.tsx";
 import Header from "./views/Header.tsx";
 import Footer from "./views/Footer.tsx";
 
-import "./global-expansion.scss";
+import "./team-page.scss";
 import Hero, { entityClasses } from "./views/hero.tsx";
 
-import "./utils/open-form-in-modal.scss";
-import "runtime:./utils/open-form-in-modal.ts";
 
-import "./views/animate-in.scss";
-import "runtime:./views/animate-in.ts";
 import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import {
-  faBullhorn,
-  faDownload,
-  faMagnifyingGlass,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
@@ -30,9 +23,7 @@ export default (
     <Header />
     <Hero class="animate-in long-page" entity={entityClasses.distribution}>
       <h1 class="title">Distribution</h1>
-      <p>
-        The missing link between brands and retailers.
-      </p>
+      <p>Distribution made simple for retail brands</p>
       <a href="./contact.html" class="cta no-arrow">
         Book a call
         <FontAwesomeIcon icon={faPhone as IconProp} />
@@ -42,29 +33,73 @@ export default (
       <section class="what-we-do">
         <h2>What do we do?</h2>
         <p>
-          We extend the group’s offering by providing advanced logistics and
-          fulfilment services that complement the Agency and Digital Marketing
-          teams. We enable brands to work with a single, full-service partner
-          for global, omni-channel distribution and business development.
+          At <EComas /> Distribution, we provide customers with the full range of
+          warehousing, storage and shipping solutions, from simple 3PL logistics
+          to full-service distribution. We enable brands to work with a single,
+          full-service partner for global, omni-channel distribution and
+          business development.
         </p>
-        <h3>What do we do for the external customer?</h3>
+      </section>
+
+      <section>
+        <h3>Third-party logistics (3PL)</h3>
         <p>
-          We provide flexible distribution models including 3PL, FBA, FBM, and
-          DTC across e-commerce platforms and brick-and-mortar channels.
-          Leveraging our operational and compliance expertise, we expand
-          clients’ market reach, support sales and growth, strengthen retailer
-          relationships, and track relevant KPIs. With facilities in the UK and
-          mainland Europe (Luxembourg), we enable fast and reliable supply
-          across wide geographies, supporting both B2B and B2C revenue growth.
+          We’re your growth partners, helping you scale your business across new
+          marketplaces and territories with fantastic 3PL services that flex
+          with your needs.
         </p>
-        <h3>What do we do for the internal customer?</h3>
+        <ul>
+          <li>Logistics, storage and shipping services</li>
+          <li>Real-time inventory visibility</li>
+          <li>We work with leading carrier networks</li>
+          <li>
+            Products reach customers and retail partners on time and in perfect
+            condition
+          </li>
+          <li>
+            We provide FBA (Fulfilled by Amazon), FBM (Fulfilled by Merchant)
+            and DTC (Direct to Customer)
+          </li>
+          <li>
+            We serve brick-and-mortar stores as well as eCommerce platforms
+          </li>
+          <li>
+            We have established warehousing facilities in the UK and mainland
+            Europe.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Full-service distribution</h3>
         <p>
-          We define and implement logistics processes to ensure smooth and
-          reliable operations. We set detailed sales forecasts to support
-          financial planning and assist sales teams in client engagement. We
-          work closely with the Agency and Digital Marketing teams to deliver a
-          consistent and integrated 360° offering across the group.
+          The team at <EComas /> Distribution offer a sophisticated full-service
+          solution to take everything off your hands. We’re your growth
+          partners, ensuring your brand expands smartly and rapidly through the
+          right channels.
         </p>
+        <ul>
+          <li>We define your go-to-market strategy</li>
+          <li>
+            We research each market and provide localisation and operational
+            infrastructure
+          </li>
+          <li>
+            We take care of warehousing, shipping and logistics for all markets
+          </li>
+          <li>We manage aftersales and returns processing</li>
+          <li>
+            We manage your customer service in local languages and in line with
+            your brand values
+          </li>
+          <li>We track and report performance of all shipments</li>
+          <li>We can handle your marketing and advertising</li>
+          <li>We provide accurate inventory planning and forecasting</li>
+          <li>
+            We ensure inventory decisions are aligned with your broader
+            strategy.
+          </li>
+        </ul>
       </section>
     </main>
     <section id="blog" class="blog">
