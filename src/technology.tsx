@@ -30,164 +30,137 @@ export default (
       <section class="what-we-do">
         <h2>What do we do?</h2>
         <p>
-          <EComas /> Marketplace is your strategic growth partner, making
-          <ECommerce /> simple for your brand. We support sustainable growth
-          across platforms through clear strategy, market expansion support, and
-          operational excellence, positioning ourselves as an end-to-end owner
-          of clients’ <ECommerce /> performance.
+          <EComas /> Technology equips retail brands with the data, tools, and
+          technical expertise they need to make smarter decisions and grow more
+          efficiently online.
         </p>
       </section>
 
-      <figure>
-        <Picture src="/images/consulting01.png" alt="illustration" />
-        <figcaption>
-          <h3>Strategic development</h3>
-          <p>
-            <EComas /> Marketplace is your strategic growth partner, helping
-            you grow across <ECommerce /> platforms through strong strategy,
-            expert support, and operational excellence.
-          </p>
-          <ul>
-            <li>
-              We support your brand registration on Amazon and other
-              marketplaces
-            </li>
-            <li>
-              We develop your brand <ECommerce /> strategy, assessing your
-              current
-              <ECommerce /> setup and developing a tailored strategy for paid
-              and organic growth
-            </li>
-            <li>
-              We collaborate with you to create and manage a promotional
-              calendar
-            </li>
-            <li>We provide recommendations on inventory planning</li>
-            <li>We generate performance reports on aligned KPIs</li>
-            <li>
-              We collaborate strategically with internal team members to
-              ensure alignment, transparency, and a strong operational bridge
-            </li>
-            <li>
-              We provide an annual performance review to summarise your wins,
-              lessons learned, forecasts, and an actionable roadmap for the
-              next year.
-            </li>
-          </ul>
-        </figcaption>
-      </figure>
-
-      <figure>
-        <Picture src="/images/consulting02.png" alt="illustration" />
-        <figcaption>
-        <h3>Cataloguing and content management</h3>
-        <p>
-          <EComas /> Marketplace is your ideal partner for managing your product
-          listings catalogue across all platforms.
-        </p>
-        <ul>
-          <li>We upload new product listings</li>
-          <li>We optimise listings for SEO, conversion and discoverability</li>
-          <li>
-            We provide ongoing catalogue management to maintain accuracy and
-            relevancy
-          </li>
-          <li>
-            We perform catalogue opportunities analysis to identify potential
-            growth areas
-          </li>
-          <li>We create, revamp and improve your Brand Store</li>
-          <li>We upload A+ Content and Brand Story uploads</li>
-          <li>
-            We perform content cleanups to rectify discrepancies and improve
-            performance
-          </li>
-          <li>
-            We provide an Annual Amazon Content Optimisation Strategy review
-            based on seasonality, key events, and market opportunities including
-            creative.
-          </li>
-        </ul>
-        </figcaption>
-      </figure>
-
       <section>
-        <h3>Advertising and retail media</h3>
+        <h3>Clarisix</h3>
         <p>
-          We’re your growth partners, ensuring you connect with and convert your
-          audience via fantastic advertising and dominance of retail media
-          networks.
+          Clarisix is the operating system for eCommerce performance. Built by{" "}
+          <EComas /> Technology, Clarisix unifies six dimensions of eCommerce
+          success into a single source of truth.
         </p>
         <ul>
           <li>
-            We develop and execute comprehensive advertising strategies (PPC and
-            DSP)
+            <b>Unified dashboards</b> across all six pillars (Sales, Advertising,
+            Inventory, Profitability, Content, Customer Experience)
           </li>
+          <li><b>Executive clarity view</b> of all performance at once</li>
+          <li><b>Multi-market</b> and multi-entity rollups</li>
           <li>
-            We evaluate your existing campaigns to identify areas of improvement
+            Alerts and <b>anomaly detection</b> to prevent silent revenue leakage
           </li>
+          <li><b>Diagnostics</b> that explain what changed and why</li>
+        </ul>
+        <h4>Clarisix deep modules offer:</h4>
+        <ul>
           <li>
-            We provide daily campaign management and optimisation for
-            cost-efficiency and results
+            <b>Profitability module</b> with contribution margin drivers and guardrails
           </li>
-          <li>We manage your budget and track your advertising activities</li>
-          <li>
-            We provide weekly and monthly campaign reports with actionable
-            insights
-          </li>
-          <li>
-            We perform advanced audience targeting and retargeting using
-            data-driven insights
-          </li>
-          <li>We monitor and manage your Share of Voice (SOV)</li>
-          <li>We access your Amazon Marketing Cloud (AMC) reports.</li>
+          <li><b>Content compliance tracking</b> (approved vs. live)</li>
+          <li><b>Advanced advertising</b> insights (DSP, AMC, SQP)</li>
+          <li><b>Inventory health monitoring</b> and out-of-stock prevention</li>
+        </ul>
+        <h4>Coming soon to Clarisix:</h4>
+        <ul>
+          <li><b>AI-assisted recommendations</b> and draft fixes</li>
+          <li><b>Multi-channel connectors</b>, API access, MCP/CLI</li>
         </ul>
       </section>
 
       <section>
-        <h3>Reporting</h3>
+        <h3>Inventory planning and demand forecasting</h3>
         <p>
-          Comprehensive reporting and real insights make a huge difference to
-          brands’ success in global growth. We’re your growth partners, ensuring
-          you can read and use the data available.
+          At <EComas /> Technology we provide the tools, the data and the
+          analysis to ensure you neither overstock nor go out of stock.
         </p>
         <ul>
           <li>
-            We give you full access to a Power BI dashboard with consolidated
-            sales and advertising data
+            We use <b>historical sales data</b>, promotional calendars, and market trend
+            analysis to generate accurate demand forecasts
           </li>
           <li>
-            We support ad hoc reporting, presentation decks, catalogue reviews
-            and pricing analysis
+            We optimise<b> stock level recommendations</b> to allow you to plan
+            procurement and logistics
           </li>
           <li>
-            We track and analyse KPIs and performance metrics to uncover
-            opportunities
+            We <b>work closely with the <EComas /> Distribution team</b> to execute
+            technology-driven inventory decisions
           </li>
-          <li>We provide monthly monitoring of the Voice of the Customer.</li>
         </ul>
       </section>
 
       <section>
-        <h3>Troubleshooting (account health)</h3>
+        <h3>Ecommerce reporting and analytics</h3>
         <p>
-          We’re your growth partners, offering full support on your accounts
-          across all platforms. Our <EComas /> Marketplace team are fully
-          trained to deal with problems as and when they arise.
+          Data is only valuable when it is accessible, accurate, and presented
+          in a way that supports clear decision-making.
         </p>
         <ul>
           <li>
-            We manage each case, resolving issues with Amazon and other
-            marketplaces
+            Our reporting infrastructure is <b>built on Power BI and integrated
+              with Clarisix</b>
           </li>
           <li>
-            We review your account performance daily, as well as notifications
-            and account health
+            Work with your brand to <b>define the KPIs</b> that matter most to your
+            business
           </li>
           <li>
-            We proactively troubleshoot to resolve account issues promptly
+            Build <b>bespoke reporting views</b> that align with your commercial
+            strategy
           </li>
-          <li>We provide customer service to end consumers.</li>
+          <li>
+            Provide regular structured reporting as well as <b>ad hoc analytical
+              support</b>
+          </li>
+          <li>
+            Ensure your team has the data needed to <b>act quickly and decisively</b>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Content management technology</h3>
+        <p>
+          Through Clarisix, we can simplify management of your product listings
+          content at scale, across multiple marketplaces, multiple regions, and
+          multiple languages.
+        </p>
+        <ul>
+          <li>Our technology <b>streamlines the process</b> of managing product listings content</li>
+          <li>
+            We enable <b>centralised control</b> of product titles, descriptions, images,
+            and attributes
+          </li>
+          <li>
+            We <b>automatically distribute</b> content to the relevant channels and
+            markets
+          </li>
+          <li>
+            Performs <b>automatic content quality checks</b>, SEO scoring, and brand
+            guideline compliance
+          </li>
+          <li>
+            Ensures <b>listings are consistently optimised</b> for discoverability and
+            conversion
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Third-party technology partnerships</h3>
+        <p>
+          At <EComas /> Technology we work with several third-party technology
+          partners to provide best-in-class services for your brand.
+        </p>
+        <ul>
+          <li>We work with <b>Pacvue</b> for advanced advertising automation</li>
+          <li>We work with <b>Salsify</b> for product information management (PIM)</li>
+          <li>We work with <b>CapEc</b> for eCommerce-specific financing</li>
+          <li>We work with <b>SEOPhenix</b> to generate product listings</li>
         </ul>
       </section>
     </main>
@@ -198,7 +171,7 @@ export default (
         the Amazon world relating to expanding your brand internationally.
       </p>
       <div role="list">
-        {"{% for post in site.tags.Technology | slice: 0, 3 %}"}
+        {"{% for post in site.tags.Tools | slice: 0, 3 %}"}
         <article>
           <a href="{{ post.url }}">
             <img

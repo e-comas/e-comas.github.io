@@ -51,24 +51,24 @@ export default (
         </p>
         <ul>
           <li>
-            We support your brand registration on Amazon and other marketplaces
+            We support your <b>brand registration</b> on Amazon and other marketplaces
           </li>
           <li>
-            We develop your brand <ECommerce /> strategy, assessing your current
+            We <b>develop your brand <ECommerce /> strategy</b>, assessing your current
             <ECommerce /> setup and developing a tailored strategy for paid and
             organic growth
           </li>
           <li>
-            We collaborate with you to create and manage a promotional calendar
+            We collaborate with you to create and manage a <b>promotional calendar</b>
           </li>
-          <li>We provide recommendations on inventory planning</li>
-          <li>We generate performance reports on aligned KPIs</li>
+          <li>We provide recommendations on <b>inventory planning</b></li>
+          <li>We generate <b>performance reports</b> on aligned KPIs</li>
           <li>
-            We collaborate strategically with internal team members to ensure
+            We <b>collaborate strategically</b> with internal team members to ensure
             alignment, transparency, and a strong operational bridge
           </li>
           <li>
-            We provide an annual performance review to summarise your wins,
+            We provide an <b>annual performance review</b> to summarise your wins,
             lessons learned, forecasts, and an actionable roadmap for the next
             year.
           </li>
@@ -82,24 +82,24 @@ export default (
           listings catalogue across all platforms.
         </p>
         <ul>
-          <li>We upload new product listings</li>
-          <li>We optimise listings for SEO, conversion and discoverability</li>
+          <li>We upload <b>new product listings</b></li>
+          <li>We <b>optimise listings for SEO</b>, conversion and discoverability</li>
           <li>
-            We provide ongoing catalogue management to maintain accuracy and
+            We provide <b>ongoing catalogue management</b> to maintain accuracy and
             relevancy
           </li>
           <li>
-            We perform catalogue opportunities analysis to identify potential
+            We perform <b>catalogue opportunities analysis</b> to identify potential
             growth areas
           </li>
-          <li>We create, revamp and improve your Brand Store</li>
-          <li>We upload A+ Content and Brand Story uploads</li>
+          <li>We create, revamp and improve your <b>Brand Store</b></li>
+          <li>We upload <b>A+ Content and Brand Story uploads</b></li>
           <li>
-            We perform content cleanups to rectify discrepancies and improve
+            We perform <b>content cleanups</b> to rectify discrepancies and improve
             performance
           </li>
           <li>
-            We provide an Annual Amazon Content Optimisation Strategy review
+            We provide an <b>Annual Amazon Content Optimisation Strategy review<b></b></b> 
             based on seasonality, key events, and market opportunities including
             creative.
           </li>
@@ -115,27 +115,27 @@ export default (
         </p>
         <ul>
           <li>
-            We develop and execute comprehensive advertising strategies (PPC and
+            We develop and execute comprehensive <b>advertising strategies</b> (PPC and
             DSP)
           </li>
           <li>
-            We evaluate your existing campaigns to identify areas of improvement
+            We <b>evaluate your existing campaigns</b> to identify areas of improvement
           </li>
           <li>
-            We provide daily campaign management and optimisation for
+            We provide <b>daily campaign management</b> and optimisation for
             cost-efficiency and results
           </li>
-          <li>We manage your budget and track your advertising activities</li>
+          <li>We <b>manage your budget</b> and track your advertising activities</li>
           <li>
-            We provide weekly and monthly campaign reports with actionable
+            We provide <b>weekly and monthly campaign reports</b> with actionable
             insights
           </li>
           <li>
-            We perform advanced audience targeting and retargeting using
+            We perform advanced <b>audience targeting and retargeting</b> using
             data-driven insights
           </li>
-          <li>We monitor and manage your Share of Voice (SOV)</li>
-          <li>We access your Amazon Marketing Cloud (AMC) reports.</li>
+          <li>We monitor and manage your <b>Share of Voice (SOV)</b></li>
+          <li>We access your <b>Amazon Marketing Cloud (AMC) reports.</b></li>
         </ul>
       </section>
 
@@ -148,18 +148,18 @@ export default (
         </p>
         <ul>
           <li>
-            We give you full access to a Power BI dashboard with consolidated
+            We give you full access to a <b>Power BI dashboard</b> with consolidated
             sales and advertising data
           </li>
           <li>
-            We support ad hoc reporting, presentation decks, catalogue reviews
+            We support <b>ad hoc reporting</b>, presentation decks, catalogue reviews
             and pricing analysis
           </li>
           <li>
-            We track and analyse KPIs and performance metrics to uncover
+            We track and analyse <b>KPIs and performance metrics</b> to uncover
             opportunities
           </li>
-          <li>We provide monthly monitoring of the Voice of the Customer.</li>
+          <li>We provide monthly monitoring of the <b>Voice of the Customer</b>.</li>
         </ul>
       </section>
 
@@ -167,22 +167,22 @@ export default (
         <h3>Troubleshooting (account health)</h3>
         <p>
           We’re your growth partners, offering full support on your accounts
-          across all platforms. Our <EComas /> Marketplace team are fully
+          across all platforms. Our <EComas /> Marketplace team is fully
           trained to deal with problems as and when they arise.
         </p>
         <ul>
           <li>
-            We manage each case, resolving issues with Amazon and other
+            We <b>manage each case</b>, resolving issues with Amazon and other
             marketplaces
           </li>
           <li>
-            We review your account performance daily, as well as notifications
+            We <b>review your account performance daily</b>, as well as notifications
             and account health
           </li>
           <li>
-            We proactively troubleshoot to resolve account issues promptly
+            We <b>proactively troubleshoot</b> to resolve account issues promptly
           </li>
-          <li>We provide customer service to end consumers.</li>
+          <li>We provide <b>customer service to end consumers</b>.</li>
         </ul>
       </section>
     </main>
@@ -193,7 +193,7 @@ export default (
         the Amazon world relating to expanding your brand internationally.
       </p>
       <div role="list">
-        {"{% for post in site.tags.Marketplace | slice: 0, 3 %}"}
+        {"{% for post in site.tags.Strategy | slice: 0, 3 %}"}
         <article>
           <a href="{{ post.url }}">
             <img

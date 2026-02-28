@@ -49,22 +49,22 @@ export default (
           with your needs.
         </p>
         <ul>
-          <li>Logistics, storage and shipping services</li>
-          <li>Real-time inventory visibility</li>
-          <li>We work with leading carrier networks</li>
+          <li><b>Logistics</b>, storage and shipping services</li>
+          <li><b>Real-time</b> inventory visibility</li>
+          <li>We work with <b>leading carrier networks</b></li>
           <li>
-            Products reach customers and retail partners on time and in perfect
-            condition
+            Products reach customers and retail partners <b>on time and in perfect
+              condition</b>
           </li>
           <li>
-            We provide FBA (Fulfilled by Amazon), FBM (Fulfilled by Merchant)
-            and DTC (Direct to Customer)
+            We provide <b>FBA</b> (Fulfilled by Amazon), <b>FBM</b> (Fulfilled by Merchant)
+            and <b>DTC</b> (Direct to Customer)
           </li>
           <li>
-            We serve brick-and-mortar stores as well as eCommerce platforms
+            We serve <b>brick-and-mortar stores</b> as well as eCommerce platforms
           </li>
           <li>
-            We have established warehousing facilities in the UK and mainland
+            We have <b>established warehousing facilities in the UK</b> and mainland
             Europe.
           </li>
         </ul>
@@ -73,31 +73,31 @@ export default (
       <section>
         <h3>Full-service distribution</h3>
         <p>
-          The team at <EComas /> Distribution offer a sophisticated full-service
+          The team at <EComas /> Distribution offers a sophisticated full-service
           solution to take everything off your hands. We’re your growth
           partners, ensuring your brand expands smartly and rapidly through the
           right channels.
         </p>
         <ul>
-          <li>We define your go-to-market strategy</li>
+          <li>We <b>define your go-to-market strategy</b></li>
           <li>
-            We research each market and provide localisation and operational
+            We <b>research each market</b> and provide localisation and operational
             infrastructure
           </li>
           <li>
-            We take care of warehousing, shipping and logistics for all markets
+            We take care of <b>warehousing, shipping and logistics</b> for all markets
           </li>
-          <li>We manage aftersales and returns processing</li>
+          <li>We manage <b>aftersales and returns</b> processing</li>
           <li>
-            We manage your customer service in local languages and in line with
+            We manage your <b>customer service</b> in local languages and in line with
             your brand values
           </li>
-          <li>We track and report performance of all shipments</li>
-          <li>We can handle your marketing and advertising</li>
-          <li>We provide accurate inventory planning and forecasting</li>
+          <li>We <b>track and report performance</b> of all shipments</li>
+          <li>We can handle your <b>marketing</b> and advertising</li>
+          <li>We provide <b>accurate inventory planning and forecasting</b></li>
           <li>
-            We ensure inventory decisions are aligned with your broader
-            strategy.
+            We ensure inventory decisions are <b>aligned with your broader
+              strategy.</b>
           </li>
         </ul>
       </section>
@@ -109,7 +109,7 @@ export default (
         the Amazon world relating to expanding your brand internationally.
       </p>
       <div role="list">
-        {"{% for post in site.tags.Distribution | slice: 0, 3 %}"}
+        {"{% for post in site.tags.Logistics | slice: 0, 3 %}"}
         <article>
           <a href="{{ post.url }}">
             <img

@@ -31,28 +31,28 @@ import Newsletter from "./views/newsletter.tsx";
 export default (
   <Body>
     <Header />
-    <main id="main-content">
-      <div class="intro animate in">
-        <figure>
-
-          <figcaption class="text">
-            <h3>The boutique agency</h3>
-            <h3>you need to thrive on</h3>
-          </figcaption>
-          <img src="/images/partners/anim.svg"></img>
-        </figure>
+    <div class="intro animate in">
+      <figure>
+        <figcaption class="text">
+          <h3>The boutique agency</h3>
+          <h3>you need to thrive on</h3>
+        </figcaption>
+        <img src="/images/partners/anim.svg"></img>
+      </figure>
+      <div>
         <p>
           Skyrocket your success and grow your brand with proven global
-          expansion strategies, winning media campaigns and powerful
-          technology. <EComas /> is the full service <ECommerce /> agency to
-          help you get there.
+          expansion strategies, winning media campaigns and powerful technology.{" "}
+          <EComas /> is the full service <ECommerce /> agency to help you get
+          there.
         </p>
         <a href="/contact.html" class="cta no-arrow">
           book a call
           <FontAwesomeIcon icon={faPhone as IconProp} />
         </a>
-        </div>
-
+      </div>
+    </div>
+    <main id="main-content">
       <div class="video-container">
         <VideoEmbedLink
           tagName="div"

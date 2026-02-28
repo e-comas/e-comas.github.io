@@ -50,13 +50,13 @@ export default (
           your online store.
         </p>
         <ul>
-          <li>We develop platform-specific content plans</li>
-          <li>We produce creative assets, and schedule and publish posts</li>
-          <li>We monitor performance across all major networks</li>
+          <li>We develop <b>platform-specific content plans</b></li>
+          <li>We produce <b>creative assets</b>, and schedule and publish posts</li>
+          <li>We <b>monitor performance</b> across all major networks</li>
           <li>
-            We help you build a loyal and active following around your brand
+            We help you build a <b>loyal and active following</b> around your brand
           </li>
-          <li>We link your social media content back to your online store</li>
+          <li>We link your social media content back to <b>your online store</b></li>
         </ul>
       </section>
 
@@ -68,13 +68,13 @@ export default (
           of the most powerful social tools for brands.
         </p>
         <ul>
-          <li>We develop and manage full-funnel Meta advertising strategies</li>
+          <li>We develop and manage <b>full-funnel Meta advertising strategies</b></li>
           <li>
-            We combine sophisticated audience targeting with compelling creative
+            We combine <b>sophisticated audience targeting</b> with compelling creative
           </li>
           <li>We carry out rigorous, ongoing performance optimisation</li>
           <li>
-            We provide regular campaign reporting, with clear attribution and
+            We provide regular <b>campaign reporting</b>, with clear attribution and
             actionable insights
           </li>
         </ul>
@@ -89,15 +89,15 @@ export default (
         </p>
         <ul>
           <li>
-            Our creative includes social media graphics, brand photography,
+            Our <b>creative</b> includes social media graphics, brand photography,
             videography, and website imagery
           </li>
           <li>
-            We collaborate closely with your team, ensuring full alignment with
+            We <b>collaborate closely with your team</b>, ensuring full alignment with
             your brand guidelines
           </li>
           <li>
-            We offer copywriting and translation services, enabling brands to
+            We offer <b>copywriting and translation services</b>, enabling brands to
             communicate effectively
           </li>
         </ul>
@@ -111,15 +111,15 @@ export default (
         </p>
         <ul>
           <li>
-            We provide end-to-end website services, including design,
+            We provide <b>end-to-end website services</b>, including design,
             development, and ongoing optimisation
           </li>
           <li>
-            We deliver visually compelling and technically robust solutions
+            We deliver <b>visually compelling and technically robust solutions</b>
           </li>
-          <li>We can refresh your existing website</li>
+          <li>We can <b>refresh your existing website</b></li>
           <li>
-            We take a data-led approach to website performance, using analytics
+            We take a <b>data-led approach to website performance</b>, using analytics
             and user behaviour insights
           </li>
         </ul>
@@ -133,19 +133,19 @@ export default (
         </p>
         <ul>
           <li>
-            We identify, vet and manage partnerships with suitable influencers
+            We <b>identify, vet and manage partnerships</b> with suitable influencers
             and creators
           </li>
           <li>
-            We choose influencers from Instagram, TikTok, YouTube, Amazon Live
+            We <b>choose influencers</b> from Instagram, TikTok, YouTube, Amazon Live
             and beyond
           </li>
           <li>
-            We handle gifting campaigns, sponsored content and long-term
+            We <b>handle gifting campaigns</b>, sponsored content and long-term
             ambassador partnerships
           </li>
           <li>
-            We design influencer programmes to build genuine brand affinity
+            We <b>design influencer programmes</b> to build genuine brand affinity
           </li>
         </ul>
       </section>
@@ -158,19 +158,19 @@ export default (
         </p>
         <ul>
           <li>
-            We secure coverage across relevant trade, consumer, and digital
+            We <b>secure coverage</b> across relevant trade, consumer, and digital
             publications
           </li>
           <li>
-            We develop compelling brand narratives and press materials that
+            We <b>develop compelling brand narratives</b> and press materials that
             resonate with journalists
           </li>
           <li>
-            We manage media relationships and provide regular reporting on
+            We <b>manage media relationships</b> and provide regular reporting on
             coverage and reach
           </li>
           <li>
-            We plan, manage and host media events to put your brand and products
+            We <b>plan, manage and host media events</b> to put your brand and products
             in the spotlight
           </li>
         </ul>
@@ -183,7 +183,7 @@ export default (
         the Amazon world relating to expanding your brand internationally.
       </p>
       <div role="list">
-        {"{% for post in site.tags.Digital_Marketing | slice: 0, 3 %}"}
+        {"{% for post in site.tags.Advertising | slice: 0, 3 %}"}
         <article>
           <a href="{{ post.url }}">
             <img
