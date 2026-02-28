@@ -5,7 +5,12 @@ main{
     margin:auto;
     section, figure {
         h2,h3{
+            text-align: center;
+            margin:auto;
             padding: 1rem;
+            @media screen and (min-width: 800px) {
+                text-align: initial;
+            }
         };
         p{
            text-indent: 2rem;
@@ -22,15 +27,14 @@ main{
     };
     figure {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         gap: 1rem;
         margin: 1rem 0;
 
         .picture-wrapper {
-            width: 50%;
-            max-width: 50%;
+            max-width: 100%;;
             aspect-ratio: 1;
             box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.2);
             picture {
@@ -47,20 +51,20 @@ main{
 
         figcaption {
             flex: 1;
-            max-width: 50%;
+            max-width: 100%;
             padding: 1rem;
             text-align: left;
         };
 
-        &:nth-child(even) {
-            flex-direction: row-reverse;
-        };
-
-        @media screen and (max-width: 799px) {
-            flex-direction: column;
+        @media screen and (min-width: 800px) {
+            flex-direction: row;
             .picture-wrapper, figcaption {
-                max-width: 100%;
+                width: 50%;
+                max-width: 50%;
                 min-width: auto;
+            };
+            &:nth-child(even) {
+                flex-direction: row-reverse;
             };
         };
     };
