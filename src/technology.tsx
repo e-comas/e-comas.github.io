@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from "@aduh95/jsx-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { EComas, ECommerce } from "./views/eWords.tsx";
+import Picture from "./utils/Picture.tsx";
 
 export default (
   <Body title="Global Expansion">
@@ -37,40 +38,48 @@ export default (
         </p>
       </section>
 
-      <section>
-        <h3>Strategic development</h3>
-        <p>
-          <EComas /> Marketplace is your strategic growth partner, helping you
-          grow across <ECommerce /> platforms through strong strategy, expert
-          support, and operational excellence.
-        </p>
-        <ul>
-          <li>
-            We support your brand registration on Amazon and other marketplaces
-          </li>
-          <li>
-            We develop your brand <ECommerce /> strategy, assessing your current
-            <ECommerce /> setup and developing a tailored strategy for paid and
-            organic growth
-          </li>
-          <li>
-            We collaborate with you to create and manage a promotional calendar
-          </li>
-          <li>We provide recommendations on inventory planning</li>
-          <li>We generate performance reports on aligned KPIs</li>
-          <li>
-            We collaborate strategically with internal team members to ensure
-            alignment, transparency, and a strong operational bridge
-          </li>
-          <li>
-            We provide an annual performance review to summarise your wins,
-            lessons learned, forecasts, and an actionable roadmap for the next
-            year.
-          </li>
-        </ul>
-      </section>
+      <figure>
+        <Picture src="/images/consulting01.png" alt="illustration" />
+        <figcaption>
+          <h3>Strategic development</h3>
+          <p>
+            <EComas /> Marketplace is your strategic growth partner, helping
+            you grow across <ECommerce /> platforms through strong strategy,
+            expert support, and operational excellence.
+          </p>
+          <ul>
+            <li>
+              We support your brand registration on Amazon and other
+              marketplaces
+            </li>
+            <li>
+              We develop your brand <ECommerce /> strategy, assessing your
+              current
+              <ECommerce /> setup and developing a tailored strategy for paid
+              and organic growth
+            </li>
+            <li>
+              We collaborate with you to create and manage a promotional
+              calendar
+            </li>
+            <li>We provide recommendations on inventory planning</li>
+            <li>We generate performance reports on aligned KPIs</li>
+            <li>
+              We collaborate strategically with internal team members to
+              ensure alignment, transparency, and a strong operational bridge
+            </li>
+            <li>
+              We provide an annual performance review to summarise your wins,
+              lessons learned, forecasts, and an actionable roadmap for the
+              next year.
+            </li>
+          </ul>
+        </figcaption>
+      </figure>
 
-      <section>
+      <figure>
+        <Picture src="/images/consulting02.png" alt="illustration" />
+        <figcaption>
         <h3>Cataloguing and content management</h3>
         <p>
           <EComas /> Marketplace is your ideal partner for managing your product
@@ -99,7 +108,8 @@ export default (
             creative.
           </li>
         </ul>
-      </section>
+        </figcaption>
+      </figure>
 
       <section>
         <h3>Advertising and retail media</h3>
